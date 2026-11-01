@@ -1,6 +1,29 @@
 {
   "editions": [
     {
+      "date": "2026-10-28",
+      "file": "posts/2026-10-28.html",
+      "summary": "A new investigation traces about $164 million that has flowed through San Francisco Mayor Daniel Lurie’s political and philanthropic network. In California, most of the state’s Republican House members have not signed a pledge to seat election winners. Astronomers may have found a sixth dwarf planet, GitHub launched a tool that picks AI models for you, and the final Dune: Part Three trailer arrived.",
+      "headlines": [
+        {
+          "title": "About $164 million has flowed through Mayor Lurie’s political and charity network",
+          "topic": "General news"
+        },
+        {
+          "title": "Most California Republicans in Congress skip a pledge to seat election winners",
+          "topic": "General news"
+        },
+        {
+          "title": "Astronomers spot a possible new dwarf planet beyond Neptune",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "Final Dune: Part Three trailer lands ahead of a Dec. 18 release",
+          "topic": "Culture"
+        }
+      ]
+    },
+    {
       "date": "2026-10-27",
       "file": "posts/2026-10-27.html",
       "summary": "Microsoft offered voluntary buyouts to about a quarter of its workforce, and high tides flooded low-lying roads around the bay, with more expected this week. California’s ballot deadlines are closing in, and a river otter turned up on the San Mateo coast for the first time in more than a century. The Warriors got their first win, and Star Trek actor Walter Koenig died at 90.",

@@ -1,6 +1,29 @@
 {
   "editions": [
     {
+      "date": "2026-10-31",
+      "file": "posts/2026-10-31.html",
+      "summary": "Job cuts kept coming as October ended, including small rounds at Dropbox and Front in San Francisco. Tech companies are now among the biggest outside spenders in California’s legislative races. The Warriors evened their record with a win over the Lakers, and tonight’s sky offers Saturn and early Halloween fireballs.",
+      "headlines": [
+        {
+          "title": "Layoffs pile up as October ends, including cuts in San Francisco",
+          "topic": "General news"
+        },
+        {
+          "title": "Tech money makes up at least a fifth of outside spending in California legislative races",
+          "topic": "General news"
+        },
+        {
+          "title": "Warriors beat the Lakers 112–95 to reach .500",
+          "topic": "Sports"
+        },
+        {
+          "title": "Halloween night sky: Saturn and early fireballs",
+          "topic": "Science & tech"
+        }
+      ]
+    },
+    {
       "date": "2026-10-30",
       "file": "posts/2026-10-30.html",
       "summary": "High tides and light rain could greet Bay Area trick-or-treaters this weekend, with a coastal flood advisory along the bay through Sunday. A CalMatters analysis finds Prop. 45 could open a door for data centers, and the Warriors host the Lakers tonight. Astronauts completed the 100th US spacewalk from the space station, and Virgin Galactic’s new space plane flew for the first time.",

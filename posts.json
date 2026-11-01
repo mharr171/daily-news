@@ -1,6 +1,33 @@
 {
   "editions": [
     {
+      "date": "2026-10-25",
+      "file": "posts/2026-10-25.html",
+      "summary": "The US pulled diplomats and their families from several Middle East posts after an intelligence warning about Iranian plots. Closer to home, seven more San Mateo County vote centers opened, and Californians are weighing about $44 billion in bond measures. The 49ers welcome back Christian Kirk for today’s game, Clayface led Friday’s box office, and the late-October sky offers a full moon and Halloween fireballs.",
+      "headlines": [
+        {
+          "title": "US pulls diplomats from Middle East posts after warning of Iranian plots",
+          "topic": "General news"
+        },
+        {
+          "title": "Seven more San Mateo County vote centers open ahead of Nov. 3",
+          "topic": "General news"
+        },
+        {
+          "title": "49ers activate Christian Kirk as Evans and Samuel sit out",
+          "topic": "Sports"
+        },
+        {
+          "title": "California voters face about $44 billion in bond measures",
+          "topic": "General news"
+        },
+        {
+          "title": "Clayface leads Friday’s box office as a Nathan Fielder documentary expands",
+          "topic": "Culture"
+        }
+      ]
+    },
+    {
       "date": "2026-10-24",
       "file": "posts/2026-10-24.html",
       "summary": "Bay Area voters are weighing a regional transit tax that decides the future of BART and Caltrain service, and San Francisco declared a local emergency to get ready for a wet El Niño winter. Abroad, burning tankers near the Strait of Hormuz kept US–Iran tensions high. The unbeaten 49ers head to Atlanta, DC’s Clayface opens in theaters, and NASA laid out a faster path back to the Moon.",

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Archive | Live Full Stack</title>
+<meta name="description" content="Every past edition of Live Full Stack, by month.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.55 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--spot); outline-offset: 3px; }
+
+  /* Masthead (matches the edition pages) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Page heading */
+  .archive-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule);
+                  display: flex; justify-content: space-between; align-items: flex-end;
+                  flex-wrap: wrap; gap: 1rem 2rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .archive-head h1 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                     font-size: clamp(2.6rem, 9vw, 5rem); line-height: .9; margin: 0; letter-spacing: .01em; }
+  .tally { margin: 0; font-style: italic; color: var(--muted); text-align: right; line-height: 1.4; }
+  .tally strong { font-style: normal; color: var(--ink); font-size: 1.6rem; display: block; line-height: 1; }
+  @media (max-width: 30rem) { .tally { text-align: left; } }
+
+  /* Search and filters */
+  .tools { padding: 1rem 0; border-bottom: 1px solid var(--soft-rule);
+           display: grid; gap: .75rem; }
+  .search { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .6rem; }
+  .search label { font-style: italic; color: var(--muted); white-space: nowrap; }
+  .search input { flex: 1 1 14rem; min-width: 0; width: 100%; font: inherit; color: var(--ink); background: transparent;
+                  border: 0; border-bottom: 2px solid var(--ink); padding: .3rem .1rem; border-radius: 0; }
+  .search input::placeholder { color: var(--muted); font-style: italic; }
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+  .chips > span { font-style: italic; color: var(--muted); font-size: .9rem; margin-right: .2rem; }
+  .chip { font: inherit; font-size: .85rem; color: var(--ink); background: transparent;
+          border: 1px solid var(--soft-rule); padding: .2rem .7rem; cursor: pointer; border-radius: 0; }
+  .chip:hover { border-color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  /* Month index */
+  .months { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; padding: .7rem 0;
+            border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .months span { font-style: italic; color: var(--muted); }
+  .months a { font-weight: 700; text-decoration: none; }
+  .months a:hover { text-decoration: underline; }
+
+  /* Month sections */
+  .month { padding-top: 1.75rem; }
+  .month > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule);
+                display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .month > h2 small { font-family: var(--serif); text-transform: none; font-size: .95rem;
+                      font-style: italic; color: var(--muted); letter-spacing: 0; }
+
+  /* One row per edition */
+  .entry { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0 1.5rem;
+           padding: 1.1rem 0 1.2rem; border-bottom: 1px solid var(--soft-rule); }
+  .dateline { text-align: center; border-right: 1px solid var(--soft-rule); padding-right: 1.25rem; }
+  .dateline .dow { display: block; font-style: italic; color: var(--muted); font-size: .85rem; }
+  .dateline .day { display: block; font-family: var(--display); font-size: 2.8rem; line-height: 1; margin: .1rem 0; }
+  .dateline .no { display: block; color: var(--spot); font-size: .8rem; font-style: italic; }
+  .entry h3 { font-size: 1.4rem; line-height: 1.15; margin: 0 0 .4rem; }
+  .entry h3 a { text-decoration: none; }
+  .entry h3 a:hover { text-decoration: underline; }
+  .entry .summary { margin: 0 0 .6rem; font-size: .95rem; color: var(--muted); }
+  .entry ul { list-style: none; margin: 0 0 .6rem; padding: 0; columns: 2 18rem; column-gap: 1.5rem; font-size: .92rem; }
+  .entry li { break-inside: avoid; padding: .2rem 0 .2rem .9rem; position: relative; line-height: 1.3; }
+  .entry li::before { content: "\25AA"; position: absolute; left: 0; color: var(--spot); }
+  .entry li .topic { font-style: italic; color: var(--muted); font-size: .8rem; }
+  .entry .more { font-size: .9rem; font-weight: 700; }
+  mark { background: color-mix(in srgb, var(--spot) 22%, transparent); color: inherit; padding: 0 .1em; }
+  @media (max-width: 34rem) {
+    .entry { grid-template-columns: 1fr; }
+    .dateline { text-align: left; border-right: 0; padding: 0 0 .4rem; display: flex; gap: .6rem; align-items: baseline; }
+    .dateline .day { font-size: 1.6rem; }
+  }
+
+  .notice { text-align: center; font-style: italic; color: var(--muted); padding: 3rem 1rem; }
+  footer { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+           display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem;
+           font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="./">Live Full Stack</a></p>
+      <a class="home" href="./">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="archive-head">
+      <div>
+        <p class="stamp">Every edition, newest first</p>
+        <h1>The Archive</h1>
+      </div>
+      <p class="tally" id="tally"></p>
+    </header>
+
+    <div class="tools" id="tools" hidden>
+      <div class="search">
+        <label for="q">Search headlines</label>
+        <input id="q" type="search" placeholder="e.g. 49ers, BART, Artemis" autocomplete="off">
+      </div>
+      <div class="chips" id="chips"><span>Topic:</span></div>
+    </div>
+    <nav class="months" id="months" aria-label="Jump to month" hidden><span>Jump to:</span></nav>
+
+    <div id="list"><p class="notice">Pulling the bound volumes&hellip;</p></div>
+  </main>
+
+  <footer>
+    <span>Compiled each morning by Claude.</span>
+    <a href="./">Front page</a>
+  </footer>
+</div>
+
+<script>
+(function () {
+  const list = document.getElementById("list");
+  const parse = d => new Date(d + "T12:00:00");
+  const fmtLong = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function link(href, text, cls) { const a = el("a", cls, text); a.href = href; return a; }
+  // Append text with matches of `q` wrapped in <mark>.
+  function highlight(node, text, q) {
+    if (!q) { node.append(text); return node; }
+    const lower = text.toLowerCase();
+    let i = 0, j;
+    while ((j = lower.indexOf(q, i)) !== -1) {
+      node.append(text.slice(i, j), el("mark", null, text.slice(j, j + q.length)));
+      i = j + q.length;
+    }
+    node.append(text.slice(i));
+    return node;
+  }
+
+  let all = [], topic = "", query = "";
+
+  function matches(e) {
+    const h = e.headlines || [];
+    if (topic && !h.some(x => x.topic === topic)) return false;
+    if (!query) return true;
+    const hay = [e.summary || "", fmtLong(e.date)].concat(h.map(x => x.title + " " + (x.topic || ""))).join(" ").toLowerCase();
+    return hay.includes(query);
+  }
+
+  function render() {
+    const shown = all.filter(matches);
+    const months = document.getElementById("months");
+    months.querySelectorAll("a").forEach(a => a.remove());
+
+    if (!shown.length) {
+      list.replaceChildren(el("p", "notice", "No editions match that search."));
+      months.hidden = true;
+      return;
+    }
+
+    const groups = new Map();
+    shown.forEach(e => {
+      const key = e.date.slice(0, 7);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(e);
+    });
+
+    const parts = [];
+    groups.forEach((eds, key) => {
+      const label = parse(key + "-01").toLocaleDateString("en-US", { month: "long", year: "numeric" });
+      const sec = el("section", "month");
+      sec.id = "m-" + key;
+      const h2 = el("h2", null, label);
+      h2.append(el("small", null, eds.length + (eds.length === 1 ? " edition" : " editions")));
+      sec.append(h2);
+
+      eds.forEach(e => {
+        const h = e.headlines || [];
+        const row = el("article", "entry");
+        const d = parse(e.date);
+        const dl = el("div", "dateline");
+        dl.append(
+          el("span", "dow", d.toLocaleDateString("en-US", { weekday: "short" })),
+          el("span", "day", String(d.getDate())),
+          el("span", "no", d.toLocaleDateString("en-US", { month: "short" }) + " · No. " + e.no));
+        const body = el("div");
+        const h3 = el("h3");
+        const a = link(e.file, "");
+        highlight(a, h[0] ? h[0].title : fmtLong(e.date), query);
+        h3.append(a);
+        body.append(h3);
+        if (e.summary) body.append(highlight(el("p", "summary"), e.summary, query));
+        if (h.length > 1) {
+          const ul = el("ul");
+          h.slice(1).forEach(x => {
+            const li = el("li");
+            highlight(li, x.title, query);
+            if (x.topic) li.append(" ", el("span", "topic", "· " + x.topic));
+            ul.append(li);
+          });
+          body.append(ul);
+        }
+        body.append(link(e.file, "Read this edition", "more"));
+        row.append(dl, body);
+        sec.append(row);
+      });
+      parts.push(sec);
+      months.append(link("#m-" + key, label));
+    });
+    months.hidden = groups.size < 2;
+    list.replaceChildren(...parts);
+  }
+
+  function setup(data) {
+    all = data.filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? 1 : -1);
+    all.forEach((e, i) => e.no = all.length - i);
+
+    const tally = document.getElementById("tally");
+    if (!all.length) {
+      list.replaceChildren(el("p", "notice", "No editions yet. The first one will be filed here."));
+      return;
+    }
+    const first = parse(all[all.length - 1].date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    tally.append(el("strong", null, all.length + (all.length === 1 ? " edition" : " editions")), "since " + first);
+
+    const topics = [...new Set(all.flatMap(e => (e.headlines || []).map(x => x.topic).filter(Boolean)))].sort();
+    const chips = document.getElementById("chips");
+    ["All", ...topics].forEach(t => {
+      const b = el("button", "chip", t);
+      b.type = "button";
+      b.setAttribute("aria-pressed", t === "All" ? "true" : "false");
+      b.addEventListener("click", () => {
+        topic = t === "All" ? "" : t;
+        chips.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c === b ? "true" : "false"));
+        render();
+      });
+      chips.append(b);
+    });
+    if (topics.length < 2) chips.hidden = true;
+
+    document.getElementById("q").addEventListener("input", ev => {
+      query = ev.target.value.trim().toLowerCase();
+      render();
+    });
+    document.getElementById("tools").hidden = false;
+    render();
+  }
+
+  fetch("posts.json", { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(data => setup(Array.isArray(data) ? data : (data.editions || [])))
+    .catch(() => list.replaceChildren(
+      el("p", "notice", "The editions list couldn’t be loaded. Refresh the page, or try again in a moment.")));
+})();
+</script>
+</body>
+</html>

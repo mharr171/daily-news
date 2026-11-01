@@ -1,86 +1,29 @@
 {
   "editions": [
     {
-      "date": "2026-10-31",
-      "file": "posts/2026-10-31.html",
-      "summary": "Sample edition: this text shows where each day’s two- or three-sentence summary appears. The daily task replaces these samples with real stories.",
-      "headlines": [
-        {
-          "title": "Sample lead headline for the newest edition",
-          "topic": "Jobs & careers"
-        },
-        {
-          "title": "Sample headline about watch modding",
-          "topic": "Watchmaking"
-        },
-        {
-          "title": "Sample headline about AI tools",
-          "topic": "Tech & AI"
-        },
-        {
-          "title": "Sample headline about a new board game",
-          "topic": "Board games"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-30",
-      "file": "posts/2026-10-30.html",
-      "summary": "Sample edition from the day before.",
-      "headlines": [
-        {
-          "title": "Sample headline for Friday’s edition",
-          "topic": "Tech & AI"
-        },
-        {
-          "title": "Second sample headline",
-          "topic": "Jobs & careers"
-        },
-        {
-          "title": "Third sample headline",
-          "topic": "Watchmaking"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-29",
-      "file": "posts/2026-10-29.html",
-      "summary": "Sample edition.",
-      "headlines": [
-        {
-          "title": "Sample headline for Thursday’s edition",
-          "topic": "Watchmaking"
-        },
-        {
-          "title": "Another sample headline",
-          "topic": "Board games"
-        }
-      ]
-    },
-    {
       "date": "2026-10-24",
       "file": "posts/2026-10-24.html",
-      "summary": "American Express says it will cut about 3,500 jobs even as profits climb, a sign that efficiency drives are reaching well-paid corporate roles. In watches, the Windup fair in New York had its biggest year yet, and SPIEL Essen opened in Germany with nearly every ticket gone. Anthropic began inviting users to an AI agent that works in the background, while Meta paused chat sharing in its Muse assistant after private chats turned up online.",
+      "summary": "Bay Area voters are weighing a regional transit tax that decides the future of BART and Caltrain service, and San Francisco declared a local emergency to get ready for a wet El Niño winter. Abroad, burning tankers near the Strait of Hormuz kept US–Iran tensions high. The unbeaten 49ers head to Atlanta, DC’s Clayface opens in theaters, and NASA laid out a faster path back to the Moon.",
       "headlines": [
         {
-          "title": "American Express to cut about 3,500 jobs despite a 28% jump in profit",
-          "topic": "Jobs & careers"
+          "title": "Tankers burn near Hormuz as US–Iran tensions rise before the midterms",
+          "topic": "General news"
         },
         {
-          "title": "Anthropic opens Claude Duet, an AI agent that works while your app is closed",
-          "topic": "Tech & AI"
+          "title": "Bay Area transit tax on the Nov. 3 ballot would decide BART and Caltrain cuts",
+          "topic": "General news"
         },
         {
-          "title": "Windup NYC fills a whole city block in its biggest year yet",
-          "topic": "Watchmaking"
+          "title": "Unbeaten 49ers head to Atlanta short on healthy receivers",
+          "topic": "Sports"
         },
         {
-          "title": "SPIEL Essen opens with tickets nearly gone for every day",
-          "topic": "Board games"
+          "title": "NASA lays out a faster Artemis plan aimed at a 2028 Moon landing",
+          "topic": "Science & tech"
         },
         {
-          "title": "Meta pauses Muse chat sharing after thousands of shared links were found online",
-          "topic": "Tech & AI"
+          "title": "DC’s Clayface opens with $3.5 million in previews and strong reviews",
+          "topic": "Culture"
         }
       ]
     }

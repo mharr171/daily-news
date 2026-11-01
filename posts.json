@@ -1,6 +1,29 @@
 {
   "editions": [
     {
+      "date": "2026-10-30",
+      "file": "posts/2026-10-30.html",
+      "summary": "High tides and light rain could greet Bay Area trick-or-treaters this weekend, with a coastal flood advisory along the bay through Sunday. A CalMatters analysis finds Prop. 45 could open a door for data centers, and the Warriors host the Lakers tonight. Astronauts completed the 100th US spacewalk from the space station, and Virgin Galactic’s new space plane flew for the first time.",
+      "headlines": [
+        {
+          "title": "Halloween weekend brings a coastal flood advisory and a chance of drizzle",
+          "topic": "General news"
+        },
+        {
+          "title": "Could Prop. 45 open the door to more California data centers?",
+          "topic": "General news"
+        },
+        {
+          "title": "Astronauts mark the 100th US spacewalk from the space station",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "New this weekend: Apple TV’s Nocturne and Dexter: Resurrection season 2",
+          "topic": "Culture"
+        }
+      ]
+    },
+    {
       "date": "2026-10-29",
       "file": "posts/2026-10-29.html",
       "summary": "The Federal Reserve held interest rates steady, but two officials wanted a hike. A federal judge refused to make California set aside 20,000 ballots, and the head of the state’s high-speed rail project resigned. San Mateo County voters weigh an $848 million college bond, Stephen Curry scored 44 in a Warriors win, and actor Patrick Stewart died at 86.",

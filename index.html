@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daily Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F2F5F9; --surface: #FFFFFF; --ink: #18212C; --muted: #566273;
+    --line: #D8DFE8; --accent: #2457C5;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161E; --surface: #18202B; --ink: #E6EBF2; --muted: #9AA6B6;
+      --line: #2A3442; --accent: #8DB0FF;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .date {
+    font-family: "Newsreader", Georgia, serif; font-weight: 600;
+    font-size: clamp(2.6rem, 9vw, 4.2rem); line-height: 1; margin: 0 0 .75rem;
+    letter-spacing: -0.02em;
+  }
+  .intro { color: var(--muted); margin: 0 0 2.5rem; }
+  section { margin-bottom: 2.5rem; }
+  h2 {
+    font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: 1.5rem;
+    margin: 0 0 .75rem; padding-bottom: .4rem; border-bottom: 2px solid var(--accent);
+  }
+  article {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 1rem 1.15rem; margin-bottom: .75rem;
+  }
+  article h3 { font-size: 1.05rem; line-height: 1.35; margin: 0 0 .3rem; }
+  article p { margin: 0; }
+  .source { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  .empty { color: var(--muted); font-style: italic; }
+  footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <!-- DAILY UPDATE: replace with today’s date, e.g. Monday, November 2 -->
+    <h1 class="date">Daily Brief</h1>
+    <p class="intro">A short roundup of the news I follow, updated every morning.</p>
+  </header>
+
+  <!-- DAILY UPDATE: replace everything between these markers with one <section> per topic -->
+  <!-- START STORIES -->
+  <section>
+    <h2>Today’s stories</h2>
+    <p class="empty">The first edition will appear here after tomorrow morning’s update.</p>
+  </section>
+  <!--
+  Story format for each topic:
+  <section>
+    <h2>Topic name</h2>
+    <article>
+      <h3><a href="https://example.com/article">Headline in plain words</a></h3>
+      <p>One or two sentences on what happened and why it matters.</p>
+      <p class="source">Source name, date</p>
+    </article>
+  </section>
+  -->
+  <!-- END STORIES -->
+
+  <footer>
+    <!-- DAILY UPDATE: replace with the time of the update -->
+    <p>Last updated: not yet</p>
+  </footer>
+</main>
+</body>
+</html>

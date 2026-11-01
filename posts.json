@@ -1,0 +1,61 @@
+{
+  "editions": [
+    {
+      "date": "2026-10-31",
+      "file": "posts/2026-10-31.html",
+      "summary": "Sample edition: this text shows where each day’s two- or three-sentence summary appears. The daily task replaces these samples with real stories.",
+      "headlines": [
+        {
+          "title": "Sample lead headline for the newest edition",
+          "topic": "Jobs & careers"
+        },
+        {
+          "title": "Sample headline about watch modding",
+          "topic": "Watchmaking"
+        },
+        {
+          "title": "Sample headline about AI tools",
+          "topic": "Tech & AI"
+        },
+        {
+          "title": "Sample headline about a new board game",
+          "topic": "Board games"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "file": "posts/2026-10-30.html",
+      "summary": "Sample edition from the day before.",
+      "headlines": [
+        {
+          "title": "Sample headline for Friday’s edition",
+          "topic": "Tech & AI"
+        },
+        {
+          "title": "Second sample headline",
+          "topic": "Jobs & careers"
+        },
+        {
+          "title": "Third sample headline",
+          "topic": "Watchmaking"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "file": "posts/2026-10-29.html",
+      "summary": "Sample edition.",
+      "headlines": [
+        {
+          "title": "Sample headline for Thursday’s edition",
+          "topic": "Watchmaking"
+        },
+        {
+          "title": "Another sample headline",
+          "topic": "Board games"
+        }
+      ]
+    }
+  ]
+}

@@ -3,85 +3,212 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Daily Brief</title>
+<title>Live Full Stack by The Gary Corp.</title>
+<meta name="description" content="A daily roundup of the news I follow.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #F2F5F9; --surface: #FFFFFF; --ink: #18212C; --muted: #566273;
-    --line: #D8DFE8; --accent: #2457C5;
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    --band: #A8231B; --on-band: #F6EFE6;
     color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #10161E; --surface: #18202B; --ink: #E6EBF2; --muted: #9AA6B6;
-      --line: #2A3442; --accent: #8DB0FF;
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
       color-scheme: dark;
     }
   }
   * { box-sizing: border-box; }
+  html { background: var(--paper); }
   body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.55 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
   }
-  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
-  .date {
-    font-family: "Newsreader", Georgia, serif; font-weight: 600;
-    font-size: clamp(2.6rem, 9vw, 4.2rem); line-height: 1; margin: 0 0 .75rem;
-    letter-spacing: -0.02em;
-  }
-  .intro { color: var(--muted); margin: 0 0 2.5rem; }
-  section { margin-bottom: 2.5rem; }
-  h2 {
-    font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: 1.5rem;
-    margin: 0 0 .75rem; padding-bottom: .4rem; border-bottom: 2px solid var(--accent);
-  }
-  article {
-    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
-    padding: 1rem 1.15rem; margin-bottom: .75rem;
-  }
-  article h3 { font-size: 1.05rem; line-height: 1.35; margin: 0 0 .3rem; }
-  article p { margin: 0; }
-  .source { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
-  a { color: var(--accent); text-underline-offset: 2px; }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
-  .empty { color: var(--muted); font-style: italic; }
-  footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead */
+  .masthead { margin-bottom: .5rem; }
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .5rem 1.5rem; padding-bottom: .5rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(3.2rem, 13vw, 7.5rem); line-height: .88; margin: 0;
+               letter-spacing: .005em; }
+  .issue { margin: 0 0 .35rem auto; text-align: right; font-style: italic; font-size: .95rem;
+           line-height: 1.45; color: var(--muted); }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .45rem 1rem; font-size: .95rem; }
+  .band .tag { font-style: italic; }
+  @media (max-width: 30rem) { .issue { text-align: left; margin-left: 0; } }
+
+  /* Lead edition */
+  .lead { display: grid; grid-template-columns: 1fr; gap: 1rem 2rem;
+          padding: 1.75rem 0; border-bottom: 2px solid var(--rule); }
+  @media (min-width: 52rem) { .lead { grid-template-columns: 1.7fr 1fr; } }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .35rem; }
+  .lead h2 { font-size: clamp(2rem, 5.5vw, 3.6rem); line-height: 1.04; margin: 0 0 1rem;
+             letter-spacing: -.01em; }
+  .lead h2 a { text-decoration: none; }
+  .lead h2 a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+  .also { border-left: 1px solid var(--soft-rule); padding-left: 1.5rem; }
+  @media (max-width: 51.99rem) { .also { border-left: 0; padding-left: 0;
+                                          border-top: 1px solid var(--soft-rule); padding-top: 1rem; } }
+  .also h3 { font-size: 1rem; font-style: italic; font-weight: 400; margin: 0 0 .5rem; color: var(--muted); }
+  .headlines { list-style: none; margin: 0 0 1rem; padding: 0; }
+  .headlines li { padding: .5rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.3; }
+  .topic { display: block; font-size: .78rem; font-style: italic; color: var(--muted); }
+  .read { display: inline-block; font-weight: 700; border: 2px solid var(--ink);
+          padding: .45rem .9rem; text-decoration: none; }
+  .read:hover { background: var(--ink); color: var(--paper); }
+
+  /* Earlier editions */
+  .section-head { text-align: center; font-size: 1.4rem; margin: 1.75rem 0 1rem; font-weight: 700; }
+  .section-head::before, .section-head::after { content: "\2767"; color: var(--spot); margin: 0 .6rem; font-weight: 400; }
+  .grid { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 40rem) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 60rem) { .grid { grid-template-columns: repeat(3, 1fr); } }
+  .edition { padding: 1rem 1.25rem 1.25rem; border-top: 1px solid var(--soft-rule); }
+  @media (min-width: 40rem) { .edition { border-left: 1px solid var(--soft-rule); }
+                              .grid > .edition:nth-child(2n+1) { border-left: 0; } }
+  @media (min-width: 60rem) { .grid > .edition:nth-child(2n+1) { border-left: 1px solid var(--soft-rule); }
+                              .grid > .edition:nth-child(3n+1) { border-left: 0; } }
+  .edition .when { font-style: italic; color: var(--muted); font-size: .9rem; margin: 0 0 .3rem; }
+  .edition h4 { font-size: 1.35rem; line-height: 1.15; margin: 0 0 .5rem; }
+  .edition h4 a { text-decoration: none; }
+  .edition h4 a:hover { text-decoration: underline; }
+  .edition ul { margin: 0 0 .75rem; padding-left: 1.1rem; font-size: .95rem; }
+  .edition li { margin-bottom: .3rem; line-height: 1.3; }
+  .edition .more { font-size: .9rem; font-weight: 700; }
+
+  .notice { text-align: center; font-style: italic; color: var(--muted); padding: 3rem 1rem; }
+  footer { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+           display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem;
+           font-size: .9rem; color: var(--muted); }
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <!-- DAILY UPDATE: replace with today’s date, e.g. Monday, November 2 -->
-    <h1 class="date">Daily Brief</h1>
-    <p class="intro">A short roundup of the news I follow, updated every morning.</p>
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <h1 class="nameplate">Live Full Stack</h1>
+      <p class="issue"><span id="edition-no">First issue coming soon</span><br><span id="today"></span></p>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
   </header>
 
-  <!-- DAILY UPDATE: replace everything between these markers with one <section> per topic -->
-  <!-- START STORIES -->
-  <section>
-    <h2>Today’s stories</h2>
-    <p class="empty">The first edition will appear here after tomorrow morning’s update.</p>
-  </section>
-  <!--
-  Story format for each topic:
-  <section>
-    <h2>Topic name</h2>
-    <article>
-      <h3><a href="https://example.com/article">Headline in plain words</a></h3>
-      <p>One or two sentences on what happened and why it matters.</p>
-      <p class="source">Source name, date</p>
-    </article>
-  </section>
-  -->
-  <!-- END STORIES -->
+  <main id="front-page">
+    <p class="notice">Setting the type&hellip;</p>
+  </main>
 
   <footer>
-    <!-- DAILY UPDATE: replace with the time of the update -->
-    <p>Last updated: not yet</p>
+    <span>Compiled each morning by Claude.</span>
+    <a href="archive.html">Older editions</a>
   </footer>
-</main>
+</div>
+
+<script>
+(function () {
+  const DAY = 86400000;
+  const main = document.getElementById("front-page");
+
+  const parse = d => new Date(d + "T12:00:00");
+  const fmtLong = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+  const fmtShort = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function link(href, text, cls) { const a = el("a", cls, text); a.href = href; return a; }
+
+  document.getElementById("today").textContent =
+    new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+
+  function headlineList(items, cls) {
+    const ul = el("ul", cls);
+    items.forEach(h => {
+      const li = el("li");
+      if (cls && h.topic) li.append(el("span", "topic", h.topic));
+      li.append(document.createTextNode(h.title));
+      ul.append(li);
+    });
+    return ul;
+  }
+
+  function render(all) {
+    all = all.filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? 1 : -1);
+    if (!all.length) {
+      main.replaceChildren(el("p", "notice", "The first edition will appear here after tomorrow morning’s update."));
+      return;
+    }
+    const numberOf = e => all.length - all.indexOf(e);
+    const cutoff = Date.now() - 7 * DAY;
+    let week = all.filter(e => parse(e.date).getTime() >= cutoff);
+    if (!week.length) week = all.slice(0, 7);
+    week = week.slice(0, 7);
+
+    document.getElementById("edition-no").textContent = "Issue No. " + numberOf(all[0]);
+
+    const [latest, ...earlier] = week;
+    const heads = latest.headlines || [];
+
+    const lead = el("section", "lead");
+    const left = el("div");
+    left.append(el("p", "stamp", "Latest edition, " + fmtLong(latest.date)));
+    const h2 = el("h2");
+    h2.append(link(latest.file, heads[0] ? heads[0].title : fmtLong(latest.date)));
+    left.append(h2);
+    if (latest.summary) left.append(el("p", "summary", latest.summary));
+
+    const right = el("aside", "also");
+    right.append(el("h3", null, "Also in this edition"));
+    right.append(headlineList(heads.slice(1, 5), "headlines"));
+    right.append(link(latest.file, "Read the full edition", "read"));
+    lead.append(left, right);
+
+    const parts = [lead];
+    if (earlier.length) {
+      parts.push(el("h2", "section-head", "Earlier this week"));
+      const grid = el("div", "grid");
+      earlier.forEach(e => {
+        const card = el("article", "edition");
+        const h = e.headlines || [];
+        card.append(el("p", "when", fmtShort(e.date) + ", No. " + numberOf(e)));
+        const h4 = el("h4");
+        h4.append(link(e.file, h[0] ? h[0].title : fmtLong(e.date)));
+        card.append(h4);
+        if (h.length > 1) card.append(headlineList(h.slice(1, 3)));
+        card.append(link(e.file, "Read this edition", "more"));
+        grid.append(card);
+      });
+      parts.push(grid);
+    }
+    main.replaceChildren(...parts);
+  }
+
+  fetch("posts.json", { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(data => render(Array.isArray(data) ? data : (data.editions || [])))
+    .catch(() => main.replaceChildren(
+      el("p", "notice", "The editions list couldn’t be loaded. Refresh the page, or check that posts.json is in the same folder as this page.")));
+})();
+</script>
 </body>
 </html>

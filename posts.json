@@ -1,6 +1,29 @@
 {
   "editions": [
     {
+      "date": "2026-10-26",
+      "file": "posts/2026-10-26.html",
+      "summary": "San Mateo County is urging residents to get ready now for what could be a strong El Niño winter. The 49ers lost their first game of the season in Atlanta, and the Warriors try again for their first win tonight in Denver. Tonight’s Hunter’s Moon is the best full moon of the fall to catch rising.",
+      "headlines": [
+        {
+          "title": "San Mateo County urges early storm prep as a strong El Niño grows likely",
+          "topic": "General news"
+        },
+        {
+          "title": "49ers’ unbeaten run ends with a 29–20 loss in Atlanta",
+          "topic": "Sports"
+        },
+        {
+          "title": "October’s Hunter’s Moon peaks overnight",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "New this week: The Mob on Hulu and Netflix’s Minimum Wage",
+          "topic": "Culture"
+        }
+      ]
+    },
+    {
       "date": "2026-10-25",
       "file": "posts/2026-10-25.html",
       "summary": "The US pulled diplomats and their families from several Middle East posts after an intelligence warning about Iranian plots. Closer to home, seven more San Mateo County vote centers opened, and Californians are weighing about $44 billion in bond measures. The 49ers welcome back Christian Kirk for today’s game, Clayface led Friday’s box office, and the late-October sky offers a full moon and Halloween fireballs.",

@@ -1,6 +1,33 @@
 {
   "editions": [
     {
+      "date": "2026-10-29",
+      "file": "posts/2026-10-29.html",
+      "summary": "The Federal Reserve held interest rates steady, but two officials wanted a hike. A federal judge refused to make California set aside 20,000 ballots, and the head of the state’s high-speed rail project resigned. San Mateo County voters weigh an $848 million college bond, Stephen Curry scored 44 in a Warriors win, and actor Patrick Stewart died at 86.",
+      "headlines": [
+        {
+          "title": "Fed holds rates at 3.75% to 4% as two officials push for a hike",
+          "topic": "General news"
+        },
+        {
+          "title": "Judge refuses to make California set aside 20,000 ballots",
+          "topic": "General news"
+        },
+        {
+          "title": "Measure V asks San Mateo County voters to extend an $848 million college bond",
+          "topic": "General news"
+        },
+        {
+          "title": "Patrick Stewart, Star Trek’s Captain Picard, dies at 86",
+          "topic": "Culture"
+        },
+        {
+          "title": "Curry scores 44 as the Warriors win at Minnesota",
+          "topic": "Sports"
+        }
+      ]
+    },
+    {
       "date": "2026-10-28",
       "file": "posts/2026-10-28.html",
       "summary": "A new investigation traces about $164 million that has flowed through San Francisco Mayor Daniel Lurie’s political and philanthropic network. In California, most of the state’s Republican House members have not signed a pledge to seat election winners. Astronomers may have found a sixth dwarf planet, GitHub launched a tool that picks AI models for you, and the final Dune: Part Three trailer arrived.",

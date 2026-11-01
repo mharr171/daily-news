@@ -1,6 +1,33 @@
 {
   "editions": [
     {
+      "date": "2026-11-01",
+      "file": "posts/2026-11-01.html",
+      "summary": "A shooting at a Fairfield Halloween store left one dead and six hurt, and a new analysis challenges the federal list of “likely noncitizen” voters in California ahead of Tuesday’s election. Clocks fall back an hour this weekend. The Warriors will rest Stephen Curry against the Clippers, and NASA is asking industry how to rescue the Hubble Space Telescope.",
+      "headlines": [
+        {
+          "title": "Gunfire at a Fairfield Halloween store leaves one dead and six hurt",
+          "topic": "General news"
+        },
+        {
+          "title": "Analysis: 42% of names on DOJ’s “likely noncitizen” list aren’t on California’s voter rolls",
+          "topic": "General news"
+        },
+        {
+          "title": "Warriors rest Curry against the Clippers as 49ers regroup on a bye",
+          "topic": "Sports"
+        },
+        {
+          "title": "Netflix renews “The Diplomat” for a fifth season",
+          "topic": "Culture"
+        },
+        {
+          "title": "NASA asks industry how to lift Hubble into a safer orbit",
+          "topic": "Science & tech"
+        }
+      ]
+    },
+    {
       "date": "2026-10-31",
       "file": "posts/2026-10-31.html",
       "summary": "Job cuts kept coming as October ended, including small rounds at Dropbox and Front in San Francisco. Tech companies are now among the biggest outside spenders in California’s legislative races. The Warriors evened their record with a win over the Lakers, and tonight’s sky offers Saturn and early Halloween fireballs.",

@@ -103,22 +103,26 @@
     {
       "date": "2026-10-28",
       "file": "posts/2026-10-28.html",
-      "summary": "A new investigation traces about $164 million that has flowed through San Francisco Mayor Daniel Lurie’s political and philanthropic network. In California, most of the state’s Republican House members have not signed a pledge to seat election winners. Astronomers may have found a sixth dwarf planet, GitHub launched a tool that picks AI models for you, and the final Dune: Part Three trailer arrived.",
+      "summary": "Federal officials gave California counties 48 hours to set aside ballots tied to a disputed list of suspected noncitizens, and local registrars are pushing back. An SF Standard review traced about $164 million through Mayor Daniel Lurie’s political and charity network, and the high-speed rail board votes today on its first trains. The Rays stayed alive in the World Series with a 12-inning win, and a possible new dwarf planet turned up beyond Neptune.",
       "headlines": [
+        {
+          "title": "Trump administration presses California counties over a disputed noncitizen voter list",
+          "topic": "General news"
+        },
         {
           "title": "About $164 million has flowed through Mayor Lurie’s political and charity network",
           "topic": "General news"
         },
         {
-          "title": "Most California Republicans in Congress skip a pledge to seat election winners",
-          "topic": "General news"
+          "title": "Today in sports: Rays survive in 12; Warriors and Quakes play tonight",
+          "topic": "Sports"
         },
         {
           "title": "Astronomers spot a possible new dwarf planet beyond Neptune",
           "topic": "Science & tech"
         },
         {
-          "title": "Final Dune: Part Three trailer lands ahead of a Dec. 18 release",
+          "title": "Final Dune: Part Three trailer arrives ahead of a Dec. 18 release",
           "topic": "Culture"
         }
       ]

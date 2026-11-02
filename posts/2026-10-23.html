@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Friday, October 23, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 23: Friday, October 23, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-10-23.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Friday, October 23, 2026 | Live Full Stack">
+<meta property="og:description" content="San Mateo County voters will decide whether supervisors get more time to fill vacant elected offices, and San Francisco health officials report the city’s first death from a potent kratom-derived opioid sold in gas stations. The Warriors play their home opener tonight as the 49ers prepare for Atlanta with a depleted receiving corps, and NASA briefs the public today on plans to speed up its return to the moon.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-23.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body data-date="2026-10-23">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 23</p>
+      <h1>Friday, October 23, 2026</h1>
+      <p class="summary">San Mateo County voters will decide whether supervisors get more time to fill vacant elected offices, and San Francisco health officials report the city’s first death from a potent kratom-derived opioid sold in gas stations. The Warriors play their home opener tonight as the 49ers prepare for Atlanta with a depleted receiving corps, and NASA briefs the public today on plans to speed up its return to the moon.</p>
+    </header>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format:
+         <article class="story">
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.cbsnews.com/sanfrancisco/news/san-francisco-fatal-overdose-mgm15-synthetic-opioid-kratom-7oh/" target="_blank" rel="noopener">San Francisco reports its first death from a gas-station opioid called MGM-15</a></h3>
+          <p>San Francisco’s health department issued an alert Wednesday after a resident died in late September from MGM-15, a kratom-derived opioid estimated to be up to 50 times stronger than morphine. The tablets, sold at gas stations and smoke shops, did not list the drug on the package. Officials urge anyone who sees a possible overdose to give naloxone and call 911.</p>
+          <p class="why"><strong>Why it matters:</strong> The same products are sold in convenience stores across the Peninsula, and mislabeling means buyers may not know what they are taking.</p>
+          <p class="source">CBS News Bay Area, Oct 22, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.almanacnews.com/election/2026/10/22/san-mateo-countys-measure-j-proposes-extending-timeline-for-filling-vacancies-in-elected-offices/" target="_blank" rel="noopener">Measure J would give San Mateo County supervisors 60 days to fill vacancies</a></h3>
+          <p>Measure J, a county charter amendment on the Nov. 3 ballot, would double the time supervisors have to appoint someone or call a special election for a vacant elected office, from 30 to 60 days. It would also require at least one public meeting before an appointment. Supervisors placed it on the ballot after the rushed decision that followed the removal of former Sheriff Christina Corpus; no opposing argument was filed.</p>
+          <p class="why"><strong>Why it matters:</strong> Every San Mateo County voter, including in Millbrae, will see Measure J, and it affects how future vacancies in county offices are filled.</p>
+          <p class="source">The Almanac, Oct 22, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://kesq.com/news/national-politics/cnn-us-politics/2026/10/22/us-orders-departure-of-some-embassy-staff-and-families-from-saudi-arabia-amid-houthi-threat/" target="_blank" rel="noopener">US pulls nonessential embassy staff from Saudi Arabia over Houthi attacks</a></h3>
+          <p>The State Department ordered nonemergency U.S. government employees and their families to leave Saudi Arabia after Iranian-backed Houthi forces stepped up attacks on Saudi airports, oil sites, and shipping. A new security alert warns Americans of possible airport attacks and travel disruptions. Britain said it will send fighter jets to help defend the kingdom.</p>
+          <p class="why"><strong>Why it matters:</strong> Fighting around the Gulf can push up oil prices and disrupt travel for Bay Area residents with family or business in the region.</p>
+          <p class="source">CNN (via KESQ), Oct 22, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.nbcsportsbayarea.com/nba/golden-state-warriors/2026-27-schedule-release-dates-times/1956290/" target="_blank" rel="noopener">Today in sports: Warriors’ home opener tonight; World Series begins</a></h3>
+          <p>After Wednesday’s 127–105 loss in Los Angeles, the Warriors host Memphis tonight at Chase Center in their home opener before a road trip to Phoenix, Denver, and Minnesota. The World Series opens tonight with the Rays at the Brewers on Fox, and the Valkyries, down 2–1 to Atlanta in the WNBA Finals, play Game 4 there on Saturday. The Earthquakes visit FC Dallas on Saturday, and the 6–0 49ers play at Atlanta at 10 a.m. Sunday.</p>
+          <p class="source">NBC Sports Bay Area, Aug 13, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sfstandard.com/2026/10/23/49ers-falcons-predictions-score-result/" target="_blank" rel="noopener">Unbeaten 49ers head to Atlanta short on healthy receivers</a></h3>
+          <p>Mike Evans is expected to miss or be very limited Sunday, and Christian Kirk is in line to make his 49ers debut after a calf strain as injuries pile up at receiver. Defensive coordinator Raheem Morris faces the Falcons team that fired him in January, with San Francisco’s defense ranked fourth in points allowed. The Standard’s two writers split their picks, one taking the 49ers 23–21 and the other the Falcons 20–19.</p>
+          <p class="source">The San Francisco Standard, Oct 23, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2294702/what-to-watch-october-23-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">New this weekend: Clayface in theaters, Yaga and Newlyweds premiere, and new albums from Anderson .Paak &amp; Cordae and John Legend</a></h3>
+          <p>DC’s Clayface opens in theaters today, while streaming brings AMC+’s Yaga, HBO Max’s movie The Invite, and Netflix’s documentary on comedian Maria Bamford; on broadcast, NBC premieres Newlyweds and brings back Happy’s Place, and Prime Video starts its second season of NBA games. New albums out today include Anderson .Paak and Cordae’s joint record Heavy Is the Crown, John Legend’s Muse, and Michael Kiwanuka’s FUDGE.</p>
+          <p class="source">TVLine, Oct 23, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2294196/carrie-renewed-season-2-prime-video/" target="_blank" rel="noopener">Prime Video renews Mike Flanagan’s Carrie for a second season</a></h3>
+          <p>Prime Video said Thursday that Carrie, Mike Flanagan’s series take on Stephen King’s first novel, will return for season 2, about two weeks after all eight episodes debuted. Summer H. Howell stars as Carrie White, and Flanagan returns as showrunner with King as an executive producer. No premiere date was announced.</p>
+          <p class="source">TVLine, Oct 22, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.space.com/space-exploration/artemis/nasa-giving-update-about-artemis-moon-plans-on-oct-23-watch-it-live" target="_blank" rel="noopener">NASA holds its “Artemis acceleration” briefing today</a></h3>
+          <p>NASA Administrator Jared Isaacman and Artemis leaders will speak at 11 a.m. Pacific from Kennedy Space Center about speeding up the moon program. The update covers Artemis III, a 2027 crewed test of docking with lunar landers in Earth orbit, and the push to land astronauts in 2028. The briefing streams live online.</p>
+          <p class="source">Space.com, Oct 22, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/" target="_blank" rel="noopener">Anthropic previews Claude Duet, an agent that works in the background</a></h3>
+          <p>Anthropic’s new Claude Duet app can build daily briefings and dashboards and run tasks on its own cloud computer, checking back with users when it needs approval. It can make purchases through Stripe Link or Shop Pay, with each payment needing a user’s OK, and declines requests for card or ID numbers by default. The research preview is open by waitlist to Pro and Max subscribers on iOS, Android, and the web.</p>
+          <p class="source">TechCrunch, Oct 22, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.space.com/space-exploration/launches-spacecraft/europes-space-rider-vehicle-comes-crashing-down-during-drop-test" target="_blank" rel="noopener">Europe’s Space Rider crashes in a parachute drop test</a></h3>
+          <p>A full-scale mockup of ESA’s reusable Space Rider vehicle crashed during an Oct. 6 test over Sardinia when its main parafoil detached after release from a helicopter. An independent investigation is under way, and ESA has recovered all the parts. The agency says the setback is not on the critical path and still targets a first orbital mission later this decade.</p>
+          <p class="source">Space.com, Oct 22, 2026</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

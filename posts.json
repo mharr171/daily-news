@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-23",
+      "file": "posts/2026-10-23.html",
+      "summary": "San Mateo County voters will decide whether supervisors get more time to fill vacant elected offices, and San Francisco health officials report the city’s first death from a potent kratom-derived opioid sold in gas stations. The Warriors play their home opener tonight as the 49ers prepare for Atlanta with a depleted receiving corps, and NASA briefs the public today on plans to speed up its return to the moon.",
+      "headlines": [
+        {
+          "title": "San Francisco reports its first death from a gas-station opioid called MGM-15",
+          "topic": "General news"
+        },
+        {
+          "title": "Measure J would give San Mateo County supervisors 60 days to fill vacancies",
+          "topic": "General news"
+        },
+        {
+          "title": "Today in sports: Warriors’ home opener tonight; World Series begins",
+          "topic": "Sports"
+        },
+        {
+          "title": "NASA holds its “Artemis acceleration” briefing today",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "Anthropic previews Claude Duet, an agent that works in the background",
+          "topic": "Science & tech"
+        }
+      ]
+    },
+    {
       "date": "2026-10-22",
       "file": "posts/2026-10-22.html",
       "summary": "San Mateo County supervisors declared a local emergency on Tuesday to get ready for a strong El Niño winter, as the state touts millions of sandbags already in place. A federal judge limited the government’s hunt for noncitizen voters in California and eight other states, and the Warriors opened their season with a 22-point loss to the Lakers. In tech, AI tools helped uncover decades-old PHP flaws that put a huge share of websites at risk.",

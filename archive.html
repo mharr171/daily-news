@@ -490,6 +490,14 @@
       render();
     });
     document.getElementById("tools").hidden = false;
+    // Arriving from the front page's search box: archive.html?q=...
+    const fromUrl = new URLSearchParams(location.search).get("q");
+    if (fromUrl && fromUrl.trim()) {
+      const box = document.getElementById("q");
+      box.value = fromUrl.trim();
+      query = box.value;
+      if (termsOf(query).length) loadIndex(); else query = "";
+    }
     render();
   }
 

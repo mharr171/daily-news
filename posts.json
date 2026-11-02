@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-21",
+      "file": "posts/2026-10-21.html",
+      "summary": "San Mateo County’s district attorney says he won’t criminally charge ousted Sheriff Christina Corpus, and a new CNN poll puts President Trump’s approval at a record low two weeks before the midterms. The 49ers are 6–0 after Monday’s win over Washington as the Warriors open their season tonight in Los Angeles, and SpaceX says it will try to catch both halves of Starship on its next flight.",
+      "headlines": [
+        {
+          "title": "DA won’t file criminal charges against ousted Sheriff Christina Corpus",
+          "topic": "General news"
+        },
+        {
+          "title": "Today in sports: 49ers improve to 6–0; Warriors open at the Lakers tonight",
+          "topic": "Sports"
+        },
+        {
+          "title": "Trump’s approval hits a record low in CNN polling as Democrats lead the generic ballot",
+          "topic": "General news"
+        },
+        {
+          "title": "SpaceX will try to catch both Starship stages on its next test flight",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "ChatGPT adds a way to lock private chats behind a PIN or Face ID",
+          "topic": "Science & tech"
+        }
+      ]
+    },
+    {
       "date": "2026-10-20",
       "file": "posts/2026-10-20.html",
       "summary": "The 49ers beat Washington 23-17 on Monday night to move to 6-0, while the Valkyries dropped Game 2 of the WNBA Finals. California announced a $6 million settlement with 23andMe, federal prosecutors charged 28 green card holders with illegal voting, and Sequoia district students pushed back on a full-day phone ban.",

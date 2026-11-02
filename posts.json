@@ -3,26 +3,26 @@
     {
       "date": "2026-11-01",
       "file": "posts/2026-11-01.html",
-      "summary": "A shooting at a Fairfield Halloween store left one dead and six hurt, and a new analysis challenges the federal list of “likely noncitizen” voters in California ahead of Tuesday’s election. Clocks fall back an hour this weekend. The Golden State Valkyries won their first WNBA title and will parade in San Francisco on Wednesday, the Warriors rest Stephen Curry against the Clippers, and NASA is asking industry how to rescue the Hubble Space Telescope.",
+      "summary": "The Valkyries won the WNBA championship Saturday night, beating Atlanta 68–63 in Game 7 at Chase Center, and the Earthquakes climbed to third in the West. A shooting at a Fairfield Halloween store killed one person and wounded six, and backers of the Bay Area transit tax that would decide Caltrain’s future have raised $7.3 million. NASA’s retired Swift observatory is days from falling back to Earth.",
       "headlines": [
         {
-          "title": "Gunfire at a Fairfield Halloween store leaves one dead and six hurt",
-          "topic": "General news"
-        },
-        {
-          "title": "Analysis: 42% of names on DOJ’s “likely noncitizen” list aren’t on California’s voter rolls",
-          "topic": "General news"
-        },
-        {
-          "title": "Valkyries win the WNBA title in Game 7 for the franchise’s first championship",
+          "title": "Valkyries beat the Dream in Game 7 for their first WNBA title",
           "topic": "Sports"
         },
         {
-          "title": "Netflix renews “The Diplomat” for a fifth season",
-          "topic": "Culture"
+          "title": "Shooting at a Fairfield Spirit Halloween store leaves one dead and six wounded",
+          "topic": "General news"
         },
         {
-          "title": "NASA asks industry how to lift Hubble into a safer orbit",
+          "title": "Tech firms, unions and the Warriors put $7.3 million behind the Bay Area transit tax",
+          "topic": "General news"
+        },
+        {
+          "title": "Analysis finds 42% of names on the DOJ’s “likely noncitizen” list aren’t on California’s voter rolls",
+          "topic": "General news"
+        },
+        {
+          "title": "NASA’s Swift observatory is days from an uncontrolled reentry",
           "topic": "Science & tech"
         }
       ]

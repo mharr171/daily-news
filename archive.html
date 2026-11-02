@@ -122,6 +122,11 @@
   .entry li .topic { font-style: italic; color: var(--muted); font-size: .8rem; }
   .entry .more { font-size: .9rem; font-weight: 700; }
   .count { font-style: italic; color: var(--muted); margin: 1rem 0 0; }
+  .tier { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: 1.15rem;
+          letter-spacing: .02em; margin: 1.5rem 0 0; padding-bottom: .3rem; border-bottom: 4px double var(--rule);
+          display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .tier small { font-family: var(--serif); text-transform: none; font-size: .9rem; font-style: italic;
+                color: var(--muted); letter-spacing: 0; }
   .hit .meta { font-size: .85rem; color: var(--muted); margin: 0 0 .2rem; }
   .hit .meta a { font-weight: 700; color: var(--ink); }
   .hit .why { font-size: .92rem; font-style: italic; margin: 0 0 .5rem; }
@@ -211,18 +216,87 @@
   function link(href, text, cls) { const a = el("a", cls, text); a.href = href; return a; }
   // Lowercase and drop accents so "el nino" finds "El Niño" (keeps string length for NFC text).
   const fold = t => String(t).normalize("NFC").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-  // Append text with matches of `q` wrapped in <mark>.
+  // Search terms: the query split into words. Each term matches the start of a word,
+  // so "warrior" finds "Warriors" but "art" doesn't find "start".
+  const WORD = /[\p{L}\p{N}]+(?:['’][\p{L}]+)*/gu;
+  const STOP = new Set("a an and are as at be by for from in is it of on or the to with".split(" "));
+  const termsOf = q => (fold(q).match(WORD) || []).map(t => t.replace(/’/g, "'"));
+  const tokensOf = t => (fold(t).match(WORD) || []).map(w => w.replace(/’/g, "'"));
+  // Words of one or two letters (“el”, “ai”) must match a whole word, or “el” would find “election”.
+  const hit = (w, t) => t.length <= 2 ? w === t : w.startsWith(t);
+  const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+  // Append text with every word that starts with a search term wrapped in <mark>.
   function highlight(node, text, q) {
-    if (!q) { node.append(text); return node; }
+    const terms = Array.isArray(q) ? q : termsOf(q || "");
+    if (!terms.length) { node.append(text); return node; }
     text = String(text).normalize("NFC");
-    const lower = fold(text).length === text.length ? fold(text) : text.toLowerCase();
-    let i = 0, j;
-    while ((j = lower.indexOf(q, i)) !== -1) {
-      node.append(text.slice(i, j), el("mark", null, text.slice(j, j + q.length)));
-      i = j + q.length;
+    const lower = fold(text).length === text.length ? fold(text).replace(/’/g, "'") : text.toLowerCase().replace(/’/g, "'");
+    const alt = terms.slice().sort((a, b) => b.length - a.length)
+      .map(t => t.length <= 2 ? esc(t) + "(?![\\p{L}\\p{N}])" : esc(t) + "[\\p{L}\\p{N}'’]*").join("|");
+    const re = new RegExp("(^|[^\\p{L}\\p{N}])(?:" + alt + ")", "gu");
+    let i = 0, m;
+    while ((m = re.exec(lower))) {
+      const start = m.index + m[1].length, end = m.index + m[0].length;
+      node.append(text.slice(i, start), el("mark", null, text.slice(start, end)));
+      i = end;
+      if (m[0].length === 0) re.lastIndex++;
     }
     node.append(text.slice(i));
     return node;
+  }
+
+  // Score one story against the search terms.
+  // Tiers: 0 = the exact phrase, 1 = every word somewhere, 2+ = some of the words.
+  // Returns null when the story doesn't match at all.
+  function scoreStory(st, terms) {
+    const fields = [st.t, st.s, st.w, st.src, st.c];
+    const toks = [];          // all tokens, with a gap between fields so phrases can't cross them
+    const inHead = [];        // whether each token is in the headline
+    fields.forEach((f, fi) => {
+      if (!f) return;
+      tokensOf(f).forEach(w => { toks.push(w); inHead.push(fi === 0); });
+      toks.push(null); inHead.push(false);
+    });
+    const hitsFor = terms.map(t => { const a = []; toks.forEach((w, i) => { if (w && hit(w, t)) a.push(i); }); return a; });
+    const found = hitsFor.map(a => a.length > 0);
+    const nFound = found.filter(Boolean).length;
+    if (!nFound) return null;
+    const head = hitsFor.some(a => a.some(i => inHead[i]));
+
+    if (nFound === terms.length) {
+      // Exact phrase: the terms appear back to back, in order.
+      if (terms.length > 1) {
+        for (const p of hitsFor[0]) {
+          if (terms.every((t, k) => toks[p + k] && hit(toks[p + k], t))) {
+            return { tier: 0, key: "phrase", near: 0, head: inHead[p] };
+          }
+        }
+      } else {
+        return { tier: 0, key: "phrase", near: 0, head };
+      }
+      // Every word: rank by the smallest stretch of text that holds them all.
+      const pts = [];
+      hitsFor.forEach((a, k) => a.forEach(i => pts.push([i, k])));
+      pts.sort((x, y) => x[0] - y[0]);
+      const cnt = new Array(terms.length).fill(0);
+      let have = 0, lo = 0, best = Infinity;
+      for (let hi = 0; hi < pts.length; hi++) {
+        if (cnt[pts[hi][1]]++ === 0) have++;
+        while (have === terms.length) {
+          best = Math.min(best, pts[hi][0] - pts[lo][0]);
+          if (--cnt[pts[lo][1]] === 0) have--;
+          lo++;
+        }
+      }
+      return { tier: 1, key: "all", near: best, head };
+    }
+
+    // Some words: a story must contain at least one word that isn't a filler word like “the”.
+    if (!terms.some((t, k) => found[k] && !STOP.has(t))) return null;
+    // More matched words rank higher; among equal counts, earlier words in the query come first.
+    const key = found.map(f => (f ? "1" : "0")).join("");
+    return { tier: 2 + (terms.length - nFound), key, near: 0, head };
   }
 
   let all = [], topic = "", query = "";
@@ -241,17 +315,47 @@
     const months = document.getElementById("months");
     months.hidden = true;
     const numberOf = Object.fromEntries(all.map(e => [e.date, e.no]));
+    const terms = termsOf(query);
     const hits = [];
     index.forEach(ed => (ed.stories || []).forEach(st => {
       if (topic && st.c !== topic) return;
-      const hay = fold([st.t, st.s, st.w, st.src, st.c].filter(Boolean).join(" "));
-      if (hay.includes(query)) hits.push([ed, st]);
+      const sc = terms.length ? scoreStory(st, terms) : null;
+      if (sc) hits.push({ ed, st, sc });
     }));
     if (!hits.length) { list.replaceChildren(el("p", "notice", "No stories match that search.")); return; }
-    const shown = hits.slice(0, 150);
+
+    // Order: tier, then (within “some words”) which words matched, then closeness, headline matches, newest.
+    hits.sort((a, b) =>
+      a.sc.tier - b.sc.tier ||
+      (a.sc.key < b.sc.key ? 1 : a.sc.key > b.sc.key ? -1 : 0) ||
+      a.sc.near - b.sc.near ||
+      (b.sc.head - a.sc.head) ||
+      (a.ed.d < b.ed.d ? 1 : a.ed.d > b.ed.d ? -1 : 0));
+
+    const LIMIT = 150;
+    const shown = hits.slice(0, LIMIT);
     const parts = [el("p", "count", hits.length + (hits.length === 1 ? " story matches" : " stories match") +
-      (hits.length > shown.length ? ". Showing the newest " + shown.length + "." : "."))];
-    shown.forEach(([ed, st]) => {
+      (hits.length > shown.length ? ". Showing the best " + shown.length + "." : "."))];
+
+    const quoteList = ws => ws.map(w => "“" + w + "”").join(ws.length === 2 ? " and " : ", ");
+    function label(sc) {
+      if (sc.key === "phrase") return terms.length > 1 ? "Exact phrase: “" + terms.join(" ") + "”" : "Matches “" + terms[0] + "”";
+      if (sc.key === "all") return "All the words, not side by side";
+      const ws = terms.filter((t, k) => sc.key[k] === "1");
+      return "Only " + quoteList(ws);
+    }
+    const groupCounts = {};
+    hits.forEach(h => { groupCounts[h.sc.key] = (groupCounts[h.sc.key] || 0) + 1; });
+
+    let lastKey = null;
+    shown.forEach(({ ed, st, sc }) => {
+      if (terms.length > 1 && sc.key !== lastKey) {
+        const n = groupCounts[sc.key];
+        const h = el("h2", "tier", label(sc));
+        h.append(el("small", null, n + (n === 1 ? " story" : " stories")));
+        parts.push(h);
+        lastKey = sc.key;
+      }
       const row = el("article", "entry hit");
       const d = parse(ed.d);
       const dl = el("div", "dateline");
@@ -265,14 +369,14 @@
       const h3 = el("h3");
       const a = link(st.u, "");
       a.target = "_blank"; a.rel = "noopener";
-      highlight(a, st.t, query);
+      highlight(a, st.t, terms);
       h3.append(a);
       body.append(meta, h3);
-      if (st.s) body.append(highlight(el("p", "summary"), st.s, query));
-      if (st.w && fold(st.w).includes(query)) {
-        const w = el("p", "why"); w.append("Why it matters: "); highlight(w, st.w, query); body.append(w);
+      if (st.s) body.append(highlight(el("p", "summary"), st.s, terms));
+      if (st.w && tokensOf(st.w).some(w => terms.some(t => hit(w, t)))) {
+        const w = el("p", "why"); w.append("Why it matters: "); highlight(w, st.w, terms); body.append(w);
       }
-      if (st.src) body.append(highlight(el("p", "meta"), st.src, query));
+      if (st.src) body.append(highlight(el("p", "meta"), st.src, terms));
       row.append(dl, body);
       parts.push(row);
     });
@@ -283,8 +387,8 @@
     const h = e.headlines || [];
     if (topic && !h.some(x => x.topic === topic)) return false;
     if (!query) return true;
-    const hay = [e.summary || "", fmtLong(e.date)].concat(h.map(x => x.title + " " + (x.topic || ""))).join(" ").toLowerCase();
-    return fold(hay).includes(query);
+    const toks = tokensOf([e.summary || "", fmtLong(e.date)].concat(h.map(x => x.title + " " + (x.topic || ""))).join(" "));
+    return termsOf(query).every(t => toks.some(w => hit(w, t)));
   }
 
   function render() {
@@ -381,8 +485,8 @@
     if (topics.length < 2) chips.hidden = true;
 
     document.getElementById("q").addEventListener("input", ev => {
-      query = fold(ev.target.value.trim());
-      if (query) loadIndex();
+      query = ev.target.value.trim();
+      if (termsOf(query).length) loadIndex(); else query = "";
       render();
     });
     document.getElementById("tools").hidden = false;

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wednesday, October 7, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 7: Wednesday, October 7, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-10-07.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Wednesday, October 7, 2026 | Live Full Stack">
+<meta property="og:description" content="The Iran war has pushed Muni’s fuel costs up 58%, and President Trump says he may seek a federal gas tax holiday as prices squeeze drivers. Fleet Week is underway with robotaxis barred from the waterfront this weekend, the Warriors routed the Lakers, and NASA’s Crew-12 left the space station this morning for a splashdown off California.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-07.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body data-date="2026-10-07">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 7</p>
+      <h1>Wednesday, October 7, 2026</h1>
+      <p class="summary">The Iran war has pushed Muni’s fuel costs up 58%, and President Trump says he may seek a federal gas tax holiday as prices squeeze drivers. Fleet Week is underway with robotaxis barred from the waterfront this weekend, the Warriors routed the Lakers, and NASA’s Crew-12 left the space station this morning for a splashdown off California.</p>
+    </header>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format:
+         <article class="story">
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://sfstandard.com/2026/10/06/iran-war-has-sent-muni-s-fuel-costs-soaring-58/" target="_blank" rel="noopener">Iran war pushes Muni’s fuel bill up 58% as transit tax votes near</a></h3>
+          <p>SFMTA spent an average of $1.7 million a month on fuel from March through June, about 58% more than before the war, as the Strait of Hormuz blockade sent California diesel from $5.15 to $8.36 a gallon in a year. Muni’s 556 fuel-burning buses use about 300,000 gallons of diesel a month, and the agency already faces a $307 million operating deficit. SFMTA is counting on two November tax measures to avoid drastic service cuts.</p>
+          <p class="why"><strong>Why it matters:</strong> The same fuel spike hits SamTrans and other Peninsula transit budgets, and Bay Area voters decide transit funding on Nov. 3.</p>
+          <p class="source">San Francisco Standard, Oct 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcbayarea.com/news/local/san-francisco-fleet-week-2026-robotaxi-geofence-traffic/4154233/" target="_blank" rel="noopener">Fleet Week is underway; robotaxis barred from the waterfront Friday through Sunday</a></h3>
+          <p>Fleet Week began Tuesday with at least 50 events over five days. From 10 a.m. to 6 p.m. Friday through Sunday, SFMTA will geofence much of the northern waterfront so driverless cars can’t pick up or drop off riders there, and they’ll be kept out of the Presidio entirely. Taxis, Uber and Lyft, private cars and transit are still allowed, and Muni is adding service to head off July 4–style gridlock.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula residents driving or taking BART and Caltrain to the air show should plan for crowds and expect robotaxis to be unavailable near the waterfront.</p>
+          <p class="source">NBC Bay Area, Oct 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.ktvu.com/news/president-trump-considering-suspending-federal-gas-tax" target="_blank" rel="noopener">Trump says he’s weighing a suspension of the federal gas tax</a></h3>
+          <p>Asked Tuesday about waiving the 18.4-cent-a-gallon federal gas tax, President Trump said “We’re thinking about that,” a day after expanding access to tax-free diesel. The White House is worried about voter anger over fuel prices before the midterms, and a Reuters/Ipsos poll put his approval at a record-low 32%. Any suspension would need approval from Congress, where Republicans hold narrow majorities.</p>
+          <p class="why"><strong>Why it matters:</strong> California drivers are paying well over $6 a gallon because of the war, so even a small federal break would show up at Peninsula pumps.</p>
+          <p class="source">KTVU, Oct 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://thevoicesf.org/caltrain-muni-secure-federal-grants-for-accessibility-upgrades/" target="_blank" rel="noopener">Caltrain wins $14.1 million to make its 22nd Street station wheelchair accessible</a></h3>
+          <p>A Federal Transit Administration grant will add ramps to both platforms at the stairs-only Dogpatch station, along with resurfacing, tactile tiles, lighting and signs. Design should finish by summer 2027, with construction done by the end of 2029 if funding holds. Muni separately won $2.4 million for four accessible boarding islands on the N-Judah.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula Caltrain riders with disabilities will gain a usable stop for the Dogpatch and Mission Bay area, one of the line’s fastest-growing stations.</p>
+          <p class="source">The Voice of San Francisco, Oct 6, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.nba.com/news/starting-5-october-7-2026" target="_blank" rel="noopener">Today in sports: Warriors rout the Lakers 124–98; preseason game at Portland tonight</a></h3>
+          <p>On Nellie Night honoring the late Don Nelson, rookie Yaxel Lendeborg had 17 points and nine rebounds and Stephen Curry scored 16 in 14 minutes as the Warriors beat the Lakers at Chase Center. Golden State plays at Portland tonight, where Damian Lillard could return from his Achilles tear. The 4–0 49ers visit Seattle and the Earthquakes visit Colorado on Sunday.</p>
+          <p class="source">NBA.com, Oct 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.49erswebzone.com/news/203935" target="_blank" rel="noopener">Most national power rankings put the 4–0 49ers at No. 1</a></h3>
+          <p>After beating Denver, San Francisco tops most Week 5 rankings thanks to a high-scoring offense and one of the stingiest defenses, though Sporting News has it second and Sports Illustrated fifth. Injuries are the worry: Nick Bosa is out with a calf injury and receiver Ricky Pearsall is lost for the season. Sunday’s NFC West game at Seattle is the next test.</p>
+          <p class="source">49ers Webzone, Oct 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nba.com/news/starting-5-october-6-2026" target="_blank" rel="noopener">Jaylen Brown scores 22 in his 76ers debut in a rout of the Knicks</a></h3>
+          <p>Brown scored all 22 in the first half as Philadelphia beat the defending champion Knicks 120–97 in the preseason, with LeBron James, Tyrese Maxey and Joel Embiid sitting out. LaMelo Ball also debuted for Minnesota in a win over Milwaukee. The regular season tips off Oct. 20.</p>
+          <p class="source">NBA.com, Oct 6, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.foxnews.com/media/digger-bombs-rare-box-office-misfire-tom-cruise" target="_blank" rel="noopener">‘Verity’ leads the box office as Tom Cruise’s ‘Digger’ stumbles</a></h3>
+          <p>The Colleen Hoover thriller starring Anne Hathaway and Dakota Johnson opened to $32.6 million, ahead of Zach Cregger’s “Resident Evil” at $12.5 million and Brad Pitt’s “Heart of the Beast” at $11 million. Alejandro G. Iñárritu’s “Digger,” starring Cruise, took in just $8 million domestically against a reported budget of $125 million to $150 million.</p>
+          <p class="source">Fox News, Oct 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://thegrio.com/2026/10/06/will-smith-dj-jazzy-jeff-215-series/" target="_blank" rel="noopener">Will Smith and DJ Jazzy Jeff’s origin story is headed to TV as ‘215’</a></h3>
+          <p>Smith’s Westbrook Studios is developing a scripted series loosely based on how he and Jeffrey “DJ Jazzy Jeff” Townes came up in Philadelphia hip-hop. It’s the first project from a new partnership with The Malar Group. No network, cast or release date has been announced.</p>
+          <p class="source">theGrio, Oct 6, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-undocks-in-dragon-for-ride-home/" target="_blank" rel="noopener">Crew-12 undocks from the space station for Thursday’s splashdown off California</a></h3>
+          <p>Jessica Meir, Jack Hathaway, Sophie Adenot and Andrey Fedyaev pulled away from the station in their SpaceX Dragon at 8:05 a.m. EDT (5:05 a.m. Pacific) this morning after closing the hatch two hours earlier. Splashdown in the Pacific off California is planned for about 8:34 a.m. Pacific Thursday. Five other spacecraft remain docked, including the Crew-13 Dragon.</p>
+          <p class="source">NASA, Oct 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.foxnews.com/tech/how-search-anything-iphone-galaxy-pixel" target="_blank" rel="noopener">How to use AI visual search on your iPhone, Galaxy or Pixel</a></h3>
+          <p>Apple’s Visual Intelligence in iOS 27 can now search what’s on your screen: take a screenshot with the side and volume-up buttons, then pick Search or Ask (iPhone 15 Pro or newer). On Galaxy phones, turn on Circle to Search under display settings and long-press the home button or bar; Pixel 6 and newer work the same way. Some apps block the feature, and AI answers are worth double-checking.</p>
+          <p class="source">Fox News, Oct 6, 2026</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

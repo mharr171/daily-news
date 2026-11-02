@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-07",
+      "file": "posts/2026-10-07.html",
+      "summary": "The Iran war has pushed Muni’s fuel costs up 58%, and President Trump says he may seek a federal gas tax holiday as prices squeeze drivers. Fleet Week is underway with robotaxis barred from the waterfront this weekend, the Warriors routed the Lakers, and NASA’s Crew-12 left the space station this morning for a splashdown off California.",
+      "headlines": [
+        {
+          "title": "Iran war pushes Muni’s fuel bill up 58% as transit tax votes near",
+          "topic": "General news"
+        },
+        {
+          "title": "Trump says he’s weighing a suspension of the federal gas tax",
+          "topic": "General news"
+        },
+        {
+          "title": "Fleet Week is underway; robotaxis barred from the waterfront Friday through Sunday",
+          "topic": "General news"
+        },
+        {
+          "title": "Today in sports: Warriors rout the Lakers 124–98; preseason game at Portland tonight",
+          "topic": "Sports"
+        },
+        {
+          "title": "Crew-12 undocks from the space station for Thursday’s splashdown off California",
+          "topic": "Science & tech"
+        }
+      ]
+    },
+    {
       "date": "2026-10-06",
       "file": "posts/2026-10-06.html",
       "summary": "President Trump suggested Iran could ‘take out’ Los Angeles and San Diego, drawing sharp responses from Gov. Newsom and both cities’ mayors. Caltrain says weekend ridership is now 50% above pre-pandemic levels even as it warns of cuts, and the Warriors host the Lakers tonight while the 49ers prepare for Seattle without fullback Kyle Juszczyk.",

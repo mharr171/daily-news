@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Friday, October 2, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 2: Friday, October 2, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-10-02.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Friday, October 2, 2026 | Live Full Stack">
+<meta property="og:description" content="Newsom’s last signature as governor puts a $7.5 billion science research bond before voters in 2028, and the Pentagon is creating a new command for autonomous weapons. SpaceX’s Crew-13 reached the space station Thursday night, and Steve Kerr is rebuilding the Warriors’ offense around five shooters. In theaters this weekend, Verity is expected to beat Tom Cruise’s Digger, and Miranda Lambert releases a country-disco album.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-02.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body data-date="2026-10-02">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 2</p>
+      <h1>Friday, October 2, 2026</h1>
+      <p class="summary">Newsom’s last signature as governor puts a $7.5 billion science research bond before voters in 2028, and the Pentagon is creating a new command for autonomous weapons. SpaceX’s Crew-13 reached the space station Thursday night, and Steve Kerr is rebuilding the Warriors’ offense around five shooters. In theaters this weekend, Verity is expected to beat Tom Cruise’s Digger, and Miranda Lambert releases a country-disco album.</p>
+    </header>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format:
+         <article class="story">
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://kioncentralcoast.com/news/top-stories/2026/10/01/newsom-wraps-up-final-legislative-session-ahead-of-california-governors-office-exit/" target="_blank" rel="noopener">Voters will decide a $7.5 billion science research bond in 2028</a></h3>
+          <p>New since Thursday’s wrap-up: Newsom’s last signature of the session, made atop the Golden Gate Bridge, went on SB 895, which asks voters in March 2028 to approve a $7.5 billion bond for a state foundation funding peer-reviewed scientific and health research. In his final session he signed more than 1,000 bills and vetoed 120, for about 8,000 signed over eight years; he leaves office in January and says he may still call special sessions.</p>
+          <p class="why"><strong>Why it matters:</strong> Bay Area universities, hospitals and the South San Francisco biotech cluster would be among the biggest competitors for the research money if voters approve it.</p>
+          <p class="source">KION (KPIX), Oct 1, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.democracynow.org/2026/10/1/headlines" target="_blank" rel="noopener">Pentagon creates a new command for autonomous drones and robots</a></h3>
+          <p>Pentagon chief Pete Hegseth announced a new four-star command, called AutoWarCom, to rapidly expand the military’s use of autonomous drones and robots. He also said the Pentagon will cut 20% of its generals and admirals.</p>
+          <p class="why"><strong>Why it matters:</strong> Bay Area tech and robotics companies could see new defense work from the push, along with renewed debate over military uses of AI built in Silicon Valley.</p>
+          <p class="source">Democracy Now!, Oct 1, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.democracynow.org/2026/10/1/headlines" target="_blank" rel="noopener">Judge to review the secret legal basis for military boat strikes</a></h3>
+          <p>A federal judge will examine the Pentagon’s secret legal justification for its lethal strikes on boats, which have killed more than 200 people. After reviewing it, the judge will decide whether the reasoning should be made public.</p>
+          <p class="why"><strong>Why it matters:</strong> Californians following the military’s expanding use of force could learn how the government justifies the strikes, a question that may shape oversight debates in Congress.</p>
+          <p class="source">Democracy Now!, Oct 1, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.49erswebzone.com/news/203699-week-huge-49ers-hunt-crown/" target="_blank" rel="noopener">Today in sports: 49ers lead the NFC West as Warriors train in Hawaii</a></h3>
+          <p>The 49ers sit alone atop the NFC West at 3-0 after last Sunday’s 36-30 win over Arizona and host the Broncos this Sunday at 1:25 p.m. at Levi’s Stadium. The Warriors are midway through training camp at BYU–Hawaii, which runs through Saturday, ahead of Sunday’s preseason opener against the Clippers in Honolulu. The Earthquakes are idle until Oct. 10, and the Giants are in their offseason.</p>
+          <p class="source">49ers Webzone, Sep 27, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcsportsbayarea.com/nba/golden-state-warriors/5-out-offense-training-camp-hawaii/1967641/" target="_blank" rel="noopener">Kerr installs a five-out offense at Warriors camp</a></h3>
+          <p>Steve Kerr used the first practice in Laie to install a five-out offense, saying the Warriors must keep up with how the league has changed after years of playing two big men. He plans to keep Steph Curry and Draymond Green together in the starting lineup and would like Al Horford off the bench for 18 to 20 minutes, but Kristaps Porziņģis didn’t travel to Hawaii and is out indefinitely with a health issue.</p>
+          <p class="source">NBC Sports Bay Area, Sep 30, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.thewrap.com/industry-news/box-office/tom-cruise-digger-box-office-tracking-opening-weekend/" target="_blank" rel="noopener">New this weekend: Verity and Digger hit theaters, plus Miranda Lambert’s disco turn</a></h3>
+          <p>In theaters, Amazon MGM’s Verity with Anne Hathaway and Dakota Johnson is tracking for $35 million or more and the No. 1 spot, while Alejandro G. Iñárritu’s Digger, starring Tom Cruise, is projected at $12 million to $15 million against a $125 million budget. On streaming, Netflix’s seven-part East of Eden with Florence Pugh and HBO’s legal drama War with Dominic West and Sienna Miller premiered Thursday. New albums out today include Miranda Lambert’s Crisco, Victoria Monét’s Frequency of Love and Johnny Marr’s The Age of Everything, and the Hardly Strictly Bluegrass festival plays Golden Gate Park this weekend.</p>
+          <p class="source">TheWrap, Sep 30, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://riffmagazine.com/album-reviews/miranda-lambert-crisco/" target="_blank" rel="noopener">Miranda Lambert goes country-disco on new album Crisco</a></h3>
+          <p>Lambert’s 11th album, out today on MCA Nashville, blends country with late-’70s and early-’80s disco strings across 12 tracks. It features Ella Langley on opener “Snakeskin Boots,” Chris Stapleton on “A Song to Sing” and a cover of Jim Croce’s “I’ll Have to Say I Love You in a Song”; RIFF gave it 8 out of 10, calling it a fun showcase of a veteran at ease.</p>
+          <p class="source">RIFF Magazine, Sep 30, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.nasa.gov/blogs/spacestation/2026/10/01/crew-13-members-enter-station-join-expedition-75/" target="_blank" rel="noopener">Crew-13 docks at the space station</a></h3>
+          <p>A Falcon 9 lifted off from Cape Canaveral at 11:10 a.m. EDT Thursday, its first stage landed back at the Cape, and the Dragon docked to the station’s Harmony module at 7 p.m. EDT. NASA’s Jessica Watkins and Luke Delaney, Canada’s Joshua Kutryk and Russia’s Sergey Teteryatnikov floated aboard after the hatch opened at 9:19 p.m., joining the seven-member Expedition 75 crew.</p>
+          <p class="source">NASA, Oct 1, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.democracynow.org/2026/10/2/headlines" target="_blank" rel="noopener">Microsoft-linked data center ran gas generators without permits, report finds</a></h3>
+          <p>An investigation found that a Microsoft-linked data center in Vineland, New Jersey, ran dozens of gas-fired generators without permits for nearly a year, releasing large amounts of smog-forming pollution. The finding adds to questions about how the rush to build computing capacity for AI and cloud services is being powered.</p>
+          <p class="source">Democracy Now!, Oct 2, 2026</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

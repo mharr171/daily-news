@@ -153,23 +153,27 @@
     {
       "date": "2026-10-26",
       "file": "posts/2026-10-26.html",
-      "summary": "San Mateo County is urging residents to get ready now for what could be a strong El Niño winter. The 49ers lost their first game of the season in Atlanta, and the Warriors try again for their first win tonight in Denver. Tonight’s Hunter’s Moon is the best full moon of the fall to catch rising.",
+      "summary": "A five-county transit sales tax on the Nov. 3 ballot could decide whether Caltrain keeps weekend service, and a hit-and-run driver shut down Muni’s Market Street subway for part of the weekend. The 49ers’ unbeaten start ended in Atlanta, the Warriors are still looking for their first win, and SpaceX test-fired the booster for its next Starship flight.",
       "headlines": [
         {
-          "title": "San Mateo County urges early storm prep as a strong El Niño grows likely",
+          "title": "Regional transit tax would keep Caltrain and BART from deep cuts",
           "topic": "General news"
         },
         {
-          "title": "49ers’ unbeaten run ends with a 29–20 loss in Atlanta",
+          "title": "Weekend recap: 49ers’ unbeaten start ends; Warriors and Quakes lose",
           "topic": "Sports"
         },
         {
-          "title": "October’s Hunter’s Moon peaks overnight",
-          "topic": "Science & tech"
+          "title": "49ers turn the ball over four times in a 29–20 loss at Atlanta",
+          "topic": "Sports"
         },
         {
-          "title": "New this week: The Mob on Hulu and Netflix’s Minimum Wage",
-          "topic": "Culture"
+          "title": "Car abandoned in Muni’s Market Street tunnel halts subway service",
+          "topic": "General news"
+        },
+        {
+          "title": "SpaceX test-fires the Super Heavy booster for Starship Flight 15",
+          "topic": "Science & tech"
         }
       ]
     },

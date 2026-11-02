@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Monday, October 26, 2026 | Live Full Stack</title>
-<meta name="description" content="Live Full Stack, issue 3: Monday, October 26, 2026.">
+<meta name="description" content="Live Full Stack, issue 26: Monday, October 26, 2026.">
 <link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../fonts/fonts.css">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Live Full Stack">
 <meta property="og:title" content="Monday, October 26, 2026 | Live Full Stack">
-<meta property="og:description" content="San Mateo County is urging residents to get ready now for what could be a strong El Niño winter. The 49ers lost their first game of the season in Atlanta, and the Warriors try again for their first win tonight in Denver. Tonight’s Hunter’s Moon is the best full moon of the fall to catch rising.">
+<meta property="og:description" content="A five-county transit sales tax on the Nov. 3 ballot could decide whether Caltrain keeps weekend service, and a hit-and-run driver shut down Muni’s Market Street subway for part of the weekend. The 49ers’ unbeaten start ended in Atlanta, the Warriors are still looking for their first win, and SpaceX test-fired the booster for its next Starship flight.">
 <meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-26.html">
 <meta property="og:image" content="https://www.livefullstack.com/social-card.png">
 <meta property="og:image:width" content="1200">
@@ -101,6 +101,14 @@
   .why strong { font-style: normal; color: var(--spot); }
   .source { font-size: .88rem; color: var(--muted); margin: 0; }
 
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
 
   /* Edition navigation */
   .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
@@ -143,9 +151,9 @@
 
   <main>
     <header class="edition-head">
-      <p class="stamp">Issue No. 3</p>
+      <p class="stamp">Issue No. 26</p>
       <h1>Monday, October 26, 2026</h1>
-      <p class="summary">San Mateo County is urging residents to get ready now for what could be a strong El Niño winter. The 49ers lost their first game of the season in Atlanta, and the Warriors try again for their first win tonight in Denver. Tonight’s Hunter’s Moon is the best full moon of the fall to catch rising.</p>
+      <p class="summary">A five-county transit sales tax on the Nov. 3 ballot could decide whether Caltrain keeps weekend service, and a hit-and-run driver shut down Muni’s Market Street subway for part of the weekend. The 49ers’ unbeaten start ended in Atlanta, the Warriors are still looking for their first win, and SpaceX test-fired the booster for its next Starship flight.</p>
     </header>
 
     <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
@@ -163,9 +171,21 @@
       <h2>General news</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://sanmateocountynews.com/2026/10/24/san-mateo-county-sounds-early-alarm-over-winter-storms-as-strong-el-nino-becomes-increasingly-likely/" target="_blank" rel="noopener">San Mateo County urges early storm prep as a strong El Niño grows likely</a></h3>
-          <p>NOAA puts the odds of a strong to very strong El Niño this winter above 83%, and county leaders worry most about storms that line up with high tides or hit already soaked hillsides. After declaring a local emergency, the county is clearing drains and culverts, mapping sandbag sites, and forming a task force that may include Caltrans and PG&amp;E. Residents can sign up for emergency alerts through SMC Alert.</p>
-          <p class="why"><strong>Why it matters:</strong> Millbrae’s hillside streets and bayfront flats face both landslide and flood risk, so now is the time to clear gutters, check insurance, and sign up for alerts.</p>
+          <h3><a href="https://www.sfexaminer.com/news/transit/bay-area-voters-weigh-two-tax-increases-for-public-transit/article_53955557-ba18-4c90-aac8-c33415ea8e2f.html" target="_blank" rel="noopener">Regional transit tax would keep Caltrain and BART from deep cuts</a></h3>
+          <p>Prop. RTM would add a half-cent sales tax in San Mateo, Alameda, Contra Costa and Santa Clara counties, and a full cent in San Francisco, for 14 years, raising nearly $1 billion a year for transit. Without it, Caltrain says it would drop weekend service, run hourly trains and stop at 9 p.m., while BART would close stations at 9 p.m. and cut to three lines. San Francisco voters also face Prop. H, a parcel tax for Muni.</p>
+          <p class="why"><strong>Why it matters:</strong> Millbrae’s BART and Caltrain station would see far fewer trains if the measure fails, and county shoppers would pay the higher sales tax if it passes.</p>
+          <p class="source">San Francisco Examiner, Oct 25, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://missionlocal.org/2026/10/driver-abandoned-vehicle-inside-muni-tunnel/" target="_blank" rel="noopener">Car abandoned in Muni’s Market Street tunnel halts subway service</a></h3>
+          <p>A driver steered a car into the Muni Metro tunnel near Folsom Street and the Embarcadero on Saturday afternoon, then fled on foot. Police are treating it as a hit-and-run; the car was towed after damaging city property. Subway service through the tunnel was disrupted Saturday evening and resumed Sunday morning.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula riders who transfer from BART or Caltrain to Muni downtown lost the subway for an evening.</p>
+          <p class="source">Mission Local, Oct 25, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sanmateocountynews.com/2026/10/24/san-mateo-county-urges-dog-and-cat-owners-to-act-before-pet-licensing-penalty-waiver-ends/" target="_blank" rel="noopener">San Mateo County waives late fees for unlicensed dogs and cats through November</a></h3>
+          <p>Pet owners who have fallen behind on licensing can catch up without late fees or penalties until Nov. 30; regular license fees still apply. Dogs and cats need a license by three months of age or within 60 days of adoption or moving to the county. Licenses can be bought online through PetData, by mail, or in person with a current rabies certificate.</p>
+          <p class="why"><strong>Why it matters:</strong> Millbrae residents can avoid penalties by licensing pets before the waiver ends Nov. 30.</p>
           <p class="source">San Mateo County News, Oct 24, 2026</p>
         </article>
       </div>
@@ -174,9 +194,14 @@
       <h2>Sports</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.foxsports.com/nfl/week-7-san-francisco-49ers-vs-atlanta-falcons-oct-25-2026-game-boxscore-11243" target="_blank" rel="noopener">49ers’ unbeaten run ends with a 29–20 loss in Atlanta</a></h3>
-          <p>49ers: lost 29–20 at the Falcons on Sunday despite outgaining Atlanta 400 yards to 295; four turnovers proved costly, and Christian McCaffrey had 100 total yards and a touchdown. San Francisco is 6–1 and heads into its bye week. Warriors: 0–3, play at Denver tonight. Giants: off-season. Earthquakes: waiting on the MLS Cup Playoffs.</p>
-          <p class="source">Fox Sports, Oct 25, 2026</p>
+          <h3><a href="https://www.foxsports.com/nba/memphis-grizzlies-vs-golden-state-warriors-oct-23-2026-game-boxscore-106558" target="_blank" rel="noopener">Weekend recap: 49ers’ unbeaten start ends; Warriors and Quakes lose</a></h3>
+          <p>Friday: Grizzlies 111, Warriors 108, as Ty Jerome scored 28 and Stephen Curry had 24. Saturday: Suns 131, Warriors 122 behind 43 from Devin Booker, and FC Dallas 3, Earthquakes 0. Sunday: Falcons 29, 49ers 20, the 49ers’ first loss (now 6-1). This week: the 0–3 Warriors visit Denver tonight on Peacock and Minnesota on Wednesday, while the Quakes host Colorado on Wednesday and Real Salt Lake on Saturday to close the regular season.</p>
+          <p class="source">Fox Sports, Oct 23, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.thescore.com/nfl/event/140677" target="_blank" rel="noopener">49ers turn the ball over four times in a 29–20 loss at Atlanta</a></h3>
+          <p>San Francisco led 14–12 at halftime but never scored again until the fourth quarter as Michael Penix Jr. threw three touchdown passes for the Falcons. Brock Purdy threw for 288 yards with two interceptions, and the 49ers lost four turnovers to Atlanta’s none. Christian McCaffrey and Kaelon Black ran for touchdowns, and George Kittle had a season-high eight catches.</p>
+          <p class="source">theScore, Oct 25, 2026</p>
         </article>
       </div>
     </section>
@@ -184,9 +209,14 @@
       <h2>Culture</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.tvline.com/2293667/what-to-watch-october-26-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">New this week: The Mob on Hulu and Netflix’s Minimum Wage</a></h3>
-          <p>Hulu premieres The Mob, a reality competition hosted by Parker Posey and set in an Italian villa with up to $250,000 on the line. Netflix drops all 14 episodes of Minimum Wage, and Peacock opens its second season of NBA Monday with the Warriors at the Nuggets.</p>
+          <h3><a href="https://www.tvline.com/2293667/what-to-watch-october-26-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">The Mob and Minimum Wage lead Monday’s new TV</a></h3>
+          <p>Hulu premieres The Mob, a reality competition hosted by Parker Posey in which celebrities take on mob-movie challenges, with two episodes. Netflix drops all 14 episodes of Minimum Wage, and BritBox starts season 19 of Would I Lie to You? Peacock’s NBA Monday also returns tonight with the Warriors at the Nuggets.</p>
           <p class="source">TVLine, Oct 26, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2295195/what-to-watch-week-of-october-25-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">Week ahead on TV: Nocturne, Dexter’s return and an American Horror Story finale</a></h3>
+          <p>Apple TV premieres Nocturne on Friday, with Liev Schreiber hunting a serial killer played by Stephen Graham. Dexter: Resurrection returns to Paramount+ the same day, and American Horror Story ends its 13th season Thursday on FX. FX also closes out The Drop: A Snowfall Saga on Tuesday.</p>
+          <p class="source">TVLine, Oct 24, 2026</p>
         </article>
       </div>
     </section>
@@ -194,9 +224,14 @@
       <h2>Science &amp; tech</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.space.com/stargazing/octobers-hunters-moon-stalks-into-the-autumn-sky-tonight-heres-what-you-need-to-know" target="_blank" rel="noopener">October’s Hunter’s Moon peaks overnight</a></h3>
-          <p>The full moon reached peak illumination at 9:12 p.m. Pacific on Sunday, so it will still look full when it rises in the east around sunset tonight. The name comes from the bare, harvested fields of fall, when hunters once had an easier time spotting game.</p>
-          <p class="source">Space.com, Oct 25, 2026</p>
+          <h3><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video" target="_blank" rel="noopener">SpaceX test-fires the Super Heavy booster for Starship Flight 15</a></h3>
+          <p>SpaceX fired all 33 Raptor 3 engines on Super Heavy Booster 22 for about 15 seconds at Starbase in South Texas on Sunday. The booster will be paired with Ship 42 for Starship’s 15th test flight. SpaceX hasn’t set a date, but recent campaigns suggest liftoff could come in mid-to-late November.</p>
+          <p class="source">Space.com, Oct 26, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.space.com/stargazing/medusas-eye-halloween-fireballs-and-more-5-skywatching-targets-to-look-out-for-this-spooky-season" target="_blank" rel="noopener">Skywatching this week: the ‘Demon Star’ dims and Taurid fireballs begin</a></h3>
+          <p>The variable star Algol, in the southeast after sunset, fades noticeably around its eclipses on Thursday and next Sunday, though not on Halloween night. The Taurid meteor shower is active now and can produce rare, bright fireballs ahead of its early-November peak. The Pleiades climb high in the east before midnight.</p>
+          <p class="source">Space.com, Oct 24, 2026</p>
         </article>
       </div>
     </section>

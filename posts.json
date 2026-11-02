@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-10",
+      "file": "posts/2026-10-10.html",
+      "summary": "Hurricane Isaias hit the Florida Panhandle Friday night, the season’s first and latest-forming Atlantic hurricane in more than a century, while powerful twin quakes shook Panama. Closer to home, a new state law lets San Mateo County bar kids under 12 from some e-bikes, the 49ers finalize an injury-thinned lineup for Seattle, and SpaceX launched military satellites from Vandenberg overnight.",
+      "headlines": [
+        {
+          "title": "Hurricane Isaias slams the Florida Panhandle, cutting power to nearly 700,000",
+          "topic": "General news"
+        },
+        {
+          "title": "New state law lets San Mateo County keep young kids off e-bikes",
+          "topic": "General news"
+        },
+        {
+          "title": "Twin major earthquakes rattle Panama, toppling buildings",
+          "topic": "General news"
+        },
+        {
+          "title": "Bosa ruled out, Mykel Williams set to return as 49ers head to Seattle",
+          "topic": "Sports"
+        },
+        {
+          "title": "SpaceX launches 21 military data satellites from Vandenberg after days of delays",
+          "topic": "Science & tech"
+        }
+      ]
+    },
+    {
       "date": "2026-10-09",
       "file": "posts/2026-10-09.html",
       "summary": "Federal forecasters now say a record-strength El Niño is likely this winter, raising the odds of a stormy season on the Peninsula, as San Mateo County voters start working through four charter measures and a college bond. Gov. Newsom says he may commute every death sentence in California, and the unbeaten 49ers prepare for Seattle while Fleet Week’s Blue Angels weekend begins.",

@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-16",
+      "file": "posts/2026-10-16.html",
+      "summary": "Mail-in ballots were stolen from a Daly City post office, and San Mateo County voters are urged to track theirs, while southbound 101 closes in San Francisco this weekend as the Valkyries host the WNBA Finals. BART announced a November bus bridge between Daly City and 24th Street that will slow Millbrae and SFO trips. Street Fighter leads a busy movie weekend, and a SpaceX cargo ship reached the space station.",
+      "headlines": [
+        {
+          "title": "Ballots stolen from a Daly City post office; San Mateo County voters urged to check theirs",
+          "topic": "General news"
+        },
+        {
+          "title": "Southbound 101 closes in San Francisco this weekend as the Valkyries host the WNBA Finals",
+          "topic": "General news"
+        },
+        {
+          "title": "BART will swap trains for buses between Daly City and 24th Street on Nov. 14–15",
+          "topic": "General news"
+        },
+        {
+          "title": "New this weekend: “Street Fighter” in theaters, Chris Evans in Netflix’s “Sacrifice,” and a new Fontaines D.C. album",
+          "topic": "Culture"
+        },
+        {
+          "title": "Cargo Dragon docks at the space station with its last new solar arrays",
+          "topic": "Science & tech"
+        }
+      ]
+    },
+    {
       "date": "2026-10-15",
       "file": "posts/2026-10-15.html",
       "summary": "Inflation rose to 3.7% in September as gasoline jumped 34% from a year earlier, and PG&E expanded wildfire-safety shutoffs to about 88,000 customers, though San Mateo County isn’t affected. Millbrae reopened the Aviador Bridge, and the Earthquakes stretched their unbeaten run to eight with a last-gasp draw in Salt Lake. The Diplomat and Crystal Lake arrive on streaming today, and YouTube Music began labeling AI-made songs.",

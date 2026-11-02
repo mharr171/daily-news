@@ -76,27 +76,27 @@
     {
       "date": "2026-10-29",
       "file": "posts/2026-10-29.html",
-      "summary": "The Federal Reserve held interest rates steady, but two officials wanted a hike. A federal judge refused to make California set aside 20,000 ballots, and the head of the state’s high-speed rail project resigned. San Mateo County voters weigh an $848 million college bond, Stephen Curry scored 44 in a Warriors win, and actor Patrick Stewart died at 86.",
+      "summary": "A federal judge on Wednesday refused the Trump administration’s request to set aside about 20,000 California ballots, and San Mateo County voters weigh Measure V, an $848 million college bond. Stephen Curry scored 44 in a Warriors win at Minnesota, and the Valkyries can win the WNBA title in Atlanta today. In science and tech, SpaceX finished Starship test fires ahead of Flight 15, and Google rolled out Gemini 4 Carbon to cybersecurity defenders first.",
       "headlines": [
         {
-          "title": "Fed holds rates at 3.75% to 4% as two officials push for a hike",
+          "title": "Judge rejects Trump administration bid to set aside 20,000 California ballots",
           "topic": "General news"
         },
         {
-          "title": "Judge refuses to make California set aside 20,000 ballots",
-          "topic": "General news"
+          "title": "Valkyries one win from a title as Game 6 moves to a midday tip in Atlanta",
+          "topic": "Sports"
         },
         {
           "title": "Measure V asks San Mateo County voters to extend an $848 million college bond",
           "topic": "General news"
         },
         {
-          "title": "Patrick Stewart, Star Trek’s Captain Picard, dies at 86",
-          "topic": "Culture"
+          "title": "Fed holds rates at 3.75% to 4%, with two officials voting for a hike",
+          "topic": "General news"
         },
         {
-          "title": "Curry scores 44 as the Warriors win at Minnesota",
-          "topic": "Sports"
+          "title": "SpaceX finishes Starship upper-stage test fires ahead of Flight 15",
+          "topic": "Science & tech"
         }
       ]
     },

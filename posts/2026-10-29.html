@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Thursday, October 29, 2026 | Live Full Stack</title>
-<meta name="description" content="Live Full Stack, issue 6: Thursday, October 29, 2026.">
+<meta name="description" content="Live Full Stack, issue 29: Thursday, October 29, 2026.">
 <link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../fonts/fonts.css">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Live Full Stack">
 <meta property="og:title" content="Thursday, October 29, 2026 | Live Full Stack">
-<meta property="og:description" content="The Federal Reserve held interest rates steady, but two officials wanted a hike. A federal judge refused to make California set aside 20,000 ballots, and the head of the state’s high-speed rail project resigned. San Mateo County voters weigh an $848 million college bond, Stephen Curry scored 44 in a Warriors win, and actor Patrick Stewart died at 86.">
+<meta property="og:description" content="A federal judge on Wednesday refused the Trump administration’s request to set aside about 20,000 California ballots, and San Mateo County voters weigh Measure V, an $848 million college bond. Stephen Curry scored 44 in a Warriors win at Minnesota, and the Valkyries can win the WNBA title in Atlanta today. In science and tech, SpaceX finished Starship test fires ahead of Flight 15, and Google rolled out Gemini 4 Carbon to cybersecurity defenders first.">
 <meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-29.html">
 <meta property="og:image" content="https://www.livefullstack.com/social-card.png">
 <meta property="og:image:width" content="1200">
@@ -101,6 +101,14 @@
   .why strong { font-style: normal; color: var(--spot); }
   .source { font-size: .88rem; color: var(--muted); margin: 0; }
 
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
 
   /* Edition navigation */
   .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
@@ -143,9 +151,9 @@
 
   <main>
     <header class="edition-head">
-      <p class="stamp">Issue No. 6</p>
+      <p class="stamp">Issue No. 29</p>
       <h1>Thursday, October 29, 2026</h1>
-      <p class="summary">The Federal Reserve held interest rates steady, but two officials wanted a hike. A federal judge refused to make California set aside 20,000 ballots, and the head of the state’s high-speed rail project resigned. San Mateo County voters weigh an $848 million college bond, Stephen Curry scored 44 in a Warriors win, and actor Patrick Stewart died at 86.</p>
+      <p class="summary">A federal judge on Wednesday refused the Trump administration’s request to set aside about 20,000 California ballots, and San Mateo County voters weigh Measure V, an $848 million college bond. Stephen Curry scored 44 in a Warriors win at Minnesota, and the Valkyries can win the WNBA title in Atlanta today. In science and tech, SpaceX finished Starship test fires ahead of Flight 15, and Google rolled out Gemini 4 Carbon to cybersecurity defenders first.</p>
     </header>
 
     <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
@@ -163,28 +171,34 @@
       <h2>General news</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.xtb.com/en/market-analysis/fed-holds-eurusd-gains" target="_blank" rel="noopener">Fed holds rates at 3.75% to 4% as two officials push for a hike</a></h3>
-          <p>The Federal Reserve kept its benchmark rate unchanged after September’s increase, with Beth Hammack and Lisa Cook dissenting in favor of another quarter-point hike. The statement gave no clear signal about December, as inflation ran at 3.7% in September and energy prices stay high.</p>
-          <p class="why"><strong>Why it matters:</strong> Steady but high rates keep mortgages, car loans, and credit cards expensive in one of the country’s priciest housing markets.</p>
-          <p class="source">XTB, Oct 28, 2026</p>
-        </article>
-        <article class="story">
-          <h3><a href="https://calmatters.org/politics/2026/10/trump-ballot-claims-california-ruling/" target="_blank" rel="noopener">Judge refuses to make California set aside 20,000 ballots</a></h3>
-          <p>US District Judge David O. Carter rejected the Trump administration’s request to set aside ballots from voters it says might not be citizens, citing a pattern of attempted election interference. Prosecutors conceded some people on the federal list are likely citizens, and the administration plans to appeal.</p>
-          <p class="why"><strong>Why it matters:</strong> San Mateo County ballots are counted under the same state rules, so the ruling keeps local counting on its normal track.</p>
+          <h3><a href="https://calmatters.org/politics/2026/10/trump-ballot-claims-california-ruling/" target="_blank" rel="noopener">Judge rejects Trump administration bid to set aside 20,000 California ballots</a></h3>
+          <p>U.S. District Judge David O. Carter on Wednesday turned down the federal government’s request that California election officials segregate about 20,000 ballots from voters it claims may not be citizens, saying states control their own elections. State and county officials say the federal list is riddled with errors, and prosecutors concede some people on it are likely citizens. The administration says it will appeal to the 9th Circuit and possibly the Supreme Court.</p>
+          <p class="why"><strong>Why it matters:</strong> Mail ballots already returned by Peninsula voters keep moving through the normal count while the appeal plays out ahead of Tuesday’s election.</p>
           <p class="source">CalMatters, Oct 28, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://calmatters.org/politics/2026/10/california-high-speed-rail-ceo-resigns/" target="_blank" rel="noopener">High-speed rail chief resigns amid a travel spending scandal</a></h3>
-          <p>Ian Choudri stepped down as CEO of the California High-Speed Rail Authority, effective immediately, after reports that nearly $600,000 went to questionable consultant trips. State Finance Director Joe Stephenshaw takes over a project now estimated at $126 billion to $231 billion.</p>
-          <p class="why"><strong>Why it matters:</strong> The Peninsula is part of the planned San Francisco-to-Los Angeles route, sharing Caltrain’s corridor.</p>
-          <p class="source">CalMatters, Oct 29, 2026</p>
+          <h3><a href="https://padailypost.com/2026/10/29/measure-v-college-district-wants-bond-approval-but-little-has-been-done-to-prevent-more-bribery/" target="_blank" rel="noopener">Measure V asks San Mateo County voters to extend an $848 million college bond</a></h3>
+          <p>The San Mateo County Community College District wants $848 million in bonds for a new gym, arts building upgrades and repairs at Cañada College, College of San Mateo and Skyline College, with about $1.35 billion in total repayment. Critics say few new safeguards have been added since former Chancellor Ron Galatolo was jailed over contracts paid from earlier bonds, and the district’s internal auditor resigned in September. District leaders point to square-footage caps and a whistleblower hotline.</p>
+          <p class="why"><strong>Why it matters:</strong> The measure would extend an existing property tax of $18 per $100,000 of assessed value through 2049, about $386 a year on the county’s median-priced home.</p>
+          <p class="source">Palo Alto Daily Post, Oct 29, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://padailypost.com/2026/10/29/measure-v-college-district-wants-bond-approval-but-little-has-been-done-to-prevent-more-bribery/" target="_blank" rel="noopener">Measure V asks San Mateo County voters to extend an $848 million college bond</a></h3>
-          <p>The bond would fund a new gym, arts building upgrades, and repairs at Cañada College, College of San Mateo, and Skyline College, extending an existing tax of $18 per $100,000 of assessed value through 2049. Critics point to a past bribery scandal tied to earlier bond contracts, which led to a former chancellor’s jail sentence.</p>
-          <p class="why"><strong>Why it matters:</strong> A median-priced county home would pay about $386 a year, and Skyline and CSM are the closest campuses to Millbrae.</p>
-          <p class="source">Palo Alto Daily Post, Oct 29, 2026</p>
+          <h3><a href="https://wolfstreet.com/2026/10/28/fed-holds-rates-but-with-2-dissenters-a-hold-before-the-election-was-expected-dissenters-were-not/" target="_blank" rel="noopener">Fed holds rates at 3.75% to 4%, with two officials voting for a hike</a></h3>
+          <p>The Federal Reserve kept its benchmark rate range at 3.75% to 4% on Wednesday in a 10–2 vote, with Governor Lisa Cook and Cleveland Fed President Beth Hammack preferring a quarter-point increase. The statement upgraded the economy to “strong” and called inflation elevated, leaving room for a hike. Chair Kevin Warsh also said the Fed will hold fewer rate-setting meetings starting in 2027.</p>
+          <p class="why"><strong>Why it matters:</strong> The 10-year Treasury yield rose to about 5% after the decision, which keeps mortgage and auto-loan rates high for Bay Area buyers.</p>
+          <p class="source">Wolf Street, Oct 28, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.inquirer.com/news/nation-world/iran-war-cost-rises-pentagon-20261028.html" target="_blank" rel="noopener">Iran war costs top $47 billion, Pentagon tells Congress</a></h3>
+          <p>The Pentagon estimates the war with Iran cost $47.1 billion through Oct. 16, with munitions making up more than 60% and stockpiles of some weapons, such as Patriot interceptors, running down. Congressional officials say the figure likely understates the real bill because it leaves out base repairs and other costs. The administration is seeking up to $70 billion in emergency military funding as President Trump holds off on restarting major combat for now.</p>
+          <p class="why"><strong>Why it matters:</strong> The spending fight lands in Congress right after Tuesday’s election and affects federal budget priorities that reach California.</p>
+          <p class="source">The Philadelphia Inquirer (New York Times), Oct 28, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sfstandard.com/2026/10/29/seven-equity-san-francisco-centre-mall-retail/" target="_blank" rel="noopener">Little-known New York firm emerges as buyer for the empty San Francisco Centre mall</a></h3>
+          <p>Seven Equity Group, a small New York investor that has quietly bought six distressed office buildings nearby since early 2025, is now trying to buy the vacant San Francisco Centre mall. The 1.2 million-square-foot property is valued at about $130 million, and remaking it could cost hundreds of millions more. Sources say the firm wants to keep retail and add family entertainment.</p>
+          <p class="why"><strong>Why it matters:</strong> A buyer for the Market Street mall would be a step toward reviving downtown shopping, a common day trip for Peninsula residents via BART.</p>
+          <p class="source">The San Francisco Standard, Oct 29, 2026</p>
         </article>
       </div>
     </section>
@@ -192,14 +206,19 @@
       <h2>Sports</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.basketball-reference.com/boxscores/202610280MIN.html" target="_blank" rel="noopener">Curry scores 44 as the Warriors win at Minnesota</a></h3>
-          <p>Warriors: beat the Timberwolves 119–114 on Wednesday behind 44 points from Stephen Curry; Jonathan Kuminga led Minnesota with 20. Golden State is 2–3 and hosts the Lakers on Friday. 49ers: bye week at 6–1. Earthquakes: waiting on the MLS Cup Playoffs.</p>
+          <h3><a href="https://www.basketball-reference.com/boxscores/202610280MIN.html" target="_blank" rel="noopener">Today in sports: Curry’s 44 lifts the Warriors in Minnesota; Valkyries can clinch today</a></h3>
+          <p>Stephen Curry scored 44 points as the Warriors won 119–114 at Minnesota on Wednesday for their second straight victory, moving to 2–3; they host the Lakers Friday. The Valkyries lead the WNBA Finals 3–2 and play Game 6 in Atlanta today at 9:30 a.m. Pacific, while the Earthquakes drew 2–2 with Colorado on Wednesday and host Real Salt Lake Saturday. The 49ers (6–1) are off this weekend and host the Raiders on Nov. 8.</p>
           <p class="source">Basketball Reference, Oct 28, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.nbcsportsbayarea.com/mlb/san-francisco-giants/questions-uncertain-2026-offseason/1975437/" target="_blank" rel="noopener">Giants start a pivotal off-season with pitching at the top of the list</a></h3>
-          <p>San Francisco finished with 24 players on the injured list and must trim to 40-man roster limits within days. The front office wants at least two starters behind Logan Webb and Landen Roupp plus a closer, and may try to trade a big contract, all before a possible lockout on Dec. 1.</p>
-          <p class="source">NBC Sports Bay Area, Oct 29, 2026</p>
+          <h3><a href="https://www.espn.com/wnba/story/_/id/50302463/dream-say-concerns-finding-available-wnba-finals-venue-went-unheeded" target="_blank" rel="noopener">Valkyries one win from a title as Game 6 moves to a midday tip in Atlanta</a></h3>
+          <p>Game 6 of the WNBA Finals between the Valkyries and the Dream will tip off Thursday at 12:30 p.m. Eastern at State Farm Arena, moved from prime time so the Hawks can play there that night. The Dream’s usual home court seats only about 3,500, and the team said in an open letter that its warnings about finding a big enough venue were ignored. A Valkyries win would give Golden State its first championship.</p>
+          <p class="source">ESPN, Oct 27, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.sjearthquakes.com/news/match-recap-earthquakes-2-colorado-rapids-2" target="_blank" rel="noopener">Earthquakes rally for a 2–2 draw with Colorado and stay fifth in the West</a></h3>
+          <p>Reid Roberts gave San Jose an early lead and Jack Jasinski equalized in the 83rd minute as the Quakes tied the Colorado Rapids 2–2 at PayPal Park on Wednesday. The playoff-bound Quakes sit fifth in the Western Conference with 49 points. They host Real Salt Lake Saturday at 2 p.m. in their final regular-season home game.</p>
+          <p class="source">San Jose Earthquakes, Oct 28, 2026</p>
         </article>
       </div>
     </section>
@@ -207,9 +226,14 @@
       <h2>Culture</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.space.com/entertainment/patrick-stewart-renowned-actor-and-star-treks-captain-picard-dies-at-86" target="_blank" rel="noopener">Patrick Stewart, Star Trek’s Captain Picard, dies at 86</a></h3>
-          <p>Stewart died Wednesday at his home in Los Angeles after a short struggle with Alzheimer’s disease and Lewy body dementia, his spokesperson said. He played Jean-Luc Picard across seven seasons, four films, and Star Trek: Picard, and Professor Charles Xavier in the X-Men films, alongside a celebrated Shakespearean stage career.</p>
-          <p class="source">Space.com, Oct 29, 2026</p>
+          <h3><a href="https://www.tvline.com/2300547/the-diplomat-renewed-season-5-netflix-keri-russell/" target="_blank" rel="noopener">Netflix renews “The Diplomat” for a fifth season</a></h3>
+          <p>Netflix has ordered a fifth season of the political thriller starring Keri Russell as Kate Wyler, along with Rufus Sewell and Allison Janney. Season 4 premiered earlier this month, reached No. 3 on Netflix’s global chart and ended with Kate resigning as ambassador in protest. No return date has been set.</p>
+          <p class="source">TVLine, Oct 29, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2296035/what-to-watch-october-29-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">Thursday TV: “American Horror Story” wraps season 13 as “Ghosts” goes spooky</a></h3>
+          <p>FX airs the season 13 finale of “American Horror Story” tonight, and CBS’s “Ghosts” has a two-episode Halloween special. Hulu premieres season 8 of “Love Island: Australia,” and Prime Video carries Thursday Night Football with the Panthers at the Packers. Valkyries fans can catch Game 6 of the WNBA Finals on USA Network this morning.</p>
+          <p class="source">TVLine, Oct 29, 2026</p>
         </article>
       </div>
     </section>
@@ -217,14 +241,19 @@
       <h2>Science &amp; tech</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">Google unveils Gemini 4 Carbon, starting with cybersecurity defenders</a></h3>
-          <p>Google calls Gemini 4 Carbon its strongest model for long, multi-step engineering work and cybersecurity tasks such as finding and patching vulnerabilities. Access starts with a group of cyber defenders, and Google says developers, businesses, and consumers will get it after more feedback and safety work.</p>
+          <h3><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video" target="_blank" rel="noopener">SpaceX finishes Starship upper-stage test fires ahead of Flight 15</a></h3>
+          <p>SpaceX fired the Ship 42 upper stage on the ground Monday and Tuesday, including a full six-engine burn and a single-engine burn that simulates leaving orbit. Elon Musk is targeting Flight 15 for November and says SpaceX will try to catch both the ship and the Super Heavy booster, pending approval. No upper stage has been caught before.</p>
+          <p class="source">Space.com, Oct 29, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">Google’s Gemini 4 Carbon goes first to cybersecurity defenders</a></h3>
+          <p>Google introduced Gemini 4 Carbon, which it calls its strongest model, with top scores on tests of finding and patching software vulnerabilities. It is going to a small group of cyber defenders and trusted partners first. Google says developers, businesses and everyday users will get it soon, at an introductory price matching Gemini 4 Argon.</p>
           <p class="source">Google, Oct 28, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video" target="_blank" rel="noopener">SpaceX test-fires Starship ahead of Flight 15</a></h3>
-          <p>SpaceX completed static fires of Ship 42, including a full-duration burn of all six engines, after testing the Super Heavy booster that will fly with it. Elon Musk is targeting November for Flight 15 and wants to try catching both the ship and the booster, pending approval.</p>
-          <p class="source">Space.com, Oct 29, 2026</p>
+          <h3><a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener">ChatGPT Pro and Business subscribers can claim up to $500 a month in API credits</a></h3>
+          <p>OpenAI now gives eligible ChatGPT Pro and Business subscribers up to $500 a month in free API credits as part of their plans. To use them, subscribers link an API organization they own. That lets paying users try building their own tools on OpenAI’s models without a separate bill.</p>
+          <p class="source">OpenAI, Oct 28, 2026</p>
         </article>
       </div>
     </section>

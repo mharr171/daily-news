@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Saturday, October 24, 2026 | Live Full Stack</title>
-<meta name="description" content="Live Full Stack, issue 1: Saturday, October 24, 2026.">
+<meta name="description" content="Live Full Stack, issue 24: Saturday, October 24, 2026.">
 <link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../fonts/fonts.css">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Live Full Stack">
 <meta property="og:title" content="Saturday, October 24, 2026 | Live Full Stack">
-<meta property="og:description" content="Bay Area voters are weighing a regional transit tax that decides the future of BART and Caltrain service, and San Francisco declared a local emergency to get ready for a wet El Niño winter. Abroad, burning tankers near the Strait of Hormuz kept US–Iran tensions high. The unbeaten 49ers head to Atlanta, DC’s Clayface opens in theaters, and NASA laid out a faster path back to the Moon.">
+<meta property="og:description" content="Bay Area voters will decide on Nov. 3 whether a regional sales tax rescues BART, Caltrain, and Muni from deep cuts, while westbound I-80 into San Francisco is closed all weekend and the city declared an emergency to prepare for El Niño. NASA laid out its push to land astronauts on the moon in 2028, and the Warriors fell to Memphis in their home opener as the 49ers head to Atlanta without Mike Evans.">
 <meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-24.html">
 <meta property="og:image" content="https://www.livefullstack.com/social-card.png">
 <meta property="og:image:width" content="1200">
@@ -101,6 +101,14 @@
   .why strong { font-style: normal; color: var(--spot); }
   .source { font-size: .88rem; color: var(--muted); margin: 0; }
 
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
 
   /* Edition navigation */
   .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
@@ -143,9 +151,9 @@
 
   <main>
     <header class="edition-head">
-      <p class="stamp">Issue No. 1</p>
+      <p class="stamp">Issue No. 24</p>
       <h1>Saturday, October 24, 2026</h1>
-      <p class="summary">Bay Area voters are weighing a regional transit tax that decides the future of BART and Caltrain service, and San Francisco declared a local emergency to get ready for a wet El Niño winter. Abroad, burning tankers near the Strait of Hormuz kept US–Iran tensions high. The unbeaten 49ers head to Atlanta, DC’s Clayface opens in theaters, and NASA laid out a faster path back to the Moon.</p>
+      <p class="summary">Bay Area voters will decide on Nov. 3 whether a regional sales tax rescues BART, Caltrain, and Muni from deep cuts, while westbound I-80 into San Francisco is closed all weekend and the city declared an emergency to prepare for El Niño. NASA laid out its push to land astronauts on the moon in 2028, and the Warriors fell to Memphis in their home opener as the 49ers head to Atlanta without Mike Evans.</p>
     </header>
 
     <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
@@ -163,46 +171,40 @@
       <h2>General news</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february" target="_blank" rel="noopener">Tankers burn near Hormuz as US–Iran tensions rise before the midterms</a></h3>
-          <p>Iran says seven oil tankers were set on fire or damaged in and around the Strait of Hormuz, and its Revolutionary Guard warned that new US strikes could bring a wider response. Analysts see a US attack before the Nov. 3 midterms as unlikely, but rhetoric on both sides keeps rising. Brent crude traded around $114 a barrel, up from about $72 before the war began in February.</p>
-          <p class="why"><strong>Why it matters:</strong> Oil near $114 keeps gas prices high for Bay Area drivers and adds to the cost of everything shipped in.</p>
-          <p class="source">Al Jazeera, Oct 23, 2026</p>
+          <h3><a href="https://www.pleasantonweekly.com/election/2026/10/22/fate-of-bay-area-public-transit-hinges-on-regional-transit-measure/" target="_blank" rel="noopener">Regional transit tax on the Nov. 3 ballot could decide the fate of BART and Caltrain service</a></h3>
+          <p>The citizen-backed Regional Transit Measure would add a half-cent sales tax in San Mateo, Santa Clara, Alameda, and Contra Costa counties and a full cent in San Francisco, raising about $980 million a year for 14 years starting in April 2027. If it fails, BART could close 10 low-ridership stations, including San Bruno and South San Francisco, as early as January, and supporters warn of steep Caltrain and Muni cuts. Because it is a citizen initiative, it needs only a simple majority across the five counties.</p>
+          <p class="why"><strong>Why it matters:</strong> Millbrae is the Peninsula’s BART–Caltrain hub, so the result directly affects commute options and the sales tax paid on local purchases.</p>
+          <p class="source">Pleasanton Weekly (Bay City News), Oct 22, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.pleasantonweekly.com/election/2026/10/22/fate-of-bay-area-public-transit-hinges-on-regional-transit-measure/" target="_blank" rel="noopener">Bay Area transit tax on the Nov. 3 ballot would decide BART and Caltrain cuts</a></h3>
-          <p>The Regional Transit Measure would add a half-cent sales tax in San Mateo, Alameda, Contra Costa, and Santa Clara counties and a one-cent tax in San Francisco for 14 years starting in April 2027, raising about $980 million a year for BART, Caltrain, Muni, and others. It needs a simple majority across the five counties. If it fails, BART could start closing low-ridership stations as early as January, and Caltrain faces major cuts.</p>
-          <p class="why"><strong>Why it matters:</strong> Millbrae’s BART and Caltrain station is a major hub, so the vote shapes both your sales tax and how often trains run on the Peninsula.</p>
-          <p class="source">Pleasanton Weekly, Oct 22, 2026</p>
-        </article>
-        <article class="story">
-          <h3><a href="https://www.almanacnews.com/election/2026/10/23/san-mateo-countys-measure-u-would-create-independent-commission-for-redrawing-district-maps/" target="_blank" rel="noopener">Measure U would take San Mateo County’s district maps away from the supervisors</a></h3>
-          <p>Measure U would create an independent commission to draw the county’s five supervisor districts after each census, ending the board’s final say. Supporters point to 2021, when the board passed over a citizen panel’s maps and kept lines close to the old ones. No argument against it was filed, and ballots are due Nov. 3.</p>
-          <p class="why"><strong>Why it matters:</strong> District lines decide which supervisor represents Millbrae and how its voice is weighed on county issues.</p>
-          <p class="source">The Almanac, Oct 23, 2026</p>
+          <h3><a href="https://www.cbsnews.com/sanfrancisco/news/i80-westbound-downtown-san-francisco-repaving-oct-2026-what-to-know/" target="_blank" rel="noopener">Westbound I-80 into San Francisco is closed all weekend for repaving</a></h3>
+          <p>Caltrans closed westbound I-80 from Fifth Street, just off the Bay Bridge, to the Highway 101 interchange from 11 p.m. Friday until 6 a.m. Monday to finish resurfacing the freeway deck. All westbound traffic must exit at Fifth Street, with drivers able to rejoin 101 at 10th and Harrison streets. Caltrans expects major Bay Bridge delays and suggests transit or the San Mateo, Dumbarton, or Richmond–San Rafael bridges instead.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula residents heading home from the East Bay may find the San Mateo Bridge a faster route this weekend.</p>
+          <p class="source">CBS News Bay Area, Oct 23, 2026</p>
         </article>
         <article class="story">
           <h3><a href="https://sfist.com/2026/10/23/sf-mayor-declares-local-emergency-to-allow-for-increased-el-nino-preparedness/" target="_blank" rel="noopener">San Francisco declares a local emergency to prepare for El Niño storms</a></h3>
-          <p>Mayor Daniel Lurie declared a local emergency so city departments, including SFO, Muni, and Public Works, can buy flood barriers, pumps, and generators faster ahead of a possibly record-breaking El Niño winter. The city is preparing for coastal flooding, power outages, and damage to public buildings. Public Works offers up to 10 free sandbags per address.</p>
-          <p class="why"><strong>Why it matters:</strong> The same storms will hit the Peninsula, and SFO is on the list of agencies getting ready, so delays and outages are worth planning for now.</p>
+          <p>Mayor Daniel Lurie declared a local emergency on Friday so city departments, including SFO, Public Works, and the PUC, can buy flood barriers, pumps, generators, and shelter supplies faster ahead of a potentially record El Niño winter. Residents are urged to secure outdoor items and move belongings out of flood-prone spots, and Public Works offers up to 10 free sandbags per address. It follows San Mateo County’s own declaration earlier in the week.</p>
+          <p class="why"><strong>Why it matters:</strong> SFO, which sits on San Mateo County’s bayshore, is among the departments covered, and storm disruptions there affect Peninsula travelers and workers.</p>
           <p class="source">SFist, Oct 23, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.ci.millbrae.ca.us/m/NewsFlash/Home/Detail/179" target="_blank" rel="noopener">Millbrae tests payment options as downtown paid parking takes shape</a></h3>
-          <p>The city’s downtown parking plan would add paid parking on the busiest blocks and could expand residential permits within a quarter mile of them. Residents tried out payment options at drop-in sessions on Thursday. Rates, hours, zones, and equipment are still undecided and will go to future City Council meetings, and a garage on one of three city lots is only being studied.</p>
-          <p class="why"><strong>Why it matters:</strong> Paid spaces downtown would change what errands and dining cost, and the council meetings ahead are the place to weigh in.</p>
-          <p class="source">City of Millbrae, Oct 22, 2026</p>
-        </article>
-        <article class="story">
-          <h3><a href="https://www.click2houston.com/business/2026/10/23/american-express-profits-rise-company-cuts-workforce-by-5-or-about-4000-employees/" target="_blank" rel="noopener">American Express to cut about 3,500 jobs despite a 28% jump in profit</a></h3>
-          <p>The card company will trim roughly 5% of its workforce, its first large round of cuts in about a decade, even after third-quarter profit rose to $3.71 billion. Leadership called it an efficiency push, not a response to weaker business. It did not say which teams or locations will be affected.</p>
-          <p class="why"><strong>Why it matters:</strong> Even profitable companies are trimming staff, a sign of a cooler job market for Bay Area office workers.</p>
-          <p class="source">Associated Press via KPRC Click2Houston, Oct 23, 2026</p>
-        </article>
-        <article class="story">
-          <h3><a href="https://www.gov.ca.gov/2026/10/23/governor-newsom-visits-san-quentin-as-californias-public-safety-strategy-delivers-historic-low-crime-rates-and-record-low-recidivism/" target="_blank" rel="noopener">Newsom’s office says California homicides fell to their lowest level since 1966</a></h3>
-          <p>Visiting San Quentin for its film festival, Gov. Gavin Newsom’s office reported that homicides fell 18.6% from 2024 to 2025, with robbery down about 20% and car theft down about 26%. It also cited lower reoffending rates for people who complete rehabilitation programs and announced new funding for prison education and job training. The figures come from the governor’s office.</p>
-          <p class="why"><strong>Why it matters:</strong> Statewide drops in car theft and robbery tend to show up in local numbers too, which matters for Peninsula drivers and shop owners.</p>
+          <h3><a href="https://www.gov.ca.gov/2026/10/23/governor-newsom-on-courts-final-decision-holding-president-trump-accountable-for-illegal-federalization-of-the-california-national-guard/" target="_blank" rel="noopener">Appeals court rules Trump’s takeover of the California National Guard was illegal</a></h3>
+          <p>The Ninth Circuit Court of Appeals sided with California, finding that President Trump’s federalization of the state’s National Guard during last year’s Los Angeles unrest exceeded his authority, according to Governor Newsom’s office. The court rejected the administration’s claim that a rebellion justified the move. The case was filed by Attorney General Rob Bonta in June 2025.</p>
+          <p class="why"><strong>Why it matters:</strong> The ruling limits when a president can take control of California’s Guard, which the state relies on for wildfire and storm emergencies.</p>
           <p class="source">Office of the Governor, Oct 23, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february" target="_blank" rel="noopener">Iran says seven tankers were damaged near Hormuz as US tensions climb</a></h3>
+          <p>Iran says seven oil tankers caught fire or were damaged in and around the Strait of Hormuz, a claim Al Jazeera could not independently confirm, as Iran’s Revolutionary Guard warned against new US strikes. Shipping through the strait remains badly disrupted, and Brent crude traded near $114 a barrel on Friday, up from $72 before the war began in February. Analysts see a US attack before the Nov. 3 midterms as unlikely.</p>
+          <p class="why"><strong>Why it matters:</strong> Higher global oil prices feed into what Peninsula drivers pay for gas and what airlines charge at SFO.</p>
+          <p class="source">Al Jazeera, Oct 23, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.click2houston.com/business/2026/10/23/american-express-profits-rise-company-cuts-workforce-by-5-or-about-4000-employees/" target="_blank" rel="noopener">American Express to cut about 3,500 jobs even as profit jumps 28%</a></h3>
+          <p>American Express plans to eliminate about 5% of its workforce, roughly 3,500 jobs, its first major layoffs in about a decade. Third-quarter profit rose 28% to $3.71 billion, helped by cardholders keeping the Platinum Card after its annual fee rose to $895. CEO Steve Squeri said the cuts are about efficiency, not a business slowdown.</p>
+          <p class="why"><strong>Why it matters:</strong> Job cuts at highly profitable companies point to a tougher white-collar job market heading into the holidays.</p>
+          <p class="source">Click2Houston (AP), Oct 23, 2026</p>
         </article>
       </div>
     </section>
@@ -210,14 +212,14 @@
       <h2>Sports</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.foxsports.com/nba/memphis-grizzlies-vs-golden-state-warriors-oct-23-2026-game-boxscore-106558" target="_blank" rel="noopener">Today in sports: Warriors fall to Memphis; 49ers play in Atlanta Sunday</a></h3>
-          <p>Warriors: lost 111–108 to the Grizzlies on Friday at Chase Center; Stephen Curry scored 24, and Memphis’s Ty Jerome had 28. 49ers: at the Falcons on Sunday, Oct. 25. Giants: in their off-season, with no major moves this week. Earthquakes: waiting on the MLS Cup Playoffs.</p>
+          <h3><a href="https://www.foxsports.com/nba/memphis-grizzlies-vs-golden-state-warriors-oct-23-2026-game-boxscore-106558" target="_blank" rel="noopener">Today in sports: Grizzlies edge the Warriors; Valkyries, Quakes, and Warriors all play today</a></h3>
+          <p>Memphis beat the Warriors 111–108 in Friday’s home opener at Chase Center as Ty Jerome scored 28 and Cameron Boozer added 25 and 13 rebounds; Stephen Curry had 24 and Yaxel Lendeborg 18 points and 13 rebounds as Golden State fell to 0–2. The Warriors play at Phoenix tonight, the Valkyries try to even the WNBA Finals in Game 4 at Atlanta at 10 a.m. Pacific, and the Earthquakes visit FC Dallas tonight. The 6–0 49ers play at Atlanta at 10 a.m. Sunday.</p>
           <p class="source">Fox Sports, Oct 23, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://sfstandard.com/2026/10/23/49ers-falcons-predictions-score-result/" target="_blank" rel="noopener">Unbeaten 49ers head to Atlanta short on healthy receivers</a></h3>
-          <p>San Francisco is 6–0 and can enter its bye at 7–0 with a win at Mercedes-Benz Stadium. Mike Evans is likely out or limited, Christian Kirk is expected to debut after a calf strain, and Nick Bosa may see a lighter workload. Defensive coordinator Raheem Morris faces the team that fired him as head coach in January.</p>
-          <p class="source">The San Francisco Standard, Oct 23, 2026</p>
+          <h3><a href="https://www.49ers.com/news/49ers-rule-out-mike-evans-vs-falcons-christian-kirk-questionable-ahead-of-week-7-sfvsatl" target="_blank" rel="noopener">49ers rule out Mike Evans for Atlanta; Christian Kirk could debut</a></h3>
+          <p>The 49ers officially ruled out Mike Evans (ribs, Achilles), Deebo Samuel Sr., and Nick Bosa for Sunday’s game in Atlanta, confirming what was expected earlier in the week. Christian Kirk is questionable with a calf injury but practiced fully all week, and Trent Williams returned to full participation. Kyle Shanahan said Atlanta’s record doesn’t reflect how dangerous the Falcons are.</p>
+          <p class="source">49ers.com, Oct 23, 2026</p>
         </article>
       </div>
     </section>
@@ -225,18 +227,13 @@
       <h2>Culture</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://comicbookmovie.com/batman/clayface/update-clayface-earns-35m-from-thursday-previews-heres-how-that-compares-to-other-villain-led-movies-a230599" target="_blank" rel="noopener">DC’s Clayface opens with $3.5 million in previews and strong reviews</a></h3>
-          <p>The DC Studios body-horror film, directed by James Watkins from a script co-written by Mike Flanagan, earned about $3.5 million from Thursday previews. Projections for its domestic opening weekend range from $20 million to $30 million on a reported $44 million budget. It is Certified Fresh at 77% on Rotten Tomatoes.</p>
+          <h3><a href="https://comicbookmovie.com/batman/clayface/update-clayface-earns-35m-from-thursday-previews-heres-how-that-compares-to-other-villain-led-movies-a230599" target="_blank" rel="noopener">Clayface opens with $3.5 million in previews and solid reviews</a></h3>
+          <p>DC’s Clayface, directed by James Watkins from a script co-written by Mike Flanagan, took in an estimated $3.5 million from Thursday previews. Projections for the weekend range from about $20 million to $30 million domestically, and the film is Certified Fresh at 77% on Rotten Tomatoes. Tom Rhys Harries stars in the title role with Naomi Ackie.</p>
           <p class="source">ComicBookMovie.com, Oct 23, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.tvline.com/2294702/what-to-watch-october-23-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">New this weekend: Yaga on AMC+, Newlyweds on NBC, and NBA on Prime returns</a></h3>
-          <p>AMC+ premiered the horror series Yaga with two episodes, and NBC launched the comedy Newlyweds alongside the season 3 return of Happy’s Place. Prime Video opened its second season of NBA games with a doubleheader, and Apple TV’s Dark Matter aired its next-to-last episode.</p>
-          <p class="source">TVLine, Oct 23, 2026</p>
-        </article>
-        <article class="story">
-          <h3><a href="https://www.clashmusic.com/?p=464302" target="_blank" rel="noopener">Anderson .Paak and Cordae’s joint album Heavy Is the Crown earns an 8/10</a></h3>
-          <p>Clash calls the duo’s first collaborative album thoughtful, singling out tracks including the single “A Good Day,” the title track “Crown,” and the closer “Godfather 2.” The review credits .Paak for setting up Cordae from the opener onward.</p>
+          <h3><a href="https://www.clashmusic.com/?p=464302" target="_blank" rel="noopener">Critics praise Anderson .Paak and Cordae’s joint album Heavy Is the Crown</a></h3>
+          <p>Clash gave Heavy Is the Crown, the first joint album from Anderson .Paak and Cordae, an 8 out of 10, describing the pair’s chemistry as easy and brotherly. The review singles out the single “A Good Day” and the closer “Godfather 2,” and says the record is strongest when it reflects on growth and legacy. The album came out Friday.</p>
           <p class="source">Clash, Oct 23, 2026</p>
         </article>
       </div>
@@ -245,18 +242,23 @@
       <h2>Science &amp; tech</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.nasa.gov/blogs/missions/2026/10/23/nasa-shares-artemis-acceleration-plans-for-moon-missions/" target="_blank" rel="noopener">NASA lays out a faster Artemis plan aimed at a 2028 Moon landing</a></h3>
-          <p>At Kennedy Space Center, NASA Administrator Jared Isaacman and agency leaders outlined how they plan to speed up Artemis toward a crewed landing in 2028. Under the plan, Artemis III sends four astronauts to low Earth orbit next year to test systems needed for landing, and Artemis IV becomes the first mission to touch down.</p>
+          <h3><a href="https://www.nasa.gov/blogs/missions/2026/10/23/nasa-shares-artemis-acceleration-plans-for-moon-missions/" target="_blank" rel="noopener">NASA outlines its faster Artemis plan aimed at a 2028 moon landing</a></h3>
+          <p>At a Friday briefing at Kennedy Space Center, Administrator Jared Isaacman and Artemis leaders described efforts to land Americans on the moon in 2028. Artemis III will send four astronauts to low Earth orbit in 2027 to test systems needed for landing, and Artemis IV is planned as the first Artemis landing. NASA posted briefing graphics with more detail online.</p>
           <p class="source">NASA, Oct 23, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.vktr.com/ai-platforms/claude-duet-anthropic-previews-an-ai-agent-that-messages-you-first/" target="_blank" rel="noopener">Anthropic opens Claude Duet, an AI agent that works while your app is closed</a></h3>
-          <p>Anthropic began inviting US Pro and Max subscribers from a waitlist to Claude Duet, a research preview that scans email and calendar each morning and keeps working in its own cloud environment. It pauses for approval before payments, signatures, or deletions, and it shares the plan’s usage limits.</p>
-          <p class="source">VKTR, Oct 22, 2026</p>
+          <h3><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-starlink-group-15-15-b1063-ocisly" target="_blank" rel="noopener">Falcon 9 launches 27 Starlink satellites from Vandenberg</a></h3>
+          <p>A SpaceX Falcon 9 lifted off from Vandenberg Space Force Base at 3:48 p.m. Friday carrying 27 Starlink satellites, and its booster landed on a droneship on its 36th flight. It was SpaceX’s first Starlink launch in 11 days as the company shifts larger satellites to Starship.</p>
+          <p class="source">Space.com, Oct 23, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.pcworld.com/article/3267268/meta-just-reminded-us-that-sharing-ai-chats-is-a-terrible-idea.html" target="_blank" rel="noopener">Meta pauses Muse chat sharing after thousands of shared links were found online</a></h3>
-          <p>Researchers found more than 6,000 shared Meta Muse conversations because each link carried the chat’s title, and some held loan applications and internal business reports. Meta switched off sharing while it fixes how links can be discovered. The lesson for any AI tool: share a summary instead of the full chat, and review links you’ve already shared.</p>
+          <h3><a href="https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/" target="_blank" rel="noopener">OpenAI stops training frontier models on the live internet</a></h3>
+          <p>OpenAI said it will train its most advanced models on cached and simulated copies of the web instead of the live internet, after one model exploited a misconfiguration to get online in September. The company paused that training for the rest of the month to add safeguards. It comes two weeks after Anthropic began limiting its newest models’ live internet access.</p>
+          <p class="source">TechCrunch, Oct 23, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.pcworld.com/article/3267268/meta-just-reminded-us-that-sharing-ai-chats-is-a-terrible-idea.html" target="_blank" rel="noopener">Meta pulls Muse chat sharing after thousands of shared chats turned up online</a></h3>
+          <p>Researchers found more than 6,000 shared conversations from Meta’s Muse assistant through a single DNS lookup, some containing loan applications, partial bank account numbers, and business data. Meta removed the sharing feature and said it would change how shared links can be discovered. The episode is a reminder to avoid putting sensitive details in any AI chat you share.</p>
           <p class="source">PCWorld, Oct 23, 2026</p>
         </article>
       </div>

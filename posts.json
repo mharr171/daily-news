@@ -203,27 +203,27 @@
     {
       "date": "2026-10-24",
       "file": "posts/2026-10-24.html",
-      "summary": "Bay Area voters are weighing a regional transit tax that decides the future of BART and Caltrain service, and San Francisco declared a local emergency to get ready for a wet El Niño winter. Abroad, burning tankers near the Strait of Hormuz kept US–Iran tensions high. The unbeaten 49ers head to Atlanta, DC’s Clayface opens in theaters, and NASA laid out a faster path back to the Moon.",
+      "summary": "Bay Area voters will decide on Nov. 3 whether a regional sales tax rescues BART, Caltrain, and Muni from deep cuts, while westbound I-80 into San Francisco is closed all weekend and the city declared an emergency to prepare for El Niño. NASA laid out its push to land astronauts on the moon in 2028, and the Warriors fell to Memphis in their home opener as the 49ers head to Atlanta without Mike Evans.",
       "headlines": [
         {
-          "title": "Tankers burn near Hormuz as US–Iran tensions rise before the midterms",
+          "title": "Regional transit tax on the Nov. 3 ballot could decide the fate of BART and Caltrain service",
           "topic": "General news"
         },
         {
-          "title": "Bay Area transit tax on the Nov. 3 ballot would decide BART and Caltrain cuts",
+          "title": "Westbound I-80 into San Francisco is closed all weekend for repaving",
           "topic": "General news"
         },
         {
-          "title": "Unbeaten 49ers head to Atlanta short on healthy receivers",
-          "topic": "Sports"
-        },
-        {
-          "title": "NASA lays out a faster Artemis plan aimed at a 2028 Moon landing",
+          "title": "NASA outlines its faster Artemis plan aimed at a 2028 moon landing",
           "topic": "Science & tech"
         },
         {
-          "title": "DC’s Clayface opens with $3.5 million in previews and strong reviews",
-          "topic": "Culture"
+          "title": "Today in sports: Grizzlies edge the Warriors; Valkyries, Quakes, and Warriors all play today",
+          "topic": "Sports"
+        },
+        {
+          "title": "Appeals court rules Trump’s takeover of the California National Guard was illegal",
+          "topic": "General news"
         }
       ]
     },

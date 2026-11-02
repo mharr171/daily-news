@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunday, October 18, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 18: Sunday, October 18, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-10-18.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Sunday, October 18, 2026 | Live Full Stack">
+<meta property="og:description" content="The Earthquakes clinched their first playoff berth since 2023 and the Valkyries won Game 1 of the WNBA Finals, while the 49ers will be without Nick Bosa and Deebo Samuel on Monday night. AC Transit spelled out the cuts it would make if the regional transit tax fails, and Street Fighter took Friday at the box office.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-18.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body data-date="2026-10-18">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 18</p>
+      <h1>Sunday, October 18, 2026</h1>
+      <p class="summary">The Earthquakes clinched their first playoff berth since 2023 and the Valkyries won Game 1 of the WNBA Finals, while the 49ers will be without Nick Bosa and Deebo Samuel on Monday night. AC Transit spelled out the cuts it would make if the regional transit tax fails, and Street Fighter took Friday at the box office.</p>
+    </header>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format:
+         <article class="story">
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.kqed.org/news/12104547/beyond-scary-ac-transit-riders-brace-for-potential-service-cuts" target="_blank" rel="noopener">AC Transit details deep cuts if the Bay Area transit tax fails</a></h3>
+          <p>The Regional Transit Measure on the Nov. 3 ballot would add a half-cent sales tax in San Mateo, Alameda, Contra Costa and Santa Clara counties and a one-cent tax in San Francisco, raising about $1 billion a year for 14 years for agencies including BART and Caltrain. AC Transit says that without it, it would cut service 16%, pull 100 buses and lay off up to 300 workers starting in June 2027. Its board expects to consider a final contingency plan on Dec. 9.</p>
+          <p class="why"><strong>Why it matters:</strong> San Mateo County voters help decide this measure, which would fund the BART and Caltrain service Millbrae riders rely on.</p>
+          <p class="source">KQED, Oct 16, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.kqed.org/news/12104776/an-ice-surge-in-california-ahead-of-the-midterms-heres-what-we-know" target="_blank" rel="noopener">Rumors of a statewide ICE operation spread as Central Valley arrests climb</a></h3>
+          <p>Advocates say more than 100 farmworkers and others have been detained in the Central Valley this week, while unverified reports of a 45-day operation targeting San Francisco, Los Angeles and San Diego have spread; Bay Area rapid-response groups say they have not seen a local surge. Gov. Gavin Newsom urged residents to know their rights. A state law bars arrests within 200 feet of polling places on Election Day, though it does not cover early voting.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula immigrant families and advocates are preparing for possible enforcement, and the polling-place protections matter as voting gets underway.</p>
+          <p class="source">KQED, Oct 16, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.kqed.org/news/12104538/staring-down-a-historic-el-nino-san-jose-says-its-ready" target="_blank" rel="noopener">San José says it’s ready for a strong El Niño winter</a></h3>
+          <p>Federal forecasters give an 83% chance of a historic El Niño from October through December, and San José says upgrades since the 2017 Coyote Creek flood, funded partly by voter-approved Measure T, leave it far better prepared. Valley Water has built more than 8,000 feet of flood walls along Coyote Creek and recently awarded a $100 million contract for the next phase. The City Council will get an update on its highest-risk flood sites in the coming weeks.</p>
+          <p class="why"><strong>Why it matters:</strong> The same storm pattern threatens the Peninsula, so this is a good time to clear gutters and storm drains before the rains arrive.</p>
+          <p class="source">KQED, Oct 16, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sfist.com/2026/10/16/unruly-passenger-forces-singapore-airlines-flight-to-return-to-sfo-hours-after-takeoff/" target="_blank" rel="noopener">Unruly passenger forces a Singapore-bound flight back to SFO</a></h3>
+          <p>Singapore Airlines flight SQ31 returned to SFO on Wednesday night, about nine hours after departing, after the airline said a passenger became unruly and injured himself. Passengers got off while the plane refueled, and it left for Singapore around 11:20 p.m. with a new crew. Social media claims of an arrest have not been confirmed by the airline.</p>
+          <p class="why"><strong>Why it matters:</strong> Turnbacks like this can leave SFO travelers rebooking long-haul connections, a reminder to keep airline alerts on for overnight flights.</p>
+          <p class="source">SFist, Oct 16, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.wnba.com/watch/video/game-recap-golden-state-valkyries-68-atlanta-dream-64-10-17-2026" target="_blank" rel="noopener">Today in sports: Valkyries take Game 1, Quakes clinch, 49ers host Washington Monday</a></h3>
+          <p>The Valkyries closed on a 17-6 run to beat the Atlanta Dream 68-64 in Game 1 of the WNBA Finals and lead the best-of-seven series 1-0. The Earthquakes drew 1-1 with Nashville SC, enough to clinch a playoff spot. The 5-0 49ers host Washington on Monday Night Football at 5:15 p.m., and the Warriors open their season Wednesday at the Lakers.</p>
+          <p class="source">WNBA, Oct 17, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.sjearthquakes.com/news/match-recap-earthquakes-1-nashville-sc-1-x7762" target="_blank" rel="noopener">Quakes clinch first playoff berth since 2023 with draw against Nashville</a></h3>
+          <p>Preston Judd’s 70th-minute goal, set up by Eduard Löwen, answered Hany Mukhtar’s first-half strike as San Jose tied league leader Nashville 1-1 at PayPal Park on Saturday and clinched a place in the MLS Cup Playoffs. The Quakes (13-8-9, 48 points) sit fourth in the West and are unbeaten in nine league matches. They visit FC Dallas next Saturday at 7:30 p.m.</p>
+          <p class="source">San Jose Earthquakes, Oct 17, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.49ers.com/news/kyle-juszczyk-available-deebo-ruled-out-vs-commanders-in-week-6-wasvssf" target="_blank" rel="noopener">Nick Bosa and Deebo Samuel ruled out for Monday night against Washington</a></h3>
+          <p>The 49ers ruled out defensive lineman Nick Bosa (knee, calf), receiver Deebo Samuel Sr. (hamstring), linebacker Garret Wallow and safety Marques Sigle for Monday’s game against Washington. Receivers Mike Evans (ribs, Achilles) and Christian Kirk (calf) are questionable, while fullback Kyle Juszczyk is expected back after missing Week 5. Final decisions come 90 minutes before kickoff at Levi’s Stadium.</p>
+          <p class="source">San Francisco 49ers, Oct 17, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.the-numbers.com/box-office-chart/daily/2026/10/16" target="_blank" rel="noopener">Street Fighter wins Friday at the box office</a></h3>
+          <p>Street Fighter earned about $13 million on its opening day from 3,575 theaters, well ahead of the field. You Can See Everything took in $5.5 million from just 855 theaters, while fellow newcomers Sense and Sensibility ($3.3 million) and Whalefall ($3.1 million) also landed in the top five. Weekend estimates arrive today.</p>
+          <p class="source">The Numbers, Oct 17, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://en.wikipedia.org/wiki/List_of_2026_albums_(July%E2%80%93December)" target="_blank" rel="noopener">Fontaines D.C., The Avalanches and Gucci Mane lead Friday’s new albums</a></h3>
+          <p>Irish rock band Fontaines D.C. released Dopamine Chamber on XL Recordings, its follow-up to 2024’s Romance, led by the single Marianne. Also out Friday: The Avalanches’ No Bad Memories, Gucci Mane’s Against All Odds, Eels’ Cookie Happened, Lucky Daye’s Aloud! and Max Richter’s While the Flood Rages.</p>
+          <p class="source">Wikipedia, Oct 16, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://en.wikipedia.org/wiki/Crystal_Lake_(TV_series)" target="_blank" rel="noopener">Crystal Lake, A24’s Friday the 13th prequel series, is streaming on Peacock</a></h3>
+          <p>Peacock released all eight episodes of Crystal Lake on Thursday, a prequel to the Friday the 13th films starring Linda Cardellini as Pamela Voorhees. Produced by A24 with Brad Caleb Kane as showrunner, the series arrives on Sky and NOW in the U.K. and Ireland on Monday.</p>
+          <p class="source">Wikipedia, Oct 15, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://spaceflightnow.com/2026/10/16/blue-origin-to-add-new-florida-launch-pads-seeks-aggressive-increase-in-new-glenn-flight-rate/" target="_blank" rel="noopener">Blue Origin plans more Florida launch pads to speed up New Glenn flights</a></h3>
+          <p>Blue Origin says it will build more Space Coast launch pads modeled on its Cape Canaveral complex, add two landing ships and spend $330 million expanding its Rocket Park factory to build up to 150 upper stages a year. The company is still recovering from a May test-fire explosion and has asked the FAA to raise its permitted launches at LC-36A from 12 to 50 a year; a virtual public hearing is set for Oct. 22.</p>
+          <p class="source">Spaceflight Now, Oct 16, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="week-in-review">
+      <h2>Week in review</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="2026-10-16.html">General news: Stolen ballots and a federal fight over California votes</a></h3>
+          <p>San Mateo County urged voters to check their ballots after mail stolen from a Daly City post office included an unknown number of them, and the Justice Department sued to set aside mail ballots sent to more than 20,000 Californians it calls likely noncitizens. Prosecutors charged a former 49ers executive and a contractor in an alleged $1.4 million kickback scheme on San Mateo County Event Center projects, and California sued to keep the National Archives facility in San Bruno open. Fuel costs kept climbing as the Iran war disrupted oil shipping, with gasoline driving inflation to 3.7% and California gas averaging $6.26 a gallon.</p>
+          <p class="source">From the editions of Oct 11–17</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-12.html">Sports: 49ers stay perfect as the Valkyries reach the Finals</a></h3>
+          <p>The 49ers outlasted Seattle 32–29 in a seven-turnover game to reach 5–0, but linebacker Dre Greenlaw lost his appeal of a one-game suspension for headbutting a Seahawk. The Valkyries swept the defending champion Aces to reach their first WNBA Finals. The Earthquakes stretched their unbeaten run to eight with a stoppage-time draw at Real Salt Lake, putting a playoff berth within reach.</p>
+          <p class="source">From the editions of Oct 11–17</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-11.html">Culture: Paramount closes its Warner Bros. Discovery deal</a></h3>
+          <p>Paramount completed its takeover of Warner Bros. Discovery, creating a media giant with nearly $70 billion in yearly revenue and warnings of job cuts. At the box office, Jessica Chastain’s horror film Other Mommy opened at No. 1 with $27.5 million, while Aaron Sorkin’s The Social Reckoning stumbled with $5.5 million. Netflix said it will cut about 1,000 jobs, and Street Fighter opened in theaters Friday.</p>
+          <p class="source">From the editions of Oct 11–17</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-14.html">Science &amp; tech: Google and Meta roll out new frontier AI models</a></h3>
+          <p>Google launched Gemini 4 Argon for paying subscribers and developers, a day after Meta released Muse Wonder, its first frontier model. In space, NASA’s Perseverance broke Opportunity’s record for the longest drive on another world, Artemis III booster stacking wrapped up, and a cargo Dragon delivered the station’s last new solar arrays. Microsoft’s Satya Nadella called for an ‘emergency brake’ that lets people stop AI models mid-task.</p>
+          <p class="source">From the editions of Oct 11–17</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="coming-up">
+      <h2>Coming up</h2>
+      <ul class="upcoming">
+        <li><span class="when">Mon, Oct 19</span><a href="https://49ers.com/news/a-game-by-game-look-at-the-san-francisco-49ers-2026-schedule-release" target="_blank" rel="noopener">49ers host Washington on Monday Night Football, 5:15 p.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Tue, Oct 20</span><a href="https://www.kqed.org/arts/13994440/lil-jon-new-book-memoir-too-short-e-40-bay-area" target="_blank" rel="noopener">Lil Jon’s memoir, with deep Bay Area ties, comes out</a> <span class="kind">· Culture</span></li>
+        <li><span class="when">Wed, Oct 21</span><a href="https://www.nbcsportsbayarea.com/nba/golden-state-warriors/2026-27-schedule-season-opener-lakers/1955811/" target="_blank" rel="noopener">Warriors open the NBA season at the Lakers</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Fri, Oct 23</span><a href="https://nasa.gov/news-release/nasa-to-discuss-artemis-acceleration-status-of-upcoming-moon-missions" target="_blank" rel="noopener">NASA briefing on Artemis moon plans</a> <span class="kind">· Space</span></li>
+        <li><span class="when">Fri, Oct 23</span><a href="https://www.nbcsportsbayarea.com/nba/golden-state-warriors/warriors-2026-home-opener-sweepstakes-presented-by-nbcswarriors/1967515/" target="_blank" rel="noopener">Warriors host Memphis at Chase Center, 7 p.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Sat, Oct 24</span><a href="https://www.sjearthquakes.com/news/match-recap-earthquakes-1-nashville-sc-1-x7762" target="_blank" rel="noopener">Earthquakes at FC Dallas, 7:30 p.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Sun, Oct 25</span><a href="https://49ers.com/news/a-game-by-game-look-at-the-san-francisco-49ers-2026-schedule-release" target="_blank" rel="noopener">49ers at Atlanta, 10 a.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Tue, Oct 27</span><a href="https://www.kqed.org/news/12104753/mail-in-ballots-stolen-from-san-mateo-post-office-election-officials-say" target="_blank" rel="noopener">Last day to request a replacement ballot online in San Mateo County</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Sat, Oct 31</span>Halloween <span class="kind">· Holiday</span></li>
+        <li><span class="when">Sun, Nov 1</span>Daylight saving time ends; clocks fall back an hour <span class="kind">· Holiday</span></li>
+        <li><span class="when">Tue, Nov 3</span><a href="https://www.kqed.org/news/12104425/california-officials-denounce-trump-dojs-demands-to-prove-voters-citizenship" target="_blank" rel="noopener">Election Day; polls close at 8 p.m.</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Sun, Nov 8</span><a href="https://49ers.com/news/a-game-by-game-look-at-the-san-francisco-49ers-2026-schedule-release" target="_blank" rel="noopener">49ers host Las Vegas, 1:05 p.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Wed, Nov 11</span>Veterans Day <span class="kind">· Holiday</span></li>
+        <li><span class="when">Sat, Nov 14</span><a href="https://www.bart.gov/news/articles/2026/news20261015" target="_blank" rel="noopener">No BART trains between 24th St. Mission and Daly City through Nov. 15</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Sun, Nov 15</span><a href="https://49ers.com/news/a-game-by-game-look-at-the-san-francisco-49ers-2026-schedule-release" target="_blank" rel="noopener">49ers at Dallas, 1:25 p.m.</a> <span class="kind">· Sports</span></li>
+      </ul>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

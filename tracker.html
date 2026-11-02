@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Story Tracker | Live Full Stack</title>
+<meta name="description" content="Every update on the stories Live Full Stack is following, in order.">
+<link rel="preload" href="fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/tracker.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Story Tracker | Live Full Stack">
+<meta property="og:description" content="Every update on the stories Live Full Stack is following, in order.">
+<meta property="og:url" content="https://www.livefullstack.com/tracker.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.55 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--spot); outline-offset: 3px; }
+
+  /* Masthead (matches the edition pages) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Page heading */
+  .page-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule);
+               display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem 2rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .page-head h1 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                  font-size: clamp(2.6rem, 9vw, 5rem); line-height: .9; margin: 0; letter-spacing: .01em; }
+  .tally { margin: 0; font-style: italic; color: var(--muted); text-align: right; line-height: 1.4; max-width: 24rem; }
+  .tally strong { font-style: normal; color: var(--ink); font-size: 1.6rem; display: block; line-height: 1; }
+  @media (max-width: 30rem) { .tally { text-align: left; } }
+  .notice { text-align: center; font-style: italic; color: var(--muted); padding: 3rem 1rem; }
+  footer { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+           display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; font-size: .9rem; color: var(--muted); }
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .home, .print-hide { display: none !important; }
+  }
+
+  /* Thread index */
+  .index { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; padding: .75rem 0; border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .index span { font-style: italic; color: var(--muted); }
+  .index a { font-weight: 700; text-decoration: none; }
+  .index a:hover { text-decoration: underline; }
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; padding: .8rem 0 0; }
+  .chips > span { font-style: italic; color: var(--muted); font-size: .9rem; margin-right: .2rem; }
+  .chip { font: inherit; font-size: .85rem; color: var(--ink); background: transparent; border: 1px solid var(--soft-rule);
+          padding: .2rem .7rem; cursor: pointer; border-radius: 0; }
+  .chip:hover { border-color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .chip:focus-visible { outline: 2px solid var(--spot); outline-offset: 2px; }
+
+  /* One section per story */
+  .thread { padding-top: 1.9rem; }
+  .thread > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(1.5rem, 4vw, 1.9rem);
+                 letter-spacing: .01em; line-height: 1.05; margin: 0; padding-bottom: .4rem; border-bottom: 4px double var(--rule);
+                 display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  .status { font-family: var(--serif); text-transform: uppercase; font-size: .7rem; letter-spacing: .09em; font-weight: 700;
+            padding: .15rem .45rem; border: 1px solid var(--spot); color: var(--spot); white-space: nowrap; }
+  .status.resolved { border-color: var(--muted); color: var(--muted); }
+  .thread .about { margin: .6rem 0 .4rem; max-width: 48rem; }
+  .thread .meta { font-size: .88rem; font-style: italic; color: var(--muted); margin: 0 0 .4rem; }
+  .timeline { list-style: none; margin: .4rem 0 0; padding: 0 0 0 1.1rem; border-left: 2px solid var(--soft-rule); }
+  .timeline li { position: relative; padding: .45rem 0 .55rem .6rem; }
+  .timeline li::before { content: ""; position: absolute; left: -1.53rem; top: .95rem; width: .7rem; height: .7rem;
+                         background: var(--paper); border: 2px solid var(--spot); border-radius: 50%; }
+  .timeline li:first-child::before { background: var(--spot); }
+  .timeline .when { display: block; font-size: .85rem; font-style: italic; color: var(--spot); }
+  .timeline .when a { color: inherit; }
+  .timeline h3 { font-size: 1.1rem; line-height: 1.25; margin: .1rem 0 .15rem; }
+  .timeline h3 a { text-decoration: none; }
+  .timeline h3 a:hover { text-decoration: underline; }
+  .timeline .src { font-size: .85rem; color: var(--muted); }
+  .target { animation: flash 1.6s ease-out 1; }
+  @keyframes flash { from { background: color-mix(in srgb, var(--spot) 14%, transparent); } to { background: transparent; } }
+</style>
+<script src="assets/reader.js"></script>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="./">Live Full Stack</a></p>
+      <a class="home" href="./">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-head">
+      <div>
+        <p class="stamp">Every update, in order</p>
+        <h1>Story Tracker</h1>
+      </div>
+      <p class="tally" id="tally"></p>
+    </header>
+    <div class="chips" id="chips" hidden><span>Show:</span>
+      <button type="button" class="chip" data-f="all" aria-pressed="true">All stories</button>
+      <button type="button" class="chip" data-f="Developing" aria-pressed="false">Developing</button>
+      <button type="button" class="chip" data-f="Resolved" aria-pressed="false">Resolved</button>
+    </div>
+    <nav class="index" id="index" aria-label="Stories" hidden><span>Jump to:</span></nav>
+    <div id="list"><p class="notice">Gathering the threads&hellip;</p></div>
+  </main>
+
+  <footer>
+    <span>Compiled each morning by Claude.</span>
+    <span><a href="./">Front page</a> · <a href="calendar.html">Calendar</a> · <a href="tracker.html">Story tracker</a> · <a href="archive.html">Archive</a> · <a href="about.html">About</a></span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  const list = document.getElementById("list");
+  const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  const fmt = d => { const [y, m, dd] = d.split("-").map(Number); const x = new Date(Date.UTC(y, m - 1, dd));
+    return DOW[x.getUTCDay()] + ", " + MON[m - 1] + " " + dd + ", " + y; };
+  const el = (t, c, x) => { const n = document.createElement(t); if (c) n.className = c; if (x != null) n.textContent = x; return n; };
+  let threads = [], filter = "all";
+  try { const f = localStorage.getItem("lfs-tracker-filter"); if (f) filter = f; } catch (e) {}
+
+  function render() {
+    const shown = threads.filter(t => filter === "all" || t.status === filter);
+    const idx = document.getElementById("index");
+    idx.querySelectorAll("a").forEach(a => a.remove());
+    if (!shown.length) { list.replaceChildren(el("p", "notice", "No stories with that status yet.")); idx.hidden = true; return; }
+    const parts = [];
+    shown.forEach(t => {
+      const sec = el("section", "thread"); sec.id = t.id;
+      const h = el("h2", null, t.title);
+      h.append(el("span", "status" + (t.status === "Resolved" ? " resolved" : ""), t.status));
+      sec.append(h, el("p", "about", t.summary));
+      const n = t.entries.length;
+      sec.append(el("p", "meta", n + (n === 1 ? " update" : " updates") + " · latest " + fmt(t.updated)));
+      const ol = el("ol", "timeline"); ol.setAttribute("reversed", "");
+      t.entries.slice().sort((a, b) => a.date < b.date ? 1 : -1).forEach(e => {
+        const li = el("li");
+        const when = el("span", "when");
+        const ea = el("a", null, fmt(e.date) + " edition"); ea.href = e.edition;
+        when.append(ea);
+        const h3 = el("h3"); const a = el("a", null, e.headline); a.href = e.url; a.target = "_blank"; a.rel = "noopener";
+        h3.append(a);
+        li.append(when, h3);
+        if (e.source) li.append(el("span", "src", e.source));
+        ol.append(li);
+      });
+      sec.append(ol);
+      parts.push(sec);
+      const j = el("a", null, t.title); j.href = "#" + t.id; idx.append(j);
+    });
+    idx.hidden = shown.length < 2;
+    list.replaceChildren(...parts);
+  }
+
+  document.querySelectorAll("#chips .chip").forEach(b => b.addEventListener("click", () => {
+    filter = b.dataset.f;
+    try { localStorage.setItem("lfs-tracker-filter", filter); } catch (e) {}
+    document.querySelectorAll("#chips .chip").forEach(c => c.setAttribute("aria-pressed", c === b ? "true" : "false"));
+    render();
+  }));
+
+  fetch("threads.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      threads = (data.threads || []).filter(t => t && t.id && t.title && (t.entries || []).length);
+      const dev = threads.filter(t => t.status === "Developing").length;
+      document.getElementById("tally").innerHTML = "<strong>" + threads.length + " stories</strong>" + dev + " still developing";
+      // Following a link to one story shows every story, so it can't be hidden by a filter.
+      if (location.hash && threads.some(t => "#" + t.id === location.hash)) filter = "all";
+      document.querySelectorAll("#chips .chip").forEach(c => c.setAttribute("aria-pressed", c.dataset.f === filter ? "true" : "false"));
+      document.getElementById("chips").hidden = false;
+      render();
+      if (location.hash) {
+        const t = document.getElementById(location.hash.slice(1));
+        if (t) { t.scrollIntoView(); t.classList.add("target"); }
+      }
+    })
+    .catch(() => list.replaceChildren(el("p", "notice", "The story tracker couldn’t be loaded. Refresh the page, or try again in a moment.")));
+})();
+</script>
+</body>
+</html>

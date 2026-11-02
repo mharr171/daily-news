@@ -135,6 +135,8 @@
     a { text-decoration: none; }
   }
 </style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
 </head>
 <body data-date="{{DATE}}">
 <div class="page">
@@ -156,14 +158,25 @@
       <p class="summary">{{SUMMARY}}</p>
     </header>
 
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+{{BRIEF}}
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae">{{ALERTS}}</aside>
+
     <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
 
     <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
-         Story format:
+         Story format (the kicker and Previously lines are optional):
          <article class="story">
+           <p class="kicker top">Top story</p>
            <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
            <p>Summary.</p>
            <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
            <p class="source">Source name, Mon D, YYYY</p>
          </article>
     -->
@@ -218,5 +231,6 @@
     .catch(() => {});
 })();
 </script>
+<script src="../assets/edition.js" defer></script>
 </body>
 </html>

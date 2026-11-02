@@ -181,6 +181,7 @@
     a { text-decoration: none; }
   }
 </style>
+<script src="assets/reader.js"></script>
 </head>
 <body>
 <div class="page">
@@ -243,7 +244,7 @@
 
   <footer>
     <span>Compiled each morning by Claude.</span>
-    <span><a href="calendar.html">Calendar</a> · <a href="archive.html">Older editions</a> · <a href="feed.xml">RSS feed</a></span>
+    <span><a href="calendar.html">Calendar</a> · <a href="tracker.html">Story tracker</a> · <a href="archive.html">Older editions</a> · <a href="about.html">About</a> · <a href="feed.xml">RSS feed</a></span>
   </footer>
 </div>
 
@@ -407,6 +408,16 @@
         wx.append(span("place", p.name + " today:"), main);
         if (dd.precipitation_probability_max[0] >= 20) wx.append(span(null, dd.precipitation_probability_max[0] + "% chance of rain"));
         if (w.current) wx.append(span(null, "Now " + r(w.current.temperature_2m) + "°"));
+        // Air quality (US AQI) right now, from Open-Meteo.
+        fetch("https://air-quality-api.open-meteo.com/v1/air-quality?latitude=" + lat + "&longitude=" + lon + "&current=us_aqi")
+          .then(res => res.ok ? res.json() : Promise.reject())
+          .then(a => {
+            const v = a.current && a.current.us_aqi;
+            if (mine !== ticket || v == null) return;
+            const lvl = v <= 50 ? "Good" : v <= 100 ? "Moderate" : v <= 150 ? "Unhealthy for sensitive groups" : v <= 200 ? "Unhealthy" : v <= 300 ? "Very unhealthy" : "Hazardous";
+            wx.append(span(v > 100 ? "alert" : null, "Air quality " + r(v) + " (" + lvl + ")"));
+          })
+          .catch(() => {});
       })
       .catch(() => { if (mine === ticket) wx.append(span("place", "Weather for " + p.name + " is unavailable right now.")); });
 

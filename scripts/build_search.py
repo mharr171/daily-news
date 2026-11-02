@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKIP_SECTIONS = {"week-in-review", "month-in-review", "coming-up"}
+SKIP_SECTIONS = {"week-in-review", "month-in-review", "coming-up", "news-quiz", "source-mix"}
 
 SECTION = re.compile(r'<section class="topic"(?: id="([^"]*)")?>\s*<h2>(.*?)</h2>(.*?)</section>', re.S)
 STORY = re.compile(r'<article class="story">(.*?)</article>', re.S)
@@ -40,7 +40,7 @@ def stories_in(page):
                     item["w"] = re.sub(r"^Why it matters:\s*", "", text(p))
                 elif 'class="source"' in cls:
                     item["src"] = text(p)
-                elif not item["s"]:
+                elif not cls and not item["s"]:
                     item["s"] = text(p)
             out.append({k: v for k, v in item.items() if v})
     return out

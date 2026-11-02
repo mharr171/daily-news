@@ -1,0 +1,531 @@
+{
+ "updated": "2026-11-02",
+ "threads": [
+  {
+   "id": "regional-transit-measure",
+   "title": "The Bay Area transit tax",
+   "status": "Developing",
+   "summary": "A regional sales tax on the Nov. 3 ballot would fund BART, Caltrain, Muni and AC Transit for 14 years. Agencies warn of deep service cuts if it fails.",
+   "updated": "2026-11-01",
+   "entries": [
+    {
+     "date": "2026-10-07",
+     "edition": "posts/2026-10-07.html",
+     "headline": "Iran war pushes Muni’s fuel bill up 58% as transit tax votes near",
+     "url": "https://sfstandard.com/2026/10/06/iran-war-has-sent-muni-s-fuel-costs-soaring-58/",
+     "source": "San Francisco Standard, Oct 6, 2026"
+    },
+    {
+     "date": "2026-10-13",
+     "edition": "posts/2026-10-13.html",
+     "headline": "Peninsula sales taxes could top 10% if the regional transit tax passes",
+     "url": "https://padailypost.com/2026/10/12/sales-tax-could-exceed-10-after-this-election/",
+     "source": "Palo Alto Daily Post, Oct 12, 2026"
+    },
+    {
+     "date": "2026-10-18",
+     "edition": "posts/2026-10-18.html",
+     "headline": "AC Transit details deep cuts if the Bay Area transit tax fails",
+     "url": "https://www.kqed.org/news/12104547/beyond-scary-ac-transit-riders-brace-for-potential-service-cuts",
+     "source": "KQED, Oct 16, 2026"
+    },
+    {
+     "date": "2026-10-24",
+     "edition": "posts/2026-10-24.html",
+     "headline": "Regional transit tax on the Nov. 3 ballot could decide the fate of BART and Caltrain service",
+     "url": "https://www.pleasantonweekly.com/election/2026/10/22/fate-of-bay-area-public-transit-hinges-on-regional-transit-measure/",
+     "source": "Pleasanton Weekly (Bay City News), Oct 22, 2026"
+    },
+    {
+     "date": "2026-10-26",
+     "edition": "posts/2026-10-26.html",
+     "headline": "Regional transit tax would keep Caltrain and BART from deep cuts",
+     "url": "https://www.sfexaminer.com/news/transit/bay-area-voters-weigh-two-tax-increases-for-public-transit/article_53955557-ba18-4c90-aac8-c33415ea8e2f.html",
+     "source": "San Francisco Examiner, Oct 25, 2026"
+    },
+    {
+     "date": "2026-11-01",
+     "edition": "posts/2026-11-01.html",
+     "headline": "Tech firms, unions and the Warriors put $7.3 million behind the Bay Area transit tax",
+     "url": "https://padailypost.com/2026/10/31/tech-companies-labor-contractors-donate-7-3-million-to-promote-mass-transit-bailout-tax/",
+     "source": "Palo Alto Daily Post, Oct 31, 2026"
+    }
+   ]
+  },
+  {
+   "id": "california-voter-rolls-fight",
+   "title": "The federal fight over California’s voter rolls",
+   "status": "Developing",
+   "summary": "The Justice Department and Homeland Security have pressed California over a disputed list of “likely noncitizen” voters and mailed ballots, and courts have pushed back.",
+   "updated": "2026-11-01",
+   "entries": [
+    {
+     "date": "2026-10-14",
+     "edition": "posts/2026-10-14.html",
+     "headline": "Justice Department gives California 48 hours to verify voter citizenship",
+     "url": "https://www.timeslive.co.za/news/world/2026-10-14-us-justice-department-threatens-california-over-noncitizen-voters-letter-shows/",
+     "source": "Reuters (TimesLIVE), Oct 14, 2026"
+    },
+    {
+     "date": "2026-10-17",
+     "edition": "posts/2026-10-17.html",
+     "headline": "Justice Department sues California to set aside 20,000 mailed ballots",
+     "url": "https://www.kqed.org/news/12104425/california-officials-denounce-trump-dojs-demands-to-prove-voters-citizenship",
+     "source": "KQED, Oct 15, 2026"
+    },
+    {
+     "date": "2026-10-20",
+     "edition": "posts/2026-10-20.html",
+     "headline": "Federal prosecutors charge 28 California green card holders with illegal voting",
+     "url": "https://www.kqed.org/news/12105139/federal-prosecutors-charge-28-california-green-card-holders-with-voting-violations",
+     "source": "KQED, Oct 19, 2026"
+    },
+    {
+     "date": "2026-10-22",
+     "edition": "posts/2026-10-22.html",
+     "headline": "Judge limits DHS’s search for noncitizen voters in California and eight other states",
+     "url": "https://kesq.com/news/national-politics/cnn-us-politics/2026/10/21/judge-curbs-trump-administrations-hunt-for-noncitizen-voters-in-some-states-citing-flawed-data/",
+     "source": "CNN (via KESQ), Oct 21, 2026"
+    },
+    {
+     "date": "2026-10-28",
+     "edition": "posts/2026-10-28.html",
+     "headline": "Trump administration presses California counties over a disputed noncitizen voter list",
+     "url": "https://calmatters.org/politics/2026/10/trump-voting-claims-counties/",
+     "source": "CalMatters, Oct 27, 2026"
+    },
+    {
+     "date": "2026-10-29",
+     "edition": "posts/2026-10-29.html",
+     "headline": "Judge rejects Trump administration bid to set aside 20,000 California ballots",
+     "url": "https://calmatters.org/politics/2026/10/trump-ballot-claims-california-ruling/",
+     "source": "CalMatters, Oct 28, 2026"
+    },
+    {
+     "date": "2026-10-30",
+     "edition": "posts/2026-10-30.html",
+     "headline": "Federal subpoenas hit California election workers despite a judge’s warning",
+     "url": "https://calmatters.org/politics/2026/10/ca-election-officials-subpoenas/",
+     "source": "CalMatters, Oct 29, 2026"
+    },
+    {
+     "date": "2026-11-01",
+     "edition": "posts/2026-11-01.html",
+     "headline": "Analysis finds 42% of names on the DOJ’s “likely noncitizen” list aren’t on California’s voter rolls",
+     "url": "https://www.aljazeera.com/news/2026/10/31/legal-filing-questions-trumps-claims-of-non-citizen-voting-in-california",
+     "source": "Al Jazeera, Oct 31, 2026"
+    }
+   ]
+  },
+  {
+   "id": "swift-observatory",
+   "title": "The end of NASA’s Swift observatory",
+   "status": "Developing",
+   "summary": "After a failed rescue attempt, NASA ended the Swift mission, and the observatory is set to fall back to Earth.",
+   "updated": "2026-11-01",
+   "entries": [
+    {
+     "date": "2026-10-27",
+     "edition": "posts/2026-10-27.html",
+     "headline": "NASA ends the Swift observatory’s mission after a rescue attempt fails",
+     "url": "https://www.space.com/space-exploration/missions/nasa-ends-swift-space-telescope-mission-after-failed-rescue-attempt",
+     "source": "Space.com, Oct 26, 2026"
+    },
+    {
+     "date": "2026-11-01",
+     "edition": "posts/2026-11-01.html",
+     "headline": "NASA’s Swift observatory is days from an uncontrolled reentry",
+     "url": "https://www.space.com/space-exploration/missions/nasas-swift-space-telescope-is-about-to-crash-to-earth-where-will-it-fall",
+     "source": "Space.com, Nov 1, 2026"
+    }
+   ]
+  },
+  {
+   "id": "iran-war",
+   "title": "The Iran war and gas prices",
+   "status": "Developing",
+   "summary": "The U.S. conflict with Iran has spread to shipping in the Gulf and pushed up fuel prices and inflation at home.",
+   "updated": "2026-10-31",
+   "entries": [
+    {
+     "date": "2026-10-03",
+     "edition": "posts/2026-10-03.html",
+     "headline": "Pentagon sends a third carrier group to the Middle East",
+     "url": "https://www.ksat.com/news/politics/2026/10/01/us-is-moving-thousands-of-troops-aboard-ships-to-the-mideast-as-trump-weighs-new-strikes-on-iran/",
+     "source": "Associated Press (KSAT), Oct 1, 2026"
+    },
+    {
+     "date": "2026-10-06",
+     "edition": "posts/2026-10-06.html",
+     "headline": "Trump says Iran could ‘take out’ Los Angeles and San Diego; state leaders push back",
+     "url": "https://abc7news.com/19912174/",
+     "source": "ABC7 News, Oct 5, 2026"
+    },
+    {
+     "date": "2026-10-07",
+     "edition": "posts/2026-10-07.html",
+     "headline": "Trump says he’s weighing a suspension of the federal gas tax",
+     "url": "https://www.ktvu.com/news/president-trump-considering-suspending-federal-gas-tax",
+     "source": "KTVU, Oct 7, 2026"
+    },
+    {
+     "date": "2026-10-13",
+     "edition": "posts/2026-10-13.html",
+     "headline": "Houthi missiles target Riyadh for a third straight day",
+     "url": "https://aljazeera.com/news/2026/10/12/houthi-missile-attack-targets-saudi-capital-riyadh-for-third-day-in-a-row",
+     "source": "Al Jazeera, Oct 12, 2026"
+    },
+    {
+     "date": "2026-10-15",
+     "edition": "posts/2026-10-15.html",
+     "headline": "Inflation jumps to 3.7% as gasoline prices soar",
+     "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+     "source": "Bureau of Labor Statistics, Oct 14, 2026"
+    },
+    {
+     "date": "2026-10-15",
+     "edition": "posts/2026-10-15.html",
+     "headline": "Iran reportedly sinks two cargo ships near the Strait of Hormuz",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-14-2026",
+     "source": "Critical Threats, Oct 14, 2026"
+    },
+    {
+     "date": "2026-10-17",
+     "edition": "posts/2026-10-17.html",
+     "headline": "California gas averages $6.26 as the Iran war drives prices up nationwide",
+     "url": "https://www.kqed.org/news/12104393/california-democrats-hope-iran-war-flips-the-script-on-gas-prices",
+     "source": "KQED, Oct 15, 2026"
+    },
+    {
+     "date": "2026-10-23",
+     "edition": "posts/2026-10-23.html",
+     "headline": "US pulls nonessential embassy staff from Saudi Arabia over Houthi attacks",
+     "url": "https://kesq.com/news/national-politics/cnn-us-politics/2026/10/22/us-orders-departure-of-some-embassy-staff-and-families-from-saudi-arabia-amid-houthi-threat/",
+     "source": "CNN (via KESQ), Oct 22, 2026"
+    },
+    {
+     "date": "2026-10-24",
+     "edition": "posts/2026-10-24.html",
+     "headline": "Iran says seven tankers were damaged near Hormuz as US tensions climb",
+     "url": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february",
+     "source": "Al Jazeera, Oct 23, 2026"
+    },
+    {
+     "date": "2026-10-29",
+     "edition": "posts/2026-10-29.html",
+     "headline": "Iran war costs top $47 billion, Pentagon tells Congress",
+     "url": "https://www.inquirer.com/news/nation-world/iran-war-cost-rises-pentagon-20261028.html",
+     "source": "The Philadelphia Inquirer (New York Times), Oct 28, 2026"
+    },
+    {
+     "date": "2026-10-31",
+     "edition": "posts/2026-10-31.html",
+     "headline": "Iran’s first limpet-mine attack sets a tanker on fire near Hormuz",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-30-2026",
+     "source": "Institute for the Study of War & Critical Threats Project, Oct 30, 2026"
+    }
+   ]
+  },
+  {
+   "id": "space-station-crew-and-arrays",
+   "title": "Space station crew swap and new solar arrays",
+   "status": "Developing",
+   "summary": "Crew-13 replaced Crew-12 on the International Space Station, and spacewalkers are installing the last of the station’s new solar arrays.",
+   "updated": "2026-10-30",
+   "entries": [
+    {
+     "date": "2026-10-01",
+     "edition": "posts/2026-10-01.html",
+     "headline": "SpaceX Crew-13 set to launch to the space station this morning",
+     "url": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/weather-55-favorable-for-thursday-crew-13-mission-launch/",
+     "source": "NASA, Sep 30, 2026"
+    },
+    {
+     "date": "2026-10-02",
+     "edition": "posts/2026-10-02.html",
+     "headline": "Crew-13 docks at the space station",
+     "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/crew-13-members-enter-station-join-expedition-75/",
+     "source": "NASA, Oct 1, 2026"
+    },
+    {
+     "date": "2026-10-08",
+     "edition": "posts/2026-10-08.html",
+     "headline": "Crew-12 splashes down in the Pacific off Southern California",
+     "url": "https://www.nasa.gov/blogs/spacestation/2026/10/08/nasas-spacex-crew-12-dragon-splashes-down-at-1134-a-m-edt/",
+     "source": "NASA, Oct 8, 2026"
+    },
+    {
+     "date": "2026-10-13",
+     "edition": "posts/2026-10-13.html",
+     "headline": "SpaceX set to launch a cargo Dragon with the station’s last new solar arrays",
+     "url": "https://www.space.com/space-exploration/international-space-station/spacex-crs-35-cargo-launch-international-space-station",
+     "source": "Space.com, Oct 12, 2026"
+    },
+    {
+     "date": "2026-10-16",
+     "edition": "posts/2026-10-16.html",
+     "headline": "Cargo Dragon docks at the space station with its last new solar arrays",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-crs-35-iss-cargo-mission-docking",
+     "source": "Space.com, Oct 15, 2026"
+    },
+    {
+     "date": "2026-10-30",
+     "edition": "posts/2026-10-30.html",
+     "headline": "Spacewalkers install a new solar array on the 100th U.S. station spacewalk",
+     "url": "https://www.space.com/space-exploration/international-space-station/100-us-spacewalks-from-the-iss-astronauts-deploy-new-solar-array-on-landmark-eva",
+     "source": "Space.com, Oct 29, 2026"
+    }
+   ]
+  },
+  {
+   "id": "election-san-mateo-county",
+   "title": "Election 2026 in San Mateo County",
+   "status": "Developing",
+   "summary": "Ballots, vote centers, deadlines and the county measures on the Nov. 3 ballot.",
+   "updated": "2026-10-29",
+   "entries": [
+    {
+     "date": "2026-10-05",
+     "edition": "posts/2026-10-05.html",
+     "headline": "San Mateo County opens three vote centers as Nov. 3 ballots reach mailboxes",
+     "url": "https://smcacre.gov/elections/news/three-vote-centers-are-open-november-3-2026-statewide-general-election",
+     "source": "San Mateo County Registration & Elections, Oct 5, 2026"
+    },
+    {
+     "date": "2026-10-09",
+     "edition": "posts/2026-10-09.html",
+     "headline": "San Mateo County voters weigh four charter changes and a college bond",
+     "url": "https://patch.com/california/sanmateo/san-mateo-voter-guide-2026-whats-ballot-voting-more",
+     "source": "Patch, Oct 8, 2026"
+    },
+    {
+     "date": "2026-10-16",
+     "edition": "posts/2026-10-16.html",
+     "headline": "Ballots stolen from a Daly City post office; San Mateo County voters urged to check theirs",
+     "url": "https://padailypost.com/2026/10/16/voter-fraud-is-rare-ballots-stolen-from-post-office/",
+     "source": "Palo Alto Daily Post, Oct 16, 2026"
+    },
+    {
+     "date": "2026-10-19",
+     "edition": "posts/2026-10-19.html",
+     "headline": "Today is the last day to register to vote online for Nov. 3",
+     "url": "https://www.rwcpulse.com/election/2026/10/19/monday-is-last-day-to-register-to-vote-online/",
+     "source": "Redwood City Pulse, Oct 19, 2026"
+    },
+    {
+     "date": "2026-10-19",
+     "edition": "posts/2026-10-19.html",
+     "headline": "What to do if your mail ballot hasn’t arrived",
+     "url": "https://www.kqed.org/news/12105086/wheres-my-ballot-midterm-election-2026-need-replacement-ballot-vote-for-governor",
+     "source": "KQED, Oct 19, 2026"
+    },
+    {
+     "date": "2026-10-23",
+     "edition": "posts/2026-10-23.html",
+     "headline": "Measure J would give San Mateo County supervisors 60 days to fill vacancies",
+     "url": "https://www.almanacnews.com/election/2026/10/22/san-mateo-countys-measure-j-proposes-extending-timeline-for-filling-vacancies-in-elected-offices/",
+     "source": "The Almanac, Oct 22, 2026"
+    },
+    {
+     "date": "2026-10-25",
+     "edition": "posts/2026-10-25.html",
+     "headline": "San Mateo County’s Measure U would take district map-drawing away from supervisors",
+     "url": "https://www.rwcpulse.com/election/2026/10/24/san-mateo-countys-measure-u-would-create-independent-commission-for-redrawing-district-maps/",
+     "source": "Redwood City Pulse, Oct 24, 2026"
+    },
+    {
+     "date": "2026-10-25",
+     "edition": "posts/2026-10-25.html",
+     "headline": "Seven more San Mateo County vote centers open, bringing the total to 10",
+     "url": "https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide",
+     "source": "San Mateo County Elections, Oct 23, 2026"
+    },
+    {
+     "date": "2026-10-27",
+     "edition": "posts/2026-10-27.html",
+     "headline": "A week to Election Day: California mail ballots must be postmarked by Nov. 3",
+     "url": "https://calmatters.org/politics/2026/10/midterm-late-voter-guide/",
+     "source": "CalMatters, Oct 27, 2026"
+    },
+    {
+     "date": "2026-10-29",
+     "edition": "posts/2026-10-29.html",
+     "headline": "Measure V asks San Mateo County voters to extend an $848 million college bond",
+     "url": "https://padailypost.com/2026/10/29/measure-v-college-district-wants-bond-approval-but-little-has-been-done-to-prevent-more-bribery/",
+     "source": "Palo Alto Daily Post, Oct 29, 2026"
+    }
+   ]
+  },
+  {
+   "id": "starship-flight-15",
+   "title": "Starship Flight 15",
+   "status": "Developing",
+   "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
+   "updated": "2026-10-29",
+   "entries": [
+    {
+     "date": "2026-10-21",
+     "edition": "posts/2026-10-21.html",
+     "headline": "SpaceX will try to catch both Starship stages on its next test flight",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says",
+     "source": "Space.com, Oct 20, 2026"
+    },
+    {
+     "date": "2026-10-26",
+     "edition": "posts/2026-10-26.html",
+     "headline": "SpaceX test-fires the Super Heavy booster for Starship Flight 15",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
+     "source": "Space.com, Oct 26, 2026"
+    },
+    {
+     "date": "2026-10-29",
+     "edition": "posts/2026-10-29.html",
+     "headline": "SpaceX finishes Starship upper-stage test fires ahead of Flight 15",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video",
+     "source": "Space.com, Oct 29, 2026"
+    }
+   ]
+  },
+  {
+   "id": "el-nino-winter",
+   "title": "Getting ready for El Niño",
+   "status": "Developing",
+   "summary": "Forecasters expect a strong, possibly record El Niño this winter, and Bay Area governments are preparing for storms and flooding.",
+   "updated": "2026-10-24",
+   "entries": [
+    {
+     "date": "2026-10-09",
+     "edition": "posts/2026-10-09.html",
+     "headline": "Forecasters now see a record-strength El Niño as likely this winter",
+     "url": "https://watchers.news/2026/10/08/noaa-gives-el-nino-an-83-chance-of-reaching-historic-strength-in-late-2026/",
+     "source": "The Watchers, Oct 8, 2026"
+    },
+    {
+     "date": "2026-10-18",
+     "edition": "posts/2026-10-18.html",
+     "headline": "San José says it’s ready for a strong El Niño winter",
+     "url": "https://www.kqed.org/news/12104538/staring-down-a-historic-el-nino-san-jose-says-its-ready",
+     "source": "KQED, Oct 16, 2026"
+    },
+    {
+     "date": "2026-10-22",
+     "edition": "posts/2026-10-22.html",
+     "headline": "California stages millions of sandbags and criticizes a federal pullback on disasters",
+     "url": "https://www.gov.ca.gov/2026/10/21/governor-newsom-slams-trumps-disaster-retreat-as-california-prepares-for-dangerous-el-nino-storms/",
+     "source": "Office of the Governor, Oct 21, 2026"
+    },
+    {
+     "date": "2026-10-22",
+     "edition": "posts/2026-10-22.html",
+     "headline": "San Mateo County declares a local emergency to get ahead of El Niño storms",
+     "url": "https://www.almanacnews.com/environment/2026/10/21/san-mateo-county-declares-el-nino-state-of-emergency-to-prepare-for-winter-storms/",
+     "source": "The Almanac, Oct 21, 2026"
+    },
+    {
+     "date": "2026-10-24",
+     "edition": "posts/2026-10-24.html",
+     "headline": "San Francisco declares a local emergency to prepare for El Niño storms",
+     "url": "https://sfist.com/2026/10/23/sf-mayor-declares-local-emergency-to-allow-for-increased-el-nino-preparedness/",
+     "source": "SFist, Oct 23, 2026"
+    }
+   ]
+  },
+  {
+   "id": "artemis-moon-plans",
+   "title": "NASA’s faster Artemis plan",
+   "status": "Developing",
+   "summary": "NASA is reshaping its Artemis program to aim for a crewed Moon landing in 2028, with SpaceX and Blue Origin landers.",
+   "updated": "2026-10-24",
+   "entries": [
+    {
+     "date": "2026-10-14",
+     "edition": "posts/2026-10-14.html",
+     "headline": "NASA finishes stacking the Artemis III boosters at Kennedy",
+     "url": "https://www.nasa.gov/blogs/missions/2026/10/13/nasa-completes-artemis-iii-booster-stacking-shares-status-update/",
+     "source": "NASA, Oct 13, 2026"
+    },
+    {
+     "date": "2026-10-22",
+     "edition": "posts/2026-10-22.html",
+     "headline": "NASA lays out when SpaceX and Blue Origin landers should fly to the moon",
+     "url": "https://www.space.com/space-exploration/artemis/when-will-spacex-and-blue-origin-fly-to-the-moon-nasa-reveals-lunar-lander-timelines-and-an-artemis-iii-update",
+     "source": "Space.com, Oct 21, 2026"
+    },
+    {
+     "date": "2026-10-23",
+     "edition": "posts/2026-10-23.html",
+     "headline": "NASA holds its “Artemis acceleration” briefing today",
+     "url": "https://www.space.com/space-exploration/artemis/nasa-giving-update-about-artemis-moon-plans-on-oct-23-watch-it-live",
+     "source": "Space.com, Oct 22, 2026"
+    },
+    {
+     "date": "2026-10-24",
+     "edition": "posts/2026-10-24.html",
+     "headline": "NASA outlines its faster Artemis plan aimed at a 2028 moon landing",
+     "url": "https://www.nasa.gov/blogs/missions/2026/10/23/nasa-shares-artemis-acceleration-plans-for-moon-missions/",
+     "source": "NASA, Oct 23, 2026"
+    }
+   ]
+  },
+  {
+   "id": "valkyries-title-run",
+   "title": "The Valkyries’ championship run",
+   "status": "Resolved",
+   "summary": "In only their second season, the Golden State Valkyries swept into the WNBA Finals and won the title in Game 7 at Chase Center.",
+   "updated": "2026-11-01",
+   "entries": [
+    {
+     "date": "2026-10-11",
+     "edition": "posts/2026-10-11.html",
+     "headline": "Valkyries sweep the Aces to reach their first WNBA Finals",
+     "url": "https://www.kqed.org/news/12103702/golden-state-valkyries-advance-to-wnba-finals-after-sweeping-las-vegas-aces",
+     "source": "KQED, Oct 10, 2026"
+    },
+    {
+     "date": "2026-10-29",
+     "edition": "posts/2026-10-29.html",
+     "headline": "Valkyries one win from a title as Game 6 moves to a midday tip in Atlanta",
+     "url": "https://www.espn.com/wnba/story/_/id/50302463/dream-say-concerns-finding-available-wnba-finals-venue-went-unheeded",
+     "source": "ESPN, Oct 27, 2026"
+    },
+    {
+     "date": "2026-11-01",
+     "edition": "posts/2026-11-01.html",
+     "headline": "Valkyries beat the Dream in Game 7 for their first WNBA title",
+     "url": "https://www.espn.com/wnba/story/_/id/50343701/golden-state-valkyries-win-game-7-secure-first-wnba-title",
+     "source": "ESPN, Oct 31, 2026"
+    }
+   ]
+  },
+  {
+   "id": "pge-shutoffs-october",
+   "title": "October power shutoffs",
+   "status": "Resolved",
+   "summary": "PG&E cut power to tens of thousands of customers during October’s fire-weather events.",
+   "updated": "2026-10-15",
+   "entries": [
+    {
+     "date": "2026-10-13",
+     "edition": "posts/2026-10-13.html",
+     "headline": "PG&E restores power after a weekend of wildfire-safety shutoffs",
+     "url": "https://www.pge.com/en/newsroom/currents/safety/potential-public-safety-power-shutoff-could-impact-small-portion.html",
+     "source": "PG&E, Oct 12, 2026"
+    },
+    {
+     "date": "2026-10-14",
+     "edition": "posts/2026-10-14.html",
+     "headline": "PG&E warns about 70,000 customers of power shutoffs starting Wednesday evening",
+     "url": "https://www.nbcbayarea.com/news/local/pge-power-shutoff-psps-october-2026-high-winds/4157597/",
+     "source": "NBC Bay Area, Oct 13, 2026"
+    },
+    {
+     "date": "2026-10-15",
+     "edition": "posts/2026-10-15.html",
+     "headline": "PG&E widens its wildfire-safety shutoff to about 88,000 customers",
+     "url": "https://investor.pgecorp.com/news-events/press-releases/press-release-details/2026/With-Change-Statewide-Fire-Weather-Forecast-Planned-PGE-Public-Safety-Power-Shutoff-Event-Now-Includes-88000-Customers-in-Portions-of-Twenty-Nine-Counties/default.aspx",
+     "source": "PG&E, Oct 14, 2026"
+    }
+   ]
+  }
+ ]
+}

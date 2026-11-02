@@ -1148,7 +1148,7 @@
    "category": "Sports",
    "team": "Earthquakes",
    "location": "PayPal Park, San Jose",
-   "description": "MLS regular season. Regular-season finale. Final: W 2–1.",
+   "description": "MLS regular season. Final regular-season home game. Final: W 2–1.",
    "url": "https://www.sjearthquakes.com/schedule/"
   },
   {
@@ -1387,6 +1387,16 @@
    "location": "Library | Parks and Recreation Center, 901 Civic Campus Way, South San Francisco",
    "description": "Free holiday shopping day with local vendors selling handmade jewelry, ceramics and crafts, plus free drinks and candy canes.",
    "url": "https://www.ssfca.gov/Departments/Parks-Recreation/Events/Senior-Holiday-Boutique-Makers-Faire"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "4:00 PM",
+   "title": "Earthquakes at Minnesota United FC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "Allianz Field, Saint Paul, Minn.",
+   "description": "MLS regular-season finale (Decision Day). TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
   },
   {
    "date": "2026-11-07",

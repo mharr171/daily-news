@@ -26,7 +26,7 @@ import build_feed  # noqa: E402
 import build_search  # noqa: E402
 
 # Files a normal edition may change. Anything else needs --allow-site-changes.
-EDITION_FILES = re.compile(r"^(posts\.json|feed\.xml|search\.json|calendar\.json|posts/\d{4}-\d{2}-\d{2}\.html)$")
+EDITION_FILES = re.compile(r"^(posts\.json|feed\.xml|search\.json|calendar\.json|threads\.json|posts/\d{4}-\d{2}-\d{2}\.html)$")
 # Files that must never change.
 NEVER = {"CNAME"}
 
@@ -174,6 +174,39 @@ def check_calendar():
                 warn(f"{where}: straight double quote in {k}; use “ ”.")
 
 
+def thread_ids():
+    path = ROOT / "threads.json"
+    if not path.exists():
+        return set()
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        fail(f"threads.json is not valid JSON: {e}")
+        return set()
+    ids = set()
+    for i, t in enumerate(data.get("threads") or []):
+        where = f"threads.json thread {i + 1} ({t.get('id', '?')})"
+        for k in ("id", "title", "status", "summary", "updated", "entries"):
+            if not t.get(k):
+                fail(f"{where}: missing {k}.")
+        if t.get("status") not in ("Developing", "Resolved"):
+            fail(f"{where}: status must be Developing or Resolved.")
+        if t.get("id") in ids:
+            fail(f"{where}: duplicate id.")
+        ids.add(t.get("id"))
+        dates = []
+        for e in t.get("entries") or []:
+            for k in ("date", "edition", "headline", "url"):
+                if not e.get(k):
+                    fail(f"{where}: an entry is missing {k}.")
+            if e.get("edition") and not (ROOT / e["edition"]).exists():
+                fail(f"{where}: entry points to {e['edition']}, which doesn’t exist.")
+            dates.append(e.get("date", ""))
+        if dates and t.get("updated") != max(dates):
+            warn(f"{where}: updated should be its newest entry’s date, {max(dates)}.")
+    return ids
+
+
 def check_feed():
     try:
         expected = build_feed.render()
@@ -194,7 +227,54 @@ def check_feed():
 
 
 MIN_STORIES = 8
-EXTRA_SECTIONS = {"on-this-day", "week-in-review", "month-in-review", "coming-up"}
+EXTRA_SECTIONS = {"on-this-day", "week-in-review", "month-in-review", "coming-up", "news-quiz", "source-mix"}
+KICKERS = {"top", "developing", "good", "feature"}
+THREADS = set()
+
+
+def d_of(p):
+    return p.stem
+
+
+def check_features(p, s):
+    """Checks for the features editions have had since Nov 1, 2026."""
+    for need in ('assets/edition.css', 'assets/edition.js', 'assets/reader.js', 'id="today-box"'):
+        if need not in s:
+            fail(f"{p.name}: missing {need} (copy the current templates/day.html).")
+    brief = re.search(r'<section class="brief"[^>]*>(.*?)</section>', s, re.S)
+    if not brief:
+        fail(f"{p.name}: missing The day in 60 seconds.")
+    else:
+        k = brief.group(1).count("<li>")
+        if not 3 <= k <= 4:
+            warn(f"{p.name}: The day in 60 seconds has {k} items; the task asks for 3–4.")
+    kinds = re.findall(r'<p class="kicker ([a-z]+)">', s)
+    for k in kinds:
+        if k not in KICKERS:
+            fail(f"{p.name}: unknown kicker class {k!r}; use one of {sorted(KICKERS)}.")
+    if kinds.count("top") > 3:
+        warn(f"{p.name}: {kinds.count('top')} Top story labels; the task asks for at most 3.")
+    if "good" not in kinds:
+        warn(f"{p.name}: no Good news story.")
+    for href in re.findall(r'<p class="previously">.*?</p>', s, re.S):
+        for a in re.findall(r'href="([^"]+)"', href):
+            if a.startswith("../tracker.html#"):
+                if a.split("#", 1)[1] not in THREADS:
+                    fail(f"{p.name}: Previously links to tracker thread {a.split('#', 1)[1]!r}, which isn’t in threads.json.")
+                continue
+            if a.startswith("http"):
+                continue
+            if not (ROOT / "posts" / a).exists():
+                fail(f"{p.name}: Previously link to {a}, which doesn’t exist.")
+    wd = __import__("datetime").date.fromisoformat(p.stem).weekday()
+    if wd == 6:
+        quiz = re.search(r'<section class="topic" id="news-quiz">(.*?)</section>', s, re.S)
+        if not quiz:
+            warn(f"{p.name}: Sunday edition has no news quiz.")
+        elif quiz.group(1).count('<li class="qa">') != 5:
+            warn(f"{p.name}: the news quiz should have 5 questions.")
+        if 'id="source-mix"' not in s:
+            warn(f"{p.name}: Sunday edition has no Source mix.")
 
 
 def check_size(pages):
@@ -209,6 +289,8 @@ def check_size(pages):
             warn(f"{p.name} has no On this day section.")
         elif otd.group(1).count('<article class="story">') != 3:
             warn(f"{p.name}: On this day should have exactly 3 items.")
+        if d_of(p) >= "2026-11-01":
+            check_features(p, s)
         if n < MIN_STORIES:
             warn(f"{p.name} has {n} topic stories; the task asks for at least {MIN_STORIES}. "
                  "Add more if there’s strong news, and explain in the report if not.")
@@ -229,7 +311,7 @@ def check_changed(files, allow_site):
 
 def story_links(page):
     s = page.read_text(encoding="utf-8")
-    return re.findall(r'<article class="story">\s*<h3><a href="(https?://[^"]+)"', s)
+    return re.findall(r'<article class="story">\s*(?:<p class="kicker[^"]*">.*?</p>\s*)?<h3><a href="(https?://[^"]+)"', s, re.S)
 
 
 def fetch(url):
@@ -275,6 +357,7 @@ def main():
     check_pages(dates)
     check_feed()
     check_calendar()
+    THREADS.update(thread_ids())
     files = changed_files()
     check_changed(files, args.allow_site_changes)
 

@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-15",
+      "file": "posts/2026-10-15.html",
+      "summary": "Inflation rose to 3.7% in September as gasoline jumped 34% from a year earlier, and PG&E expanded wildfire-safety shutoffs to about 88,000 customers, though San Mateo County isn’t affected. Millbrae reopened the Aviador Bridge, and the Earthquakes stretched their unbeaten run to eight with a last-gasp draw in Salt Lake. The Diplomat and Crystal Lake arrive on streaming today, and YouTube Music began labeling AI-made songs.",
+      "headlines": [
+        {
+          "title": "Inflation jumps to 3.7% as gasoline prices soar",
+          "topic": "General news"
+        },
+        {
+          "title": "PG&E widens its wildfire-safety shutoff to about 88,000 customers",
+          "topic": "General news"
+        },
+        {
+          "title": "Millbrae reopens Aviador Bridge after emergency repairs",
+          "topic": "General news"
+        },
+        {
+          "title": "Today in sports: Quakes grab a stoppage-time draw in Salt Lake to stay unbeaten in eight",
+          "topic": "Sports"
+        },
+        {
+          "title": "“The Diplomat” season 4 and the Friday the 13th prequel “Crystal Lake” arrive today",
+          "topic": "Culture"
+        }
+      ]
+    },
+    {
       "date": "2026-10-14",
       "file": "posts/2026-10-14.html",
       "summary": "PG&E is warning about 70,000 customers in 29 counties of wildfire-safety shutoffs that could begin this evening, and the Justice Department is pressing California over a list of alleged noncitizen voters three weeks before Election Day. The Warriors rallied past the Lakers in Las Vegas, and Dre Greenlaw lost his suspension appeal. Google launched Gemini 4 Argon, and NASA’s Perseverance rover set a new off-world driving record.",

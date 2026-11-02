@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thursday, October 15, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 15: Thursday, October 15, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-10-15.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Thursday, October 15, 2026 | Live Full Stack">
+<meta property="og:description" content="Inflation rose to 3.7% in September as gasoline jumped 34% from a year earlier, and PG&amp;E expanded wildfire-safety shutoffs to about 88,000 customers, though San Mateo County isn’t affected. Millbrae reopened the Aviador Bridge, and the Earthquakes stretched their unbeaten run to eight with a last-gasp draw in Salt Lake. The Diplomat and Crystal Lake arrive on streaming today, and YouTube Music began labeling AI-made songs.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-15.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body data-date="2026-10-15">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 15</p>
+      <h1>Thursday, October 15, 2026</h1>
+      <p class="summary">Inflation rose to 3.7% in September as gasoline jumped 34% from a year earlier, and PG&amp;E expanded wildfire-safety shutoffs to about 88,000 customers, though San Mateo County isn’t affected. Millbrae reopened the Aviador Bridge, and the Earthquakes stretched their unbeaten run to eight with a last-gasp draw in Salt Lake. The Diplomat and Crystal Lake arrive on streaming today, and YouTube Music began labeling AI-made songs.</p>
+    </header>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format:
+         <article class="story">
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.bls.gov/news.release/cpi.nr0.htm" target="_blank" rel="noopener">Inflation jumps to 3.7% as gasoline prices soar</a></h3>
+          <p>Consumer prices rose 0.6% in September and 3.7% over the past year, the Labor Department reported Wednesday, as gasoline climbed 9.1% in a single month and 34.2% from a year earlier. Prices excluding food and energy rose a milder 2.6% over the year, food prices were flat for the month, and shelter costs rose 0.4%.</p>
+          <p class="why"><strong>Why it matters:</strong> With gasoline up about a third from last year, fill-ups are taking a much bigger bite out of Peninsula household budgets.</p>
+          <p class="source">Bureau of Labor Statistics, Oct 14, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://investor.pgecorp.com/news-events/press-releases/press-release-details/2026/With-Change-Statewide-Fire-Weather-Forecast-Planned-PGE-Public-Safety-Power-Shutoff-Event-Now-Includes-88000-Customers-in-Portions-of-Twenty-Nine-Counties/default.aspx" target="_blank" rel="noopener">PG&amp;E widens its wildfire-safety shutoff to about 88,000 customers</a></h3>
+          <p>PG&amp;E expanded its shutoff plan to about 88,000 customers in 29 counties, including 5,500 who rely on power for medical needs, as a dry offshore wind event set in Wednesday evening. Outages could last through Saturday afternoon, and the utility planned more than 40 resource centers offering charging, Wi-Fi and water. Bay Area counties on the list include Alameda, Contra Costa, Napa, Solano and Sonoma; San Mateo is not.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula homes aren’t slated for shutoffs, but the dry winds raise fire danger across the region, so avoid anything that could spark a fire outdoors.</p>
+          <p class="source">PG&amp;E, Oct 14, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.ci.millbrae.ca.us/m/NewsFlash/Home/Detail/178" target="_blank" rel="noopener">Millbrae reopens Aviador Bridge after emergency repairs</a></h3>
+          <p>The 1947 bridge carrying Aviador Avenue over the Highline Canal, a second route in and out of the Bayside Manor neighborhood, reopened Oct. 8 to cars, bikes and pedestrians after crews installed temporary steel supports inside its deteriorating culverts. It had been closed since June 1. The city still plans a full replacement, estimated at $4 million to $5 million, and is seeking grants to pay for it.</p>
+          <p class="why"><strong>Why it matters:</strong> Bayside Manor residents have their second way in and out back before winter storms arrive.</p>
+          <p class="source">City of Millbrae, Oct 14, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://kffhealthnews.org/elections/california-billionaire-wealth-tax-healthcare-cuts-competing-ballot-measures/" target="_blank" rel="noopener">California’s billionaire tax would send most of its money to health care</a></h3>
+          <p>Proposition 40 would impose a one-time 5% tax on the roughly 200 Californians worth at least $1 billion, with 90% of the money going to health care, such as covering people cut from Medi-Cal by new federal work rules. Gov. Gavin Newsom and both major candidates for governor oppose it, and Propositions 41 and 42, backed by more than $100 million from Google co-founder Sergey Brin, would restrict new wealth taxes. September polls showed support between 45% and 52%.</p>
+          <p class="why"><strong>Why it matters:</strong> The vote could help decide whether San Mateo County residents who lose Medi-Cal under federal cuts get state-funded coverage.</p>
+          <p class="source">KFF Health News, Oct 14, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://padailypost.com/2026/10/14/pedestrian-struck-killed-by-caltrain-in-menlo-park/" target="_blank" rel="noopener">Caltrain strikes a pedestrian in Menlo Park and a car in Palo Alto</a></h3>
+          <p>A person was struck and killed by a Caltrain near Alma Street and Sherwood Way in Menlo Park around 9 a.m. Wednesday. That evening, around 6:15 p.m., a train hit a car stopped on the tracks along Alma Street in Palo Alto; police said the driver had minor injuries.</p>
+          <p class="why"><strong>Why it matters:</strong> Incidents on the tracks can ripple delays along the Peninsula line, so Millbrae riders should check Caltrain alerts before heading out.</p>
+          <p class="source">Palo Alto Daily Post, Oct 14, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.criticalthreats.org/analysis/iran-update-october-14-2026" target="_blank" rel="noopener">Iran reportedly sinks two cargo ships near the Strait of Hormuz</a></h3>
+          <p>Iranian attacks reportedly sank two Emirati cargo ships in the Strait of Hormuz on Wednesday, after Iran struck at least 24 vessels between Sept. 28 and Oct. 11, according to the Critical Threats Project and the Institute for the Study of War. An Iranian official said Tehran aims to keep oil prices high to pressure President Trump before the midterms, and Houthi missiles hit a Saudi Aramco base on Tuesday.</p>
+          <p class="why"><strong>Why it matters:</strong> Shipping attacks in the Gulf help explain why gas is so expensive at California pumps.</p>
+          <p class="source">Critical Threats, Oct 14, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.tsn.ca/soccer/mls/article/jasinski-scores-in-stoppage-time-as-earthquakes-tie-real-salt-lake-to-up-unbeaten-run-to-eight/" target="_blank" rel="noopener">Today in sports: Quakes grab a stoppage-time draw in Salt Lake to stay unbeaten in eight</a></h3>
+          <p>Substitute Jack Jasinski scored in second-half stoppage time to earn San Jose a 1–1 draw at Real Salt Lake on Wednesday night, after Luc de Fougerolles put RSL ahead in the 79th minute. The Earthquakes, fourth in the Western Conference, have gone eight games without a loss and host Nashville on Saturday with a playoff spot within reach. The Warriors have one preseason game left before their Oct. 21 opener at the Lakers, and the 49ers host Washington on Monday night without the suspended Dre Greenlaw.</p>
+          <p class="source">TSN (AP), Oct 15, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.49ers.com/news/morning-reports/morning-report-waitman-named-nfc-special-teams-player-of-the-week" target="_blank" rel="noopener">49ers punter Corliss Waitman named NFC Special Teams Player of the Week</a></h3>
+          <p>Waitman earned the weekly honor for his work in Sunday’s 32–29 win at Seattle, which kept San Francisco unbeaten at 5–0 and pushed the team up national power rankings. The 49ers turn their attention to Monday night’s home game against the Washington Commanders at Levi’s Stadium.</p>
+          <p class="source">San Francisco 49ers, Oct 15, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2277522/what-to-watch-october-15-2026-tv-shows-movies/" target="_blank" rel="noopener">“The Diplomat” season 4 and the Friday the 13th prequel “Crystal Lake” arrive today</a></h3>
+          <p>Netflix releases all eight episodes of The Diplomat’s fourth season, in which a single catastrophe upends Kate Wyler’s fragile US–UK peace and her marriage. Peacock drops all eight episodes of Crystal Lake, starring Linda Cardellini as a grieving Pam Voorhees, and Netflix also premieres the Victorious spinoff Hollywood Arts. Tonight ABC brings back 9-1-1, 9-1-1: Nashville and Grey’s Anatomy.</p>
+          <p class="source">TVLine, Oct 15, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.filmofilia.com/street-fighter-opening-forecast-230031/" target="_blank" rel="noopener">“Street Fighter” leads a crowded weekend with a $25 million to $35 million forecast</a></h3>
+          <p>Paramount’s Street Fighter, directed by Kitao Sakurai and starring Noah Centineo and Andrew Koji, is projected to open with $25 million to $35 million in about 3,500 theaters. It faces Whalefall ($10 million to $12 million forecast), A24’s documentary You Can See Everything ($7 million to $8 million) and a new Sense and Sensibility ($5 million to $8 million).</p>
+          <p class="source">FilmoFilia, Oct 14, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://techcrunch.com/2026/10/14/netflix-to-lay-off-1000-staff-amid-intensifying-competition-for-user-attention/" target="_blank" rel="noopener">Netflix to cut about 1,000 jobs, roughly 6% of its staff</a></h3>
+          <p>Netflix is laying off about 1,000 employees, mostly in product, technology, legal and human resources, according to an internal memo from co-CEOs Ted Sarandos and Greg Peters first reported by The Wall Street Journal. The company said it remains on track for its full-year forecast as it competes with YouTube, TikTok and other apps for viewers’ attention.</p>
+          <p class="source">TechCrunch, Oct 14, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/" target="_blank" rel="noopener">YouTube Music starts labeling AI-generated songs</a></h3>
+          <p>YouTube Music is adding labels that show whether a track is fully AI-generated, partly AI-generated or made without generative AI, with details a tap away on the player page; the labels will also come to the main YouTube app. Music partners declare their AI use, backed by YouTube’s own detection tools, and AI tracks can still earn money. Spotify already labels AI music, and Deezer is building a filter to hide it.</p>
+          <p class="source">TechCrunch, Oct 14, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.space.com/space-exploration/artemis/life-after-the-moon-artemis-iis-christina-koch-steps-down-from-active-astronaut-duty" target="_blank" rel="noopener">Artemis II’s Christina Koch steps down from spaceflight to become NASA’s acting deputy chief engineer</a></h3>
+          <p>Koch, who flew around the Moon on Artemis II this year and holds the record for the longest spaceflight by a woman at 328 days, will take the engineering post on Nov. 1 and will no longer be eligible for flight assignments. With her move, all four Artemis II crew members have now left active flight duty.</p>
+          <p class="source">Space.com, Oct 14, 2026</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

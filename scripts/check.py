@@ -142,7 +142,7 @@ def check_feed():
 
 
 MIN_STORIES = 8
-EXTRA_SECTIONS = {"week-in-review", "month-in-review", "coming-up"}
+EXTRA_SECTIONS = {"on-this-day", "week-in-review", "month-in-review", "coming-up"}
 
 
 def check_size(pages):
@@ -152,6 +152,11 @@ def check_size(pages):
         n = sum(body.count('<article class="story">')
                 for sid, body in re.findall(r'<section class="topic"(?: id="([^"]*)")?>(.*?)</section>', s, re.S)
                 if sid not in EXTRA_SECTIONS)
+        otd = re.search(r'<section class="topic" id="on-this-day">(.*?)</section>', s, re.S)
+        if not otd:
+            warn(f"{p.name} has no On this day section.")
+        elif otd.group(1).count('<article class="story">') != 3:
+            warn(f"{p.name}: On this day should have exactly 3 items.")
         if n < MIN_STORIES:
             warn(f"{p.name} has {n} topic stories; the task asks for at least {MIN_STORIES}. "
                  "Add more if there’s strong news, and explain in the report if not.")

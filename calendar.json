@@ -1,0 +1,3525 @@
+{
+ "updated": "2026-11-02",
+ "timezone": "America/Los_Angeles",
+ "note": "Times are Pacific. Sports schedules can change; check the team link before you go.",
+ "events": [
+  {
+   "date": "2026-10-03",
+   "time": "9:00 AM – 12:30 PM",
+   "title": "NAMIWalks San Mateo County",
+   "category": "Millbrae",
+   "location": "Coyote Point Park Duck Pond, 1701 Coyote Point Dr., San Mateo",
+   "description": "Community fair with 1K and 5K walks that raise money for free mental-health programs from the local National Alliance on Mental Illness.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1952"
+  },
+  {
+   "date": "2026-10-03",
+   "time": "3:30 PM",
+   "title": "Bay FC at Kansas City Current",
+   "category": "Sports",
+   "team": "Bay FC",
+   "location": "CPKC Stadium, Kansas City, Mo.",
+   "description": "NWSL regular season. Final: L 1–5.",
+   "url": "https://www.bayfc.com/schedule/"
+  },
+  {
+   "date": "2026-10-03",
+   "time": "",
+   "title": "Hawai‘i vs. San José State",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Clarence T.C. Ching Athletics Complex, Honolulu",
+   "description": "College football. Final: L 16–20.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-10-04",
+   "time": "10:30 AM – 4:30 PM",
+   "title": "Japanese Culture Festival",
+   "category": "Millbrae",
+   "location": "Millbrae Library Plaza, 1 Library Ave.",
+   "description": "The 21st annual festival celebrating Japanese culture, with entertainment, vendors, and activities for kids and adults.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1968"
+  },
+  {
+   "date": "2026-10-04",
+   "time": "3:00 – 5:00 PM",
+   "title": "Millbrae Montessori School open house",
+   "category": "Millbrae",
+   "location": "Millbrae Recreation Center, 477 Lincoln Circle",
+   "description": "Families can tour the city’s Montessori program for children ages 2 to 6.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1969"
+  },
+  {
+   "date": "2026-10-04",
+   "time": "1:25 PM",
+   "title": "49ers vs. Denver Broncos",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Levi’s Stadium, Santa Clara",
+   "description": "Final: W 24–14.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-10-04",
+   "time": "4:00 PM",
+   "title": "Warriors at LA Clippers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Stan Sheriff Center, Honolulu",
+   "description": "Preseason. Final: L 101–104.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-06",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Los Angeles Lakers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Preseason. Final: W 124–98.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-07",
+   "time": "4:00 – 6:00 PM",
+   "title": "Banned Book Read-In",
+   "category": "County arts",
+   "location": "441 Westlake Center, Daly City",
+   "description": "Peninsula Book Collaborative’s annual silent book club read-in. Attendees get a free audiobook. Free.",
+   "url": "https://peninsulabooks.org/event/banned-book-read-in-2/"
+  },
+  {
+   "date": "2026-10-07",
+   "time": "7:00 PM",
+   "title": "Warriors at Portland Trail Blazers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Moda Center, Portland",
+   "description": "Preseason. Final: L 118–123.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-08",
+   "time": "12:00 – 2:00 PM",
+   "title": "Make & Take Thursdays",
+   "category": "County arts",
+   "location": "Center for Creativity, 800 Main St., Redwood City",
+   "description": "Free drop-in art session.",
+   "url": "https://www.rwccfc.org/community-events/make-and-take-thursdays-11"
+  },
+  {
+   "date": "2026-10-08",
+   "end": "2026-10-11",
+   "time": "See website",
+   "title": "“Gutenberg! The Musical”",
+   "category": "County arts",
+   "location": "Hillbarn Theatre, 1285 E. Hillsdale Blvd., Foster City",
+   "description": "Musical comedy in which two would-be writers pitch a Broadway show about Johannes Gutenberg using cardboard props. Tickets $30–$65.",
+   "url": "https://www.hillbarntheatre.org/gutenberg-the-musical/"
+  },
+  {
+   "date": "2026-10-09",
+   "time": "6:30 PM",
+   "title": "Millbrae Goes to the Movies: “The Super Mario Galaxy Movie”",
+   "category": "Millbrae",
+   "location": "Millbrae Recreation Center, 477 Lincoln Circle",
+   "description": "Free indoor family movie night. Bring snacks and get comfy.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1971"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "11:00 AM – 3:00 PM",
+   "title": "Central County Fire Department open house",
+   "category": "Millbrae",
+   "location": "Fire Station 37, 511 Magnolia Ave.",
+   "description": "Tour the fire station and equipment and learn fire safety. Family friendly.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1970"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "9:00 AM – 1:00 PM",
+   "title": "Millbrae Blood Drive",
+   "category": "Millbrae",
+   "location": "Millbrae Recreation Center, 477 Lincoln Circle",
+   "description": "Halloween-themed blood drive run with Stanford Blood Center.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1902"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "7:30 PM",
+   "title": "Masha Campagne & Alegre Menina",
+   "category": "County arts",
+   "location": "1220A Linda Mar Blvd., Pacifica",
+   "description": "Pacifica Performances concert of samba, bossa nova, and Brazilian jazz. Tickets $25.",
+   "url": "https://pacificaperformances.org/"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "6:30 PM",
+   "title": "Earthquakes at Colorado Rapids",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "Dick’s Sporting Goods Park, Commerce City, Colo.",
+   "description": "MLS regular season. Final: D 1–1.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "7:30 PM",
+   "title": "Hawai‘i at Arizona State",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Mountain America Stadium, Tempe",
+   "description": "College football. Final: L 12–30.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Sacramento Kings",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Preseason. Final: W 111–106.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-11",
+   "time": "1:25 PM",
+   "title": "49ers at Seattle Seahawks",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Lumen Field, Seattle",
+   "description": "Final: W 32–29.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-10-12",
+   "time": "All day",
+   "title": "Columbus Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday. Also observed as Indigenous Peoples’ Day in California and many cities.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2026-10-13",
+   "time": "6:00 – 8:00 PM",
+   "title": "Nightmares in the Starry Sky Paint & Sip",
+   "category": "County arts",
+   "location": "Pinstripes, 36 Hillsdale Mall, San Mateo",
+   "description": "Halloween-themed painting night. Tickets $50.",
+   "url": "https://paintingandvino.com/event/nightmares-in-the-starry-sky-paint-sip-pinstripes-san-mateo/"
+  },
+  {
+   "date": "2026-10-13",
+   "time": "7:00 PM",
+   "title": "Warriors at Los Angeles Lakers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "T-Mobile Arena, Las Vegas",
+   "description": "Preseason. Final: W 101–89.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-14",
+   "time": "5:30 – 6:30 PM",
+   "title": "Filipino cooking lesson: sinigang",
+   "category": "County arts",
+   "location": "Online (Zoom), hosted by Menlo Park Library",
+   "description": "Cook along as a chef makes a vegan take on the sour tamarind soup. Free; register for the link.",
+   "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20261014-Filipino-Cooking-Vegan-Sinigang"
+  },
+  {
+   "date": "2026-10-14",
+   "time": "6:30 PM",
+   "title": "Earthquakes at Real Salt Lake",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "America First Field, Sandy, Utah",
+   "description": "MLS regular season. Final: D 1–1.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-10-15",
+   "time": "6:00 – 8:00 PM",
+   "title": "Beats, Brews & Vines: As Is Band",
+   "category": "Millbrae",
+   "location": "Downtown Millbrae, Broadway at Hillcrest Blvd.",
+   "description": "The last show of the city’s free summer concert series on Broadway.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1931"
+  },
+  {
+   "date": "2026-10-15",
+   "time": "12:00 – 2:00 PM",
+   "title": "Make & Take Thursdays",
+   "category": "County arts",
+   "location": "Center for Creativity, 800 Main St., Redwood City",
+   "description": "Free drop-in art session.",
+   "url": "https://www.rwccfc.org/community-events/make-and-take-thursdays-09-10-2026"
+  },
+  {
+   "date": "2026-10-16",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Portland Trail Blazers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Preseason. Final: W 128–118.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-17",
+   "end": "2026-10-18",
+   "time": "7:00 AM – 5:00 PM",
+   "title": "Half Moon Bay Art & Pumpkin Festival",
+   "category": "County arts",
+   "location": "Main Street, Half Moon Bay",
+   "description": "The 54th annual festival with a pancake breakfast, art, music, a parade, and food. Free.",
+   "url": "https://hmbpumpkinfest.com/"
+  },
+  {
+   "date": "2026-10-17",
+   "time": "10:00 AM – 4:00 PM",
+   "title": "Indie Author Fest",
+   "category": "County arts",
+   "location": "Millbrae Library, 1 Library Ave., Millbrae",
+   "description": "San Mateo County Libraries’ fourth annual festival for independent authors, with panels, giveaways, and author tables. Free.",
+   "url": "https://smcl.org/blogs/post/come-and-celebrate-at-indie-author-fest-2026/"
+  },
+  {
+   "date": "2026-10-17",
+   "time": "3:30 – 6:00 PM",
+   "title": "Rock the Dock: Soucano",
+   "category": "County arts",
+   "location": "Port of Redwood City, 459 Seaport Ct.",
+   "description": "Free waterfront concert of R&B and Latin rock.",
+   "url": "https://www.redwoodcityport.com/rockthedock-1"
+  },
+  {
+   "date": "2026-10-17",
+   "time": "7:30 PM",
+   "title": "Earthquakes vs. Nashville SC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS regular season. Final: D 1–1. The draw clinched a playoff spot.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-10-17",
+   "time": "7:30 PM",
+   "title": "Hawai‘i vs. New Mexico",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Clarence T.C. Ching Athletics Complex, Honolulu",
+   "description": "College football. Final: L 10–21.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-10-18",
+   "time": "7:00 PM (talk at 6:00)",
+   "title": "Escher String Quartet",
+   "category": "County arts",
+   "location": "Kohl Mansion, 2750 Adeline Dr., Burlingame",
+   "description": "Music at Kohl Mansion hosts the New York chamber quartet, with a pre-concert talk and a wine-and-dessert reception after. Tickets $30–$68.",
+   "url": "https://musicatkohl.org/escher-string-quartet-2026-10-18/"
+  },
+  {
+   "date": "2026-10-18",
+   "time": "2:00 PM",
+   "title": "Bay FC vs. Portland Thorns FC",
+   "category": "Sports",
+   "team": "Bay FC",
+   "location": "PayPal Park, San Jose",
+   "description": "NWSL regular season. Final: D 2–2.",
+   "url": "https://www.bayfc.com/schedule/"
+  },
+  {
+   "date": "2026-10-19",
+   "time": "5:15 PM",
+   "title": "49ers vs. Washington Commanders",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Levi’s Stadium, Santa Clara",
+   "description": "Monday night. Final: W 23–17.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "7:00 PM",
+   "title": "Warriors at Los Angeles Lakers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Crypto.com Arena, Los Angeles",
+   "description": "Regular season. Season opener. Final: L 105–127.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "5:30 – 8:30 PM",
+   "title": "Parking meter open house",
+   "category": "Millbrae",
+   "location": "Chetcuti Room and Library Rooms A/B, 450 Poplar Ave.",
+   "description": "Try out pay stations, meters, and parking apps from two vendors the city is considering, and share feedback. No real payments.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1973"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "12:00 – 2:00 PM",
+   "title": "Make & Take Thursdays",
+   "category": "County arts",
+   "location": "Center for Creativity, 800 Main St., Redwood City",
+   "description": "Free drop-in art session.",
+   "url": "https://www.rwccfc.org/community-events/make-and-take-thursdays-13"
+  },
+  {
+   "date": "2026-10-23",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Memphis Grizzlies",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. Final: L 108–111.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "1:30 – 8:00 PM",
+   "title": "Belmont’s 100th birthday celebration",
+   "category": "County arts",
+   "location": "Various sites in Belmont",
+   "description": "Centennial party with a car parade and show, a time capsule ceremony, live music, food trucks, and a closing drone show. Free.",
+   "url": "https://www.belmont.gov/Home/Components/Calendar/Event/8785/155"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "7:30 PM",
+   "title": "Mike Lipskin Trio",
+   "category": "County arts",
+   "location": "1220A Linda Mar Blvd., Pacifica",
+   "description": "Harlem stride jazz piano in the style of Fats Waller and James P. Johnson. Tickets $12–$25.",
+   "url": "https://pacificaperformances.org/"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "2:00 – 6:00 PM",
+   "title": "Saturday afternoon live music",
+   "category": "County arts",
+   "location": "The Hub RWC, 2650 Broadway, Redwood City",
+   "description": "Free weekly set of original and cover bands.",
+   "url": "https://www.rwcpulse.com/calendar/#/details/saturday-afternoon-live-music/14899190/2026-08-01T14"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "7:30 PM",
+   "title": "Vintage Films Night: Timeless Fun",
+   "category": "County arts",
+   "location": "Odd Fellows Hall, 526 Main St., Half Moon Bay",
+   "description": "A “Flash Gordon” serial episode and two Buster Keaton silent comedies, with live piano. Tickets $10.",
+   "url": "https://hmb-odd.org/events/vintage-films-10-2026"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "5:45 PM",
+   "title": "Bay FC at Angel City FC",
+   "category": "Sports",
+   "team": "Bay FC",
+   "location": "BMO Stadium, Los Angeles",
+   "description": "NWSL regular season. Final: L 0–2.",
+   "url": "https://www.bayfc.com/schedule/"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "5:30 PM",
+   "title": "Earthquakes at FC Dallas",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "Toyota Stadium, Frisco, Texas",
+   "description": "MLS regular season. Final: L 0–3.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "12:30 PM",
+   "title": "Hawai‘i at Northern Illinois",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Huskie Stadium, DeKalb, Ill.",
+   "description": "College football. Final: W 56–21.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "7:00 PM",
+   "title": "Warriors at Phoenix Suns",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Mortgage Matchup Center, Phoenix",
+   "description": "Regular season. Final: L 122–131.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-25",
+   "time": "11:00 AM – 1:00 PM",
+   "title": "Millbrae Rotary Kids Carnival",
+   "category": "Millbrae",
+   "location": "Rotary Park, Millbrae Ave. at S. Ashton Ave.",
+   "description": "The Rotary Club’s 28th annual free carnival with games and snacks for young children and families.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1977"
+  },
+  {
+   "date": "2026-10-25",
+   "time": "12:00 – 2:00 PM",
+   "title": "Pumpkin spice latte paint & sip",
+   "category": "County arts",
+   "location": "Caffeinated Cowboy, 3721 S. El Camino Real, San Mateo",
+   "description": "Coffee and a guided painting of a pumpkin spice latte. Tickets $50.",
+   "url": "https://paintingandvino.com/event/pumpkin-spice-latte-paint-sip-caffeinated-cowboy/"
+  },
+  {
+   "date": "2026-10-25",
+   "time": "10:00 AM",
+   "title": "49ers at Atlanta Falcons",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Mercedes-Benz Stadium, Atlanta",
+   "description": "Final: L 20–29.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-10-26",
+   "time": "7:00 PM",
+   "title": "Warriors at Denver Nuggets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Ball Arena, Denver",
+   "description": "Regular season. Final: W 134–114.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "7:30 PM",
+   "title": "Earthquakes vs. Colorado Rapids",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS regular season. Final: D 2–2.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "5:00 PM",
+   "title": "Warriors at Minnesota Timberwolves",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Target Center, Minneapolis",
+   "description": "Regular season. Final: W 119–114.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "6:00 – 8:00 PM",
+   "title": "Día de los Muertos celebration",
+   "category": "Millbrae",
+   "location": "Millbrae Recreation Center, 477 Lincoln Circle",
+   "description": "Music, art, and dance, plus a community ofrenda in the Rec Center lobby (open for contributions Oct. 15 – Nov. 7).",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1974"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Los Angeles Lakers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. Final: W 112–95.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "2:00 PM",
+   "title": "Earthquakes vs. Real Salt Lake",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS regular season. Regular-season finale. Final: W 2–1.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "2:00 PM",
+   "title": "Bay FC vs. San Diego Wave FC",
+   "category": "Sports",
+   "team": "Bay FC",
+   "location": "PayPal Park, San Jose",
+   "description": "NWSL regular season. Regular-season finale. Final: L 0–1.",
+   "url": "https://www.bayfc.com/schedule/"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "5:30 PM",
+   "title": "Warriors vs. LA Clippers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. Final: W 124–112.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Phoenix Suns",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "10:00 – 11:30 AM",
+   "title": "Efficient Irrigation Techniques workshop",
+   "category": "Millbrae",
+   "location": "Millbrae Recreation Center, 477 Lincoln Circle",
+   "description": "Learn watering schedules, water-wise irrigation systems, and how to spot common water waste. Registration required.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1978"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Miami Heat",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBA TV.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "6:30 PM",
+   "title": "Hawai‘i at UTEP",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Sun Bowl, El Paso",
+   "description": "College football. TV: FS1.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Orlando Magic",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "1:25 PM",
+   "title": "49ers vs. Las Vegas Raiders",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Levi’s Stadium, Santa Clara",
+   "description": "TV: Fox.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-11-09",
+   "time": "7:00 PM",
+   "title": "Warriors vs. New Orleans Pelicans",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBA TV.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "5:00 – 6:30 PM",
+   "title": "Veterans & First Responders Appreciation Evening",
+   "category": "Millbrae",
+   "location": "David J. Chetcuti Community Room, 450 Poplar Ave.",
+   "description": "Third annual dinner honoring veterans and first responders. RSVP by Nov. 6.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1979"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "All day",
+   "title": "Veterans Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday honoring military veterans.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Veterans Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1318"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "6:30 PM",
+   "title": "Warriors at Houston Rockets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Toyota Center, Houston",
+   "description": "Regular season. TV: ESPN.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "6:30 PM",
+   "title": "Warriors at San Antonio Spurs",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Frost Bank Center, San Antonio",
+   "description": "Regular season. TV: Prime Video.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "8:00 PM",
+   "title": "Hawai‘i vs. North Dakota State",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Clarence T.C. Ching Athletics Complex, Honolulu",
+   "description": "College football. TV: The CW.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "1:25 PM",
+   "title": "49ers at Dallas Cowboys",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "AT&T Stadium, Arlington, Texas",
+   "description": "TV: Fox.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "5:00 PM",
+   "title": "Warriors at New Orleans Pelicans",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Smoothie King Center, New Orleans",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "6:30 PM",
+   "title": "Warriors at Dallas Mavericks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "American Airlines Center, Dallas",
+   "description": "Regular season. TV: ESPN.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "5:00 PM",
+   "title": "Warriors at Memphis Grizzlies",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "FedExForum, Memphis",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "TBD",
+   "title": "Hawai‘i at Nevada",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Mackay Stadium, Reno",
+   "description": "College football. Kickoff time to be announced.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "5:20 PM",
+   "title": "49ers vs. Minnesota Vikings",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Estadio Banorte, Mexico City",
+   "description": "Sunday night game in Mexico City, with the 49ers as the home team. TV: NBC.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Boston Celtics",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Sacramento Kings",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "All day",
+   "title": "Thanksgiving Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Thanksgiving Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1313"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Day after Thanksgiving.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1309"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "6:30 PM",
+   "title": "Warriors at Portland Trail Blazers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Moda Center, Portland",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-28",
+   "time": "8:00 PM",
+   "title": "Hawai‘i vs. Sacramento State",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Clarence T.C. Ching Athletics Complex, Honolulu",
+   "description": "College football. Regular-season finale.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-11-29",
+   "time": "1:25 PM",
+   "title": "49ers vs. Seattle Seahawks",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Levi’s Stadium, Santa Clara",
+   "description": "TV: Fox.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-11-29",
+   "time": "5:30 PM",
+   "title": "Warriors vs. LA Clippers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-01",
+   "time": "8:00 PM",
+   "title": "Warriors vs. Utah Jazz",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-05",
+   "time": "5:00 PM",
+   "title": "Holiday Tree Lighting Celebration",
+   "category": "Millbrae",
+   "location": "In front of City Hall, 621 Magnolia Ave.",
+   "description": "The 34th annual tree lighting with carols, hot chocolate, cookies, and candy canes.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1975"
+  },
+  {
+   "date": "2026-12-06",
+   "time": "10:00 AM",
+   "title": "49ers at New York Giants",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "MetLife Stadium, East Rutherford, N.J.",
+   "description": "TV: Fox.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-12-11",
+   "time": "6:30 PM",
+   "title": "Millbrae Goes to the Movies: “Frozen II”",
+   "category": "Millbrae",
+   "location": "Millbrae Recreation Center, 477 Lincoln Circle",
+   "description": "Free indoor family movie night.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1972"
+  },
+  {
+   "date": "2026-12-12",
+   "time": "5:00 PM",
+   "title": "Warriors at Cleveland Cavaliers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Rocket Arena, Cleveland",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-13",
+   "time": "1:25 PM",
+   "title": "49ers vs. Los Angeles Rams",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Levi’s Stadium, Santa Clara",
+   "description": "TV: Fox.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-12-14",
+   "time": "5:00 PM",
+   "title": "Warriors at Memphis Grizzlies",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "FedExForum, Memphis",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-16",
+   "time": "4:00 PM",
+   "title": "Warriors at Indiana Pacers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Gainbridge Fieldhouse, Indianapolis",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-17",
+   "time": "5:15 PM",
+   "title": "49ers at Los Angeles Chargers",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "SoFi Stadium, Inglewood",
+   "description": "Thursday night. TV: Prime Video.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-12-18",
+   "time": "4:30 PM",
+   "title": "Warriors at Toronto Raptors",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Scotiabank Arena, Toronto",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-20",
+   "time": "5:00 PM",
+   "title": "Warriors at Milwaukee Bucks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Fiserv Forum, Milwaukee",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-22",
+   "time": "7:30 PM",
+   "title": "Warriors vs. Dallas Mavericks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-23",
+   "time": "7:30 PM",
+   "title": "Warriors at LA Clippers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Intuit Dome, Inglewood",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "All day",
+   "title": "Christmas Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Christmas Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1304"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "7:30 PM",
+   "title": "Warriors vs. Denver Nuggets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. Christmas Day game. TV: ABC, ESPN.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-27",
+   "time": "1:25 PM",
+   "title": "49ers at Kansas City Chiefs",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Arrowhead Stadium, Kansas City",
+   "description": "TV: CBS.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-12-27",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Minnesota Timberwolves",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-28",
+   "time": "6:00 PM",
+   "title": "Warriors at Phoenix Suns",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Mortgage Matchup Center, Phoenix",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-30",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Houston Rockets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBA TV.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-01",
+   "time": "All day",
+   "title": "New Year’s Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-01-01",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: New Year’s Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1354"
+  },
+  {
+   "date": "2027-01-02",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Brooklyn Nets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-03",
+   "time": "5:20 PM",
+   "title": "49ers vs. Philadelphia Eagles",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "Levi’s Stadium, Santa Clara",
+   "description": "Sunday night. TV: NBC.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2027-01-06",
+   "time": "7:00 PM",
+   "title": "Warriors vs. New York Knicks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: ESPN.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-07",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Detroit Pistons",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-09",
+   "time": "TBD",
+   "title": "49ers at Arizona Cardinals",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "State Farm Stadium, Glendale, Ariz.",
+   "description": "Regular-season finale. Day and time to be set by the NFL.",
+   "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2027-01-09",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Chicago Bulls",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-12",
+   "time": "8:00 PM",
+   "title": "Warriors vs. Sacramento Kings",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-13",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Charlotte Hornets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-15",
+   "time": "4:00 PM",
+   "title": "Warriors at Atlanta Hawks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "State Farm Arena, Atlanta",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-17",
+   "time": "3:00 PM",
+   "title": "Warriors at Miami Heat",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Kaseya Center, Miami",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-18",
+   "time": "All day",
+   "title": "Martin Luther King Jr. Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday, the third Monday in January.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-01-18",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Martin Luther King Jr. Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1349"
+  },
+  {
+   "date": "2027-01-19",
+   "time": "4:00 PM",
+   "title": "Warriors at Orlando Magic",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Kia Center, Orlando",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-21",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Los Angeles Lakers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: Prime Video.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-22",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Milwaukee Bucks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-24",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Oklahoma City Thunder",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-27",
+   "time": "7:00 PM",
+   "title": "Warriors at Portland Trail Blazers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Moda Center, Portland",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-28",
+   "time": "6:00 PM",
+   "title": "Warriors at Utah Jazz",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Delta Center, Salt Lake City",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-30",
+   "time": "2:30 PM",
+   "title": "Warriors vs. San Antonio Spurs",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: ABC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-01",
+   "time": "7:00 PM",
+   "title": "Warriors vs. San Antonio Spurs",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-03",
+   "time": "7:30 PM",
+   "title": "Warriors at LA Clippers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Intuit Dome, Inglewood",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-05",
+   "time": "4:00 PM",
+   "title": "Warriors at Charlotte Hornets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Spectrum Center, Charlotte",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-07",
+   "time": "12:00 PM",
+   "title": "Warriors at Detroit Pistons",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Little Caesars Arena, Detroit",
+   "description": "Regular season. TV: NBA TV.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-09",
+   "time": "5:00 PM",
+   "title": "Warriors at Chicago Bulls",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "United Center, Chicago",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-10",
+   "time": "4:30 PM",
+   "title": "Warriors at Boston Celtics",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "TD Garden, Boston",
+   "description": "Regular season. TV: ESPN.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-13",
+   "time": "5:30 PM",
+   "title": "Warriors at New York Knicks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Madison Square Garden, New York",
+   "description": "Regular season. TV: ABC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-15",
+   "time": "All day",
+   "title": "Presidents’ Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday (officially Washington’s Birthday), the third Monday in February.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-02-15",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Presidents’ Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1344"
+  },
+  {
+   "date": "2027-02-15",
+   "time": "4:30 PM",
+   "title": "Warriors vs. Indiana Pacers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-17",
+   "time": "7:00 PM",
+   "title": "Warriors vs. New Orleans Pelicans",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-20",
+   "time": "2:00 PM",
+   "title": "Earthquakes at Portland Timbers",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-02-25",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Dallas Mavericks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: Prime Video.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-02-27",
+   "time": "5:00 PM",
+   "title": "Earthquakes vs. Houston Dynamo FC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-03-01",
+   "time": "5:30 PM",
+   "title": "Warriors at Houston Rockets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Toyota Center, Houston",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-02",
+   "time": "5:00 PM",
+   "title": "Warriors at Dallas Mavericks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "American Airlines Center, Dallas",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-04",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Washington Wizards",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-06",
+   "time": "7:00 PM",
+   "title": "Earthquakes at LA Galaxy",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-03-07",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Houston Rockets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-09",
+   "time": "8:00 PM",
+   "title": "Warriors vs. Portland Trail Blazers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-10",
+   "time": "7:00 PM",
+   "title": "Warriors at Sacramento Kings",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Golden 1 Center, Sacramento",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-12",
+   "time": "7:00 PM",
+   "title": "Warriors at Denver Nuggets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Ball Arena, Denver",
+   "description": "Regular season. TV: Prime Video.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-13",
+   "time": "7:00 PM",
+   "title": "Earthquakes vs. Real Salt Lake",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-03-14",
+   "time": "7:00 PM",
+   "title": "Warriors at Los Angeles Lakers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Crypto.com Arena, Los Angeles",
+   "description": "Regular season. TV: NBC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-16",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Cleveland Cavaliers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-17",
+   "time": "7:00 PM",
+   "title": "Earthquakes vs. Minnesota United FC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-03-17",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Memphis Grizzlies",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-19",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Portland Trail Blazers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-20",
+   "time": "5:00 PM",
+   "title": "Earthquakes at Sporting Kansas City",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-03-22",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Atlanta Hawks",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-24",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Philadelphia 76ers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: ESPN.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-25",
+   "time": "TBD",
+   "title": "Giants vs. Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Opening Day. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-03-25",
+   "time": "7:00 PM",
+   "title": "Warriors vs. Toronto Raptors",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-27",
+   "time": "TBD",
+   "title": "Giants vs. Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-03-27",
+   "time": "4:00 PM",
+   "title": "Warriors at Washington Wizards",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Capital One Arena, Washington",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-28",
+   "time": "TBD",
+   "title": "Giants vs. Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-03-29",
+   "time": "TBD",
+   "title": "Giants vs. Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-03-29",
+   "time": "4:30 PM",
+   "title": "Warriors at Brooklyn Nets",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Barclays Center, Brooklyn",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-03-30",
+   "time": "TBD",
+   "title": "Giants vs. Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-03-31",
+   "time": "TBD",
+   "title": "Giants vs. Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-03-31",
+   "time": "4:00 PM",
+   "title": "Warriors at Philadelphia 76ers",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Xfinity Mobile Arena, Philadelphia",
+   "description": "Regular season. TV: ESPN.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-02",
+   "time": "TBD",
+   "title": "Giants at New York Mets",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Citi Field, New York",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-02",
+   "time": "4:30 PM",
+   "title": "Warriors at Minnesota Timberwolves",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Target Center, Minneapolis",
+   "description": "Regular season. TV: Prime Video.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-03",
+   "time": "7:00 PM",
+   "title": "Earthquakes vs. Colorado Rapids",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-04-03",
+   "time": "TBD",
+   "title": "Giants at New York Mets",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Citi Field, New York",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-04",
+   "time": "TBD",
+   "title": "Giants at New York Mets",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Citi Field, New York",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-04",
+   "time": "3:00 PM",
+   "title": "Warriors at Sacramento Kings",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Golden 1 Center, Sacramento",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-05",
+   "time": "4:15 PM",
+   "title": "Giants at Atlanta Braves",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Truist Park, Atlanta",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-06",
+   "time": "4:15 PM",
+   "title": "Giants at Atlanta Braves",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Truist Park, Atlanta",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-06",
+   "time": "8:00 PM",
+   "title": "Warriors vs. Phoenix Suns",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. TV: NBC.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-07",
+   "time": "5:00 PM",
+   "title": "Earthquakes at Austin FC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-04-07",
+   "time": "4:15 PM",
+   "title": "Giants at Atlanta Braves",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Truist Park, Atlanta",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-08",
+   "time": "9:15 AM",
+   "title": "Giants at Atlanta Braves",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Truist Park, Atlanta",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-08",
+   "time": "6:30 PM",
+   "title": "Warriors at Oklahoma City Thunder",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Paycom Center, Oklahoma City",
+   "description": "Regular season. TV: Prime Video.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-09",
+   "time": "TBD",
+   "title": "Giants vs. St. Louis Cardinals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-09",
+   "time": "5:00 PM",
+   "title": "Warriors at Oklahoma City Thunder",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Paycom Center, Oklahoma City",
+   "description": "Regular season.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-10",
+   "time": "5:00 PM",
+   "title": "Earthquakes at FC Dallas",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-04-10",
+   "time": "TBD",
+   "title": "Giants vs. St. Louis Cardinals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-11",
+   "time": "TBD",
+   "title": "Giants vs. St. Louis Cardinals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-11",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Utah Jazz",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season. Regular-season finale.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-13",
+   "time": "TBD",
+   "title": "Giants vs. Baltimore Orioles",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-14",
+   "time": "TBD",
+   "title": "Giants vs. Baltimore Orioles",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-15",
+   "time": "TBD",
+   "title": "Giants vs. Baltimore Orioles",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-16",
+   "time": "TBD",
+   "title": "Giants at Chicago White Sox",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Rate Field, Chicago",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-17",
+   "time": "7:00 PM",
+   "title": "Earthquakes vs. San Diego FC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-04-17",
+   "time": "TBD",
+   "title": "Giants at Chicago White Sox",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Rate Field, Chicago",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-18",
+   "time": "TBD",
+   "title": "Giants at Chicago White Sox",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Rate Field, Chicago",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-20",
+   "time": "TBD",
+   "title": "Giants at Pittsburgh Pirates",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "PNC Park, Pittsburgh",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-21",
+   "time": "5:00 PM",
+   "title": "Earthquakes at St. Louis City SC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-04-21",
+   "time": "TBD",
+   "title": "Giants at Pittsburgh Pirates",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "PNC Park, Pittsburgh",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-22",
+   "time": "TBD",
+   "title": "Giants at Pittsburgh Pirates",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "PNC Park, Pittsburgh",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-23",
+   "time": "TBD",
+   "title": "Giants at Cincinnati Reds",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Great American Ball Park, Cincinnati",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-24",
+   "time": "9:00 AM – 12:00 PM",
+   "title": "Earth and Arbor Day",
+   "category": "Millbrae",
+   "location": "Location to be announced",
+   "description": "Annual cleanup and tree planting. Supplies and lunch provided for volunteers.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1944"
+  },
+  {
+   "date": "2027-04-24",
+   "time": "7:00 PM",
+   "title": "Earthquakes vs. LAFC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-04-24",
+   "time": "TBD",
+   "title": "Giants at Cincinnati Reds",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Great American Ball Park, Cincinnati",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-25",
+   "time": "TBD",
+   "title": "Giants at Cincinnati Reds",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Great American Ball Park, Cincinnati",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-26",
+   "time": "TBD",
+   "title": "Giants vs. Seattle Mariners",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-27",
+   "time": "TBD",
+   "title": "Giants vs. Seattle Mariners",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-28",
+   "time": "TBD",
+   "title": "Giants vs. Seattle Mariners",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-04-30",
+   "time": "TBD",
+   "title": "Giants vs. Philadelphia Phillies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-01",
+   "time": "2:00 PM",
+   "title": "Earthquakes at Seattle Sounders FC",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-05-01",
+   "time": "TBD",
+   "title": "Giants vs. Philadelphia Phillies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-02",
+   "time": "TBD",
+   "title": "Giants vs. Philadelphia Phillies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-03",
+   "time": "TBD",
+   "title": "Giants at Milwaukee Brewers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "American Family Field, Milwaukee",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-04",
+   "time": "TBD",
+   "title": "Giants at Milwaukee Brewers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "American Family Field, Milwaukee",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-05",
+   "time": "TBD",
+   "title": "Giants at Milwaukee Brewers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "American Family Field, Milwaukee",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-06",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Dodger Stadium, Los Angeles",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-07",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Dodger Stadium, Los Angeles",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-08",
+   "time": "5:00 PM",
+   "title": "Earthquakes vs. Vancouver Whitecaps",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2027-05-08",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Dodger Stadium, Los Angeles",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-09",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Dodger Stadium, Los Angeles",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-11",
+   "time": "TBD",
+   "title": "Giants vs. Texas Rangers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-12",
+   "time": "TBD",
+   "title": "Giants vs. Texas Rangers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-13",
+   "time": "7:30 AM",
+   "title": "Bike to Wherever Day",
+   "category": "Millbrae",
+   "location": "Millbrae Caltrain station, southbound platform",
+   "description": "Energizer station with free bags, giveaways, and bike advocacy info.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1945"
+  },
+  {
+   "date": "2027-05-13",
+   "time": "TBD",
+   "title": "Giants vs. Texas Rangers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-14",
+   "time": "TBD",
+   "title": "Giants vs. Kansas City Royals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-15",
+   "time": "TBD",
+   "title": "Giants vs. Kansas City Royals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-16",
+   "time": "TBD",
+   "title": "Giants vs. Kansas City Royals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-18",
+   "time": "TBD",
+   "title": "Giants at Detroit Tigers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Comerica Park, Detroit",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-19",
+   "time": "TBD",
+   "title": "Giants at Detroit Tigers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Comerica Park, Detroit",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-20",
+   "time": "TBD",
+   "title": "Giants at Detroit Tigers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Comerica Park, Detroit",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-21",
+   "time": "4:05 PM",
+   "title": "Giants at New York Yankees",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Yankee Stadium, New York",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-22",
+   "time": "10:35 AM",
+   "title": "Giants at New York Yankees",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Yankee Stadium, New York",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-23",
+   "time": "10:35 AM",
+   "title": "Giants at New York Yankees",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Yankee Stadium, New York",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-24",
+   "time": "TBD",
+   "title": "Giants vs. San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-25",
+   "time": "TBD",
+   "title": "Giants vs. San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-26",
+   "time": "TBD",
+   "title": "Giants vs. San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-27",
+   "time": "TBD",
+   "title": "Giants vs. San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-28",
+   "time": "TBD",
+   "title": "Giants vs. Cincinnati Reds",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-29",
+   "time": "TBD",
+   "title": "Giants vs. Cincinnati Reds",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-30",
+   "time": "TBD",
+   "title": "Giants vs. Cincinnati Reds",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-05-31",
+   "time": "All day",
+   "title": "Memorial Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday honoring those who died in military service.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-05-31",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Memorial Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1339"
+  },
+  {
+   "date": "2027-05-31",
+   "time": "TBD",
+   "title": "Giants vs. Washington Nationals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-01",
+   "time": "TBD",
+   "title": "Giants vs. Washington Nationals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-02",
+   "time": "TBD",
+   "title": "Giants vs. Washington Nationals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-04",
+   "time": "TBD",
+   "title": "Giants at Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Chase Field, Phoenix",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-05",
+   "time": "TBD",
+   "title": "Giants at Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Chase Field, Phoenix",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-06",
+   "time": "TBD",
+   "title": "Giants at Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Chase Field, Phoenix",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-07",
+   "time": "6:40 PM",
+   "title": "Giants at San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Petco Park, San Diego",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-08",
+   "time": "6:40 PM",
+   "title": "Giants at San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Petco Park, San Diego",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-09",
+   "time": "1:10 PM",
+   "title": "Giants at San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Petco Park, San Diego",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-11",
+   "time": "TBD",
+   "title": "Giants vs. New York Mets",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-12",
+   "time": "TBD",
+   "title": "Giants vs. New York Mets",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-13",
+   "time": "TBD",
+   "title": "Giants vs. New York Mets",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-14",
+   "time": "TBD",
+   "title": "Giants vs. Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-15",
+   "time": "TBD",
+   "title": "Giants vs. Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-16",
+   "time": "TBD",
+   "title": "Giants vs. Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-18",
+   "time": "All day",
+   "title": "Juneteenth (observed)",
+   "category": "Holidays",
+   "location": "",
+   "description": "Juneteenth falls on Saturday, June 19, so federal offices observe it on Friday.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-06-18",
+   "time": "3:40 PM",
+   "title": "Giants at Philadelphia Phillies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Citizens Bank Park, Philadelphia",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-19",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Juneteenth.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1334"
+  },
+  {
+   "date": "2027-06-19",
+   "time": "1:05 PM",
+   "title": "Giants at Philadelphia Phillies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Citizens Bank Park, Philadelphia",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-20",
+   "time": "10:35 AM",
+   "title": "Giants at Philadelphia Phillies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Citizens Bank Park, Philadelphia",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-21",
+   "time": "TBD",
+   "title": "Giants at Toronto Blue Jays",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Rogers Centre, Toronto",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-22",
+   "time": "TBD",
+   "title": "Giants at Toronto Blue Jays",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Rogers Centre, Toronto",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-23",
+   "time": "TBD",
+   "title": "Giants at Toronto Blue Jays",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Rogers Centre, Toronto",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-24",
+   "time": "TBD",
+   "title": "Giants vs. Chicago Cubs",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-25",
+   "time": "TBD",
+   "title": "Giants vs. Chicago Cubs",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-26",
+   "time": "TBD",
+   "title": "Giants vs. Chicago Cubs",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-27",
+   "time": "TBD",
+   "title": "Giants vs. Chicago Cubs",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-28",
+   "time": "TBD",
+   "title": "Giants vs. Tampa Bay Rays",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-29",
+   "time": "TBD",
+   "title": "Giants vs. Tampa Bay Rays",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-06-30",
+   "time": "TBD",
+   "title": "Giants vs. Tampa Bay Rays",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-01",
+   "time": "TBD",
+   "title": "Giants at Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Chase Field, Phoenix",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-02",
+   "time": "TBD",
+   "title": "Giants at Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Chase Field, Phoenix",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-03",
+   "time": "TBD",
+   "title": "Giants at Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Chase Field, Phoenix",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-04",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Independence Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1329"
+  },
+  {
+   "date": "2027-07-04",
+   "time": "TBD",
+   "title": "Giants at Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Chase Field, Phoenix",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-05",
+   "time": "All day",
+   "title": "Independence Day (observed)",
+   "category": "Holidays",
+   "location": "",
+   "description": "July 4 falls on a Sunday, so federal offices observe it on Monday.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-07-06",
+   "time": "TBD",
+   "title": "Giants at Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Coors Field, Denver",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-07",
+   "time": "TBD",
+   "title": "Giants at Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Coors Field, Denver",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-08",
+   "time": "TBD",
+   "title": "Giants at Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Coors Field, Denver",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-09",
+   "time": "TBD",
+   "title": "Giants at Houston Astros",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Daikin Park, Houston",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-10",
+   "time": "TBD",
+   "title": "Giants at Houston Astros",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Daikin Park, Houston",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-11",
+   "time": "TBD",
+   "title": "Giants at Houston Astros",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Daikin Park, Houston",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-16",
+   "time": "TBD",
+   "title": "Giants vs. Athletics",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-17",
+   "time": "TBD",
+   "title": "Giants vs. Athletics",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-18",
+   "time": "TBD",
+   "title": "Giants vs. Athletics",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-19",
+   "time": "TBD",
+   "title": "Giants vs. Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-20",
+   "time": "TBD",
+   "title": "Giants vs. Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-21",
+   "time": "TBD",
+   "title": "Giants vs. Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-22",
+   "time": "TBD",
+   "title": "Giants vs. Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-23",
+   "time": "TBD",
+   "title": "Giants vs. San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-24",
+   "time": "TBD",
+   "title": "Giants vs. San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-25",
+   "time": "TBD",
+   "title": "Giants vs. San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-26",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Angels",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Angel Stadium, Anaheim",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-27",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Angels",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Angel Stadium, Anaheim",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-28",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Angels",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Angel Stadium, Anaheim",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-30",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Dodger Stadium, Los Angeles",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-07-31",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Dodger Stadium, Los Angeles",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-01",
+   "time": "TBD",
+   "title": "Giants at Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Dodger Stadium, Los Angeles",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-02",
+   "time": "TBD",
+   "title": "Giants at Chicago Cubs",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Wrigley Field, Chicago",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-03",
+   "time": "TBD",
+   "title": "Giants at Chicago Cubs",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Wrigley Field, Chicago",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-04",
+   "time": "TBD",
+   "title": "Giants at Chicago Cubs",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Wrigley Field, Chicago",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-06",
+   "time": "TBD",
+   "title": "Giants vs. Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-07",
+   "time": "TBD",
+   "title": "Giants vs. Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-08",
+   "time": "TBD",
+   "title": "Giants vs. Los Angeles Dodgers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-09",
+   "time": "TBD",
+   "title": "Giants vs. Milwaukee Brewers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-10",
+   "time": "TBD",
+   "title": "Giants vs. Milwaukee Brewers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-11",
+   "time": "TBD",
+   "title": "Giants vs. Milwaukee Brewers",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-13",
+   "time": "TBD",
+   "title": "Giants at Miami Marlins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "loanDepot park, Miami",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-14",
+   "time": "TBD",
+   "title": "Giants at Miami Marlins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "loanDepot park, Miami",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-15",
+   "time": "TBD",
+   "title": "Giants at Miami Marlins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "loanDepot park, Miami",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-17",
+   "time": "3:45 PM",
+   "title": "Giants at Washington Nationals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Nationals Park, Washington",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-18",
+   "time": "3:45 PM",
+   "title": "Giants at Washington Nationals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Nationals Park, Washington",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-19",
+   "time": "10:05 AM",
+   "title": "Giants at Washington Nationals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Nationals Park, Washington",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-20",
+   "time": "TBD",
+   "title": "Giants vs. Miami Marlins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-21",
+   "time": "TBD",
+   "title": "Giants vs. Miami Marlins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-22",
+   "time": "TBD",
+   "title": "Giants vs. Miami Marlins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-24",
+   "time": "TBD",
+   "title": "Giants vs. Boston Red Sox",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-25",
+   "time": "TBD",
+   "title": "Giants vs. Boston Red Sox",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-26",
+   "time": "TBD",
+   "title": "Giants vs. Boston Red Sox",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-27",
+   "time": "TBD",
+   "title": "Giants at Athletics",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Sutter Health Park, West Sacramento",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-28",
+   "time": "TBD",
+   "title": "Giants at Athletics",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Sutter Health Park, West Sacramento",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-29",
+   "time": "TBD",
+   "title": "Giants at Athletics",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Sutter Health Park, West Sacramento",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-30",
+   "time": "TBD",
+   "title": "Giants vs. Cleveland Guardians",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-08-31",
+   "time": "TBD",
+   "title": "Giants vs. Cleveland Guardians",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-01",
+   "time": "TBD",
+   "title": "Giants vs. Cleveland Guardians",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-03",
+   "time": "5:15 PM",
+   "title": "Giants at St. Louis Cardinals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Busch Stadium, St. Louis",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-04",
+   "time": "4:15 PM",
+   "title": "Giants at St. Louis Cardinals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Busch Stadium, St. Louis",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-05",
+   "time": "11:15 AM",
+   "title": "Giants at St. Louis Cardinals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Busch Stadium, St. Louis",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-06",
+   "time": "All day",
+   "title": "Labor Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday, the first Monday in September.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-09-06",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Labor Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1323"
+  },
+  {
+   "date": "2027-09-06",
+   "time": "6:40 PM",
+   "title": "Giants at San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Petco Park, San Diego",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-07",
+   "time": "1:10 PM",
+   "title": "Giants at San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Petco Park, San Diego",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-08",
+   "time": "6:40 PM",
+   "title": "Giants at San Diego Padres",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Petco Park, San Diego",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-10",
+   "time": "TBD",
+   "title": "Giants vs. Pittsburgh Pirates",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-11",
+   "time": "TBD",
+   "title": "Giants vs. Pittsburgh Pirates",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-12",
+   "time": "TBD",
+   "title": "Giants vs. Pittsburgh Pirates",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-13",
+   "time": "TBD",
+   "title": "Giants vs. Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-14",
+   "time": "TBD",
+   "title": "Giants vs. Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-15",
+   "time": "TBD",
+   "title": "Giants vs. Arizona Diamondbacks",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-17",
+   "time": "TBD",
+   "title": "Giants vs. Atlanta Braves",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-18",
+   "time": "TBD",
+   "title": "Giants vs. Atlanta Braves",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-19",
+   "time": "TBD",
+   "title": "Giants vs. Atlanta Braves",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-21",
+   "time": "4:40 PM",
+   "title": "Giants at Minnesota Twins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Target Field, Minneapolis",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-22",
+   "time": "4:40 PM",
+   "title": "Giants at Minnesota Twins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Target Field, Minneapolis",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-23",
+   "time": "10:40 AM",
+   "title": "Giants at Minnesota Twins",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Target Field, Minneapolis",
+   "description": "Regular season.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-24",
+   "time": "TBD",
+   "title": "Giants at Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Coors Field, Denver",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-25",
+   "time": "TBD",
+   "title": "Giants at Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Coors Field, Denver",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-09-26",
+   "time": "TBD",
+   "title": "Giants at Colorado Rockies",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Coors Field, Denver",
+   "description": "Regular-season finale. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
+  },
+  {
+   "date": "2027-10-11",
+   "time": "All day",
+   "title": "Columbus Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday. Also observed as Indigenous Peoples’ Day in California and many cities.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-11-11",
+   "time": "All day",
+   "title": "Veterans Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday honoring military veterans.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-11-11",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Veterans Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1319"
+  },
+  {
+   "date": "2027-11-25",
+   "time": "All day",
+   "title": "Thanksgiving Day",
+   "category": "Holidays",
+   "location": "",
+   "description": "Federal holiday.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-11-25",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Thanksgiving Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1314"
+  },
+  {
+   "date": "2027-11-26",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Day after Thanksgiving.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1310"
+  },
+  {
+   "date": "2027-12-24",
+   "time": "All day",
+   "title": "Christmas Day (observed)",
+   "category": "Holidays",
+   "location": "",
+   "description": "Christmas falls on a Saturday, so federal offices observe it on Friday, Dec. 24.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2027-12-25",
+   "time": "All day",
+   "title": "Millbrae City Hall closed",
+   "category": "Millbrae",
+   "location": "Millbrae City Hall",
+   "description": "Observed holiday: Christmas Day.",
+   "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1305"
+  },
+  {
+   "date": "2027-12-31",
+   "time": "All day",
+   "title": "New Year’s Day (observed)",
+   "category": "Holidays",
+   "location": "",
+   "description": "Jan. 1, 2028 falls on a Saturday, so federal offices observe it on Friday, Dec. 31.",
+   "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  }
+ ]
+}

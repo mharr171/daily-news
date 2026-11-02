@@ -112,16 +112,41 @@
            display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem;
            font-size: .9rem; color: var(--muted); }
 
-  /* Today strip: weather, alerts, rent reminder */
+  /* Today strip: weather, alerts, rent reminder, reader settings */
   .today { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
            gap: .3rem 1.25rem; padding: .5rem 0; border-bottom: 1px solid var(--soft-rule); font-size: .92rem; }
-  .today[hidden] { display: none; }
   .today .wx, .today .alerts { display: flex; flex-wrap: wrap; gap: .2rem .75rem; align-items: baseline; }
   .today .place { font-style: italic; color: var(--muted); }
   .today .alert { color: var(--spot); font-weight: 700; }
-  .today .rent { font-weight: 700; margin-left: auto; }
+  .today .end { display: flex; flex-wrap: wrap; gap: .2rem 1rem; align-items: baseline; margin-left: auto; }
+  .today .rent { font-weight: 700; }
   .today .rent.due { background: var(--band); color: var(--on-band); padding: .05rem .55rem; }
   .today a { color: inherit; }
+  .linkish { font: inherit; font-style: italic; color: var(--muted); background: none; border: 0; padding: 0;
+             text-decoration: underline; cursor: pointer; }
+  .linkish:hover { color: var(--ink); }
+  .linkish:focus-visible, .settings :focus-visible { outline: 2px solid var(--spot); outline-offset: 3px; }
+  .settings { border-bottom: 1px solid var(--soft-rule); padding: 1rem 0 1.25rem; font-size: .95rem;
+              display: grid; grid-template-columns: 1fr; gap: 1.25rem 2.5rem; }
+  .settings[hidden] { display: none; }
+  @media (min-width: 46rem) { .settings { grid-template-columns: 1.4fr 1fr; } }
+  .settings h3 { font-size: 1rem; margin: 0 0 .4rem; }
+  .settings p { margin: 0 0 .5rem; }
+  .settings .muted { color: var(--muted); font-style: italic; font-size: .88rem; }
+  .settings form { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 .5rem; }
+  .settings input, .settings select { font: inherit; color: var(--ink); background: var(--paper);
+              border: 1px solid var(--ink); padding: .3rem .5rem; min-width: 0; }
+  .settings input { flex: 1 1 12rem; }
+  .settings .btn { font: inherit; font-weight: 700; color: var(--ink); background: none; border: 2px solid var(--ink);
+              padding: .25rem .7rem; cursor: pointer; }
+  .settings .btn:hover { background: var(--ink); color: var(--paper); }
+  .settings .row { display: flex; flex-wrap: wrap; gap: .4rem .9rem; align-items: baseline; }
+  .settings .results { list-style: none; margin: 0 0 .5rem; padding: 0; }
+  .settings .results li { border-bottom: 1px dotted var(--soft-rule); }
+  .settings .results button { font: inherit; color: inherit; background: none; border: 0; padding: .35rem 0;
+              text-align: left; width: 100%; cursor: pointer; }
+  .settings .results button:hover { text-decoration: underline; }
+  .settings .done { grid-column: 1 / -1; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; align-items: baseline; }
 
   /* Print: black on white, no navigation, link addresses after headlines */
   @media print {
@@ -153,11 +178,40 @@
       <span>by The Gary Corp.</span>
       <span class="tag">Gary Garrison’s tailored news</span>
     </div>
-    <div class="today print-hide" id="today-strip" hidden aria-live="polite">
+    <div class="today print-hide" id="today-strip" aria-live="polite">
       <div class="wx" id="wx"></div>
       <div class="alerts" id="alerts"></div>
-      <span class="rent" id="rent" hidden></span>
+      <div class="end">
+        <span class="rent" id="rent" hidden></span>
+        <button type="button" class="linkish" id="customize" aria-expanded="false" aria-controls="settings">Customize</button>
+      </div>
     </div>
+    <section class="settings print-hide" id="settings" hidden aria-label="Customize this strip">
+      <div>
+        <h3>Weather location</h3>
+        <p>Showing: <strong id="cur-place">Millbrae</strong></p>
+        <form id="place-form" role="search">
+          <label for="place-q" class="muted" style="flex-basis:100%">City or ZIP code</label>
+          <input id="place-q" type="search" placeholder="e.g. Portland, or 96813" autocomplete="off">
+          <button class="btn" type="submit">Search</button>
+        </form>
+        <p class="muted" id="place-msg"></p>
+        <ul class="results" id="place-results"></ul>
+        <div class="row">
+          <button type="button" class="linkish" id="use-loc">Use my location</button>
+          <button type="button" class="linkish" id="reset-place">Reset to Millbrae</button>
+        </div>
+      </div>
+      <div>
+        <h3><label for="rent-day">Rent reminder</label></h3>
+        <p><select id="rent-day"></select></p>
+        <p class="muted">Counts down during the 7 days before rent is due, and says “Rent is due!” on the day.</p>
+      </div>
+      <div class="done">
+        <span class="muted">Saved in this browser only. Nothing is sent to this site.</span>
+        <button type="button" class="btn" id="settings-done">Done</button>
+      </div>
+    </section>
   </header>
 
   <main id="front-page">
@@ -259,66 +313,161 @@
       el("p", "notice", "The editions list couldn’t be loaded. Refresh the page, or check that posts.json is in the same folder as this page.")));
 })();
 
-// Today strip: Millbrae weather (Open-Meteo), NWS alerts for San Mateo County, rent reminder.
+// Today strip: weather (Open-Meteo), NWS alerts, and a rent reminder, with reader settings
+// saved in this browser's localStorage. Nothing is sent to this site.
 (function () {
-  const strip = document.getElementById("today-strip");
-  const show = () => { strip.hidden = false; };
-  const TZ = "America/Los_Angeles";
-  const FORECAST = "https://forecast.weather.gov/MapClick.php?lat=37.5985&lon=-122.3872";
+  const KEY = "lfs-settings";
+  const DEFAULT_PLACE = { name: "Millbrae", lat: 37.5985, lon: -122.3872, us: true };
+  const $ = id => document.getElementById(id);
+  const span = (cls, text) => { const s = document.createElement("span"); if (cls) s.className = cls; s.textContent = text; return s; };
 
-  // Rent is due on the 1st of every month (Pacific time).
-  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: TZ, year: "numeric", month: "numeric", day: "numeric" })
-    .formatToParts(new Date()).map(p => [p.type, p.value]));
-  const y = +parts.year, m = +parts.month, d = +parts.day;
-  const daysInMonth = new Date(y, m, 0).getDate();
-  const daysLeft = d === 1 ? 0 : daysInMonth - d + 1;
-  const rent = document.getElementById("rent");
-  if (daysLeft === 0) { rent.textContent = "Rent is due!"; rent.classList.add("due"); }
-  else if (daysLeft <= 7) { rent.textContent = "Rent due in " + daysLeft + (daysLeft === 1 ? " day" : " days"); }
-  if (rent.textContent) { rent.hidden = false; show(); }
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; }
+  }
+  function save(s) {
+    try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) { /* storage blocked: settings last this visit only */ }
+  }
+  let settings = load();
+  const place = () => (settings.place && isFinite(settings.place.lat) && isFinite(settings.place.lon)) ? settings.place : DEFAULT_PLACE;
 
+  // ---- Rent reminder (off unless the reader picks a day) ----
+  function renderRent() {
+    const rent = $("rent");
+    rent.hidden = true; rent.textContent = ""; rent.classList.remove("due");
+    const day = settings.rentDay;
+    if (!day) return;
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const dueIn = (y, m) => {             // due date in month m (0-based) of year y
+      const last = new Date(y, m + 1, 0).getDate();
+      return new Date(y, m, day === "last" ? last : Math.min(+day, last));
+    };
+    let due = dueIn(today.getFullYear(), today.getMonth());
+    if (due < today) due = dueIn(today.getFullYear(), today.getMonth() + 1);
+    const days = Math.round((due - today) / 86400000);
+    if (days === 0) { rent.textContent = "Rent is due!"; rent.classList.add("due"); }
+    else if (days <= 7) rent.textContent = "Rent due in " + days + (days === 1 ? " day" : " days");
+    rent.hidden = !rent.textContent;
+  }
+
+  // ---- Weather and alerts ----
   const WMO = { 0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Cloudy", 45: "Fog", 48: "Fog",
     51: "Light drizzle", 53: "Drizzle", 55: "Heavy drizzle", 56: "Freezing drizzle", 57: "Freezing drizzle",
     61: "Light rain", 63: "Rain", 65: "Heavy rain", 66: "Freezing rain", 67: "Freezing rain",
     71: "Light snow", 73: "Snow", 75: "Heavy snow", 77: "Snow", 80: "Showers", 81: "Showers", 82: "Heavy showers",
     85: "Snow showers", 86: "Snow showers", 95: "Thunderstorms", 96: "Thunderstorms with hail", 99: "Thunderstorms with hail" };
-  const span = (cls, text) => { const s = document.createElement("span"); if (cls) s.className = cls; s.textContent = text; return s; };
+  let ticket = 0;
 
-  fetch("https://api.open-meteo.com/v1/forecast?latitude=37.5985&longitude=-122.3872" +
-        "&current=temperature_2m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max" +
-        "&temperature_unit=fahrenheit&timezone=" + encodeURIComponent(TZ) + "&forecast_days=1")
-    .then(r => r.ok ? r.json() : Promise.reject())
-    .then(w => {
-      const dd = w.daily, r = Math.round;
-      const wx = document.getElementById("wx");
-      const a = document.createElement("a");
-      a.href = FORECAST; a.target = "_blank"; a.rel = "noopener";
-      a.textContent = (WMO[dd.weather_code[0]] || "Forecast") + ", high " + r(dd.temperature_2m_max[0]) + "°, low " + r(dd.temperature_2m_min[0]) + "°";
-      wx.append(span("place", "Millbrae today:"), a);
-      if (dd.precipitation_probability_max[0] >= 20) wx.append(span(null, dd.precipitation_probability_max[0] + "% chance of rain"));
-      if (w.current) wx.append(span(null, "Now " + r(w.current.temperature_2m) + "°"));
-      show();
-    })
-    .catch(() => {});
+  function renderWeather() {
+    const p = place(), mine = ++ticket;
+    const wx = $("wx"), box = $("alerts");
+    wx.replaceChildren(); box.replaceChildren();
+    $("cur-place").textContent = p.name;
+    const lat = (+p.lat).toFixed(4), lon = (+p.lon).toFixed(4);
+    const forecastUrl = "https://forecast.weather.gov/MapClick.php?lat=" + lat + "&lon=" + lon;
+    const r = Math.round;
 
-  fetch("https://api.weather.gov/alerts/active?zone=CAC081", { headers: { Accept: "application/geo+json" } })
-    .then(r => r.ok ? r.json() : Promise.reject())
-    .then(j => {
-      const seen = new Set();
-      const list = (j.features || []).map(f => f.properties).filter(p => p && p.event && !seen.has(p.event) && seen.add(p.event)).slice(0, 2);
-      if (!list.length) return;
-      const box = document.getElementById("alerts");
-      list.forEach(p => {
-        const end = p.ends || p.expires;
-        const until = end ? " until " + new Date(end).toLocaleString("en-US", { timeZone: TZ, weekday: "short", hour: "numeric", minute: "2-digit" }) : "";
-        const a = document.createElement("a");
-        a.href = FORECAST; a.target = "_blank"; a.rel = "noopener"; a.className = "alert";
-        a.textContent = "⚠ " + p.event + until;
-        box.append(a);
-      });
-      show();
-    })
-    .catch(() => {});
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + lon +
+          "&current=temperature_2m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max" +
+          "&temperature_unit=fahrenheit&timezone=auto&forecast_days=1")
+      .then(res => res.ok ? res.json() : Promise.reject())
+      .then(w => {
+        if (mine !== ticket) return;
+        const dd = w.daily;
+        const text = (WMO[dd.weather_code[0]] || "Forecast") + ", high " + r(dd.temperature_2m_max[0]) + "°, low " + r(dd.temperature_2m_min[0]) + "°";
+        let main;
+        if (p.us !== false) {
+          main = document.createElement("a");
+          main.href = forecastUrl; main.target = "_blank"; main.rel = "noopener";
+          main.textContent = text;
+        } else main = span(null, text);
+        wx.append(span("place", p.name + " today:"), main);
+        if (dd.precipitation_probability_max[0] >= 20) wx.append(span(null, dd.precipitation_probability_max[0] + "% chance of rain"));
+        if (w.current) wx.append(span(null, "Now " + r(w.current.temperature_2m) + "°"));
+      })
+      .catch(() => { if (mine === ticket) wx.append(span("place", "Weather for " + p.name + " is unavailable right now.")); });
+
+    if (p.us === false) return;   // NWS alerts cover the US only
+    fetch("https://api.weather.gov/alerts/active?point=" + lat + "," + lon, { headers: { Accept: "application/geo+json" } })
+      .then(res => res.ok ? res.json() : Promise.reject())
+      .then(j => {
+        if (mine !== ticket) return;
+        const seen = new Set();
+        (j.features || []).map(f => f.properties)
+          .filter(a => a && a.event && !seen.has(a.event) && seen.add(a.event)).slice(0, 2)
+          .forEach(a => {
+            const end = a.ends || a.expires;
+            const until = end ? " until " + new Date(end).toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit" }) : "";
+            const link = document.createElement("a");
+            link.href = forecastUrl; link.target = "_blank"; link.rel = "noopener"; link.className = "alert";
+            link.textContent = "⚠ " + a.event + until;
+            box.append(link);
+          });
+      })
+      .catch(() => {});
+  }
+
+  // ---- Settings panel ----
+  const panel = $("settings"), toggle = $("customize");
+  function openPanel(open) {
+    panel.hidden = !open;
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "Close" : "Customize";
+    if (open && matchMedia("(min-width: 46rem)").matches) $("place-q").focus();
+  }
+  toggle.addEventListener("click", () => openPanel(panel.hidden));
+  $("settings-done").addEventListener("click", () => { openPanel(false); toggle.focus(); });
+
+  const sel = $("rent-day");
+  const ord = n => n + ([, "st", "nd", "rd"][n % 100 > 10 && n % 100 < 14 ? 0 : n % 10] || "th");
+  [["", "Off"], ...Array.from({ length: 28 }, (_, i) => [String(i + 1), "Due on the " + ord(i + 1)]), ["last", "Due on the last day of the month"]]
+    .forEach(([v, t]) => { const o = document.createElement("option"); o.value = v; o.textContent = t; sel.append(o); });
+  sel.value = settings.rentDay ? String(settings.rentDay) : "";
+  sel.addEventListener("change", () => {
+    settings.rentDay = sel.value === "" ? null : (sel.value === "last" ? "last" : +sel.value);
+    save(settings); renderRent();
+  });
+
+  const msg = $("place-msg"), results = $("place-results");
+  function setPlace(p) {
+    settings.place = p; save(settings);
+    results.replaceChildren(); msg.textContent = "Weather now shows " + p.name + ".";
+    $("place-q").value = "";
+    renderWeather();
+  }
+  $("place-form").addEventListener("submit", ev => {
+    ev.preventDefault();
+    const q = $("place-q").value.trim();
+    results.replaceChildren();
+    if (!q) return;
+    msg.textContent = "Searching…";
+    fetch("https://geocoding-api.open-meteo.com/v1/search?count=6&language=en&format=json&name=" + encodeURIComponent(q))
+      .then(res => res.ok ? res.json() : Promise.reject())
+      .then(j => {
+        const list = j.results || [];
+        msg.textContent = list.length ? "Pick a place:" : "No places found. Try a different spelling or a nearby city.";
+        list.forEach(g => {
+          const label = [g.name, g.admin1, g.country].filter((x, i, a) => x && a.indexOf(x) === i).join(", ");
+          const li = document.createElement("li"), b = document.createElement("button");
+          b.type = "button"; b.textContent = label;
+          b.addEventListener("click", () => setPlace({ name: g.name, lat: g.latitude, lon: g.longitude, us: g.country_code === "US" }));
+          li.append(b); results.append(li);
+        });
+      })
+      .catch(() => { msg.textContent = "Search isn’t working right now. Try again in a moment."; });
+  });
+  $("use-loc").addEventListener("click", () => {
+    if (!navigator.geolocation) { msg.textContent = "This browser can’t share its location."; return; }
+    msg.textContent = "Finding your location…";
+    navigator.geolocation.getCurrentPosition(
+      pos => setPlace({ name: "Your location", lat: +pos.coords.latitude.toFixed(4), lon: +pos.coords.longitude.toFixed(4), us: true }),
+      () => { msg.textContent = "Couldn’t get your location. You can search for a city instead."; },
+      { timeout: 15000, maximumAge: 600000 });
+  });
+  $("reset-place").addEventListener("click", () => { delete settings.place; save(settings); msg.textContent = "Weather now shows Millbrae."; renderWeather(); });
+
+  renderRent();
+  renderWeather();
 })();
 </script>
 </body>

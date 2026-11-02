@@ -1,8 +1,154 @@
 {
  "updated": "2026-11-02",
  "timezone": "America/Los_Angeles",
- "note": "Times are Pacific. Sports schedules can change; check the team link before you go.",
+ "note": "Times are Pacific. Sunrise and sunset times are calculated for Millbrae. Dates for launches, games, and releases can change; check the linked source before you go.",
  "events": [
+  {
+   "date": "2026-09-15",
+   "end": "2026-10-15",
+   "time": "",
+   "title": "Hispanic Heritage Month",
+   "category": "Cultural",
+   "location": "",
+   "description": "For one month the nation celebrates the history, cultures and contributions of Americans with roots in Spain, Mexico, Central and South America and the Caribbean. It ends on Oct. 15.",
+   "url": "https://www.hispanicheritagemonth.gov/"
+  },
+  {
+   "date": "2026-10-01",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "Filipino American History Month",
+   "category": "Cultural",
+   "location": "",
+   "description": "This month marks the first recorded landing of Filipinos in what is now California in 1587. It celebrates Filipino American history, which runs deep in San Mateo County.",
+   "url": "https://fanhs-national.org/filam/"
+  },
+  {
+   "date": "2026-10-01",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "Italian American Heritage Month",
+   "category": "Cultural",
+   "location": "",
+   "description": "This month honors the history and contributions of Italian Americans and is timed to coincide with Columbus Day.",
+   "url": "https://www.niaf.org/"
+  },
+  {
+   "date": "2026-10-01",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "LGBTQ+ History Month",
+   "category": "Cultural",
+   "location": "",
+   "description": "Each day this month, the observance highlights a figure or milestone from LGBTQ+ history. National Coming Out Day falls on Oct. 11.",
+   "url": "https://lgbthistorymonth.com/"
+  },
+  {
+   "date": "2026-10-01",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "Breast Cancer Awareness Month",
+   "category": "Awareness",
+   "location": "",
+   "description": "This campaign promotes screening, early detection and support for people affected by breast cancer.",
+   "url": "https://www.nationalbreastcancer.org/breast-cancer-awareness-month/"
+  },
+  {
+   "date": "2026-10-01",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "Cybersecurity Awareness Month",
+   "category": "Awareness",
+   "location": "",
+   "description": "CISA and its partners encourage simple steps to stay safer online, such as strong passwords, multifactor authentication and software updates.",
+   "url": "https://www.cisa.gov/cybersecurity-awareness-month"
+  },
+  {
+   "date": "2026-10-01",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "Domestic Violence Awareness Month",
+   "category": "Awareness",
+   "location": "",
+   "description": "This month raises awareness of intimate partner violence and of the help available. Anyone who needs support can reach the National Domestic Violence Hotline at 1-800-799-7233.",
+   "url": "https://nnedv.org/content/domestic-violence-awareness-month/"
+  },
+  {
+   "date": "2026-10-01",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "National Bullying Prevention Month",
+   "category": "Awareness",
+   "location": "",
+   "description": "Schools and communities work to prevent bullying and promote kindness and inclusion.",
+   "url": "https://www.pacer.org/bullying/nbpm/"
+  },
+  {
+   "date": "2026-10-01",
+   "time": "8:10 AM",
+   "title": "SpaceX Crew-13 launches to the ISS",
+   "category": "Space",
+   "location": "Cape Canaveral Space Force Station, FL",
+   "description": "A Falcon 9 sent four astronauts from NASA, the Canadian Space Agency and Roscosmos to the space station. Their Dragon docked about eight hours later, the fastest U.S. trip to the station so far, and began a roughly six-month stay.",
+   "url": "https://www.space.com/news/live/spacex-nasa-crew-13-astronauts-launch-to-iss-october-1-2026"
+  },
+  {
+   "date": "2026-10-01",
+   "time": "All day",
+   "title": "Federal fiscal year 2027 begins",
+   "category": "Government",
+   "location": "",
+   "description": "Washington’s new budget year starts. A stopgap law signed in September keeps federal agencies funded for now while Congress works on full-year spending bills.",
+   "url": "https://www.everycrsreport.com/files/2026-09-17_R49353_98ddd8e7b1852b47b24e394ed7ddf6d6d53b4632.html"
+  },
+  {
+   "date": "2026-10-01",
+   "end": "2026-10-04",
+   "time": "4:00 PM – 8:00 PM",
+   "title": "Burlingame: Burlingame Live",
+   "category": "Community",
+   "location": "Park Road and Burlingame Avenue, Burlingame",
+   "description": "Four days of live music and dancing at a downtown corner, put on by Downtown Burlingame and the local chamber of commerce.",
+   "url": "https://www.burlingamedowntown.org/events"
+  },
+  {
+   "date": "2026-10-02",
+   "end": "2026-10-04",
+   "time": "Sundown",
+   "title": "Shemini Atzeret & Simchat Torah",
+   "category": "Religious",
+   "location": "",
+   "description": "The Jewish fall festival season closes with Shemini Atzeret, starting at sundown Oct. 2, followed by Simchat Torah, which begins at sundown Oct. 3. On Simchat Torah, congregations dance with the Torah scrolls and start the yearly reading cycle over again.",
+   "url": "https://www.chabad.org/library/article_cdo/aid/4689/jewish/Shemini-Atzeret-Simchat-Torah.htm"
+  },
+  {
+   "date": "2026-10-02",
+   "time": "5:30 AM",
+   "title": "Jobs report (September)",
+   "category": "Financial",
+   "location": "",
+   "description": "The Bureau of Labor Statistics releases the monthly employment report for September.",
+   "url": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
+  },
+  {
+   "date": "2026-10-02",
+   "end": "2026-10-04",
+   "time": "",
+   "title": "Hardly Strictly Bluegrass",
+   "category": "Entertainment",
+   "location": "Golden Gate Park, San Francisco",
+   "description": "The free three-day roots-music festival returns, with My Morning Jacket, Gillian Welch & David Rawlings and Old Crow Medicine Show among the acts.",
+   "url": "https://abc7news.com/post/strictly-bluegrass-unveils-2026-lineup-free-golden-gate-park-music-festival-san-francisco/19558885/"
+  },
+  {
+   "date": "2026-10-02",
+   "time": "",
+   "title": "“Digger” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Tom Cruise stars in Alejandro G. Iñárritu’s Warner Bros. film, which had a soft opening weekend.",
+   "url": "https://ed.wbd.com/titles/digger"
+  },
   {
    "date": "2026-10-03",
    "time": "9:00 AM – 12:30 PM",
@@ -11,6 +157,16 @@
    "location": "Coyote Point Park Duck Pond, 1701 Coyote Point Dr., San Mateo",
    "description": "Community fair with 1K and 5K walks that raise money for free mental-health programs from the local National Alliance on Mental Illness.",
    "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1952"
+  },
+  {
+   "date": "2026-10-03",
+   "time": "",
+   "title": "Hawai‘i vs. San José State",
+   "category": "Sports",
+   "team": "Hawaii",
+   "location": "Clarence T.C. Ching Athletics Complex, Honolulu",
+   "description": "College football. Final: L 16–20.",
+   "url": "https://hawaiiathletics.com/sports/football/schedule"
   },
   {
    "date": "2026-10-03",
@@ -23,14 +179,42 @@
    "url": "https://www.bayfc.com/schedule/"
   },
   {
-   "date": "2026-10-03",
+   "date": "2026-10-04",
+   "time": "All day",
+   "title": "Feast of St. Francis of Assisi",
+   "category": "Religious",
+   "location": "",
+   "description": "This feast day honors the patron saint of animals and ecology. Many churches mark it around this date with a blessing of pets.",
+   "url": "https://www.franciscanmedia.org/saint-of-the-day/saint-francis-of-assisi/"
+  },
+  {
+   "date": "2026-10-04",
+   "end": "2026-10-10",
    "time": "",
-   "title": "Hawai‘i vs. San José State",
-   "category": "Sports",
-   "team": "Hawaii",
-   "location": "Clarence T.C. Ching Athletics Complex, Honolulu",
-   "description": "College football. Final: L 16–20.",
-   "url": "https://hawaiiathletics.com/sports/football/schedule"
+   "title": "Fire Prevention Week",
+   "category": "Awareness",
+   "location": "",
+   "description": "NFPA’s 2026 campaign centers on safe charging habits that help prevent fires from lithium-ion batteries.",
+   "url": "https://www.firerescue1.com/fire-prevention-week/nfpa-announces-fire-prevention-week-2026-theme-safe-charging"
+  },
+  {
+   "date": "2026-10-04",
+   "end": "2026-10-10",
+   "time": "",
+   "title": "Mental Illness Awareness Week",
+   "category": "Awareness",
+   "location": "",
+   "description": "NAMI holds this week of education and advocacy during the first full week of October to fight stigma around mental illness.",
+   "url": "https://www.nami.org/get-involved/awareness-events/mental-illness-awareness-week/"
+  },
+  {
+   "date": "2026-10-04",
+   "time": "",
+   "title": "Saturn at opposition",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Saturn is opposite the Sun, so it rises at sunset and is up all night at its brightest of the year. Look southeast after dark.",
+   "url": "https://science.nasa.gov/skywatching/"
   },
   {
    "date": "2026-10-04",
@@ -71,6 +255,15 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-10-05",
+   "time": "9:00 AM – 5:00 PM",
+   "title": "Ballots mailed; San Mateo County voting begins",
+   "category": "Government",
+   "location": "San Mateo County",
+   "description": "Counties begin mailing vote-by-mail ballots for the Nov. 3 election, and ballot drop boxes open. San Mateo County opens three early vote centers (north, central, south), weekdays 9 AM–5 PM.",
+   "url": "https://smcacre.gov/november-3-2026"
+  },
+  {
    "date": "2026-10-06",
    "time": "7:00 PM",
    "title": "Warriors vs. Los Angeles Lakers",
@@ -79,6 +272,15 @@
    "location": "Chase Center, San Francisco",
    "description": "Preseason. Final: W 124–98.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-07",
+   "time": "1:00 PM – 2:00 PM",
+   "title": "San Mateo: East Hillsdale Park Reopening",
+   "category": "Community",
+   "location": "East Hillsdale Park, 123 31st Avenue, San Mateo",
+   "description": "A short city ceremony welcomes neighbors back to the renovated park so they can see the improvements. Street parking only.",
+   "url": "https://cityofsanmateo.org/m/calendar/event/detail/16552"
   },
   {
    "date": "2026-10-07",
@@ -98,6 +300,15 @@
    "location": "Moda Center, Portland",
    "description": "Preseason. Final: L 118–123.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-08",
+   "time": "8:34 AM",
+   "title": "Crew-12 splashes down off California",
+   "category": "Space",
+   "location": "Pacific Ocean off Los Angeles",
+   "description": "The outgoing Crew-12 astronauts from NASA, ESA and Roscosmos came home in their Dragon capsule. They splashed down off the Southern California coast after handing the station over to Crew-13.",
+   "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/08/"
   },
   {
    "date": "2026-10-08",
@@ -128,6 +339,33 @@
    "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1971"
   },
   {
+   "date": "2026-10-09",
+   "time": "",
+   "title": "“The Social Reckoning” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Sony’s follow-up to “The Social Network” opened to about $5.5 million, while horror film “Other Mommy” led the weekend.",
+   "url": "https://www.news4jax.com/entertainment/2026/10/11/other-mommy-tops-the-box-office-with-275m-the-social-reckoning-opens-to-55m/"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "All day",
+   "title": "World Mental Health Day",
+   "category": "Awareness",
+   "location": "",
+   "description": "This global day, backed by the World Health Organization, promotes mental health awareness and access to care. Anyone in crisis can call or text 988.",
+   "url": "https://www.who.int/campaigns/world-mental-health-day"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "8:50 AM",
+   "title": "New moon",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "No moonlight, so the next few nights are good for stargazing.",
+   "url": "https://aa.usno.navy.mil/data/MoonPhases"
+  },
+  {
    "date": "2026-10-10",
    "time": "11:00 AM – 3:00 PM",
    "title": "Central County Fire Department open house",
@@ -147,12 +385,40 @@
   },
   {
    "date": "2026-10-10",
+   "time": "11:00 AM – 4:00 PM",
+   "title": "San Mateo: Spooky Book Faire",
+   "category": "Community",
+   "location": "Oak Room, San Mateo Main Library, San Mateo",
+   "description": "A Halloween book fair for adults at the main library, with scary-story readings, games with prizes, refreshments and books from featured horror authors.",
+   "url": "https://sanmateopublic.libcal.com/event/17309296"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "12:00 PM – 3:00 PM",
+   "title": "San Mateo: Día de los Muertos at King Park",
+   "category": "Community",
+   "location": "Dr. Martin Luther King Jr. Park, 725 Monte Diablo Ave., San Mateo",
+   "description": "The San Mateo Police Activities League’s annual free celebration, with altars, music, dance, food and family activities.",
+   "url": "https://sanmateopal.org/Events-Community"
+  },
+  {
+   "date": "2026-10-10",
    "time": "7:30 PM",
    "title": "Masha Campagne & Alegre Menina",
    "category": "County arts",
    "location": "1220A Linda Mar Blvd., Pacifica",
    "description": "Pacifica Performances concert of samba, bossa nova, and Brazilian jazz. Tickets $25.",
    "url": "https://pacificaperformances.org/"
+  },
+  {
+   "date": "2026-10-10",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Sacramento Kings",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Preseason. Final: W 111–106.",
+   "url": "https://www.nba.com/warriors/schedule"
   },
   {
    "date": "2026-10-10",
@@ -175,16 +441,6 @@
    "url": "https://hawaiiathletics.com/sports/football/schedule"
   },
   {
-   "date": "2026-10-10",
-   "time": "5:30 PM",
-   "title": "Warriors vs. Sacramento Kings",
-   "category": "Sports",
-   "team": "Warriors",
-   "location": "Chase Center, San Francisco",
-   "description": "Preseason. Final: W 111–106.",
-   "url": "https://www.nba.com/warriors/schedule"
-  },
-  {
    "date": "2026-10-11",
    "time": "1:25 PM",
    "title": "49ers at Seattle Seahawks",
@@ -202,6 +458,60 @@
    "location": "",
    "description": "Federal holiday. Also observed as Indigenous Peoples’ Day in California and many cities.",
    "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2026-10-12",
+   "time": "All day",
+   "title": "Banks closed: Columbus Day / Indigenous Peoples’ Day",
+   "category": "Bank holidays",
+   "location": "",
+   "description": "Federal Reserve holiday: the Fed and most banks are closed, and checks and transfers won’t process.",
+   "url": "https://www.federalreserve.gov/aboutthefed/k8.htm"
+  },
+  {
+   "date": "2026-10-12",
+   "time": "All day",
+   "title": "Indigenous Peoples’ Day",
+   "category": "Cultural",
+   "location": "",
+   "description": "California and many cities honor Native peoples and their cultures on the second Monday of October. It falls on the same day as the federal Columbus Day holiday.",
+   "url": "https://www.nativeamericanheritagemonth.gov/"
+  },
+  {
+   "date": "2026-10-12",
+   "time": "",
+   "title": "Mercury at its best in the evening sky",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Mercury reaches its greatest distance from the Sun after sunset, but it stays low in the west-southwest twilight.",
+   "url": "https://science.nasa.gov/skywatching/"
+  },
+  {
+   "date": "2026-10-12",
+   "time": "All day",
+   "title": "Bond market closed (Columbus Day)",
+   "category": "Financial",
+   "location": "",
+   "description": "SIFMA recommends a full close of U.S. bond markets for Columbus Day. The stock market is open normally.",
+   "url": "https://www.sifma.org/resources/guides-playbooks/holiday-schedule"
+  },
+  {
+   "date": "2026-10-13",
+   "time": "All day",
+   "title": "U.S. Navy Birthday",
+   "category": "Patriotic & memorial",
+   "location": "",
+   "description": "The Navy traces its start to Oct. 13, 1775, when the Continental Congress authorized the first armed ships. This year is its 251st birthday.",
+   "url": "https://www.history.navy.mil/browse-by-topic/heritage/navy-birthday.html"
+  },
+  {
+   "date": "2026-10-13",
+   "time": "3:35 AM",
+   "title": "SpaceX CRS-35 cargo launch to the ISS",
+   "category": "Space",
+   "location": "Cape Canaveral Space Force Station, FL",
+   "description": "A Falcon 9 launched a cargo Dragon carrying about 6,300 pounds of supplies and experiments, including the last set of new ISS solar arrays. It docked on its own on Oct. 15.",
+   "url": "https://www.space.com/space-exploration/international-space-station/spacex-crs-35-cargo-launch-international-space-station"
   },
   {
    "date": "2026-10-13",
@@ -224,6 +534,24 @@
   },
   {
    "date": "2026-10-14",
+   "time": "",
+   "title": "Social Security announces 2027 COLA",
+   "category": "Government",
+   "location": "",
+   "description": "Social Security announced a 3.6% cost-of-living raise for 2027. Social Security checks rise starting in January; SSI payments go up starting Dec. 31.",
+   "url": "https://www.ssa.gov/news/en/press/releases/2026-10-14.html"
+  },
+  {
+   "date": "2026-10-14",
+   "time": "5:30 AM",
+   "title": "Consumer Price Index (September)",
+   "category": "Financial",
+   "location": "",
+   "description": "The government’s monthly inflation report for September comes out.",
+   "url": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
+  },
+  {
+   "date": "2026-10-14",
    "time": "5:30 – 6:30 PM",
    "title": "Filipino cooking lesson: sinigang",
    "category": "County arts",
@@ -240,6 +568,35 @@
    "location": "America First Field, Sandy, Utah",
    "description": "MLS regular season. Final: D 1–1.",
    "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-10-15",
+   "time": "10:15 AM",
+   "title": "Great California ShakeOut",
+   "category": "Awareness",
+   "location": "",
+   "description": "In this statewide earthquake drill, millions of people practice Drop, Cover, and Hold On at 10:15 a.m.",
+   "url": "https://www.shakeout.org/california/"
+  },
+  {
+   "date": "2026-10-15",
+   "end": "2026-10-22",
+   "time": "",
+   "title": "ESA’s Hera brakes toward the Didymos asteroids",
+   "category": "Space",
+   "location": "",
+   "description": "Europe’s Hera probe fired two big braking burns, on Oct. 15 and Oct. 22, to slow down for its November rendezvous with the asteroid pair that NASA’s DART spacecraft struck in 2022.",
+   "url": "https://www.esa.int/Space_Safety/Hera/Brake!_Time_for_ESA_s_Hera_asteroid_mission_to_go_slow"
+  },
+  {
+   "date": "2026-10-15",
+   "end": "2026-12-07",
+   "time": "",
+   "title": "Medicare open enrollment",
+   "category": "Government",
+   "location": "",
+   "description": "People with Medicare can switch health and drug plans for 2027 during this window, which closes Dec. 7.",
+   "url": "https://www.cms.gov/center/openenrollment.asp"
   },
   {
    "date": "2026-10-15",
@@ -261,6 +618,15 @@
   },
   {
    "date": "2026-10-16",
+   "time": "All day",
+   "title": "World Food Day",
+   "category": "Awareness",
+   "location": "",
+   "description": "The UN’s Food and Agriculture Organization marks this day to call attention to hunger and food security around the world.",
+   "url": "https://www.fao.org/world-food-day/en"
+  },
+  {
+   "date": "2026-10-16",
    "time": "7:00 PM",
    "title": "Warriors vs. Portland Trail Blazers",
    "category": "Sports",
@@ -270,14 +636,40 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-10-16",
+   "time": "",
+   "title": "“Street Fighter” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Paramount’s video-game adaptation opened at No. 1 with an estimated $31 million in North America.",
+   "url": "https://www.thestar.com.my/news/world/2026/10/19/street-fighter-tops-north-american-box-office-in-opening-weekend"
+  },
+  {
    "date": "2026-10-17",
-   "end": "2026-10-18",
-   "time": "7:00 AM – 5:00 PM",
-   "title": "Half Moon Bay Art & Pumpkin Festival",
-   "category": "County arts",
-   "location": "Main Street, Half Moon Bay",
-   "description": "The 54th annual festival with a pancake breakfast, art, music, a parade, and food. Free.",
-   "url": "https://hmbpumpkinfest.com/"
+   "time": "5:04 PM",
+   "title": "Loma Prieta Earthquake Anniversary",
+   "category": "Patriotic & memorial",
+   "location": "San Francisco Bay Area",
+   "description": "On this day in 1989, a magnitude 6.9 earthquake struck at 5:04 p.m., killing 63 people and damaging the Bay Bridge and freeways across the region.",
+   "url": "https://www.usgs.gov/programs/earthquake-hazards/science/m69-october-17-1989-loma-prieta-earthquake"
+  },
+  {
+   "date": "2026-10-17",
+   "time": "10:00 AM – 2:00 PM",
+   "title": "South San Francisco: Halloween Extravaganza",
+   "category": "Community",
+   "location": "Orange Memorial Park, 1 West Orange Ave., South San Francisco",
+   "description": "A free family Halloween day with trunk-or-treat, games, a storybook walk and a pet costume contest. The pumpkin patch costs $8 and needs registration.",
+   "url": "https://www.ssfca.gov/Departments/Parks-Recreation/Events/Halloween-Extravaganza"
+  },
+  {
+   "date": "2026-10-17",
+   "time": "11:00 AM – 2:00 PM",
+   "title": "San Bruno: Día de los Muertos",
+   "category": "Community",
+   "location": "Centennial Plaza, 470 San Mateo Ave., San Bruno",
+   "description": "The city’s 18th annual free celebration, with mariachi music, Ballet Folklórico, sugar skull decorating, face painting and a community ofrenda. It moves to the Senior Center if it rains.",
+   "url": "https://www.sanbruno.ca.gov/Calendar.aspx?EID=5584"
   },
   {
    "date": "2026-10-17",
@@ -296,6 +688,16 @@
    "location": "Port of Redwood City, 459 Seaport Ct.",
    "description": "Free waterfront concert of R&B and Latin rock.",
    "url": "https://www.redwoodcityport.com/rockthedock-1"
+  },
+  {
+   "date": "2026-10-17",
+   "end": "2026-10-18",
+   "time": "7:00 AM – 5:00 PM",
+   "title": "Half Moon Bay Art & Pumpkin Festival",
+   "category": "County arts",
+   "location": "Main Street, Half Moon Bay",
+   "description": "The 54th annual festival with a pancake breakfast, art, music, a parade, and food. Free.",
+   "url": "https://hmbpumpkinfest.com/"
   },
   {
    "date": "2026-10-17",
@@ -338,6 +740,24 @@
   },
   {
    "date": "2026-10-19",
+   "time": "12:41 PM",
+   "title": "Japan launches MMX to Mars’ moon Phobos",
+   "category": "Space",
+   "location": "Tanegashima Space Center, Japan",
+   "description": "JAXA’s H3 rocket successfully sent the Martian Moons eXploration probe on its way to Mars. It is due there in August 2027 and plans to bring a sample of Phobos back to Earth in 2031.",
+   "url": "https://global.jaxa.jp/press/2026/08/20260820-1_e.html"
+  },
+  {
+   "date": "2026-10-19",
+   "time": "All day",
+   "title": "Last day to register to vote",
+   "category": "Government",
+   "location": "",
+   "description": "Regular voter registration deadline for the Nov. 3 general election. After this, you can still register and vote the same day at a county vote center (conditional voter registration).",
+   "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines"
+  },
+  {
+   "date": "2026-10-19",
    "time": "5:15 PM",
    "title": "49ers vs. Washington Commanders",
    "category": "Sports",
@@ -345,6 +765,15 @@
    "location": "Levi’s Stadium, Santa Clara",
    "description": "Monday night. Final: W 23–17.",
    "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "",
+   "title": "Orionid meteor shower peaks",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Debris from Halley’s Comet: about 10–20 meteors an hour under dark skies. Best after the waxing Moon sets, in the hours before dawn on Oct. 22.",
+   "url": "https://www.amsmeteors.org/meteor-showers/meteor-shower-calendar/"
   },
   {
    "date": "2026-10-21",
@@ -376,6 +805,25 @@
   },
   {
    "date": "2026-10-23",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "Red Ribbon Week",
+   "category": "Awareness",
+   "location": "",
+   "description": "In this nationwide drug-prevention campaign, schools encourage students to wear red and pledge to live drug-free.",
+   "url": "https://www.dea.gov/press-releases/2026/10/21/red-ribbon-week-returns-across-midwest"
+  },
+  {
+   "date": "2026-10-23",
+   "time": "6:00 PM – 9:00 PM",
+   "title": "San Bruno: Monster Mash Bash",
+   "category": "Community",
+   "location": "Recreation and Aquatic Center, 251 City Park Way, San Bruno",
+   "description": "A family Halloween night with a costume contest, candy, games and activities. Everyone needs to register in advance, including children under 2.",
+   "url": "https://www.sanbruno.ca.gov/1141/Monster-Mash-Bash"
+  },
+  {
+   "date": "2026-10-23",
    "time": "7:00 PM",
    "title": "Warriors vs. Memphis Grizzlies",
    "category": "Sports",
@@ -385,6 +833,61 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-10-23",
+   "end": "2026-10-28",
+   "time": "",
+   "title": "World Series: Brewers win first title",
+   "category": "Sports calendar",
+   "location": "American Family Field, Milwaukee & Tropicana Field, St. Petersburg",
+   "description": "Milwaukee beat Tampa Bay four games to one, clinching with a 4–1 win in Game 5 for the franchise’s first championship. Catcher William Contreras was named Series MVP.",
+   "url": "https://www.espn.com/mlb/story/_/id/50294395/world-series-brewers-champions-franchise-first-title"
+  },
+  {
+   "date": "2026-10-23",
+   "time": "",
+   "title": "“Clayface” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "DC Studios’ horror-tinged villain film topped the box office with about $24 million domestically.",
+   "url": "https://www.cinemablend.com/movies/box-office/clayface-tops-you-can-see-everything-street-fighter-box-office-drop"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "",
+   "title": "National Prescription Drug Take Back Day",
+   "category": "Awareness",
+   "location": "",
+   "description": "The DEA and local police collect unused or expired medications at drop-off sites, no questions asked.",
+   "url": "https://www.dea.gov/press-releases/2026/10/07/dea-host-31st-national-prescription-drug-take-back-day-saturday-october"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "",
+   "title": "Venus passes between Earth and the Sun",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Venus disappears from the evening sky and returns as a bright “morning star” in November.",
+   "url": "https://science.nasa.gov/skywatching/"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "9:00 AM – 5:00 PM",
+   "title": "More San Mateo County vote centers open",
+   "category": "Government",
+   "location": "San Mateo County",
+   "description": "San Mateo County expands to 10 vote centers, open daily 9 AM–5 PM through Oct. 30. The count grows to 46 on Oct. 31 and 50 on Nov. 2.",
+   "url": "https://smcacre.gov/november-3-2026"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "3:00 PM – 5:00 PM",
+   "title": "San Mateo: Boos & Brews on B Street",
+   "category": "Community",
+   "location": "B Street between 1st and 3rd Avenues, downtown San Mateo",
+   "description": "Free trick-or-treating at about 50 downtown businesses, with a reptile petting zoo, crafts, a DJ and a photo booth. Hosted by the city and the Downtown San Mateo Association.",
+   "url": "https://dsma.org/BOOSonB"
+  },
+  {
    "date": "2026-10-24",
    "time": "1:30 – 8:00 PM",
    "title": "Belmont’s 100th birthday celebration",
@@ -392,15 +895,6 @@
    "location": "Various sites in Belmont",
    "description": "Centennial party with a car parade and show, a time capsule ceremony, live music, food trucks, and a closing drone show. Free.",
    "url": "https://www.belmont.gov/Home/Components/Calendar/Event/8785/155"
-  },
-  {
-   "date": "2026-10-24",
-   "time": "7:30 PM",
-   "title": "Mike Lipskin Trio",
-   "category": "County arts",
-   "location": "1220A Linda Mar Blvd., Pacifica",
-   "description": "Harlem stride jazz piano in the style of Fats Waller and James P. Johnson. Tickets $12–$25.",
-   "url": "https://pacificaperformances.org/"
   },
   {
    "date": "2026-10-24",
@@ -414,31 +908,20 @@
   {
    "date": "2026-10-24",
    "time": "7:30 PM",
+   "title": "Mike Lipskin Trio",
+   "category": "County arts",
+   "location": "1220A Linda Mar Blvd., Pacifica",
+   "description": "Harlem stride jazz piano in the style of Fats Waller and James P. Johnson. Tickets $12–$25.",
+   "url": "https://pacificaperformances.org/"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "7:30 PM",
    "title": "Vintage Films Night: Timeless Fun",
    "category": "County arts",
    "location": "Odd Fellows Hall, 526 Main St., Half Moon Bay",
    "description": "A “Flash Gordon” serial episode and two Buster Keaton silent comedies, with live piano. Tickets $10.",
    "url": "https://hmb-odd.org/events/vintage-films-10-2026"
-  },
-  {
-   "date": "2026-10-24",
-   "time": "5:45 PM",
-   "title": "Bay FC at Angel City FC",
-   "category": "Sports",
-   "team": "Bay FC",
-   "location": "BMO Stadium, Los Angeles",
-   "description": "NWSL regular season. Final: L 0–2.",
-   "url": "https://www.bayfc.com/schedule/"
-  },
-  {
-   "date": "2026-10-24",
-   "time": "5:30 PM",
-   "title": "Earthquakes at FC Dallas",
-   "category": "Sports",
-   "team": "Earthquakes",
-   "location": "Toyota Stadium, Frisco, Texas",
-   "description": "MLS regular season. Final: L 0–3.",
-   "url": "https://www.sjearthquakes.com/schedule/"
   },
   {
    "date": "2026-10-24",
@@ -452,6 +935,26 @@
   },
   {
    "date": "2026-10-24",
+   "time": "5:30 PM",
+   "title": "Earthquakes at FC Dallas",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "Toyota Stadium, Frisco, Texas",
+   "description": "MLS regular season. Final: L 0–3.",
+   "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "5:45 PM",
+   "title": "Bay FC at Angel City FC",
+   "category": "Sports",
+   "team": "Bay FC",
+   "location": "BMO Stadium, Los Angeles",
+   "description": "NWSL regular season. Final: L 0–2.",
+   "url": "https://www.bayfc.com/schedule/"
+  },
+  {
+   "date": "2026-10-24",
    "time": "7:00 PM",
    "title": "Warriors at Phoenix Suns",
    "category": "Sports",
@@ -462,12 +965,30 @@
   },
   {
    "date": "2026-10-25",
+   "time": "9:11 PM",
+   "title": "Full moon (Hunter’s Moon)",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "October’s full moon, traditionally called the Hunter’s Moon.",
+   "url": "https://www.almanac.com/full-moon-names"
+  },
+  {
+   "date": "2026-10-25",
    "time": "11:00 AM – 1:00 PM",
    "title": "Millbrae Rotary Kids Carnival",
    "category": "Millbrae",
    "location": "Rotary Park, Millbrae Ave. at S. Ashton Ave.",
    "description": "The Rotary Club’s 28th annual free carnival with games and snacks for young children and families.",
    "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1977"
+  },
+  {
+   "date": "2026-10-25",
+   "time": "10:00 AM – 5:00 PM",
+   "title": "Burlingame: Fall Fest",
+   "category": "Community",
+   "location": "Howard Ave. and Lorton Ave., downtown Burlingame",
+   "description": "A free downtown block party with a petting zoo, a kids’ train, crafts, food, a community stage and a kids’ Halloween costume contest.",
+   "url": "https://www.burlingamedowntown.org/events"
   },
   {
    "date": "2026-10-25",
@@ -489,6 +1010,15 @@
    "url": "https://www.49ers.com/schedule/"
   },
   {
+   "date": "2026-10-25",
+   "time": "",
+   "title": "F1 United States Grand Prix: Antonelli wins",
+   "category": "Sports calendar",
+   "location": "Circuit of The Americas, Austin, TX",
+   "description": "Mercedes’ Kimi Antonelli won comfortably in Austin, with Charles Leclerc second and Max Verstappen third, putting him on the verge of the title.",
+   "url": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+  },
+  {
    "date": "2026-10-26",
    "time": "7:00 PM",
    "title": "Warriors at Denver Nuggets",
@@ -496,6 +1026,44 @@
    "team": "Warriors",
    "location": "Ball Arena, Denver",
    "description": "Regular season. Final: W 134–114.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-10-27",
+   "time": "12:25 AM",
+   "title": "Record-setting Falcon 9 launch from Vandenberg",
+   "category": "Space",
+   "location": "Vandenberg Space Force Base, CA",
+   "description": "A late-night Falcon 9 carrying 27 Starlink satellites lifted off from the Central Coast, setting a new record for the most launches from Vandenberg in a single year.",
+   "url": "https://keyt.com/vandenberg-space-base/2026/10/26/record-setting-falcon-9-launch-from-vandenberg-sfb-scheduled-for-late-monday-into-early-tuesday/"
+  },
+  {
+   "date": "2026-10-27",
+   "end": "2026-10-28",
+   "time": "",
+   "title": "Phoebe Bridgers at Chase Center",
+   "category": "Entertainment",
+   "location": "Chase Center, San Francisco",
+   "description": "Two arena nights on the singer-songwriter’s 2026 tour.",
+   "url": "https://www.chasecenter.com/events/phoebe-bridgers-20261027"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "11:00 AM",
+   "title": "Fed interest-rate decision",
+   "category": "Financial",
+   "location": "",
+   "description": "The Federal Reserve’s policy committee wraps up its Oct. 27–28 meeting and releases its rate statement.",
+   "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "5:00 PM",
+   "title": "Warriors at Minnesota Timberwolves",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Target Center, Minneapolis",
+   "description": "Regular season. Final: W 119–114.",
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
@@ -509,14 +1077,13 @@
    "url": "https://www.sjearthquakes.com/schedule/"
   },
   {
-   "date": "2026-10-28",
-   "time": "5:00 PM",
-   "title": "Warriors at Minnesota Timberwolves",
-   "category": "Sports",
-   "team": "Warriors",
-   "location": "Target Center, Minneapolis",
-   "description": "Regular season. Final: W 119–114.",
-   "url": "https://www.nba.com/warriors/schedule"
+   "date": "2026-10-29",
+   "time": "4:57 AM – 12:08 PM",
+   "title": "Spacewalk installs seventh new ISS solar array",
+   "category": "Space",
+   "location": "International Space Station",
+   "description": "A NASA astronaut and a Canadian astronaut spent just over seven hours outside the station installing and unrolling the seventh of eight upgraded solar arrays. It was Canada’s first spacewalk in seven years.",
+   "url": "https://spaceflightnow.com/2026/10/29/as-it-happened-spacewalkers-install-new-solar-array/"
   },
   {
    "date": "2026-10-30",
@@ -538,6 +1105,43 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-10-30",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "Breeders’ Cup: Sovereignty wins the Classic",
+   "category": "Sports calendar",
+   "location": "Keeneland, Lexington, KY",
+   "description": "Horse racing’s two-day championship ended with Sovereignty taking the $7 million Classic, ahead of The Puma and Knightsbridge.",
+   "url": "https://www.lex18.com/sports/breeders-cup/sovereignty-wins-7-million-breeders-cup-classic-keeneland-oct-31-2026"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "All day",
+   "title": "Reformation Day",
+   "category": "Religious",
+   "location": "",
+   "description": "Lutheran and other Protestant churches remember the start of the Protestant Reformation in 1517.",
+   "url": "https://www.elca.org/"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "Evening",
+   "title": "Halloween",
+   "category": "Seasonal",
+   "location": "",
+   "description": "Expect costumes, jack-o’-lanterns and trick-or-treating in neighborhoods across the Peninsula.",
+   "url": "https://www.history.com/topics/halloween/history-of-halloween"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "10:00 AM – 5:00 PM",
+   "title": "San Bruno: Halloween at the Library",
+   "category": "Community",
+   "location": "San Bruno Public Library, 701 Angus Ave. W, San Bruno",
+   "description": "Visitors get a Halloween treat and raffle tickets: one for stopping by and another for checking out an item.",
+   "url": "https://www.sanbruno.ca.gov/Calendar.aspx?EID=5783"
+  },
+  {
    "date": "2026-10-31",
    "time": "2:00 PM",
    "title": "Earthquakes vs. Real Salt Lake",
@@ -546,6 +1150,103 @@
    "location": "PayPal Park, San Jose",
    "description": "MLS regular season. Regular-season finale. Final: W 2–1.",
    "url": "https://www.sjearthquakes.com/schedule/"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "All day",
+   "title": "All Saints’ Day",
+   "category": "Religious",
+   "location": "",
+   "description": "Christians honor all the saints, known and unknown. Catholics normally treat it as a holy day of obligation, but the obligation is lifted in the U.S. when the day falls on a Saturday or Monday. This year it falls on a Sunday.",
+   "url": "https://www.usccb.org/prayer-and-worship/liturgical-year-and-calendar/holy-days-of-obligation"
+  },
+  {
+   "date": "2026-11-01",
+   "end": "2026-11-30",
+   "time": "",
+   "title": "Native American Heritage Month",
+   "category": "Cultural",
+   "location": "",
+   "description": "This month recognizes the history, cultures and contributions of American Indian and Alaska Native peoples, including the Ramaytush Ohlone, whose ancestral land includes the Peninsula.",
+   "url": "https://www.nativeamericanheritagemonth.gov/"
+  },
+  {
+   "date": "2026-11-01",
+   "end": "2026-11-02",
+   "time": "All day",
+   "title": "Día de los Muertos",
+   "category": "Cultural",
+   "location": "",
+   "description": "This Mexican tradition honors loved ones who have died. Families build ofrendas with photos, marigolds, pan de muerto and the departed’s favorite foods.",
+   "url": "https://www.smithsonianmag.com/travel/what-is-day-of-the-dead-180979924/"
+  },
+  {
+   "date": "2026-11-01",
+   "end": "2026-11-30",
+   "time": "",
+   "title": "Military Family Month",
+   "category": "Patriotic & memorial",
+   "location": "",
+   "description": "This month honors the families of service members for the sacrifices they make alongside those who serve.",
+   "url": "https://www.militaryonesource.mil/"
+  },
+  {
+   "date": "2026-11-01",
+   "end": "2026-11-30",
+   "time": "",
+   "title": "Alzheimer’s Awareness Month",
+   "category": "Awareness",
+   "location": "",
+   "description": "This month raises awareness of Alzheimer’s disease and honors the millions of family members who care for people living with dementia.",
+   "url": "https://www.alz.org/"
+  },
+  {
+   "date": "2026-11-01",
+   "end": "2026-11-30",
+   "time": "",
+   "title": "American Diabetes Month",
+   "category": "Awareness",
+   "location": "",
+   "description": "This month raises awareness of diabetes prevention and management. It includes World Diabetes Day on Nov. 14.",
+   "url": "https://diabetes.org/"
+  },
+  {
+   "date": "2026-11-01",
+   "end": "2026-11-30",
+   "time": "",
+   "title": "Movember",
+   "category": "Awareness",
+   "location": "",
+   "description": "Participants grow mustaches and raise money for men’s health, including prostate and testicular cancer, mental health and suicide prevention.",
+   "url": "https://movember.com/"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "2:00 AM",
+   "title": "Daylight saving time ends",
+   "category": "Time changes",
+   "location": "",
+   "description": "Clocks fall back one hour to 1:00 AM, so mornings get lighter and sunset in Millbrae moves from about 6:12 PM to 5:10 PM. Clocks spring forward again on March 14, 2027.",
+   "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst"
+  },
+  {
+   "date": "2026-11-01",
+   "end": "2027-01-31",
+   "time": "",
+   "title": "Covered California open enrollment",
+   "category": "Government",
+   "location": "",
+   "description": "Californians can shop for and sign up for 2027 health coverage through Covered California. Enrollment runs through Jan. 31, 2027.",
+   "url": "https://www.coveredca.com/press-releases/covered-california-s-open-enrollment-2027-amid-federal-changes-covered-california-continues-to"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "",
+   "title": "Property tax first installment due",
+   "category": "Government",
+   "location": "San Mateo County",
+   "description": "The first half of San Mateo County’s 2026–27 secured property tax bill is due. Bills are mailed by Nov. 1; the payment becomes late after Dec. 10.",
+   "url": "https://smcgov.org/tax/secured-property-taxes"
   },
   {
    "date": "2026-11-01",
@@ -568,6 +1269,33 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-11-01",
+   "time": "",
+   "title": "F1 Mexico City GP: Verstappen wins, Antonelli clinches title",
+   "category": "Sports calendar",
+   "location": "Autódromo Hermanos Rodríguez, Mexico City",
+   "description": "Max Verstappen won the race, and a third-place finish made 20-year-old Kimi Antonelli the youngest Formula 1 world champion ever.",
+   "url": "https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "",
+   "title": "NYC Marathon: Almgren and Chepkirui win",
+   "category": "Sports calendar",
+   "location": "New York, NY",
+   "description": "Sweden’s Andreas Almgren won the men’s race in 2:06:01 and Kenya’s Sheila Chepkirui took the women’s race in 2:24:36.",
+   "url": "https://www.nbcsports.com/olympics/news/new-york-city-marathon-2026-andreas-almgren-sheila-chepkirui"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "All day",
+   "title": "All Souls’ Day",
+   "category": "Religious",
+   "location": "",
+   "description": "Catholics and some other Christians pray for loved ones who have died, often by visiting cemeteries and attending a memorial Mass.",
+   "url": "https://www.usccb.org/prayer-worship/liturgical-year/all-souls-day"
+  },
+  {
    "date": "2026-11-02",
    "time": "7:00 PM",
    "title": "Warriors vs. Phoenix Suns",
@@ -576,6 +1304,33 @@
    "location": "Chase Center, San Francisco",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-03",
+   "time": "7:00 AM – 8:00 PM",
+   "title": "Election Day: California general election",
+   "category": "Government",
+   "location": "San Mateo County",
+   "description": "Polls and all 50 San Mateo County vote centers are open 7 AM–8 PM. Mail ballots must be postmarked or dropped off by 8 PM.",
+   "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines"
+  },
+  {
+   "date": "2026-11-03",
+   "time": "4:00 PM",
+   "title": "First College Football Playoff rankings",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "The selection committee reveals its first top 25 of the season live on ESPN; new rankings follow each Tuesday until Selection Day.",
+   "url": "https://fbschedules.com/college-football-playoff-sets-2026-rankings-release-schedule/"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "",
+   "title": "Southern Taurid meteors peak",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "A slow, sparse shower (about 5 an hour) known for occasional bright fireballs.",
+   "url": "https://www.amsmeteors.org/meteor-showers/meteor-shower-calendar/"
   },
   {
    "date": "2026-11-04",
@@ -588,12 +1343,59 @@
   },
   {
    "date": "2026-11-05",
+   "time": "",
+   "title": "Spacewalk to install final ISS solar array",
+   "category": "Space",
+   "location": "International Space Station",
+   "description": "The same NASA and Canadian Space Agency pair are set to head outside again to mount the eighth and last upgraded solar array, finishing the station’s power upgrade. Target date; time to be announced.",
+   "url": "https://spaceflightnow.com/2026/10/28/nasa-nears-end-of-space-station-solar-array-upgrade-with-oct-29-and-nov-5-spacewalks/"
+  },
+  {
+   "date": "2026-11-05",
    "time": "7:00 PM",
    "title": "Warriors vs. Miami Heat",
    "category": "Sports",
    "team": "Warriors",
    "location": "Chase Center, San Francisco",
    "description": "Regular season. TV: NBA TV.",
+   "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-06",
+   "time": "5:30 AM",
+   "title": "Jobs report (October)",
+   "category": "Financial",
+   "location": "",
+   "description": "The Bureau of Labor Statistics releases the monthly employment report for October.",
+   "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+  },
+  {
+   "date": "2026-11-06",
+   "end": "2026-11-08",
+   "time": "",
+   "title": "NWSL playoff quarterfinals",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "The top eight teams in the women’s league open the postseason; semifinals follow Nov. 13–15.",
+   "url": "https://www.nbcsportsbayarea.com/soccer/nwsl-key-dates-2026-season/1923402/"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "10:00 AM – 4:00 PM",
+   "title": "South San Francisco: Senior Holiday Boutique & Maker’s Faire",
+   "category": "Community",
+   "location": "Library | Parks and Recreation Center, 901 Civic Campus Way, South San Francisco",
+   "description": "Free holiday shopping day with local vendors selling handmade jewelry, ceramics and crafts, plus free drinks and candy canes.",
+   "url": "https://www.ssfca.gov/Departments/Parks-Recreation/Events/Senior-Holiday-Boutique-Makers-Faire"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "5:30 PM",
+   "title": "Warriors vs. Orlando Magic",
+   "category": "Sports",
+   "team": "Warriors",
+   "location": "Chase Center, San Francisco",
+   "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
@@ -608,13 +1410,30 @@
   },
   {
    "date": "2026-11-07",
-   "time": "5:30 PM",
-   "title": "Warriors vs. Orlando Magic",
-   "category": "Sports",
-   "team": "Warriors",
-   "location": "Chase Center, San Francisco",
-   "description": "Regular season.",
-   "url": "https://www.nba.com/warriors/schedule"
+   "time": "",
+   "title": "MLS Decision Day",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "The final day of the MLS regular season settles the last playoff spots and seeding.",
+   "url": "https://www.mlssoccer.com/news/audi-2026-mls-cup-playoffs-key-dates-schedule-information"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "All day",
+   "title": "Diwali",
+   "category": "Religious",
+   "location": "",
+   "description": "Hindus, Jains and Sikhs celebrate the festival of lights with lamps, sweets and family gatherings. For Jains it marks Mahavira’s nirvana, and Sikhs observe Bandi Chhor Divas on the same day.",
+   "url": "https://publicholidays.com/diwali/"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "11:02 PM",
+   "title": "New moon",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Dark skies for the next several nights.",
+   "url": "https://aa.usno.navy.mil/data/MoonPhases"
   },
   {
    "date": "2026-11-08",
@@ -627,6 +1446,24 @@
    "url": "https://www.49ers.com/schedule/"
   },
   {
+   "date": "2026-11-08",
+   "time": "",
+   "title": "F1 São Paulo Grand Prix",
+   "category": "Sports calendar",
+   "location": "Interlagos, São Paulo, Brazil",
+   "description": "Race day of the Brazilian round (Nov. 6–8), the first race after the 2026 title was decided.",
+   "url": "https://www.formula1.com/en/latest/article/formula-1-reveals-calendar-for-2026-season.YctbMZWqBvrgyddrnauo8"
+  },
+  {
+   "date": "2026-11-09",
+   "time": "11:30 AM – 1:30 PM",
+   "title": "San Mateo County: Veterans Recognition Luncheon",
+   "category": "Community",
+   "location": "San Mateo Elks Lodge, 229 W. 20th Ave., San Mateo",
+   "description": "The county’s free yearly lunch for veterans, their families and the public during Veterans Day week, with Veteran of the Year and other awards. Registration requested.",
+   "url": "https://www.smcgov.org/hsa/news/county-san-mateo-host-annual-veterans-luncheon"
+  },
+  {
    "date": "2026-11-09",
    "time": "7:00 PM",
    "title": "Warriors vs. New Orleans Pelicans",
@@ -635,6 +1472,43 @@
    "location": "Chase Center, San Francisco",
    "description": "Regular season. TV: NBA TV.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-09",
+   "end": "2026-11-12",
+   "time": "",
+   "title": "MLB awards week",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "Baseball writers’ awards are announced on successive nights: Rookie of the Year (Nov. 9), Manager (Nov. 10), Cy Young (Nov. 11) and MVP (Nov. 12) on MLB Network.",
+   "url": "https://www.mlb.com/news/when-are-2026-mlb-awards-announced-mvp-cy-young-rookie-of-the-year"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "All day",
+   "title": "U.S. Marine Corps Birthday",
+   "category": "Patriotic & memorial",
+   "location": "",
+   "description": "The Marine Corps was founded on Nov. 10, 1775, at Tun Tavern in Philadelphia and turns 251 this year.",
+   "url": "https://www.usmcu.edu/Research/Marine-Corps-History-Division/Brief-Histories/Marine-Corps-Birthday/"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "",
+   "title": "Last day for mailed ballots to arrive",
+   "category": "Government",
+   "location": "",
+   "description": "Vote-by-mail ballots postmarked on or before Election Day still count if the elections office receives them by today.",
+   "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "5:30 AM",
+   "title": "Consumer Price Index (October)",
+   "category": "Financial",
+   "location": "",
+   "description": "The government’s monthly inflation report for October comes out.",
+   "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
   },
   {
    "date": "2026-11-10",
@@ -646,6 +1520,15 @@
    "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1979"
   },
   {
+   "date": "2026-11-10",
+   "time": "4:00 PM – 5:00 PM",
+   "title": "San Mateo: Central Park Playground Reopening",
+   "category": "Community",
+   "location": "Central Park, 50 E. 5th Ave., San Mateo",
+   "description": "A free ribbon-cutting celebrates the renovated Central Park playground. RSVP is encouraged but not required.",
+   "url": "https://www.cityofsanmateo.org/4142/Central-Park-Playground-Renovation"
+  },
+  {
    "date": "2026-11-11",
    "time": "All day",
    "title": "Veterans Day",
@@ -653,6 +1536,33 @@
    "location": "",
    "description": "Federal holiday honoring military veterans.",
    "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "All day",
+   "title": "Banks closed: Veterans Day",
+   "category": "Bank holidays",
+   "location": "",
+   "description": "Federal Reserve holiday: the Fed and most banks are closed, and checks and transfers won’t process.",
+   "url": "https://www.federalreserve.gov/aboutthefed/k8.htm"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "",
+   "title": "Northern Taurid meteors peak",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Another sparse shower with occasional fireballs, under nearly moonless skies.",
+   "url": "https://www.amsmeteors.org/meteor-showers/meteor-shower-calendar/"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "All day",
+   "title": "Bond market closed (Veterans Day)",
+   "category": "Financial",
+   "location": "",
+   "description": "SIFMA recommends a full close of U.S. bond markets for Veterans Day. The stock market is open normally.",
+   "url": "https://www.sifma.org/resources/guides-playbooks/holiday-schedule"
   },
   {
    "date": "2026-11-11",
@@ -674,6 +1584,60 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-11-11",
+   "time": "",
+   "title": "“The Rings of Power” Season 3 premieres",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Amazon’s Lord of the Rings prequel series returns on Prime Video.",
+   "url": "https://www.theonering.net/torwp/2026/05/11/121807-rings-of-power-season-3-release-date-confirmed-for-november-11-on-prime-video/"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "",
+   "title": "Latin Grammy Awards",
+   "category": "Entertainment",
+   "location": "MGM Grand Garden Arena, Las Vegas",
+   "description": "The Latin Recording Academy’s annual awards show airs on Univision.",
+   "url": "https://latination.com/latin-grammys-2026-confirmed-artists-lineup/"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "All day",
+   "title": "World Kindness Day",
+   "category": "Awareness",
+   "location": "",
+   "description": "This global day encourages small acts of kindness in everyday life.",
+   "url": "https://www.worldkindness.org.au/"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "4:59 PM",
+   "title": "First sunset before 5 PM",
+   "category": "Sunlight",
+   "location": "",
+   "description": "Calculated for Millbrae: sunsets stay before 5 PM until mid-January.",
+   "url": "https://gml.noaa.gov/grad/solcalc/"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "All day",
+   "title": "Friday the 13th",
+   "category": "Friday the 13th",
+   "location": "",
+   "description": "The only Friday the 13th in 2026’s final three months. The next one is in August 2027.",
+   "url": "https://www.timeanddate.com/date/friday-13th.html"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "",
+   "title": "Vulcan rocket returns to flight",
+   "category": "Space",
+   "location": "Cape Canaveral Space Force Station, FL",
+   "description": "ULA targets no earlier than this date for Vulcan’s first launch since a booster problem grounded it in February. It will carry 40 Amazon Leo internet satellites and fly with six side boosters for the first time.",
+   "url": "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/"
+  },
+  {
    "date": "2026-11-13",
    "time": "6:30 PM",
    "title": "Warriors at San Antonio Spurs",
@@ -682,6 +1646,24 @@
    "location": "Frost Bank Center, San Antonio",
    "description": "Regular season. TV: Prime Video.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "",
+   "title": "“Ebenezer: A Christmas Carol” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Paramount’s new take on the Dickens holiday classic opens wide.",
+   "url": "https://www.boxofficemojo.com/calendar/2026-11-01/"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "All day",
+   "title": "World Diabetes Day",
+   "category": "Awareness",
+   "location": "",
+   "description": "The International Diabetes Federation leads this global day on the anniversary of the birth of Frederick Banting, the co-discoverer of insulin.",
+   "url": "https://worlddiabetesday.org/"
   },
   {
    "date": "2026-11-14",
@@ -695,6 +1677,15 @@
   },
   {
    "date": "2026-11-15",
+   "time": "10:00 AM – 12:00 PM",
+   "title": "South San Francisco: Diwali Festival of Lights",
+   "category": "Community",
+   "location": "Council Chambers, 901 Civic Campus Way, South San Francisco",
+   "description": "A free city celebration of Diwali with dance, music and short theater pieces drawn from Indian stories.",
+   "url": "https://www.ssfca.gov/Departments/Parks-Recreation/Events/Diwali"
+  },
+  {
+   "date": "2026-11-15",
    "time": "1:25 PM",
    "title": "49ers at Dallas Cowboys",
    "category": "Sports",
@@ -702,6 +1693,15 @@
    "location": "AT&T Stadium, Arlington, Texas",
    "description": "TV: Fox.",
    "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "",
+   "title": "Leonid meteor shower peaks",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "About 15 meteors an hour. Best after midnight on Nov. 17, once the half-lit Moon has set.",
+   "url": "https://www.amsmeteors.org/meteor-showers/meteor-shower-calendar/"
   },
   {
    "date": "2026-11-16",
@@ -714,6 +1714,24 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-11-16",
+   "time": "",
+   "title": "Grammy nominations announced",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Nominees for the 2027 Grammys are revealed; the ceremony is Feb. 7, 2027, on ABC, Disney+ and Hulu.",
+   "url": "https://americansongwriter.com/grammy-awards-reveal-2027-nomination-and-ceremony-dates/"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "2:16 AM",
+   "title": "Voyager 1 reaches one light-day from Earth",
+   "category": "Space",
+   "location": "",
+   "description": "NASA’s Voyager 1, launched in 1977, is expected to become the first spacecraft so far away that its radio signals take a full 24 hours to reach Earth. Timing could shift slightly.",
+   "url": "https://iflscience.com/its-official-voyager-1-will-cross-the-1-light-day-threshold-on-november-18-2026-82733"
+  },
+  {
    "date": "2026-11-18",
    "time": "6:30 PM",
    "title": "Warriors at Dallas Mavericks",
@@ -722,6 +1740,33 @@
    "location": "American Airlines Center, Dallas",
    "description": "Regular season. TV: ESPN.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "",
+   "title": "MLS Cup Playoffs begin with Wild Card matches",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "Wild Card games open the MLS postseason; best-of-three Round One series run Nov. 20 through Dec. 2.",
+   "url": "https://www.mlssoccer.com/news/audi-2026-mls-cup-playoffs-key-dates-schedule-information"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "",
+   "title": "60th CMA Awards",
+   "category": "Entertainment",
+   "location": "Bridgestone Arena, Nashville",
+   "description": "Country music’s big night marks its 60th edition live on ABC, streaming next day on Hulu.",
+   "url": "https://musicrow.com/2026/04/breaking-date-revealed-for-60th-annual-cma-awards/"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "All day",
+   "title": "Great American Smokeout",
+   "category": "Awareness",
+   "location": "",
+   "description": "The American Cancer Society holds this event every year on the third Thursday of November. It encourages smokers to quit, or plan to quit, starting that day.",
+   "url": "https://www.cancer.org/cancer/risk-prevention/tobacco/great-american-smokeout.html"
   },
   {
    "date": "2026-11-19",
@@ -735,6 +1780,15 @@
   },
   {
    "date": "2026-11-20",
+   "time": "",
+   "title": "Mercury at its best in the morning sky",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Mercury reaches its greatest distance west of the Sun: look low in the east-southeast about 45 minutes before sunrise.",
+   "url": "https://science.nasa.gov/skywatching/"
+  },
+  {
+   "date": "2026-11-20",
    "time": "TBD",
    "title": "Hawai‘i at Nevada",
    "category": "Sports",
@@ -742,6 +1796,78 @@
    "location": "Mackay Stadium, Reno",
    "description": "College football. Kickoff time to be announced.",
    "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "",
+   "title": "“The Hunger Games: Sunrise on the Reaping” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Lionsgate’s prequel, based on the novel about Haymitch’s Games, opens wide.",
+   "url": "https://www.boxofficemojo.com/calendar/2026-11-01/"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "",
+   "title": "BepiColombo enters orbit around Mercury",
+   "category": "Space",
+   "location": "",
+   "description": "After an eight-year trip, the joint European-Japanese mission is scheduled to slip into orbit around the innermost planet. This is the target date; it starts a long series of maneuvers before science begins in 2027.",
+   "url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "9:00 AM",
+   "title": "South San Francisco: Thanksgiving 5K Fun Run",
+   "category": "Community",
+   "location": "Oyster Point Shoreline Park, 95 Harbor Master Road, South San Francisco",
+   "description": "The 53rd annual run or walk along the Bay Trail, with age-group prizes. $12 adults, $8 teens, free for kids 12 and under; sign up by Nov. 13.",
+   "url": "https://www.ssfca.gov/Departments/Parks-Recreation/Events/Thanksgiving-5K-Fun-Run"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "",
+   "title": "Big Game: Stanford at Cal",
+   "category": "Sports calendar",
+   "location": "California Memorial Stadium, Berkeley",
+   "description": "The 129th edition of the Bay Area’s college football rivalry for the Stanford Axe is played in Berkeley.",
+   "url": "https://calbears.com/news/2026/1/26/california-football-announces-2026-schedule.aspx"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "",
+   "title": "F1 Las Vegas Grand Prix",
+   "category": "Sports calendar",
+   "location": "Las Vegas Strip Circuit, Las Vegas, NV",
+   "description": "Saturday-night race on the Strip, closing the Nov. 19–21 race weekend.",
+   "url": "https://www.formula1.com/en/latest/article/formula-1-reveals-calendar-for-2026-season.YctbMZWqBvrgyddrnauo8"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "5:00 PM",
+   "title": "NWSL Championship",
+   "category": "Sports calendar",
+   "location": "Audi Field, Washington, DC",
+   "description": "The women’s pro soccer title game airs in prime time on CBS and Paramount+.",
+   "url": "https://eventsdc.com/news/2026-nwsl-championship-presented-google-pixel-be-staged-audi-field-washington-dc"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "",
+   "title": "Jonas Brothers at Chase Center",
+   "category": "Entertainment",
+   "location": "Chase Center, San Francisco",
+   "description": "The pop trio brings its tour to San Francisco.",
+   "url": "https://www.chasecenter.com/news/jonas-brothers-announcement-20261121/"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "All day",
+   "title": "Feast of Christ the King",
+   "category": "Religious",
+   "location": "",
+   "description": "This feast falls on the last Sunday of the church year, the week before Advent begins.",
+   "url": "https://www.usccb.org/prayer-and-worship/liturgical-year"
   },
   {
    "date": "2026-11-22",
@@ -764,6 +1890,33 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-11-24",
+   "time": "All day",
+   "title": "Guru Nanak Jayanti (Gurpurab)",
+   "category": "Religious",
+   "location": "",
+   "description": "Sikhs celebrate the birth of Guru Nanak, the founder of their faith. Gurdwaras hold continuous scripture readings, kirtan and a free community meal called langar.",
+   "url": "https://www.drikpanchang.com/calendars/indian/sikh-festivals/jayanti/guru-nanak-jayanti-date.html?year=2026"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "6:53 AM",
+   "title": "Full moon (Beaver Moon)",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "November’s full moon comes close to Earth (about 224,200 miles), so it looks a little bigger and brighter than usual, often called a supermoon.",
+   "url": "https://www.almanac.com/full-moon-names"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "",
+   "title": "Uranus at opposition",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Uranus is at its closest and brightest of the year. Binoculars and a star chart help: it sits in Taurus.",
+   "url": "https://science.nasa.gov/skywatching/"
+  },
+  {
    "date": "2026-11-25",
    "time": "7:00 PM",
    "title": "Warriors vs. Sacramento Kings",
@@ -772,6 +1925,42 @@
    "location": "Chase Center, San Francisco",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "5:00 PM",
+   "title": "NFL Thanksgiving Eve: Packers at Rams",
+   "category": "Sports calendar",
+   "location": "SoFi Stadium, Inglewood",
+   "description": "A Wednesday-night game streamed on Netflix kicks off the holiday football slate.",
+   "url": "https://new.cbssports.com/nfl/news/nfl-thanksgiving-schedule-2026-games/"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "",
+   "title": "Disney’s “Hexed” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Walt Disney Animation’s new original film, a mother-daughter magical adventure, opens for Thanksgiving.",
+   "url": "https://www.wdwinfo.com/news-stories/disney-animations-hexed-cast-revealed-sets-thanksgiving-2026-release/"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "",
+   "title": "“Focker-in-Law” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "The “Meet the Parents” comedy series returns for Thanksgiving week.",
+   "url": "https://www.boxofficemojo.com/calendar/2026-11-01/"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "",
+   "title": "“The Further Mis-Adventures of Cliff Booth” in IMAX",
+   "category": "Entertainment",
+   "location": "",
+   "description": "David Fincher’s Brad Pitt film gets a two-week IMAX run before streaming on Netflix Dec. 23.",
+   "url": "https://www.whats-on-netflix.com/news/david-finchers-cliff-booth-movie-netflix-release-date-theatrical-release/"
   },
   {
    "date": "2026-11-26",
@@ -785,11 +1974,74 @@
   {
    "date": "2026-11-26",
    "time": "All day",
+   "title": "Banks closed: Thanksgiving Day",
+   "category": "Bank holidays",
+   "location": "",
+   "description": "Federal Reserve holiday: the Fed and most banks are closed.",
+   "url": "https://www.federalreserve.gov/aboutthefed/k8.htm"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "All day",
+   "title": "Stock and bond markets closed (Thanksgiving)",
+   "category": "Financial",
+   "location": "",
+   "description": "The NYSE and U.S. bond markets are closed for Thanksgiving Day.",
+   "url": "https://www.nyse.com/trade/hours-calendars"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "All day",
    "title": "Millbrae City Hall closed",
    "category": "Millbrae",
    "location": "Millbrae City Hall",
    "description": "Observed holiday: Thanksgiving Day.",
    "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1313"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "10:00 AM – 8:30 PM",
+   "title": "NFL Thanksgiving tripleheader",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "Bears at Lions (10 a.m., CBS), Eagles at Cowboys (1:30 p.m., Fox) and Chiefs at Bills (5:20 p.m., NBC).",
+   "url": "https://new.cbssports.com/nfl/news/nfl-thanksgiving-schedule-2026-games/"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "8:30 AM",
+   "title": "100th Macy’s Thanksgiving Day Parade",
+   "category": "Entertainment",
+   "location": "New York, NY (on NBC, Peacock and Telemundo)",
+   "description": "The parade celebrates its 100th edition; NBC airs it starting at 8:30 a.m.",
+   "url": "https://www.aol.com/lifestyle/marching-100-everything-know-2026-231200984.html"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "All day",
+   "title": "Black Friday",
+   "category": "Seasonal",
+   "location": "",
+   "description": "The day after Thanksgiving and the traditional start of holiday shopping. Stock and bond markets close early.",
+   "url": "https://nrf.com/research-insights/holiday-data-and-trends/thanksgiving"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "10:00 AM",
+   "title": "Stock market closes early",
+   "category": "Financial",
+   "location": "",
+   "description": "The NYSE closes at 10 AM Pacific (1 PM Eastern) the day after Thanksgiving.",
+   "url": "https://www.nyse.com/trade/hours-calendars"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "11:00 AM",
+   "title": "Bond market closes early",
+   "category": "Financial",
+   "location": "",
+   "description": "SIFMA recommends U.S. bond markets close at 11 AM Pacific (2 PM Eastern) the day after Thanksgiving.",
+   "url": "https://www.sifma.org/resources/guides-playbooks/holiday-schedule"
   },
   {
    "date": "2026-11-27",
@@ -811,6 +2063,33 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-11-27",
+   "time": "12:00 PM",
+   "title": "NFL Black Friday: Broncos at Steelers",
+   "category": "Sports calendar",
+   "location": "Acrisure Stadium, Pittsburgh",
+   "description": "The day-after-Thanksgiving game streams on Amazon Prime Video.",
+   "url": "https://new.cbssports.com/nfl/news/nfl-thanksgiving-schedule-2026-games/"
+  },
+  {
+   "date": "2026-11-28",
+   "time": "All day",
+   "title": "Small Business Saturday",
+   "category": "Seasonal",
+   "location": "",
+   "description": "A day to shop at local independent stores, including in downtown Millbrae and Burlingame.",
+   "url": "https://www.americanexpress.com/us/small-business/shop-small/"
+  },
+  {
+   "date": "2026-11-28",
+   "time": "10:00 AM – 4:00 PM",
+   "title": "San Bruno: Holiday Boutique",
+   "category": "Community",
+   "location": "San Bruno Senior Center, 1555 Crystal Springs Road, San Bruno",
+   "description": "The 34th annual crafts sale, with dozens of local artisans selling handmade gifts. Free admission.",
+   "url": "https://www.sanbruno.ca.gov/2242/Holiday-Boutique"
+  },
+  {
    "date": "2026-11-28",
    "time": "8:00 PM",
    "title": "Hawai‘i vs. Sacramento State",
@@ -819,6 +2098,16 @@
    "location": "Clarence T.C. Ching Athletics Complex, Honolulu",
    "description": "College football. Regular-season finale.",
    "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-11-29",
+   "end": "2026-12-24",
+   "time": "All day",
+   "title": "Advent",
+   "category": "Religious",
+   "location": "",
+   "description": "Advent starts on the fourth Sunday before Christmas. Many Christians spend these weeks preparing for Christmas, often by lighting a new candle on an Advent wreath each Sunday.",
+   "url": "https://www.usccb.org/prayer-worship/liturgical-year/advent"
   },
   {
    "date": "2026-11-29",
@@ -841,6 +2130,70 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-11-29",
+   "time": "",
+   "title": "F1 Qatar Grand Prix",
+   "category": "Sports calendar",
+   "location": "Lusail International Circuit, Qatar",
+   "description": "Race day of the penultimate round of the season (Nov. 27–29).",
+   "url": "https://www.formula1.com/en/latest/article/formula-1-reveals-calendar-for-2026-season.YctbMZWqBvrgyddrnauo8"
+  },
+  {
+   "date": "2026-11-30",
+   "time": "All day",
+   "title": "Bonifacio Day",
+   "category": "Cultural",
+   "location": "",
+   "description": "This Philippine national holiday honors Andrés Bonifacio, who founded the Katipunan revolutionary movement against Spanish rule.",
+   "url": "https://www.officialgazette.gov.ph/"
+  },
+  {
+   "date": "2026-11-30",
+   "time": "All day",
+   "title": "Cyber Monday",
+   "category": "Seasonal",
+   "location": "",
+   "description": "The Monday after Thanksgiving, known for online holiday sales.",
+   "url": "https://nrf.com/research-insights/holiday-data-and-trends/thanksgiving"
+  },
+  {
+   "date": "2026-12-01",
+   "end": "2026-12-31",
+   "time": "",
+   "title": "National Impaired Driving Prevention Month",
+   "category": "Awareness",
+   "location": "",
+   "description": "During the holiday season, this campaign reminds drivers to plan a sober ride and never drive impaired.",
+   "url": "https://www.nhtsa.gov/risky-driving/drunk-driving"
+  },
+  {
+   "date": "2026-12-01",
+   "time": "All day",
+   "title": "World AIDS Day",
+   "category": "Awareness",
+   "location": "",
+   "description": "Communities around the world remember people lost to AIDS and support people living with HIV.",
+   "url": "https://www.hiv.gov/events/awareness-days/world-aids-day"
+  },
+  {
+   "date": "2026-12-01",
+   "time": "All day",
+   "title": "GivingTuesday",
+   "category": "Seasonal",
+   "location": "",
+   "description": "This global day of generosity falls on the Tuesday after Thanksgiving and encourages donations and volunteering.",
+   "url": "https://www.givingtuesday.org/"
+  },
+  {
+   "date": "2026-12-01",
+   "time": "5:00 PM – 8:00 PM",
+   "title": "San Bruno: Tree Lighting & Jingle Around the Block",
+   "category": "Community",
+   "location": "Centennial Plaza, 470 San Mateo Ave., San Bruno",
+   "description": "Santa lights the city tree at 5 p.m. with music and treats, then rides a fire truck through town around 6 p.m.",
+   "url": "https://www.sanbruno.ca.gov/Calendar.aspx?EID=5588"
+  },
+  {
    "date": "2026-12-01",
    "time": "8:00 PM",
    "title": "Warriors vs. Utah Jazz",
@@ -851,6 +2204,80 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-12-02",
+   "time": "",
+   "title": "Rockefeller Center tree lighting",
+   "category": "Entertainment",
+   "location": "Rockefeller Center, New York, NY",
+   "description": "The annual lighting of the giant Christmas tree in Midtown Manhattan.",
+   "url": "https://www.timeout.com/newyork/news/the-2026-rockefeller-center-christmas-tree-lighting-has-officially-been-announced-and-its-happening-earlier-than-you-think-092926"
+  },
+  {
+   "date": "2026-12-03",
+   "time": "All day",
+   "title": "International Day of Persons with Disabilities",
+   "category": "Awareness",
+   "location": "",
+   "description": "This UN observance promotes the rights, inclusion and well-being of people with disabilities.",
+   "url": "https://www.un.org/en/observances/day-of-persons-with-disabilities"
+  },
+  {
+   "date": "2026-12-03",
+   "time": "",
+   "title": "Counties must certify election results",
+   "category": "Government",
+   "location": "",
+   "description": "Deadline for county election officials, including San Mateo County’s, to certify final results of the Nov. 3 election.",
+   "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines"
+  },
+  {
+   "date": "2026-12-04",
+   "end": "2026-12-12",
+   "time": "Sundown",
+   "title": "Hanukkah",
+   "category": "Religious",
+   "location": "",
+   "description": "The eight-night Jewish festival of lights starts at sundown on Friday, Dec. 4, and ends at nightfall on Saturday, Dec. 12. Families add one candle to the menorah each night.",
+   "url": "https://www.chabad.org/holidays/chanukah/default_cdo/jewish/Hanukkah.htm"
+  },
+  {
+   "date": "2026-12-04",
+   "time": "5:30 AM",
+   "title": "Jobs report (November)",
+   "category": "Financial",
+   "location": "",
+   "description": "The Bureau of Labor Statistics releases the monthly employment report for November.",
+   "url": "https://www.bls.gov/schedule/2026/12_sched_list.htm"
+  },
+  {
+   "date": "2026-12-04",
+   "time": "5:30 PM – 7:30 PM",
+   "title": "Burlingame: Winterfest & Tree Lighting",
+   "category": "Community",
+   "location": "Downtown Burlingame",
+   "description": "The city’s traditional tree lighting, followed by hot chocolate and a small train ride around Burlingame Avenue.",
+   "url": "https://www.burlingamedowntown.org/events/winterfest-in-burlingame"
+  },
+  {
+   "date": "2026-12-04",
+   "end": "2026-12-05",
+   "time": "",
+   "title": "NBA Cup quarterfinals",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "Eight teams play single-elimination quarterfinals at the higher seed’s home arena.",
+   "url": "https://www.foxsports.com/stories/nba/2026-nba-cup-schedule-group-play-knockout-rounds-championship"
+  },
+  {
+   "date": "2026-12-04",
+   "time": "",
+   "title": "“Violent Night 2” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Universal’s action-comedy sequel brings back its brawling Santa.",
+   "url": "https://www.boxofficemojo.com/calendar/2026-11-01/"
+  },
+  {
    "date": "2026-12-05",
    "time": "5:00 PM",
    "title": "Holiday Tree Lighting Celebration",
@@ -858,6 +2285,24 @@
    "location": "In front of City Hall, 621 Magnolia Ave.",
    "description": "The 34th annual tree lighting with carols, hot chocolate, cookies, and candy canes.",
    "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1975"
+  },
+  {
+   "date": "2026-12-05",
+   "time": "10:00 AM – 2:00 PM",
+   "title": "South San Francisco: Santa Comes to Town",
+   "category": "Community",
+   "location": "City Hall, 400 Grand Ave., South San Francisco",
+   "description": "Santa arrives on a city fire engine at 10 a.m. and poses for free family photos. Held rain or shine.",
+   "url": "https://www.ssfca.gov/Departments/Parks-Recreation/Events/Santa-Comes-to-Town"
+  },
+  {
+   "date": "2026-12-06",
+   "time": "4:51 PM",
+   "title": "Earliest sunset of the year",
+   "category": "Sunlight",
+   "location": "",
+   "description": "Calculated for Millbrae. Sunsets hold near 4:51 PM for about a week either side, then slowly start to get later even before the solstice.",
+   "url": "https://gml.noaa.gov/grad/solcalc/"
   },
   {
    "date": "2026-12-06",
@@ -870,6 +2315,162 @@
    "url": "https://www.49ers.com/schedule/"
   },
   {
+   "date": "2026-12-06",
+   "time": "",
+   "title": "F1 Abu Dhabi Grand Prix (season finale)",
+   "category": "Sports calendar",
+   "location": "Yas Marina Circuit, Abu Dhabi",
+   "description": "The 2026 Formula 1 season ends under the lights in Abu Dhabi (race weekend Dec. 4–6).",
+   "url": "https://www.formula1.com/en/latest/article/formula-1-reveals-calendar-for-2026-season.YctbMZWqBvrgyddrnauo8"
+  },
+  {
+   "date": "2026-12-06",
+   "time": "9:00 AM",
+   "title": "College Football Playoff Selection Day",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "The 12-team playoff field and bracket are revealed on ESPN the day after conference championship games.",
+   "url": "https://fbschedules.com/college-football-playoff-sets-2026-rankings-release-schedule/"
+  },
+  {
+   "date": "2026-12-06",
+   "end": "2026-12-07",
+   "time": "",
+   "title": "Gracie Abrams at Oakland Arena",
+   "category": "Entertainment",
+   "location": "Oakland Arena, Oakland",
+   "description": "Two Bay Area nights on her new arena tour.",
+   "url": "https://www.theoaklandarena.com/news/detail/news-gracie-abrams-announces-the-look-at-my-life-tour-with-north-american-and-europeanuk-dates"
+  },
+  {
+   "date": "2026-12-07",
+   "time": "All day",
+   "title": "National Pearl Harbor Remembrance Day",
+   "category": "Patriotic & memorial",
+   "location": "",
+   "description": "This day honors the more than 2,400 Americans killed in the 1941 attack on Pearl Harbor. Flags fly at half-staff.",
+   "url": "https://www.nps.gov/valr/index.htm"
+  },
+  {
+   "date": "2026-12-07",
+   "time": "",
+   "title": "Golden Globe nominations announced",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Nominees for the 84th Golden Globes are unveiled; the ceremony is Jan. 10, 2027.",
+   "url": "https://awardswatch.com/2027-golden-globes-reveal-key-dates-adds-ai-rules-expands-podcast-pool/"
+  },
+  {
+   "date": "2026-12-07",
+   "time": "",
+   "title": "Kennedy Center Honors",
+   "category": "Entertainment",
+   "location": "Capital One Arena, Washington, DC",
+   "description": "The arts honors move to an arena this year while the Kennedy Center’s main building is closed; the show is taped for later broadcast.",
+   "url": "https://www.broadwayworld.com/article/Kennedy-Center-Honors-to-Move-to-Capital-One-Arena-for-2026-Ceremony-20261002"
+  },
+  {
+   "date": "2026-12-08",
+   "time": "All day",
+   "title": "Bodhi Day (Rohatsu)",
+   "category": "Religious",
+   "location": "",
+   "description": "Many Mahayana Buddhists, especially in Japanese traditions, remember the Buddha’s enlightenment under the Bodhi tree on this day. It is often marked with meditation and chanting.",
+   "url": "https://orsl.usc.edu/life/buddhist-holy-days-calendar/"
+  },
+  {
+   "date": "2026-12-08",
+   "time": "All day",
+   "title": "Solemnity of the Immaculate Conception",
+   "category": "Religious",
+   "location": "",
+   "description": "Catholics celebrate this feast of Mary, the patroness of the United States. In 2026 it falls on a Tuesday and is a holy day of obligation.",
+   "url": "https://www.usccb.org/prayer-and-worship/liturgical-year-and-calendar/holy-days-of-obligation"
+  },
+  {
+   "date": "2026-12-08",
+   "time": "4:51 PM",
+   "title": "New moon",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "Dark skies ahead of the Geminid meteor shower.",
+   "url": "https://aa.usno.navy.mil/data/MoonPhases"
+  },
+  {
+   "date": "2026-12-08",
+   "end": "2026-12-09",
+   "time": "",
+   "title": "NBA Cup semifinals",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "Semifinals are played at the higher seed’s home arena, a change from past years in Las Vegas.",
+   "url": "https://www.foxsports.com/stories/nba/2026-nba-cup-schedule-group-play-knockout-rounds-championship"
+  },
+  {
+   "date": "2026-12-09",
+   "end": "2026-12-10",
+   "time": "",
+   "title": "BepiColombo’s two orbiters split up at Mercury",
+   "category": "Space",
+   "location": "",
+   "description": "ESA’s Mercury Planetary Orbiter and JAXA’s Mio are scheduled to separate so each can head to its own science orbit. Target dates.",
+   "url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury"
+  },
+  {
+   "date": "2026-12-09",
+   "time": "11:00 AM",
+   "title": "Fed interest-rate decision and projections",
+   "category": "Financial",
+   "location": "",
+   "description": "The Federal Reserve ends its Dec. 8–9 meeting with a rate statement and updated economic forecasts from policymakers.",
+   "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  {
+   "date": "2026-12-10",
+   "time": "All day",
+   "title": "Human Rights Day",
+   "category": "Awareness",
+   "location": "",
+   "description": "This day marks the anniversary of the UN’s adoption of the Universal Declaration of Human Rights in 1948.",
+   "url": "https://www.un.org/en/observances/human-rights-day"
+  },
+  {
+   "date": "2026-12-10",
+   "time": "5:00 PM",
+   "title": "Property tax first installment late after 5 PM",
+   "category": "Government",
+   "location": "San Mateo County",
+   "description": "Pay the first installment of your San Mateo County secured property tax by 5 PM to avoid a 10% penalty.",
+   "url": "https://smcgov.org/tax/secured-property-taxes"
+  },
+  {
+   "date": "2026-12-10",
+   "time": "5:30 AM",
+   "title": "Consumer Price Index (November)",
+   "category": "Financial",
+   "location": "",
+   "description": "The government’s monthly inflation report for November comes out.",
+   "url": "https://www.bls.gov/schedule/2026/12_sched_list.htm"
+  },
+  {
+   "date": "2026-12-11",
+   "time": "",
+   "title": "California certifies statewide election results",
+   "category": "Government",
+   "location": "",
+   "description": "The Secretary of State certifies the official Statement of Vote for the Nov. 3 general election and issues certificates of election.",
+   "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines"
+  },
+  {
+   "date": "2026-12-11",
+   "time": "",
+   "title": "Federal government funding deadline",
+   "category": "Government",
+   "location": "",
+   "description": "The current stopgap funding law for federal agencies expires today. Congress must pass more funding to avoid a partial government shutdown.",
+   "url": "https://www.everycrsreport.com/files/2026-09-17_R49353_98ddd8e7b1852b47b24e394ed7ddf6d6d53b4632.html"
+  },
+  {
    "date": "2026-12-11",
    "time": "6:30 PM",
    "title": "Millbrae Goes to the Movies: “Frozen II”",
@@ -877,6 +2478,43 @@
    "location": "Millbrae Recreation Center, 477 Lincoln Circle",
    "description": "Free indoor family movie night.",
    "url": "https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1972"
+  },
+  {
+   "date": "2026-12-11",
+   "time": "",
+   "title": "NBA Cup championship",
+   "category": "Sports calendar",
+   "location": "Hinkle Fieldhouse, Indianapolis",
+   "description": "The in-season tournament final moves from Las Vegas to Butler University’s historic gym.",
+   "url": "https://www.foxsports.com/stories/nba/2026-nba-cup-schedule-group-play-knockout-rounds-championship"
+  },
+  {
+   "date": "2026-12-11",
+   "end": "2026-12-12",
+   "time": "",
+   "title": "Olivia Rodrigo at Oakland Arena",
+   "category": "Entertainment",
+   "location": "Oakland Arena, Oakland",
+   "description": "Two nights of her “Unraveled” tour in Oakland.",
+   "url": "https://www.marincountyvisitor.com/?p=43066"
+  },
+  {
+   "date": "2026-12-12",
+   "time": "All day",
+   "title": "Feast of Our Lady of Guadalupe",
+   "category": "Religious",
+   "location": "",
+   "description": "This feast is especially beloved by Mexican and Mexican American Catholics. Many parishes hold early-morning mañanitas, processions and Masses.",
+   "url": "https://www.usccb.org/prayer-worship/liturgical-year/our-lady-of-guadalupe"
+  },
+  {
+   "date": "2026-12-12",
+   "time": "9:00 AM – 12:00 PM",
+   "title": "San Mateo: PAL Santa Brunch",
+   "category": "Community",
+   "location": "Dr. Martin Luther King Jr. Community Center, 725 Monte Diablo Ave., San Mateo",
+   "description": "The San Mateo Police Activities League’s holiday brunch with a visit from Santa.",
+   "url": "https://sanmateopal.org/Events-Community"
   },
   {
    "date": "2026-12-12",
@@ -887,6 +2525,51 @@
    "location": "Rocket Arena, Cleveland",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-12",
+   "time": "",
+   "title": "Heisman Trophy ceremony",
+   "category": "Sports calendar",
+   "location": "New York, NY",
+   "description": "College football’s top individual award is announced during a televised ceremony on ABC.",
+   "url": "https://www.heisman.com/about-the-heisman/balloting-info/"
+  },
+  {
+   "date": "2026-12-12",
+   "time": "12:00 PM",
+   "title": "Army–Navy Game",
+   "category": "Sports calendar",
+   "location": "MetLife Stadium, East Rutherford, NJ",
+   "description": "The 127th meeting of the service academies airs on CBS.",
+   "url": "https://goarmywestpoint.com/news/2026/5/27/army-football-announces-2026-kickoff-times-and-tv-networks-features-four-national-broadcasts"
+  },
+  {
+   "date": "2026-12-13",
+   "time": "All day",
+   "title": "St. Lucia Day",
+   "category": "Cultural",
+   "location": "",
+   "description": "In this Scandinavian festival of light, a girl wearing a crown of candles leads a procession with songs and saffron buns.",
+   "url": "https://sweden.se/culture/traditions/lucia"
+  },
+  {
+   "date": "2026-12-13",
+   "time": "All day",
+   "title": "National Guard Birthday",
+   "category": "Patriotic & memorial",
+   "location": "",
+   "description": "The National Guard traces its roots to Dec. 13, 1636, when Massachusetts Bay Colony organized its first militia regiments.",
+   "url": "https://www.nationalguard.mil/About-the-Guard/How-We-Began/"
+  },
+  {
+   "date": "2026-12-13",
+   "time": "",
+   "title": "Geminid meteor shower peaks",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "The year’s best shower: up to about 150 meteors an hour under ideal skies, with little moonlight. Watch from mid-evening on Dec. 13 through dawn on Dec. 14.",
+   "url": "https://www.amsmeteors.org/meteor-showers/meteor-shower-calendar/"
   },
   {
    "date": "2026-12-13",
@@ -907,6 +2590,35 @@
    "location": "FedExForum, Memphis",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-15",
+   "time": "All day",
+   "title": "Bill of Rights Day",
+   "category": "Patriotic & memorial",
+   "location": "",
+   "description": "This day marks the 1791 ratification of the first ten amendments to the U.S. Constitution.",
+   "url": "https://www.archives.gov/founding-docs/bill-of-rights"
+  },
+  {
+   "date": "2026-12-16",
+   "end": "2026-12-24",
+   "time": "",
+   "title": "Simbang Gabi",
+   "category": "Cultural",
+   "location": "",
+   "description": "In this Filipino Christmas tradition, the faithful attend nine Masses before Christmas, either at dawn or in the evening. Many Bay Area parishes host them, often with parols and Filipino treats afterward.",
+   "url": "https://sfarch.org/parishes-gather-for-annual-simbang-gabi-commissioning-mass-and-parol-blessing/"
+  },
+  {
+   "date": "2026-12-16",
+   "end": "2026-12-24",
+   "time": "Evening",
+   "title": "Las Posadas",
+   "category": "Cultural",
+   "location": "",
+   "description": "This Mexican and Latin American tradition lasts nine nights. Each night, processions re-enact Mary and Joseph’s search for shelter, with songs, candles and a party at the final stop.",
+   "url": "https://www.britannica.com/topic/Las-Posadas"
   },
   {
    "date": "2026-12-16",
@@ -939,6 +2651,80 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-12-18",
+   "end": "2026-12-19",
+   "time": "",
+   "title": "College Football Playoff first round",
+   "category": "Sports calendar",
+   "location": "Campus sites",
+   "description": "Four first-round games at campus sites: Friday at 5 p.m. (ESPN), then Saturday at 9 a.m. (ABC/ESPN), 12:30 p.m. and 4:30 p.m. (TNT).",
+   "url": "https://www.espn.com/college-football/story/_/id/48958840/2026-college-football-playoff-bowl-schedule-46-games"
+  },
+  {
+   "date": "2026-12-18",
+   "time": "",
+   "title": "MLS Cup 2026",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "The MLS championship game is played on a Friday this year, hosted by the higher-seeded finalist.",
+   "url": "https://www.mlssoccer.com/news/audi-2026-mls-cup-playoffs-key-dates-schedule-information"
+  },
+  {
+   "date": "2026-12-18",
+   "time": "",
+   "title": "“Avengers: Doomsday” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Marvel’s next Avengers team-up opens the same day as “Dune: Part Three.”",
+   "url": "https://www.boxofficemojo.com/calendar/2026-12-11/"
+  },
+  {
+   "date": "2026-12-18",
+   "time": "",
+   "title": "“Dune: Part Three” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Denis Villeneuve’s trilogy concludes in theaters and IMAX.",
+   "url": "https://awardsradar.com/2026/07/08/official-trailer-released-for-dune-part-three/"
+  },
+  {
+   "date": "2026-12-19",
+   "time": "",
+   "title": "National Wreaths Across America Day",
+   "category": "Patriotic & memorial",
+   "location": "Cemeteries nationwide",
+   "description": "Volunteers lay wreaths on veterans’ graves at Arlington and thousands of other cemeteries, including Golden Gate National Cemetery in San Bruno.",
+   "url": "https://www.wreathsacrossamerica.org/"
+  },
+  {
+   "date": "2026-12-19",
+   "time": "9:00 AM – 12:00 PM",
+   "title": "San Bruno: Breakfast With Santa",
+   "category": "Community",
+   "location": "Recreation and Aquatic Center, 251 City Park Way, San Bruno",
+   "description": "A family breakfast with holiday activities and a chance to meet Santa. You must register in advance.",
+   "url": "https://www.sanbruno.ca.gov/Calendar.aspx?EID=5589"
+  },
+  {
+   "date": "2026-12-19",
+   "end": "2026-12-20",
+   "time": "Dec 19 at 1:00 PM and 7:00 PM; Dec 20 at 1:00 PM",
+   "title": "South San Francisco: Civic Ballet’s “The Nutcracker”",
+   "category": "Community",
+   "location": "South San Francisco High School Auditorium, 400 B St., South San Francisco",
+   "description": "The city’s Civic Ballet program performs its holiday Nutcracker. Tickets are $10 for adults, $6 for teens and free for kids 12 and under.",
+   "url": "https://www.ssfca.gov/Departments/Parks-Recreation/Events/SSF-Civic-Ballet-The-Nutcracker"
+  },
+  {
+   "date": "2026-12-20",
+   "time": "All day",
+   "title": "U.S. Space Force Birthday",
+   "category": "Patriotic & memorial",
+   "location": "",
+   "description": "The Space Force, the newest branch of the armed forces, was created on Dec. 20, 2019.",
+   "url": "https://www.spaceforce.mil/"
+  },
+  {
    "date": "2026-12-20",
    "time": "5:00 PM",
    "title": "Warriors at Milwaukee Bucks",
@@ -947,6 +2733,42 @@
    "location": "Fiserv Forum, Milwaukee",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-21",
+   "time": "12:50 PM",
+   "title": "Winter solstice",
+   "category": "Seasons",
+   "location": "",
+   "description": "Winter officially begins as the Sun reaches its lowest path across the sky. It is the shortest day of the year.",
+   "url": "https://aa.usno.navy.mil/data/EarthSeasons"
+  },
+  {
+   "date": "2026-12-21",
+   "time": "7:20 AM – 4:54 PM",
+   "title": "Shortest day of the year",
+   "category": "Sunlight",
+   "location": "",
+   "description": "Calculated for Millbrae: about 9 hours 34 minutes of daylight. Days get longer from here, though the latest sunrise (about 7:25 AM) does not come until early January.",
+   "url": "https://gml.noaa.gov/grad/solcalc/"
+  },
+  {
+   "date": "2026-12-21",
+   "time": "",
+   "title": "Ursid meteor shower peaks",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "A modest shower of 5–10 meteors an hour, washed out this year by a nearly full Moon.",
+   "url": "https://www.amsmeteors.org/meteor-showers/meteor-shower-calendar/"
+  },
+  {
+   "date": "2026-12-22",
+   "time": "All day",
+   "title": "Dongzhi (Winter Solstice Festival)",
+   "category": "Cultural",
+   "location": "",
+   "description": "Chinese and other East Asian families mark the winter solstice with a reunion meal, often with tangyuan (sweet rice balls) or dumplings. In 2026 it falls on Dec. 22 in China, while the solstice arrives on Dec. 21 in California.",
+   "url": "https://www.officeholidays.com/holidays/macau/dongzhi"
   },
   {
    "date": "2026-12-22",
@@ -960,6 +2782,15 @@
   },
   {
    "date": "2026-12-23",
+   "time": "5:28 PM",
+   "title": "Full moon (Cold Moon)",
+   "category": "Moon & sky",
+   "location": "",
+   "description": "December’s full moon is the closest of these three (about 221,700 miles away), making it a supermoon. It rises around sunset.",
+   "url": "https://www.almanac.com/full-moon-names"
+  },
+  {
+   "date": "2026-12-23",
    "time": "7:30 PM",
    "title": "Warriors at LA Clippers",
    "category": "Sports",
@@ -969,6 +2800,51 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
+   "date": "2026-12-23",
+   "time": "",
+   "title": "“The Angry Birds Movie 3” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Paramount’s animated family sequel arrives for the holidays.",
+   "url": "https://www.boxofficemojo.com/calendar/2026-12-23"
+  },
+  {
+   "date": "2026-12-24",
+   "time": "Evening",
+   "title": "Christmas Eve",
+   "category": "Religious",
+   "location": "",
+   "description": "Christians gather for evening and midnight services on the night before Christmas.",
+   "url": "https://www.usccb.org/prayer-worship/liturgical-year/christmas"
+  },
+  {
+   "date": "2026-12-24",
+   "time": "",
+   "title": "Solar Orbiter flies past Venus",
+   "category": "Space",
+   "location": "",
+   "description": "ESA’s Solar Orbiter is scheduled to use a Venus flyby to tilt its orbit further, giving it a better view of the Sun’s poles. Target date; subject to change.",
+   "url": "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Solar_Orbiter_perihelia_and_flybys"
+  },
+  {
+   "date": "2026-12-24",
+   "time": "10:00 AM",
+   "title": "Stock market closes early",
+   "category": "Financial",
+   "location": "",
+   "description": "The NYSE closes at 10 AM Pacific (1 PM Eastern) on Christmas Eve.",
+   "url": "https://www.nyse.com/trade/hours-calendars"
+  },
+  {
+   "date": "2026-12-24",
+   "time": "11:00 AM",
+   "title": "Bond market closes early",
+   "category": "Financial",
+   "location": "",
+   "description": "SIFMA recommends U.S. bond markets close at 11 AM Pacific (2 PM Eastern) on Christmas Eve.",
+   "url": "https://www.sifma.org/resources/guides-playbooks/holiday-schedule"
+  },
+  {
    "date": "2026-12-25",
    "time": "All day",
    "title": "Christmas Day",
@@ -976,6 +2852,24 @@
    "location": "",
    "description": "Federal holiday.",
    "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "All day",
+   "title": "Banks closed: Christmas Day",
+   "category": "Bank holidays",
+   "location": "",
+   "description": "Federal Reserve holiday: the Fed and most banks are closed.",
+   "url": "https://www.federalreserve.gov/aboutthefed/k8.htm"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "All day",
+   "title": "Stock and bond markets closed (Christmas)",
+   "category": "Financial",
+   "location": "",
+   "description": "The NYSE and U.S. bond markets are closed for Christmas Day.",
+   "url": "https://www.nyse.com/trade/hours-calendars"
   },
   {
    "date": "2026-12-25",
@@ -995,6 +2889,52 @@
    "location": "Chase Center, San Francisco",
    "description": "Regular season. Christmas Day game. TV: ABC, ESPN.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "10:00 AM – 8:30 PM",
+   "title": "NFL Christmas Day tripleheader",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "Packers at Bears (10 a.m.) and Bills at Broncos (1:30 p.m.) stream on Netflix; Rams at Seahawks (5:15 p.m.) airs on Fox.",
+   "url": "https://www.si.com/nfl/nfl-christmas-day-schedule-2026-teams-times-how-to-watch"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "9:00 AM – 10:00 PM",
+   "title": "NBA Christmas Day slate",
+   "category": "Sports calendar",
+   "location": "",
+   "description": "Five games on ABC/ESPN: Spurs–Knicks, Heat–Celtics, 76ers–Lakers, Thunder–Timberwolves and a late game in San Francisco.",
+   "url": "https://www.nbcbayarea.com/nba/nba-christmas-schedule-2026-games-matchups-times/4125971/"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "",
+   "title": "HBO’s “Harry Potter” series premieres",
+   "category": "Entertainment",
+   "location": "",
+   "description": "The first season, adapting the first book, debuts on HBO Max.",
+   "url": "https://m.washingtontimes.com/news/2026/mar/25/hbo-drops-first-harry-potter-trailer-sets-christmas-day-premiere/"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "",
+   "title": "“Jumanji: Open World” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Sony’s third Jumanji adventure, billed as the final one, opens Christmas Day.",
+   "url": "https://www.boxofficemojo.com/calendar/2026-12-11/"
+  },
+  {
+   "date": "2026-12-26",
+   "end": "2027-01-01",
+   "time": "",
+   "title": "Kwanzaa",
+   "category": "Cultural",
+   "location": "",
+   "description": "This week-long celebration of African American heritage is built around seven principles, one for each day, and ends with a feast and gift-giving.",
+   "url": "https://www.officialkwanzaawebsite.org/"
   },
   {
    "date": "2026-12-27",
@@ -1028,6 +2968,15 @@
   },
   {
    "date": "2026-12-30",
+   "time": "All day",
+   "title": "Rizal Day",
+   "category": "Cultural",
+   "location": "",
+   "description": "Filipinos honor José Rizal, the national hero and writer, on the anniversary of his 1896 execution.",
+   "url": "https://www.officialgazette.gov.ph/"
+  },
+  {
+   "date": "2026-12-30",
    "time": "7:00 PM",
    "title": "Warriors vs. Houston Rockets",
    "category": "Sports",
@@ -1035,6 +2984,51 @@
    "location": "Chase Center, San Francisco",
    "description": "Regular season. TV: NBA TV.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-12-30",
+   "time": "4:30 PM",
+   "title": "CFP quarterfinal: Fiesta Bowl",
+   "category": "Sports calendar",
+   "location": "State Farm Stadium, Glendale, AZ",
+   "description": "The first playoff quarterfinal airs on TNT; the other three are played on New Year’s Day.",
+   "url": "https://www.espn.com/college-football/story/_/id/48958840/2026-college-football-playoff-bowl-schedule-46-games"
+  },
+  {
+   "date": "2026-12-31",
+   "time": "Evening",
+   "title": "New Year’s Eve",
+   "category": "Seasonal",
+   "location": "",
+   "description": "People say farewell to 2026 with gatherings, countdowns and fireworks.",
+   "url": "https://www.history.com/topics/holidays/new-years"
+  },
+  {
+   "date": "2026-12-31",
+   "time": "11:59 PM",
+   "title": "Covered California deadline for Jan. 1 coverage",
+   "category": "Government",
+   "location": "",
+   "description": "Pick a Covered California plan by today to have health coverage start Jan. 1, 2027. Open enrollment continues through Jan. 31.",
+   "url": "https://www.coveredca.com/press-releases/covered-california-s-open-enrollment-2027-amid-federal-changes-covered-california-continues-to"
+  },
+  {
+   "date": "2026-12-31",
+   "time": "11:00 AM",
+   "title": "Bond market closes early",
+   "category": "Financial",
+   "location": "",
+   "description": "SIFMA recommends U.S. bond markets close at 11 AM Pacific (2 PM Eastern) on New Year’s Eve. Stocks trade a normal day.",
+   "url": "https://www.sifma.org/resources/guides-playbooks/holiday-schedule"
+  },
+  {
+   "date": "2026-12-31",
+   "time": "",
+   "title": "“New Year’s Rockin’ Eve”",
+   "category": "Entertainment",
+   "location": "Times Square, New York, NY (ABC)",
+   "description": "ABC’s annual countdown special rings in 2027.",
+   "url": "https://editorial.rottentomatoes.com/article/tv-premiere-dates-2026/"
   },
   {
    "date": "2027-01-01",
@@ -1096,16 +3090,6 @@
   },
   {
    "date": "2027-01-09",
-   "time": "TBD",
-   "title": "49ers at Arizona Cardinals",
-   "category": "Sports",
-   "team": "49ers",
-   "location": "State Farm Stadium, Glendale, Ariz.",
-   "description": "Regular-season finale. Day and time to be set by the NFL.",
-   "url": "https://www.49ers.com/schedule/"
-  },
-  {
-   "date": "2027-01-09",
    "time": "5:30 PM",
    "title": "Warriors vs. Chicago Bulls",
    "category": "Sports",
@@ -1113,6 +3097,16 @@
    "location": "Chase Center, San Francisco",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-01-09",
+   "time": "TBD",
+   "title": "49ers at Arizona Cardinals",
+   "category": "Sports",
+   "team": "49ers",
+   "location": "State Farm Stadium, Glendale, Ariz.",
+   "description": "Regular-season finale. Day and time to be set by the NFL.",
+   "url": "https://www.49ers.com/schedule/"
   },
   {
    "date": "2027-01-12",
@@ -1552,16 +3546,6 @@
   },
   {
    "date": "2027-03-25",
-   "time": "TBD",
-   "title": "Giants vs. Colorado Rockies",
-   "category": "Sports",
-   "team": "Giants",
-   "location": "Oracle Park, San Francisco",
-   "description": "Opening Day. Game time not yet announced.",
-   "url": "https://www.mlb.com/giants/schedule"
-  },
-  {
-   "date": "2027-03-25",
    "time": "7:00 PM",
    "title": "Warriors vs. Toronto Raptors",
    "category": "Sports",
@@ -1571,13 +3555,13 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
-   "date": "2027-03-27",
+   "date": "2027-03-25",
    "time": "TBD",
    "title": "Giants vs. Colorado Rockies",
    "category": "Sports",
    "team": "Giants",
    "location": "Oracle Park, San Francisco",
-   "description": "Regular season. Game time not yet announced.",
+   "description": "Opening Day. Game time not yet announced.",
    "url": "https://www.mlb.com/giants/schedule"
   },
   {
@@ -1591,7 +3575,7 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
-   "date": "2027-03-28",
+   "date": "2027-03-27",
    "time": "TBD",
    "title": "Giants vs. Colorado Rockies",
    "category": "Sports",
@@ -1601,9 +3585,9 @@
    "url": "https://www.mlb.com/giants/schedule"
   },
   {
-   "date": "2027-03-29",
+   "date": "2027-03-28",
    "time": "TBD",
-   "title": "Giants vs. Arizona Diamondbacks",
+   "title": "Giants vs. Colorado Rockies",
    "category": "Sports",
    "team": "Giants",
    "location": "Oracle Park, San Francisco",
@@ -1621,7 +3605,7 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
-   "date": "2027-03-30",
+   "date": "2027-03-29",
    "time": "TBD",
    "title": "Giants vs. Arizona Diamondbacks",
    "category": "Sports",
@@ -1631,7 +3615,7 @@
    "url": "https://www.mlb.com/giants/schedule"
   },
   {
-   "date": "2027-03-31",
+   "date": "2027-03-30",
    "time": "TBD",
    "title": "Giants vs. Arizona Diamondbacks",
    "category": "Sports",
@@ -1651,12 +3635,12 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
-   "date": "2027-04-02",
+   "date": "2027-03-31",
    "time": "TBD",
-   "title": "Giants at New York Mets",
+   "title": "Giants vs. Arizona Diamondbacks",
    "category": "Sports",
    "team": "Giants",
-   "location": "Citi Field, New York",
+   "location": "Oracle Park, San Francisco",
    "description": "Regular season. Game time not yet announced.",
    "url": "https://www.mlb.com/giants/schedule"
   },
@@ -1669,6 +3653,16 @@
    "location": "Target Center, Minneapolis",
    "description": "Regular season. TV: Prime Video.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-02",
+   "time": "TBD",
+   "title": "Giants at New York Mets",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Citi Field, New York",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
   },
   {
    "date": "2027-04-03",
@@ -1692,16 +3686,6 @@
   },
   {
    "date": "2027-04-04",
-   "time": "TBD",
-   "title": "Giants at New York Mets",
-   "category": "Sports",
-   "team": "Giants",
-   "location": "Citi Field, New York",
-   "description": "Regular season. Game time not yet announced.",
-   "url": "https://www.mlb.com/giants/schedule"
-  },
-  {
-   "date": "2027-04-04",
    "time": "3:00 PM",
    "title": "Warriors at Sacramento Kings",
    "category": "Sports",
@@ -1709,6 +3693,16 @@
    "location": "Golden 1 Center, Sacramento",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-04",
+   "time": "TBD",
+   "title": "Giants at New York Mets",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Citi Field, New York",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
   },
   {
    "date": "2027-04-05",
@@ -1742,16 +3736,6 @@
   },
   {
    "date": "2027-04-07",
-   "time": "5:00 PM",
-   "title": "Earthquakes at Austin FC",
-   "category": "Sports",
-   "team": "Earthquakes",
-   "location": "",
-   "description": "MLS Sprint Season. TV: Apple TV.",
-   "url": "https://www.sjearthquakes.com/schedule/"
-  },
-  {
-   "date": "2027-04-07",
    "time": "4:15 PM",
    "title": "Giants at Atlanta Braves",
    "category": "Sports",
@@ -1761,14 +3745,14 @@
    "url": "https://www.mlb.com/giants/schedule"
   },
   {
-   "date": "2027-04-08",
-   "time": "9:15 AM",
-   "title": "Giants at Atlanta Braves",
+   "date": "2027-04-07",
+   "time": "5:00 PM",
+   "title": "Earthquakes at Austin FC",
    "category": "Sports",
-   "team": "Giants",
-   "location": "Truist Park, Atlanta",
-   "description": "Regular season.",
-   "url": "https://www.mlb.com/giants/schedule"
+   "team": "Earthquakes",
+   "location": "",
+   "description": "MLS Sprint Season. TV: Apple TV.",
+   "url": "https://www.sjearthquakes.com/schedule/"
   },
   {
    "date": "2027-04-08",
@@ -1781,13 +3765,13 @@
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
-   "date": "2027-04-09",
-   "time": "TBD",
-   "title": "Giants vs. St. Louis Cardinals",
+   "date": "2027-04-08",
+   "time": "9:15 AM",
+   "title": "Giants at Atlanta Braves",
    "category": "Sports",
    "team": "Giants",
-   "location": "Oracle Park, San Francisco",
-   "description": "Regular season. Game time not yet announced.",
+   "location": "Truist Park, Atlanta",
+   "description": "Regular season.",
    "url": "https://www.mlb.com/giants/schedule"
   },
   {
@@ -1799,6 +3783,16 @@
    "location": "Paycom Center, Oklahoma City",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-09",
+   "time": "TBD",
+   "title": "Giants vs. St. Louis Cardinals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
   },
   {
    "date": "2027-04-10",
@@ -1822,16 +3816,6 @@
   },
   {
    "date": "2027-04-11",
-   "time": "TBD",
-   "title": "Giants vs. St. Louis Cardinals",
-   "category": "Sports",
-   "team": "Giants",
-   "location": "Oracle Park, San Francisco",
-   "description": "Regular season. Game time not yet announced.",
-   "url": "https://www.mlb.com/giants/schedule"
-  },
-  {
-   "date": "2027-04-11",
    "time": "5:30 PM",
    "title": "Warriors vs. Utah Jazz",
    "category": "Sports",
@@ -1839,6 +3823,16 @@
    "location": "Chase Center, San Francisco",
    "description": "Regular season. Regular-season finale.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2027-04-11",
+   "time": "TBD",
+   "title": "Giants vs. St. Louis Cardinals",
+   "category": "Sports",
+   "team": "Giants",
+   "location": "Oracle Park, San Francisco",
+   "description": "Regular season. Game time not yet announced.",
+   "url": "https://www.mlb.com/giants/schedule"
   },
   {
    "date": "2027-04-13",

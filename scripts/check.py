@@ -122,7 +122,12 @@ def check_pages(dates):
             fail(f"{p.name}: contains an image; editions use no photos.")
 
 
-CAL_CATEGORIES = {"Holidays", "Millbrae", "County arts", "Sports"}
+CAL_CATEGORIES = {
+    "Holidays", "Bank holidays", "Religious", "Cultural", "Patriotic & memorial", "Awareness",
+    "Seasonal", "Seasons", "Time changes", "Sunlight", "Friday the 13th", "Moon & sky", "Space",
+    "Government", "Financial", "Millbrae", "Community", "County arts",
+    "Sports", "Sports calendar", "Entertainment",
+}
 CAL_TEAMS = {"49ers", "Warriors", "Giants", "Earthquakes", "Bay FC", "Hawaii", "San Francisco City FC", "Valkyries"}
 
 

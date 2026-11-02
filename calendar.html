@@ -29,7 +29,7 @@
     --soft-rule: #B9B3A6; --spot: #A8231B;
     --band: #A8231B; --on-band: #F6EFE6;
     --card: #F4F2EC;
-    --c-holidays: #A8231B; --c-millbrae: #2F6B3A; --c-county: #6A3D8F; --c-sports: #1F4E8C;
+    --c-obs: #A8231B; --c-local: #2F6B3A; --c-civic: #8A5A00; --c-sports: #1F4E8C; --c-dates: #1F6E6E; --c-sky: #6A3D8F;
     --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
     --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
     color-scheme: light;
@@ -40,7 +40,7 @@
       --soft-rule: #4A463F; --spot: #E2675C;
       --band: #8E2019; --on-band: #F6EFE6;
       --card: #26241F;
-      --c-holidays: #E2675C; --c-millbrae: #7DBE86; --c-county: #B795D6; --c-sports: #82A9E0;
+      --c-obs: #E2675C; --c-local: #7DBE86; --c-civic: #D9A441; --c-sports: #82A9E0; --c-dates: #6CC4C4; --c-sky: #B795D6;
       color-scheme: dark;
     }
   }
@@ -79,7 +79,11 @@
   @media (max-width: 30rem) { .tally { text-align: left; } }
 
   /* Filters */
-  .tools { padding: 1rem 0; border-bottom: 1px solid var(--soft-rule); display: grid; gap: .6rem; }
+  .tools { padding: .8rem 0 1rem; border-bottom: 1px solid var(--soft-rule); }
+  .tools[open] > summary { margin-bottom: .6rem; }
+  .tools > summary { cursor: pointer; font-style: italic; color: var(--muted); font-size: .95rem; }
+  .tools > summary:hover { color: var(--ink); }
+  #teams { margin-top: .45rem; }
   .chips { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
   .chips > span { font-style: italic; color: var(--muted); font-size: .9rem; margin-right: .2rem; }
   .chip { font: inherit; font-size: .85rem; color: var(--ink); background: transparent;
@@ -126,13 +130,26 @@
   .ev .t { color: var(--muted); font-style: italic; white-space: nowrap; }
   .ev .n { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .ev:hover, .ev[aria-expanded="true"] { background: color-mix(in srgb, var(--c) 16%, var(--card)); }
-  .ev.cat-holidays { font-weight: 700; }
+  .ev.bold { font-weight: 700; }
   .more { font: inherit; font-size: .74rem; font-style: italic; background: none; border: 0; padding: 0 .3rem;
           color: var(--muted); cursor: pointer; text-align: left; text-decoration: underline; }
-  .cat-holidays { --c: var(--c-holidays); }
-  .cat-millbrae { --c: var(--c-millbrae); }
-  .cat-county   { --c: var(--c-county); }
-  .cat-sports   { --c: var(--c-sports); }
+  .g-obs    { --c: var(--c-obs); }
+  .g-local  { --c: var(--c-local); }
+  .g-civic  { --c: var(--c-civic); }
+  .g-sports { --c: var(--c-sports); }
+  .g-dates  { --c: var(--c-dates); }
+  .g-sky    { --c: var(--c-sky); }
+  .grp { font: inherit; font-size: .9rem; font-style: italic; color: var(--muted); background: none; border: 0;
+         padding: .2rem .3rem .2rem 0; cursor: pointer; min-width: 9.5rem; text-align: left;
+         display: inline-flex; align-items: center; gap: .4rem; }
+  .grp .sw { width: .7rem; height: .7rem; background: var(--c); display: inline-block; }
+  .grp:hover { color: var(--ink); text-decoration: underline; }
+  @media (max-width: 46rem) { .grp { min-width: 0; flex-basis: 100%; } }
+
+  /* Month-long observances */
+  .running { padding: .6rem 0 .1rem; display: flex; flex-wrap: wrap; gap: .35rem .5rem; align-items: center; font-size: .85rem; }
+  .running > span { font-style: italic; color: var(--muted); margin-right: .1rem; }
+  .running .ev { width: auto; font-size: .8rem; padding: .15rem .45rem; }
   .empty-month { grid-column: 1 / -1; text-align: center; font-style: italic; color: var(--muted); padding: 2rem 1rem; }
 
   /* Phone: the grid becomes a list of the days that have events */
@@ -202,16 +219,17 @@
   <main>
     <header class="cal-head">
       <div>
-        <p class="stamp">Around town, around the county, and at the ballpark</p>
+        <p class="stamp">Holidays, local happenings, games, the sky, and more</p>
         <h1>The Calendar</h1>
       </div>
       <p class="tally" id="tally"></p>
     </header>
 
-    <div class="tools" id="tools" hidden>
-      <div class="chips" id="cats"><span>Show:</span></div>
+    <details class="tools" id="tools" hidden>
+      <summary>Choose what to show</summary>
+      <div id="cats"></div>
       <div class="chips" id="teams"><span>Teams:</span></div>
-    </div>
+    </details>
 
     <div class="monthbar" id="monthbar" hidden>
       <button type="button" class="nav" id="prev" aria-label="Previous month">‹ <span id="prev-l"></span></button>
@@ -220,6 +238,7 @@
     </div>
     <p class="jump" id="jump" hidden><button type="button" id="to-today">Back to this month</button></p>
 
+    <div class="running" id="running" hidden></div>
     <div id="cal"><p class="notice">Penciling in the dates&hellip;</p></div>
     <p class="legend-note" id="note" hidden></p>
   </main>
@@ -234,12 +253,23 @@
 
 <script>
 (function () {
-  const CATS = [
-    { key: "Holidays",    cls: "cat-holidays", label: "National holidays" },
-    { key: "Millbrae",    cls: "cat-millbrae", label: "Millbrae" },
-    { key: "County arts", cls: "cat-county",   label: "County arts & culture" },
-    { key: "Sports",      cls: "cat-sports",   label: "Sports" }
+  const GROUPS = [
+    { cls: "g-obs", label: "Holidays & observances", cats: [
+      ["Holidays", "National holidays"], ["Bank holidays", "Bank holidays"], ["Religious", "Religious"],
+      ["Cultural", "Cultural"], ["Patriotic & memorial", "Patriotic & memorial"], ["Awareness", "Awareness"]] },
+    { cls: "g-local", label: "Local", cats: [
+      ["Millbrae", "Millbrae"], ["Community", "Peninsula community"], ["County arts", "County arts & culture"]] },
+    { cls: "g-civic", label: "Government & money", cats: [["Government", "Government"], ["Financial", "Financial"]] },
+    { cls: "g-sports", label: "Sports & entertainment", cats: [
+      ["Sports", "Team games"], ["Sports calendar", "Sports calendar"], ["Entertainment", "Entertainment"]] },
+    { cls: "g-dates", label: "Seasons & time", cats: [
+      ["Seasonal", "Seasonal dates"], ["Seasons", "Seasons"], ["Sunlight", "Sunlight"], ["Time changes", "Time changes"],
+      ["Friday the 13th", "Friday the 13th"]] },
+    { cls: "g-sky", label: "Sky & space", cats: [["Moon & sky", "Moon & sky"], ["Space", "Space exploration"]] }
   ];
+  const CATS = GROUPS.flatMap(g => g.cats.map(([key, label]) => ({ key, label, cls: g.cls })));
+  const BOLD = new Set(["Holidays", "Time changes", "Seasons", "Friday the 13th"]);
+  const LONG = 10; // spans this many days or more are listed above the grid instead of in every cell
   const TEAMS = ["49ers", "Warriors", "Giants", "Earthquakes", "Bay FC", "Hawaii"];
   const TEAM_LABEL = { Hawaii: "Hawai‘i football" };
   const MAX_IN_CELL = 4;
@@ -304,7 +334,7 @@
     let count = 0;
     for (let d = 1; d <= days; d++) {
       const k = cur + "-" + pad(d);
-      const evs = (byDay.get(k) || []).filter(visible);
+      const evs = (byDay.get(k) || []).filter(e => visible(e) && !isLong(e));
       count += evs.length;
       const cls = ["day"]; if (k < todayISO) cls.push("past"); if (k === todayISO) cls.push("today"); if (!evs.length) cls.push("quiet");
       const shown = evs.length > MAX_IN_CELL + 1 ? evs.slice(0, MAX_IN_CELL) : evs;
@@ -318,17 +348,23 @@
     }
     const tail = (7 - (first.getUTCDay() + days) % 7) % 7;
     for (let i = 0; i < tail; i++) html += `<div class="day blank" aria-hidden="true"></div>`;
+    const run = all.filter(e => isLong(e) && visible(e) && e.date <= cur + "-31" && e.end >= cur + "-01");
+    $("running").innerHTML = run.length ? `<span>All month or longer:</span>` + run.map(e => evBtn(e, true)).join("") : "";
+    $("running").hidden = !run.length;
+    count += run.length;
     if (!count) html += `<p class="empty-month">Nothing on the calendar this month with the current filters.</p>`;
     cal.innerHTML = `<div class="grid">${html}</div>`;
     $("month-title").querySelector("small").textContent = count ? count + (count === 1 ? " event" : " events") : "";
     if (location.hash !== "#" + cur) history.replaceState(null, "", "#" + cur);
   }
 
-  function evBtn(e) {
+  function isLong(e) { return e.end && (parse(e.end) - parse(e.date)) / 86400000 + 1 >= LONG; }
+  function evBtn(e, bare) {
     const c = catOf(e.category);
-    const t = shortTime(e.time);
-    return `<li><button type="button" class="ev ${c.cls}" data-i="${e._i}" aria-expanded="false">` +
-      (t ? `<span class="t">${esc(t)}</span> ` : "") + `<span class="n">${esc(e.title)}</span></button></li>`;
+    const t = bare ? "" : shortTime(e.time);
+    const b = `<button type="button" class="ev ${c.cls}${BOLD.has(e.category) ? " bold" : ""}" data-i="${e._i}" aria-expanded="false">` +
+      (t ? `<span class="t">${esc(t)}</span> ` : "") + `<span class="n">${esc(e.title)}</span></button>`;
+    return bare ? b : `<li>${b}</li>`;
   }
 
   // "10:30 AM – 4:30 PM" -> "10:30a", "7:00 PM" -> "7p", "3:00 – 5:00 PM" -> "3p"
@@ -392,27 +428,28 @@
     if (now) go(); else hideTimer = setTimeout(go, 160);
   }
 
+  const zone = document.querySelector("main");
   const canHover = window.matchMedia("(hover: hover)").matches;
-  cal.addEventListener("mouseover", ev => {
+  zone.addEventListener("mouseover", ev => {
     const b = ev.target.closest(".ev"); if (!b || !canHover) return;
     if (pinned && tipFor !== b) return;
     showTip(b, pinned && tipFor === b);
   });
-  cal.addEventListener("mouseout", ev => {
+  zone.addEventListener("mouseout", ev => {
     const b = ev.target.closest(".ev"); if (!b || pinned) return;
     if (ev.relatedTarget && (b.contains(ev.relatedTarget) || tip.contains(ev.relatedTarget))) return;
     hideTip(false);
   });
   tip.addEventListener("mouseenter", () => clearTimeout(hideTimer));
   tip.addEventListener("mouseleave", () => { if (!pinned) hideTip(false); });
-  cal.addEventListener("focusin", ev => { const b = ev.target.closest(".ev"); if (b && !pinned) showTip(b, false); });
-  cal.addEventListener("focusout", ev => {
+  zone.addEventListener("focusin", ev => { const b = ev.target.closest(".ev"); if (b && !pinned) showTip(b, false); });
+  zone.addEventListener("focusout", ev => {
     if (pinned) return;
     if (ev.relatedTarget && tip.contains(ev.relatedTarget)) return;
     hideTip(false);
   });
   tip.addEventListener("focusout", ev => { if (!pinned && !(ev.relatedTarget && (tip.contains(ev.relatedTarget) || ev.relatedTarget === tipFor))) hideTip(false); });
-  cal.addEventListener("click", ev => {
+  zone.addEventListener("click", ev => {
     const b = ev.target.closest(".ev");
     if (b) {
       if (pinned && tipFor === b) { hideTip(true); return; }
@@ -422,7 +459,7 @@
     if (more) {
       const k = more.dataset.day;
       const cell = more.closest(".day");
-      const evs = (byDay.get(k) || []).filter(visible);
+      const evs = (byDay.get(k) || []).filter(e => visible(e) && !isLong(e));
       cell.querySelector(".evs").innerHTML = evs.map(evBtn).join("");
     }
   });
@@ -448,15 +485,36 @@
   }
   function buildTools() {
     const cats = $("cats"), teams = $("teams");
-    CATS.forEach(c => cats.append(chip(c.label, c.cls, !offCats.has(c.key), on => {
-      on ? offCats.delete(c.key) : offCats.add(c.key); store.set("offCats", [...offCats]);
-      $("teams").hidden = offCats.has("Sports");
-    })));
+    GROUPS.forEach(g => {
+      const row = document.createElement("div"); row.className = "chips " + g.cls;
+      const head = document.createElement("button"); head.type = "button"; head.className = "grp";
+      head.innerHTML = `<span class="sw" aria-hidden="true"></span>${esc(g.label)}`;
+      head.title = "Show or hide this whole group";
+      const btns = g.cats.map(([key, label]) => {
+        const b = chip(label, "", !offCats.has(key), on => {
+          on ? offCats.delete(key) : offCats.add(key); store.set("offCats", [...offCats]);
+          $("teams").hidden = offCats.has("Sports");
+        });
+        b.dataset.key = key; return b;
+      });
+      head.addEventListener("click", () => {
+        const anyOn = g.cats.some(([k]) => !offCats.has(k));
+        g.cats.forEach(([k]) => anyOn ? offCats.add(k) : offCats.delete(k));
+        btns.forEach(b => b.setAttribute("aria-pressed", anyOn ? "false" : "true"));
+        store.set("offCats", [...offCats]);
+        $("teams").hidden = offCats.has("Sports");
+        render();
+      });
+      row.append(head, ...btns);
+      cats.append(row);
+    });
+    cats.style.display = "grid"; cats.style.gap = ".45rem";
     TEAMS.forEach(t => teams.append(chip(TEAM_LABEL[t] || t, "", !offTeams.has(t), on => {
       on ? offTeams.delete(t) : offTeams.add(t); store.set("offTeams", [...offTeams]);
     })));
     teams.hidden = offCats.has("Sports");
     $("tools").hidden = false;
+    if (window.matchMedia("(min-width: 46.01rem)").matches) $("tools").open = true;
   }
 
   $("prev").addEventListener("click", () => { cur = addMonth(cur, -1); render(); });

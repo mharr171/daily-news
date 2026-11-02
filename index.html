@@ -112,6 +112,17 @@
            display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem;
            font-size: .9rem; color: var(--muted); }
 
+  /* Today strip: weather, alerts, rent reminder */
+  .today { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+           gap: .3rem 1.25rem; padding: .5rem 0; border-bottom: 1px solid var(--soft-rule); font-size: .92rem; }
+  .today[hidden] { display: none; }
+  .today .wx, .today .alerts { display: flex; flex-wrap: wrap; gap: .2rem .75rem; align-items: baseline; }
+  .today .place { font-style: italic; color: var(--muted); }
+  .today .alert { color: var(--spot); font-weight: 700; }
+  .today .rent { font-weight: 700; margin-left: auto; }
+  .today .rent.due { background: var(--band); color: var(--on-band); padding: .05rem .55rem; }
+  .today a { color: inherit; }
+
   /* Print: black on white, no navigation, link addresses after headlines */
   @media print {
     :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
@@ -141,6 +152,11 @@
     <div class="band">
       <span>by The Gary Corp.</span>
       <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+    <div class="today print-hide" id="today-strip" hidden aria-live="polite">
+      <div class="wx" id="wx"></div>
+      <div class="alerts" id="alerts"></div>
+      <span class="rent" id="rent" hidden></span>
     </div>
   </header>
 
@@ -241,6 +257,68 @@
     .then(data => render(Array.isArray(data) ? data : (data.editions || [])))
     .catch(() => main.replaceChildren(
       el("p", "notice", "The editions list couldn’t be loaded. Refresh the page, or check that posts.json is in the same folder as this page.")));
+})();
+
+// Today strip: Millbrae weather (Open-Meteo), NWS alerts for San Mateo County, rent reminder.
+(function () {
+  const strip = document.getElementById("today-strip");
+  const show = () => { strip.hidden = false; };
+  const TZ = "America/Los_Angeles";
+  const FORECAST = "https://forecast.weather.gov/MapClick.php?lat=37.5985&lon=-122.3872";
+
+  // Rent is due on the 1st of every month (Pacific time).
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: TZ, year: "numeric", month: "numeric", day: "numeric" })
+    .formatToParts(new Date()).map(p => [p.type, p.value]));
+  const y = +parts.year, m = +parts.month, d = +parts.day;
+  const daysInMonth = new Date(y, m, 0).getDate();
+  const daysLeft = d === 1 ? 0 : daysInMonth - d + 1;
+  const rent = document.getElementById("rent");
+  if (daysLeft === 0) { rent.textContent = "Rent is due!"; rent.classList.add("due"); }
+  else if (daysLeft <= 7) { rent.textContent = "Rent due in " + daysLeft + (daysLeft === 1 ? " day" : " days"); }
+  if (rent.textContent) { rent.hidden = false; show(); }
+
+  const WMO = { 0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Cloudy", 45: "Fog", 48: "Fog",
+    51: "Light drizzle", 53: "Drizzle", 55: "Heavy drizzle", 56: "Freezing drizzle", 57: "Freezing drizzle",
+    61: "Light rain", 63: "Rain", 65: "Heavy rain", 66: "Freezing rain", 67: "Freezing rain",
+    71: "Light snow", 73: "Snow", 75: "Heavy snow", 77: "Snow", 80: "Showers", 81: "Showers", 82: "Heavy showers",
+    85: "Snow showers", 86: "Snow showers", 95: "Thunderstorms", 96: "Thunderstorms with hail", 99: "Thunderstorms with hail" };
+  const span = (cls, text) => { const s = document.createElement("span"); if (cls) s.className = cls; s.textContent = text; return s; };
+
+  fetch("https://api.open-meteo.com/v1/forecast?latitude=37.5985&longitude=-122.3872" +
+        "&current=temperature_2m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max" +
+        "&temperature_unit=fahrenheit&timezone=" + encodeURIComponent(TZ) + "&forecast_days=1")
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(w => {
+      const dd = w.daily, r = Math.round;
+      const wx = document.getElementById("wx");
+      const a = document.createElement("a");
+      a.href = FORECAST; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = (WMO[dd.weather_code[0]] || "Forecast") + ", high " + r(dd.temperature_2m_max[0]) + "°, low " + r(dd.temperature_2m_min[0]) + "°";
+      wx.append(span("place", "Millbrae today:"), a);
+      if (dd.precipitation_probability_max[0] >= 20) wx.append(span(null, dd.precipitation_probability_max[0] + "% chance of rain"));
+      if (w.current) wx.append(span(null, "Now " + r(w.current.temperature_2m) + "°"));
+      show();
+    })
+    .catch(() => {});
+
+  fetch("https://api.weather.gov/alerts/active?zone=CAC081", { headers: { Accept: "application/geo+json" } })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(j => {
+      const seen = new Set();
+      const list = (j.features || []).map(f => f.properties).filter(p => p && p.event && !seen.has(p.event) && seen.add(p.event)).slice(0, 2);
+      if (!list.length) return;
+      const box = document.getElementById("alerts");
+      list.forEach(p => {
+        const end = p.ends || p.expires;
+        const until = end ? " until " + new Date(end).toLocaleString("en-US", { timeZone: TZ, weekday: "short", hour: "numeric", minute: "2-digit" }) : "";
+        const a = document.createElement("a");
+        a.href = FORECAST; a.target = "_blank"; a.rel = "noopener"; a.className = "alert";
+        a.textContent = "⚠ " + p.event + until;
+        box.append(a);
+      });
+      show();
+    })
+    .catch(() => {});
 })();
 </script>
 </body>

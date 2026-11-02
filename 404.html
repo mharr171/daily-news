@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found | Live Full Stack</title>
+<meta name="robots" content="noindex">
+<link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.55 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+  .cover { padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+  .missing { max-width: 40rem; margin: 0 auto; padding: 3.5rem 0 2rem; text-align: center; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .5rem; }
+  .missing h1 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: clamp(2.6rem, 10vw, 5rem); line-height: .95; margin: 0 0 1rem; }
+  .missing p { margin: 0 0 1rem; }
+  .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-top: 1.75rem; }
+  .actions a { display: inline-block; font-weight: 700; border: 2px solid var(--ink);
+               padding: .45rem .9rem; text-decoration: none; }
+  .actions a:hover { background: var(--ink); color: var(--paper); }
+  footer { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+           text-align: center; font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="cover"><p class="nameplate"><a href="/">Live Full Stack</a></p></div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main class="missing">
+    <p class="stamp">Error 404</p>
+    <h1>Stop the presses</h1>
+    <p>We couldn’t find that page. It may have been moved, or the address may have a typo.</p>
+    <p id="hint"></p>
+    <div class="actions">
+      <a href="/">Today’s front page</a>
+      <a href="/archive.html">Search the archive</a>
+    </div>
+  </main>
+
+  <footer>Compiled each morning by Claude.</footer>
+</div>
+<script>
+  // If the address looks like an edition date, say so.
+  const m = location.pathname.match(/(\d{4}-\d{2}-\d{2})/);
+  if (m) {
+    const d = new Date(m[1] + "T12:00:00");
+    if (!isNaN(d)) document.getElementById("hint").textContent =
+      "There’s no edition for " + d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" }) + ".";
+  }
+</script>
+</body>
+</html>

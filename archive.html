@@ -121,6 +121,10 @@
   .entry li::before { content: "\25AA"; position: absolute; left: 0; color: var(--spot); }
   .entry li .topic { font-style: italic; color: var(--muted); font-size: .8rem; }
   .entry .more { font-size: .9rem; font-weight: 700; }
+  .count { font-style: italic; color: var(--muted); margin: 1rem 0 0; }
+  .hit .meta { font-size: .85rem; color: var(--muted); margin: 0 0 .2rem; }
+  .hit .meta a { font-weight: 700; color: var(--ink); }
+  .hit .why { font-size: .92rem; font-style: italic; margin: 0 0 .5rem; }
   mark { background: color-mix(in srgb, var(--spot) 22%, transparent); color: inherit; padding: 0 .1em; }
   @media (max-width: 34rem) {
     .entry { grid-template-columns: 1fr; }
@@ -176,7 +180,7 @@
 
     <div class="tools" id="tools" hidden>
       <div class="search">
-        <label for="q">Search headlines</label>
+        <label for="q">Search all stories</label>
         <input id="q" type="search" placeholder="e.g. 49ers, BART, Artemis" autocomplete="off">
       </div>
       <div class="chips" id="chips"><span>Topic:</span></div>
@@ -205,10 +209,13 @@
     return n;
   }
   function link(href, text, cls) { const a = el("a", cls, text); a.href = href; return a; }
+  // Lowercase and drop accents so "el nino" finds "El Niño" (keeps string length for NFC text).
+  const fold = t => String(t).normalize("NFC").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   // Append text with matches of `q` wrapped in <mark>.
   function highlight(node, text, q) {
     if (!q) { node.append(text); return node; }
-    const lower = text.toLowerCase();
+    text = String(text).normalize("NFC");
+    const lower = fold(text).length === text.length ? fold(text) : text.toLowerCase();
     let i = 0, j;
     while ((j = lower.indexOf(q, i)) !== -1) {
       node.append(text.slice(i, j), el("mark", null, text.slice(j, j + q.length)));
@@ -219,16 +226,70 @@
   }
 
   let all = [], topic = "", query = "";
+  // Full-text index (search.json), loaded the first time someone searches.
+  let index = null, indexState = "idle";
+  function loadIndex() {
+    if (indexState !== "idle") return;
+    indexState = "loading";
+    fetch("search.json", { cache: "no-store" })
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(j => { index = j.editions || []; indexState = "ready"; render(); })
+      .catch(() => { indexState = "failed"; render(); });
+  }
+
+  function renderStories() {
+    const months = document.getElementById("months");
+    months.hidden = true;
+    const numberOf = Object.fromEntries(all.map(e => [e.date, e.no]));
+    const hits = [];
+    index.forEach(ed => (ed.stories || []).forEach(st => {
+      if (topic && st.c !== topic) return;
+      const hay = fold([st.t, st.s, st.w, st.src, st.c].filter(Boolean).join(" "));
+      if (hay.includes(query)) hits.push([ed, st]);
+    }));
+    if (!hits.length) { list.replaceChildren(el("p", "notice", "No stories match that search.")); return; }
+    const shown = hits.slice(0, 150);
+    const parts = [el("p", "count", hits.length + (hits.length === 1 ? " story matches" : " stories match") +
+      (hits.length > shown.length ? ". Showing the newest " + shown.length + "." : "."))];
+    shown.forEach(([ed, st]) => {
+      const row = el("article", "entry hit");
+      const d = parse(ed.d);
+      const dl = el("div", "dateline");
+      dl.append(
+        el("span", "dow", d.toLocaleDateString("en-US", { weekday: "short" })),
+        el("span", "day", String(d.getDate())),
+        el("span", "no", d.toLocaleDateString("en-US", { month: "short" }) + (numberOf[ed.d] ? " · No. " + numberOf[ed.d] : "")));
+      const body = el("div");
+      const meta = el("p", "meta");
+      meta.append(st.c + " · From the ", link(ed.f, fmtLong(ed.d)), " edition");
+      const h3 = el("h3");
+      const a = link(st.u, "");
+      a.target = "_blank"; a.rel = "noopener";
+      highlight(a, st.t, query);
+      h3.append(a);
+      body.append(meta, h3);
+      if (st.s) body.append(highlight(el("p", "summary"), st.s, query));
+      if (st.w && fold(st.w).includes(query)) {
+        const w = el("p", "why"); w.append("Why it matters: "); highlight(w, st.w, query); body.append(w);
+      }
+      if (st.src) body.append(highlight(el("p", "meta"), st.src, query));
+      row.append(dl, body);
+      parts.push(row);
+    });
+    list.replaceChildren(...parts);
+  }
 
   function matches(e) {
     const h = e.headlines || [];
     if (topic && !h.some(x => x.topic === topic)) return false;
     if (!query) return true;
     const hay = [e.summary || "", fmtLong(e.date)].concat(h.map(x => x.title + " " + (x.topic || ""))).join(" ").toLowerCase();
-    return hay.includes(query);
+    return fold(hay).includes(query);
   }
 
   function render() {
+    if (query && indexState === "loading") { list.replaceChildren(el("p", "notice", "Searching every story…")); return; }
+    if (query && indexState === "ready") { renderStories(); return; }
     const shown = all.filter(matches);
     const months = document.getElementById("months");
     months.querySelectorAll("a").forEach(a => a.remove());
@@ -320,7 +381,8 @@
     if (topics.length < 2) chips.hidden = true;
 
     document.getElementById("q").addEventListener("input", ev => {
-      query = ev.target.value.trim().toLowerCase();
+      query = fold(ev.target.value.trim());
+      if (query) loadIndex();
       render();
     });
     document.getElementById("tools").hidden = false;

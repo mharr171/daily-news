@@ -23,9 +23,10 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(ROOT / "scripts"))
 import build_feed  # noqa: E402
+import build_search  # noqa: E402
 
 # Files a normal edition may change. Anything else needs --allow-site-changes.
-EDITION_FILES = re.compile(r"^(posts\.json|feed\.xml|posts/\d{4}-\d{2}-\d{2}\.html)$")
+EDITION_FILES = re.compile(r"^(posts\.json|feed\.xml|search\.json|posts/\d{4}-\d{2}-\d{2}\.html)$")
 # Files that must never change.
 NEVER = {"CNAME"}
 
@@ -129,7 +130,31 @@ def check_feed():
         return
     path = ROOT / "feed.xml"
     if not path.exists() or path.read_text(encoding="utf-8") != expected:
-        fail("feed.xml is out of date. Run: python3 scripts/build_feed.py")
+        fail("feed.xml is out of date. Run: python3 scripts/build.py")
+    try:
+        expected = build_search.render()
+    except Exception as e:  # noqa: BLE001
+        fail(f"Couldn’t build the search index: {e}")
+        return
+    path = ROOT / "search.json"
+    if not path.exists() or path.read_text(encoding="utf-8") != expected:
+        fail("search.json is out of date. Run: python3 scripts/build.py")
+
+
+MIN_STORIES = 8
+EXTRA_SECTIONS = {"week-in-review", "month-in-review", "coming-up"}
+
+
+def check_size(pages):
+    """Warn when a new or changed edition has fewer topic stories than the minimum."""
+    for p in pages:
+        s = p.read_text(encoding="utf-8")
+        n = sum(body.count('<article class="story">')
+                for sid, body in re.findall(r'<section class="topic"(?: id="([^"]*)")?>(.*?)</section>', s, re.S)
+                if sid not in EXTRA_SECTIONS)
+        if n < MIN_STORIES:
+            warn(f"{p.name} has {n} topic stories; the task asks for at least {MIN_STORIES}. "
+                 "Add more if there’s strong news, and explain in the report if not.")
 
 
 def check_changed(files, allow_site):
@@ -194,6 +219,9 @@ def main():
     check_feed()
     files = changed_files()
     check_changed(files, args.allow_site_changes)
+
+    changed_pages = [ROOT / f for f in (files or []) if re.fullmatch(r"posts/\d{4}-\d{2}-\d{2}\.html", f)]
+    check_size([p for p in changed_pages if p.exists()])
 
     if not args.no_links:
         if args.links_for:

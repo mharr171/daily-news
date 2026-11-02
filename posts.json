@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-11",
+      "file": "posts/2026-10-11.html",
+      "summary": "Pope Leo XIV says he will have lung surgery this week, and Erie, Pennsylvania, mourns nine dead in a Friday shooting. The unbeaten 49ers play at Seattle today after the Valkyries swept their way into their first WNBA Finals, and Paramount’s takeover of Warner Bros. Discovery is now complete.",
+      "headlines": [
+        {
+          "title": "Pope Leo XIV to have surgery to remove a lung nodule",
+          "topic": "General news"
+        },
+        {
+          "title": "Nine dead after a shooting at a home in Erie, Pennsylvania",
+          "topic": "General news"
+        },
+        {
+          "title": "Today in sports: 49ers put their perfect record on the line in Seattle",
+          "topic": "Sports"
+        },
+        {
+          "title": "Valkyries sweep the Aces to reach their first WNBA Finals",
+          "topic": "Sports"
+        },
+        {
+          "title": "Paramount closes its Warner Bros. Discovery takeover, creating a new media giant",
+          "topic": "Culture"
+        }
+      ]
+    },
+    {
       "date": "2026-10-10",
       "file": "posts/2026-10-10.html",
       "summary": "Hurricane Isaias hit the Florida Panhandle Friday night, the season’s first and latest-forming Atlantic hurricane in more than a century, while powerful twin quakes shook Panama. Closer to home, a new state law lets San Mateo County bar kids under 12 from some e-bikes, the 49ers finalize an injury-thinned lineup for Seattle, and SpaceX launched military satellites from Vandenberg overnight.",

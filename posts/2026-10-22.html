@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thursday, October 22, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 22: Thursday, October 22, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-10-22.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Thursday, October 22, 2026 | Live Full Stack">
+<meta property="og:description" content="San Mateo County supervisors declared a local emergency on Tuesday to get ready for a strong El Niño winter, as the state touts millions of sandbags already in place. A federal judge limited the government’s hunt for noncitizen voters in California and eight other states, and the Warriors opened their season with a 22-point loss to the Lakers. In tech, AI tools helped uncover decades-old PHP flaws that put a huge share of websites at risk.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-22.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body data-date="2026-10-22">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 22</p>
+      <h1>Thursday, October 22, 2026</h1>
+      <p class="summary">San Mateo County supervisors declared a local emergency on Tuesday to get ready for a strong El Niño winter, as the state touts millions of sandbags already in place. A federal judge limited the government’s hunt for noncitizen voters in California and eight other states, and the Warriors opened their season with a 22-point loss to the Lakers. In tech, AI tools helped uncover decades-old PHP flaws that put a huge share of websites at risk.</p>
+    </header>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format:
+         <article class="story">
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.almanacnews.com/environment/2026/10/21/san-mateo-county-declares-el-nino-state-of-emergency-to-prepare-for-winter-storms/" target="_blank" rel="noopener">San Mateo County declares a local emergency to get ahead of El Niño storms</a></h3>
+          <p>The Board of Supervisors declared a local emergency on Tuesday so the county’s emergency management office can prepare for a strong-to-very-strong El Niño with fewer bureaucratic hurdles. A new task force will coordinate with cities and agencies through March on risks such as flooding, landslides, coastal erosion, and power outages. Residents are urged to check their flood risk and sign up for SMC Alert, and most cities have opened sandbag sites.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula cities including Redwood City and Menlo Park flooded in the 2022–23 storms, and early preparation can speed help and supplies this winter.</p>
+          <p class="source">The Almanac, Oct 21, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.ci.millbrae.ca.us/m/NewsFlash/Home/Detail/179" target="_blank" rel="noopener">Millbrae invites residents to test paid-parking options tonight</a></h3>
+          <p>Millbrae is drafting a downtown parking management plan and will let residents try two payment systems tonight from 5:30 to 8:30 p.m., one in the Chetcuti Room and one in the library. Rates, hours, zones, and equipment are still undecided and will be set at public City Council meetings. Parking revenue would go into a dedicated fund that can only be spent on parking.</p>
+          <p class="why"><strong>Why it matters:</strong> Paid parking would change the cost of shopping, dining, and commuting downtown, and resident feedback can shape the final plan.</p>
+          <p class="source">City of Millbrae, Oct 22, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://kesq.com/news/national-politics/cnn-us-politics/2026/10/21/judge-curbs-trump-administrations-hunt-for-noncitizen-voters-in-some-states-citing-flawed-data/" target="_blank" rel="noopener">Judge limits DHS’s search for noncitizen voters in California and eight other states</a></h3>
+          <p>Federal Judge Araceli Martínez-Olguín ordered the Department of Homeland Security on Wednesday to halt field steps such as interviews when it believes the target could be a U.S. citizen, citing flawed data known to include citizens. The order covers California and eight other states, takes effect Friday afternoon to allow an appeal, and lasts until after the midterms. Voting rights groups argued the effort was scaring citizens away from voting.</p>
+          <p class="why"><strong>Why it matters:</strong> The ruling is meant to protect eligible California voters, including naturalized citizens on the Peninsula, from being questioned before Nov. 3.</p>
+          <p class="source">CNN (via KESQ), Oct 21, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.gov.ca.gov/2026/10/21/governor-newsom-slams-trumps-disaster-retreat-as-california-prepares-for-dangerous-el-nino-storms/" target="_blank" rel="noopener">California stages millions of sandbags and criticizes a federal pullback on disasters</a></h3>
+          <p>During Flood Preparedness Week, Governor Newsom’s office said the state has positioned 6.2 million sandbags, more than 52,000 feet of portable flood barriers, and 400,000 tons of rock at 70 sites ahead of El Niño. The office accused the Trump administration and FEMA of leaving states to handle disasters alone, without citing specific cuts. Residents are urged to use the state’s MyHazards tool to check flood risk at their address.</p>
+          <p class="why"><strong>Why it matters:</strong> State supplies and levee work back up local crews if Bay Area storms overwhelm county resources this winter.</p>
+          <p class="source">Office of the Governor, Oct 21, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://abc30.com/post/luka-doncic-embraces-lead-role-pairs-kessler-dominate-warriors/19968243/" target="_blank" rel="noopener">Today in sports: Lakers rout the Warriors in the opener; Valkyries fall behind in the Finals</a></h3>
+          <p>The Lakers beat the Warriors 127–105 on Wednesday as Luka Dončić scored 28 and Walker Kessler went 12-for-12 for 26; Stephen Curry led Golden State with 23, 16 of them in the first quarter, while Jimmy Butler III, Brandin Podziemski, Kristaps Porziņģis, and Moses Moody sat out hurt. The Valkyries lost Game 3 of the WNBA Finals 97–71 in Atlanta and trail 2–1, with Game 4 there on Saturday. Up next: the Warriors’ home opener against Memphis on Friday, the Quakes at FC Dallas on Saturday, and the 6–0 49ers at Atlanta on Sunday.</p>
+          <p class="source">ABC30, Oct 22, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://kuwaittimes.com/article/52122/sports/doncics-lakers-rout-warriors-edwards-spoils-gianniss-heat-debut/" target="_blank" rel="noopener">NBA opening night: Edwards spoils Giannis’s Heat debut as stars return</a></h3>
+          <p>Anthony Edwards scored 45 as Minnesota beat Miami 131–106, spoiling Giannis Antetokounmpo’s 35-point Heat debut. Anthony Davis had 34 in his first game for Washington, Tyrese Haliburton returned from his Achilles injury to lift Indiana past New Orleans, and Kawhi Leonard scored 23 in his Toronto return. Kyrie Irving played for the first time in more than 19 months in Dallas’s loss to Houston.</p>
+          <p class="source">Kuwait Times, Oct 22, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2292394/what-to-watch-october-22-2026-tv-shows-movies/" target="_blank" rel="noopener">Nobody Wants This season 3 arrives on Netflix, and David Tennant joins Time</a></h3>
+          <p>Netflix releases all 10 episodes of Nobody Wants This season 3 today, as Joanne and Noah move in together. BritBox premieres season 3 of the prison drama Time with David Tennant and wraps season 1 of Cooper and Fry. Hulu also drops the true-crime series Swipe Right on the Devil.</p>
+          <p class="source">TVLine, Oct 22, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sfstandard.com/pacific-standard-time/2026/10/21/pst-tech-movies-roundup/" target="_blank" rel="noopener">SF critic says no tech movie this season tops You Can See Everything</a></h3>
+          <p>The San Francisco Standard’s PST column argues that Nathan Fielder and Lance Oppenheim’s documentary You Can See Everything outclasses this fall’s wave of Silicon Valley films, including Aaron Sorkin’s The Social Reckoning and Alex Gibney’s four-hour Musk. The writer found the film hard to watch but impossible to look away from. The column pairs with a podcast episode built around a three-film tech-movie marathon.</p>
+          <p class="source">The San Francisco Standard, Oct 21, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.space.com/space-exploration/artemis/when-will-spacex-and-blue-origin-fly-to-the-moon-nasa-reveals-lunar-lander-timelines-and-an-artemis-iii-update" target="_blank" rel="noopener">NASA lays out when SpaceX and Blue Origin landers should fly to the moon</a></h3>
+          <p>NASA’s lander program targets Artemis III for the third quarter of 2027, when four astronauts will test docking with both companies’ landers in Earth orbit, ahead of a crewed landing on Artemis IV in early 2028. SpaceX aims for an uncrewed Starship lunar landing demonstration by late 2027, and Blue Origin plans an uncrewed Blue Moon Mark 2 landing in early 2028. NASA scheduled a briefing for Friday on speeding up Artemis.</p>
+          <p class="source">Space.com, Oct 21, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/" target="_blank" rel="noopener">AI helps uncover decades-old PHP flaws affecting much of the web</a></h3>
+          <p>The NSA warned Wednesday of two critical flaws in PHP, the language behind a large share of websites, that could let attackers reach a server’s files or database. Researchers at Calif, using OpenAI’s GPT-5.6 Sol, and Google’s Wiz team found the bugs, which date back to PHP 5, and patches are already out. Site owners, including WordPress users, should update to the current PHP version or work with their host.</p>
+          <p class="source">TechCrunch, Oct 21, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/" target="_blank" rel="noopener">Walmart opens its store to AI shopping agents as Amazon blocks them</a></h3>
+          <p>Walmart launched Agent Gateway, which lets approved AI assistants search its inventory and buy items for shoppers without seeing their payment details. Starting next month, each agent gets its own profile in a customer’s account, with options to approve every purchase or set a spending limit. The approach contrasts with Amazon, which has begun blocking AI agents from shopping on its site.</p>
+          <p class="source">TechCrunch, Oct 21, 2026</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

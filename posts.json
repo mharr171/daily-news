@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-22",
+      "file": "posts/2026-10-22.html",
+      "summary": "San Mateo County supervisors declared a local emergency on Tuesday to get ready for a strong El Niño winter, as the state touts millions of sandbags already in place. A federal judge limited the government’s hunt for noncitizen voters in California and eight other states, and the Warriors opened their season with a 22-point loss to the Lakers. In tech, AI tools helped uncover decades-old PHP flaws that put a huge share of websites at risk.",
+      "headlines": [
+        {
+          "title": "San Mateo County declares a local emergency to get ahead of El Niño storms",
+          "topic": "General news"
+        },
+        {
+          "title": "Judge limits DHS’s search for noncitizen voters in California and eight other states",
+          "topic": "General news"
+        },
+        {
+          "title": "Today in sports: Lakers rout the Warriors in the opener; Valkyries fall behind in the Finals",
+          "topic": "Sports"
+        },
+        {
+          "title": "AI helps uncover decades-old PHP flaws affecting much of the web",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "NASA lays out when SpaceX and Blue Origin landers should fly to the moon",
+          "topic": "Science & tech"
+        }
+      ]
+    },
+    {
       "date": "2026-10-21",
       "file": "posts/2026-10-21.html",
       "summary": "San Mateo County’s district attorney says he won’t criminally charge ousted Sheriff Christina Corpus, and a new CNN poll puts President Trump’s approval at a record low two weeks before the midterms. The 49ers are 6–0 after Monday’s win over Washington as the Warriors open their season tonight in Los Angeles, and SpaceX says it will try to catch both halves of Starship on its next flight.",

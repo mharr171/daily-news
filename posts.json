@@ -226,6 +226,33 @@
           "topic": "Culture"
         }
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "file": "posts/2026-10-01.html",
+      "summary": "Gov. Gavin Newsom closed out his final bill-signing season with new limits on addictive social media features for teens, a child marriage ban and a slate of AI rules, while forecasters say Bay Area warmth could last into mid-October. Nationally, the Supreme Court let third-country deportations continue and the Pentagon confirmed the last U.S. troops have left Iraq. The unbeaten 49ers get ready for Denver, and SpaceX’s Crew-13 is set to launch this morning.",
+      "headlines": [
+        {
+          "title": "Newsom wraps up his last bill-signing season as governor",
+          "topic": "General news"
+        },
+        {
+          "title": "Supreme Court lets third-country deportations resume for now",
+          "topic": "General news"
+        },
+        {
+          "title": "Last U.S. troops leave Iraq, ending the anti-ISIS mission there",
+          "topic": "General news"
+        },
+        {
+          "title": "SpaceX Crew-13 set to launch to the space station this morning",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "Today in sports: unbeaten 49ers turn to Denver",
+          "topic": "Sports"
+        }
+      ]
     }
   ]
 }

@@ -228,6 +228,33 @@
       ]
     },
     {
+      "date": "2026-10-08",
+      "file": "posts/2026-10-08.html",
+      "summary": "SamTrans is marking 50 years of Peninsula service from its new Millbrae headquarters, and President Trump revisited his remarks about Iran striking California cities at a Texas rally. NASA and the Energy Department signed a pact to speed nuclear power for the Moon, Crew-12 splashed down off Southern California, and Bruno Mars headlines Levi’s Stadium this weekend.",
+      "headlines": [
+        {
+          "title": "SamTrans marks 50 years of Peninsula bus service from its new Millbrae headquarters",
+          "topic": "General news"
+        },
+        {
+          "title": "Trump revisits his Iran remarks about California cities, saying the U.S. won’t let it happen",
+          "topic": "General news"
+        },
+        {
+          "title": "Juszczyk avoided an ACL tear, but the 49ers lose tight end Jake Tonges for the season",
+          "topic": "Sports"
+        },
+        {
+          "title": "NASA and the Energy Department sign a pact to speed nuclear power for the Moon",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "Bruno Mars plays Levi’s Stadium this weekend as October’s Bay Area concert run peaks",
+          "topic": "Culture"
+        }
+      ]
+    },
+    {
       "date": "2026-10-07",
       "file": "posts/2026-10-07.html",
       "summary": "The Iran war has pushed Muni’s fuel costs up 58%, and President Trump says he may seek a federal gas tax holiday as prices squeeze drivers. Fleet Week is underway with robotaxis barred from the waterfront this weekend, the Warriors routed the Lakers, and NASA’s Crew-12 left the space station this morning for a splashdown off California.",

@@ -126,27 +126,27 @@
     {
       "date": "2026-10-27",
       "file": "posts/2026-10-27.html",
-      "summary": "Microsoft offered voluntary buyouts to about a quarter of its workforce, and high tides flooded low-lying roads around the bay, with more expected this week. California’s ballot deadlines are closing in, and a river otter turned up on the San Mateo coast for the first time in more than a century. The Warriors got their first win, and Star Trek actor Walter Koenig died at 90.",
+      "summary": "High tides flooded bayside roads in Marin on Monday, and a coastal flood advisory runs through Thursday for low spots around the bay. With a week to go, California’s mail ballots must be postmarked by Election Day, and Microsoft offered voluntary buyouts to about 60,000 workers. The Warriors got their first win in Denver, and Star Trek’s Walter Koenig has died at 90.",
       "headlines": [
+        {
+          "title": "King tides flood bayside roads, with an advisory through Thursday",
+          "topic": "General news"
+        },
         {
           "title": "Microsoft offers voluntary buyouts to about 60,000 employees",
           "topic": "General news"
         },
         {
-          "title": "King tides flood bayside roads, with more high water due this week",
-          "topic": "General news"
-        },
-        {
-          "title": "A river otter returns to the San Mateo coast after more than 100 years",
-          "topic": "General news"
-        },
-        {
-          "title": "Warriors earn their first win, routing Denver 134–114",
+          "title": "Today in sports: Warriors rout Denver for their first win",
           "topic": "Sports"
         },
         {
-          "title": "Star Trek’s Walter Koenig, who played Chekov, dies at 90",
+          "title": "Walter Koenig, Star Trek’s Chekov, dies at 90",
           "topic": "Culture"
+        },
+        {
+          "title": "OpenAI releases GPT-6.1 Terra for writing and computer use",
+          "topic": "Science & tech"
         }
       ]
     },

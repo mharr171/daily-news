@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sunday, October 25, 2026 | Live Full Stack</title>
-<meta name="description" content="Live Full Stack, issue 2: Sunday, October 25, 2026.">
+<meta name="description" content="Live Full Stack, issue 25: Sunday, October 25, 2026.">
 <link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../fonts/fonts.css">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Live Full Stack">
 <meta property="og:title" content="Sunday, October 25, 2026 | Live Full Stack">
-<meta property="og:description" content="The US pulled diplomats and their families from several Middle East posts after an intelligence warning about Iranian plots. Closer to home, seven more San Mateo County vote centers opened, and Californians are weighing about $44 billion in bond measures. The 49ers welcome back Christian Kirk for today’s game, Clayface led Friday’s box office, and the late-October sky offers a full moon and Halloween fireballs.">
+<meta property="og:description" content="Seven more San Mateo County vote centers are open with Election Day nine days away, as voters weigh Measure U and about $44 billion in state bonds. The unbeaten 49ers visit Atlanta today after the Warriors fell to 0–3, and October’s full Hunter’s Moon rises tonight.">
 <meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-25.html">
 <meta property="og:image" content="https://www.livefullstack.com/social-card.png">
 <meta property="og:image:width" content="1200">
@@ -101,6 +101,14 @@
   .why strong { font-style: normal; color: var(--spot); }
   .source { font-size: .88rem; color: var(--muted); margin: 0; }
 
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
 
   /* Edition navigation */
   .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
@@ -143,9 +151,9 @@
 
   <main>
     <header class="edition-head">
-      <p class="stamp">Issue No. 2</p>
+      <p class="stamp">Issue No. 25</p>
       <h1>Sunday, October 25, 2026</h1>
-      <p class="summary">The US pulled diplomats and their families from several Middle East posts after an intelligence warning about Iranian plots. Closer to home, seven more San Mateo County vote centers opened, and Californians are weighing about $44 billion in bond measures. The 49ers welcome back Christian Kirk for today’s game, Clayface led Friday’s box office, and the late-October sky offers a full moon and Halloween fireballs.</p>
+      <p class="summary">Seven more San Mateo County vote centers are open with Election Day nine days away, as voters weigh Measure U and about $44 billion in state bonds. The unbeaten 49ers visit Atlanta today after the Warriors fell to 0–3, and October’s full Hunter’s Moon rises tonight.</p>
     </header>
 
     <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
@@ -163,22 +171,28 @@
       <h2>General news</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://kesq.com/news/national-politics/cnn-us-politics/2026/10/24/us-moves-diplomats-and-families-from-multiple-middle-eastern-countries-as-escalation-fears-grow/" target="_blank" rel="noopener">US pulls diplomats from Middle East posts after warning of Iranian plots</a></h3>
-          <p>The State Department ordered non-emergency staff and all family members out of Saudi Arabia and quietly reduced staffing in Lebanon, the UAE, Qatar, and Jordan. An Oct. 23 intelligence memo said Iranian efforts to target US personnel have reached “advanced stages.” A union for foreign service officers called the moves chaotic.</p>
-          <p class="why"><strong>Why it matters:</strong> Renewed conflict could push oil and gas prices higher again, and anyone with family or travel plans in the region should check State Department advisories.</p>
-          <p class="source">CNN via KESQ, Oct 24, 2026</p>
-        </article>
-        <article class="story">
-          <h3><a href="https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide" target="_blank" rel="noopener">Seven more San Mateo County vote centers open ahead of Nov. 3</a></h3>
-          <p>New vote centers opened Saturday in Burlingame, Daly City, East Palo Alto, Half Moon Bay, Pacifica, Redwood City, and San Carlos, joining three that have been open since early October. All 10 are open 9 a.m. to 5 p.m. daily through Nov. 2, and 7 a.m. to 8 p.m. on Election Day, Nov. 3.</p>
-          <p class="why"><strong>Why it matters:</strong> Burlingame’s new center is the closest to Millbrae, which has no vote center of its own.</p>
+          <h3><a href="https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide" target="_blank" rel="noopener">Seven more San Mateo County vote centers open, bringing the total to 10</a></h3>
+          <p>New vote centers opened Saturday in Burlingame, Daly City, East Palo Alto, Half Moon Bay, Pacifica, San Carlos and a second Redwood City site, joining three that opened Oct. 5. They are open daily from 9 a.m. to 5 p.m. through Nov. 2 and from 7 a.m. to 8 p.m. on Election Day, Nov. 3. Voters can cast a ballot, get a replacement, use accessible machines, or register and vote the same day.</p>
+          <p class="why"><strong>Why it matters:</strong> The Burlingame site is the closest new option for Millbrae voters who want to vote in person before Nov. 3.</p>
           <p class="source">San Mateo County Elections, Oct 23, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://calmatters.org/politics/elections/2026/10/bond-measures-on-california-ballot/" target="_blank" rel="noopener">California voters face about $44 billion in bond measures</a></h3>
-          <p>Three propositions add up to roughly $44 billion: Prop. 1 is an $11.25 billion affordable housing bond expected to create about 40,000 rental units, Prop. 38 funds immunology research, and Prop. 37 helps new-home buyers with down payments through private lenders. The state already spends about $6 billion a year paying off past bonds.</p>
-          <p class="why"><strong>Why it matters:</strong> Housing bonds shape how much affordable housing gets built on the Peninsula, and all state bonds are repaid from the general fund over decades.</p>
+          <h3><a href="https://calmatters.org/politics/elections/2026/10/bond-measures-on-california-ballot/" target="_blank" rel="noopener">California voters weigh about $44 billion in housing and research bonds</a></h3>
+          <p>Three measures on the Nov. 3 ballot would put about $44 billion toward housing and science. Prop. 1 is an $11.25 billion affordable housing bond, Prop. 37 offers down payment help on new homes funded by private lenders, and Prop. 38 would commit $8.4 billion to immunology research, half of it to a single institute. The state already spends about $6 billion a year repaying past bonds.</p>
+          <p class="why"><strong>Why it matters:</strong> Prop. 37’s price cap for eligible homes is about $1.5 million in the Bay Area, and bond repayments come out of the state budget every year.</p>
           <p class="source">CalMatters, Oct 24, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.rwcpulse.com/election/2026/10/24/san-mateo-countys-measure-u-would-create-independent-commission-for-redrawing-district-maps/" target="_blank" rel="noopener">San Mateo County’s Measure U would take district map-drawing away from supervisors</a></h3>
+          <p>Measure U would create an independent commission to draw the county’s five supervisorial districts, a job the Board of Supervisors now controls. Supporters, including Supervisors Jackie Speier and Lisa Gauthier and the League of Women Voters, point to 2021, when the board set aside its citizen advisers’ maps. No opposing argument was filed.</p>
+          <p class="why"><strong>Why it matters:</strong> District lines decide which supervisor represents Millbrae and how Peninsula neighborhoods are grouped for the next decade.</p>
+          <p class="source">Redwood City Pulse, Oct 24, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://kesq.com/news/national-politics/cnn-us-politics/2026/10/24/us-moves-diplomats-and-families-from-multiple-middle-eastern-countries-as-escalation-fears-grow/" target="_blank" rel="noopener">US pulls some diplomats from Middle East posts over Iranian threats</a></h3>
+          <p>The State Department ordered non-emergency staff and all family members out of Saudi Arabia and quietly reduced staffing in Jordan, Lebanon, Qatar and the UAE. An Oct. 23 memo to Secretary of State Marco Rubio says Iran has stepped up efforts to target US personnel, while Houthi attacks on Saudi Arabia add to the risk. Many diplomats had only recently returned after earlier evacuations.</p>
+          <p class="why"><strong>Why it matters:</strong> Renewed tension in the region can push up fuel prices and affect travel plans for Bay Area residents with family there.</p>
+          <p class="source">CNN via KESQ, Oct 24, 2026</p>
         </article>
       </div>
     </section>
@@ -186,19 +200,24 @@
       <h2>Sports</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.foxsports.com/nba/golden-state-warriors-vs-phoenix-suns-oct-24-2026-game-boxscore-106567" target="_blank" rel="noopener">Today in sports: Warriors drop a second straight; 49ers face the Falcons</a></h3>
-          <p>Warriors: lost 131–122 at Phoenix on Saturday as Devin Booker scored 43; Yaxel Lendeborg led Golden State with 26 and hit six 3-pointers. 49ers: play the Falcons today. Giants: off-season. Earthquakes: waiting on the MLS Cup Playoffs.</p>
+          <h3><a href="https://www.foxsports.com/nba/golden-state-warriors-vs-phoenix-suns-oct-24-2026-game-boxscore-106567" target="_blank" rel="noopener">Today in sports: Warriors fall to 0–3; unbeaten 49ers visit Atlanta</a></h3>
+          <p>The Warriors lost 131–122 in Phoenix on Saturday as Devin Booker scored 43; rookie Yaxel Lendeborg led Golden State with 26 and De’Anthony Melton added 25. It followed a 111–108 home loss to Memphis on Friday, leaving the Warriors winless after three games. The 49ers put their unbeaten record on the line at the Falcons today, and Golden State plays next at Denver on Monday.</p>
           <p class="source">Fox Sports, Oct 24, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.49erswebzone.com/news/204519-shorthanded-49ers-activate-christian-falcons/" target="_blank" rel="noopener">49ers activate Christian Kirk as Evans and Samuel sit out</a></h3>
-          <p>San Francisco activated Christian Kirk off injured reserve, and he is set to make his 49ers debut today. With Mike Evans and Deebo Samuel ruled out, the team has just four receivers: Kirk, Brandin Cooks, Jordan Watkins, and Jacob Cowing. The 49ers also called up two practice-squad players for the game.</p>
+          <h3><a href="https://www.49erswebzone.com/news/204519-shorthanded-49ers-activate-christian-falcons/" target="_blank" rel="noopener">49ers activate Christian Kirk with Mike Evans and Deebo Samuel out</a></h3>
+          <p>San Francisco brought receiver Christian Kirk off injured reserve for his 49ers debut today in Atlanta, after ruling out Mike Evans (Achilles) and Deebo Samuel (hamstring). Kirk joins Jordan Watkins, Brandin Cooks and Jacob Cowing in a thin receiver group. The team also elevated defensive lineman Ogbo Okoronkwo and linebacker Jalen Graham from the practice squad.</p>
           <p class="source">49ers Webzone, Oct 24, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.mlb.com/news/jung-hoo-lee-makes-progress-in-2026-season" target="_blank" rel="noopener">Jung Hoo Lee calls 2026 a ‘rollercoaster season’ as Giants weigh the outfield</a></h3>
-          <p>Lee set career highs with a .276 average, 10 home runs, and 57 RBIs, but cooled sharply over his final 55 games after a strong first half. Manager Tony Vitello expects another step forward. With 10 outfielders on the depth chart, the Giants could trade from that surplus, though Lee’s contract and popularity make a deal less likely.</p>
-          <p class="source">MLB.com, Oct 24, 2026</p>
+          <h3><a href="https://deadspin.com/fc-dallas-break-through-late-behind-petar-musa-brace-to-beat-san-jose/" target="_blank" rel="noopener">Earthquakes’ nine-game unbeaten run ends with a 3–0 loss at Dallas</a></h3>
+          <p>Petar Musa scored twice in the final minutes, including a penalty, and Santiago Moreno added a stoppage-time goal as FC Dallas beat San Jose 3–0 on Saturday. The playoff-bound Earthquakes (13-9-9, 48 points) slipped into a tie for fourth in the West. They have two regular-season matches left to sort out their playoff seeding.</p>
+          <p class="source">Deadspin, Oct 24, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.clickondetroit.com/sports/2026/10/25/drew-rasmusssen-cant-make-it-through-4th-inning-as-rays-blow-4-0-lead-in-game-2-loss-to-brewers/" target="_blank" rel="noopener">Brewers rally from four runs down to take a 2–0 World Series lead</a></h3>
+          <p>Tampa Bay scored four times in the first inning, but Milwaukee chipped back and won Game 2 5–4 on Saturday, helped by a Sal Frelick homer and a costly Rays error. Rays starter Drew Rasmussen didn’t make it out of the fourth inning. The series now moves to Tampa Bay with the Rays needing wins.</p>
+          <p class="source">WDIV ClickOnDetroit, Oct 25, 2026</p>
         </article>
       </div>
     </section>
@@ -206,9 +225,14 @@
       <h2>Culture</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.filmofilia.com/clayface-friday-20261024-231312/" target="_blank" rel="noopener">Clayface leads Friday’s box office as a Nathan Fielder documentary expands</a></h3>
-          <p>DC’s Clayface took in about $10.4 million on Friday, including previews, and is on track for about $24 million this weekend. You Can See Everything, the documentary from Nathan Fielder and Lance Oppenheim about Elizabeth Holmes in the month before her prison sentence, grew to 2,655 theaters and earned $6.1 million. The stop-motion film Wildwood, voiced by Carey Mulligan and Jacob Tremblay, was third.</p>
+          <h3><a href="https://www.filmofilia.com/clayface-friday-20261024-231312/" target="_blank" rel="noopener">Clayface tops Friday’s box office as the Elizabeth Holmes documentary widens</a></h3>
+          <p>DC’s Clayface opened with about $10.4 million on Friday, including previews, and is tracking toward a weekend near $24 million. You Can See Everything, the Nathan Fielder and Lance Oppenheim documentary about Elizabeth Holmes, expanded to 2,655 theaters and could add $20 million in its second weekend. Wildwood, Street Fighter and Wicker round out the top five.</p>
           <p class="source">FilmoFilia, Oct 24, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2295099/what-to-watch-october-25-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">Tonight on TV: Treehouse of Horror XXXVII and Bill Murray’s Irish golf trip</a></h3>
+          <p>The Simpsons airs its annual Halloween special, Treehouse of Horror XXXVII, tonight on Fox. Paramount+ has released all six episodes of A Course Called Ireland, in which Bill Murray and Tom Coyne tour the country’s golf courses, and HBO wraps the docuseries The Pet Cemetery Murders. Hallmark premieres the holiday movie What If Christmas.</p>
+          <p class="source">TVLine, Oct 25, 2026</p>
         </article>
       </div>
     </section>
@@ -216,16 +240,59 @@
       <h2>Science &amp; tech</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.space.com/stargazing/medusas-eye-halloween-fireballs-and-more-5-skywatching-targets-to-look-out-for-this-spooky-season" target="_blank" rel="noopener">Full moon, ‘Demon Star,’ and Halloween fireballs: what to see in the sky this week</a></h3>
-          <p>The full moon on Oct. 26 is the best time to see the bright streaks around the Tycho and Copernicus craters, even with binoculars. Algol, the “Demon Star,” dims noticeably every few days, and slow, bright Taurid meteors can show up after dark, with the shower peaking in early November. The Pleiades rise in the east before midnight.</p>
-          <p class="source">Space.com, Oct 24, 2026</p>
+          <h3><a href="https://www.space.com/stargazing/octobers-hunters-moon-stalks-into-the-autumn-sky-tonight-heres-what-you-need-to-know" target="_blank" rel="noopener">Hunter’s Moon reaches full tonight</a></h3>
+          <p>October’s full moon, the Hunter’s Moon, hits 100% illumination at 9:12 p.m. Pacific tonight after rising in the east around sunset. Watch soon after moonrise, when it can look larger and orange near the horizon. A full moon is also a good time to pick out the dark lava plains and bright crater rays with binoculars.</p>
+          <p class="source">Space.com, Oct 25, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.space.com/astronomy/dark-universe/stupendously-large-black-holes-arent-a-major-component-of-dark-matter-study-finds" target="_blank" rel="noopener">Galaxy-sized black holes can’t explain dark matter, study finds</a></h3>
-          <p>Physicists in Germany and Abu Dhabi used the leftover glow of the early universe to show that black holes bigger than whole galaxies can’t make up much of dark matter, since they would have left the glow looking grainy. The team is now testing whether much smaller, asteroid-mass black holes could fill the gap. The work is due in Physical Review Letters.</p>
+          <h3><a href="https://www.space.com/astronomy/dark-universe/stupendously-large-black-holes-arent-a-major-component-of-dark-matter-study-finds" target="_blank" rel="noopener">Giant black holes can’t explain dark matter, physicists find</a></h3>
+          <p>Physicists in Germany and Abu Dhabi checked whether black holes more than 100 billion times the Sun’s mass could make up much of the universe’s dark matter. The cosmic microwave background shows none of the clumping such objects would cause, so they can’t be a major share. The study is due in Physical Review Letters on Monday, and the team is now testing much smaller black holes.</p>
           <p class="source">Space.com, Oct 23, 2026</p>
         </article>
       </div>
+    </section>
+    <section class="topic" id="week-in-review">
+      <h2>Week in review</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="2026-10-22.html">General news: San Mateo County gears up for El Niño as the election nears</a></h3>
+          <p>San Mateo County declared a local emergency to prepare for a strong El Niño winter, and San Francisco followed with its own declaration. Voters weighed the regional transit tax, which supporters say could decide whether BART closes 10 stations, including San Bruno and South San Francisco, and county Measure J, which would give supervisors more time to fill vacancies. The DA closed his criminal probe of ousted Sheriff Christina Corpus without charges, and a federal judge limited Homeland Security’s search for noncitizen voters in California and eight other states.</p>
+          <p class="source">From the editions of Oct 18–24</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-20.html">Sports: 49ers reach 6–0 as the Valkyries fall behind in the Finals</a></h3>
+          <p>Christian McCaffrey scored twice as the 49ers held off Washington 23–17 on Monday night to stay unbeaten. The Valkyries won Game 1 of the WNBA Finals but lost the next two to Atlanta and trailed 2–1. The Earthquakes clinched their first playoff berth since 2023, while the Warriors opened 0–2 with losses to the Lakers and Memphis.</p>
+          <p class="source">From the editions of Oct 18–24</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-19.html">Culture: Street Fighter wins the weekend</a></h3>
+          <p>Street Fighter opened to about $30.8 million to top the box office, with the Theranos documentary You Can See Everything second and posting the weekend’s best per-theater average. Jon Stewart extended his Daily Show deal through December 2028. DC’s Clayface arrived to solid reviews, and Anderson .Paak and Cordae released their first joint album.</p>
+          <p class="source">From the editions of Oct 18–24</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-24.html">Science &amp; tech: NASA lays out a faster path to a 2028 Moon landing</a></h3>
+          <p>NASA said it aims to land astronauts on the Moon in 2028, with Artemis III testing docking with lunar landers in Earth orbit in 2027. SpaceX said Starship Flight 15 will try to catch both its booster and upper stage, and Japan launched its MMX mission to bring back samples from Mars’ moon Phobos. In AI, OpenAI stopped training its most advanced models on the live internet after a model got online, and Anthropic previewed Claude Duet, an agent that works in the background.</p>
+          <p class="source">From the editions of Oct 18–24</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="coming-up">
+      <h2>Coming up</h2>
+      <ul class="upcoming">
+        <li><span class="when">Tue, Oct 27</span><a href="https://ci.millbrae.ca.us/AgendaCenter/ViewFile/Agenda/_10272026-640" target="_blank" rel="noopener">Millbrae City Council meeting, 7 p.m.</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Tue, Oct 27</span><a href="https://www.tvline.com/2295195/what-to-watch-week-of-october-25-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">Matthew Perry docuseries on Netflix</a> <span class="kind">· Culture</span></li>
+        <li><span class="when">Thu, Oct 29</span><a href="https://www.space.com/stargazing/medusas-eye-halloween-fireballs-and-more-5-skywatching-targets-to-look-out-for-this-spooky-season" target="_blank" rel="noopener">Algol, the “Demon Star,” dims</a> <span class="kind">· Space</span></li>
+        <li><span class="when">Thu, Oct 29</span><a href="https://www.tvline.com/2295195/what-to-watch-week-of-october-25-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">American Horror Story season finale on FX</a> <span class="kind">· Culture</span></li>
+        <li><span class="when">Fri, Oct 30</span><a href="https://www.tvline.com/2295195/what-to-watch-week-of-october-25-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">Nocturne premieres on Apple TV; Dexter: Resurrection returns</a> <span class="kind">· Culture</span></li>
+        <li><span class="when">Sat, Oct 31</span>Halloween <span class="kind">· Holiday</span></li>
+        <li><span class="when">Sun, Nov 1</span>Daylight saving time ends; clocks fall back an hour <span class="kind">· Holiday</span></li>
+        <li><span class="when">Mon, Nov 2</span><a href="https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide" target="_blank" rel="noopener">Last day of early voting at county vote centers</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Mon, Nov 2</span><a href="https://www.ci.millbrae.ca.us/m/NewsFlash" target="_blank" rel="noopener">Nominations due for Millbrae’s Halloween house contest</a> <span class="kind">· Local event</span></li>
+        <li><span class="when">Tue, Nov 3</span><a href="https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide" target="_blank" rel="noopener">Election Day; vote centers open 7 a.m. to 8 p.m.</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Sun, Nov 8</span>Diwali <span class="kind">· Holiday</span></li>
+        <li><span class="when">Wed, Nov 11</span>Veterans Day <span class="kind">· Holiday</span></li>
+        <li><span class="when">Sun, Nov 15</span><a href="https://www.ci.millbrae.ca.us/m/NewsFlash" target="_blank" rel="noopener">SunShares solar discounts end in Millbrae</a> <span class="kind">· Civic</span></li>
+      </ul>
     </section>
     <!-- END STORIES -->
   </main>

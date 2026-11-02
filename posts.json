@@ -176,27 +176,23 @@
     {
       "date": "2026-10-25",
       "file": "posts/2026-10-25.html",
-      "summary": "The US pulled diplomats and their families from several Middle East posts after an intelligence warning about Iranian plots. Closer to home, seven more San Mateo County vote centers opened, and Californians are weighing about $44 billion in bond measures. The 49ers welcome back Christian Kirk for today’s game, Clayface led Friday’s box office, and the late-October sky offers a full moon and Halloween fireballs.",
+      "summary": "Seven more San Mateo County vote centers are open with Election Day nine days away, as voters weigh Measure U and about $44 billion in state bonds. The unbeaten 49ers visit Atlanta today after the Warriors fell to 0–3, and October’s full Hunter’s Moon rises tonight.",
       "headlines": [
         {
-          "title": "US pulls diplomats from Middle East posts after warning of Iranian plots",
+          "title": "Seven more San Mateo County vote centers open, bringing the total to 10",
           "topic": "General news"
         },
         {
-          "title": "Seven more San Mateo County vote centers open ahead of Nov. 3",
-          "topic": "General news"
-        },
-        {
-          "title": "49ers activate Christian Kirk as Evans and Samuel sit out",
+          "title": "Today in sports: Warriors fall to 0–3; unbeaten 49ers visit Atlanta",
           "topic": "Sports"
         },
         {
-          "title": "California voters face about $44 billion in bond measures",
+          "title": "US pulls some diplomats from Middle East posts over Iranian threats",
           "topic": "General news"
         },
         {
-          "title": "Clayface leads Friday’s box office as a Nathan Fielder documentary expands",
-          "topic": "Culture"
+          "title": "Hunter’s Moon reaches full tonight",
+          "topic": "Science & tech"
         }
       ]
     },

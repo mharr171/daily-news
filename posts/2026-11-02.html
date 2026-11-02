@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monday, November 2, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 33: Monday, November 2, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-02.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Monday, November 2, 2026 | Live Full Stack">
+<meta property="og:description" content="Polls open Tuesday after a final weekend of campaigning, with federal judges rejecting administration lawsuits over election results and the Justice Department asking a judge to weigh contempt over a group’s analysis of its California voter list. A Learjet crash near Palm Beach killed all nine people aboard, and San Mateo County’s median home price reached $2.33 million. The Warriors host Phoenix tonight without Stephen Curry.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-02.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-02">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 33</p>
+      <h1>Monday, November 2, 2026</h1>
+      <p class="summary">Polls open Tuesday after a final weekend of campaigning, with federal judges rejecting administration lawsuits over election results and the Justice Department asking a judge to weigh contempt over a group’s analysis of its California voter list. A Learjet crash near Palm Beach killed all nine people aboard, and San Mateo County’s median home price reached $2.33 million. The Warriors host Phoenix tonight without Stephen Curry.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>Polls open Tuesday after a final weekend of campaigning, and judges in Alaska and California rejected administration lawsuits over election results.</li>
+        <li>A Learjet crash near Palm Beach killed all nine people aboard; the NTSB is investigating.</li>
+        <li>San Mateo County’s median home price hit $2.33 million in September, up 8.3% from a year ago, with mortgage rates at 7.24%.</li>
+        <li>The Warriors host Phoenix tonight at 7 p.m. without Stephen Curry and Draymond Green, and the Valkyries’ title parade is set for Wednesday.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> Tomorrow is Election Day: San Mateo County vote centers are open 7 a.m. to 8 p.m., and mail ballots must be postmarked or dropped off by 8 p.m.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.euronews.com/2026/11/02/all-nine-on-board-learjet-killed-in-florida-plane-crash-near-trumps-resort-home" target="_blank" rel="noopener">Learjet crashes near Palm Beach, killing all nine aboard</a></h3>
+          <p>A Learjet 60 flying from Austin toward the Bahamas came down around midday Sunday in a Palm Beach County neighborhood less than seven miles from Mar-a-Lago, killing everyone on board. The plane fell near the entrance to a mobile home park, about 600 residents were moved to shelters, and no injuries on the ground were reported. The FAA and the NTSB are investigating; storms were in the area, but the cause has not been determined.</p>
+          <p class="why"><strong>Why it matters:</strong> Business jets are a regular sight at Peninsula airports such as San Carlos and Palo Alto, so the federal findings on what went wrong could matter to pilots and neighbors here.</p>
+          <p class="source">Euronews, Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">Housing snapshot</p>
+          <h3><a href="https://www.car.org/aboutus/mediacenter/newsreleases/2026releases/sept2026sales" target="_blank" rel="noopener">Housing snapshot: San Mateo County’s median home price climbs to $2.33 million</a></h3>
+          <p>The median price of an existing single-family home sold in San Mateo County in September was $2,327,500, up 8.3% from $2,150,000 a year earlier; the statewide median was $899,720, up 1.7%. The average 30-year fixed mortgage rate was 7.24% on Oct. 29, down from 7.32% the week before but well above the 6.17% of a year ago. For renters, Apartment List puts the median one-bedroom in neighboring San Francisco at $3,879 and the two-bedroom at $4,597; the citywide median fell 1.0% in October but is up 24.3% over the past year. County-level rent figures weren’t available.</p>
+          <p class="why"><strong>Why it matters:</strong> With rates above 7%, the same price tag now means a much bigger monthly payment, which keeps first-time buyers on the Peninsula out of the market and pushes more households toward renting.</p>
+          <p class="source">California Association of Realtors (September data); Freddie Mac, Oct 29, 2026; Apartment List, Nov 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://fortune.com/2026/11/02/sergey-brin-political-102-million-prop-40-billionaire/" target="_blank" rel="noopener">Billionaire tax fight reaches the ballot: Prop. 40 opponents have spent more than $118 million</a></h3>
+          <p>Proposition 40 would levy a one-time 5% tax on the assets of California residents worth more than $1 billion, with 90% of the money going to health care and 10% to education and food assistance. Fortune reports that a political group funded largely by Google co-founder Sergey Brin, who gave $102 million, has spent about $118.5 million against it and about $186 million for two counter-measures, Props. 41 and 42. The measure is sponsored by a health care workers’ union and backed by Sen. Bernie Sanders and Rep. Ro Khanna.</p>
+          <p class="why"><strong>Why it matters:</strong> The state’s nonpartisan analyst says the tax would probably raise tens of billions of dollars over several years, money that would help backfill federal health care cuts that hit Bay Area clinics and patients.</p>
+          <p class="source">Fortune, Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://www.abc.net.au/news/2026-11-02/five-rescued-after-three-months-adrift-at-sea/107334486" target="_blank" rel="noopener">Five people found alive on a Pacific island after about three months adrift</a></h3>
+          <p>Villagers on Fanning Island in Kiribati spotted a drifting boat and brought five people ashore on Sunday, including two children. They had set out on July 30 for what was meant to be a one-hour trip in the Federated States of Micronesia, were caught in a storm, and drifted an estimated 3,400 miles; the U.S. Coast Guard ended its search on Aug. 9. Island medical officials have treated them, and four others from their group of nine are still unaccounted for.</p>
+          <p class="source">ABC News (Australia), Nov 2, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.abc.net.au/news/2026-11-02/us-midterms-daily-news-briefing-trump-alaska-michigan/107326672" target="_blank" rel="noopener">Election eve: Trump campaigns in Iowa and Kansas as judges reject two administration election lawsuits</a></h3>
+          <p>Trump is finishing his campaign swing with rallies in Iowa and Kansas, where Republicans are defending Senate seats. Federal judges dismissed an administration lawsuit that sought to stop Alaska from certifying results if its Republican senator loses, and rejected a Justice Department bid to halt the count of more than 20,000 California ballots; the administration is expected to seek Supreme Court review. In Michigan, Democratic Rep. Haley Stevens endorsed the Republican Senate candidate over Democrat Abdul El-Sayed, who beat her in the primary, and the Texas Senate race has topped $500 million in combined ad spending, a record.</p>
+          <p class="why"><strong>Why it matters:</strong> Bay Area voters pick House members, a new governor and local measures Tuesday, and San Mateo County vote centers are open 7 a.m. to 8 p.m.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-01.html">Nov 1</a></p>
+          <p class="source">ABC News (Australia), Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://abcnews.com/US/wireStory/justice-department-urges-sanctions-database-analysis-critical-noncitizen-137757433" target="_blank" rel="noopener">Justice Department asks judge to weigh contempt over analysis of its California voter list</a></h3>
+          <p>In a Sunday filing, the Justice Department said an immigrant-rights group’s analysis of its list of more than 20,000 suspected noncitizen voters in California violated a judge’s order, and it asked Chief Judge James Boasberg to consider criminal contempt. The group, represented by UCLA’s Voting Rights Project, found that over 40% of the names don’t appear in the state voter file and says it complied with the court’s rules; the department says the list is accurate. Separately, a San Francisco judge ruled Friday that the department can’t demand that election offices remove people from the rolls or set aside their ballots; it appealed Sunday, and a hearing is set for Monday.</p>
+          <p class="why"><strong>Why it matters:</strong> California election officials say the list is full of errors and that they can’t finish the legally required removal work before Tuesday, so the court fights could shape how quickly and smoothly results are certified.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-30.html">Oct 30</a> · <a href="2026-11-01.html">Nov 1</a> · <a href="../tracker.html#california-voter-rolls-fight">Follow this story ›</a></p>
+          <p class="source">ABC News (via the Associated Press), Nov 1, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-some-point-will-need-give-iran-hammer" target="_blank" rel="noopener">Trump repeats Iran threat at Iowa rally: “give them the hammer”</a></h3>
+          <p>At a Sunday rally in Iowa, Trump repeated threats to resume attacks on Iran, saying he is holding back to spare lives but that “at some point” the U.S. will have to hit harder. Iran has warned that a new war could last longer than the last one. The Pentagon told Congress last week that the conflict has already cost more than $47 billion.</p>
+          <p class="why"><strong>Why it matters:</strong> Fighting around the Strait of Hormuz has pushed up fuel prices and inflation, and renewed strikes would likely mean higher gas prices at Peninsula pumps.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-29.html">Oct 29</a> · <a href="2026-10-31.html">Oct 31</a> · <a href="../tracker.html#iran-war">Follow this story ›</a></p>
+          <p class="source">Middle East Eye, Nov 2, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/yaxel-lendeborg-bounces-back-big-040835659.html" target="_blank" rel="noopener">Weekend recap: Valkyries win the title, Warriors sweep the Lakers and Clippers, Quakes close at home</a></h3>
+          <p>The Valkyries beat Atlanta 68–63 in Game 7 on Saturday for their first WNBA championship, and a victory parade along the bay front is planned for Wednesday afternoon. The Warriors beat the Lakers on Friday and the Clippers on Sunday, when rookie Yaxel Lendeborg scored a career-high 37 without Stephen Curry, Draymond Green and Jimmy Butler; they are 4–3 with four straight wins. The Earthquakes beat Real Salt Lake 2–1 on Saturday, and the 49ers are on their bye. Coming up: the Warriors host Phoenix tonight and Miami on Thursday, the Quakes finish at Minnesota on Saturday, and the 49ers host the Raiders on Sunday at 1:25 p.m.</p>
+          <p class="source">Yahoo Sports (AP), Nov 1, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/golden-state-plays-phoenix-aims-070242887.html" target="_blank" rel="noopener">Warriors host the Suns tonight without Curry, Green, Porzingis, Moody or Butler</a></h3>
+          <p>Golden State (4–3, ninth in the West) goes for a fifth straight win against Phoenix (1–3) at Chase Center at 7 p.m. Pacific. Curry and Green are listed out for rest, Kristaps Porzingis with an illness, and Moses Moody and Butler with knee injuries; the Suns are without Mark Williams (shoulder). Phoenix won the teams’ first meeting 131–122 on Oct. 25.</p>
+          <p class="source">Yahoo Sports, Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/nfl-rumors-tom-pelissero-dumps-193322501.html" target="_blank" rel="noopener">49ers on their bye: a Jauan Jennings reunion looks unlikely after the DeForest Buckner trade</a></h3>
+          <p>The 49ers (6–1) used the trade market to add defensive tackle DeForest Buckner from the Colts as they look to rebound from their first loss, at Atlanta. Speculation about a trade to bring back receiver Jauan Jennings from Minnesota cooled when The Ringer’s Tom Pelissero said he doesn’t see a reunion as an option right now. The team is off this week and hosts the Raiders on Sunday.</p>
+          <p class="source">Yahoo Sports, Oct 29, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/giants-acquire-pitcher-intriguing-trade-042924759.html" target="_blank" rel="noopener">Giants trade infielder Nate Furman to the Nationals for a minor-league pitcher</a></h3>
+          <p>San Francisco sent Furman, a 25-year-old infielder who played 22 games for the Giants this season, to Washington for 23-year-old left-hander Tony Neubeck, ESPN’s Jeff Passan reported Sunday. The deal opens a spot on the 40-man roster, and more moves are expected before the roster deadline.</p>
+          <p class="source">Yahoo Sports, Nov 1, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Sunday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>6–1</td><td>1st in the NFC West; bye this week</td></tr>
+            <tr><td>Warriors</td><td>4–3</td><td>9th in the West; four straight wins</td></tr>
+            <tr><td>Earthquakes</td><td>14–9–10</td><td>3rd in the West with 52 points; one game left</td></tr>
+            <tr><td>Valkyries</td><td>Champions</td><td>Won the WNBA Finals 4–3 over Atlanta</td></tr>
+          </tbody>
+        </table>
+        <p class="source">Yahoo Sports, San Jose Earthquakes</p>
+      </aside>
+    </section>
+
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker feature">Box office and streaming top 10</p>
+          <h3><a href="https://www.ksl.com/article/news/us/box-office-you-can-see-everything-clayface-lead-sleepy-halloween-weekend/51642928" target="_blank" rel="noopener">Box office and streaming top 10: a sleepy Halloween weekend, with “You Can See Everything” and “Clayface” neck and neck</a></h3>
+          <p>Estimates put “You Can See Everything” first at $10.6 million, just ahead of “Clayface” at $10.4 million (down 57%), then “Wildwood” at $7.5 million, “Wicker” at $4.1 million and “Street Fighter” at $3.2 million. Halloween falling on Saturday kept people home, and the weekend was on track to be among the year’s weakest; final figures come Monday. On Netflix, the latest chart posted (Oct. 19–25) had the limited series “Below” first among English-language TV with 7.7 million views and “Animals” first among films with 10.7 million.</p>
+          <p class="source">Associated Press (via KSL), Nov 1, 2026; What’s on Netflix</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://tvline.com/2295907/november-2026-tv-schedule-what-to-watch-printable-calendar-premieres-finales-streaming-list/" target="_blank" rel="noopener">Week ahead on TV: “The Greatest,” “All’s Fair” and “Stick” arrive Wednesday</a></h3>
+          <p>NBC’s “St. Denis Medical” returns for season 3 tonight, and Netflix drops “Bass x Machina” on Tuesday. Wednesday is the busiest night: Prime Video’s scripted Muhammad Ali series “The Greatest,” season 2 of Hulu’s “All’s Fair” and Apple TV’s “Stick,” plus the “Love Is Blind” season 11 finale on Netflix. Netflix follows Thursday with season 2 of “Black Doves.”</p>
+          <p class="source">TVLine, Nov 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.natureworldnews.com/articles/73674/20261029/swift-nears-reentry-nasa-has-no-dedicated-replacement-catching-gamma-ray-bursts-within-minutes.htm" target="_blank" rel="noopener">NASA’s Swift observatory has no replacement as it nears reentry</a></h3>
+          <p>As of Oct. 28 NASA expected the engineless Swift to fall within the next few weeks, but had not published a date, window or location; most of it should burn up, and the risk from debris is described as very small. Swift could swing its telescopes onto a gamma-ray burst within minutes, and NASA has not named a dedicated successor, so the gap could last years, with China’s Einstein Probe and the French-Chinese SVOM mission covering part of the work. Its 22 years of data, about 12 terabytes, stay open to researchers.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-27.html">Oct 27</a> · <a href="2026-11-01.html">Nov 1</a> · <a href="../tracker.html#swift-observatory">Follow this story ›</a></p>
+          <p class="source">Nature World News, Oct 29, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/" target="_blank" rel="noopener">OpenAI executive floats calling data centers “AI compute campuses”</a></h3>
+          <p>Axios reports that OpenAI is planning a public-relations push after Tuesday’s midterms, and its chief global affairs officer, Chris Lehane, suggested the new name as local opposition to data centers grows. He also floated AI “speed limits” and U.S. help in setting global standards. TechCrunch notes that the backlash has already led Amazon and Microsoft to stop using nondisclosure agreements when negotiating with local governments.</p>
+          <p class="source">TechCrunch, Nov 1, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-2/spruce-goose-flies" target="_blank" rel="noopener">Today in history: The Spruce Goose flies over Long Beach</a></h3>
+          <p>1947: Howard Hughes piloted his giant wooden flying boat about a mile at roughly 70 feet above Long Beach Harbor; it never flew again.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.atlasobscura.com/articles/in-1988-one-rogue-worm-shut-down-10-percent-of-the-internet" target="_blank" rel="noopener">On this day in science: The Morris worm hits the early internet</a></h3>
+          <p>1988: A Cornell graduate student released a self-copying program that slowed or knocked out a notable share of the roughly 60,000 computers then online, and he became the first person convicted under the Computer Fraud and Abuse Act.</p>
+          <p class="source">Atlas Obscura</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.fcc.gov/news-events/blog/2020/11/02/celebrating-100-years-commercial-radio" target="_blank" rel="noopener">Firsts in history: Radio broadcasts election returns</a></h3>
+          <p>1920: Pittsburgh station KDKA aired live returns of the Harding–Cox presidential race, widely recognized as the start of commercial radio broadcasting.</p>
+          <p class="source">Federal Communications Commission</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

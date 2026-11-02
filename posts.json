@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-02",
+      "file": "posts/2026-11-02.html",
+      "summary": "Polls open Tuesday after a final weekend of campaigning, with federal judges rejecting administration lawsuits over election results and the Justice Department asking a judge to weigh contempt over a group’s analysis of its California voter list. A Learjet crash near Palm Beach killed all nine people aboard, and San Mateo County’s median home price reached $2.33 million. The Warriors host Phoenix tonight without Stephen Curry.",
+      "headlines": [
+        {
+          "title": "Election eve: Trump campaigns in Iowa and Kansas as judges reject two administration election lawsuits",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "Learjet crashes near Palm Beach, killing all nine aboard",
+          "topic": "General news"
+        },
+        {
+          "title": "Justice Department asks judge to weigh contempt over analysis of its California voter list",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "Housing snapshot: San Mateo County’s median home price climbs to $2.33 million",
+          "topic": "General news"
+        },
+        {
+          "title": "Warriors host the Suns tonight without Curry, Green, Porzingis, Moody or Butler",
+          "topic": "Sports"
+        }
+      ],
+      "updates": [
+        "midnight"
+      ],
+      "updated": "2026-11-02T00:52"
+    },
+    {
       "date": "2026-11-01",
       "file": "posts/2026-11-01.html",
       "summary": "The Valkyries won the WNBA championship Saturday night, beating Atlanta 68–63 in Game 7 at Chase Center, and the Earthquakes climbed to third in the West. A shooting at a Fairfield Halloween store killed one person and wounded six, and backers of the Bay Area transit tax that would decide Caltrain’s future have raised $7.3 million. NASA’s retired Swift observatory is days from falling back to Earth.",

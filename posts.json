@@ -30,10 +30,18 @@
     {
       "date": "2026-10-31",
       "file": "posts/2026-10-31.html",
-      "summary": "Job cuts kept coming as October ended, including small rounds at Dropbox and Front in San Francisco. Tech companies are now among the biggest outside spenders in California’s legislative races. The Warriors evened their record with a win over the Lakers, and tonight’s sky offers Saturn and early Halloween fireballs.",
+      "summary": "Light rain and drizzle could reach trick-or-treaters tonight as a coastal flood advisory continues, and San Francisco closes dozens of blocks for Halloween while the Valkyries host Game 7 of the WNBA Finals. Tech companies account for at least a fifth of outside spending in California legislative races. The Warriors beat the Lakers to reach .500, “The Odyssey” set Universal’s overseas record, and Saturn headlines the Halloween night sky.",
       "headlines": [
         {
-          "title": "Layoffs pile up as October ends, including cuts in San Francisco",
+          "title": "Today in sports: Warriors beat the Lakers to reach .500; Valkyries host Game 7 tonight",
+          "topic": "Sports"
+        },
+        {
+          "title": "Drizzle possible for trick-or-treaters as the coastal flood advisory continues",
+          "topic": "General news"
+        },
+        {
+          "title": "Halloween in San Francisco: street closures and a Game 7 crowd at Chase Center",
           "topic": "General news"
         },
         {
@@ -41,12 +49,8 @@
           "topic": "General news"
         },
         {
-          "title": "Warriors beat the Lakers 112–95 to reach .500",
-          "topic": "Sports"
-        },
-        {
-          "title": "Halloween night sky: Saturn and early fireballs",
-          "topic": "Science & tech"
+          "title": "“The Odyssey” sets Universal’s overseas record at $1.17 billion",
+          "topic": "Culture"
         }
       ]
     },

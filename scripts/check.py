@@ -26,7 +26,7 @@ import build_feed  # noqa: E402
 import build_search  # noqa: E402
 
 # Files a normal edition may change. Anything else needs --allow-site-changes.
-EDITION_FILES = re.compile(r"^(posts\.json|feed\.xml|search\.json|posts/\d{4}-\d{2}-\d{2}\.html)$")
+EDITION_FILES = re.compile(r"^(posts\.json|feed\.xml|search\.json|calendar\.json|posts/\d{4}-\d{2}-\d{2}\.html)$")
 # Files that must never change.
 NEVER = {"CNAME"}
 
@@ -120,6 +120,53 @@ def check_pages(dates):
             fail(f"{p.name}: og:description tag is missing or broken (a straight \" in the summary?).")
         if re.search(r"<img\b", s, re.I):
             fail(f"{p.name}: contains an image; editions use no photos.")
+
+
+CAL_CATEGORIES = {"Holidays", "Millbrae", "County arts", "Sports"}
+CAL_TEAMS = {"49ers", "Warriors", "Giants", "Earthquakes", "Bay FC", "Hawaii", "San Francisco City FC", "Valkyries"}
+
+
+def check_calendar():
+    path = ROOT / "calendar.json"
+    if not path.exists():
+        return
+    try:
+        cal = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        fail(f"calendar.json is not valid JSON: {e}")
+        return
+    events = cal.get("events")
+    if not isinstance(events, list):
+        fail("calendar.json must have an \"events\" list.")
+        return
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(cal.get("updated", ""))):
+        fail("calendar.json: \"updated\" must be a YYYY-MM-DD date.")
+    seen, prev = set(), ""
+    for i, e in enumerate(events):
+        where = f"calendar.json event {i + 1} ({e.get('title', '?')})"
+        d = str(e.get("date", ""))
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", d):
+            fail(f"{where}: bad date {d!r}.")
+            continue
+        if e.get("end") and not (re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(e["end"])) and e["end"] >= d):
+            fail(f"{where}: end must be a date on or after the start.")
+        for k in ("title", "category", "url"):
+            if not e.get(k):
+                fail(f"{where}: missing {k}.")
+        if e.get("category") not in CAL_CATEGORIES:
+            fail(f"{where}: category must be one of {sorted(CAL_CATEGORIES)}.")
+        if e.get("category") == "Sports" and e.get("team") not in CAL_TEAMS:
+            warn(f"{where}: unexpected team {e.get('team')!r}.")
+        if d < prev:
+            fail(f"{where}: events must be in date order.")
+        prev = d
+        key = (d, e.get("title"))
+        if key in seen:
+            fail(f"{where}: duplicate event on {d}.")
+        seen.add(key)
+        for k in ("title", "description", "location"):
+            if '"' in str(e.get(k, "")):
+                warn(f"{where}: straight double quote in {k}; use “ ”.")
 
 
 def check_feed():
@@ -222,6 +269,7 @@ def main():
     dates = check_posts_json()
     check_pages(dates)
     check_feed()
+    check_calendar()
     files = changed_files()
     check_changed(files, args.allow_site_changes)
 

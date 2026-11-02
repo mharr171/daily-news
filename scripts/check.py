@@ -148,7 +148,7 @@ EXTRA_SECTIONS = {"week-in-review", "month-in-review", "coming-up"}
 def check_size(pages):
     """Warn when a new or changed edition has fewer topic stories than the minimum."""
     for p in pages:
-        s = p.read_text(encoding="utf-8")
+        s = re.sub(r"<!--.*?-->", "", p.read_text(encoding="utf-8"), flags=re.S)
         n = sum(body.count('<article class="story">')
                 for sid, body in re.findall(r'<section class="topic"(?: id="([^"]*)")?>(.*?)</section>', s, re.S)
                 if sid not in EXTRA_SECTIONS)

@@ -84,6 +84,10 @@
   .tools > summary { cursor: pointer; font-style: italic; color: var(--muted); font-size: .95rem; }
   .tools > summary:hover { color: var(--ink); }
   #teams { margin-top: .45rem; }
+  .allbar { margin-bottom: .2rem; }
+  .allbtn { font: inherit; font-size: .85rem; font-weight: 700; color: var(--ink); background: transparent;
+            border: 2px solid var(--ink); padding: .15rem .75rem; cursor: pointer; border-radius: 0; }
+  .allbtn:hover { background: var(--ink); color: var(--paper); }
   .chips { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
   .chips > span { font-style: italic; color: var(--muted); font-size: .9rem; margin-right: .2rem; }
   .chip { font: inherit; font-size: .85rem; color: var(--ink); background: transparent;
@@ -320,6 +324,7 @@
 
   function render() {
     hideTip(true);
+    syncTools();
     const [y, m] = cur.split("-").map(Number);
     $("month-title").innerHTML = MONTHS[m - 1] + " " + y + "<small></small>";
     const prev = addMonth(cur, -1), next = addMonth(cur, 1);
@@ -483,8 +488,31 @@
     b.addEventListener("click", () => { const now = b.getAttribute("aria-pressed") !== "true"; b.setAttribute("aria-pressed", now ? "true" : "false"); on(now); render(); });
     return b;
   }
+  // Bring every chip and the Show all / Hide all button in line with the current filters.
+  function syncTools() {
+    document.querySelectorAll("#cats .chip[data-key]").forEach(b => b.setAttribute("aria-pressed", offCats.has(b.dataset.key) ? "false" : "true"));
+    document.querySelectorAll("#teams .chip[data-team]").forEach(b => b.setAttribute("aria-pressed", offTeams.has(b.dataset.team) ? "false" : "true"));
+    $("teams").hidden = offCats.has("Sports");
+    const btn = $("all-btn");
+    if (btn) {
+      const anyOn = CATS.some(c => !offCats.has(c.key));
+      btn.textContent = anyOn ? "Hide all" : "Show all";
+      btn.setAttribute("aria-label", anyOn ? "Hide all categories" : "Show all categories and teams");
+    }
+  }
   function buildTools() {
     const cats = $("cats"), teams = $("teams");
+    const bar = document.createElement("div"); bar.className = "allbar";
+    const allBtn = document.createElement("button"); allBtn.type = "button"; allBtn.className = "allbtn"; allBtn.id = "all-btn";
+    allBtn.addEventListener("click", () => {
+      const anyOn = CATS.some(c => !offCats.has(c.key));
+      offCats.clear();
+      if (anyOn) CATS.forEach(c => offCats.add(c.key)); else offTeams.clear();
+      store.set("offCats", [...offCats]); store.set("offTeams", [...offTeams]);
+      render();
+    });
+    bar.append(allBtn);
+    cats.append(bar);
     GROUPS.forEach(g => {
       const row = document.createElement("div"); row.className = "chips " + g.cls;
       const head = document.createElement("button"); head.type = "button"; head.className = "grp";
@@ -509,9 +537,13 @@
       cats.append(row);
     });
     cats.style.display = "grid"; cats.style.gap = ".45rem";
-    TEAMS.forEach(t => teams.append(chip(TEAM_LABEL[t] || t, "", !offTeams.has(t), on => {
-      on ? offTeams.delete(t) : offTeams.add(t); store.set("offTeams", [...offTeams]);
-    })));
+    TEAMS.forEach(t => {
+      const b = chip(TEAM_LABEL[t] || t, "", !offTeams.has(t), on => {
+        on ? offTeams.delete(t) : offTeams.add(t); store.set("offTeams", [...offTeams]);
+      });
+      b.dataset.team = t; teams.append(b);
+    });
+    syncTools();
     teams.hidden = offCats.has("Sports");
     $("tools").hidden = false;
     if (window.matchMedia("(min-width: 46.01rem)").matches) $("tools").open = true;

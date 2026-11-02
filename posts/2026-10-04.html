@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunday, October 4, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 4: Sunday, October 4, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-10-04.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Sunday, October 4, 2026 | Live Full Stack">
+<meta property="og:description" content="SFO is moving departures back to its usual north-facing runways now that six months of repaving are done, and Fleet Week opens today with extra BART service planned for next weekend’s air shows. The unbeaten 49ers host Denver without Nick Bosa, and the Warriors open the preseason against the Clippers in Honolulu. Verity won Friday at the box office while Digger landed third, and Crew-12 is set to splash down off California later this week.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-04.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body data-date="2026-10-04">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 4</p>
+      <h1>Sunday, October 4, 2026</h1>
+      <p class="summary">SFO is moving departures back to its usual north-facing runways now that six months of repaving are done, and Fleet Week opens today with extra BART service planned for next weekend’s air shows. The unbeaten 49ers host Denver without Nick Bosa, and the Warriors open the preseason against the Clippers in Honolulu. Verity won Friday at the box office while Digger landed third, and Crew-12 is set to splash down off California later this week.</p>
+    </header>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format:
+         <article class="story">
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.airwaysmag.com/new-post/sfo-1l-1r-departures-return-october-2026" target="_blank" rel="noopener">SFO shifts departures back to its north-facing runways</a></h3>
+          <p>With six months of work on Runway 1R finished, SFO planned to move most departures back to Runways 1L and 1R starting Saturday, though weather and high winds can still push them onto the west-facing 28 runways. The airport expects about 45 to 48 arrivals an hour in good conditions, up from a low of 36, while low-visibility capacity stays near 36; the roughly $215 million project included $92.1 million in federal money.</p>
+          <p class="why"><strong>Why it matters:</strong> Millbrae and San Bruno neighbors should see departure patterns return to normal, and travelers should expect Fleet Week to affect SFO traffic on the afternoons of Oct. 8–12.</p>
+          <p class="source">Airways Magazine, Oct 3, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.bart.gov/news/articles/2026/news20261002" target="_blank" rel="noopener">Fleet Week opens; BART adds longer trains for next weekend’s air shows</a></h3>
+          <p>San Francisco Fleet Week runs today through Oct. 12, with air shows from noon to 4 p.m. next Saturday and Sunday, Oct. 10 and 11. BART will run longer trains on both air show days and Muni is adding service, with Embarcadero and Montgomery St. stations connecting to buses and streetcars bound for Pier 39, Fort Mason, Marina Green and Crissy Field.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula residents can ride BART from Millbrae or other stations, where weekend parking is free, instead of hunting for parking near the crowded waterfront.</p>
+          <p class="source">BART, Oct 2, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/warriors-vs-clippers-preseason-watch-170316230.html" target="_blank" rel="noopener">Today in sports: 49ers host Broncos, Warriors open preseason in Honolulu</a></h3>
+          <p>The 3-0 49ers host the Denver Broncos at 1:25 p.m. at Levi’s Stadium on CBS. The Warriors open a six-game preseason against the Clippers at 4 p.m. Pacific at the Stan Sheriff Center in Honolulu, streaming on the Golden State app and NBA League Pass, with a projected lineup of Steph Curry, Brandin Podziemski, Yaxel Lendeborg, Draymond Green and Al Horford. The Earthquakes are next in action Oct. 10.</p>
+          <p class="source">Warriors Wire (Yahoo Sports), Oct 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.si.com/nfl/broncos/onsi/final-injury-report-several-49ers-starters-in-jeopardy-broncos" target="_blank" rel="noopener">49ers rule out Bosa and Mykel Williams; Evans questionable vs. Denver</a></h3>
+          <p>The 49ers ruled out defensive ends Nick Bosa (knee, calf) and Mykel Williams (knee) and defensive tackle James Thompson (ankle) for today’s game against Denver. Receiver Mike Evans (ribs), linebackers Dre Greenlaw and Jaden Dugger, and edge rusher Keion White are questionable, while Christian McCaffrey and Trent Williams practiced fully; Denver ruled out linebacker Dondrea Tillman (hamstring).</p>
+          <p class="source">Sports Illustrated, Oct 3, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcsportsbayarea.com/nba/golden-state-warriors/training-camp-takeaways-steve-kerr-preseason-opener/1968385/" target="_blank" rel="noopener">Kerr limits Curry, Green and Horford to the first half of the preseason opener</a></h3>
+          <p>Steve Kerr said Curry, Green and Horford will play only the first half, about 12 to 16 minutes, and every player, including the three two-way players, will get minutes against the Clippers. Jimmy Butler and Moses Moody are still rehabbing and Kristaps Porziņģis stayed home with a health issue; the Warriors host the Lakers at Chase Center on Tuesday at 7 p.m., then play at Portland on Wednesday.</p>
+          <p class="source">NBC Sports Bay Area, Oct 3, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.the-numbers.com/box-office-chart/daily/2026/10/02" target="_blank" rel="noopener">Verity rules the Friday box office</a></h3>
+          <p>The Colleen Hoover adaptation Verity, with Anne Hathaway and Dakota Johnson, took in about $15 million on its opening Friday from 3,510 theaters. That was roughly four times the next film, the holdover Resident Evil at about $3.6 million, putting Verity on pace to top the weekend; full weekend numbers arrive Sunday and Monday.</p>
+          <p class="source">The Numbers, Oct 3, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.the-numbers.com/box-office-chart/daily/2026/10/02" target="_blank" rel="noopener">Digger stumbles with a third-place Friday</a></h3>
+          <p>Tom Cruise’s Digger earned about $3.5 million on its first Friday from 3,321 theaters, finishing third behind Verity and Resident Evil and just ahead of Heart of the Beast. That start puts the costly Iñárritu satire at risk of falling short of the $12 million to $15 million weekend Warner Bros. had projected.</p>
+          <p class="source">The Numbers, Oct 3, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.nasa.gov/blogs/spacestation/2026/10/03/" target="_blank" rel="noopener">Crew-12 heads home no earlier than Wednesday, with splashdown off California</a></h3>
+          <p>NASA and SpaceX are targeting undocking of Crew-12 (NASA’s Jessica Meir and Jack Hathaway, ESA’s Sophie Adenot and Roscosmos’ Andrey Fedyaev) no earlier than 1:05 a.m. EDT Wednesday, Oct. 7, after reviewing weather and splashdown conditions off the California coast. That’s later than the Monday date mentioned earlier; before leaving, the crew hands its duties to the newly arrived Crew-13, and Meir is scheduled to pass station command to cosmonaut Pyotr Dubrov today.</p>
+          <p class="source">NASA, Oct 3, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="week-in-review">
+      <h2>Week in review</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="2026-10-01.html">General news: Newsom closes his final bill-signing season</a></h3>
+          <p>Gov. Gavin Newsom finished his last round of bill signings as governor, approving new limits on addictive social media features for users under 16, a ban on child marriage and tax credits for local news outlets. His final signature, made atop the Golden Gate Bridge, sends a $7.5 billion science research bond to voters in March 2028. Meanwhile, forecasters said an unusual Bay Area warm spell could last into mid-October.</p>
+          <p class="source">From the editions of Oct 1–3</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-03.html">Sports: 49ers unbeaten as the Warriors open camp in Hawaii</a></h3>
+          <p>The 3–0 49ers prepared to host Denver, though Nick Bosa and Mike Evans sat out practice with injuries. In Hawaii, Steve Kerr installed a five-out offense at Warriors camp, while Kristaps Porziņģis stayed home, out indefinitely with a health issue. The Giants backed manager Tony Vitello after a 97-loss season and made relief pitching their top offseason priority.</p>
+          <p class="source">From the editions of Oct 1–3</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-03.html">Culture: Verity and Digger head to theaters with very different buzz</a></h3>
+          <p>Early reviews called the Colleen Hoover thriller Verity a twisty, fun ride, while Tom Cruise’s oil satire Digger split critics. Warner Bros. answered with a ‘decide for yourself’ ad as trackers warned Digger could open below the studio’s own estimate. On the music side, Miranda Lambert went country-disco on Crisco and Victoria Monét released Frequency of Love, with her tour ending in San Francisco in December.</p>
+          <p class="source">From the editions of Oct 1–3</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-10-02.html">Science &amp; tech: Crew-13 reaches the space station</a></h3>
+          <p>SpaceX’s Crew-13 lifted off from Cape Canaveral on Thursday and docked with the International Space Station that evening, joining the Expedition 75 crew. Newsom signed 13 AI bills, including limits on using AI alone to discipline or fire workers. Anthropic pledged $100 million to train 10,000 engineers to use its Claude AI, and Webb found clues to the giant collisions that build rocky planets.</p>
+          <p class="source">From the editions of Oct 1–3</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="coming-up">
+      <h2>Coming up</h2>
+      <ul class="upcoming">
+        <li><span class="when">Tue, Oct 6</span><a href="https://www.nbcsportsbayarea.com/nba/golden-state-warriors/training-camp-takeaways-steve-kerr-preseason-opener/1968385/" target="_blank" rel="noopener">Warriors host Lakers in preseason at Chase Center, 7 p.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Tue, Oct 6</span><a href="https://science.nasa.gov/solar-system/skywatching/whats-up-october-2026-skywatching-tips-from-nasa/" target="_blank" rel="noopener">Crescent Moon near Jupiter before sunrise</a> <span class="kind">· Space</span></li>
+        <li><span class="when">Wed, Oct 7</span><a href="https://www.nasa.gov/blogs/spacestation/2026/10/03/" target="_blank" rel="noopener">Crew-12 undocks for splashdown off California (no earlier than)</a> <span class="kind">· Space</span></li>
+        <li><span class="when">Sat, Oct 10</span><a href="https://www.bart.gov/news/articles/2026/news20261002" target="_blank" rel="noopener">Fleet Week air shows, noon–4 p.m. (also Oct. 11)</a> <span class="kind">· Local event</span></li>
+        <li><span class="when">Sun, Oct 11</span><a href="https://49ers.com/news/a-game-by-game-look-at-the-san-francisco-49ers-2026-schedule-release" target="_blank" rel="noopener">49ers at Seahawks, 1:25 p.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Mon, Oct 12</span>Indigenous Peoples’ Day and Columbus Day <span class="kind">· Holiday</span></li>
+        <li><span class="when">Wed, Oct 14</span><a href="https://www.samtrans.com/about-samtrans/news/media-relations/samtrans-news" target="_blank" rel="noopener">SamTrans public meeting with Ride Plus service update</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Mon, Oct 19</span><a href="https://49ers.com/news/a-game-by-game-look-at-the-san-francisco-49ers-2026-schedule-release" target="_blank" rel="noopener">49ers host Commanders on Monday night, 5:15 p.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Wed, Oct 21</span><a href="https://science.nasa.gov/solar-system/skywatching/whats-up-october-2026-skywatching-tips-from-nasa/" target="_blank" rel="noopener">Orionid meteor shower peaks (through Oct. 22)</a> <span class="kind">· Space</span></li>
+        <li><span class="when">Sun, Oct 25</span><a href="https://49ers.com/news/a-game-by-game-look-at-the-san-francisco-49ers-2026-schedule-release" target="_blank" rel="noopener">49ers at Falcons, 10 a.m.</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Sat, Oct 31</span>Halloween <span class="kind">· Holiday</span></li>
+        <li><span class="when">Sun, Nov 1</span>Daylight saving time ends; clocks fall back an hour <span class="kind">· Holiday</span></li>
+        <li><span class="when">Mon, Nov 2</span>Día de los Muertos <span class="kind">· Holiday</span></li>
+        <li><span class="when">Tue, Nov 3</span>Election Day; mail ballots must be postmarked today <span class="kind">· Civic</span></li>
+      </ul>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

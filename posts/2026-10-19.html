@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monday, October 19, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 19: Monday, October 19, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-10-19.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Monday, October 19, 2026 | Live Full Stack">
+<meta property="og:description" content="Today is the last day to register to vote online for the Nov. 3 election, and voters still missing a mail ballot have options. The 5-0 49ers host Washington tonight after a weekend in which the Valkyries won Game 1 of the WNBA Finals and the Earthquakes clinched a playoff spot. Street Fighter won the box office with $30.8 million.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-19.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body data-date="2026-10-19">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 19</p>
+      <h1>Monday, October 19, 2026</h1>
+      <p class="summary">Today is the last day to register to vote online for the Nov. 3 election, and voters still missing a mail ballot have options. The 5-0 49ers host Washington tonight after a weekend in which the Valkyries won Game 1 of the WNBA Finals and the Earthquakes clinched a playoff spot. Street Fighter won the box office with $30.8 million.</p>
+    </header>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format:
+         <article class="story">
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.rwcpulse.com/election/2026/10/19/monday-is-last-day-to-register-to-vote-online/" target="_blank" rel="noopener">Today is the last day to register to vote online for Nov. 3</a></h3>
+          <p>Eligible Californians can register or update their registration online at registertovote.ca.gov until midnight tonight for the Nov. 3 general election. After that, they can still use same-day conditional registration in person at their county elections office or any vote center through Election Day; those ballots are counted once the county verifies them. Voters can check their status at voterstatus.sos.ca.gov.</p>
+          <p class="why"><strong>Why it matters:</strong> San Mateo County residents who have moved or never registered can still do it from home today and skip a trip to a vote center later.</p>
+          <p class="source">Redwood City Pulse, Oct 19, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.kqed.org/news/12105086/wheres-my-ballot-midterm-election-2026-need-replacement-ballot-vote-for-governor" target="_blank" rel="noopener">What to do if your mail ballot hasn’t arrived</a></h3>
+          <p>Bay Area counties had to begin mailing ballots by Oct. 5, so voters still waiting should check the state’s voter status page or the Where’s My Ballot tool. Voters who moved should re-register at their new address, and others can request a replacement from their county, though counties stop mailing replacements six days before Election Day and after that issue them in person. More early voting locations open starting Oct. 24 and again Oct. 31.</p>
+          <p class="why"><strong>Why it matters:</strong> With some San Mateo County ballots stolen from a Daly City post office last week, checking your ballot’s status is a quick safeguard.</p>
+          <p class="source">KQED, Oct 19, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.kqed.org/news/12105018/no-kings-draws-crowds-with-focus-on-early-voting" target="_blank" rel="noopener">No Kings protests turn into an early-voting push</a></h3>
+          <p>Thousands turned out Saturday for No Kings Vote Early events in cities from Washington, D.C., to Minneapolis, as organizers focused on turnout, early voting and training poll watchers. The coalition, which includes Indivisible, the ACLU and Black Voters Matter, called the effort nonpartisan and barred endorsements and current candidates from speaking.</p>
+          <p class="why"><strong>Why it matters:</strong> With San Mateo County ballots already in mailboxes, groups across the spectrum are focused on getting voters to return them early.</p>
+          <p class="source">KQED, Oct 18, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.sjearthquakes.com/news/match-recap-earthquakes-1-nashville-sc-1-x7762" target="_blank" rel="noopener">Weekend recap: Valkyries strike first, Quakes clinch, 49ers play tonight</a></h3>
+          <p>Friday: the Warriors hosted Portland in a preseason game at Chase Center. Saturday: the Valkyries beat the Atlanta Dream 68-64 in Game 1 of the WNBA Finals, and the Earthquakes tied Nashville 1-1 to clinch their first playoff spot since 2023. This week: the 49ers (5-0) host Washington tonight at 5:15, the Warriors open Wednesday at the Lakers and host Memphis on Friday, the Quakes visit FC Dallas on Saturday and the 49ers play at Atlanta Sunday at 10 a.m.</p>
+          <p class="source">San Jose Earthquakes, Oct 17, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.49ers.com/news/morning-reports/morning-report-five-things-to-know-before-the-week-6-primetime-matchup" target="_blank" rel="noopener">49ers put their perfect start on the line in their first prime-time game</a></h3>
+          <p>The unbeaten 49ers host the Washington Commanders tonight at Levi’s Stadium in their first prime-time game of the season, on ESPN and ABC at 5:15 p.m., during the team’s Alumni Weekend. They will be without Nick Bosa and Deebo Samuel, with Mike Evans and Christian Kirk questionable. Punter Corliss Waitman was named NFC Special Teams Player of the Week for his work in the win at Seattle.</p>
+          <p class="source">San Francisco 49ers, Oct 17, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.the-numbers.com/box-office-chart/weekend/2026/10/16" target="_blank" rel="noopener">Street Fighter wins the weekend with a $30.8 million opening</a></h3>
+          <p>Street Fighter led the weekend with about $30.8 million from 3,575 theaters. You Can See Everything was second with $15.6 million, holdover Other Mommy took third with $8.2 million, and newcomers Whalefall ($7.8 million) and Sense and Sensibility ($7.2 million) rounded out the top five.</p>
+          <p class="source">The Numbers, Oct 18, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://boxofficewatch.com/weekend/2026-10-16" target="_blank" rel="noopener">You Can See Everything posts the weekend’s best per-theater average</a></h3>
+          <p>Playing in just 855 theaters, You Can See Everything averaged about $18,247 per location, more than double Street Fighter’s roughly $8,600. The Indian sequel Jailer 2 also opened in the top 10 with $3.1 million from 800 screens, and the top 20 films together grossed about $100.9 million.</p>
+          <p class="source">Box Office Watch, Oct 18, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://spaceflightnow.com/2026/10/18/live-coverage-spacex-to-launch-starfall-reentry-capsule-31-customer-payloads-on-bandwagon-5-rideshare-mission/" target="_blank" rel="noopener">SpaceX readies Bandwagon-5 rideshare and Starfall capsule for Tuesday launch</a></h3>
+          <p>SpaceX is targeting 7:04 a.m. EDT (4:04 a.m. PDT) Tuesday for a Falcon 9 launch from Cape Canaveral carrying 31 customer payloads on its Bandwagon-5 rideshare mission. The flight also carries the company’s uncrewed Starfall reentry capsule on its second trip to space.</p>
+          <p class="source">Spaceflight Now, Oct 18, 2026</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Friday, October 30, 2026 | Live Full Stack</title>
-<meta name="description" content="Live Full Stack, issue 7: Friday, October 30, 2026.">
+<meta name="description" content="Live Full Stack, issue 30: Friday, October 30, 2026.">
 <link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../fonts/fonts.css">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Live Full Stack">
 <meta property="og:title" content="Friday, October 30, 2026 | Live Full Stack">
-<meta property="og:description" content="High tides and light rain could greet Bay Area trick-or-treaters this weekend, with a coastal flood advisory along the bay through Sunday. A CalMatters analysis finds Prop. 45 could open a door for data centers, and the Warriors host the Lakers tonight. Astronauts completed the 100th US spacewalk from the space station, and Virgin Galactic’s new space plane flew for the first time.">
+<meta property="og:description" content="The head of California’s high-speed rail agency quit amid a travel expense scandal, and federal prosecutors subpoenaed California election workers despite a judge’s warning. Coastal flooding is possible along Bay Area shorelines through Sunday. The Dream forced a Game 7 in the WNBA Finals, Patrick Stewart died at 86, and astronauts marked the 100th U.S. spacewalk from the space station.">
 <meta property="og:url" content="https://www.livefullstack.com/posts/2026-10-30.html">
 <meta property="og:image" content="https://www.livefullstack.com/social-card.png">
 <meta property="og:image:width" content="1200">
@@ -101,6 +101,14 @@
   .why strong { font-style: normal; color: var(--spot); }
   .source { font-size: .88rem; color: var(--muted); margin: 0; }
 
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
 
   /* Edition navigation */
   .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
@@ -143,9 +151,9 @@
 
   <main>
     <header class="edition-head">
-      <p class="stamp">Issue No. 7</p>
+      <p class="stamp">Issue No. 30</p>
       <h1>Friday, October 30, 2026</h1>
-      <p class="summary">High tides and light rain could greet Bay Area trick-or-treaters this weekend, with a coastal flood advisory along the bay through Sunday. A CalMatters analysis finds Prop. 45 could open a door for data centers, and the Warriors host the Lakers tonight. Astronauts completed the 100th US spacewalk from the space station, and Virgin Galactic’s new space plane flew for the first time.</p>
+      <p class="summary">The head of California’s high-speed rail agency quit amid a travel expense scandal, and federal prosecutors subpoenaed California election workers despite a judge’s warning. Coastal flooding is possible along Bay Area shorelines through Sunday. The Dream forced a Game 7 in the WNBA Finals, Patrick Stewart died at 86, and astronauts marked the 100th U.S. spacewalk from the space station.</p>
     </header>
 
     <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
@@ -163,15 +171,27 @@
       <h2>General news</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://kioncentralcoast.com/news/2026/10/30/bay-area-halloween-forecast-coastal-flooding-showers-possible-for-trick-or-treating/" target="_blank" rel="noopener">Halloween weekend brings a coastal flood advisory and a chance of drizzle</a></h3>
-          <p>A coastal flood advisory covers shoreline areas of San Francisco and San Pablo bays through 6 p.m. Sunday, with up to 1.9 feet of water possible in low spots. Rain spreads into the Bay Area later Saturday, so trick-or-treaters may see light drizzle, with highs in the low 60s.</p>
-          <p class="why"><strong>Why it matters:</strong> Plan Halloween routes away from flood-prone bayside streets near high tide, and bring a light rain layer for kids.</p>
-          <p class="source">KPIX via KION, Oct 30, 2026</p>
+          <h3><a href="https://sfstandard.com/2026/10/29/california-high-speed-rail-ceo-ian-choudri-resigns/" target="_blank" rel="noopener">California high-speed rail CEO resigns amid a travel expense scandal</a></h3>
+          <p>Ian Choudri stepped down as CEO of the California High-Speed Rail Authority late Wednesday, effective immediately, weeks after the board limited his contracting power over a report that consultants misspent $592,000 on travel. Finance Director Joe Stephenshaw is expected to serve as interim chief. The project’s budget now stands at $129 billion with a 2040 target, and the board was set to vote Thursday on buying Siemens trains.</p>
+          <p class="why"><strong>Why it matters:</strong> High-speed rail is planned to reach San Francisco along the Caltrain corridor through Millbrae, so turmoil at the agency shapes long-term rail plans on the Peninsula.</p>
+          <p class="source">The San Francisco Standard, Oct 29, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://calmatters.org/politics/2026/10/ca-election-officials-subpoenas/" target="_blank" rel="noopener">Federal subpoenas hit California election workers despite a judge’s warning</a></h3>
+          <p>At least four California election workers in Los Angeles and Orange counties have received federal grand jury subpoenas seeking evidence of noncitizen voting, a day after Judge David O. Carter wrote that threats against election staff “must stop.” Three Los Angeles County employees are due before a grand jury on Nov. 4. The Justice Department says a subpoena doesn’t make someone a target; critics call the timing an effort to intimidate officials during the election.</p>
+          <p class="why"><strong>Why it matters:</strong> County election offices, including San Mateo County’s, are processing ballots under federal pressure in the final days before Tuesday’s vote.</p>
+          <p class="source">CalMatters, Oct 29, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcbayarea.com/news/local/coastal-flooding-rain-possible/4167367/" target="_blank" rel="noopener">Coastal flooding possible along Bay shorelines through Sunday</a></h3>
+          <p>The National Weather Service warns that high tides could flood low-lying shoreline areas and close some roads around San Francisco Bay and the Pacific coast through Sunday. Friday’s high tide at the San Francisco gauge, about 2:39 p.m., runs nearly 2 feet above normal, easing over the weekend. Light rain is possible Saturday, though most of the Bay Area has only a 10% to 30% chance.</p>
+          <p class="why"><strong>Why it matters:</strong> Bayside trails, parking lots and low roads near the shoreline from Millbrae to Foster City can flood around the afternoon high tides.</p>
+          <p class="source">NBC Bay Area (Bay City News), Oct 30, 2026</p>
         </article>
         <article class="story">
           <h3><a href="https://calmatters.org/economy/technology/2026/10/prop-45-could-open-door-for-california-data-centers/" target="_blank" rel="noopener">Could Prop. 45 open the door to more California data centers?</a></h3>
-          <p>Prop. 45 is pitched as a pro-housing overhaul of environmental review, but legal scholars say its streamlining for telecom and support infrastructure could let data centers sidestep a new state law. Supporters, who have raised more than $40 million including $3 million from PG&amp;E, say data centers aren’t covered, and at least 26 cities and counties have moved to limit them.</p>
-          <p class="why"><strong>Why it matters:</strong> Data centers draw heavily on the power grid and water, which affects utility bills and local planning on the Peninsula.</p>
+          <p>Prop. 45 would speed environmental reviews for housing, schools and other infrastructure, and some legal experts say its wording on broadband facilities could also let data centers qualify. Supporters, the data center industry and a Legislative Counsel memo say data centers aren’t covered. Backers have raised more than $40 million, while labor and environmental opponents have spent over $31 million.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula voters decide Prop. 45 on Tuesday, and its reach could affect how much say local governments keep over large projects.</p>
           <p class="source">CalMatters, Oct 30, 2026</p>
         </article>
       </div>
@@ -180,9 +200,14 @@
       <h2>Sports</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.landofbasketball.com/results_by_team/2026_2027_warriors.htm" target="_blank" rel="noopener">Today in sports: Warriors host the Lakers in an NBA Cup game</a></h3>
-          <p>Warriors: 2–3 after Wednesday’s 119–114 win at Minnesota; they host the Lakers tonight at Chase Center in an NBA Cup game. 49ers: bye week at 6–1. Giants: trimming the roster ahead of the off-season. Earthquakes: waiting on the MLS Cup Playoffs.</p>
-          <p class="source">Land of Basketball, Oct 28, 2026</p>
+          <h3><a href="https://www.espn.com/wnba/game/_/gameId/401918311/dream-valkyries" target="_blank" rel="noopener">Today in sports: Dream force Game 7; Warriors host the Lakers tonight</a></h3>
+          <p>Atlanta beat the Valkyries 80–69 in Game 6 on Thursday, tying the WNBA Finals 3–3 and setting up a winner-take-all Game 7 Saturday at Chase Center. The Warriors (2–3) host the Lakers tonight in an NBA Cup game after back-to-back road wins. The Earthquakes host Real Salt Lake Saturday at 2 p.m., and the 49ers are on their bye.</p>
+          <p class="source">ESPN, Oct 29, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcsportsbayarea.com/mlb/san-francisco-giants/questions-uncertain-2026-offseason/1975437/" target="_blank" rel="noopener">Giants start a pivotal off-season with pitching at the top of the list</a></h3>
+          <p>After a 97-loss season, the Giants need at least two starting pitchers, a closer and a rebuilt bullpen, with little depth behind Logan Webb and Landen Roupp. Buster Posey’s front office must also decide whether to trade any of its big contracts, including Rafael Devers, Willy Adames, Matt Chapman and Jung Hoo Lee. The clock is short: baseball’s labor deal expires Dec. 1, when a lockout and transaction freeze are expected.</p>
+          <p class="source">NBC Sports Bay Area, Oct 29, 2026</p>
         </article>
       </div>
     </section>
@@ -190,13 +215,18 @@
       <h2>Culture</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.tvline.com/2300764/what-to-watch-october-30-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">New this weekend: Apple TV’s Nocturne and Dexter: Resurrection season 2</a></h3>
-          <p>Apple TV premieres Nocturne with two episodes, starring Liev Schreiber as a soldier turned homicide detective and Stephen Graham as a serial killer, and also airs the Dark Matter season 2 finale. Paramount+ launches the second season of Dexter: Resurrection, and the Daytime Emmys stream tonight.</p>
+          <h3><a href="https://www.tvline.com/2300764/what-to-watch-october-30-2026-tv-shows-movies-streaming/" target="_blank" rel="noopener">New this weekend: Apple TV’s “Nocturne,” “Dexter: Resurrection” season 2 and new albums from THAO and DIIV</a></h3>
+          <p>Apple TV premieres the series “Nocturne” today, Paramount+ brings back “Dexter: Resurrection” for season 2, and Netflix releases the documentary “SCTV: The Greatest Show You’ve Never Heard Of.” No new wide releases open in theaters, leaving last weekend’s leaders, “Clayface” and “You Can See Everything,” as the main draws. Friday’s albums include THAO’s “Show Me,” Sampa the Great’s “Nu Zamrock,” DIIV’s “ZIRP!” and Queens of the Stone Age’s “Perfecth.”</p>
           <p class="source">TVLine, Oct 30, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://radiomilwaukee.org/new-music/2026-10-30/new-music-friday-oct-30" target="_blank" rel="noopener">New music Friday: THAO, Sampa the Great, DIIV, and Queens of the Stone Age</a></h3>
-          <p>THAO’s Show Me is a personal record about divorce and change, and Sampa the Great’s Nu Zamrock blends Zambia’s 1970s Zamrock sound with hip-hop and soul. DIIV teams with producer A.G. Cook on the glossier ZIRP!, and Queens of the Stone Age also have a new album out.</p>
+          <h3><a href="https://www.space.com/entertainment/patrick-stewart-renowned-actor-and-star-treks-captain-picard-dies-at-86" target="_blank" rel="noopener">Patrick Stewart, Star Trek’s Captain Picard, dies at 86</a></h3>
+          <p>Sir Patrick Stewart died Wednesday at his Los Angeles home after a short struggle with Alzheimer’s disease and Lewy body dementia, his spokesperson said. He played Jean-Luc Picard across seven seasons of “Star Trek: The Next Generation,” four films and “Star Trek: Picard,” and Professor Charles Xavier in the X-Men films. He was knighted in 2010 and was also known for his one-man “A Christmas Carol.”</p>
+          <p class="source">Space.com, Oct 29, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://radiomilwaukee.org/new-music/2026-10-30/new-music-friday-oct-30" target="_blank" rel="noopener">New music Friday: THAO, Sampa the Great and DIIV lead the week’s albums</a></h3>
+          <p>Radio Milwaukee’s picks for Oct. 30 releases are THAO’s “Show Me,” Sampa the Great’s “Nu Zamrock,” DIIV’s “ZIRP!” and Clinic’s “Wild in the Streets.” Also out today are new records from Queens of the Stone Age, Lydia Loveless, Andy Stott, MorMor and WHY?. All are available on streaming services now.</p>
           <p class="source">Radio Milwaukee, Oct 30, 2026</p>
         </article>
       </div>
@@ -205,19 +235,19 @@
       <h2>Science &amp; tech</h2>
       <div class="stories">
         <article class="story">
-          <h3><a href="https://www.space.com/space-exploration/international-space-station/100-us-spacewalks-from-the-iss-astronauts-deploy-new-solar-array-on-landmark-eva" target="_blank" rel="noopener">Astronauts mark the 100th US spacewalk from the space station</a></h3>
-          <p>NASA’s Anil Menon and Canada’s Joshua Kutryk spent 7 hours and 11 minutes outside the station installing an upgraded solar array that unrolled to 63 feet on its own. It was the first spacewalk by a Canadian since 2019, and the pair go out again Nov. 5 to add the last new array.</p>
+          <h3><a href="https://www.space.com/space-exploration/international-space-station/100-us-spacewalks-from-the-iss-astronauts-deploy-new-solar-array-on-landmark-eva" target="_blank" rel="noopener">Spacewalkers install a new solar array on the 100th U.S. station spacewalk</a></h3>
+          <p>NASA’s Anil Menon and Canada’s Joshua Kutryk spent 7 hours and 11 minutes outside the International Space Station on Thursday, installing and unrolling one of the last upgraded solar arrays. It was the 100th U.S. spacewalk from the station without a shuttle docked and the first by a Canadian since 2019. The pair is scheduled to install the final array on Nov. 5.</p>
           <p class="source">Space.com, Oct 29, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://www.space.com/space-exploration/private-spaceflight/watch-virgin-galactics-new-delta-class-space-plane-take-to-the-skies-for-the-1st-time-video" target="_blank" rel="noopener">Virgin Galactic’s new space plane flies for the first time</a></h3>
-          <p>Apeiron, the first of Virgin Galactic’s Delta-class ships, flew beneath its carrier plane from Arizona to Spaceport America in New Mexico for testing. The company plans to start carrying paying customers in spring 2027, with nearly 700 ticket holders waiting.</p>
+          <h3><a href="https://www.space.com/space-exploration/private-spaceflight/watch-virgin-galactics-new-delta-class-space-plane-take-to-the-skies-for-the-1st-time-video" target="_blank" rel="noopener">Virgin Galactic’s new Delta-class space plane flies for the first time</a></h3>
+          <p>Virgin Galactic’s first Delta-class ship, Apeiron, flew attached to its carrier plane from Arizona to Spaceport America in New Mexico. After more tests there, the company plans to start commercial suborbital flights in spring 2027. Nearly 700 ticket holders are waiting, and the latest seats sold for $750,000 each.</p>
           <p class="source">Space.com, Oct 30, 2026</p>
         </article>
         <article class="story">
-          <h3><a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener">ChatGPT Pro and Business subscribers can claim up to $500 a month in API credits</a></h3>
-          <p>OpenAI says eligible ChatGPT Pro and Business subscribers can now claim up to $500 a month in free API credits by linking an API organization they own, making it cheaper to try building with OpenAI’s models.</p>
-          <p class="source">OpenAI, Oct 28, 2026</p>
+          <h3><a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/" target="_blank" rel="noopener">Mistral releases the weights of its trillion-parameter Large 4 model</a></h3>
+          <p>French AI company Mistral made its Mistral Large 4 model free to download on Hugging Face, so businesses and governments can run it on their own systems. Mistral says it matches leading open models while using fewer tokens per task and pitches it for cybersecurity work. It’s also available through Mistral’s API.</p>
+          <p class="source">TechCrunch, Oct 29, 2026</p>
         </article>
       </div>
     </section>

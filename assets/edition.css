@@ -107,8 +107,17 @@ html { scroll-padding-top: 3.75rem; }
 .mix-bars .bar i { position: absolute; inset: 0 auto 0 0; background: var(--spot); }
 .mix-bars .n { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
 
+/* Story tracker icon after a tracked story's headline (added by edition.js) */
+.track-link { display: inline-flex; align-items: center; gap: .2rem; vertical-align: .18em; margin-left: .15rem;
+              font-family: var(--serif); font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+              line-height: 1; color: var(--spot); text-decoration: none !important; border: 1px solid currentColor;
+              padding: .16rem .38rem .14rem .28rem; white-space: nowrap; }
+.track-link svg { width: .95em; height: .95em; }
+.track-link:hover { background: var(--spot); color: var(--paper); }
+.track-link:focus-visible { outline: 2px solid var(--spot); outline-offset: 2px; }
+
 @media print {
-  .edition-tools, .today-box, .next-games { display: none !important; }
+  .edition-tools, .today-box, .next-games, .track-link { display: none !important; }
   .contents { position: static; }
   .quiz details { display: block; }
 }

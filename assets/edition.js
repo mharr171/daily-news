@@ -196,6 +196,30 @@
       .catch(() => { qp.textContent = "Earthquake data is unavailable right now."; });
   }
 
+  // ---------- Story tracker links ----------
+  // Any story whose article is listed in threads.json gets a small icon after its headline
+  // linking to that story's thread, so tracked stories are marked even if added later.
+  fetch("../threads.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const byUrl = new Map();
+      (data.threads || []).forEach(t => (t.entries || []).forEach(e => { if (e.url && !byUrl.has(e.url)) byUrl.set(e.url, t); }));
+      document.querySelectorAll("section.topic article.story h3").forEach(h3 => {
+        const a = h3.querySelector("a[href]");
+        const t = a && byUrl.get(a.getAttribute("href"));
+        if (!t || h3.querySelector(".track-link")) return;
+        const link = el("a", "track-link");
+        link.href = "../tracker.html#" + encodeURIComponent(t.id);
+        link.title = "Follow this story: " + t.title;
+        link.setAttribute("aria-label", "Follow this story in the Story tracker: " + t.title);
+        link.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
+          '<circle cx="6" cy="5" r="2.2"/><circle cx="6" cy="12" r="2.2"/><circle cx="6" cy="19" r="2.2"/>' +
+          '<path d="M6 7.2v2.6M6 14.2v2.6M11 5h9M11 12h9M11 19h6"/></svg><span>Tracked</span>';
+        h3.append(" ", link);
+      });
+    })
+    .catch(() => {});
+
   // ---------- Next games, at the top of Sports ----------
   const sports = document.getElementById("sports");
   if (sports) {

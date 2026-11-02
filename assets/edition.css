@@ -121,3 +121,15 @@ html { scroll-padding-top: 3.75rem; }
   .contents { position: static; }
   .quiz details { display: block; }
 }
+
+/* Layout: fill dead space on wide screens */
+@media (min-width: 64rem) {
+  main { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); column-gap: 2.5rem; align-items: start; }
+  main > * { grid-column: 1 / -1; }
+  main > .edition-head { grid-column: 1; grid-row: 1; max-width: none; }
+  main > .brief { grid-column: 2; grid-row: 1; max-width: none; align-self: stretch; border-bottom: 2px solid var(--rule); padding-top: 1.75rem; }
+}
+@media (min-width: 46rem) {
+  /* A lone last story in a two-column grid spans the full width instead of leaving an empty cell. */
+  .stories > .story:last-child:nth-child(even) { grid-column: 1 / -1; padding: 1rem 0 1.25rem; border-left: 0; }
+}

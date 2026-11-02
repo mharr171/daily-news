@@ -147,7 +147,10 @@
          padding: .2rem .3rem .2rem 0; cursor: pointer; min-width: 9.5rem; text-align: left;
          display: inline-flex; align-items: center; gap: .4rem; }
   .grp .sw { width: .7rem; height: .7rem; background: var(--c); display: inline-block; }
-  .grp:hover { color: var(--ink); text-decoration: underline; }
+  .grp { cursor: default; }
+  .rowbtn { font: inherit; font-size: .8rem; font-style: italic; color: var(--muted); background: none; border: 0;
+            padding: .2rem .3rem; cursor: pointer; text-decoration: underline; }
+  .rowbtn:hover { color: var(--ink); }
   @media (max-width: 46rem) { .grp { min-width: 0; flex-basis: 100%; } }
 
   /* Month-long observances */
@@ -493,6 +496,19 @@
     document.querySelectorAll("#cats .chip[data-key]").forEach(b => b.setAttribute("aria-pressed", offCats.has(b.dataset.key) ? "false" : "true"));
     document.querySelectorAll("#teams .chip[data-team]").forEach(b => b.setAttribute("aria-pressed", offTeams.has(b.dataset.team) ? "false" : "true"));
     $("teams").hidden = offCats.has("Sports");
+    GROUPS.forEach(g => {
+      const t = document.querySelector(`.rowbtn[data-group="${g.label}"]`);
+      if (!t) return;
+      const on = g.cats.some(([k]) => !offCats.has(k));
+      t.textContent = on ? "Hide all" : "Show all";
+      t.setAttribute("aria-label", (on ? "Hide all " : "Show all ") + g.label);
+    });
+    const tt = $("teams-toggle");
+    if (tt) {
+      const on = TEAMS.some(t => !offTeams.has(t));
+      tt.textContent = on ? "Hide all" : "Show all";
+      tt.setAttribute("aria-label", on ? "Hide all teams" : "Show all teams");
+    }
     const btn = $("all-btn");
     if (btn) {
       const anyOn = CATS.some(c => !offCats.has(c.key));
@@ -515,9 +531,10 @@
     cats.append(bar);
     GROUPS.forEach(g => {
       const row = document.createElement("div"); row.className = "chips " + g.cls;
-      const head = document.createElement("button"); head.type = "button"; head.className = "grp";
+      const head = document.createElement("span"); head.className = "grp";
       head.innerHTML = `<span class="sw" aria-hidden="true"></span>${esc(g.label)}`;
-      head.title = "Show or hide this whole group";
+      const toggle = document.createElement("button"); toggle.type = "button"; toggle.className = "rowbtn";
+      toggle.dataset.group = g.label;
       const btns = g.cats.map(([key, label]) => {
         const b = chip(label, "", !offCats.has(key), on => {
           on ? offCats.delete(key) : offCats.add(key); store.set("offCats", [...offCats]);
@@ -525,15 +542,13 @@
         });
         b.dataset.key = key; return b;
       });
-      head.addEventListener("click", () => {
+      toggle.addEventListener("click", () => {
         const anyOn = g.cats.some(([k]) => !offCats.has(k));
         g.cats.forEach(([k]) => anyOn ? offCats.add(k) : offCats.delete(k));
-        btns.forEach(b => b.setAttribute("aria-pressed", anyOn ? "false" : "true"));
         store.set("offCats", [...offCats]);
-        $("teams").hidden = offCats.has("Sports");
         render();
       });
-      row.append(head, ...btns);
+      row.append(head, ...btns, toggle);
       cats.append(row);
     });
     cats.style.display = "grid"; cats.style.gap = ".45rem";
@@ -543,6 +558,14 @@
       });
       b.dataset.team = t; teams.append(b);
     });
+    const teamToggle = document.createElement("button"); teamToggle.type = "button"; teamToggle.className = "rowbtn"; teamToggle.id = "teams-toggle";
+    teamToggle.addEventListener("click", () => {
+      const anyOn = TEAMS.some(t => !offTeams.has(t));
+      TEAMS.forEach(t => anyOn ? offTeams.add(t) : offTeams.delete(t));
+      store.set("offTeams", [...offTeams]);
+      render();
+    });
+    teams.append(teamToggle);
     syncTools();
     teams.hidden = offCats.has("Sports");
     $("tools").hidden = false;

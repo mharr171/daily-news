@@ -228,6 +228,29 @@
       ]
     },
     {
+      "date": "2026-10-17",
+      "file": "posts/2026-10-17.html",
+      "summary": "The Justice Department sued to set aside 20,000 California mail ballots, and the state sued to keep the National Archives in San Bruno as gas prices climb past $6 a gallon. The Earthquakes can clinch a playoff spot against Nashville tonight, the unbeaten 49ers get ready for Monday night, and Street Fighter arrives in theaters.",
+      "headlines": [
+        {
+          "title": "Justice Department sues California to set aside 20,000 mailed ballots",
+          "topic": "General news"
+        },
+        {
+          "title": "California sues to keep the National Archives in San Bruno",
+          "topic": "General news"
+        },
+        {
+          "title": "Earthquakes can clinch first playoff berth since 2023 against Nashville",
+          "topic": "Sports"
+        },
+        {
+          "title": "Street Fighter brings the video game brawlers to theaters",
+          "topic": "Culture"
+        }
+      ]
+    },
+    {
       "date": "2026-10-16",
       "file": "posts/2026-10-16.html",
       "summary": "Mail-in ballots were stolen from a Daly City post office, and San Mateo County voters are urged to track theirs, while southbound 101 closes in San Francisco this weekend as the Valkyries host the WNBA Finals. BART announced a November bus bridge between Daly City and 24th Street that will slow Millbrae and SFO trips. Street Fighter leads a busy movie weekend, and a SpaceX cargo ship reached the space station.",

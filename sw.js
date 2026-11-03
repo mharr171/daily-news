@@ -2,10 +2,10 @@
 // Pages and data: network first, so readers always get the newest edition; cached copy only when offline.
 // Fonts, icons, CSS and JS: cached copy first, refreshed in the background.
 // Bump VERSION to clear old caches.
-const VERSION = "v1";
+const VERSION = "v2";
 const CACHE = "lfs-" + VERSION;
 const PRECACHE = ["/", "/index.html", "/posts.json", "/assets/edition.css", "/assets/edition.js",
-  "/assets/reader.js", "/assets/pwa.js", "/fonts/fonts.css", "/fonts/anton-latin-400-normal.woff2",
+  "/assets/reader.js", "/assets/pwa.js", "/streaming.html", "/assets/streaming.css", "/assets/streaming.js", "/fonts/fonts.css", "/fonts/anton-latin-400-normal.woff2",
   "/fonts/old-standard-tt-latin-400-normal.woff2", "/fonts/old-standard-tt-latin-400-italic.woff2",
   "/fonts/old-standard-tt-latin-700-normal.woff2", "/favicon-32.png", "/icon-192.png"];
 

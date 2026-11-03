@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Streaming Now | Live Full Stack</title>
+<meta name="description" content="Movies and TV shows on the streaming services you have, with free options labeled.">
+<link rel="preload" href="fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<link rel="canonical" href="https://www.livefullstack.com/streaming.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Streaming Now | Live Full Stack">
+<meta property="og:description" content="Movies and TV shows on the streaming services you have, with free options labeled.">
+<meta property="og:url" content="https://www.livefullstack.com/streaming.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/streaming.css">
+<script src="assets/pwa.js" defer></script>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="./">Live Full Stack</a></p>
+      <a class="home" href="./">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-head">
+      <div>
+        <p class="stamp">What’s on your services</p>
+        <h1>Streaming Now</h1>
+      </div>
+      <p class="tally" id="tally" aria-live="polite"></p>
+    </header>
+
+    <section class="controls" aria-label="Browse controls">
+      <div class="tabs" role="tablist" aria-label="Type">
+        <button role="tab" id="tab-movie" aria-selected="true" data-kind="movie">Movies</button>
+        <button role="tab" id="tab-tv" aria-selected="false" data-kind="tv">TV Shows</button>
+      </div>
+      <input type="search" id="q" placeholder="Search your services" aria-label="Search titles on your services" autocomplete="off">
+      <label class="free-toggle"><input type="checkbox" id="free-only"> Free only</label>
+      <label class="sort">Sort <select id="sort" aria-label="Sort order">
+        <option value="pop">Popular</option><option value="rating">Top rated</option>
+        <option value="new">Newest</option><option value="az">A to Z</option></select></label>
+      <button type="button" id="open-settings" class="btn">My services</button>
+    </section>
+
+    <nav class="genres" id="genres" aria-label="Genres"></nav>
+
+    <p class="notice" id="notice">Loading the catalog&hellip;</p>
+    <div class="grid" id="grid"></div>
+    <div id="sentinel" aria-hidden="true"></div>
+  </main>
+
+  <footer>
+    <div class="credits">
+      <img class="tmdb-logo" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="TMDB" width="90" height="12" onerror="this.remove()">
+      <p>This product uses the <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a> API but is not endorsed or certified by TMDB. Streaming availability data is provided by <a href="https://www.justwatch.com/" target="_blank" rel="noopener">JustWatch</a>. Availability changes often; check the service before you subscribe.</p>
+    </div>
+    <span>Compiled each morning by Claude. <a href="./">Front page</a> · <a href="calendar.html">Calendar</a> · <a href="tracker.html">Story tracker</a> · <a href="archive.html">Archive</a> · <a href="about.html">About</a></span>
+  </footer>
+</div>
+
+<dialog id="settings" aria-labelledby="settings-h">
+  <form method="dialog" class="dlg-head"><h2 id="settings-h">My services</h2><button class="close" aria-label="Close">&times;</button></form>
+  <p class="dlg-note">Turn services on or off to match your subscriptions. Only titles on services that are on appear. Saved in this browser only.</p>
+  <div id="service-list"></div>
+  <div class="dlg-foot"><button type="button" class="btn" id="reset-services">Turn all on</button></div>
+</dialog>
+
+<dialog id="detail" aria-labelledby="detail-h">
+  <form method="dialog" class="dlg-head"><span></span><button class="close" aria-label="Close">&times;</button></form>
+  <div class="detail-body">
+    <div class="detail-poster" id="detail-poster"></div>
+    <div class="detail-text">
+      <h2 id="detail-h"></h2>
+      <p class="meta" id="detail-meta"></p>
+      <p id="detail-overview"></p>
+      <h3>Where to watch</h3>
+      <ul class="where" id="detail-where"></ul>
+      <p class="fine"><a id="detail-link" href="#" target="_blank" rel="noopener">All viewing options on TMDB</a> (availability by JustWatch)</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/streaming.js"></script>
+</body>
+</html>

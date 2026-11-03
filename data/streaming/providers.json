@@ -1,61 +1,723 @@
 {
   "country": "US",
   "groups": [
-    {"id": "major", "name": "Major services", "free": false},
-    {"id": "premium", "name": "Premium and niche", "free": false},
-    {"id": "live", "name": "Live TV services (on-demand titles only)", "free": false},
-    {"id": "ads", "name": "Free with ads", "free": true, "label": "Free with ads"},
-    {"id": "library", "name": "Library-card services", "free": true, "label": "Free with library card"},
-    {"id": "public", "name": "Public broadcasting", "free": true, "label": "Free"}
+    {
+      "id": "major",
+      "name": "Major services",
+      "free": false
+    },
+    {
+      "id": "premium",
+      "name": "Premium and niche",
+      "free": false
+    },
+    {
+      "id": "live",
+      "name": "Live TV services (on-demand titles only)",
+      "free": false
+    },
+    {
+      "id": "ads",
+      "name": "Free with ads",
+      "free": true,
+      "label": "Free with ads"
+    },
+    {
+      "id": "library",
+      "name": "Library-card services",
+      "free": true,
+      "label": "Free with library card"
+    },
+    {
+      "id": "public",
+      "name": "Public broadcasting",
+      "free": true,
+      "label": "Free"
+    }
   ],
   "services": [
-    {"key": "netflix", "name": "Netflix", "group": "major", "aliases": ["netflix", "netflix standard with ads"]},
-    {"key": "disney", "name": "Disney+", "group": "major", "aliases": ["disney plus"]},
-    {"key": "hulu", "name": "Hulu", "group": "major", "aliases": ["hulu"]},
-    {"key": "hbomax", "name": "HBO Max", "group": "major", "aliases": ["hbo max", "max"]},
-    {"key": "prime", "name": "Amazon Prime Video", "group": "major", "aliases": ["amazon prime video", "amazon prime video with ads"]},
-    {"key": "paramount", "name": "Paramount+", "group": "major", "aliases": ["paramount plus", "paramount plus premium", "paramount plus essential"]},
-    {"key": "peacock", "name": "Peacock", "group": "major", "aliases": ["peacock", "peacock premium", "peacock premium plus"]},
-    {"key": "appletv", "name": "Apple TV+", "group": "major", "aliases": ["apple tv plus", "apple tv"]},
-
-    {"key": "starz", "name": "Starz", "group": "premium", "aliases": ["starz"]},
-    {"key": "mgmplus", "name": "MGM+", "group": "premium", "aliases": ["mgm plus"]},
-    {"key": "amcplus", "name": "AMC+", "group": "premium", "aliases": ["amc plus"]},
-    {"key": "britbox", "name": "BritBox", "group": "premium", "aliases": ["britbox"]},
-    {"key": "acorn", "name": "Acorn TV", "group": "premium", "aliases": ["acorn tv"]},
-    {"key": "hallmark", "name": "Hallmark+", "group": "premium", "aliases": ["hallmark plus", "hallmark movies now"]},
-    {"key": "shudder", "name": "Shudder", "group": "premium", "aliases": ["shudder"]},
-    {"key": "crunchyroll", "name": "Crunchyroll", "group": "premium", "aliases": ["crunchyroll"]},
-    {"key": "hidive", "name": "HIDIVE", "group": "premium", "aliases": ["hidive"]},
-    {"key": "criterion", "name": "Criterion Channel", "group": "premium", "aliases": ["criterion channel"]},
-    {"key": "mubi", "name": "MUBI", "group": "premium", "aliases": ["mubi"]},
-    {"key": "curiosity", "name": "CuriosityStream", "group": "premium", "aliases": ["curiosity stream", "curiositystream"]},
-    {"key": "sundancenow", "name": "Sundance Now", "group": "premium", "aliases": ["sundance now"]},
-    {"key": "allblk", "name": "ALLBLK", "group": "premium", "aliases": ["allblk"]},
-    {"key": "upfaith", "name": "UP Faith & Family", "group": "premium", "aliases": ["up faith and family", "up faith family"]},
-    {"key": "pbspassport", "name": "PBS Passport", "group": "premium", "aliases": ["pbs passport"]},
-
-    {"key": "youtubetv", "name": "YouTube TV", "group": "live", "aliases": ["youtube tv"]},
-    {"key": "sling", "name": "Sling TV", "group": "live", "aliases": ["sling tv"]},
-    {"key": "fubo", "name": "Fubo", "group": "live", "aliases": ["fubo", "fubotv", "fubo tv"]},
-    {"key": "directv", "name": "DirecTV Stream", "group": "live", "aliases": ["directv stream", "directv"]},
-    {"key": "philo", "name": "Philo", "group": "live", "aliases": ["philo"]},
-    {"key": "frndly", "name": "Frndly TV", "group": "live", "aliases": ["frndly tv"]},
-
-    {"key": "tubi", "name": "Tubi", "group": "ads", "aliases": ["tubi tv", "tubi"]},
-    {"key": "pluto", "name": "Pluto TV", "group": "ads", "aliases": ["pluto tv"]},
-    {"key": "roku", "name": "The Roku Channel", "group": "ads", "aliases": ["the roku channel", "roku channel"]},
-    {"key": "plex", "name": "Plex", "group": "ads", "aliases": ["plex"]},
-    {"key": "youtube", "name": "YouTube (free with ads)", "group": "ads", "aliases": ["youtube", "youtube free"]},
-    {"key": "xumo", "name": "Xumo Play", "group": "ads", "aliases": ["xumo play"]},
-    {"key": "fawesome", "name": "Fawesome", "group": "ads", "aliases": ["fawesome"]},
-    {"key": "filmrise", "name": "FilmRise", "group": "ads", "aliases": ["filmrise"]},
-    {"key": "popcornflix", "name": "Popcornflix", "group": "ads", "aliases": ["popcornflix"]},
-
-    {"key": "kanopy", "name": "Kanopy", "group": "library", "aliases": ["kanopy"]},
-    {"key": "hoopla", "name": "Hoopla", "group": "library", "aliases": ["hoopla"]},
-
-    {"key": "pbs", "name": "PBS (free on-demand)", "group": "public", "aliases": ["pbs"]},
-    {"key": "pbskids", "name": "PBS Kids", "group": "public", "aliases": ["pbs kids"]}
+    {
+      "key": "netflix",
+      "name": "Netflix",
+      "group": "major",
+      "aliases": [
+        "netflix",
+        "netflix standard with ads"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          8,
+          1796
+        ],
+        "tv": [
+          8,
+          1796
+        ]
+      }
+    },
+    {
+      "key": "disney",
+      "name": "Disney+",
+      "group": "major",
+      "aliases": [
+        "disney plus"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          337
+        ],
+        "tv": [
+          337
+        ]
+      }
+    },
+    {
+      "key": "hulu",
+      "name": "Hulu",
+      "group": "major",
+      "aliases": [
+        "hulu"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          15
+        ],
+        "tv": [
+          15
+        ]
+      }
+    },
+    {
+      "key": "hbomax",
+      "name": "HBO Max",
+      "group": "major",
+      "aliases": [
+        "hbo max",
+        "max"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          1899
+        ],
+        "tv": [
+          1899
+        ]
+      }
+    },
+    {
+      "key": "prime",
+      "name": "Amazon Prime Video",
+      "group": "major",
+      "aliases": [
+        "amazon prime video",
+        "amazon prime video with ads"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          9,
+          2100
+        ],
+        "tv": [
+          9,
+          2100
+        ]
+      }
+    },
+    {
+      "key": "paramount",
+      "name": "Paramount+",
+      "group": "major",
+      "aliases": [
+        "paramount plus",
+        "paramount plus premium",
+        "paramount plus essential"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          2303,
+          2616
+        ],
+        "tv": [
+          2303,
+          2616
+        ]
+      }
+    },
+    {
+      "key": "peacock",
+      "name": "Peacock",
+      "group": "major",
+      "aliases": [
+        "peacock",
+        "peacock premium",
+        "peacock premium plus"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          386,
+          387
+        ],
+        "tv": [
+          386,
+          387
+        ]
+      }
+    },
+    {
+      "key": "appletv",
+      "name": "Apple TV+",
+      "group": "major",
+      "aliases": [
+        "apple tv plus",
+        "apple tv"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          350
+        ],
+        "tv": [
+          350
+        ]
+      }
+    },
+    {
+      "key": "starz",
+      "name": "Starz",
+      "group": "premium",
+      "aliases": [
+        "starz"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          43
+        ],
+        "tv": [
+          43
+        ]
+      }
+    },
+    {
+      "key": "mgmplus",
+      "name": "MGM+",
+      "group": "premium",
+      "aliases": [
+        "mgm plus"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          34
+        ],
+        "tv": [
+          34
+        ]
+      }
+    },
+    {
+      "key": "amcplus",
+      "name": "AMC+",
+      "group": "premium",
+      "aliases": [
+        "amc plus"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          526
+        ],
+        "tv": [
+          526
+        ]
+      }
+    },
+    {
+      "key": "britbox",
+      "name": "BritBox",
+      "group": "premium",
+      "aliases": [
+        "britbox"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          151
+        ],
+        "tv": [
+          151
+        ]
+      }
+    },
+    {
+      "key": "acorn",
+      "name": "Acorn TV",
+      "group": "premium",
+      "aliases": [
+        "acorn tv"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          87
+        ],
+        "tv": [
+          87
+        ]
+      }
+    },
+    {
+      "key": "hallmark",
+      "name": "Hallmark+",
+      "group": "premium",
+      "aliases": [
+        "hallmark plus",
+        "hallmark movies now"
+      ],
+      "tmdb_ids": {
+        "movie": [],
+        "tv": []
+      }
+    },
+    {
+      "key": "shudder",
+      "name": "Shudder",
+      "group": "premium",
+      "aliases": [
+        "shudder"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          99
+        ],
+        "tv": [
+          99
+        ]
+      }
+    },
+    {
+      "key": "crunchyroll",
+      "name": "Crunchyroll",
+      "group": "premium",
+      "aliases": [
+        "crunchyroll"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          283
+        ],
+        "tv": [
+          283
+        ]
+      }
+    },
+    {
+      "key": "hidive",
+      "name": "HIDIVE",
+      "group": "premium",
+      "aliases": [
+        "hidive"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          430
+        ],
+        "tv": [
+          430
+        ]
+      }
+    },
+    {
+      "key": "criterion",
+      "name": "Criterion Channel",
+      "group": "premium",
+      "aliases": [
+        "criterion channel"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          258
+        ],
+        "tv": [
+          258
+        ]
+      }
+    },
+    {
+      "key": "mubi",
+      "name": "MUBI",
+      "group": "premium",
+      "aliases": [
+        "mubi"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          11
+        ],
+        "tv": [
+          11
+        ]
+      }
+    },
+    {
+      "key": "curiosity",
+      "name": "CuriosityStream",
+      "group": "premium",
+      "aliases": [
+        "curiosity stream",
+        "curiositystream"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          190
+        ],
+        "tv": [
+          190
+        ]
+      }
+    },
+    {
+      "key": "sundancenow",
+      "name": "Sundance Now",
+      "group": "premium",
+      "aliases": [
+        "sundance now"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          143
+        ],
+        "tv": [
+          143
+        ]
+      }
+    },
+    {
+      "key": "allblk",
+      "name": "ALLBLK",
+      "group": "premium",
+      "aliases": [
+        "allblk"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          251
+        ],
+        "tv": [
+          251
+        ]
+      }
+    },
+    {
+      "key": "upfaith",
+      "name": "UP Faith & Family",
+      "group": "premium",
+      "aliases": [
+        "up faith and family",
+        "up faith family"
+      ],
+      "tmdb_ids": {
+        "movie": [],
+        "tv": []
+      }
+    },
+    {
+      "key": "pbspassport",
+      "name": "PBS Passport",
+      "group": "premium",
+      "aliases": [
+        "pbs passport"
+      ],
+      "tmdb_ids": {
+        "movie": [],
+        "tv": []
+      }
+    },
+    {
+      "key": "youtubetv",
+      "name": "YouTube TV",
+      "group": "live",
+      "aliases": [
+        "youtube tv"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          2528
+        ],
+        "tv": [
+          2528
+        ]
+      }
+    },
+    {
+      "key": "sling",
+      "name": "Sling TV",
+      "group": "live",
+      "aliases": [
+        "sling tv"
+      ],
+      "tmdb_ids": {
+        "movie": [],
+        "tv": []
+      }
+    },
+    {
+      "key": "fubo",
+      "name": "Fubo",
+      "group": "live",
+      "aliases": [
+        "fubo",
+        "fubotv",
+        "fubo tv"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          257
+        ],
+        "tv": [
+          257
+        ]
+      }
+    },
+    {
+      "key": "directv",
+      "name": "DirecTV Stream",
+      "group": "live",
+      "aliases": [
+        "directv stream",
+        "directv"
+      ],
+      "tmdb_ids": {
+        "movie": [],
+        "tv": []
+      }
+    },
+    {
+      "key": "philo",
+      "name": "Philo",
+      "group": "live",
+      "aliases": [
+        "philo"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          2383
+        ],
+        "tv": [
+          2383
+        ]
+      }
+    },
+    {
+      "key": "frndly",
+      "name": "Frndly TV",
+      "group": "live",
+      "aliases": [
+        "frndly tv"
+      ],
+      "tmdb_ids": {
+        "movie": [],
+        "tv": []
+      }
+    },
+    {
+      "key": "tubi",
+      "name": "Tubi",
+      "group": "ads",
+      "aliases": [
+        "tubi tv",
+        "tubi"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          73
+        ],
+        "tv": [
+          73
+        ]
+      }
+    },
+    {
+      "key": "pluto",
+      "name": "Pluto TV",
+      "group": "ads",
+      "aliases": [
+        "pluto tv"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          300
+        ],
+        "tv": [
+          300
+        ]
+      }
+    },
+    {
+      "key": "roku",
+      "name": "The Roku Channel",
+      "group": "ads",
+      "aliases": [
+        "the roku channel",
+        "roku channel"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          207
+        ],
+        "tv": [
+          207
+        ]
+      }
+    },
+    {
+      "key": "plex",
+      "name": "Plex",
+      "group": "ads",
+      "aliases": [
+        "plex"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          538
+        ],
+        "tv": [
+          538
+        ]
+      }
+    },
+    {
+      "key": "youtube",
+      "name": "YouTube (free with ads)",
+      "group": "ads",
+      "aliases": [
+        "youtube",
+        "youtube free"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          192,
+          235
+        ],
+        "tv": [
+          192,
+          235
+        ]
+      }
+    },
+    {
+      "key": "xumo",
+      "name": "Xumo Play",
+      "group": "ads",
+      "aliases": [
+        "xumo play"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          1963
+        ],
+        "tv": [
+          1963
+        ]
+      }
+    },
+    {
+      "key": "fawesome",
+      "name": "Fawesome",
+      "group": "ads",
+      "aliases": [
+        "fawesome"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          2409
+        ],
+        "tv": [
+          2409
+        ]
+      }
+    },
+    {
+      "key": "filmrise",
+      "name": "FilmRise",
+      "group": "ads",
+      "aliases": [
+        "filmrise"
+      ],
+      "tmdb_ids": {
+        "movie": [],
+        "tv": []
+      }
+    },
+    {
+      "key": "popcornflix",
+      "name": "Popcornflix",
+      "group": "ads",
+      "aliases": [
+        "popcornflix"
+      ],
+      "tmdb_ids": {
+        "movie": [],
+        "tv": []
+      }
+    },
+    {
+      "key": "kanopy",
+      "name": "Kanopy",
+      "group": "library",
+      "aliases": [
+        "kanopy"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          191
+        ],
+        "tv": [
+          191
+        ]
+      }
+    },
+    {
+      "key": "hoopla",
+      "name": "Hoopla",
+      "group": "library",
+      "aliases": [
+        "hoopla"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          212
+        ],
+        "tv": [
+          212
+        ]
+      }
+    },
+    {
+      "key": "pbs",
+      "name": "PBS (free on-demand)",
+      "group": "public",
+      "aliases": [
+        "pbs"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          209
+        ],
+        "tv": [
+          209
+        ]
+      }
+    },
+    {
+      "key": "pbskids",
+      "name": "PBS Kids",
+      "group": "public",
+      "aliases": [
+        "pbs kids"
+      ],
+      "tmdb_ids": {
+        "movie": [
+          2796
+        ],
+        "tv": [
+          2796
+        ]
+      }
+    }
   ]
 }

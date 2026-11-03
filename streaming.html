@@ -61,6 +61,19 @@
 
     <nav class="genres" id="genres" aria-label="Genres"></nav>
 
+    <section class="featured" id="featured" hidden>
+      <div class="row" id="row-picks" hidden>
+        <h2>This week&rsquo;s picks</h2>
+        <p class="row-note" id="picks-note"></p>
+        <div class="strip picks" id="strip-picks"></div>
+      </div>
+      <div class="row" id="row-new" hidden>
+        <h2 id="new-h">New releases</h2>
+        <p class="row-note">Out in the last 30 days, on your services.</p>
+        <div class="strip" id="strip-new"></div>
+      </div>
+    </section>
+
     <p class="notice" id="notice">Loading the catalog&hellip;</p>
     <div class="grid" id="grid"></div>
     <div id="sentinel" aria-hidden="true"></div>

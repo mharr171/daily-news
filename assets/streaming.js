@@ -16,7 +16,7 @@
     off: new Set(store.get("lfs-stream-off", [])),   // services turned off; new services default to on
     genre: 0, q: "", shown: 0, list: []
   };
-  var providers = null, meta = null, svc = {}, data = {}, shardCache = {};
+  var providers = null, meta = null, featured = null, picks = null, svc = {}, data = {}, byId = {}, shardCache = {};
 
   function norm(s) { return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim(); }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
@@ -62,7 +62,8 @@
   function load(kind) {
     if (data[kind]) return Promise.resolve(data[kind]);
     return json("data/streaming/" + (kind === "movie" ? "movies" : "tv") + ".json").then(function (d) {
-      d.items.forEach(function (it) { it._n = norm(it.t); });
+      byId[kind] = {};
+      d.items.forEach(function (it) { it._n = norm(it.t); it._k = kind; byId[kind][it.i] = it; });
       data[kind] = d.items; return d.items;
     });
   }
@@ -100,6 +101,7 @@
     $("notice").hidden = n > 0;
     if (!n) $("notice").textContent = state.off.size === providers.services.length ? "All services are off. Turn some on under My services." : "Nothing matches. Try another genre, a different search, or turn on more services.";
     more();
+    renderFeatured();
   }
   function enabledAny(it) { for (var i = 0; i < it.s.length; i++) if (enabled(it.s[i])) return true; return false; }
 
@@ -147,13 +149,59 @@
     return box;
   }
 
-  function card(it) {
+  function card(it, extra) {
     var b = el("button", "card"); b.type = "button";
     var p = posterBox(it, "w185", [185, 342], "(max-width: 40rem) 40vw, 170px");
     if (anyFree(it)) p.append(el("span", "badge", "Free"));
     b.append(p, el("span", "t", it.t + (it.y ? " (" + it.y + ")" : "")), el("span", "s", serviceLine(it)));
+    if (extra) b.append(el("span", "x", extra));
     b.onclick = function () { openDetail(it); };
     return b;
+  }
+
+
+  // ---------- featured: new releases and this week's picks ----------
+  var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function shortDate(d) { var p = (d || "").split("-"); return p.length === 3 ? MONTHS[+p[1] - 1] + " " + (+p[2]) : ""; }
+  function usable(it) { return it && enabledAny(it) && (!state.free || anyFree(it)); }
+
+  function renderFeatured() {
+    var box = $("featured");
+    if (!featured && !picks) { box.hidden = true; return; }
+    if (state.q || state.genre) { box.hidden = true; return; }
+    Promise.all([load("movie"), load("tv")]).then(function () {
+      var kind = state.kind, shown = false;
+
+      var pk = [];
+      if (picks && picks.picks) {
+        picks.picks.forEach(function (p) {
+          var it = byId[p.k] && byId[p.k][p.i];
+          if (usable(it)) pk.push([it, p.b || ""]);
+        });
+      }
+      pk = pk.slice(0, 8);
+      var sp = $("strip-picks"); sp.textContent = "";
+      pk.forEach(function (x) { sp.append(card(x[0], x[1])); });
+      $("row-picks").hidden = !pk.length;
+      $("picks-note").textContent = picks && picks.week_of ? "Chosen by Claude for the week of " + shortDate(picks.week_of) + ", from titles on your services." : "";
+      shown = shown || pk.length > 0;
+
+      var nw = [];
+      if (featured && featured.new && featured.new[kind]) {
+        featured.new[kind].forEach(function (f) {
+          var it = byId[kind][f.i];
+          if (usable(it)) nw.push([it, f.d]);
+        });
+      }
+      nw = nw.slice(0, 24);
+      var sn = $("strip-new"); sn.textContent = "";
+      nw.forEach(function (x) { sn.append(card(x[0], "Out " + shortDate(x[1]))); });
+      $("new-h").textContent = kind === "movie" ? "New movies" : "New TV shows";
+      $("row-new").hidden = !nw.length;
+      shown = shown || nw.length > 0;
+
+      box.hidden = !shown;
+    });
   }
 
   // ---------- detail ----------
@@ -163,7 +211,7 @@
     return shardCache[key];
   }
   function openDetail(it) {
-    var kind = state.kind;
+    var kind = it._k || state.kind;
     $("detail-h").textContent = it.t;
     var g = (meta.genres[kind] || {}), names = it.g.map(function (x) { return g[x]; }).filter(Boolean).join(", ");
     $("detail-meta").textContent = [it.y || "", kind === "movie" ? "Movie" : "TV show", names, it.r ? "★ " + it.r.toFixed(1) + " / 10" : ""].filter(Boolean).join(" · ");
@@ -206,6 +254,8 @@
     Promise.all([json("data/streaming/providers.json"), json("data/streaming/meta.json")]).then(function (r) {
       providers = r[0]; meta = r[1];
       providers.services.forEach(function (s) { svc[s.key] = s; });
+      json("data/streaming/featured.json").then(function (f) { featured = f; renderFeatured(); }).catch(function () {});
+      json("data/streaming/picks.json").then(function (p) { picks = p; renderFeatured(); }).catch(function () {});
       setKind(state.kind);
     }).catch(function () {
       $("notice").textContent = "The streaming catalog hasn’t been loaded yet. Check back after the next daily update.";

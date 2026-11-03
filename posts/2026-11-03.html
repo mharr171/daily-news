@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tuesday, November 3, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 34: Tuesday, November 3, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-03.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Tuesday, November 3, 2026 | Live Full Stack">
+<meta property="og:description" content="Election Day is here: polls in Millbrae and across San Mateo County are open until 8 p.m., while the nation votes in midterms that will decide control of Congress. President Trump also said U.S. military aid to Israel will end at the close of the year. The Warriors erased a 17-point deficit to beat Phoenix for a fifth straight win, and Google took down a botnet of more than a million Android TV boxes.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-03.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-03">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 34 · Updated 6:44 a.m.</p>
+      <h1>Tuesday, November 3, 2026</h1>
+      <p class="summary">Election Day is here: polls in Millbrae and across San Mateo County are open until 8 p.m., while the nation votes in midterms that will decide control of Congress. President Trump also said U.S. military aid to Israel will end at the close of the year. The Warriors erased a 17-point deficit to beat Phoenix for a fifth straight win, and Google took down a botnet of more than a million Android TV boxes.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>Polls are open in San Mateo County until 8 p.m. today, and the midterms will decide whether Republicans keep control of Congress.</li>
+        <li>President Trump said on Fox that U.S. military aid to Israel will end at the close of 2026, while Israel can still buy its own weapons.</li>
+        <li>The Warriors came back from 17 down to beat the Suns 116–113 behind Stephen Curry’s 34 points, their fifth straight win.</li>
+        <li>California gas averages $5.91 a gallon, down about 11 cents in a week, and Google dismantled a botnet of Android TV boxes.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> It’s Election Day. San Mateo County vote centers are open until 8 p.m., and ballot drop boxes, including one outside Millbrae City Hall, close at 8 p.m. sharp.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.ci.millbrae.ca.us/723/November-3-2026-General-and-Special-Muni" target="_blank" rel="noopener">Election Day in Millbrae: where to vote and what’s on the ballot</a></h3>
+          <p>Polls are open from 7 a.m. to 8 p.m. today. Millbrae’s vote center is the Chetcuti Community Room at 450 Poplar Ave., and a ballot drop box outside City Hall at 621 Magnolia Ave. takes ballots until 8 p.m. Millbrae voters pick City Council members in three districts: District 2 (one candidate), District 4 (two candidates) and a partial term in District 3 (two candidates). Mail ballots must be postmarked by today and arrive within seven days.</p>
+          <p class="why"><strong>Why it matters:</strong> Council races in Millbrae are often decided by small margins, and the county’s first results arrive tonight but the count continues for days.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-25.html">Oct 25</a> · <a href="2026-10-27.html">Oct 27</a> · <a href="2026-10-29.html">Oct 29</a> · <a href="../tracker.html#election-san-mateo-county">Follow this story ›</a></p>
+          <p class="source">City of Millbrae; The Almanac, Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">Gas and grocery watch</p>
+          <h3><a href="https://gasprices.aaa.com/?state=CA" target="_blank" rel="noopener">Gas and grocery watch: California gas falls to $5.91, still $1.25 above a year ago</a></h3>
+          <p>AAA’s California average for regular was $5.906 on Monday, down from $6.019 a week ago and $6.401 a month ago, but well above $4.651 a year ago; the national average is $4.169. San Mateo County isn’t listed separately by AAA, and the San Francisco metro area averaged $5.930. For groceries, the September consumer price report found food at home down 0.1% from August and up 1.8% over the year, while restaurant prices were up 3.5% over the year. Gasoline nationwide was up 34.2% over the year, and the October report comes out Nov. 10.</p>
+          <p class="why"><strong>Why it matters:</strong> Cheaper gas helps, but a fill-up in the Bay Area still costs far more than a year ago, while store prices are rising more slowly than restaurant menus.</p>
+          <p class="source">AAA, Nov 2, 2026; U.S. Bureau of Labor Statistics, Oct 14, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://abcnews.com/US/wireStory/monarch-butterflies-tiny-trackers-scientists-follow-mysterious-migration-137804851" target="_blank" rel="noopener">Tiny solar-powered trackers are revealing how monarch butterflies make their 3,000-mile trip</a></h3>
+          <p>Scientists with the National Wildlife Federation and partners have attached radio tags, each about as heavy as a drop of water, to nearly 1,750 monarchs this year. About 175 tagged butterflies have been detected in central Mexico so far, including one that started west of the Rockies, and the data should show where monarchs rest and which habitats most need protection. The eastern population has fallen more than 80% since the mid-1990s and the western population about 95%.</p>
+          <p class="source">Associated Press (via ABC News), Nov 3, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://tribune.com.pk/story/2638415/trump-faces-major-political-test-as-americans-vote-in-midterms" target="_blank" rel="noopener">Americans vote in midterms that could end Republican control of Congress</a></h3>
+          <p>All 435 House seats, 35 Senate seats and 36 governorships are on the ballot. Democrats need three House gains and a net four Senate seats to take both chambers; Republicans now hold the Senate 53–47. Decision Desk HQ’s final forecast shows Democrats winning 241 House seats and a 52–48 Senate majority, though polls can miss, and more than 57 million people voted early. Trump has said that if he loses Congress he could veto everything, though he said he might eventually strike deals.</p>
+          <p class="why"><strong>Why it matters:</strong> California’s House races and a new governor are on the ballot today, and the next Congress will decide federal funding for Bay Area transit, health care and disaster aid.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-01.html">Nov 1</a> · <a href="2026-11-02.html">Nov 2</a></p>
+          <p class="source">Agence France-Presse (via The Express Tribune), Nov 3, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.foxnews.com/politics/trump-says-israel-stop-receiving-4b-us-aid-years-end-can-still-buy-weapons" target="_blank" rel="noopener">Trump says U.S. military aid to Israel will end at the close of 2026</a></h3>
+          <p>In a Fox &amp; Friends interview on Election Day, Trump said aid he put at about $4 billion will stop at year’s end and that Israel can still buy its own weapons, adding that “they don’t need it.” He said he and Prime Minister Benjamin Netanyahu had discussed ending the aid for years and that Netanyahu raised the idea. The current agreement provides about $3.8 billion a year through 2028, and the timing and terms of any change have not been spelled out.</p>
+          <p class="why"><strong>Why it matters:</strong> Military aid is set by Congress, so the makeup of the House and Senate chosen today will matter for whether and how any change happens.</p>
+          <p class="source">Fox News, Nov 3, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-charles-bassey-phoenix-suns/1976556/" target="_blank" rel="noopener">Today in sports: Warriors win a fifth straight, Valkyries parade Wednesday, 49ers on their bye</a></h3>
+          <p>The Warriors beat Phoenix 116–113 at Chase Center on Monday to improve to 5–3. The Valkyries’ championship parade is planned for Wednesday afternoon along the bay front, with the route and time still to be announced. Coming up: the Warriors host Miami on Thursday at 7 p.m. and Orlando on Saturday at 5:30 p.m.; the Earthquakes close the regular season at Minnesota on Saturday at 4 p.m.; Hawai‘i plays at UTEP on Saturday at 6:30 p.m.; and the 49ers host the Raiders on Sunday at 1:25 p.m.</p>
+          <p class="source">NBC Sports Bay Area, Nov 2, 2026; team schedules</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-charles-bassey-phoenix-suns/1976556/" target="_blank" rel="noopener">Curry scores 34 and Warriors erase a 17-point deficit; Draymond Green is ejected</a></h3>
+          <p>Stephen Curry, who had been listed out for rest in pregame reports, played and scored 34, including 18 in the third quarter after just 9 in the first half. Backup center Charles Bassey added a career-high 19 points, and a late-second-quarter 12–0 run helped cut a 17-point hole before the Warriors tied it entering the fourth. Draymond Green was ejected with two technical fouls after throwing Phoenix’s Khaman Maluach to the floor and scuffling with Dillon Brooks; it was his first ejection this season and the 23rd of his regular-season career.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-02.html">Nov 2</a></p>
+          <p class="source">NBC Sports Bay Area; Yahoo Sports, Nov 2–3, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/bears-spark-jeffery-simmons-debut-044700637.html" target="_blank" rel="noopener">Bears beat the Seahawks 34–17 in Jeffery Simmons’ debut</a></h3>
+          <p>Chicago improved to 6–2 on Monday night in Seattle, with all-pro defensive tackle Jeffery Simmons, acquired in a blockbuster trade last week, leading the team with six tackles and a sack in his first game. The Bears never trailed and held Seattle to a field goal over its first five possessions. Seattle plays in the 49ers’ division, the NFC West.</p>
+          <p class="source">Yahoo Sports, Nov 3, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Monday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>6–1</td><td>Bye week; host the Raiders Sunday</td></tr>
+            <tr><td>Warriors</td><td>5–3</td><td>Five straight wins after an 0–3 start</td></tr>
+            <tr><td>Earthquakes</td><td>14–9–10</td><td>Regular-season finale Saturday at Minnesota</td></tr>
+            <tr><td>Valkyries</td><td>Champions</td><td>Won the WNBA Finals 4–3 over Atlanta</td></tr>
+          </tbody>
+        </table>
+        <p class="source">NBC Sports Bay Area, San Jose Earthquakes</p>
+      </aside>
+    </section>
+
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://screenrant.com/movies-release-streaming-digital-physical-november-2-2026/" target="_blank" rel="noopener">Movies at home this week: “Resident Evil” and “Primetime” hit digital, “The Uprising” arrives Friday</a></h3>
+          <p>Several 2026 theatrical releases arrive on digital rental today, including Zach Cregger’s “Resident Evil,” Lance Oppenheim’s “Primetime” with Robert Pattinson, and a new “Sense and Sensibility.” On streaming, Netflix adds the crime thriller “Carolina Caroline” on Friday, and Peacock premieres Paul Greengrass’s “The Uprising,” starring Andrew Garfield, the same day. Criterion releases of “Harold and Maude” and “KPop Demon Hunters” are also out today.</p>
+          <p class="source">Screen Rant, Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://music.mxdwn.com/2026/11/02/news/the-hunger-games-sunrise-on-the-reaping-album-announced-for-november-2026-release-featuring-new-music-from-mckenna-grace-violet-grohl-noah-cyrus-more/" target="_blank" rel="noopener">Hunger Games companion album sets Nov. 13 release with Noah Kahan, Stevie Nicks and The Cure</a></h3>
+          <p>“The Hunger Games: Sunrise on the Reaping (The Album)” is a 29-track collection executive produced by Dave Cobb, out Nov. 13 on MCA, a week before the film opens Nov. 20. Noah Kahan’s “Draw You Out” is the lead single, with other tracks from Stevie Nicks, Kacey Musgraves, Tyler Childers, Ella Langley and Jennifer Lawrence, plus a live Berlin recording by The Cure.</p>
+          <p class="source">mxdwn Music, Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2295907/november-2026-tv-schedule-what-to-watch-printable-calendar-premieres-finales-streaming-list/" target="_blank" rel="noopener">TV this week: “Black Doves” and “North of North” return Thursday, “Awkwafina: The Unlikely Cook” on Friday</a></h3>
+          <p>After tonight’s Netflix binge “Bass x Machina,” Wednesday brings “The Greatest,” “All’s Fair” and “Stick” premieres. Thursday, Netflix drops season 2 of both “Black Doves” and “North of North”; Friday, Apple TV serves up “Awkwafina: The Unlikely Cook”; and MGM+ brings back “The Institute” for season 2 on Sunday at 9 p.m.</p>
+          <p class="source">TVLine, Nov 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/" target="_blank" rel="noopener">Voyager 1 reaches one light-day from Earth on Nov. 18</a></h3>
+          <p>NASA says the 1977 probe will be about 16 billion miles away on Nov. 18, the distance light travels in a day, after 49 years, 2 months and 11 days of travel at nearly 38,000 mph. Its twin, Voyager 2, is expected to reach the mark in November 2035. Voyager 1 is headed toward the star Gliese 445, which it should pass at about 1.7 light-years in roughly 40,000 years.</p>
+          <p class="source">NASA, updated Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://thehackernews.com/2026/11/google-disrupts-13-million-device.html" target="_blank" rel="noopener">Google dismantles an Android botnet of more than 1.3 million TV boxes</a></h3>
+          <p>Google says it seized servers and domains tied to a botnet made up mostly of Android TV set-top boxes, and it is “highly confident” that maker Videostrong deliberately built in the backdoor and sold access to criminals. Researchers counted more than 1.4 million infected devices across 206 models between June and October, and Google expects the action to cut off at least 10 million more. Because the backdoor lives in the firmware, security researchers advise checking your box’s model against published lists and replacing it if it matches.</p>
+          <p class="source">The Hacker News, Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/" target="_blank" rel="noopener">Apple warns of “unprecedented” memory costs as inventory jumps 154%</a></h3>
+          <p>Apple forecast a 45% to 46% gross margin for the holiday quarter, down from 47.9%, mostly because of memory chip prices that CEO John Ternus said will keep rising. Inventory reached $14.5 billion, up 154% from a year ago, and executives did not rule out more price increases on devices. iPad revenue of $6.2 billion missed analyst expectations, which Apple blamed on supply constraints.</p>
+          <p class="source">TechCrunch, Nov 2, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://thenextweb.com/news/nyt-newspapers-sue-brave-ai-scraping" target="_blank" rel="noopener">New York Times and three other papers sue Brave over AI scraping</a></h3>
+          <p>The Times sued Brave Software in Manhattan federal court on Monday, and hours later the publishers of the New York Daily News, Chicago Tribune and Orlando Sentinel filed their own suit. They allege Brave’s 30-billion-page search index, sold through an API to AI companies including Anthropic, Perplexity and xAI, copies journalism without permission and sidesteps paywalls. The report did not include a response from Brave.</p>
+          <p class="source">The Next Web, Nov 2–3, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-3/black-bart-makes-his-last-stagecoach-robbery" target="_blank" rel="noopener">Today in history: Black Bart makes his last stagecoach robbery</a></h3>
+          <p>1883: The California bandit, who left poems at the scenes of his Wells Fargo holdups, was caught after dropping a handkerchief with a laundry mark; he served just over four years in San Quentin.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-3/the-soviet-space-dog" target="_blank" rel="noopener">On this day in science: Sputnik 2 carries the first animal into orbit</a></h3>
+          <p>1957: The Soviet Union launched Laika, a part-Siberian husky, aboard Sputnik 2; sensors on her body gave scientists their first data on how spaceflight affects a living creature.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-3/d-c-residents-cast-first-presidential-votes" target="_blank" rel="noopener">Firsts in history: Washington, D.C., residents vote for president</a></h3>
+          <p>1964: Thanks to the 23rd Amendment, D.C. voters cast their first presidential ballots since losing that right in 1801, giving the District three electoral votes.</p>
+          <p class="source">History.com</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

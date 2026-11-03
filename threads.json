@@ -1,6 +1,92 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "threads": [
+    {
+      "id": "election-san-mateo-county",
+      "title": "Election 2026 in San Mateo County",
+      "status": "Developing",
+      "summary": "Ballots, vote centers, deadlines and the county measures on the Nov. 3 ballot.",
+      "updated": "2026-11-03",
+      "entries": [
+        {
+          "date": "2026-10-05",
+          "edition": "posts/2026-10-05.html",
+          "headline": "San Mateo County opens three vote centers as Nov. 3 ballots reach mailboxes",
+          "url": "https://smcacre.gov/elections/news/three-vote-centers-are-open-november-3-2026-statewide-general-election",
+          "source": "San Mateo County Registration & Elections, Oct 5, 2026"
+        },
+        {
+          "date": "2026-10-09",
+          "edition": "posts/2026-10-09.html",
+          "headline": "San Mateo County voters weigh four charter changes and a college bond",
+          "url": "https://patch.com/california/sanmateo/san-mateo-voter-guide-2026-whats-ballot-voting-more",
+          "source": "Patch, Oct 8, 2026"
+        },
+        {
+          "date": "2026-10-16",
+          "edition": "posts/2026-10-16.html",
+          "headline": "Ballots stolen from a Daly City post office; San Mateo County voters urged to check theirs",
+          "url": "https://padailypost.com/2026/10/16/voter-fraud-is-rare-ballots-stolen-from-post-office/",
+          "source": "Palo Alto Daily Post, Oct 16, 2026"
+        },
+        {
+          "date": "2026-10-19",
+          "edition": "posts/2026-10-19.html",
+          "headline": "Today is the last day to register to vote online for Nov. 3",
+          "url": "https://www.rwcpulse.com/election/2026/10/19/monday-is-last-day-to-register-to-vote-online/",
+          "source": "Redwood City Pulse, Oct 19, 2026"
+        },
+        {
+          "date": "2026-10-19",
+          "edition": "posts/2026-10-19.html",
+          "headline": "What to do if your mail ballot hasn’t arrived",
+          "url": "https://www.kqed.org/news/12105086/wheres-my-ballot-midterm-election-2026-need-replacement-ballot-vote-for-governor",
+          "source": "KQED, Oct 19, 2026"
+        },
+        {
+          "date": "2026-10-23",
+          "edition": "posts/2026-10-23.html",
+          "headline": "Measure J would give San Mateo County supervisors 60 days to fill vacancies",
+          "url": "https://www.almanacnews.com/election/2026/10/22/san-mateo-countys-measure-j-proposes-extending-timeline-for-filling-vacancies-in-elected-offices/",
+          "source": "The Almanac, Oct 22, 2026"
+        },
+        {
+          "date": "2026-10-25",
+          "edition": "posts/2026-10-25.html",
+          "headline": "San Mateo County’s Measure U would take district map-drawing away from supervisors",
+          "url": "https://www.rwcpulse.com/election/2026/10/24/san-mateo-countys-measure-u-would-create-independent-commission-for-redrawing-district-maps/",
+          "source": "Redwood City Pulse, Oct 24, 2026"
+        },
+        {
+          "date": "2026-10-25",
+          "edition": "posts/2026-10-25.html",
+          "headline": "Seven more San Mateo County vote centers open, bringing the total to 10",
+          "url": "https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide",
+          "source": "San Mateo County Elections, Oct 23, 2026"
+        },
+        {
+          "date": "2026-10-27",
+          "edition": "posts/2026-10-27.html",
+          "headline": "A week to Election Day: California mail ballots must be postmarked by Nov. 3",
+          "url": "https://calmatters.org/politics/2026/10/midterm-late-voter-guide/",
+          "source": "CalMatters, Oct 27, 2026"
+        },
+        {
+          "date": "2026-10-29",
+          "edition": "posts/2026-10-29.html",
+          "headline": "Measure V asks San Mateo County voters to extend an $848 million college bond",
+          "url": "https://padailypost.com/2026/10/29/measure-v-college-district-wants-bond-approval-but-little-has-been-done-to-prevent-more-bribery/",
+          "source": "Palo Alto Daily Post, Oct 29, 2026"
+        },
+        {
+          "date": "2026-11-03",
+          "edition": "posts/2026-11-03.html",
+          "headline": "Election Day in Millbrae: where to vote and what’s on the ballot",
+          "url": "https://www.ci.millbrae.ca.us/723/November-3-2026-General-and-Special-Muni",
+          "source": "City of Millbrae; The Almanac, Nov 2, 2026"
+        }
+      ]
+    },
     {
       "id": "california-voter-rolls-fight",
       "title": "The federal fight over California’s voter rolls",
@@ -295,85 +381,6 @@
           "headline": "Spacewalkers install a new solar array on the 100th U.S. station spacewalk",
           "url": "https://www.space.com/space-exploration/international-space-station/100-us-spacewalks-from-the-iss-astronauts-deploy-new-solar-array-on-landmark-eva",
           "source": "Space.com, Oct 29, 2026"
-        }
-      ]
-    },
-    {
-      "id": "election-san-mateo-county",
-      "title": "Election 2026 in San Mateo County",
-      "status": "Developing",
-      "summary": "Ballots, vote centers, deadlines and the county measures on the Nov. 3 ballot.",
-      "updated": "2026-10-29",
-      "entries": [
-        {
-          "date": "2026-10-05",
-          "edition": "posts/2026-10-05.html",
-          "headline": "San Mateo County opens three vote centers as Nov. 3 ballots reach mailboxes",
-          "url": "https://smcacre.gov/elections/news/three-vote-centers-are-open-november-3-2026-statewide-general-election",
-          "source": "San Mateo County Registration & Elections, Oct 5, 2026"
-        },
-        {
-          "date": "2026-10-09",
-          "edition": "posts/2026-10-09.html",
-          "headline": "San Mateo County voters weigh four charter changes and a college bond",
-          "url": "https://patch.com/california/sanmateo/san-mateo-voter-guide-2026-whats-ballot-voting-more",
-          "source": "Patch, Oct 8, 2026"
-        },
-        {
-          "date": "2026-10-16",
-          "edition": "posts/2026-10-16.html",
-          "headline": "Ballots stolen from a Daly City post office; San Mateo County voters urged to check theirs",
-          "url": "https://padailypost.com/2026/10/16/voter-fraud-is-rare-ballots-stolen-from-post-office/",
-          "source": "Palo Alto Daily Post, Oct 16, 2026"
-        },
-        {
-          "date": "2026-10-19",
-          "edition": "posts/2026-10-19.html",
-          "headline": "Today is the last day to register to vote online for Nov. 3",
-          "url": "https://www.rwcpulse.com/election/2026/10/19/monday-is-last-day-to-register-to-vote-online/",
-          "source": "Redwood City Pulse, Oct 19, 2026"
-        },
-        {
-          "date": "2026-10-19",
-          "edition": "posts/2026-10-19.html",
-          "headline": "What to do if your mail ballot hasn’t arrived",
-          "url": "https://www.kqed.org/news/12105086/wheres-my-ballot-midterm-election-2026-need-replacement-ballot-vote-for-governor",
-          "source": "KQED, Oct 19, 2026"
-        },
-        {
-          "date": "2026-10-23",
-          "edition": "posts/2026-10-23.html",
-          "headline": "Measure J would give San Mateo County supervisors 60 days to fill vacancies",
-          "url": "https://www.almanacnews.com/election/2026/10/22/san-mateo-countys-measure-j-proposes-extending-timeline-for-filling-vacancies-in-elected-offices/",
-          "source": "The Almanac, Oct 22, 2026"
-        },
-        {
-          "date": "2026-10-25",
-          "edition": "posts/2026-10-25.html",
-          "headline": "San Mateo County’s Measure U would take district map-drawing away from supervisors",
-          "url": "https://www.rwcpulse.com/election/2026/10/24/san-mateo-countys-measure-u-would-create-independent-commission-for-redrawing-district-maps/",
-          "source": "Redwood City Pulse, Oct 24, 2026"
-        },
-        {
-          "date": "2026-10-25",
-          "edition": "posts/2026-10-25.html",
-          "headline": "Seven more San Mateo County vote centers open, bringing the total to 10",
-          "url": "https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide",
-          "source": "San Mateo County Elections, Oct 23, 2026"
-        },
-        {
-          "date": "2026-10-27",
-          "edition": "posts/2026-10-27.html",
-          "headline": "A week to Election Day: California mail ballots must be postmarked by Nov. 3",
-          "url": "https://calmatters.org/politics/2026/10/midterm-late-voter-guide/",
-          "source": "CalMatters, Oct 27, 2026"
-        },
-        {
-          "date": "2026-10-29",
-          "edition": "posts/2026-10-29.html",
-          "headline": "Measure V asks San Mateo County voters to extend an $848 million college bond",
-          "url": "https://padailypost.com/2026/10/29/measure-v-college-district-wants-bond-approval-but-little-has-been-done-to-prevent-more-bribery/",
-          "source": "Palo Alto Daily Post, Oct 29, 2026"
         }
       ]
     },

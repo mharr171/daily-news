@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "timezone": "America/Los_Angeles",
  "note": "Times are Pacific. Sunrise and sunset times are calculated for Millbrae. Dates for launches, games, and releases can change; check the linked source before you go.",
  "events": [
@@ -1325,12 +1325,12 @@
   },
   {
    "date": "2026-11-04",
-   "time": "Afternoon",
+   "time": "Noon",
    "title": "Valkyries championship parade",
    "category": "Sports calendar",
-   "location": "San Francisco bay front",
-   "description": "Victory parade for the Valkyries’ first WNBA title; the team’s owner said it will run along the bay front Wednesday afternoon. Route and exact time to be announced.",
-   "url": "https://sports.yahoo.com/articles/even-valkyries-owner-joe-lacob-191259133.html"
+   "location": "Ferry Building to Second Street, Embarcadero, San Francisco",
+   "description": "Victory parade for the Valkyries’ first WNBA title: players arrive by boat at the Ferry Building around noon and the route runs north along the Embarcadero to Second Street. Streets close from early morning, and Caltrain and ferries add extra service.",
+   "url": "https://sports.yahoo.com/articles/valkyries-parade-close-f-streets-025258429.html"
   },
   {
    "date": "2026-11-04",

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wednesday, November 4, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 35: Wednesday, November 4, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-04.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Wednesday, November 4, 2026 | Live Full Stack">
+<meta property="og:description" content="Democrats won control of both the House and the Senate in the midterms, and Xavier Becerra was elected California’s next governor. Back home, San Mateo County’s college bond is passing, Bloomberg reports Bay Area voters approved the regional transit tax, and the Valkyries parade through San Francisco at noon. The 49ers’ Brandon Aiyuk has applied for reinstatement.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-04.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-04">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 35 · Updated 9:55 a.m.</p>
+      <h1>Wednesday, November 4, 2026</h1>
+      <p class="summary">Democrats won control of both the House and the Senate in the midterms, and Xavier Becerra was elected California’s next governor. Back home, San Mateo County’s college bond is passing, Bloomberg reports Bay Area voters approved the regional transit tax, and the Valkyries parade through San Francisco at noon. The 49ers’ Brandon Aiyuk has applied for reinstatement.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>Democrats won control of both the House and the Senate, and Xavier Becerra was elected California’s next governor.</li>
+        <li>San Mateo County’s college bond, Measure V, is passing with about 64%, and Bloomberg reports Bay Area voters approved the regional transit tax.</li>
+        <li>The Valkyries’ championship parade starts at noon on San Francisco’s Embarcadero, with street closures and extra Caltrain trains.</li>
+        <li>Brandon Aiyuk applied to rejoin the 49ers, and Pope Leo XIV is cleared to leave Friday for South America.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> A coastal flood advisory for Bay shorelines runs through 1 p.m. Monday, Nov. 9, with sunny skies and a high near 65 today. The Valkyries’ parade closes streets along San Francisco’s Embarcadero from about 9 a.m. to late afternoon, and votes are still being counted across San Mateo County.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.aljazeera.com/news/2026/11/4/key-takeaways-from-the-2026-midterm-elections-in-california" target="_blank" rel="noopener">Xavier Becerra is elected California’s next governor</a></h3>
+          <p>Democrat Xavier Becerra, a former state attorney general, was called the winner as soon as polls closed, beating Republican Steve Hilton, a British-born commentator, in the race to succeed term-limited Gov. Gavin Newsom. Bloomberg described him as California’s first Latino governor in 150 years.</p>
+          <p class="why"><strong>Why it matters:</strong> The next governor will write the state budget and sign the bills that fund transit, schools and health care, and will lead California’s response to federal pressure over elections.</p>
+          <p class="source">Al Jazeera; Bloomberg, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://calmatters.org/health/2026/11/california-election-2026-prop-40-41-42/" target="_blank" rel="noopener">Prop. 40 billionaire tax trails and voter ID Prop. 39 is rejected</a></h3>
+          <p>Prop. 40, a one-time tax on billionaires’ net worth to pay for health care and education, was trailing with about 44% yes and 56% no in early returns, and CalMatters reported it appeared headed for defeat. Prop. 42, which would ban new wealth taxes, led with 55% on Tuesday night, while the Associated Press called Prop. 39, the voter ID measure, as rejected. Counting continues, and the numbers can still shift.</p>
+          <p class="why"><strong>Why it matters:</strong> The result decides whether California adds a new tax on its richest residents, which opponents had spent more than $118 million fighting, and whether voters will have to show ID at the polls.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-02.html">Nov 2</a></p>
+          <p class="source">CalMatters; Al Jazeera, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.kqed.org/elections/results/sanmateo" target="_blank" rel="noopener">Measure V is passing in San Mateo County, and two Millbrae council races are close</a></h3>
+          <p>In results updated at 12:05 a.m., Measure V, the community college bond, had about 64% yes and needs 55% to pass. In Millbrae, Sissy Riley ran unopposed in District 2, Ann Schneider led Juan Gámez 337 to 306 in the District 3 short-term race, and Albert Yam led Bob Nguyen 497 to 421 in District 4. County measures also led comfortably: J (filling supervisor vacancies) about 74% yes, L (weather resilience) about 69%, U (redistricting) about 81% and AA (civil rights) about 72%. The county will keep counting, and mail ballots postmarked by Tuesday can still arrive through Nov. 10.</p>
+          <p class="why"><strong>Why it matters:</strong> Schneider leads by 31 votes and Yam by 76 so far, so late-counted ballots could still change who sits on the Millbrae City Council.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-29.html">Oct 29</a> · <a href="2026-11-03.html">Nov 3</a> · <a href="../tracker.html#election-san-mateo-county">Follow this story ›</a></p>
+          <p class="source">KQED, results as of 12:05 a.m., Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.bloomberg.com/news/articles/2026-11-04/san-francisco-s-bart-gets-lifeline-as-voters-approve-new-tax" target="_blank" rel="noopener">Bloomberg: Bay Area voters approve the regional transit sales tax</a></h3>
+          <p>Bloomberg reports that voters passed the regional sales tax meant to fund the Bay Area’s trains and buses, calling it a financial lifeline for BART and the region’s other struggling systems. Agencies including Caltrain, Muni and AC Transit had warned of deep service cuts if it failed, and backers had raised $7.3 million. County-by-county totals were not available in the reporting, and counting continues.</p>
+          <p class="why"><strong>Why it matters:</strong> If the result holds, Caltrain and BART riders on the Peninsula avoid the service cuts the agencies had planned for.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-26.html">Oct 26</a> · <a href="2026-11-01.html">Nov 1</a> · <a href="../tracker.html#regional-transit-measure">Follow this story ›</a></p>
+          <p class="source">Bloomberg, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/valkyries-parade-close-f-streets-025258429.html" target="_blank" rel="noopener">Valkyries championship parade: noon at the Ferry Building, with road closures and extra Caltrain trains</a></h3>
+          <p>Players arrive by boat at the Ferry Building around noon, and fans can start gathering at 9 a.m.; the parade runs north along the Embarcadero to Second Street. San Francisco’s transit agency begins closing streets at midnight, and exiting the Bay Bridge will be difficult until late afternoon. Caltrain adds trains from San Jose Diridon at 9:13 a.m. and from San Francisco at 2:40 p.m., with the 4th and King stop two blocks from the end point; BART riders are urged to park at emptier stations and ride to Embarcadero or Montgomery. The city asked robotaxi companies to limit service in the Financial District, SoMa and South Beach, though compliance is voluntary.</p>
+          <p class="why"><strong>Why it matters:</strong> Millbrae riders can reach the parade by BART or Caltrain, but expect crowds and plan extra time on the Bay Bridge and Embarcadero.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-01.html">Nov 1</a> · <a href="2026-11-03.html">Nov 3</a></p>
+          <p class="source">Yahoo Sports, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">What happened to…?</p>
+          <h3><a href="https://www.thestar.com.my/news/world/2026/11/03/pope-leo-healthy-and-needs-no-extra-measures-for-south-america-trip-vatican-says" target="_blank" rel="noopener">What happened to Pope Leo XIV’s lung surgery? He leaves Friday on a 12-day South America trip</a></h3>
+          <p>Three weeks after the pope announced his surgery, doctors removed the lower lobe of his right lung on Oct. 13, and the Vatican says the disease was localized and no further treatment is needed. On Monday a Vatican spokesperson said the 71-year-old is in good health and needs no extra precautions, with his usual medical staff and ambulances traveling as on earlier trips. He leaves Friday for Uruguay, Argentina and Peru, ending Nov. 17: about 19,000 miles, 10 cities and 36 speeches, including a stop in Cusco at about 11,000 feet, where oxygen may be needed.</p>
+          <p class="why"><strong>Why it matters:</strong> The first American pope has a large following among Bay Area Catholics, including parishes across San Mateo County.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-11.html">Oct 11</a></p>
+          <p class="source">Reuters (via The Star), Nov 3, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://www.goodnewsnetwork.org/loch-ness-is-about-to-welcome-a-new-monster-the-beaver-500-years-since-it-last-lived-there/" target="_blank" rel="noopener">Beavers are about to return to Loch Ness after 500 years</a></h3>
+          <p>Scotland’s nature agency has licensed two nonprofits to release up to 15 beaver families over three years in the River Ness area, which includes Loch Ness, and releases could begin within weeks. Beavers were last recorded there in 1526–1527. The animals build ponds and wetlands that other species use and can help soften floods and droughts, and more than 73% of people who responded to the consultation supported the plan.</p>
+          <p class="source">Good News Network (citing NatureScot), Nov 3, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.nbcwashington.com/elections/election-day-after-2026-midterms-congress-results-live-updates/4177248/" target="_blank" rel="noopener">Democrats win control of the House and the Senate</a></h3>
+          <p>Democrats won both chambers, ending a Republican majority that was 53–47 in the Senate and 219–214 in the House entering the night, and NBC News projects Democrats’ largest House majority in nearly two decades. In the Senate, NBC counted Democratic flips in North Carolina (Roy Cooper), South Carolina (Annie Andrews), Texas (James Talarico over Ken Paxton) and Ohio (Sherrod Brown), while The Guardian’s live blog counted as many as seven, including Kansas, Iowa and Maine. Alaska’s Senate race was still being counted, and tallies may change.</p>
+          <p class="why"><strong>Why it matters:</strong> Democrats will now control which bills reach the president and how Congress oversees federal spending, including aid for Bay Area transit, health care and disaster response.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-01.html">Nov 1</a> · <a href="2026-11-03.html">Nov 3</a></p>
+          <p class="source">NBC News (via NBC Washington); The Guardian, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.axios.com/2026/11/04/jd-vance-iran-war-trump-election" target="_blank" rel="noopener">Vance blames the Iran war for Republican losses, and Trump says he will work with Democrats</a></h3>
+          <p>Vice President JD Vance said in a Wednesday post that the Iran war was the reason Republicans lost, Axios reported. Trump told Fox News the war was partly responsible, according to France’s Le Figaro, and was reported to say he would accept the results and work with Democrats; on election night he posted that he was not on the ballot and would have won in a landslide. The White House has also pushed a message that Trump remains the president.</p>
+          <p class="why"><strong>Why it matters:</strong> The war has pushed up fuel prices, with California gas still $1.25 above a year ago, and a Democratic Congress can now hold hearings and set terms on war spending.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-02.html">Nov 2</a> · <a href="../tracker.html#iran-war">Follow this story ›</a></p>
+          <p class="source">Axios; Le Figaro; NBC News, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.channelnewsasia.com/world/us-midterms-minorities-leadership-6522481" target="_blank" rel="noopener">Democrats win governorships in Texas, Georgia and New Mexico, and add Senate firsts</a></h3>
+          <p>Gina Hinojosa won the Texas governor’s race, Keisha Lance Bottoms won in Georgia and will be the first Black woman to serve as a governor, and Deb Haaland won in New Mexico as the first Native American woman to hold the office; Republican Byron Donalds won Florida. In the Senate, Chris Pappas of New Hampshire becomes the first openly gay man elected there and Peggy Flanagan of Minnesota the first Native American woman, while Michigan’s Abdul El-Sayed was projected to win and would be the first Muslim senator. A record 17 states have now elected female governors.</p>
+          <p class="source">Channel NewsAsia; NBC News, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.scmp.com/news/us/us-elections/article/3373313/us-congress-welcomes-record-number-lawmakers-chinese-descent" target="_blank" rel="noopener">Democrats lead in key California House seats as Richard Pan unseats Kevin Kiley</a></h3>
+          <p>The South China Morning Post reports Democrat Richard Pan defeated incumbent Republican Kevin Kiley, helping the next Congress include a record six lawmakers of Chinese descent. Al Jazeera reported Democrats leading in the Central Valley’s 22nd District, where Randy Villegas was about 30 points ahead of incumbent David Valadao, and near San Diego, though the AP had not called those races. In the Bay Area, Scott Wiener led Connie Chan by about 10 points for Nancy Pelosi’s seat with half the vote counted.</p>
+          <p class="why"><strong>Why it matters:</strong> Wiener, who would succeed Pelosi, is poised to represent San Francisco in the House that now controls the agenda.</p>
+          <p class="source">South China Morning Post; Al Jazeera, Nov 4, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.espn.com/nba/team/schedule/_/name/gs/golden-state-warriors" target="_blank" rel="noopener">Today in sports: Valkyries parade at noon, Warriors host Miami Thursday, 49ers on their bye</a></h3>
+          <p>The Valkyries’ championship parade starts around noon at the Ferry Building. The Warriors (5–3, winners of five straight after beating Phoenix 116–113 Monday) host Miami on Thursday at 7 p.m. and Orlando on Saturday at 5:30 p.m. The Earthquakes finish the regular season Saturday at 4 p.m. at Minnesota, Hawai‘i plays at UTEP on Saturday at 6:30 p.m., and the 49ers, on their bye, host the Raiders on Sunday at 1:25 p.m.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-03.html">Nov 3</a></p>
+          <p class="source">ESPN; team schedules, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/receiver-brandon-aiyuk-files-paperwork-160913662.html" target="_blank" rel="noopener">Brandon Aiyuk files to be reinstated by the 49ers and plans to report Friday</a></h3>
+          <p>The receiver applied to come off the reserve/left squad list, his agent said Wednesday, and plans to report to the team’s Santa Clara facility Friday. He has not played since a knee injury in October 2024, and general manager John Lynch has said he does not expect Aiyuk to play for the team again. The 49ers earlier voided $27 million in guaranteed 2026 money after he missed team activities, and he remains under contract, which leaves the team deciding what to do with him as the NFL trade deadline nears.</p>
+          <p class="source">Associated Press (via Yahoo Sports), Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/mlb-proposes-salary-cap-plan-192514955.html" target="_blank" rel="noopener">MLB offers to delay its salary cap to 2028 as a lockout looms</a></h3>
+          <p>Baseball’s owners proposed postponing a salary cap until 2028, with the cap set at $258.2 million, up from the first offer of $245.3 million, and a floor of $180.2 million. The players’ union is expected to reject any plan that includes a cap, and the sport is heading toward a lockout in December. For the Giants, who are starting a pivotal off-season, the dispute could freeze or slow free-agent and trade business.</p>
+          <p class="source">Yahoo Sports, Nov 3, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Tuesday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>6–1</td><td>Bye week; host the Raiders Sunday</td></tr>
+            <tr><td>Warriors</td><td>5–3</td><td>Five straight wins after an 0–3 start</td></tr>
+            <tr><td>Earthquakes</td><td>14–9–10</td><td>Regular-season finale Saturday at Minnesota</td></tr>
+            <tr><td>Valkyries</td><td>Champions</td><td>Parade today after the 4–3 Finals win over Atlanta</td></tr>
+          </tbody>
+        </table>
+        <p class="source">ESPN, NBC Sports Bay Area, San Jose Earthquakes</p>
+      </aside>
+    </section>
+
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker feature">Bay Area concert radar</p>
+          <h3><a href="https://onestowatch.com/live/best-bay-area-concerts-november/" target="_blank" rel="noopener">Bay Area concert radar: Lauryn Hill tonight, Moby, Brandi Carlile and Teddy Swims next</a></h3>
+          <p>Lauryn Hill and Wyclef Jean play the Greek Theatre in Berkeley tonight. Moby is at Bill Graham Civic Auditorium and Gnarls Barkley at the Masonic on Thursday, and Brandi Carlile plays Oakland’s Fox Theater on Saturday, Nov. 7, though that show is officially sold out. Teddy Swims is at Chase Center on Nov. 10, Brand New at Bill Graham Civic on Nov. 11, Tyla at the Fox on Nov. 13, and The Mountain Goats start a three-night Fillmore run on Nov. 15. Check each venue’s official ticket page, since many dates list only resale prices.</p>
+          <p class="source">Ones To Watch, Nov 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.tvline.com/2304786/youth-renewed-season-2-hbo-sharon-horgan/" target="_blank" rel="noopener">HBO renews “Youth” for a second season</a></h3>
+          <p>Sharon Horgan’s comedy will return with new episodes after an eight-episode first season. She plays Alex, a divorced 50-year-old getting her dating life back on track while raising her grown-up son, and the cast includes Rupert Friend. HBO said casting for season 2 will be announced later.</p>
+          <p class="source">TVLine, Nov 2, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.theregister.com/on-prem/2026/11/04/us-midterm-candidates-find-something-to-agree-on-reining-in-datacenters/5307536" target="_blank" rel="noopener">Voters back limits on data centers, from governors’ races to town ballots</a></h3>
+          <p>Data Center Watch reviewed the public positions of 74 candidates in the 36 governor’s races: 43% backed a ban or moratorium on new projects, 51% backed more regulation, and about 5% took no position. In Texas, Democrat Gina Hinojosa defeated Gov. Greg Abbott, who had paused data center development pending energy and water audits earlier this year. Of 46 towns with local restriction measures on the ballot, 43 had approved them when the article was published.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-01.html">Nov 1</a></p>
+          <p class="source">The Register, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.techradar.com/computing/cybercrime/hackers-target-french-blood-banks-in-latest-freezer-attack-as-uk-cybersecurity-chief-warns-of-sliding-doors-moment-for-unprecedented-threat" target="_blank" rel="noopener">Hackers target French blood supplies after the supermarket freezer attacks</a></h3>
+          <p>Attackers reached a maintenance supplier’s systems for the French blood service and tried to push plasma freezer temperatures from about −22°F up to 230°F, according to a French report, and France’s health ministry says the change was caught and corrected quickly with no serious consequences. The attempt came days after a second round of hacks on European supermarket freezers and two weeks after France’s cybersecurity chief warned that refrigeration systems could be targeted. Britain’s National Cyber Security Centre chief called the moment a “Sliding Doors” turning point and warned of a sharp rise in incidents.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-02.html">Nov 2</a></p>
+          <p class="source">TechRadar, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/" target="_blank" rel="noopener">NASA tests drone-based landing navigation meant for the Moon</a></h3>
+          <p>NASA’s SPLICE system, which maps terrain and diverts to a safer site if a landing spot looks unsafe, flew on an Alta-X drone at Rogers Dry Lake near Edwards, California, completing simulated lunar descents on Aug. 27. The agency says the tests raised the technology’s readiness level and plans to list the guidance software in its public catalog this fall, and several commercial lunar lander companies are already working with versions of it. A full-scale test in Mojave is planned later this month.</p>
+          <p class="source">NASA, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nasa.gov/image-article/hubble-reveals-cosmic-mystery/" target="_blank" rel="noopener">Hubble finds dwarf galaxies are missing most of their oxygen</a></h3>
+          <p>Using Hubble to study 37 nearby dwarf galaxies, including NGC 4449, the Galaxies Losing Oxygen via Winds (GLOW) project found that these small systems keep only a small share of the oxygen their stars make. The project’s name points to galactic winds carrying it away, though NASA’s image page does not confirm that mechanism. NASA released the image Nov. 2.</p>
+          <p class="source">NASA, Nov 4, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/entrance-to-king-tuts-tomb-discovered" target="_blank" rel="noopener">Today in history: Howard Carter finds the steps to Tutankhamun’s tomb</a></h3>
+          <p>1922: British archaeologist Howard Carter’s team uncovered a hidden step in the Valley of the Kings, which led to the nearly intact tomb of the teenage pharaoh Tutankhamun; the burial chambers were entered later that month.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.lindahall.org/about/news/scientist-of-the-day/norman-lockyer" target="_blank" rel="noopener">On this day in science: <em>Nature</em> publishes its first issue</a></h3>
+          <p>1869: Astronomer Norman Lockyer, who founded the weekly journal and served as its first editor, launched <em>Nature</em>, which became one of the world’s leading science journals.</p>
+          <p class="source">Linda Hall Library</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.history.com/articles/1952-election-night-television-computers" target="_blank" rel="noopener">Firsts in history: A computer predicts a presidential election on TV</a></h3>
+          <p>1952: On election night, CBS used a UNIVAC computer to forecast an Eisenhower landslide of 438 electoral votes to 93, a prediction that clashed with polls and proved remarkably close to the final result.</p>
+          <p class="source">History.com</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

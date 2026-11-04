@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-04",
+      "file": "posts/2026-11-04.html",
+      "summary": "Democrats won control of both the House and the Senate in the midterms, and Xavier Becerra was elected California’s next governor. Back home, San Mateo County’s college bond is passing, Bloomberg reports Bay Area voters approved the regional transit tax, and the Valkyries parade through San Francisco at noon. The 49ers’ Brandon Aiyuk has applied for reinstatement.",
+      "headlines": [
+        {
+          "title": "Democrats win control of the House and the Senate",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "Xavier Becerra is elected California’s next governor",
+          "topic": "General news"
+        },
+        {
+          "title": "Bloomberg: Bay Area voters approve the regional transit sales tax",
+          "topic": "General news"
+        },
+        {
+          "title": "Valkyries championship parade: noon at the Ferry Building, with road closures and extra Caltrain trains",
+          "topic": "General news"
+        },
+        {
+          "title": "Brandon Aiyuk files to be reinstated by the 49ers and plans to report Friday",
+          "topic": "Sports"
+        }
+      ],
+      "updates": [
+        "morning"
+      ],
+      "updated": "2026-11-04T09:55"
+    },
+    {
       "date": "2026-11-03",
       "file": "posts/2026-11-03.html",
       "summary": "Election Day is here: polls in Millbrae and across San Mateo County are open until 8 p.m., while the nation votes in midterms that will decide control of Congress. President Trump also said U.S. military aid to Israel will end at the close of the year. The Warriors erased a 17-point deficit to beat Phoenix for a fifth straight win, and Google took down a botnet of more than a million Android TV boxes.",

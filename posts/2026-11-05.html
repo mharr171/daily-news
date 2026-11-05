@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thursday, November 5, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 36 · Updated 1:10 p.m.: Thursday, November 5, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-05.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Thursday, November 5, 2026 | Live Full Stack">
+<meta property="og:description" content="California Gov. Gavin Newsom said he will commute all 548 death sentences in the state, while San Mateo County’s college bond, Measure V, holds about 64% and two Millbrae council races stay close. In Washington, the Justice Department opened a criminal investigation into the 2022 Supreme Court leak and Democrats promised major probes after winning Congress. The Valkyries’ parade drew a reported 400,000 fans, and NASA confirmed the Swift observatory re-entered over Indonesia.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-05.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-05">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 36 · Updated 1:10 p.m.</p>
+      <h1>Thursday, November 5, 2026</h1>
+      <p class="summary">California Gov. Gavin Newsom said he will commute all 548 death sentences in the state, while San Mateo County’s college bond, Measure V, holds about 64% and two Millbrae council races stay close. In Washington, the Justice Department opened a criminal investigation into the 2022 Supreme Court leak and Democrats promised major probes after winning Congress. The Valkyries’ parade drew a reported 400,000 fans, and NASA confirmed the Swift observatory re-entered over Indonesia.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>California Gov. Gavin Newsom said he will commute all 548 death sentences in the state to life without parole.</li>
+        <li>San Mateo County’s Measure V still leads with about 64%, and two Millbrae council races remain within a few dozen votes.</li>
+        <li>The Justice Department has opened a criminal investigation into the 2022 leak of the Supreme Court’s Roe v. Wade draft, and Democrats are promising major probes of the administration.</li>
+        <li>The Valkyries’ parade drew a reported 400,000 fans, and the Warriors host Klay Thompson and the Heat tonight at 7.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.ctvnews.ca/world/article/california-gov-newsom-says-he-will-commute-all-death-sentences-in-state-to-life-without-parole/" target="_blank" rel="noopener">Newsom will commute all 548 California death sentences to life without parole</a></h3>
+          <p>Gov. Gavin Newsom said Thursday that he will change every death sentence in the state to life in prison without the possibility of parole. The Associated Press reports that the state Supreme Court will have the final say in hundreds of the cases, so the change does not take effect automatically for each inmate. Newsom is term-limited and leaves office in January.</p>
+          <p class="why"><strong>Why it matters:</strong> California has the nation’s largest death row, and the decision ends the state’s capital punishment system in practice. It also lands as Newsom is widely discussed as a 2028 presidential contender.</p>
+          <p class="source">The Associated Press, via CTV News, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.kqed.org/elections/results/sanmateo" target="_blank" rel="noopener">San Mateo County counts on: Measure V leads with 64%, and the Millbrae council races stay tight</a></h3>
+          <p>In KQED’s results as of 8:08 a.m. Wednesday, Measure V, the community college bond that needs 55%, had about 64% yes. In Millbrae, Ann Schneider led Juan Gámez 389 to 374 in the District 3 short-term race, and Albert Yam led Bob Nguyen 535 to 478 in District 4. The regional transit measure was passing in the county with about 62% yes, and the county elections office reported roughly 130,000 ballots still unprocessed as of 4 p.m. Wednesday.</p>
+          <p class="why"><strong>Why it matters:</strong> With margins this thin, the two Millbrae seats could change as late ballots are counted, and the county’s official count will take days to finish.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-04.html">Nov 4</a> · <a href="../tracker.html#election-san-mateo-county">Follow this story ›</a></p>
+          <p class="source">KQED; San Mateo County Elections Office, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://cleantechnica.com/2026/11/04/bay-area-air-district-moves-forward-with-nations-strongest-water-heater-standards/" target="_blank" rel="noopener">Bay Area Air District votes to advance strict rules for replacing gas water heaters</a></h3>
+          <p>The Bay Area Air District’s board voted Wednesday to move forward with standards that, starting in 2028, would require households to buy cleaner water heaters when a gas unit wears out, with exemptions for low-income households and complicated installations. The district estimates the rules could prevent up to 85 premature deaths and 15,000 asthma attacks a year. The report comes from the Sierra Club, an advocacy group, which cites an RMI estimate of about $360 a year in savings from switching to a heat pump.</p>
+          <p class="why"><strong>Why it matters:</strong> San Mateo County is in the district, so replacing a worn-out gas water heater could mean a different, and possibly costlier, purchase for local homeowners from 2028.</p>
+          <p class="source">CleanTechnica (Sierra Club release), Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://abcnews.com/Health/wisconsin-infant-dies-measles-health-officials/story?id=137886629" target="_blank" rel="noopener">A Wisconsin infant dies of measles, the state’s first measles death since 1990</a></h3>
+          <p>Wisconsin health officials said an infant died from measles. ABC News counts eight reported measles deaths nationally now: six in Pennsylvania, one in New York and one in Wisconsin. The story is still developing.</p>
+          <p class="why"><strong>Why it matters:</strong> Measles spreads where vaccination rates slip, and infants too young to be vaccinated are the most exposed, which is why Bay Area health departments keep urging families to check their children’s records.</p>
+          <p class="source">ABC News, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://www.goodnewsnetwork.org/woman-becomes-first-person-to-swim-the-entire-california-coastline/" target="_blank" rel="noopener">Swimmer completes California’s full coastline, about 900 miles in 111 days</a></h3>
+          <p>Long-distance swimmer Catherine Breed started at the Oregon border on July 1 and finished Oct. 19 at a pier near the Mexican border, swimming past the line more than 3 miles offshore to avoid polluted water near Tijuana. She reported eight shark encounters and rough weather along the way. Good News Network, which cites ABC News for the claim, says she is the first person to swim the whole coast; she had earlier swum from the Golden Gate Bridge to Half Moon Bay.</p>
+          <p class="source">Good News Network, Nov 4, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.foxnews.com/politics/doj-launches-criminal-probe-supreme-court-leak-exposed-ruling-overturning-roe-v-wade" target="_blank" rel="noopener">Justice Department opens a criminal investigation into the 2022 Supreme Court abortion-ruling leak</a></h3>
+          <p>Federal prosecutors in Washington, led by U.S. Attorney Jeanine Pirro’s office, are investigating who leaked the draft opinion that overturned Roe v. Wade, Fox News reports, after Chief Justice John Roberts’ internal inquiry did not identify the leaker. The Justice Department declined to comment. The New York Times reports the inquiry has accelerated, with subpoenas, and that it takes the administration into the court’s inner workings; critics quoted by the Daily Mail worry it is politically motivated.</p>
+          <p class="why"><strong>Why it matters:</strong> A criminal probe of the nation’s highest court raises questions about the separation of powers, and about who at the court could be questioned.</p>
+          <p class="source">Fox News; The New York Times, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.ctvnews.ca/world/america-votes/article/after-taking-control-of-congress-democrats-vow-major-probes-into-trumps-tentacles-of-corruption/" target="_blank" rel="noopener">Democrats promise major investigations after winning Congress</a></h3>
+          <p>The Associated Press reports that corruption topped voters’ concerns as they gave Democrats control of Congress, and that Democratic leaders are now promising major probes of the Trump administration. NPR reports party leaders also face the job of uniting a sometimes fractious caucus around lower costs, the other main promise of their campaigns.</p>
+          <p class="why"><strong>Why it matters:</strong> Subpoenas and hearings from a Democratic House will start in January and could shape federal agencies’ actions on issues from health care to immigration that reach California.</p>
+          <p class="source">The Associated Press, via CTV News; NPR, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.dailymaverick.co.za/article/2026-11-05-musk-has-little-to-show-for-his-record-spending-on-republican-campaigns-in-us/" target="_blank" rel="noopener">Elon Musk spent nearly half a billion dollars on the midterms and has little to show for it</a></h3>
+          <p>Reuters reports Musk spent almost $500 million, including $445 million on federal races according to OpenSecrets. Of 37 House Republicans he backed, three won and 33 lost, and six of seven Senate candidates he backed lost, with an Alaska race still too close to call. Democrats plan investigations of his companies and a bill from incoming Oversight chair Robert Garcia, and Tesla and SpaceX shares fell 11.4% and 8.5% Thursday afternoon.</p>
+          <p class="why"><strong>Why it matters:</strong> Bay Area-linked companies such as Tesla and SpaceX now face a Congress that has said it will scrutinize them.</p>
+          <p class="source">Reuters, via Daily Maverick, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.ctvnews.ca/world/america-votes/article/trump-says-hegseth-doing-a-very-good-job-as-questions-swirl-about-his-future/" target="_blank" rel="noopener">Trump backs Defense Secretary Hegseth as questions swirl about his future</a></h3>
+          <p>President Trump said Wednesday that Defense Secretary Pete Hegseth is doing a very good job, a day after Democrats won both chambers of Congress in midterms that Reuters says reflected voter anger over the Iran war. The comments came as reporters asked whether he might replace Hegseth after the losses.</p>
+          <p class="why"><strong>Why it matters:</strong> The Pentagon’s leadership matters to California’s bases and defense employers while the Iran conflict continues.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-04.html">Nov 4</a> · <a href="../tracker.html#iran-war">Follow this story ›</a></p>
+          <p class="source">Reuters, via CTV News, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.foxnews.com/politics/democrats-divorced-voters-5-states-back-citizen-only-voting-bolstering-gop-push" target="_blank" rel="noopener">Voters in five states back citizen-only voting rules</a></h3>
+          <p>Voters in Kansas, Alaska, Arkansas, South Dakota and West Virginia approved measures barring noncitizens from voting, each with more than 60% support, Fox News reports. Supporters, including the Honest Elections Project, say proof-of-citizenship rules are popular; California voters rejected voter ID Proposition 39 on Tuesday, 58.5% to 41.4%, according to the same report.</p>
+          <p class="why"><strong>Why it matters:</strong> It shows how differently states are handling election rules, which matters as California fights federal demands for its voter list.</p>
+          <p class="source">Fox News, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://thehill.com/homenews/house/6184793-scott-wiener-wins-pelosi-seat/" target="_blank" rel="noopener">Scott Wiener is set to win Pelosi’s House seat after Connie Chan concedes</a></h3>
+          <p>Democrat Scott Wiener is poised to win the San Francisco seat held by retiring Rep. Nancy Pelosi, The Hill reports, after his opponent, Supervisor Connie Chan, conceded Wednesday evening.</p>
+          <p class="why"><strong>Why it matters:</strong> The seat covers San Francisco, so the Bay Area will have a new voice in Congress for the first time in decades.</p>
+          <p class="source">The Hill, Nov 5, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.theguardian.com/sport/gallery/2026/nov/05/golden-state-valkyries-wnba-championship-parade-san-francisco-oakland-pictures" target="_blank" rel="noopener">Today in sports: Valkyries parade draws a huge crowd, Warriors host Miami tonight, 49ers host Raiders Sunday</a></h3>
+          <p>Yahoo Sports reported an estimated 400,000 fans turned out Wednesday for the Valkyries’ championship parade in San Francisco. The Warriors (who beat Phoenix 116–113 on Monday) host the Heat tonight at 7 p.m., with Klay Thompson and Andrew Wiggins returning in Miami colors; the Heat beat the Clippers 117–116 in overtime Wednesday on a Thompson three. Next up: the Sharks at Minnesota Friday at 5 p.m., the Earthquakes at Minnesota United Saturday at 4 p.m. for their regular-season finale, the Warriors against Orlando Saturday at 5:30 p.m., and the 49ers against the Raiders Sunday at 1:25 p.m.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-04.html">Nov 4</a> · <a href="../tracker.html#valkyries-title-run">Follow this story ›</a></p>
+          <p class="source">The Guardian; Yahoo Sports; San Francisco Chronicle; ClutchPoints, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/49ers-gm-john-lynch-doesnt-191855560.html" target="_blank" rel="noopener">Brandon Aiyuk will report to the 49ers Friday, and John Lynch says “everything’s possible”</a></h3>
+          <p>General manager John Lynch told KNBR that all options are open after receiver Brandon Aiyuk, who filed for reinstatement, said he will report to the team’s facility Friday. The San Francisco Chronicle reports the club is working with the NFL’s management council and must release, trade or activate him before the trade deadline Tuesday at 1 p.m. Pacific; it calls a reunion the least likely result, and Lynch said more detail would come next week.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-04.html">Nov 4</a></p>
+          <p class="source">San Francisco Chronicle, via Yahoo Sports, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/warriors-withhold-20-million-porzingis-205048664.html" target="_blank" rel="noopener">Warriors stop paying Kristaps Porzingis his $20 million salary</a></h3>
+          <p>The Warriors have stopped paying Porzingis his $20 million salary, according to Gameday New York City, which says the move could block any trade and complicate the Knicks’ plans. The report does not say how the dispute will be resolved.</p>
+          <p class="source">Gameday New York City, via Yahoo Sports, Nov 5, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Wednesday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>6–1</td><td>Host the Raiders Sunday after the bye week</td></tr>
+            <tr><td>Warriors</td><td>5–3</td><td>Five straight wins; host Miami tonight</td></tr>
+            <tr><td>Earthquakes</td><td>14–9–10</td><td>Regular-season finale Saturday at Minnesota</td></tr>
+            <tr><td>Valkyries</td><td>Champions</td><td>Paraded the WNBA title through San Francisco Wednesday</td></tr>
+          </tbody>
+        </table>
+        <p class="source">ESPN, NBC Sports Bay Area, San Jose Earthquakes (records unchanged since Tuesday)</p>
+      </aside>
+    </section>
+
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://gizmodo.com/yellowjackets-season-4-trailer-2000835779" target="_blank" rel="noopener">The “Yellowjackets” final-season trailer starts to merge the show’s two timelines</a></h3>
+          <p>The last season of the thriller has 10 episodes and premieres Nov. 20 on Paramount+, which Gizmodo says is only on the premium plan. The trailer shows the surviving team members back home, with the crash-survivor and adult storylines beginning to meet, and Hilary Swank returns as adult Melissa.</p>
+          <p class="source">Gizmodo, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://9to5mac.com/2026/11/05/apple-tv-unveils-return-of-hit-comedy-from-ted-lasso-shrinking-creator/" target="_blank" rel="noopener">Apple TV sets “Bad Monkey” season 2 for Dec. 2, with John Malkovich as a mob boss</a></h3>
+          <p>The Bill Lawrence comedy starring Vince Vaughn returns Wednesday, Dec. 2 with one episode, then weekly episodes through Feb. 3. Apple TV costs $14.99 a month, or less in the Apple One bundle.</p>
+          <p class="source">9to5Mac, Nov 5, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://science.nasa.gov/blogs/swift/2026/11/02/nasas-swift-observatory-to-re-enter-atmosphere/" target="_blank" rel="noopener">NASA’s Swift observatory has re-entered the atmosphere over Indonesia</a></h3>
+          <p>The U.S. Space Force confirmed that Swift re-entered at 7:39 a.m. EST Wednesday over the North Sumatra region of Indonesia, almost 22 years after launch. NASA says most of the spacecraft was expected to burn up, though some components may have survived. Swift launched in 2004 to study gamma-ray bursts and was designed for a two-year prime mission.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-02.html">Nov 2</a> · <a href="2026-11-01.html">Nov 1</a> · <a href="../tracker.html#swift-observatory">Follow this story ›</a></p>
+          <p class="source">NASA, Nov 4, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://globalnews.ca/news/12137988/canadian-astronaut-joshua-kutryk-spacewalk/" target="_blank" rel="noopener">Spacewalkers go out to install the space station’s eighth and final solar array</a></h3>
+          <p>Canadian astronaut Joshua Kutryk and NASA astronaut Anil Menon began a spacewalk Thursday to install the last of eight new solar arrays on the station’s starboard truss. It is Kutryk’s second spacewalk in about two weeks; on Oct. 29 the pair installed seven of the eight. Kutryk launched Oct. 1 on SpaceX’s Crew-13 for an expected six-month stay.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-30.html">Oct 30</a> · <a href="../tracker.html#space-station-crew-and-arrays">Follow this story ›</a></p>
+          <p class="source">The Canadian Press, via Global News, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://thenextweb.com/news/blue-origin-new-glenn-return-to-flight-delayed-january" target="_blank" rel="noopener">Blue Origin pushes New Glenn’s return to flight to January 2027</a></h3>
+          <p>CEO Dave Limp told staff the rocket will not fly again until January, Bloomberg reports, according to The Next Web. New Glenn has been grounded since it exploded on its Cape Canaveral pad during an engine test on May 28. The delay affects 48 Amazon Leo satellites due on the next flight and NASA’s Blue Moon lander plans for Artemis.</p>
+          <p class="source">The Next Web, citing Bloomberg, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">AI tool of the week</p>
+          <h3><a href="https://thenextweb.com/news/anthropic-claude-personal-finance-plaid-read-only-beta" target="_blank" rel="noopener">Claude can now read your bank accounts, but not move money</a></h3>
+          <p>Anthropic launched Personal Finance, a beta for U.S. subscribers on the Pro, Max and Ultra plans. You link accounts through Plaid, so Claude never sees bank passwords, then ask questions about your spending. It can read balances and up to two years of transactions across up to 16 U.S. banks, but it cannot move money, and the feature has no ads. Investment, loan and card accounts show only balances and credit limits. (Claude is the assistant that compiles this paper, so weigh this item accordingly.)</p>
+          <p class="source">The Next Web, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.bloomberg.com/news/videos/2026-11-05/stocks-plunge-as-tech-selloff-deepens-video" target="_blank" rel="noopener">Tech stocks fall as traders weigh a Democratic Congress and the data-center buildout</a></h3>
+          <p>Bloomberg reports technology shares dropped Thursday as traders assessed what Democratic control of Congress means for cloud data centers, and Treasury prices rose as investors sought safer assets. Reuters separately tied the losses at Tesla and SpaceX to the same worries.</p>
+          <p class="source">Bloomberg, Nov 5, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-5/susan-b-anthony-arrested-for-trying-to-vote-1872" target="_blank" rel="noopener">Today in history: Susan B. Anthony votes illegally in a presidential election</a></h3>
+          <p>1872: Women’s rights activist Susan B. Anthony tried to cast a ballot in the presidential election, 48 years before the 19th Amendment gave American women the vote.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://en.wikipedia.org/wiki/Mars_Orbiter_Mission" target="_blank" rel="noopener">On this day in science: India launches its Mars Orbiter Mission</a></h3>
+          <p>2013: India’s Mangalyaan probe lifted off from Sriharikota on a PSLV-XL rocket. It entered Mars orbit on Sept. 24, 2014, making India the first Asian nation to reach Mars orbit.</p>
+          <p class="source">Wikipedia</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-5" target="_blank" rel="noopener">Firsts in history: John Peter Zenger publishes the first New York Weekly Journal</a></h3>
+          <p>1733: The printer’s first issue came out; after attacks on the colonial governor landed him in jail for libel, a jury acquitted him, a first win for press freedom in the English colonies.</p>
+          <p class="source">History.com</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

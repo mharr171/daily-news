@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-05",
+      "file": "posts/2026-11-05.html",
+      "summary": "California Gov. Gavin Newsom said he will commute all 548 death sentences in the state, while San Mateo County’s college bond, Measure V, holds about 64% and two Millbrae council races stay close. In Washington, the Justice Department opened a criminal investigation into the 2022 Supreme Court leak and Democrats promised major probes after winning Congress. The Valkyries’ parade drew a reported 400,000 fans, and NASA confirmed the Swift observatory re-entered over Indonesia.",
+      "headlines": [
+        {
+          "title": "Newsom will commute all 548 California death sentences",
+          "topic": "General news"
+        },
+        {
+          "title": "Justice Department opens a criminal investigation into the Supreme Court abortion-ruling leak",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "San Mateo County counts on: Measure V leads, Millbrae council races stay tight",
+          "topic": "General news"
+        },
+        {
+          "title": "Valkyries parade draws a reported 400,000 fans; Warriors host Miami tonight",
+          "topic": "Sports"
+        },
+        {
+          "title": "NASA’s Swift observatory has re-entered the atmosphere over Indonesia",
+          "topic": "Science & tech"
+        }
+      ],
+      "updates": [
+        "morning"
+      ],
+      "updated": "2026-11-05T13:10"
+    },
+    {
       "date": "2026-11-04",
       "file": "posts/2026-11-04.html",
       "summary": "Democrats won control of both the House and the Senate in the midterms, and Xavier Becerra was elected California’s next governor. Back home, San Mateo County’s college bond is passing, Bloomberg reports Bay Area voters approved the regional transit tax, and the Valkyries parade through San Francisco at noon. The 49ers’ Brandon Aiyuk has applied for reinstatement.",

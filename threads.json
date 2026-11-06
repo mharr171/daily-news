@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "threads": [
     {
       "id": "election-san-mateo-county",
       "title": "Election 2026 in San Mateo County",
       "status": "Developing",
       "summary": "Ballots, vote centers, deadlines and results for the county measures and Millbrae council races on the Nov. 3 ballot. Early results show Measure V passing, and counting continues.",
-      "updated": "2026-11-05",
+      "updated": "2026-11-06",
       "entries": [
         {
           "date": "2026-10-05",
@@ -98,6 +98,78 @@
           "headline": "San Mateo County counts on: Measure V leads with 64%, and the Millbrae council races stay tight",
           "url": "https://www.kqed.org/elections/results/sanmateo",
           "source": "KQED; San Mateo County Elections Office, Nov 4, 2026"
+        },
+        {
+          "date": "2026-11-06",
+          "edition": "posts/2026-11-06.html",
+          "headline": "Millbrae’s District 3 race flips: Gámez now leads Schneider by seven votes, and Measure V holds at 64%",
+          "url": "https://www.kqed.org/elections/results/sanmateo",
+          "source": "KQED, Nov 5, 2026"
+        }
+      ]
+    },
+    {
+      "id": "space-station-crew-and-arrays",
+      "title": "Space station crew swap and new solar arrays",
+      "status": "Developing",
+      "summary": "Crew-13 replaced Crew-12 on the International Space Station, and spacewalkers finished installing the last of the station’s new solar arrays on Nov. 5.",
+      "updated": "2026-11-06",
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "edition": "posts/2026-10-01.html",
+          "headline": "SpaceX Crew-13 set to launch to the space station this morning",
+          "url": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/weather-55-favorable-for-thursday-crew-13-mission-launch/",
+          "source": "NASA, Sep 30, 2026"
+        },
+        {
+          "date": "2026-10-02",
+          "edition": "posts/2026-10-02.html",
+          "headline": "Crew-13 docks at the space station",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/crew-13-members-enter-station-join-expedition-75/",
+          "source": "NASA, Oct 1, 2026"
+        },
+        {
+          "date": "2026-10-08",
+          "edition": "posts/2026-10-08.html",
+          "headline": "Crew-12 splashes down in the Pacific off Southern California",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/08/nasas-spacex-crew-12-dragon-splashes-down-at-1134-a-m-edt/",
+          "source": "NASA, Oct 8, 2026"
+        },
+        {
+          "date": "2026-10-13",
+          "edition": "posts/2026-10-13.html",
+          "headline": "SpaceX set to launch a cargo Dragon with the station’s last new solar arrays",
+          "url": "https://www.space.com/space-exploration/international-space-station/spacex-crs-35-cargo-launch-international-space-station",
+          "source": "Space.com, Oct 12, 2026"
+        },
+        {
+          "date": "2026-10-16",
+          "edition": "posts/2026-10-16.html",
+          "headline": "Cargo Dragon docks at the space station with its last new solar arrays",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-crs-35-iss-cargo-mission-docking",
+          "source": "Space.com, Oct 15, 2026"
+        },
+        {
+          "date": "2026-10-30",
+          "edition": "posts/2026-10-30.html",
+          "headline": "Spacewalkers install a new solar array on the 100th U.S. station spacewalk",
+          "url": "https://www.space.com/space-exploration/international-space-station/100-us-spacewalks-from-the-iss-astronauts-deploy-new-solar-array-on-landmark-eva",
+          "source": "Space.com, Oct 29, 2026"
+        },
+        {
+          "date": "2026-11-05",
+          "edition": "posts/2026-11-05.html",
+          "headline": "Spacewalkers go out to install the space station’s eighth and final solar array",
+          "url": "https://globalnews.ca/news/12137988/canadian-astronaut-joshua-kutryk-spacewalk/",
+          "source": "The Canadian Press, via Global News, Nov 5, 2026"
+        },
+        {
+          "date": "2026-11-06",
+          "edition": "posts/2026-11-06.html",
+          "headline": "Spacewalkers finish the space station’s solar power upgrade with the eighth and final array",
+          "url": "https://www.cbsnews.com/news/spacewalkers-install-final-solar-array-space-station-upgrade/",
+          "source": "CBS News, Nov 5, 2026"
         }
       ]
     },
@@ -205,64 +277,6 @@
           "headline": "Trump backs Defense Secretary Hegseth as questions swirl about his future",
           "url": "https://www.ctvnews.ca/world/america-votes/article/trump-says-hegseth-doing-a-very-good-job-as-questions-swirl-about-his-future/",
           "source": "Reuters, via CTV News, Nov 5, 2026"
-        }
-      ]
-    },
-    {
-      "id": "space-station-crew-and-arrays",
-      "title": "Space station crew swap and new solar arrays",
-      "status": "Developing",
-      "summary": "Crew-13 replaced Crew-12 on the International Space Station, and spacewalkers are installing the last of the station’s new solar arrays.",
-      "updated": "2026-11-05",
-      "entries": [
-        {
-          "date": "2026-10-01",
-          "edition": "posts/2026-10-01.html",
-          "headline": "SpaceX Crew-13 set to launch to the space station this morning",
-          "url": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/weather-55-favorable-for-thursday-crew-13-mission-launch/",
-          "source": "NASA, Sep 30, 2026"
-        },
-        {
-          "date": "2026-10-02",
-          "edition": "posts/2026-10-02.html",
-          "headline": "Crew-13 docks at the space station",
-          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/crew-13-members-enter-station-join-expedition-75/",
-          "source": "NASA, Oct 1, 2026"
-        },
-        {
-          "date": "2026-10-08",
-          "edition": "posts/2026-10-08.html",
-          "headline": "Crew-12 splashes down in the Pacific off Southern California",
-          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/08/nasas-spacex-crew-12-dragon-splashes-down-at-1134-a-m-edt/",
-          "source": "NASA, Oct 8, 2026"
-        },
-        {
-          "date": "2026-10-13",
-          "edition": "posts/2026-10-13.html",
-          "headline": "SpaceX set to launch a cargo Dragon with the station’s last new solar arrays",
-          "url": "https://www.space.com/space-exploration/international-space-station/spacex-crs-35-cargo-launch-international-space-station",
-          "source": "Space.com, Oct 12, 2026"
-        },
-        {
-          "date": "2026-10-16",
-          "edition": "posts/2026-10-16.html",
-          "headline": "Cargo Dragon docks at the space station with its last new solar arrays",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-crs-35-iss-cargo-mission-docking",
-          "source": "Space.com, Oct 15, 2026"
-        },
-        {
-          "date": "2026-10-30",
-          "edition": "posts/2026-10-30.html",
-          "headline": "Spacewalkers install a new solar array on the 100th U.S. station spacewalk",
-          "url": "https://www.space.com/space-exploration/international-space-station/100-us-spacewalks-from-the-iss-astronauts-deploy-new-solar-array-on-landmark-eva",
-          "source": "Space.com, Oct 29, 2026"
-        },
-        {
-          "date": "2026-11-05",
-          "edition": "posts/2026-11-05.html",
-          "headline": "Spacewalkers go out to install the space station’s eighth and final solar array",
-          "url": "https://globalnews.ca/news/12137988/canadian-astronaut-joshua-kutryk-spacewalk/",
-          "source": "The Canadian Press, via Global News, Nov 5, 2026"
         }
       ]
     },

@@ -3,7 +3,7 @@
     {
       "date": "2026-11-06",
       "file": "posts/2026-11-06.html",
-      "summary": "Millbrae’s District 3 council race flipped in Thursday’s updated count, with Juan Gámez now ahead by seven votes while Measure V holds about 64%. Meta, Google and TikTok sued to block California’s new limits on autoplay and personalized feeds for teens, and Trump declared the Oval Office a national monument as a planning panel approved his arch. The Warriors beat Miami for a sixth straight win, and “Godzilla Minus Zero” opens in theaters today.",
+      "summary": "Millbrae’s District 3 council race flipped in Thursday’s updated count, with Juan Gámez now ahead by seven votes while Measure V holds about 64%. Employers added 165,000 jobs in October, far more than the 59,000 forecast, while Meta, Google and TikTok sued to block California’s new limits on teen social media feeds. Trump declared the Oval Office a national monument, the Warriors won a sixth straight, and “Godzilla Minus Zero” opens in theaters today.",
       "headlines": [
         {
           "title": "Meta, Google and TikTok sue to block California’s teen social media law",
@@ -22,14 +22,15 @@
           "topic": "Sports"
         },
         {
-          "title": "Spacewalkers finish the space station’s solar power upgrade",
-          "topic": "Science & tech"
+          "title": "U.S. employers add 165,000 jobs in October, far above forecasts",
+          "topic": "U.S. politics & government"
         }
       ],
       "updates": [
-        "midnight"
+        "midnight",
+        "morning"
       ],
-      "updated": "2026-11-06T00:15"
+      "updated": "2026-11-06T06:38"
     },
     {
       "date": "2026-11-05",

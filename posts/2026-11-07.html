@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saturday, November 7, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 38: Saturday, November 7, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-07.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Saturday, November 7, 2026 | Live Full Stack">
+<meta property="og:description" content="The Justice Department dropped its bid to hold back about 20,000 disputed California ballots, with nearly 5 million statewide still to be counted. Southbound U.S. 101 through San Francisco is closed until early Monday for the last time in a repaving project, and Democrats say ending the Iran war is a top priority for the new Congress. The Warriors host Orlando after six straight wins, the Earthquakes close their regular season at Minnesota, and SpaceX is aiming for Nov. 13 for Starship’s next flight.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-07.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-07">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 38</p>
+      <h1>Saturday, November 7, 2026</h1>
+      <p class="summary">The Justice Department dropped its bid to hold back about 20,000 disputed California ballots, with nearly 5 million statewide still to be counted. Southbound U.S. 101 through San Francisco is closed until early Monday for the last time in a repaving project, and Democrats say ending the Iran war is a top priority for the new Congress. The Warriors host Orlando after six straight wins, the Earthquakes close their regular season at Minnesota, and SpaceX is aiming for Nov. 13 for Starship’s next flight.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>The Justice Department dropped its lawsuit to hold back about 20,000 disputed California ballots, with nearly 5 million ballots still to be counted statewide.</li>
+        <li>Southbound U.S. 101 through San Francisco is closed from Friday night until 6 a.m. Monday, the last closure of a repaving project, with I-280 as the detour.</li>
+        <li>Democrats say ending the Iran war is a first priority for the new Congress, and the Pentagon puts the war’s cost above $47 billion.</li>
+        <li>The Warriors host Orlando at 5:30 p.m., the Earthquakes close their season at Minnesota at 4 p.m., and “Godzilla Minus Zero” opens to a projected $30 million.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> A coastal flood advisory for the Bay shoreline is listed through Nov. 13 because of high tides, so check tide times near the water. The Peninsula forecast is mostly sunny with a high near 72, and southbound U.S. 101 in San Francisco stays closed until 6 a.m. Monday.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.kqed.org/news/12108378/101-closure-san-francisco-bay-bridge-november-6-9-detour-traffic" target="_blank" rel="noopener">Southbound U.S. 101 through San Francisco is closed until Monday morning, the last closure of the repaving project</a></h3>
+          <p>Caltrans closed all southbound lanes of U.S. 101 between 17th and Cesar Chavez streets, near the Hospital Curve at Zuckerberg San Francisco General Hospital, at 11 p.m. Friday. Lanes are due to reopen by 6 a.m. Monday, Nov. 9; northbound 101 stays open. Caltrans recommends southbound I-280 as the detour, and the Fourth, Seventh and 10th Street on-ramps and the westbound I-80 connector to northbound 101 are blocked. A Caltrans spokesperson said this is the final 101 closure for the repaving work, which earlier shut northbound lanes in September, southbound lanes in October and I-80 on Oct. 23–26.</p>
+          <p class="why"><strong>Why it matters:</strong> Peninsula drivers headed into San Francisco or back south on Saturday and Sunday will want to plan for I-280, which is the posted detour.</p>
+          <p class="source">KQED, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://richmondconfidential.org/2026/11/06/bay-area-transit-agencies-celebrate-rtms-passage-with-toasts-cheers-sighs-of-relief/" target="_blank" rel="noopener">Regional transit tax: about 61% yes, mailed ballots still being counted, and the tax starts April 1</a></h3>
+          <p>Richmond Confidential reports that transit agencies called victory on election night with “yes” at about 61% of ballots counted so far, and that mailed ballots will be counted until Nov. 10, so the results are preliminary. The measure would raise about $980 million a year for 14 years through a half-cent sales tax in Alameda, Contra Costa, San Mateo and Santa Clara counties and a full cent in San Francisco, with the money going to 27 transit agencies and taking effect April 1. A judge rejected a lawsuit over the ballot wording. Supporters have said the alternative was deep service cuts and the possible closure of 10 BART stations.</p>
+          <p class="why"><strong>Why it matters:</strong> The money decides whether Caltrain and BART service on the Peninsula is kept or cut, and it adds to what San Mateo County shoppers pay in sales tax from April.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-04.html">Nov 4</a> · <a href="2026-11-01.html">Nov 1</a> · <a href="../tracker.html#regional-transit-measure">Follow this story ›</a></p>
+          <p class="source">Richmond Confidential, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://www.goodnewsnetwork.org/venomous-primate-believed-extinct-for-100-years-was-hiding-in-plain-sight-all-along/" target="_blank" rel="noopener">A venomous primate thought extinct for 100 years turns out to be alive on an Indonesian island</a></h3>
+          <p>Scientists had treated the Bangka slow loris as possibly extinct, with no documented Western sighting since the 1930s. A new paper by Austrian and international researchers uses records from a rescue center on Bangka Island, which rescued more than 90 of the animals between 2015 and 2025 and released 86 of them, to show the species still exists and is probably more widespread on the island than assumed.</p>
+          <p class="source">Good News Network, Nov 6, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.ckom.com/2026/11/06/us-justice-department-drops-bid-to-force-california-to-set-aside-disputed-ballots/" target="_blank" rel="noopener">Justice Department drops its bid to hold back about 20,000 disputed California ballots</a></h3>
+          <p>The department asked a federal judge on Friday to dismiss its own lawsuit, which sought to keep California from counting ballots it said belonged to noncitizens until their status could be checked. California officials said the list was out of date and included legitimate voters, and the judge had denied the federal request. The department said it will keep pursuing suspected election-law violations through other cases, including a separate lawsuit over California’s voter rolls. State officials said about 9 million ballots had been processed by early Friday, with nearly 5 million still to count.</p>
+          <p class="why"><strong>Why it matters:</strong> All of California’s ballots will now be counted as normal, so close local races, including Millbrae’s council seats, can keep shifting as the remaining ballots come in.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-02.html">Nov 2</a> · <a href="2026-11-01.html">Nov 1</a> · <a href="2026-10-30.html">Oct 30</a> · <a href="../tracker.html#california-voter-rolls-fight">Follow this story ›</a></p>
+          <p class="source">The Associated Press, via Canadian Press (CKOM), Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.newsgram.com/america/2026/11/07/trump-threatens-iran-democrats-vow-to-end-war" target="_blank" rel="noopener">Democrats say ending the Iran war is a first priority, while Trump keeps threatening more strikes</a></h3>
+          <p>Rep. Adam Smith of Washington, expected to chair the House Armed Services Committee, said ending the war will be one of the first things Democrats do, and that he expects a bill cutting off further war funding that Trump would likely veto, according to Common Dreams. The Pentagon puts the cost above $47 billion, and the article cites an NBC News exit poll in which 63% of voters called launching the war the wrong decision. Trump said he would rather not destroy the rest of the country but “maybe I’ll have to,” and Rep. Thomas Massie, a Republican, plans to force a vote next week on impeaching Defense Secretary Pete Hegseth. The next government funding deadline is Dec. 11.</p>
+          <p class="why"><strong>Why it matters:</strong> War costs and a December funding fight affect federal spending that reaches California, and fuel prices tied to the conflict have already raised costs for Bay Area transit.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-05.html">Nov 5</a> · <a href="2026-11-04.html">Nov 4</a> · <a href="2026-11-02.html">Nov 2</a> · <a href="../tracker.html#iran-war">Follow this story ›</a></p>
+          <p class="source">Common Dreams, via NewsGram, Nov 7, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://heavy.com/sports/nba/golden-state-warriors/injury-report-vs-magic-november-7/" target="_blank" rel="noopener">Today in sports: Warriors host Orlando, Quakes close the season, 49ers play Sunday; Sharks fall in Minnesota</a></h3>
+          <p>The Sharks lost 4–1 at Minnesota on Friday, with Wild goalie Jesper Wallstedt stopping 23 of 24 shots; San Jose is 7–10–1. Today, the Earthquakes play at Minnesota United at 4 p.m. on Apple TV in their regular-season finale: San Jose cannot finish below fourth in the West and will host a playoff opener, and a win plus a Dallas loss to Colorado would give the Quakes second place. The Warriors host the Orlando Magic at 5:30 p.m. at Chase Center, Hawai‘i plays at UTEP at 6:30 p.m. on FS1, and the 49ers host the Raiders on Sunday at 1:25 p.m.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-06.html">Nov 6</a></p>
+          <p class="source">VAVEL; SI; Heavy, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://heavy.com/sports/nba/golden-state-warriors/injury-report-vs-magic-november-7/" target="_blank" rel="noopener">Warriors, riding a six-game win streak, are without Porzingis, Butler and Moody against Orlando; Green is questionable</a></h3>
+          <p>The Warriors have won six straight after beating Miami 120–100 on Thursday, while the Magic have lost three in a row, most recently 117–104 at Phoenix. Jimmy Butler and Moses Moody are out and expected back later this season, and Kristaps Porzingis is out after posting on X that he chose to put his health first and step away; Heavy says Draymond Green confirmed the team is moving on from him. Green (right elbow soreness), Gary Payton II (right calf) and Gui Santos (left knee tendinitis) are questionable, and Charles Bassey is likely to start if Green sits.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-05.html">Nov 5</a></p>
+          <p class="source">Heavy, Nov 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/injury-report-mccaffrey-bosa-evans/1977580/" target="_blank" rel="noopener">McCaffrey and Bosa are cleared for the Raiders, but Mike Evans, Deebo Samuel and Christian Kirk are out</a></h3>
+          <p>The 49ers listed receivers Evans (Achilles), Samuel (hamstring) and Kirk (knee) as out for Sunday’s game, while Kyle Shanahan cleared running back Christian McCaffrey (hamstring) and defensive end Nick Bosa (calf), both limited in practice this week. Cornerbacks Upton Stout and Nate Hobbs, safety Siran Neal and receiver Demarcus Robinson are questionable. The team is likely to activate Robinson from injured reserve, which has to happen by 1 p.m. Saturday, and could also elevate receiver KhaDarel Hodge from the practice squad.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-06.html">Nov 6</a> · <a href="2026-11-05.html">Nov 5</a></p>
+          <p class="source">NBC Sports Bay Area, Nov 6, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Friday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>6–1</td><td>Host the Raiders Sunday after the bye week</td></tr>
+            <tr><td>Warriors</td><td>6–3</td><td>Six straight wins; host Orlando Saturday</td></tr>
+            <tr><td>Earthquakes</td><td>14–9–10</td><td>Finale at Minnesota Saturday; no lower than 4th in the West</td></tr>
+          </tbody>
+        </table>
+        <p class="source">AP; NBC Sports Bay Area; SI (Warriors and 49ers records unchanged since Thursday)</p>
+      </aside>
+    </section>
+
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.yahoo.com/entertainment/movies/box-office-results/articles/box-office-godzilla-minus-zero-175511642.html" target="_blank" rel="noopener">Box office: “Godzilla Minus Zero” opens with $6.7 million in previews and is headed for about $30 million</a></h3>
+          <p>The sequel took in $6.7 million in Friday previews and is projected to open to roughly $30 million; the first film opened to $11.4 million. Warner Bros.’ animated “The Cat in the Hat” made $1 million in previews and is expected to open to about $20 million against a reported $86 million production cost, while “Ramayana: Rise of a Legend” made $3.5 million in previews and is projected at about $6 million, and “Wild Horse Nine” made $900,000 and could open to $5 million to $7 million.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-06.html">Nov 6</a></p>
+          <p class="source">IndieWire, via Yahoo, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://globalnews.ca/news/12137836/new-music-friday-8-new-releases-as-holiday-shopping-begins-06-nov-2026/" target="_blank" rel="noopener">New music Friday: Kings of Leon, Royal Blood and Bryan Adams all release albums</a></h3>
+          <p>Kings of Leon released “Oh My Beloved,” Royal Blood “Dead Company” and Bryan Adams “How’s It Goin’.” Asia, Django Django and Prong also have albums out, and Cage the Elephant released a single that announces an album, “Dying in Reverse,” due Feb. 4.</p>
+          <p class="source">Global News, Nov 6, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://basenor.com/blogs/news/spacex-targets-nov-13-for-starship-flight-15-and-first-ship-catch" target="_blank" rel="noopener">SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage</a></h3>
+          <p>SpaceX’s launch vice president named Friday, Nov. 13 as the target date for the 15th Starship test flight, and Elon Musk said the company will try to catch both the Super Heavy booster and the ship. BASENOR reports the FAA lists the date as tentative and that the attempt is pending the agency’s approval; an earlier FAA planning date was Nov. 12.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-29.html">Oct 29</a> · <a href="2026-10-26.html">Oct 26</a> · <a href="2026-10-21.html">Oct 21</a> · <a href="../tracker.html#starship-flight-15">Follow this story ›</a></p>
+          <p class="source">BASENOR, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-classified-mission-space-force-ussf-432" target="_blank" rel="noopener">SpaceX launches a classified Space Force mission from Vandenberg</a></h3>
+          <p>A Falcon 9 lifted off from Vandenberg Space Force Base on Friday at 4:48 p.m. Pacific on the USSF-432 mission, SpaceX’s 125th launch of 2026. The booster, on its eighth flight, landed on a droneship, and SpaceX ended its webcast about 10 minutes in; neither SpaceX nor the Space Force described the payload.</p>
+          <p class="source">Space.com, Nov 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://siliconangle.com/2026/11/04/meta-acquires-ai-coding-startup-conductor-whose-app-runs-several-coding-agents-at-once/" target="_blank" rel="noopener">Meta buys Conductor, a tool for running several AI coding agents at once; its cloud service shuts down Nov. 20</a></h3>
+          <p>Conductor lets a developer run multiple coding agents, including Claude Code, Codex and Cursor, in separate copies of a codebase and review their work. Axios first reported the deal on Nov. 4 and Conductor confirmed it is joining Meta; terms were not disclosed. The hosted cloud version turns read-only Nov. 13 and shuts down Nov. 20, when stored cloud data is deleted, while the Mac app keeps working until early 2027, and active subscribers will get refunds.</p>
+          <p class="source">SiliconANGLE, Nov 4, 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-7/canadas-transcontinental-railway-completed" target="_blank" rel="noopener">Today in history: Canada’s transcontinental railway is finished</a></h3>
+          <p>1885: The last spike is driven at Craigellachie, British Columbia, completing Canada’s first railway across the continent.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.britannica.com/on-this-day/November-7" target="_blank" rel="noopener">On this day in science: NASA launches Mars Global Surveyor</a></h3>
+          <p>1996: The robotic spacecraft leaves Earth for a long-term study of Mars, and keeps working for about a decade before contact is lost in 2006.</p>
+          <p class="source">Britannica</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-7/jeannette-rankin-becomes-first-u-s-congresswoman" target="_blank" rel="noopener">Firsts in history: Jeannette Rankin becomes the first woman elected to Congress</a></h3>
+          <p>1916: Rankin of Montana wins a seat in the U.S. House of Representatives, the first woman elected to federal Congress.</p>
+          <p class="source">History.com</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

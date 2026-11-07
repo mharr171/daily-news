@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-07",
+      "file": "posts/2026-11-07.html",
+      "summary": "The Justice Department dropped its bid to hold back about 20,000 disputed California ballots, with nearly 5 million statewide still to be counted. Southbound U.S. 101 through San Francisco is closed until early Monday for the last time in a repaving project, and Democrats say ending the Iran war is a top priority for the new Congress. The Warriors host Orlando after six straight wins, the Earthquakes close their regular season at Minnesota, and SpaceX is aiming for Nov. 13 for Starship’s next flight.",
+      "headlines": [
+        {
+          "title": "Justice Department drops its bid to hold back about 20,000 disputed California ballots",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "Southbound U.S. 101 through San Francisco is closed until Monday morning, the last closure of the repaving project",
+          "topic": "General news"
+        },
+        {
+          "title": "Democrats say ending the Iran war is a first priority, while Trump keeps threatening more strikes",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "Warriors, riding a six-game win streak, are without Porzingis, Butler and Moody against Orlando",
+          "topic": "Sports"
+        },
+        {
+          "title": "SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage",
+          "topic": "Science & tech"
+        }
+      ],
+      "updates": [
+        "midnight"
+      ],
+      "updated": "2026-11-07T00:13"
+    },
+    {
       "date": "2026-11-06",
       "file": "posts/2026-11-06.html",
       "summary": "Millbrae’s District 3 council race flipped in Thursday’s updated count, with Juan Gámez now ahead by seven votes while Measure V holds about 64%. Employers added 165,000 jobs in October, far more than the 59,000 forecast, while Meta, Google and TikTok sued to block California’s new limits on teen social media feeds. Trump declared the Oval Office a national monument, the Warriors won a sixth straight, and “Godzilla Minus Zero” opens in theaters today.",

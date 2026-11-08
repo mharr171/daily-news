@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "timezone": "America/Los_Angeles",
  "note": "Times are Pacific. Sunrise and sunset times are calculated for Millbrae. Dates for launches, games, and releases can change; check the linked source before you go.",
  "events": [
@@ -1404,7 +1404,7 @@
    "category": "Sports",
    "team": "Earthquakes",
    "location": "Allianz Field, Saint Paul, Minn.",
-   "description": "MLS regular-season finale (Decision Day). TV: Apple TV.",
+   "description": "MLS regular-season finale (Decision Day). TV: Apple TV. Final: L 1–3. San Jose clinched the No. 4 seed and will host Houston in a best-of-three first round.",
    "url": "https://www.sjearthquakes.com/schedule/"
   },
   {
@@ -1414,7 +1414,7 @@
    "category": "Sports",
    "team": "Warriors",
    "location": "Chase Center, San Francisco",
-   "description": "Regular season.",
+   "description": "Regular season. Final: W 126–119 (OT).",
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
@@ -1424,7 +1424,7 @@
    "category": "Sports",
    "team": "Hawaii",
    "location": "Sun Bowl, El Paso",
-   "description": "College football. TV: FS1.",
+   "description": "College football. TV: FS1. Final: W 17–14.",
    "url": "https://hawaiiathletics.com/sports/football/schedule"
   },
   {
@@ -1503,6 +1503,15 @@
    "url": "https://www.mlb.com/news/when-are-2026-mlb-awards-announced-mvp-cy-young-rookie-of-the-year"
   },
   {
+   "date": "2026-11-09",
+   "time": "4:30 PM",
+   "title": "San Mateo County: next ballot-count update",
+   "category": "Government",
+   "location": "San Mateo County Elections Office",
+   "description": "The county says its next report on ballots counted comes by 4:30 p.m. Monday; ballots with problems can be fixed until Nov. 25.",
+   "url": "https://smcacre.gov/elections/current-election"
+  },
+  {
    "date": "2026-11-10",
    "time": "All day",
    "title": "U.S. Marine Corps Birthday",
@@ -1546,6 +1555,15 @@
    "location": "Central Park, 50 E. 5th Ave., San Mateo",
    "description": "A free ribbon-cutting celebrates the renovated Central Park playground. RSVP is encouraged but not required.",
    "url": "https://www.cityofsanmateo.org/4142/Central-Park-Playground-Renovation"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "",
+   "title": "“VisionQuest” series finale",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Disney+ ends the Marvel series “VisionQuest.”",
+   "url": "https://tvline.com/2295907/november-2026-tv-schedule-what-to-watch-printable-calendar-premieres-finales-streaming-list/"
   },
   {
    "date": "2026-11-11",
@@ -1610,6 +1628,15 @@
    "location": "",
    "description": "Amazon’s Lord of the Rings prequel series returns on Prime Video.",
    "url": "https://www.theonering.net/torwp/2026/05/11/121807-rings-of-power-season-3-release-date-confirmed-for-november-11-on-prime-video/"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "",
+   "title": "Netflix’s “The Body” arrives",
+   "category": "Entertainment",
+   "location": "",
+   "description": "All eight episodes of the series stream on Netflix.",
+   "url": "https://tvline.com/2295907/november-2026-tv-schedule-what-to-watch-printable-calendar-premieres-finales-streaming-list/"
   },
   {
    "date": "2026-11-12",
@@ -1712,6 +1739,15 @@
    "location": "AT&T Stadium, Arlington, Texas",
    "description": "TV: Fox.",
    "url": "https://www.49ers.com/schedule/"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "",
+   "title": "“The Chosen” season 6 premieres",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Prime Video starts the new season with three episodes.",
+   "url": "https://tvline.com/2295907/november-2026-tv-schedule-what-to-watch-printable-calendar-premieres-finales-streaming-list/"
   },
   {
    "date": "2026-11-16",
@@ -2117,6 +2153,15 @@
    "location": "Clarence T.C. Ching Athletics Complex, Honolulu",
    "description": "College football. Regular-season finale.",
    "url": "https://hawaiiathletics.com/sports/football/schedule"
+  },
+  {
+   "date": "2026-11-28",
+   "time": "",
+   "title": "Journey at Chase Center",
+   "category": "Entertainment",
+   "location": "Chase Center, San Francisco",
+   "description": "The rock band plays Chase Center; see the venue’s page for tickets and times.",
+   "url": "https://www.chasecenter.com/events/journey-20261128/"
   },
   {
    "date": "2026-11-29",

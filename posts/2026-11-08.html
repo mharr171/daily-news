@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunday, November 8, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 39: Sunday, November 8, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-08.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Sunday, November 8, 2026 | Live Full Stack">
+<meta property="og:description" content="San Mateo County still has about 100,000 ballots to process, with the next count update due Monday afternoon and Millbrae’s council races unsettled. Trump named Stephen Miller his chief of staff and said he has offered the press secretary job to UFC chief Dana White, while Stephen Curry’s 41 points carried the Warriors to a seventh straight win and the 49ers host the Raiders at 1:25 p.m. Six Flags says California’s Great America in Santa Clara will close after the 2027 season.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-08.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-08">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 39</p>
+      <h1>Sunday, November 8, 2026</h1>
+      <p class="summary">San Mateo County still has about 100,000 ballots to process, with the next count update due Monday afternoon and Millbrae’s council races unsettled. Trump named Stephen Miller his chief of staff and said he has offered the press secretary job to UFC chief Dana White, while Stephen Curry’s 41 points carried the Warriors to a seventh straight win and the 49ers host the Raiders at 1:25 p.m. Six Flags says California’s Great America in Santa Clara will close after the 2027 season.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>San Mateo County still has about 100,000 ballots to process, and the next update comes Monday afternoon, so Millbrae’s close council races stay open.</li>
+        <li>Trump named Stephen Miller his chief of staff, starting Monday, and said he has offered the press secretary job to UFC chief Dana White.</li>
+        <li>Curry scored 41 as the Warriors beat Orlando in overtime for a seventh straight win, and the 49ers host the Raiders at 1:25 p.m.</li>
+        <li>Six Flags says California’s Great America in Santa Clara will close for good after the 2027 season.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> Southbound U.S. 101 through San Francisco stays closed until 6 a.m. Monday, the last closure of the repaving project. A coastal flood advisory covers the Peninsula coast through noon Tuesday, and a beach hazards statement warns of sneaker waves and rip currents through Monday evening.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://smcacre.gov/elections/current-election" target="_blank" rel="noopener">San Mateo County still has about 100,000 ballots to count, and the next update is due Monday afternoon</a></h3>
+          <p>The county elections office’s latest report, from Friday afternoon, shows about 179,500 ballots counted and roughly 100,000 still waiting, nearly all of them mail ballots received by Election Day. About 850 ballots with signature or other problems can still be fixed until 5 p.m. on Nov. 25, and a hand count of 1% of ballots began Friday. The paper last reported Millbrae’s District 3 race with Gámez ahead by seven votes, so that race and others could still move.</p>
+          <p class="why"><strong>Why it matters:</strong> The Millbrae council seats, Measure V and the regional transit tax are all still being finalized, and the next numbers come Monday by 4:30 p.m.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-05.html">Nov 5</a> · <a href="2026-11-06.html">Nov 6</a> · <a href="2026-11-07.html">Nov 7</a> · <a href="../tracker.html#election-san-mateo-county">Follow this story ›</a></p>
+          <p class="source">San Mateo County Elections Office, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.cbsnews.com/sanfrancisco/news/great-america-theme-park-santa-clara-2027-farewell-season-six-flags/" target="_blank" rel="noopener">California’s Great America will close after a farewell season in 2027</a></h3>
+          <p>Six Flags says the Santa Clara park, which opened in 1976, will stay open through Labor Day, Sept. 6, 2027, and then close because it will not renew its land lease, which ends in June 2028. The 2027 season starts in March, and no opening date has been announced.</p>
+          <p class="why"><strong>Why it matters:</strong> The South Bay’s 50-year-old amusement park has been a day-trip staple for Peninsula families, and 2027 will be the last chance to visit.</p>
+          <p class="source">CBS News Bay Area, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.cbsnews.com/sanfrancisco/news/tesla-ending-cybertruck-production-next-year/" target="_blank" rel="noopener">Tesla plans to wind down Cybertruck production by mid-2027 to make room for its Cybercab robotaxi</a></h3>
+          <p>Elon Musk said on X that Tesla will end Cybertruck output at its Texas plant next year. Sales fell to about 20,200 in 2025 from about 39,000 in 2024, far below Musk’s early forecast of 250,000 a year, and Tesla’s shares rose 4.7% on the day.</p>
+          <p class="why"><strong>Why it matters:</strong> Tesla has deep Bay Area roots, and the move shows the company betting its future on robotaxis rather than a signature truck.</p>
+          <p class="source">CBS News Bay Area, Nov 6, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="good-news">
+      <h2>Good news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://www.xataka.com/ecologia-y-naturaleza/isla-california-solo-quedaban-15-zorros-a-finales-noventa-expulsar-a-aguilas-reales-hoy-300" target="_blank" rel="noopener">California’s Channel Islands foxes have rebounded from a handful of animals to thousands</a></h3>
+          <p>In the late 1990s only 15 island foxes were left on Santa Rosa Island, after feral pigs drew in golden eagles that also hunted the foxes. Crews moved 44 golden eagles, removed 5,036 pigs and brought back bald eagles, and the article calls it the fastest recovery ever recorded for an endangered mammal, with about 3,086 foxes now on Santa Cruz Island and 322 on San Miguel Island. This Spanish-language piece, published Saturday, retells the recovery rather than announcing new numbers.</p>
+          <p class="source">Xataka, Nov 8, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://abc7news.com/story/trump-says-chief-staff-susie-wiles-miller-will-replace/20020569/" target="_blank" rel="noopener">Trump names Stephen Miller his chief of staff as Susie Wiles steps aside</a></h3>
+          <p>Trump announced Friday that deputy chief of staff Stephen Miller, an architect of his immigration policies, will replace Susie Wiles, who moves to his political operation, with Miller starting Monday. Wiles had been chief of staff for 21 months; a White House official called her departure amicable, while ABC cites sources saying Trump privately blamed her for the midterm losses. Vance and Hegseth praised the move, and Democratic senators and outgoing Republican Sen. Thom Tillis criticized it.</p>
+          <p class="why"><strong>Why it matters:</strong> Miller helped design the immigration enforcement that has reached California communities, and he will now run the White House facing a Democratic Congress.</p>
+          <p class="source">ABC7 News (ABC News), Nov 6, 2026; Fox News, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.rte.ie/news/world/2026/1107/1598393-trump-dana-white/" target="_blank" rel="noopener">Trump says he has offered the White House press secretary job to UFC chief Dana White</a></h3>
+          <p>In a Truth Social post on Saturday, Trump said he offered the job to White, the head of the Ultimate Fighting Championship, and suggested UFC fighters could serve as assistants. White, speaking in London, said he will meet Trump on Monday and fly to Washington but did not say whether he would accept, and RTÉ notes it is unclear how serious the offer is. The job has been vacant since mid-October.</p>
+          <p class="why"><strong>Why it matters:</strong> The White House has gone about three weeks without a press secretary, the official who briefs the public on federal actions that affect Californians.</p>
+          <p class="source">RTÉ, Nov 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.aljazeera.com/news/2026/11/7/trump-orders-doj-to-investigate-democrats-for-threatening-people" target="_blank" rel="noopener">Trump orders the Justice Department to investigate Democrats he accuses of threatening his team</a></h3>
+          <p>In a Saturday post, Trump said he had told the Justice Department to look into Democrats he accused of threatening officials, citing impeachment talk aimed at Attorney General Todd Blanche, and of threatening Republican donors with prison. He called it extortion and singled out Sen. Elissa Slotkin; Al Jazeera notes he offered no evidence and Fox News notes he named no donors. Neither outlet reported a direct Democratic reply, though some House Democrats had earlier backed impeaching Blanche.</p>
+          <p class="why"><strong>Why it matters:</strong> It signals how the next two years may play out, as the new Democratic majorities plan investigations of the administration.</p>
+          <p class="source">Al Jazeera, Nov 7, 2026; Fox News, Nov 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.arabnews.com/world/wave-of-resignations-from-us-justice-department-after-midterms-3010234" target="_blank" rel="noopener">Three senior Justice Department officials, including the civil rights chief, are leaving</a></h3>
+          <p>Attorney General Blanche announced that civil rights chief Harmeet Dhillon, national security chief John Eisenberg and the U.S. attorney for the Southern District of Florida are departing. The AFP report gives no reason; it cites Dhillon’s letter, as reported by U.S. media, saying she submitted it in October and agreed to stay through the election.</p>
+          <p class="why"><strong>Why it matters:</strong> Dhillon pushed for states’ voter lists, a demand California fought in court, so her exit may change how the department handles election cases.</p>
+          <p class="source">Agence France-Presse (via Arab News), Nov 7, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://abcnews.com/Sports/wireStory/earthquakes-secure-4-seed-mls-cup-playoffs-despite-137948037" target="_blank" rel="noopener">Today in sports: Warriors win a seventh straight, the Quakes lock the No. 4 seed, and the 49ers host the Raiders at 1:25 p.m.</a></h3>
+          <p>The Warriors beat Orlando 126–119 in overtime Saturday to move to 7–3. The Earthquakes lost 3–1 at Minnesota but finished 14–10–10 and will face Houston in a best-of-three first round, hosting Games 1 and 3, with dates due Sunday. Hawaiʻi beat UTEP 17–14 to improve to 3–6. Today the 49ers (6–1) host the Raiders (4–4) at 1:25 p.m. on Fox; the Warriors host New Orleans on Monday at 7 p.m. and visit Houston on Wednesday.</p>
+          <p class="source">Associated Press (via ABC News), Nov 7, 2026; ESPN, Nov 7, 2026; Honolulu Star-Advertiser, Nov 7, 2026; 49ers.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.espn.com/nba/story/_/id/50417316/remarkable-curry-latest-history-making-night-keeps-warriors-rolling" target="_blank" rel="noopener">Curry scores a season-high 41 as the Warriors beat Orlando in overtime for their seventh straight win</a></h3>
+          <p>Stephen Curry scored 17 of his 41 points in the last seven minutes, including a key three-point play in overtime, and ESPN says it was his 16th 40-point game since turning 35. Rookie Yaxel Lendeborg added 23 as Golden State overcame an Orlando rally that forced overtime with two seconds left. The Warriors are the second team in NBA history to win seven straight after an 0–3 start, joining the 1950–51 Celtics.</p>
+          <p class="source">ESPN, Nov 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/injury-report-mccaffrey-bosa-evans/1977580/" target="_blank" rel="noopener">49ers will be without receivers Evans, Samuel and Kirk against the Raiders, but Bosa and McCaffrey are expected to play</a></h3>
+          <p>Mike Evans, Deebo Samuel and Christian Kirk were ruled out for Sunday’s game, while pass rusher Nick Bosa and running back Christian McCaffrey practiced fully Friday with no injury designation. Receiver Demarcus Robinson and cornerback Nate Hobbs were questionable and need to be activated from injured reserve, with Kyle Shanahan saying Robinson was the likely one. The 49ers are 6–1 and coming off a bye; final inactive lists come about 90 minutes before the 1:25 p.m. kickoff.</p>
+          <p class="source">NBC Sports Bay Area, Nov 6, 2026; 49ers.com, Nov 6, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Saturday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>6–1</td><td>1st in the NFC West, 2½ games ahead of Seattle and the Rams (4–4)</td></tr>
+            <tr><td>Warriors</td><td>7–3</td><td>Seven straight wins after an 0–3 start</td></tr>
+            <tr><td>Earthquakes</td><td>14–10–10</td><td>No. 4 seed in the West; host Houston in Round One</td></tr>
+            <tr><td>Hawaiʻi football</td><td>3–6</td><td>2–3 in the Mountain West</td></tr>
+          </tbody>
+        </table>
+        <p class="source">ESPN standings and team sites; 49ers record before today’s game</p>
+      </aside>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.hollywoodoutbreak.com/2026/11/07/godzilla-minus-zero-dominates-box-office-with-32m/" target="_blank" rel="noopener">“Godzilla Minus Zero” opens at No. 1 with an estimated $30 million or more</a></h3>
+          <p>Early weekend estimates put the film at roughly $30–32 million after a $14.5 million Friday from 3,254 theaters. “The Cat in the Hat” is second at about $18.5 million, and places three through five are close among “Drummer Boy,” “You Can See Everything” and “Ramayana.” These are estimates; final figures usually arrive Monday.</p>
+          <p class="source">Hollywood Outbreak, Nov 7, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://tvline.com/2295907/november-2026-tv-schedule-what-to-watch-printable-calendar-premieres-finales-streaming-list/" target="_blank" rel="noopener">TV this week: “The Institute” returns tonight, and “The Rings of Power” season 3 arrives Wednesday</a></h3>
+          <p>“The Institute” season 2 airs tonight at 9 p.m. on MGM+. Disney+ ends “VisionQuest” on Tuesday, then Wednesday brings four episodes of “The Rings of Power” season 3 on Prime Video and all eight of Netflix’s “The Body.” “The Chosen” season 6 starts Nov. 15 on Prime Video with three episodes.</p>
+          <p class="source">TVLine, updated Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://thelineofbestfit.com/albums/shygirl-swallow-is-brutally-romantic-and-often-surprising" target="_blank" rel="noopener">New albums: Shygirl returns with “Swallow!” and Willi Carlisle releases a 17-song double album</a></h3>
+          <p>Shygirl’s second album, her first in four years, blends experimental pop with 1990s British trip-hop and breakbeat, and The Line of Best Fit gave it 7 out of 10. Americana singer Willi Carlisle’s “The Universal Bubba,” produced with Tyler Childers’ band, also came out Friday.</p>
+          <p class="source">The Line of Best Fit, Nov 6, 2026; Saving Country Music, Nov 6, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/" target="_blank" rel="noopener">Evaluator METR estimates Anthropic’s AI progress has roughly doubled in speed, with caveats</a></h3>
+          <p>METR, an outside group that evaluates AI models, says progress on well-specified tasks at Anthropic is about twice its earlier rate, within a range of 1.3 to 3 times, and attributes most of the speedup to AI tools while stressing large uncertainty. It also says Anthropic redacted much of the evidence METR found most informative and cancelled a part of the engagement that would have verified how computing power was allocated.</p>
+          <p class="source">METR, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.cbsnews.com/sanfrancisco/news/openai-lawsuit-north-carolina-man-alleges-wife-used-chatgpt-attempted-murder-plot/" target="_blank" rel="noopener">A lawsuit in San Francisco accuses OpenAI of negligence over an alleged ChatGPT-assisted poisoning plot</a></h3>
+          <p>A North Carolina man sued OpenAI and CEO Sam Altman in San Francisco Superior Court, alleging his estranged wife used ChatGPT to plan to poison him in 2025, and he claims negligent design and failure to warn among nine counts. OpenAI says it banned the account and gave information to police; the claims are allegations that a court has not decided.</p>
+          <p class="source">CBS News Bay Area, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://spacenexus.us/moon/weekly/week-of-2026-11-02" target="_blank" rel="noopener">Griffin Mission One’s lunar launch slips to Jan. 31, 2027</a></h3>
+          <p>A weekly lunar roundup reports the Griffin Mission One lander’s launch date has moved to Jan. 31, 2027, with no reason given. It also says NASA’s Artemis III rocket stack has advanced at Kennedy Space Center and that Turkey’s first moon mission has entered environmental testing.</p>
+          <p class="source">SpaceNexus, Nov 6, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-8" target="_blank" rel="noopener">Today in history: John F. Kennedy is elected president</a></h3>
+          <p>1960: Kennedy defeats Richard Nixon, becoming the youngest person elected president and the first Catholic.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.lindahall.org/about/news/scientist-of-the-day/wilhelm-rontgen-2/" target="_blank" rel="noopener">On this day in science: Röntgen notices X-rays</a></h3>
+          <p>1895: Working with a cathode-ray tube wrapped in cardboard at Würzburg University, Wilhelm Röntgen sees a screen across the room glow and discovers X-rays.</p>
+          <p class="source">Linda Hall Library</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-8" target="_blank" rel="noopener">Firsts in history: A sitting president travels abroad on official business</a></h3>
+          <p>1906: Theodore Roosevelt leaves for a 17-day trip to Panama and Puerto Rico, the first official trip outside the continental United States by a sitting president.</p>
+          <p class="source">History.com</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="week-in-review">
+      <h2>Week in review</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="2026-11-04.html">General news: Election results settle statewide races and keep Millbrae’s tight</a></h3>
+          <p>Xavier Becerra was elected governor, the Prop. 40 billionaire tax trailed in early returns, and Measure V in San Mateo County held near 64% as the regional transit tax stayed around 61%. Millbrae’s District 3 council race flipped to Gámez by seven votes, Newsom said he will commute all 548 death sentences, and the last U.S. 101 closure in San Francisco was set for the weekend.</p>
+          <p class="source">From the editions of Nov 1–7</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-11-04.html#u-s-politics-government">U.S. politics: Democrats win Congress and turn to investigations</a></h3>
+          <p>Democrats won control of both the House and the Senate, promised major investigations, and Vance blamed the Iran war for Republican losses. The October jobs report showed 165,000 new jobs and unemployment falling to 4.1%, and Trump declared the Oval Office and Cabinet Room a national monument.</p>
+          <p class="source">From the editions of Nov 1–7</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-11-05.html#sports">Sports: Warriors climb on a win streak as the 49ers deal with Aiyuk</a></h3>
+          <p>The Warriors ran their win streak to six, the Valkyries’ championship parade drew a huge crowd, and the Warriors stopped paying Kristaps Porzingis. Brandon Aiyuk filed to be reinstated by the 49ers, and baseball’s labor fight edged toward a lockout.</p>
+          <p class="source">From the editions of Nov 1–7</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-11-07.html#culture">Culture: Godzilla leads a quiet weekend as new music arrives</a></h3>
+          <p>“Godzilla Minus Zero” opened with $6.7 million in previews, Kings of Leon, Royal Blood and Bryan Adams released albums, and Keanu Reeves was set to voice John Wick in an animated prequel. A Hunger Games companion album is due Nov. 13.</p>
+          <p class="source">From the editions of Nov 1–7</p>
+        </article>
+        <article class="story">
+          <h3><a href="2026-11-06.html#science-tech">Science &amp; tech: Swift falls, the station finishes its solar upgrade, and Starship readies a catch</a></h3>
+          <p>NASA’s Swift observatory re-entered over Indonesia, and spacewalkers installed the space station’s eighth and final solar array. SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage, and OpenAI released a security-focused GPT-6 Cyber model.</p>
+          <p class="source">From the editions of Nov 1–7</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="coming-up">
+      <h2>Coming up</h2>
+      <ul class="upcoming">
+        <li><span class="when">Mon, Nov 9</span><a href="https://www.nba.com/warriors/schedule" target="_blank" rel="noopener">Warriors host the New Orleans Pelicans</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Tue, Nov 10</span><a href="https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines" target="_blank" rel="noopener">Last day for mailed ballots to arrive</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Wed, Nov 11</span>Veterans Day <span class="kind">· Holiday</span></li>
+        <li><span class="when">Wed, Nov 11</span><a href="https://www.theonering.net/torwp/2026/05/11/121807-rings-of-power-season-3-release-date-confirmed-for-november-11-on-prime-video/" target="_blank" rel="noopener">“The Rings of Power” season 3 premieres</a> <span class="kind">· Culture</span></li>
+        <li><span class="when">Fri, Nov 13</span><a href="https://keeptrack.space/x-report/spacex-brief-2026-11-06" target="_blank" rel="noopener">SpaceX’s target date for Starship Flight 15</a> <span class="kind">· Space</span></li>
+        <li><span class="when">Sun, Nov 15</span><a href="https://www.49ers.com/schedule/" target="_blank" rel="noopener">49ers at the Dallas Cowboys</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Mon, Nov 16</span><a href="https://americansongwriter.com/grammy-awards-reveal-2027-nomination-and-ceremony-dates/" target="_blank" rel="noopener">Grammy nominations announced</a> <span class="kind">· Culture</span></li>
+        <li><span class="when">Wed, Nov 18</span><a href="https://iflscience.com/its-official-voyager-1-will-cross-the-1-light-day-threshold-on-november-18-2026-82733" target="_blank" rel="noopener">Voyager 1 reaches one light-day from Earth</a> <span class="kind">· Space</span></li>
+        <li><span class="when">Fri, Nov 20</span><a href="https://www.boxofficemojo.com/calendar/2026-11-01/" target="_blank" rel="noopener">“The Hunger Games: Sunrise on the Reaping” opens</a> <span class="kind">· Culture</span></li>
+        <li><span class="when">Sat, Nov 21</span><a href="https://calbears.com/news/2026/1/26/california-football-announces-2026-schedule.aspx" target="_blank" rel="noopener">Big Game: Stanford at Cal</a> <span class="kind">· Sports</span></li>
+        <li><span class="when">Thu, Nov 26</span>Thanksgiving Day <span class="kind">· Holiday</span></li>
+        <li><span class="when">Sat, Nov 28</span><a href="https://www.chasecenter.com/events/journey-20261128/" target="_blank" rel="noopener">Journey at Chase Center</a> <span class="kind">· Local event</span></li>
+        <li><span class="when">Thu, Dec 3</span><a href="https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines" target="_blank" rel="noopener">Counties must certify election results</a> <span class="kind">· Civic</span></li>
+        <li><span class="when">Sat, Dec 5</span><a href="https://www.ci.millbrae.ca.us/Calendar.aspx?EID=1975" target="_blank" rel="noopener">Millbrae holiday tree lighting</a> <span class="kind">· Local event</span></li>
+      </ul>
+    </section>
+    <section class="topic" id="news-quiz">
+      <h2>Sunday news quiz</h2>
+      <p class="quiz-note">Five questions from this week’s editions. Tap “Show answer” to check yourself.</p>
+      <ol class="quiz">
+        <li class="qa">
+          <p class="q">About what share of San Mateo County voters backed Measure V in the early counts?</p>
+          <ol class="choices"><li>44%</li><li>54%</li><li>64%</li></ol>
+          <details><summary>Show answer</summary><p><strong>C, about 64%</strong>, the measure held near that level in later counts. <a href="2026-11-05.html#general-news">Nov 5</a></p></details>
+        </li>
+        <li class="qa">
+          <p class="q">What did the unemployment rate fall to in the October jobs report?</p>
+          <ol class="choices"><li>4.1%</li><li>4.9%</li><li>5.4%</li></ol>
+          <details><summary>Show answer</summary><p><strong>A, 4.1%</strong>, employers added 165,000 jobs, far more than expected. <a href="2026-11-06.html#u-s-politics-government">Nov 6</a></p></details>
+        </li>
+        <li class="qa">
+          <p class="q">How many California death sentences did Newsom say he will commute?</p>
+          <ol class="choices"><li>148</li><li>548</li><li>948</li></ol>
+          <details><summary>Show answer</summary><p><strong>B, all 548</strong>, to life without the possibility of parole. <a href="2026-11-05.html#general-news">Nov 5</a></p></details>
+        </li>
+        <li class="qa">
+          <p class="q">The Warriors began the season 0–3. How many straight wins do they have now?</p>
+          <ol class="choices"><li>Three</li><li>Five</li><li>Seven</li></ol>
+          <details><summary>Show answer</summary><p><strong>C, seven</strong>, they beat Orlando in overtime Saturday, and only one other team has won seven straight after an 0–3 start. <a href="2026-11-08.html#sports">Nov 8</a></p></details>
+        </li>
+        <li class="qa">
+          <p class="q">When does Apple TV’s “Bad Monkey” season 2 arrive?</p>
+          <ol class="choices"><li>Dec. 2</li><li>Dec. 25</li><li>Jan. 14</li></ol>
+          <details><summary>Show answer</summary><p><strong>A, Dec. 2</strong>, with John Malkovich playing a mob boss. <a href="2026-11-05.html#culture">Nov 5</a></p></details>
+        </li>
+      </ol>
+    </section>
+    <section class="topic" id="source-mix">
+      <h2>Source mix</h2>
+      <div class="mix">
+        <p>This week’s seven editions ran 127 stories, not counting On this day, drawn from 97 different sources. Yahoo Sports (15 stories), Associated Press (10) and ABC News (6) were used most.</p>
+        <ul class="mix-bars">
+          <li><span>News organizations</span><span class="bar"><i style="width:76%"></i></span><span class="n">97</span></li>
+          <li><span>Official sources</span><span class="bar"><i style="width:5%"></i></span><span class="n">6</span></li>
+          <li><span>Research and reference</span><span class="bar"><i style="width:2%"></i></span><span class="n">3</span></li>
+          <li><span>Republished by another site</span><span class="bar"><i style="width:17%"></i></span><span class="n">21</span></li>
+        </ul>
+        <p>Official sources are teams, agencies and companies speaking for themselves, such as the Earthquakes, the county elections office and NASA. Republished stories were linked through Yahoo Sports, a local news site, or a newspaper carrying wire copy, rather than the outlet that reported them.</p>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

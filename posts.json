@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-08",
+      "file": "posts/2026-11-08.html",
+      "summary": "San Mateo County still has about 100,000 ballots to process, with the next count update due Monday afternoon and Millbrae’s council races unsettled. Trump named Stephen Miller his chief of staff and said he has offered the press secretary job to UFC chief Dana White, while Stephen Curry’s 41 points carried the Warriors to a seventh straight win and the 49ers host the Raiders at 1:25 p.m. Six Flags says California’s Great America in Santa Clara will close after the 2027 season.",
+      "headlines": [
+        {
+          "title": "San Mateo County still has about 100,000 ballots to count, with the next update due Monday afternoon",
+          "topic": "General news"
+        },
+        {
+          "title": "Trump names Stephen Miller his chief of staff and says he has offered the press secretary job to Dana White",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "Curry scores 41 as the Warriors beat Orlando in overtime for a seventh straight win",
+          "topic": "Sports"
+        },
+        {
+          "title": "California’s Great America will close after a farewell season in 2027",
+          "topic": "General news"
+        },
+        {
+          "title": "“Godzilla Minus Zero” opens at No. 1 with an estimated $30 million or more",
+          "topic": "Culture"
+        }
+      ],
+      "updates": [
+        "midnight"
+      ],
+      "updated": "2026-11-08T00:18"
+    },
+    {
       "date": "2026-11-07",
       "file": "posts/2026-11-07.html",
       "summary": "The Justice Department dropped its bid to hold back about 20,000 disputed California ballots, with nearly 5 million statewide still to be counted. Southbound U.S. 101 through San Francisco is closed until early Monday for the last time in a repaving project, and Democrats say ending the Iran war is a top priority for the new Congress. The Warriors host Orlando after six straight wins, the Earthquakes close their regular season at Minnesota, and SpaceX is aiming for Nov. 13 for Starship’s next flight.",

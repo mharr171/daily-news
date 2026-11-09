@@ -1,65 +1,65 @@
 {
- "week_of": "2026-11-02",
+ "week_of": "2026-11-09",
  "picks": [
   {
    "k": "movie",
    "i": 687163,
-   "b": "A teacher wakes alone on a spaceship with no memory and has to save a dying sun."
+   "b": "A teacher wakes alone on a spaceship with no memory and must work out how to save the sun."
   },
   {
    "k": "tv",
    "i": 284833,
-   "b": "A young Earthbender learns she is the new Avatar, and it makes her a target."
-  },
-  {
-   "k": "movie",
-   "i": 1288069,
-   "b": "A man stakes everything on being first to the summit of Mount Everest."
-  },
-  {
-   "k": "tv",
-   "i": 95350,
-   "b": "Two Green Lanterns work a murder case in small-town America."
+   "b": "In a world broken by catastrophe, a young Earthbender learns she is the next Avatar."
   },
   {
    "k": "movie",
    "i": 1339713,
-   "b": "A hopeless romantic gets his wish and then pays for it, in a dark romance-horror."
+   "b": "A hopeless romantic gets exactly what he wished for, and it goes very wrong."
   },
   {
    "k": "tv",
-   "i": 290856,
-   "b": "Kayce Dutton leaves the ranch behind to join a Montana U.S. Marshals unit."
-  },
-  {
-   "k": "tv",
-   "i": 247718,
-   "b": "Two mob families go to war, and everyone around them is caught in it."
+   "i": 95350,
+   "b": "Two Green Lantern cops, one rookie and one legend, chase a murder mystery on Earth."
   },
   {
    "k": "movie",
    "i": 1084244,
-   "b": "The toys face a new rival for Bonnie's attention: a tablet."
-  },
-  {
-   "k": "tv",
-   "i": 292741,
-   "b": "A detective chases a missing victim while his protégé goes undercover with a killer."
-  },
-  {
-   "k": "movie",
-   "i": 1275779,
-   "b": "A whistleblower and a meteorologist team up to prove we are not alone."
+   "b": "Bonnie's new tablet makes life hard for Woody, Buzz and the toy gang."
   },
   {
    "k": "tv",
    "i": 213375,
-   "b": "Vision, hunted and fighting Ultron's pull, tries to stay himself."
+   "b": "Vision, hunted and pulled toward Ultron's influence, has to face what he really is."
   },
   {
    "k": "movie",
-   "i": 1212763,
-   "b": "A widow's in-laws turn into fear-eating creatures in this Evil Dead entry."
+   "i": 1288069,
+   "b": "A determined climber stakes everything on being first to the top of Everest."
+  },
+  {
+   "k": "tv",
+   "i": 95480,
+   "b": "A band of disgraced MI5 agents with a rude boss stumble through the spy world."
+  },
+  {
+   "k": "tv",
+   "i": 45790,
+   "b": "The Joestar family spends generations feuding with the villainous Dio Brando."
+  },
+  {
+   "k": "movie",
+   "i": 1083381,
+   "b": "A strange doorway turns up in the basement of a furniture showroom."
+  },
+  {
+   "k": "tv",
+   "i": 126027,
+   "b": "A couple turn their inherited country house into a B&B full of ghostly guests."
+  },
+  {
+   "k": "tv",
+   "i": 289517,
+   "b": "A young man in debt takes odd jobs from a mysterious agency, and they turn nightmarish."
   }
  ]
 }

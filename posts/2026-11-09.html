@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monday, November 9, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 40: Monday, November 9, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-09.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Monday, November 9, 2026 | Live Full Stack">
+<meta property="og:description" content="San Mateo County still has about 100,000 ballots to count, with Millbrae’s District 3 council race separated by three votes in the last report and the next update due this afternoon. Trump told “60 Minutes” his deportation push may have been “too tough” as Democrats prepare to block his $1.5 trillion defense request. The 49ers beat the Raiders 38–17, the Warriors go for an eighth straight win tonight, and “Godzilla Minus Zero” set a foreign-language opening record at the box office.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-09.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-09">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 40</p>
+      <h1>Monday, November 9, 2026</h1>
+      <p class="summary">San Mateo County still has about 100,000 ballots to count, with Millbrae’s District 3 council race separated by three votes in the last report and the next update due this afternoon. Trump told “60 Minutes” his deportation push may have been “too tough” as Democrats prepare to block his $1.5 trillion defense request. The 49ers beat the Raiders 38–17, the Warriors go for an eighth straight win tonight, and “Godzilla Minus Zero” set a foreign-language opening record at the box office.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>San Mateo County still has about 100,000 ballots to count, and Millbrae’s District 3 race was down to a three-vote gap in the last report.</li>
+        <li>Trump told “60 Minutes” his deportation policy may have been “too tough,” while Democrats prepare to reject his $1.5 trillion defense request.</li>
+        <li>The 49ers beat the Raiders 38–17 to reach 7–1, and the Warriors host New Orleans tonight going for an eighth straight win.</li>
+        <li>SpaceX is aiming for Friday’s Starship Flight 15, the first attempt to catch both the booster and the ship.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> A coastal flood advisory runs through Tuesday on the Pacific Coast and through Friday around the Bay shoreline, with minor flooding possible in low-lying spots near high tide. Hazardous beach conditions, including 12–16-foot breaking waves and sneaker waves, continue on Pacific beaches through Monday.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://smcacre.gov/elections/november-3-2026-statewide-general-election" target="_blank" rel="noopener">San Mateo County still has about 100,000 ballots to count, and Millbrae’s District 3 race is down to a few votes</a></h3>
+          <p>The county’s last report, as of Friday afternoon, counted 179,539 ballots and left about 100,000 unprocessed, nearly all of them mail ballots; the next update is due by 4:30 p.m. today. Millbrae’s semi-official figures from the same day show Juan Gámez ahead of Ann Schneider 484 to 481 in District 3 and Albert Yam leading Bob Nguyen 700 to 586 in District 4. The city says none of it is final until the county certifies, and its next update is Thursday; voters with 853 challenged ballots can fix them until Nov. 25.</p>
+          <p class="why"><strong>Why it matters:</strong> A three-vote margin means every remaining ballot, and every challenged ballot that gets fixed, could decide who represents District 3.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-08.html">Nov 8</a> · <a href="2026-11-06.html">Nov 6</a> · <a href="2026-11-05.html">Nov 5</a> · <a href="../tracker.html#election-san-mateo-county">Follow this story ›</a></p>
+          <p class="source">San Mateo County Registration &amp; Elections, as of Nov 6, 2026; City of Millbrae, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">Your local government this week</p>
+          <h3><a href="https://www.ci.millbrae.ca.us/AgendaCenter/ViewFile/Agenda/_11102026-644?html=true" target="_blank" rel="noopener">Your local government this week: Millbrae’s council takes up the Monterey Street linear park and paid parking on Tuesday</a></h3>
+          <p>The City Council meets Tuesday at 7 p.m. in Council Chambers and on Zoom. The agenda has no public hearings; the main items are a status update and vote on the concept design for the Monterey Street Linear Park Improvements Project, a summary of feedback from the Oct. 22 open house on the Millbrae Paid Parking Program, and resolutions accepting the Aviador Avenue Bridge Shoring and Lomita Avenue Slope Stability projects as complete, plus Veterans Day and Native American Heritage Month proclamations. No Planning Commission meeting is posted for this week, and City Hall is closed Wednesday for Veterans Day.</p>
+          <p class="why"><strong>Why it matters:</strong> The linear park design and the parking program feedback shape how downtown streets look and what it costs to park in Millbrae.</p>
+          <p class="source">City of Millbrae agenda, Nov 10, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="good-news">
+      <h2>Good news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://gulfnews.com/world/americas/royal-caribbean-pianist-rescued-after-falling-overboard-survives-9-hours-at-sea-1.500740802" target="_blank" rel="noopener">A cruise ship pianist survives about nine hours in the Pacific after going overboard, and fishermen pull him out</a></h3>
+          <p>The man, a pianist on Royal Caribbean’s Ovation of the Seas, was spotted in the water 15 to 20 miles off the California coast by a fishing boat returning from Catalina Island on Friday. Newport Beach lifeguards met the boat, and he was taken to a hospital in shock. The Coast Guard is investigating how he fell overboard, and the cruise line says it is supporting him.</p>
+          <p class="source">Gulf News, Nov 9, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.cbsnews.com/news/10-takeaways-from-trump-60-minutes-interview/" target="_blank" rel="noopener">Trump tells “60 Minutes” his deportation push may have been “too tough”</a></h3>
+          <p>In a CBS interview, President Trump said his immigration enforcement went too far in cases involving long-time workers whose only violation was entering illegally, and that he would like to work with Democrats on the issue. He also said he may make “maybe a few” cabinet changes, still backs Defense Secretary Pete Hegseth, and is not looking to escalate the Iran war. Exit polls cited by CBS found 58% of voters said his immigration actions went too far.</p>
+          <p class="why"><strong>Why it matters:</strong> California’s large immigrant workforce is directly affected by how hard enforcement stays, and a bipartisan immigration deal would be felt in Bay Area farms, restaurants and construction.</p>
+          <p class="source">CBS News, Nov 8, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://finance.yahoo.com/economy/policy/articles/trump-1-5-trillion-defense-144026439.html" target="_blank" rel="noopener">Democrats are poised to reject Trump’s $1.5 trillion defense request as the Dec. 11 funding deadline looms</a></h3>
+          <p>Bloomberg reports the Democratic majorities are expected to turn down the request, a 44% jump, and might approve only about $1 trillion, a figure it attributes to one unnamed person. A planned $350 billion add-on also looks doomed. Current stopgap funding runs out Dec. 11, and The Hill says another continuing resolution is the likeliest outcome.</p>
+          <p class="why"><strong>Why it matters:</strong> Stopgap funding or a shutdown affects federal workers, defense and tech contractors, and federal grants that flow to California.</p>
+          <p class="source">Bloomberg (via Yahoo Finance), Nov 8, 2026; The Hill, Nov 8, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.bloomberg.com/news/articles/2026-11-08/hegseth-impeachment-backed-by-house-democratic-leader-jeffries" target="_blank" rel="noopener">Hegseth faces impeachment talk as Jeffries calls him a “hard yes”</a></h3>
+          <p>Bloomberg reports House Democratic leader Hakeem Jeffries said he is a “hard yes” on impeaching Defense Secretary Pete Hegseth, on a measure that could be introduced as soon as this week. Earlier coverage by NPR and The Hill had him calling for Hegseth to go without endorsing impeachment, and Republican Rep. Thomas Massie has said he will bring articles unless Hegseth resigns. No vote is scheduled, and Trump told “60 Minutes” he backs Hegseth.</p>
+          <p class="why"><strong>Why it matters:</strong> The Iran war and Pentagon leadership bear on Bay Area defense contractors and military families at Travis Air Force Base.</p>
+          <p class="source">Bloomberg, Nov 8, 2026; The Hill, Nov 8, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.yahoo.com/news/politics/articles/week-hill-congress-returns-leadership-220000684.html" target="_blank" rel="noopener">Congress returns this week with Republican leadership votes and a permitting-bill test in the Senate</a></h3>
+          <p>House Republicans choose their new leaders Tuesday after Speaker Mike Johnson said he won’t seek the minority leader job, with Steve Scalise and Jim Jordan as the contenders, The Hill reports. The Senate holds a procedural vote Monday on a permitting-reform bill, and the House has passed only three of the 12 annual spending bills.</p>
+          <p class="why"><strong>Why it matters:</strong> Who leads the minority party, and how the funding fight goes, set the terms for California priorities such as wildfire funding and water.</p>
+          <p class="source">The Hill (via Yahoo News), Nov 8, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://abcnews.com/Sports/wireStory/49ers-cruise-past-raiders-38-17-137961927" target="_blank" rel="noopener">Weekend recap: 49ers rout the Raiders, Warriors win a seventh straight, and the Quakes and Hawaiʻi play Saturday</a></h3>
+          <p>The 49ers beat the Raiders 38–17 on Sunday to improve to 7–1. The Warriors beat Orlando 126–119 in overtime Saturday for a seventh straight win and a 7–3 record, behind 41 points from Stephen Curry. The Earthquakes lost 3–1 at Minnesota in their regular-season finale, and Hawaiʻi beat UTEP 17–14. This week: the Warriors host New Orleans tonight at 7 p.m. on NBA TV, visit Houston on Wednesday at 6:30 p.m. and San Antonio on Friday at 6:30 p.m.; the 49ers visit Dallas on Sunday at 1:25 p.m. on Fox; Hawaiʻi hosts North Dakota State on Saturday at 8 p.m.; and San Jose opens the MLS playoffs against Houston on Nov. 24.</p>
+          <p class="source">Associated Press (via ABC News), Nov 8, 2026; NBC Sports Bay Area, Nov 8, 2026; San Jose Earthquakes, 49ers.com, NBA.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://abcnews.com/Sports/wireStory/49ers-cruise-past-raiders-38-17-137961927" target="_blank" rel="noopener">49ers force five second-half turnovers, their first game like that since 2006, in a 38–17 win over the Raiders</a></h3>
+          <p>San Francisco led 21–10 at halftime and pulled away as Las Vegas quarterback Kirk Cousins threw three interceptions. Brock Purdy threw for 232 yards and two touchdowns and ran for another, Christian McCaffrey scored twice, and rookie Jaden Dugger returned an interception 35 yards for a score. Rookie defensive tackle Gracen Halton left on a cart with an air cast on his left leg and has no diagnosis yet; guard Trey Zuhn has a concussion and cornerback Renardo Green a back injury.</p>
+          <p class="source">Associated Press (via ABC News), Nov 8, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.espn.com/nba/story/_/id/50429468/warriors-guard-richard-torn-ligament-thumb" target="_blank" rel="noopener">Warriors guard Will Richard is out indefinitely with a torn ligament in his left thumb</a></h3>
+          <p>The second-year guard, who is averaging 5.1 points and shooting 42.9% from three, has no timetable to return and was ruled out for tonight’s game against New Orleans. Golden State also saw Gui Santos play only about 11 minutes Saturday with left knee tendinitis, while Jimmy Butler has missed the streak without a detailed explanation.</p>
+          <p class="source">ESPN, Nov 8, 2026; NBC Sports Bay Area, Nov 8, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Sunday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>7–1</td><td>Beat the Raiders 38–17; next at Dallas Sunday</td></tr>
+            <tr><td>Warriors</td><td>7–3</td><td>Seven straight wins after an 0–3 start</td></tr>
+            <tr><td>Earthquakes</td><td>14–10–10</td><td>No. 4 seed in the West; host Houston in Game 1 on Nov. 24</td></tr>
+            <tr><td>Hawaiʻi football</td><td>3–6</td><td>Beat UTEP 17–14 on Saturday</td></tr>
+          </tbody>
+        </table>
+        <p class="source">ESPN, NBC Sports Bay Area and team sites</p>
+      </aside>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker feature">Box office and streaming top 10</p>
+          <h3><a href="https://abcnews.com/amp/Entertainment/wireStory/godzilla-minus-zero-stomps-record-setting-316-debut-137957908" target="_blank" rel="noopener">Box office and streaming top 10: “Godzilla Minus Zero” sets a foreign-language opening record with $31.6 million</a></h3>
+          <p>Studio estimates put “Godzilla Minus Zero” first at $31.6 million, a record debut for a foreign-language film in North America, followed by “The Cat in the Hat” at $20.5 million, “Drummer Boy” at $9.3 million, “You Can See Everything” at $8.9 million and “Ramayana: Rise of a Legend” at $8.7 million; final figures come out today. On Netflix, the latest chart posted (Oct. 26–Nov. 1) had “The One About Matthew Perry” first among English-language TV with 9.5 million views and “Animals” first among films with 4.7 million; the new chart is due Tuesday.</p>
+          <p class="source">Associated Press (via ABC News), Nov 8, 2026; What’s on Netflix, Nov 3, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.aboutamazon.com/md/news/entertainment/lord-of-the-rings-rings-of-power-season-3-prime-video" target="_blank" rel="noopener">“The Rings of Power” season 3 arrives Wednesday with four episodes at once</a></h3>
+          <p>Prime Video releases the first four episodes of the third season on Nov. 11, then two more on Nov. 18 and two on Nov. 25, which would make eight episodes in all. Amazon updated its season page with the trailer in October.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-08.html">Nov 8</a></p>
+          <p class="source">Amazon, updated Oct 21, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.spacex.com/launches/starship-flight-15" target="_blank" rel="noopener">SpaceX posts its Starship Flight 15 page, targeting Friday for the first try at catching both stages</a></h3>
+          <p>SpaceX’s launch page says the flight plans to catch both the Super Heavy booster and the Starship upper stage at the launch site. A SpaceX launch executive gave Friday, Nov. 13 as the target, the booster completed a full 33-engine static fire on Oct. 25 and the ship finished its engine tests Oct. 26–27, but no launch time or FAA license has been confirmed.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-07.html">Nov 7</a> · <a href="../tracker.html#starship-flight-15">Follow this story ›</a></p>
+          <p class="source">SpaceX, Nov 8, 2026; KeepTrack, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://9to5mac.com/2026/11/08/apple-working-on-agentic-siri-ai-next-year-report/" target="_blank" rel="noopener">Apple is working to make Siri “more like an agent” as soon as next year, a report says</a></h3>
+          <p>Citing Bloomberg’s Mark Gurman, 9to5Mac reports Apple wants Siri to act proactively on a person’s behalf, as soon as next year. Siri gained personalized features with iOS 27 but still cannot take actions unprompted. This is a report about plans, not an announcement.</p>
+          <p class="source">9to5Mac, Nov 8, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.theregister.com/security/2026/11/09/linus-torvalds-sees-signs-ai-prompted-patch-flood-has-peaked/5308345" target="_blank" rel="noopener">Linus Torvalds sees signs the flood of AI-prompted Linux patches has peaked</a></h3>
+          <p>The Register reports that for one major Linux project, fixes are now arriving faster than new bug reports, which Torvalds reads as a sign the surge of AI-generated patches is leveling off.</p>
+          <p class="source">The Register, Nov 9, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://science.nasa.gov/earth/earth-observatory/ozone-hole-reaches-its-2026-maximum/" target="_blank" rel="noopener">The Antarctic ozone hole hit its 2026 maximum, the seventh largest in 48 years of records</a></h3>
+          <p>NASA’s Earth Observatory says this year’s hole ranked seventh by area but was not as deep as the largest holes on record.</p>
+          <p class="source">NASA Earth Observatory, Nov 9, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-9/east-germany-opens-the-berlin-wall" target="_blank" rel="noopener">Today in history: East Germany opens the Berlin Wall</a></h3>
+          <p>1989: After weeks of protests, East Germany announces that its citizens may cross the border, and crowds pour through the Wall that had divided Berlin for 28 years.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nasa.gov/mission/apollo-4/" target="_blank" rel="noopener">On this day in science: Apollo 4 flies the Saturn V for the first time</a></h3>
+          <p>1967: NASA launches the uncrewed Apollo 4, the first all-up test of the three-stage Saturn V rocket that later carried astronauts to the Moon.</p>
+          <p class="source">NASA</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://au.rollingstone.com/culture/culture-news/rolling-stone-at-50-making-the-first-issue-1819" target="_blank" rel="noopener">Firsts in history: Rolling Stone publishes its first issue</a></h3>
+          <p>1967: The first issue of Rolling Stone, cover-dated Nov. 9 and featuring John Lennon, is produced in San Francisco.</p>
+          <p class="source">Rolling Stone Australia</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "timezone": "America/Los_Angeles",
  "note": "Times are Pacific. Sunrise and sunset times are calculated for Millbrae. Dates for launches, games, and releases can change; check the linked source before you go.",
  "events": [
@@ -1461,7 +1461,7 @@
    "category": "Sports",
    "team": "49ers",
    "location": "Levi’s Stadium, Santa Clara",
-   "description": "TV: Fox.",
+   "description": "TV: Fox. Final: W 38–17.",
    "url": "https://www.49ers.com/schedule/"
   },
   {
@@ -1961,6 +1961,16 @@
    "location": "",
    "description": "November’s full moon comes close to Earth (about 224,200 miles), so it looks a little bigger and brighter than usual, often called a supermoon.",
    "url": "https://www.almanac.com/full-moon-names"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "7:00 PM",
+   "title": "Earthquakes vs. Houston Dynamo FC (MLS Cup Playoffs, Round One, Game 1)",
+   "category": "Sports",
+   "team": "Earthquakes",
+   "location": "PayPal Park, San Jose",
+   "description": "First game of a best-of-three series; Game 2 is at Houston Nov. 27–28 and Game 3, if needed, is in San Jose Dec. 1–2, with dates subject to change.",
+   "url": "https://www.sjearthquakes.com/news/san-jose-earthquakes-to-face-houston-dynamo-fc-in-audi-2026-mls-cup-playoffs-round-one-game-1-at-paypal-park-on-nov-24-at-7-p-m-pt"
   },
   {
    "date": "2026-11-25",

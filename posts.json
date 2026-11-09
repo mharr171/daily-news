@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-09",
+      "file": "posts/2026-11-09.html",
+      "summary": "San Mateo County still has about 100,000 ballots to count, with Millbrae’s District 3 council race separated by three votes in the last report and the next update due this afternoon. Trump told “60 Minutes” his deportation push may have been “too tough” as Democrats prepare to block his $1.5 trillion defense request. The 49ers beat the Raiders 38–17, the Warriors go for an eighth straight win tonight, and “Godzilla Minus Zero” set a foreign-language opening record at the box office.",
+      "headlines": [
+        {
+          "title": "San Mateo County still has about 100,000 ballots to count, and Millbrae’s District 3 race is down to a few votes",
+          "topic": "General news"
+        },
+        {
+          "title": "Trump tells “60 Minutes” his deportation push may have been “too tough”",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "49ers force five second-half turnovers in a 38–17 win over the Raiders",
+          "topic": "Sports"
+        },
+        {
+          "title": "“Godzilla Minus Zero” sets a foreign-language opening record with $31.6 million",
+          "topic": "Culture"
+        },
+        {
+          "title": "SpaceX targets Friday for the first try at catching both Starship stages",
+          "topic": "Science & tech"
+        }
+      ],
+      "updates": [
+        "midnight"
+      ],
+      "updated": "2026-11-09T00:15"
+    },
+    {
       "date": "2026-11-08",
       "file": "posts/2026-11-08.html",
       "summary": "San Mateo County still has about 100,000 ballots to process, with the next count update due Monday afternoon and Millbrae’s council races unsettled. Trump named Stephen Miller his chief of staff and said he has offered the press secretary job to UFC chief Dana White, while Stephen Curry’s 41 points carried the Warriors to a seventh straight win and the 49ers host the Raiders at 1:25 p.m. Six Flags says California’s Great America in Santa Clara will close after the 2027 season.",

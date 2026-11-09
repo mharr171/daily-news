@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "threads": [
     {
       "id": "election-san-mateo-county",
       "title": "Election 2026 in San Mateo County",
       "status": "Developing",
       "summary": "Ballots, vote centers, deadlines and results for the county measures and Millbrae council races on the Nov. 3 ballot. Early results show Measure V passing, and counting continues.",
-      "updated": "2026-11-08",
+      "updated": "2026-11-09",
       "entries": [
         {
           "date": "2026-10-05",
@@ -112,6 +112,57 @@
           "headline": "San Mateo County still has about 100,000 ballots to count, and the next update is due Monday afternoon",
           "url": "https://smcacre.gov/elections/current-election",
           "source": "San Mateo County Elections Office, Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-09",
+          "edition": "posts/2026-11-09.html",
+          "headline": "San Mateo County still has about 100,000 ballots to count, and Millbrae’s District 3 race is down to a few votes",
+          "url": "https://smcacre.gov/elections/november-3-2026-statewide-general-election",
+          "source": "San Mateo County Registration & Elections, as of Nov 6, 2026"
+        }
+      ]
+    },
+    {
+      "id": "starship-flight-15",
+      "title": "Starship Flight 15",
+      "status": "Developing",
+      "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
+      "updated": "2026-11-09",
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "edition": "posts/2026-10-21.html",
+          "headline": "SpaceX will try to catch both Starship stages on its next test flight",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says",
+          "source": "Space.com, Oct 20, 2026"
+        },
+        {
+          "date": "2026-10-26",
+          "edition": "posts/2026-10-26.html",
+          "headline": "SpaceX test-fires the Super Heavy booster for Starship Flight 15",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
+          "source": "Space.com, Oct 26, 2026"
+        },
+        {
+          "date": "2026-10-29",
+          "edition": "posts/2026-10-29.html",
+          "headline": "SpaceX finishes Starship upper-stage test fires ahead of Flight 15",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video",
+          "source": "Space.com, Oct 29, 2026"
+        },
+        {
+          "date": "2026-11-07",
+          "edition": "posts/2026-11-07.html",
+          "headline": "SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage",
+          "url": "https://basenor.com/blogs/news/spacex-targets-nov-13-for-starship-flight-15-and-first-ship-catch",
+          "source": "BASENOR, Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-09",
+          "edition": "posts/2026-11-09.html",
+          "headline": "SpaceX posts its Starship Flight 15 page, targeting Friday for the first try at catching both stages",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "source": "SpaceX, Nov 8, 2026; KeepTrack, Nov 6, 2026"
         }
       ]
     },
@@ -370,43 +421,6 @@
           "headline": "Justice Department drops its bid to hold back about 20,000 disputed California ballots",
           "url": "https://www.ckom.com/2026/11/06/us-justice-department-drops-bid-to-force-california-to-set-aside-disputed-ballots/",
           "source": "The Associated Press, via Canadian Press (CKOM), Nov 6, 2026"
-        }
-      ]
-    },
-    {
-      "id": "starship-flight-15",
-      "title": "Starship Flight 15",
-      "status": "Developing",
-      "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
-      "updated": "2026-11-07",
-      "entries": [
-        {
-          "date": "2026-10-21",
-          "edition": "posts/2026-10-21.html",
-          "headline": "SpaceX will try to catch both Starship stages on its next test flight",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says",
-          "source": "Space.com, Oct 20, 2026"
-        },
-        {
-          "date": "2026-10-26",
-          "edition": "posts/2026-10-26.html",
-          "headline": "SpaceX test-fires the Super Heavy booster for Starship Flight 15",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
-          "source": "Space.com, Oct 26, 2026"
-        },
-        {
-          "date": "2026-10-29",
-          "edition": "posts/2026-10-29.html",
-          "headline": "SpaceX finishes Starship upper-stage test fires ahead of Flight 15",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video",
-          "source": "Space.com, Oct 29, 2026"
-        },
-        {
-          "date": "2026-11-07",
-          "edition": "posts/2026-11-07.html",
-          "headline": "SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage",
-          "url": "https://basenor.com/blogs/news/spacex-targets-nov-13-for-starship-flight-15-and-first-ship-catch",
-          "source": "BASENOR, Nov 6, 2026"
         }
       ]
     },

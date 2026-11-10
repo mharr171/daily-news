@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-10",
+      "file": "posts/2026-11-10.html",
+      "summary": "San Mateo County has about 50,000 ballots left to count, with Millbrae’s District 3 council race still decided by three votes in the city’s last report and the next update due Thursday. Rep. Thomas Massie is pushing a House vote to impeach Defense Secretary Pete Hegseth, and Trump says he sees momentum toward ending the Iran war as oil prices fall. The Warriors routed New Orleans 138–87 for an eighth straight win, and Anthropic released Claude Fable 5.2 and Mythos 5.2.",
+      "headlines": [
+        {
+          "title": "San Mateo County has about 50,000 ballots left to count, and the next update is Thursday",
+          "topic": "General news"
+        },
+        {
+          "title": "Rep. Massie pushes to force a House vote to impeach Defense Secretary Hegseth, and Trump hits back",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "Warriors rout the Pelicans 138–87 for an eighth straight win",
+          "topic": "Sports"
+        },
+        {
+          "title": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "James Gunn and Peter Safran are leaving DC Studios",
+          "topic": "Culture"
+        }
+      ],
+      "updates": [
+        "midnight"
+      ],
+      "updated": "2026-11-10T00:45"
+    },
+    {
       "date": "2026-11-09",
       "file": "posts/2026-11-09.html",
       "summary": "San Mateo County still has about 100,000 ballots to count, with Millbrae’s District 3 council race separated by three votes in the last report and the next update due this afternoon. Trump told “60 Minutes” his deportation push may have been “too tough” as Democrats prepare to block his $1.5 trillion defense request. The 49ers beat the Raiders 38–17, the Warriors go for an eighth straight win tonight, and “Godzilla Minus Zero” set a foreign-language opening record at the box office.",

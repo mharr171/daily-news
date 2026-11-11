@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "timezone": "America/Los_Angeles",
  "note": "Times are Pacific. Sunrise and sunset times are calculated for Millbrae. Dates for launches, games, and releases can change; check the linked source before you go.",
  "events": [
@@ -1722,6 +1722,24 @@
    "url": "https://hawaiiathletics.com/sports/football/schedule"
   },
   {
+   "date": "2026-11-14",
+   "time": "See website",
+   "title": "Bonobo at the Fox Theater",
+   "category": "Entertainment",
+   "location": "Fox Theater, Oakland",
+   "description": "Electronic artist Bonobo plays Oakland; check the venue for times and tickets.",
+   "url": "https://www.songkick.com/metro-areas/26330-us-sf-bay-area/november-2026"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "See website",
+   "title": "Rhye at The Warfield",
+   "category": "Entertainment",
+   "location": "The Warfield, San Francisco",
+   "description": "Rhye plays The Warfield; check the venue for times and tickets.",
+   "url": "https://www.songkick.com/metro-areas/26330-us-sf-bay-area/november-2026"
+  },
+  {
    "date": "2026-11-15",
    "time": "10:00 AM – 12:00 PM",
    "title": "South San Francisco: Diwali Festival of Lights",
@@ -1748,6 +1766,15 @@
    "location": "",
    "description": "Prime Video starts the new season with three episodes.",
    "url": "https://tvline.com/2295907/november-2026-tv-schedule-what-to-watch-printable-calendar-premieres-finales-streaming-list/"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "See website",
+   "title": "Vince Staples at The Warfield",
+   "category": "Entertainment",
+   "location": "The Warfield, San Francisco",
+   "description": "Rapper Vince Staples plays The Warfield; check the venue for times and tickets.",
+   "url": "https://www.songkick.com/metro-areas/26330-us-sf-bay-area/november-2026"
   },
   {
    "date": "2026-11-16",
@@ -1815,6 +1842,15 @@
    "url": "https://musicrow.com/2026/04/breaking-date-revealed-for-60th-annual-cma-awards/"
   },
   {
+   "date": "2026-11-18",
+   "time": "See website",
+   "title": "Three Days Grace at SAP Center",
+   "category": "Entertainment",
+   "location": "SAP Center, San Jose",
+   "description": "The rock band plays San Jose; check the venue for times and tickets.",
+   "url": "https://secretsanfrancisco.com/bay-area-concert-calendar/"
+  },
+  {
    "date": "2026-11-19",
    "time": "All day",
    "title": "Great American Smokeout",
@@ -1832,6 +1868,25 @@
    "location": "FedExForum, Memphis",
    "description": "Regular season.",
    "url": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "See website",
+   "title": "Katseye at Oakland Arena",
+   "category": "Entertainment",
+   "location": "Oakland Arena, Oakland",
+   "description": "The pop group plays Oakland Arena; check the venue for times and tickets.",
+   "url": "https://secretsanfrancisco.com/bay-area-concert-calendar/"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "See website",
+   "title": "Pretty Lights at the Fox Theater",
+   "category": "Entertainment",
+   "location": "Fox Theater, Oakland",
+   "description": "Three-night run at the Fox in Oakland, Nov. 19–21; check the venue for times and tickets.",
+   "url": "https://secretsanfrancisco.com/bay-area-concert-calendar/",
+   "end": "2026-11-21"
   },
   {
    "date": "2026-11-20",
@@ -1971,6 +2026,15 @@
    "location": "PayPal Park, San Jose",
    "description": "First game of a best-of-three series; Game 2 is at Houston Nov. 27–28 and Game 3, if needed, is in San Jose Dec. 1–2, with dates subject to change.",
    "url": "https://www.sjearthquakes.com/news/san-jose-earthquakes-to-face-houston-dynamo-fc-in-audi-2026-mls-cup-playoffs-round-one-game-1-at-paypal-park-on-nov-24-at-7-p-m-pt"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "See website",
+   "title": "Steve Lacy at Bill Graham Civic Auditorium",
+   "category": "Entertainment",
+   "location": "Bill Graham Civic Auditorium, San Francisco",
+   "description": "Steve Lacy plays San Francisco; check the venue for times and tickets.",
+   "url": "https://secretsanfrancisco.com/bay-area-concert-calendar/"
   },
   {
    "date": "2026-11-25",

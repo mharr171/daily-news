@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wednesday, November 11, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 42: Wednesday, November 11, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-11.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Wednesday, November 11, 2026 | Live Full Stack">
+<meta property="og:description" content="San Mateo County and Millbrae both expect election updates Thursday, while Prop. 42, funded largely by Sergey Brin, is narrowly passing and could block the next billionaire tax. House Republicans blocked the effort to impeach Defense Secretary Pete Hegseth, and Trump used his Veterans Day speech to defend the Iran war. The 49ers made the Keenan Allen trade official, the Warriors open a road trip at Houston, and Coachella announced Dua Lipa, Tame Impala and SZA as 2027 headliners.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-11.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-11">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 42</p>
+      <h1>Wednesday, November 11, 2026</h1>
+      <p class="summary">San Mateo County and Millbrae both expect election updates Thursday, while Prop. 42, funded largely by Sergey Brin, is narrowly passing and could block the next billionaire tax. House Republicans blocked the effort to impeach Defense Secretary Pete Hegseth, and Trump used his Veterans Day speech to defend the Iran war. The 49ers made the Keenan Allen trade official, the Warriors open a road trip at Houston, and Coachella announced Dua Lipa, Tame Impala and SZA as 2027 headliners.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>San Mateo County and the City of Millbrae both expect election updates Thursday, with about 50,000 county ballots still uncounted and Millbrae’s District 3 race three votes apart in the last city report.</li>
+        <li>Prop. 42, funded largely by Sergey Brin, is narrowly passing and could limit future California tax measures, a week after voters rejected the billionaire tax.</li>
+        <li>House Republicans blocked an effort to impeach Defense Secretary Hegseth, and Trump defended the Iran war in his Veterans Day speech.</li>
+        <li>The 49ers made the Keenan Allen trade official, the Warriors play at Houston tonight going for a ninth straight win, and SpaceX is aiming for Friday’s Starship double catch.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> A coastal flood advisory for the San Francisco Bay shoreline runs through Friday at 4 p.m., with minor flooding possible in low-lying spots near high tide. Banks are closed for Veterans Day, and Millbrae City Hall is closed.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://fortune.com/2026/11/11/california-prop-42-wealth-tax-ban-billionaires/" target="_blank" rel="noopener">Prop. 42, funded largely by Sergey Brin, is narrowly passing and could block the next billionaire tax</a></h3>
+          <p>Proposition 42, a constitutional amendment that bars new state taxes on personal property such as business stakes, intellectual property and financial assets, was leading with about 51.6% of the vote on Tuesday, with roughly 83% of ballots counted, according to Fortune’s reporting of AP estimates. Its sponsor is funded largely by Brin, who put in $102 million; voters rejected Prop. 40, the one-time billionaire tax, last week. Critics say Prop. 42 could be used to challenge other taxes on capital gains, including Prop. 3, a permanent tax increase on the top 2% of earners that passed.</p>
+          <p class="why"><strong>Why it matters:</strong> If it holds, Prop. 42 would limit what California can tax in the future, shaping how the state pays for health care, schools and transit.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-10.html">Nov 10</a> · <a href="2026-11-04.html">Nov 4</a></p>
+          <p class="source">Fortune, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">What happened to…?</p>
+          <h3><a href="https://harpp.substack.com/p/whats-the-latest-with-the-closures" target="_blank" rel="noopener">What happened to the fight over closing the National Archives in San Bruno? Court dates are set for early 2027</a></h3>
+          <p>California Attorney General Rob Bonta sued on Oct. 14 to stop the closure of the Bay Area’s only National Archives facility, and a separate suit followed from California Indian Legal Services. The state’s case is assigned to U.S. District Judge Noël Wise with an initial hearing on Feb. 2, 2027, and the tribal legal group’s case to Judge Edward Davila with a hearing on Jan. 28. As of a Nov. 6 update, no one had asked for an emergency order, so the National Archives can keep moving records out until then; it has said the transfers could start as soon as November. An online forum on the closures is set for Friday, Nov. 13.</p>
+          <p class="why"><strong>Why it matters:</strong> The San Bruno archive sits next to Millbrae and holds federal immigration, court and family records for Northern California that would move to other states.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-10-17.html">Oct 17</a></p>
+          <p class="source">HARPP newsletter (Substack), Nov 6, 2026; Rafu Shimpo, Nov 6, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.theguardian.com/us-news/2026/nov/11/coast-guard-suspends-search-california-woman" target="_blank" rel="noopener">Coast Guard suspends the search for a woman swept out to sea near Panther State Beach</a></h3>
+          <p>The Coast Guard ended its search for a 24-year-old woman last seen near Panther State Beach in Santa Cruz County on Sunday evening, when high tides and water levels were unusually high, The Guardian reports. A coastal flood advisory for the San Francisco Bay shoreline remains in effect through Friday afternoon.</p>
+          <p class="why"><strong>Why it matters:</strong> High tides and big surf are making beaches dangerous along the Peninsula coast this week.</p>
+          <p class="source">The Guardian, Nov 11, 2026; National Weather Service</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="good-news">
+      <h2>Good news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://timesofindia.indiatimes.com/technology/tech-news/anthropic-has-committed-50-million-to-charities-in-its-san-francisco-hometown-region-through-2027-its-first-500000-will-support-food-banks-shelters-hot-meals-and-toys-for-children-with-more-grants-planned/articleshow/135729416.cms" target="_blank" rel="noopener">Anthropic commits $50 million to Bay Area charities through 2027</a></h3>
+          <p>The AI company says the money will go to local nonprofits through a donor-advised fund at the San Francisco Foundation, and that its first $500,000 will support food banks, shelters, hot meals and toys for children, with more grants planned. Anthropic makes Claude, the AI that compiles this edition.</p>
+          <p class="source">Times of India, Nov 11, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.axios.com/2026/11/10/pete-hegseth-impeachment-house-republicans-massie" target="_blank" rel="noopener">House Republicans block the effort to impeach Defense Secretary Hegseth</a></h3>
+          <p>Republicans banded together on Tuesday to shelve the articles of impeachment Rep. Thomas Massie introduced, sparing Hegseth a vote on his removal. Arizona Democrat Greg Stanton had called Hegseth’s tenure “a disaster,” and Rep. Melanie Stansbury said a traffic incident kept her and other Democrats from reaching the Capitol in time to vote against the Republican move.</p>
+          <p class="why"><strong>Why it matters:</strong> The Pentagon’s leadership affects the Bay Area’s defense contractors and the federal budget fight due by Dec. 11.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-10.html">Nov 10</a> · <a href="2026-11-09.html">Nov 9</a> · <a href="2026-11-05.html">Nov 5</a> · <a href="../tracker.html#hegseth-impeachment">Follow this story ›</a></p>
+          <p class="source">Axios, Nov 10, 2026; The Hill, Nov 10, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.newsweek.com/house-oversight-committee-takes-stand-against-trump-will-not-be-deterred-12700557" target="_blank" rel="noopener">The White House warns House Democrats about coming investigations, and the Oversight Committee says it won’t be deterred</a></h3>
+          <p>A letter Monday from White House counsel Will Scharf cautioned the committee that some of its planned investigations could violate the law, according to Newsweek. Rep. Robert Garcia of California, the committee’s top Democrat and its expected chairman in January with subpoena power, said Wednesday it will not back down, and he plans to reopen the federal handling of the Epstein case.</p>
+          <p class="why"><strong>Why it matters:</strong> A California Democrat will lead the House’s main oversight panel, so its choices will bear on federal agencies that serve the state.</p>
+          <p class="source">Newsweek, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.koreatimes.co.kr/world/20261112/trump-defends-iran-war-in-veterans-day-address" target="_blank" rel="noopener">Trump uses his Veterans Day speech to defend the Iran war and says it will end soon</a></h3>
+          <p>Speaking at Arlington National Cemetery, the president said Iran has waged war on the U.S. since 1979 and that American forces aimed to keep it from building a nuclear weapon. AFP reports the war began Feb. 28 and, by the Pentagon’s latest figures, has killed 23 U.S. service members and wounded several hundred. His proposed 250-foot arch near the cemetery faces lawsuits from the Kennedy family, veterans, Washington and Virginia.</p>
+          <p class="why"><strong>Why it matters:</strong> Whether the war ends decides how quickly oil prices and California’s gas prices keep falling.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-10.html">Nov 10</a> · <a href="2026-11-07.html">Nov 7</a> · <a href="../tracker.html#iran-war">Follow this story ›</a></p>
+          <p class="source">AFP (via Korea Times), Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.bloomberg.com/news/articles/2026-11-10/thune-wins-another-term-as-senate-gop-leader-after-midterm-rout" target="_blank" rel="noopener">Thune wins another term as Senate Republican leader after the midterm rout</a></h3>
+          <p>John Thune overcame critics inside his party to win re-election as Senate Republican leader a week after Republicans lost their majorities in Congress, Bloomberg reports. Several senators had pushed to delay the vote.</p>
+          <p class="why"><strong>Why it matters:</strong> Who leads the Senate minority shapes how Republicans handle the Dec. 11 funding deadline and judicial nominations that affect California.</p>
+          <p class="source">Bloomberg, Nov 10, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/rockets-vs-warriors-prediction-preview-121058851.html" target="_blank" rel="noopener">Today in sports: Warriors open a five-game road trip at Houston, 49ers add a receiver before Sunday’s game in Dallas</a></h3>
+          <p>The Warriors (8–3, on an eight-game winning streak) play the Rockets tonight at 6:30 p.m. on ESPN, going for a ninth straight win. The 49ers (7–1) visit the Dallas Cowboys on Sunday at 1:25 p.m., and Hawaiʻi hosts North Dakota State on Saturday at 8 p.m. The Earthquakes, the No. 4 seed in the West, host Houston in Game 1 of the MLS playoffs on Nov. 24.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-10.html">Nov 10</a></p>
+          <p class="source">Fadeaway World (via Yahoo Sports), Nov 11, 2026; team schedules</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/11/49ers-announce-keenan-allen-trade-jack-jones/92727105007/" target="_blank" rel="noopener">49ers make the Keenan Allen trade official while Mike Evans’ Achilles puts his Sunday status in doubt</a></h3>
+          <p>The 49ers announced Wednesday that they acquired receiver Keenan Allen from the Colts, who has 40 catches for 351 yards and a touchdown in eight games this season. They also brought back cornerback Jack Jones and moved rookie defensive tackle Gracen Halton to injured reserve with a season-ending broken ankle. Mike Evans has Achilles tendinitis, has missed two games, and isn’t expected to practice at the start of Cowboys preparation. Brandon Aiyuk’s agent says he will either play for the 49ers or be released after two weeks.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-10.html">Nov 10</a> · <a href="2026-11-05.html">Nov 5</a></p>
+          <p class="source">Niners Wire (USA Today), Nov 11, 2026; Yahoo Sports, Nov 11, 2026; HITC (via Yahoo Sports), Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/warriors-receive-brandon-williams-injury-160039191.html" target="_blank" rel="noopener">Warriors guard Brandon Williams has a mild hamstring strain and will be re-evaluated in a week</a></h3>
+          <p>Williams hurt his hamstring Monday against New Orleans, and the team will check on him again in one week as it starts a five-game trip. Will Richard remains out with a thumb injury.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-10.html">Nov 10</a></p>
+          <p class="source">Warriors Wire (USA Today, via Yahoo Sports), Nov 11, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Tuesday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>7–1</td><td>First in the NFC West; at Dallas Sunday</td></tr>
+            <tr><td>Warriors</td><td>8–3</td><td>Eight straight wins; fourth in the West, at Houston tonight</td></tr>
+            <tr><td>Earthquakes</td><td>14–10–10</td><td>No. 4 seed in the West; host Houston in Game 1 on Nov. 24</td></tr>
+            <tr><td>Hawaiʻi football</td><td>3–6</td><td>Beat UTEP 17–14 last Saturday; host North Dakota State Saturday</td></tr>
+          </tbody>
+        </table>
+        <p class="source">ESPN, Yahoo Sports and team sites</p>
+      </aside>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://stereogum.com/2517560/coachella-reveals-2027-lineup/news" target="_blank" rel="noopener">Coachella 2027 lineup: Dua Lipa, Tame Impala and SZA headline</a></h3>
+          <p>The festival announced its lineup Wednesday for two weekends, April 9–11 and April 16–18, at the Empire Polo Club in Indio. Madonna, Phoebe Bridgers, Weezer, Robyn, Four Tet, Underworld, Freddie Gibbs and Steve Lacy are also on the poster.</p>
+          <p class="source">Stereogum, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.slashfilm.com/2299916/the-lord-of-the-rings-the-rings-of-power-season-3-reactions/" target="_blank" rel="noopener">“The Rings of Power” season 3 arrives today on Prime Video</a></h3>
+          <p>Early reactions have been positive, with critics singling out Charlie Vickers as Sauron, though they come mostly from press who saw episodes at a junket, so Slashfilm advises caution. The season is on Prime Video from today.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-09.html">Nov 9</a></p>
+          <p class="source">Slashfilm, Oct 28, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">Bay Area concert radar</p>
+          <h3><a href="https://www.songkick.com/metro-areas/26330-us-sf-bay-area/november-2026" target="_blank" rel="noopener">Bay Area concert radar: Bonobo and Rhye this weekend, then Three Days Grace, Katseye and the Jonas Brothers</a></h3>
+          <p>This week: The Damned at the Fillmore tonight, Isaiah Rashad at the Fox Theater in Oakland Thursday, Bonobo at the Fox and Rhye at the Warfield on Saturday, and Vince Staples at the Warfield and The Mountain Goats at the Fillmore on Sunday. Next week: Three Days Grace at SAP Center on Nov. 18, Katseye at Oakland Arena on Nov. 19, Pretty Lights at the Fox Nov. 19–21, the Jonas Brothers at Chase Center on Nov. 21 and Steve Lacy at Bill Graham Civic Auditorium on Nov. 24. Dates come from concert listings, so check each venue before you go.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-04.html">Nov 4</a></p>
+          <p class="source">Songkick, Nov 2026; Secret San Francisco, Oct 21, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.newscientist.com/article/2598233-spacex-aims-to-safely-land-starship-and-booster-stage-after-orbital-flight/" target="_blank" rel="noopener">SpaceX is set for its most ambitious Starship test yet, with a double catch targeted for Friday</a></h3>
+          <p>New Scientist calls Flight 15 the most ambitious Starship test to date: SpaceX plans to land both the Super Heavy booster and the upper stage after an orbital flight, which would be a major step toward a fully reusable launch system. Gizmodo reported Monday that the company is aiming for Friday the 13th.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-09.html">Nov 9</a> · <a href="../tracker.html#starship-flight-15">Follow this story ›</a></p>
+          <p class="source">New Scientist, Nov 11, 2026; Gizmodo, Nov 9, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability" target="_blank" rel="noopener">Google tests “Tabletop,” an AI experiment that builds custom apps for coordinating with friends</a></h3>
+          <p>The Verge reports Tabletop is an experimental tool that generates customized collaboration apps, meant to make it easier to organize plans with other people. It’s an experiment rather than a finished product.</p>
+          <p class="source">The Verge, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/" target="_blank" rel="noopener">Google DeepMind’s new AI tool formally verifies that the Signal encryption protocol is secure</a></h3>
+          <p>Researchers used the tool to prove that the widely used encryption protocol works as intended, and say their stretch goal is to do the same for all of the world’s software.</p>
+          <p class="source">Wired, Nov 10, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.tomshardware.com/tech-industry/policy/congress-could-issue-subpoena-to-nvidia-ceo-jensen-huang-if-he-doesnt-respond-by-today-to-request-for-a-joint-closed-door-briefing-us-representatives-want-to-discuss-companys-security-protocols-against-foreign-adversary-espionage" target="_blank" rel="noopener">Congress could subpoena Nvidia’s Jensen Huang if he doesn’t answer a request for a closed-door briefing</a></h3>
+          <p>Three committee chairs want Huang to brief them on Nvidia’s security protocols against foreign espionage, and the report says a subpoena could follow if he doesn’t respond by today. The New York Times reported Tuesday that Trump was reminded of intelligence about Huang’s relationship with a woman believed to be a Chinese spy before Huang boarded Air Force One for Beijing, despite the president’s denial.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-10.html">Nov 10</a></p>
+          <p class="source">Tom’s Hardware, Nov 11, 2026; The New York Times, Nov 10, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.britannica.com/on-this-day/November-11" target="_blank" rel="noopener">https://www.britannica.com/on-this-day/November-11T</a></h3>
+          <p>https://www.britannica.com/on-this-day/November-11B</p>
+          <p class="source">https://www.britannica.com/on-this-day/November-11S</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.britannica.com/on-this-day/November-11" target="_blank" rel="noopener">https://www.britannica.com/on-this-day/November-11T</a></h3>
+          <p>https://www.britannica.com/on-this-day/November-11B</p>
+          <p class="source">https://www.britannica.com/on-this-day/November-11S</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.britannica.com/on-this-day/November-11" target="_blank" rel="noopener">https://www.britannica.com/on-this-day/November-11T</a></h3>
+          <p>https://www.britannica.com/on-this-day/November-11B</p>
+          <p class="source">https://www.britannica.com/on-this-day/November-11S</p>
+        </article>
+      </div>
+    </section>
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

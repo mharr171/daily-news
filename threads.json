@@ -1,6 +1,229 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "threads": [
+    {
+      "id": "hegseth-impeachment",
+      "title": "The push to impeach Defense Secretary Hegseth",
+      "status": "Developing",
+      "summary": "House Democrats and one Republican, Rep. Thomas Massie, pushed to impeach Defense Secretary Pete Hegseth, and House Republicans blocked the effort on Nov. 10.",
+      "updated": "2026-11-11",
+      "entries": [
+        {
+          "date": "2026-11-05",
+          "edition": "posts/2026-11-05.html",
+          "headline": "Trump backs Defense Secretary Hegseth as questions swirl about his future",
+          "url": "https://www.ctvnews.ca/world/america-votes/article/trump-says-hegseth-doing-a-very-good-job-as-questions-swirl-about-his-future/",
+          "source": "Reuters, via CTV News, Nov 5, 2026"
+        },
+        {
+          "date": "2026-11-09",
+          "edition": "posts/2026-11-09.html",
+          "headline": "Hegseth faces impeachment talk as Jeffries calls him a “hard yes”",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-08/hegseth-impeachment-backed-by-house-democratic-leader-jeffries",
+          "source": "Bloomberg, Nov 8, 2026; The Hill, Nov 8, 2026"
+        },
+        {
+          "date": "2026-11-10",
+          "edition": "posts/2026-11-10.html",
+          "headline": "Rep. Massie pushes to force a House vote to impeach Defense Secretary Hegseth, and Trump hits back",
+          "url": "https://thehill.com/video-clips/6208667-watch-live-thomas-massie-pete-hegseth-impeachment-articles-press-conference/",
+          "source": "The Hill, Nov 9, 2026; Bloomberg, Nov 9, 2026"
+        },
+        {
+          "date": "2026-11-11",
+          "edition": "posts/2026-11-11.html",
+          "headline": "House Republicans block the effort to impeach Defense Secretary Hegseth",
+          "url": "https://www.axios.com/2026/11/10/pete-hegseth-impeachment-house-republicans-massie",
+          "source": "Axios, Nov 10, 2026; The Hill, Nov 10, 2026"
+        }
+      ]
+    },
+    {
+      "id": "iran-war",
+      "title": "The Iran war and gas prices",
+      "status": "Developing",
+      "summary": "The U.S. conflict with Iran has spread to shipping in the Gulf and pushed up fuel prices and inflation at home.",
+      "updated": "2026-11-11",
+      "entries": [
+        {
+          "date": "2026-10-03",
+          "edition": "posts/2026-10-03.html",
+          "headline": "Pentagon sends a third carrier group to the Middle East",
+          "url": "https://www.ksat.com/news/politics/2026/10/01/us-is-moving-thousands-of-troops-aboard-ships-to-the-mideast-as-trump-weighs-new-strikes-on-iran/",
+          "source": "Associated Press (KSAT), Oct 1, 2026"
+        },
+        {
+          "date": "2026-10-06",
+          "edition": "posts/2026-10-06.html",
+          "headline": "Trump says Iran could ‘take out’ Los Angeles and San Diego; state leaders push back",
+          "url": "https://abc7news.com/19912174/",
+          "source": "ABC7 News, Oct 5, 2026"
+        },
+        {
+          "date": "2026-10-07",
+          "edition": "posts/2026-10-07.html",
+          "headline": "Trump says he’s weighing a suspension of the federal gas tax",
+          "url": "https://www.ktvu.com/news/president-trump-considering-suspending-federal-gas-tax",
+          "source": "KTVU, Oct 7, 2026"
+        },
+        {
+          "date": "2026-10-13",
+          "edition": "posts/2026-10-13.html",
+          "headline": "Houthi missiles target Riyadh for a third straight day",
+          "url": "https://aljazeera.com/news/2026/10/12/houthi-missile-attack-targets-saudi-capital-riyadh-for-third-day-in-a-row",
+          "source": "Al Jazeera, Oct 12, 2026"
+        },
+        {
+          "date": "2026-10-15",
+          "edition": "posts/2026-10-15.html",
+          "headline": "Inflation jumps to 3.7% as gasoline prices soar",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+          "source": "Bureau of Labor Statistics, Oct 14, 2026"
+        },
+        {
+          "date": "2026-10-15",
+          "edition": "posts/2026-10-15.html",
+          "headline": "Iran reportedly sinks two cargo ships near the Strait of Hormuz",
+          "url": "https://www.criticalthreats.org/analysis/iran-update-october-14-2026",
+          "source": "Critical Threats, Oct 14, 2026"
+        },
+        {
+          "date": "2026-10-17",
+          "edition": "posts/2026-10-17.html",
+          "headline": "California gas averages $6.26 as the Iran war drives prices up nationwide",
+          "url": "https://www.kqed.org/news/12104393/california-democrats-hope-iran-war-flips-the-script-on-gas-prices",
+          "source": "KQED, Oct 15, 2026"
+        },
+        {
+          "date": "2026-10-23",
+          "edition": "posts/2026-10-23.html",
+          "headline": "US pulls nonessential embassy staff from Saudi Arabia over Houthi attacks",
+          "url": "https://kesq.com/news/national-politics/cnn-us-politics/2026/10/22/us-orders-departure-of-some-embassy-staff-and-families-from-saudi-arabia-amid-houthi-threat/",
+          "source": "CNN (via KESQ), Oct 22, 2026"
+        },
+        {
+          "date": "2026-10-24",
+          "edition": "posts/2026-10-24.html",
+          "headline": "Iran says seven tankers were damaged near Hormuz as US tensions climb",
+          "url": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february",
+          "source": "Al Jazeera, Oct 23, 2026"
+        },
+        {
+          "date": "2026-10-29",
+          "edition": "posts/2026-10-29.html",
+          "headline": "Iran war costs top $47 billion, Pentagon tells Congress",
+          "url": "https://www.inquirer.com/news/nation-world/iran-war-cost-rises-pentagon-20261028.html",
+          "source": "The Philadelphia Inquirer (New York Times), Oct 28, 2026"
+        },
+        {
+          "date": "2026-10-31",
+          "edition": "posts/2026-10-31.html",
+          "headline": "Iran’s first limpet-mine attack sets a tanker on fire near Hormuz",
+          "url": "https://www.criticalthreats.org/analysis/iran-update-october-30-2026",
+          "source": "Institute for the Study of War & Critical Threats Project, Oct 30, 2026"
+        },
+        {
+          "date": "2026-11-02",
+          "edition": "posts/2026-11-02.html",
+          "headline": "Trump repeats Iran threat at Iowa rally: “give them the hammer”",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-some-point-will-need-give-iran-hammer",
+          "source": "Middle East Eye, Nov 2, 2026"
+        },
+        {
+          "date": "2026-11-04",
+          "edition": "posts/2026-11-04.html",
+          "headline": "Vance blames the Iran war for Republican losses, and Trump says he will work with Democrats",
+          "url": "https://www.axios.com/2026/11/04/jd-vance-iran-war-trump-election",
+          "source": "Axios; Le Figaro; NBC News, Nov 4, 2026"
+        },
+        {
+          "date": "2026-11-05",
+          "edition": "posts/2026-11-05.html",
+          "headline": "Trump backs Defense Secretary Hegseth as questions swirl about his future",
+          "url": "https://www.ctvnews.ca/world/america-votes/article/trump-says-hegseth-doing-a-very-good-job-as-questions-swirl-about-his-future/",
+          "source": "Reuters, via CTV News, Nov 5, 2026"
+        },
+        {
+          "date": "2026-11-07",
+          "edition": "posts/2026-11-07.html",
+          "headline": "Democrats say ending the Iran war is a first priority, while Trump keeps threatening more strikes",
+          "url": "https://www.newsgram.com/america/2026/11/07/trump-threatens-iran-democrats-vow-to-end-war",
+          "source": "Common Dreams, via NewsGram, Nov 7, 2026"
+        },
+        {
+          "date": "2026-11-10",
+          "edition": "posts/2026-11-10.html",
+          "headline": "Trump sees “momentum” toward ending the Iran war after meeting Qatar’s prime minister",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/trump-sees-momentum-toward-war-s-end-after-meeting-qatari-pm",
+          "source": "Bloomberg, Nov 9, 2026; The New York Times, Nov 9, 2026"
+        },
+        {
+          "date": "2026-11-10",
+          "edition": "posts/2026-11-10.html",
+          "headline": "Gas and grocery watch: California gas falls to $5.74, still about $1.04 above a year ago",
+          "url": "https://gasprices.aaa.com/?state=CA",
+          "source": "AAA, Nov 9, 2026"
+        },
+        {
+          "date": "2026-11-11",
+          "edition": "posts/2026-11-11.html",
+          "headline": "Trump uses his Veterans Day speech to defend the Iran war and says it will end soon",
+          "url": "https://www.koreatimes.co.kr/world/20261112/trump-defends-iran-war-in-veterans-day-address",
+          "source": "AFP (via Korea Times), Nov 11, 2026"
+        }
+      ]
+    },
+    {
+      "id": "starship-flight-15",
+      "title": "Starship Flight 15",
+      "status": "Developing",
+      "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
+      "updated": "2026-11-11",
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "edition": "posts/2026-10-21.html",
+          "headline": "SpaceX will try to catch both Starship stages on its next test flight",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says",
+          "source": "Space.com, Oct 20, 2026"
+        },
+        {
+          "date": "2026-10-26",
+          "edition": "posts/2026-10-26.html",
+          "headline": "SpaceX test-fires the Super Heavy booster for Starship Flight 15",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
+          "source": "Space.com, Oct 26, 2026"
+        },
+        {
+          "date": "2026-10-29",
+          "edition": "posts/2026-10-29.html",
+          "headline": "SpaceX finishes Starship upper-stage test fires ahead of Flight 15",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video",
+          "source": "Space.com, Oct 29, 2026"
+        },
+        {
+          "date": "2026-11-07",
+          "edition": "posts/2026-11-07.html",
+          "headline": "SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage",
+          "url": "https://basenor.com/blogs/news/spacex-targets-nov-13-for-starship-flight-15-and-first-ship-catch",
+          "source": "BASENOR, Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-09",
+          "edition": "posts/2026-11-09.html",
+          "headline": "SpaceX posts its Starship Flight 15 page, targeting Friday for the first try at catching both stages",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "source": "SpaceX, Nov 8, 2026; KeepTrack, Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-11",
+          "edition": "posts/2026-11-11.html",
+          "headline": "SpaceX is set for its most ambitious Starship test yet, with a double catch targeted for Friday",
+          "url": "https://www.newscientist.com/article/2598233-spacex-aims-to-safely-land-starship-and-booster-stage-after-orbital-flight/",
+          "source": "New Scientist, Nov 11, 2026; Gizmodo, Nov 9, 2026"
+        }
+      ]
+    },
     {
       "id": "election-san-mateo-county",
       "title": "Election 2026 in San Mateo County",
@@ -126,178 +349,6 @@
           "headline": "San Mateo County has about 50,000 ballots left to count, and the next update is Thursday",
           "url": "https://smcacre.gov/elections/november-3-2026-election-results",
           "source": "San Mateo County Registration & Elections, as of Nov 9, 2026; City of Millbrae, Nov 6, 2026"
-        }
-      ]
-    },
-    {
-      "id": "iran-war",
-      "title": "The Iran war and gas prices",
-      "status": "Developing",
-      "summary": "The U.S. conflict with Iran has spread to shipping in the Gulf and pushed up fuel prices and inflation at home.",
-      "updated": "2026-11-10",
-      "entries": [
-        {
-          "date": "2026-10-03",
-          "edition": "posts/2026-10-03.html",
-          "headline": "Pentagon sends a third carrier group to the Middle East",
-          "url": "https://www.ksat.com/news/politics/2026/10/01/us-is-moving-thousands-of-troops-aboard-ships-to-the-mideast-as-trump-weighs-new-strikes-on-iran/",
-          "source": "Associated Press (KSAT), Oct 1, 2026"
-        },
-        {
-          "date": "2026-10-06",
-          "edition": "posts/2026-10-06.html",
-          "headline": "Trump says Iran could ‘take out’ Los Angeles and San Diego; state leaders push back",
-          "url": "https://abc7news.com/19912174/",
-          "source": "ABC7 News, Oct 5, 2026"
-        },
-        {
-          "date": "2026-10-07",
-          "edition": "posts/2026-10-07.html",
-          "headline": "Trump says he’s weighing a suspension of the federal gas tax",
-          "url": "https://www.ktvu.com/news/president-trump-considering-suspending-federal-gas-tax",
-          "source": "KTVU, Oct 7, 2026"
-        },
-        {
-          "date": "2026-10-13",
-          "edition": "posts/2026-10-13.html",
-          "headline": "Houthi missiles target Riyadh for a third straight day",
-          "url": "https://aljazeera.com/news/2026/10/12/houthi-missile-attack-targets-saudi-capital-riyadh-for-third-day-in-a-row",
-          "source": "Al Jazeera, Oct 12, 2026"
-        },
-        {
-          "date": "2026-10-15",
-          "edition": "posts/2026-10-15.html",
-          "headline": "Inflation jumps to 3.7% as gasoline prices soar",
-          "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
-          "source": "Bureau of Labor Statistics, Oct 14, 2026"
-        },
-        {
-          "date": "2026-10-15",
-          "edition": "posts/2026-10-15.html",
-          "headline": "Iran reportedly sinks two cargo ships near the Strait of Hormuz",
-          "url": "https://www.criticalthreats.org/analysis/iran-update-october-14-2026",
-          "source": "Critical Threats, Oct 14, 2026"
-        },
-        {
-          "date": "2026-10-17",
-          "edition": "posts/2026-10-17.html",
-          "headline": "California gas averages $6.26 as the Iran war drives prices up nationwide",
-          "url": "https://www.kqed.org/news/12104393/california-democrats-hope-iran-war-flips-the-script-on-gas-prices",
-          "source": "KQED, Oct 15, 2026"
-        },
-        {
-          "date": "2026-10-23",
-          "edition": "posts/2026-10-23.html",
-          "headline": "US pulls nonessential embassy staff from Saudi Arabia over Houthi attacks",
-          "url": "https://kesq.com/news/national-politics/cnn-us-politics/2026/10/22/us-orders-departure-of-some-embassy-staff-and-families-from-saudi-arabia-amid-houthi-threat/",
-          "source": "CNN (via KESQ), Oct 22, 2026"
-        },
-        {
-          "date": "2026-10-24",
-          "edition": "posts/2026-10-24.html",
-          "headline": "Iran says seven tankers were damaged near Hormuz as US tensions climb",
-          "url": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february",
-          "source": "Al Jazeera, Oct 23, 2026"
-        },
-        {
-          "date": "2026-10-29",
-          "edition": "posts/2026-10-29.html",
-          "headline": "Iran war costs top $47 billion, Pentagon tells Congress",
-          "url": "https://www.inquirer.com/news/nation-world/iran-war-cost-rises-pentagon-20261028.html",
-          "source": "The Philadelphia Inquirer (New York Times), Oct 28, 2026"
-        },
-        {
-          "date": "2026-10-31",
-          "edition": "posts/2026-10-31.html",
-          "headline": "Iran’s first limpet-mine attack sets a tanker on fire near Hormuz",
-          "url": "https://www.criticalthreats.org/analysis/iran-update-october-30-2026",
-          "source": "Institute for the Study of War & Critical Threats Project, Oct 30, 2026"
-        },
-        {
-          "date": "2026-11-02",
-          "edition": "posts/2026-11-02.html",
-          "headline": "Trump repeats Iran threat at Iowa rally: “give them the hammer”",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-some-point-will-need-give-iran-hammer",
-          "source": "Middle East Eye, Nov 2, 2026"
-        },
-        {
-          "date": "2026-11-04",
-          "edition": "posts/2026-11-04.html",
-          "headline": "Vance blames the Iran war for Republican losses, and Trump says he will work with Democrats",
-          "url": "https://www.axios.com/2026/11/04/jd-vance-iran-war-trump-election",
-          "source": "Axios; Le Figaro; NBC News, Nov 4, 2026"
-        },
-        {
-          "date": "2026-11-05",
-          "edition": "posts/2026-11-05.html",
-          "headline": "Trump backs Defense Secretary Hegseth as questions swirl about his future",
-          "url": "https://www.ctvnews.ca/world/america-votes/article/trump-says-hegseth-doing-a-very-good-job-as-questions-swirl-about-his-future/",
-          "source": "Reuters, via CTV News, Nov 5, 2026"
-        },
-        {
-          "date": "2026-11-07",
-          "edition": "posts/2026-11-07.html",
-          "headline": "Democrats say ending the Iran war is a first priority, while Trump keeps threatening more strikes",
-          "url": "https://www.newsgram.com/america/2026/11/07/trump-threatens-iran-democrats-vow-to-end-war",
-          "source": "Common Dreams, via NewsGram, Nov 7, 2026"
-        },
-        {
-          "date": "2026-11-10",
-          "edition": "posts/2026-11-10.html",
-          "headline": "Trump sees “momentum” toward ending the Iran war after meeting Qatar’s prime minister",
-          "url": "https://www.bloomberg.com/news/articles/2026-11-09/trump-sees-momentum-toward-war-s-end-after-meeting-qatari-pm",
-          "source": "Bloomberg, Nov 9, 2026; The New York Times, Nov 9, 2026"
-        },
-        {
-          "date": "2026-11-10",
-          "edition": "posts/2026-11-10.html",
-          "headline": "Gas and grocery watch: California gas falls to $5.74, still about $1.04 above a year ago",
-          "url": "https://gasprices.aaa.com/?state=CA",
-          "source": "AAA, Nov 9, 2026"
-        }
-      ]
-    },
-    {
-      "id": "starship-flight-15",
-      "title": "Starship Flight 15",
-      "status": "Developing",
-      "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
-      "updated": "2026-11-09",
-      "entries": [
-        {
-          "date": "2026-10-21",
-          "edition": "posts/2026-10-21.html",
-          "headline": "SpaceX will try to catch both Starship stages on its next test flight",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says",
-          "source": "Space.com, Oct 20, 2026"
-        },
-        {
-          "date": "2026-10-26",
-          "edition": "posts/2026-10-26.html",
-          "headline": "SpaceX test-fires the Super Heavy booster for Starship Flight 15",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
-          "source": "Space.com, Oct 26, 2026"
-        },
-        {
-          "date": "2026-10-29",
-          "edition": "posts/2026-10-29.html",
-          "headline": "SpaceX finishes Starship upper-stage test fires ahead of Flight 15",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video",
-          "source": "Space.com, Oct 29, 2026"
-        },
-        {
-          "date": "2026-11-07",
-          "edition": "posts/2026-11-07.html",
-          "headline": "SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage",
-          "url": "https://basenor.com/blogs/news/spacex-targets-nov-13-for-starship-flight-15-and-first-ship-catch",
-          "source": "BASENOR, Nov 6, 2026"
-        },
-        {
-          "date": "2026-11-09",
-          "edition": "posts/2026-11-09.html",
-          "headline": "SpaceX posts its Starship Flight 15 page, targeting Friday for the first try at catching both stages",
-          "url": "https://www.spacex.com/launches/starship-flight-15",
-          "source": "SpaceX, Nov 8, 2026; KeepTrack, Nov 6, 2026"
         }
       ]
     },

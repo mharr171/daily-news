@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-11",
+      "file": "posts/2026-11-11.html",
+      "summary": "San Mateo County and Millbrae both expect election updates Thursday, while Prop. 42, funded largely by Sergey Brin, is narrowly passing and could block the next billionaire tax. House Republicans blocked the effort to impeach Defense Secretary Pete Hegseth, and Trump used his Veterans Day speech to defend the Iran war. The 49ers made the Keenan Allen trade official, the Warriors open a road trip at Houston, and Coachella announced Dua Lipa, Tame Impala and SZA as 2027 headliners.",
+      "headlines": [
+        {
+          "title": "Prop. 42, funded largely by Sergey Brin, is narrowly passing and could block the next billionaire tax",
+          "topic": "General news"
+        },
+        {
+          "title": "House Republicans block the effort to impeach Defense Secretary Hegseth",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "49ers make the Keenan Allen trade official while Mike Evans’ Achilles puts his Sunday status in doubt",
+          "topic": "Sports"
+        },
+        {
+          "title": "Coachella 2027 lineup: Dua Lipa, Tame Impala and SZA headline",
+          "topic": "Culture"
+        },
+        {
+          "title": "SpaceX is set for its most ambitious Starship test yet, with a double catch targeted for Friday",
+          "topic": "Science & tech"
+        }
+      ],
+      "updates": [
+        "morning"
+      ],
+      "updated": "2026-11-11T11:14"
+    },
+    {
       "date": "2026-11-10",
       "file": "posts/2026-11-10.html",
       "summary": "San Mateo County has about 50,000 ballots left to count, with Millbrae’s District 3 council race still decided by three votes in the city’s last report and the next update due Thursday. Rep. Thomas Massie is pushing a House vote to impeach Defense Secretary Pete Hegseth, and Trump says he sees momentum toward ending the Iran war as oil prices fall. The Warriors routed New Orleans 138–87 for an eighth straight win, and Anthropic released Claude Fable 5.2 and Mythos 5.2.",

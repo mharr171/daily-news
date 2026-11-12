@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "threads": [
     {
       "id": "hegseth-impeachment",
       "title": "The push to impeach Defense Secretary Hegseth",
       "status": "Developing",
       "summary": "House Democrats and one Republican, Rep. Thomas Massie, pushed to impeach Defense Secretary Pete Hegseth, and House Republicans blocked the effort on Nov. 10.",
-      "updated": "2026-11-11",
+      "updated": "2026-11-12",
       "entries": [
         {
           "date": "2026-11-05",
@@ -35,6 +35,101 @@
           "headline": "House Republicans block the effort to impeach Defense Secretary Hegseth",
           "url": "https://www.axios.com/2026/11/10/pete-hegseth-impeachment-house-republicans-massie",
           "source": "Axios, Nov 10, 2026; The Hill, Nov 10, 2026"
+        },
+        {
+          "date": "2026-11-12",
+          "edition": "posts/2026-11-12.html",
+          "headline": "A Tomb of the Unknown Soldier sentinel reprimands Hegseth’s group for noise on Veterans Day",
+          "url": "https://www.cbsnews.com/news/hegseth-tomb-of-the-unknown-soldier-arlington-cemetery/",
+          "source": "CBS News, Nov 11, 2026"
+        }
+      ]
+    },
+    {
+      "id": "starship-flight-15",
+      "title": "Starship Flight 15",
+      "status": "Developing",
+      "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
+      "updated": "2026-11-12",
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "edition": "posts/2026-10-21.html",
+          "headline": "SpaceX will try to catch both Starship stages on its next test flight",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says",
+          "source": "Space.com, Oct 20, 2026"
+        },
+        {
+          "date": "2026-10-26",
+          "edition": "posts/2026-10-26.html",
+          "headline": "SpaceX test-fires the Super Heavy booster for Starship Flight 15",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
+          "source": "Space.com, Oct 26, 2026"
+        },
+        {
+          "date": "2026-10-29",
+          "edition": "posts/2026-10-29.html",
+          "headline": "SpaceX finishes Starship upper-stage test fires ahead of Flight 15",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video",
+          "source": "Space.com, Oct 29, 2026"
+        },
+        {
+          "date": "2026-11-07",
+          "edition": "posts/2026-11-07.html",
+          "headline": "SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage",
+          "url": "https://basenor.com/blogs/news/spacex-targets-nov-13-for-starship-flight-15-and-first-ship-catch",
+          "source": "BASENOR, Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-09",
+          "edition": "posts/2026-11-09.html",
+          "headline": "SpaceX posts its Starship Flight 15 page, targeting Friday for the first try at catching both stages",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "source": "SpaceX, Nov 8, 2026; KeepTrack, Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-11",
+          "edition": "posts/2026-11-11.html",
+          "headline": "SpaceX is set for its most ambitious Starship test yet, with a double catch targeted for Friday",
+          "url": "https://www.newscientist.com/article/2598233-spacex-aims-to-safely-land-starship-and-booster-stage-after-orbital-flight/",
+          "source": "New Scientist, Nov 11, 2026; Gizmodo, Nov 9, 2026"
+        },
+        {
+          "date": "2026-11-12",
+          "edition": "posts/2026-11-12.html",
+          "headline": "Starship Flight 15 is set for Friday at 2:45 p.m. Pacific, aiming to bring back both stages",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-1st-booster-ship-double-catch-full-recovery-what-time",
+          "source": "Space.com, Nov 11, 2026"
+        }
+      ]
+    },
+    {
+      "id": "nvidia-huang",
+      "title": "Nvidia and Jensen Huang",
+      "status": "Developing",
+      "summary": "Nvidia CEO Jensen Huang admitted an affair with a woman U.S. intelligence suspects of working for China, and the company’s board is now reported to be preparing to remove him.",
+      "updated": "2026-11-12",
+      "entries": [
+        {
+          "date": "2026-11-10",
+          "edition": "posts/2026-11-10.html",
+          "headline": "Trump says the FBI is investigating Nvidia CEO Jensen Huang’s affair with a woman suspected of ties to Chinese intelligence",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/trump-says-fbi-investigating-huang-affair-called-embattled-ceo",
+          "source": "Bloomberg, Nov 9, 2026; The New York Times, Nov 9, 2026"
+        },
+        {
+          "date": "2026-11-11",
+          "edition": "posts/2026-11-11.html",
+          "headline": "Congress could subpoena Nvidia’s Jensen Huang if he doesn’t answer a request for a closed-door briefing",
+          "url": "https://www.tomshardware.com/tech-industry/policy/congress-could-issue-subpoena-to-nvidia-ceo-jensen-huang-if-he-doesnt-respond-by-today-to-request-for-a-joint-closed-door-briefing-us-representatives-want-to-discuss-companys-security-protocols-against-foreign-adversary-espionage",
+          "source": "Tom’s Hardware, Nov 11, 2026; The New York Times, Nov 10, 2026"
+        },
+        {
+          "date": "2026-11-12",
+          "edition": "posts/2026-11-12.html",
+          "headline": "Nvidia’s board is preparing to oust CEO Jensen Huang, sources say, and the stock drops more than 8%",
+          "url": "https://www.cbsnews.com/news/nvidia-board-ceo-jensen-huang-china/",
+          "source": "CBS News, Nov 11, 2026; Al Jazeera, Nov 12, 2026"
         }
       ]
     },
@@ -170,57 +265,6 @@
           "headline": "Trump uses his Veterans Day speech to defend the Iran war and says it will end soon",
           "url": "https://www.koreatimes.co.kr/world/20261112/trump-defends-iran-war-in-veterans-day-address",
           "source": "AFP (via Korea Times), Nov 11, 2026"
-        }
-      ]
-    },
-    {
-      "id": "starship-flight-15",
-      "title": "Starship Flight 15",
-      "status": "Developing",
-      "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
-      "updated": "2026-11-11",
-      "entries": [
-        {
-          "date": "2026-10-21",
-          "edition": "posts/2026-10-21.html",
-          "headline": "SpaceX will try to catch both Starship stages on its next test flight",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says",
-          "source": "Space.com, Oct 20, 2026"
-        },
-        {
-          "date": "2026-10-26",
-          "edition": "posts/2026-10-26.html",
-          "headline": "SpaceX test-fires the Super Heavy booster for Starship Flight 15",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
-          "source": "Space.com, Oct 26, 2026"
-        },
-        {
-          "date": "2026-10-29",
-          "edition": "posts/2026-10-29.html",
-          "headline": "SpaceX finishes Starship upper-stage test fires ahead of Flight 15",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video",
-          "source": "Space.com, Oct 29, 2026"
-        },
-        {
-          "date": "2026-11-07",
-          "edition": "posts/2026-11-07.html",
-          "headline": "SpaceX is targeting Nov. 13 for Starship Flight 15 and its first attempt to catch the upper stage",
-          "url": "https://basenor.com/blogs/news/spacex-targets-nov-13-for-starship-flight-15-and-first-ship-catch",
-          "source": "BASENOR, Nov 6, 2026"
-        },
-        {
-          "date": "2026-11-09",
-          "edition": "posts/2026-11-09.html",
-          "headline": "SpaceX posts its Starship Flight 15 page, targeting Friday for the first try at catching both stages",
-          "url": "https://www.spacex.com/launches/starship-flight-15",
-          "source": "SpaceX, Nov 8, 2026; KeepTrack, Nov 6, 2026"
-        },
-        {
-          "date": "2026-11-11",
-          "edition": "posts/2026-11-11.html",
-          "headline": "SpaceX is set for its most ambitious Starship test yet, with a double catch targeted for Friday",
-          "url": "https://www.newscientist.com/article/2598233-spacex-aims-to-safely-land-starship-and-booster-stage-after-orbital-flight/",
-          "source": "New Scientist, Nov 11, 2026; Gizmodo, Nov 9, 2026"
         }
       ]
     },

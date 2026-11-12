@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thursday, November 12, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 43: Thursday, November 12, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-12.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Thursday, November 12, 2026 | Live Full Stack">
+<meta property="og:description" content="Nvidia’s board is preparing to oust CEO Jensen Huang, sources say, and Democrat Scott Colom won Mississippi’s Senate race, the party’s eighth flipped seat. A high surf warning brings 25- to 30-foot breakers to the Bay Area coast this weekend, and Capitola Beach is closed after nine children got E. coli. Stephen Curry left the Warriors’ loss at Houston with an abdominal injury, and SpaceX targets Friday for Starship’s double catch.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-12.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-12">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 43</p>
+      <h1>Thursday, November 12, 2026</h1>
+      <p class="summary">Nvidia’s board is preparing to oust CEO Jensen Huang, sources say, and Democrat Scott Colom won Mississippi’s Senate race, the party’s eighth flipped seat. A high surf warning brings 25- to 30-foot breakers to the Bay Area coast this weekend, and Capitola Beach is closed after nine children got E. coli. Stephen Curry left the Warriors’ loss at Houston with an abdominal injury, and SpaceX targets Friday for Starship’s double catch.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>Nvidia’s board is preparing to remove CEO Jensen Huang over his reported ties to a suspected Chinese spy, sources say, and the stock fell more than 8% after hours.</li>
+        <li>Democrat Scott Colom beat Sen. Cindy Hyde-Smith in Mississippi, giving Democrats at least 55 Senate seats in January.</li>
+        <li>Stay off coastal beaches this weekend: a high surf warning with 25- to 30-foot breakers runs from Friday evening to early Sunday.</li>
+        <li>Stephen Curry left after six minutes with an abdominal injury as the Rockets ended the Warriors’ eight-game streak, 115–108.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> A coastal flood advisory for the San Francisco Bay shoreline runs through Friday afternoon, with minor flooding possible near high tide. A high surf warning for the coast starts Friday at 6 p.m.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.nbcbayarea.com/news/local/high-surf-warning-bay-area-beaches-2/4174179/" target="_blank" rel="noopener">A high surf warning brings 25- to 30-foot breakers to the Bay Area coast this weekend</a></h3>
+          <p>The National Weather Service has issued a high surf warning for the Bay Area coastline from 6 p.m. Friday until 4 a.m. Sunday, with dangerous breaking waves of 25 to 30 feet expected. Officials are asking people to stay out of the ocean and off beaches, jetties, piers and rocks, warning that one slip could be deadly and that rescues put first responders at risk. It comes days after a woman was swept off a beach in Santa Cruz County during unusually high tides.</p>
+          <p class="why"><strong>Why it matters:</strong> Coastside beaches from Pacifica to Half Moon Bay will be dangerous all weekend, so plan walks and outings away from the water’s edge.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-11.html">Nov 11</a></p>
+          <p class="source">NBC Bay Area, Nov 11, 2026; National Weather Service</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.cbsnews.com/sanfrancisco/news/capitola-beach-santa-cruz-county-closed-e-coli-0157-outbreak/" target="_blank" rel="noopener">Capitola Beach is closed after nine children are sickened in an E. coli outbreak</a></h3>
+          <p>Santa Cruz County Public Health closed Capitola Beach on Tuesday after nine children from Santa Cruz County and other Bay Area counties were infected with E. coli O157, with officials linking the cases to likely exposure at the beach. The source is still under investigation, and no reopening date has been set; families are asked to keep children and pets out of the water and away from untreated creek and lagoon water. Separately, San Luis Obispo County health officials confirmed one death in an E. coli outbreak tied to a pumpkin patch that closed before Halloween.</p>
+          <p class="why"><strong>Why it matters:</strong> Some of the sick children are from Bay Area counties, so Peninsula families who visited Capitola recently should watch for symptoms, which usually start 3 to 10 days after exposure.</p>
+          <p class="source">CBS San Francisco, Nov 11, 2026; Fox News, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.cbsnews.com/newyork/news/brooklyn-building-collapse-bedford-avenue/" target="_blank" rel="noopener">Two killed and 17 hurt when a Brooklyn building collapses beside a construction site</a></h3>
+          <p>A three-story building on Flatbush Avenue fell Wednesday afternoon into a neighboring lot where excavation was underway, killing two people and injuring 17, including seven children; four are in critical condition. More than 250 firefighters and paramedics responded, and the fire commissioner said the search could last several days. City building inspectors and the Brooklyn district attorney are looking into whether the construction work played a role.</p>
+          <p class="why"><strong>Why it matters:</strong> Collapses near excavations raise the same questions about inspections and neighbor protections that come up with infill construction on the Peninsula.</p>
+          <p class="source">CBS New York, Nov 11, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="good-news">
+      <h2>Good news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://www.goodnewsnetwork.org/i-pulled-him-out-i-heard-more-screaming-how-a-cadet-saved-a-father-and-son-from-drowning/" target="_blank" rel="noopener">A maritime academy cadet pulls a father and son from a Foster City pool and restarts the son’s breathing</a></h3>
+          <p>A Cal Poly Maritime Academy cadet heard screaming near his home in Foster City, climbed a pool fence and pulled out a father floating face down, then found the man’s 25-year-old son unconscious at the deep end. He brought the son out too and gave CPR until he began breathing on his own, before Foster City police and San Mateo Consolidated Fire arrived. The son was conscious when paramedics took him to the hospital, and the cadet received a lifesaving commendation from Foster City police.</p>
+          <p class="source">Good News Network, Nov 11, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.cbsnews.com/news/mississippi-2026-senate-scott-colom-cindy-hyde-smith/" target="_blank" rel="noopener">Democrat Scott Colom wins Mississippi’s Senate race, the party’s eighth flipped seat</a></h3>
+          <p>CBS News projects that Colom, a 43-year-old district attorney, has defeated Republican Sen. Cindy Hyde-Smith in a race that was separated by a few dozen votes the day after the election before his lead grew. It is Democrats’ eighth Senate pickup this year, after North Carolina, South Carolina, Texas, Ohio, Iowa, Kansas and Maine, giving them at least 55 seats to Republicans’ 44 in January, with Alaska still undecided. Mississippi had not elected a Democrat to the Senate in more than 40 years.</p>
+          <p class="why"><strong>Why it matters:</strong> A larger Democratic Senate majority will shape confirmations, the budget and federal policy toward California starting in January.</p>
+          <p class="source">CBS News, Nov 11, 2026; NPR, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.cbsnews.com/news/usda-proposes-snap-eligibility-rule-change-food-stamps/" target="_blank" rel="noopener">USDA proposes tighter SNAP rules that it estimates would drop 6.3 million people</a></h3>
+          <p>The proposal, released Tuesday, would narrow “broad-based categorical eligibility,” so households over the income limit could no longer qualify just because they receive non-cash help such as child care or job training. The department’s own estimate is that 6.3 million people would lose food aid in 2029, when the rule would take effect, and about 1.8 million children would lose free school lunches. The White House defended the change; the top Democrat on the House Agriculture Committee called it heartless. The rule is open for public comment.</p>
+          <p class="why"><strong>Why it matters:</strong> California runs CalFresh under the same federal rules, so the change could reach working families in San Mateo County who now qualify through those programs.</p>
+          <p class="source">CBS News, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.cbsnews.com/news/hegseth-tomb-of-the-unknown-soldier-arlington-cemetery/" target="_blank" rel="noopener">A Tomb of the Unknown Soldier sentinel reprimands Hegseth’s group for noise on Veterans Day</a></h3>
+          <p>An Army sentinel at Arlington National Cemetery scolded a group that included Defense Secretary Pete Hegseth after someone laughed following a photo, CBS News reports; it is unclear who laughed or whether Hegseth made any noise. A Pentagon spokesman said the soldier correctly and respectfully reminded everyone to keep decorum. The moment came a day after House Republicans blocked an effort to impeach Hegseth.</p>
+          <p class="why"><strong>Why it matters:</strong> Scrutiny of the Pentagon’s leadership is growing as Congress heads toward the Dec. 11 funding deadline, which covers bases and contracts in California.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-11.html">Nov 11</a> · <a href="2026-11-10.html">Nov 10</a> · <a href="../tracker.html#hegseth-impeachment">Follow this story ›</a></p>
+          <p class="source">CBS News, Nov 11, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/yaxel-lendeborg-gives-warriors-crumple-063417259.html" target="_blank" rel="noopener">Today in sports: Warriors’ streak ends in Houston, 49ers prepare for Dallas, Hawaiʻi hosts North Dakota State</a></h3>
+          <p>The Rockets beat the Warriors 115–108 on Wednesday, ending Golden State’s eight-game winning streak; the Warriors (8–4) play next at San Antonio on Friday at 6:30 p.m. on Prime Video. The 49ers (7–1) visit Dallas on Sunday at 1:25 p.m. on Fox, and Hawaiʻi hosts North Dakota State on Saturday at 8 p.m. The Earthquakes host Houston in Game 1 of the MLS playoffs on Nov. 24.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-11.html">Nov 11</a> · <a href="2026-11-10.html">Nov 10</a></p>
+          <p class="source">San Francisco Chronicle (via Yahoo Sports), Nov 12, 2026; team schedules</p>
+        </article>
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://sports.yahoo.com/articles/stephen-curry-exits-injury-warriors-065521010.html" target="_blank" rel="noopener">Stephen Curry leaves after six minutes with an abdominal injury, and Kerr says concern is high</a></h3>
+          <p>Curry hurt his right side about five minutes into the first quarter in Houston, played 5:35 and went for an MRI in the second half; results weren’t known after the game. Rookie Yaxel Lendeborg scored 25 points with 10 rebounds and Brandon Podziemski added 22, but the Warriors faded late, and Houston’s Marcus Smart was ejected for swinging at Charles Bassey in the third quarter. Brandon Williams (hamstring) missed the game, and Jimmy Butler and Moses Moody aren’t expected back until the new year.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-11.html">Nov 11</a></p>
+          <p class="source">California Post (via Yahoo Sports), Nov 12, 2026; San Francisco Chronicle (via Yahoo Sports), Nov 12, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/49ers-wide-receiver-mike-evans-012425478.html" target="_blank" rel="noopener">49ers’ Mike Evans is week-to-week and likely out at Dallas, while Deebo Samuel returns to practice</a></h3>
+          <p>Evans hasn’t practiced since leaving the Oct. 19 win over Washington with an Achilles problem and is unlikely to play Sunday, the Chronicle reports. Deebo Samuel (hamstring) was limited in Wednesday’s practice, and Christian McCaffrey and Trent Williams sat out to rest. Kyle Shanahan said a league suspension for new receiver Keenan Allen over a past DUI case is still possible, though no ruling has come yet.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-11.html">Nov 11</a> · <a href="2026-11-08.html">Nov 8</a></p>
+          <p class="source">San Francisco Chronicle (via Yahoo Sports), Nov 12, 2026; Niners Wire (USA Today, via Yahoo Sports), Nov 12, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/giants-hire-yankees-james-rowson-204729360.html" target="_blank" rel="noopener">Giants hire the Yankees’ James Rowson as their first offensive coordinator</a></h3>
+          <p>Rowson, 50, was the Yankees’ hitting coach since 2023 and has also coached hitters for the Twins and Marlins. He takes over a Giants offense that ranked 26th in the majors in runs per game last season, and the team is hoping to add pitching before a possible lockout freezes trades and signings.</p>
+          <p class="source">San Francisco Chronicle (via Yahoo Sports), Nov 11, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Wednesday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>7–1</td><td>First in the NFC West; at Dallas Sunday</td></tr>
+            <tr><td>Warriors</td><td>8–4</td><td>Eight-game streak ended at Houston; at San Antonio Friday</td></tr>
+            <tr><td>Earthquakes</td><td>14–10–10</td><td>No. 4 seed in the West; host Houston in Game 1 on Nov. 24</td></tr>
+            <tr><td>Hawaiʻi football</td><td>3–6</td><td>Host North Dakota State Saturday</td></tr>
+          </tbody>
+        </table>
+        <p class="source">San Francisco Chronicle, ESPN and team sites</p>
+      </aside>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.news4jax.com/entertainment/2026/11/05/everything-you-need-to-know-about-the-2026-latin-grammy-awards-heres-how-to-watch/" target="_blank" rel="noopener">The Latin Grammys are tonight in Las Vegas, with Edgar Barrera leading the nominations</a></h3>
+          <p>Producer and songwriter Edgar Barrera has 10 nominations, followed by Karol G, Rosalía, Jorge Drexler and Ca7riel &amp; Paco Amoroso with seven each. Roselyn Sánchez hosts from the MGM Grand Garden Arena, and performers include Daddy Yankee, this year’s Person of the Year, plus Anitta, Rosalía, Karol G, Juanes, Carín León and Feid. The show airs at 5 p.m. Pacific on Univision, UniMás, Galavisión and ViX.</p>
+          <p class="source">Associated Press (via News4JAX), Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/adults-renewed-season-3-expanded-191447257.html" target="_blank" rel="noopener">FX renews “Adults” for a third season and doubles it to 16 episodes</a></h3>
+          <p>The cast announced the renewal Wednesday in a video. The comedy, created by Ben Kronengold and Rebecca Shaw, returned for its second season in August; no premiere date for season 3 has been set.</p>
+          <p class="source">Just Jared (via Yahoo Entertainment), Nov 11, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.cbsnews.com/news/nvidia-board-ceo-jensen-huang-china/" target="_blank" rel="noopener">Nvidia’s board is preparing to oust CEO Jensen Huang, sources say, and the stock drops more than 8%</a></h3>
+          <p>Two people familiar with the matter told CBS News the board plans to remove Huang soon, following a Wall Street Journal report, after allegations that he had an affair with a woman U.S. intelligence believes was working for China; reports also describe a second alleged affair with an Nvidia employee. Shares fell more than 8% in after-hours trading Wednesday, extending a days-long slide. The board opened an independent investigation on Sunday, China denies the spy claims, and the Justice Department is investigating the woman’s former company, Megaspeed, over export rules.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-11.html">Nov 11</a> · <a href="2026-11-10.html">Nov 10</a> · <a href="../tracker.html#nvidia-huang">Follow this story ›</a></p>
+          <p class="source">CBS News, Nov 11, 2026; Al Jazeera, Nov 12, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-1st-booster-ship-double-catch-full-recovery-what-time" target="_blank" rel="noopener">Starship Flight 15 is set for Friday at 2:45 p.m. Pacific, aiming to bring back both stages</a></h3>
+          <p>SpaceX has a 75-minute window from Starbase in South Texas. The plan is to catch the Super Heavy booster with the launch tower about six and a half minutes after liftoff, deploy 26 Starlink satellites, and land the ship back at Starbase about 22 and a half hours later, on Saturday afternoon. It would be the first full recovery of an orbital rocket; no backup dates have been announced.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-11.html">Nov 11</a> · <a href="2026-11-09.html">Nov 9</a> · <a href="2026-11-07.html">Nov 7</a> · <a href="../tracker.html#starship-flight-15">Follow this story ›</a></p>
+          <p class="source">Space.com, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">AI tool of the week</p>
+          <h3><a href="https://9to5mac.com/2026/11/11/google-confirms-gemini-app-coming-to-apple-carplay/" target="_blank" rel="noopener">AI tool of the week: Google’s Gemini Live now talks with you through Apple CarPlay</a></h3>
+          <p>Google is rolling out its full Gemini Live voice conversations to CarPlay for all iPhone Gemini users, in every language Gemini Live supports. To try it, update the Gemini app, allow microphone access, use Gemini Live on your phone once, then connect to your car and tap the Gemini icon on the dashboard screen to start a chat or pick up a recent one. 9to5Mac didn’t list a price for the feature.</p>
+          <p class="source">9to5Mac, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/" target="_blank" rel="noopener">United will block AI agents from booking flights for travelers</a></h3>
+          <p>United Airlines said it will bar unauthorized third-party AI agents from making reservations, citing the security risk of handing bots logins and payment details and federal rules such as in-person bag checks. It is updating its booking policies, though fares will still show up on sites such as Google Flights, Kayak and Hopper; Southwest, by contrast, lets ChatGPT users see its flights.</p>
+          <p class="source">CBS News, Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.sciencedaily.com/releases/2026/11/261109205411.htm" target="_blank" rel="noopener">Parker Solar Probe finds the solar wind’s magnetic twists flip direction at small scales</a></h3>
+          <p>Researchers using data from NASA’s Parker Solar Probe saw, for the first time directly, that turbulent magnetic fields in the solar wind rotate one way at large scales and the opposite way at small ones, with the switch growing stronger farther from the Sun. The reversal happens where the plasma stops behaving like a fluid, and the team says it could help forecast geomagnetic storms that disrupt satellites and power grids.</p>
+          <p class="source">University of Tokyo (via ScienceDaily), Nov 11, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://www.history.com/this-day-in-history/november-12/ellis-island-closes" target="_blank" rel="noopener">Today in history: Ellis Island closes</a></h3>
+          <p>1954: The immigration station in New York Harbor shut its doors after processing more than 12 million newcomers since it opened in 1892; its last detainee, a merchant seaman, was released that month.</p>
+          <p class="source">History.com</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://science.nasa.gov/mission/voyager/voyager-1/" target="_blank" rel="noopener">On this day in science: Voyager 1 sweeps past Saturn</a></h3>
+          <p>1980: NASA’s Voyager 1 made its closest approach to Saturn, the high point of its visit to the ringed planet.</p>
+          <p class="source">NASA</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.profootballhof.com/football-history/birth-of-pro-football" target="_blank" rel="noopener">Firsts in history: The first known professional football player</a></h3>
+          <p>1892: The Allegheny Athletic Association paid William “Pudge” Heffelfinger $500 to play against the Pittsburgh Athletic Club, and he scored the game’s only touchdown in a 4–0 win; the expense sheet is now called pro football’s birth certificate.</p>
+          <p class="source">Pro Football Hall of Fame</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

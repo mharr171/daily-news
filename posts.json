@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-12",
+      "file": "posts/2026-11-12.html",
+      "summary": "Nvidia’s board is preparing to oust CEO Jensen Huang, sources say, and Democrat Scott Colom won Mississippi’s Senate race, the party’s eighth flipped seat. A high surf warning brings 25- to 30-foot breakers to the Bay Area coast this weekend, and Capitola Beach is closed after nine children got E. coli. Stephen Curry left the Warriors’ loss at Houston with an abdominal injury, and SpaceX targets Friday for Starship’s double catch.",
+      "headlines": [
+        {
+          "title": "Nvidia’s board is preparing to oust CEO Jensen Huang, sources say, and the stock drops more than 8%",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "Democrat Scott Colom wins Mississippi’s Senate race, the party’s eighth flipped seat",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "A high surf warning brings 25- to 30-foot breakers to the Bay Area coast this weekend",
+          "topic": "General news"
+        },
+        {
+          "title": "Stephen Curry leaves after six minutes with an abdominal injury, and Kerr says concern is high",
+          "topic": "Sports"
+        },
+        {
+          "title": "The Latin Grammys are tonight in Las Vegas, with Edgar Barrera leading the nominations",
+          "topic": "Culture"
+        }
+      ],
+      "updates": [
+        "midnight"
+      ],
+      "updated": "2026-11-12T00:15"
+    },
+    {
       "date": "2026-11-11",
       "file": "posts/2026-11-11.html",
       "summary": "San Mateo County and Millbrae both expect election updates Thursday, while Prop. 42, funded largely by Sergey Brin, is narrowly passing and could block the next billionaire tax. House Republicans blocked the effort to impeach Defense Secretary Pete Hegseth, and Trump used his Veterans Day speech to defend the Iran war. The 49ers made the Keenan Allen trade official, the Warriors open a road trip at Houston, and Coachella announced Dua Lipa, Tame Impala and SZA as 2027 headliners.",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "timezone": "America/Los_Angeles",
  "note": "Times are Pacific. Sunrise and sunset times are calculated for Millbrae. Dates for launches, games, and releases can change; check the linked source before you go.",
  "events": [
@@ -1617,7 +1617,7 @@
    "category": "Sports",
    "team": "Warriors",
    "location": "Toyota Center, Houston",
-   "description": "Regular season. TV: ESPN.",
+   "description": "Regular season. TV: ESPN. Final: L 108–115.",
    "url": "https://www.nba.com/warriors/schedule"
   },
   {
@@ -1682,6 +1682,25 @@
    "location": "Cape Canaveral Space Force Station, FL",
    "description": "ULA targets no earlier than this date for Vulcan’s first launch since a booster problem grounded it in February. It will carry 40 Amazon Leo internet satellites and fly with six side boosters for the first time.",
    "url": "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "2:45 PM",
+   "title": "Starship Flight 15 launch (target)",
+   "category": "Space",
+   "location": "Starbase, Texas",
+   "description": "No earlier than 2:45 p.m. Pacific, with a 75-minute window. SpaceX will try to catch the booster and land the ship back at Starbase, the first full recovery of an orbital rocket.",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-1st-booster-ship-double-catch-full-recovery-what-time"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "6:00 PM",
+   "title": "High surf warning for the Bay Area coast",
+   "category": "Government",
+   "location": "Bay Area coastline",
+   "description": "National Weather Service warning for 25- to 30-foot breakers runs from 6 p.m. Friday to 4 a.m. Sunday. Stay off beaches, jetties and rocks.",
+   "url": "https://www.nbcbayarea.com/news/local/high-surf-warning-bay-area-beaches-2/4174179/",
+   "end": "2026-11-15"
   },
   {
    "date": "2026-11-13",

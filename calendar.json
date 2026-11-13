@@ -1676,15 +1676,6 @@
   },
   {
    "date": "2026-11-13",
-   "time": "",
-   "title": "Vulcan rocket returns to flight",
-   "category": "Space",
-   "location": "Cape Canaveral Space Force Station, FL",
-   "description": "ULA targets no earlier than this date for Vulcan’s first launch since a booster problem grounded it in February. It will carry 40 Amazon Leo internet satellites and fly with six side boosters for the first time.",
-   "url": "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/"
-  },
-  {
-   "date": "2026-11-13",
    "time": "2:45 PM",
    "title": "Starship Flight 15 launch (target)",
    "category": "Space",
@@ -1750,15 +1741,6 @@
   },
   {
    "date": "2026-11-13",
-   "time": "9:54 AM",
-   "title": "Vulcan rocket launch (target time)",
-   "category": "Space",
-   "location": "Cape Canaveral Space Force Station, FL",
-   "description": "ULA’s target liftoff time for Vulcan’s return to flight with Amazon Leo satellites.",
-   "url": "https://aviationweek.com/space/launch-vehicles-propulsion/vulcan-cleared-key-nov-13-return-flight-mission"
-  },
-  {
-   "date": "2026-11-13",
    "time": "4:30 PM",
    "title": "San Mateo County election results update",
    "category": "Government",
@@ -1774,6 +1756,24 @@
    "location": "",
    "description": "The International Diabetes Federation leads this global day on the anniversary of the birth of Frederick Banting, the co-discoverer of insulin.",
    "url": "https://worlddiabetesday.org/"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "",
+   "title": "Vulcan rocket returns to flight",
+   "category": "Space",
+   "location": "Cape Canaveral Space Force Station, FL",
+   "description": "ULA targets no earlier than this date for Vulcan’s first launch since a booster problem grounded it in February. It will carry 40 Amazon Leo internet satellites and fly with six side boosters for the first time. The launch slipped a day from Nov. 13 after a power problem at a nitrogen plant that supplies the pad.",
+   "url": "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "9:32 AM",
+   "title": "Vulcan rocket launch (target time)",
+   "category": "Space",
+   "location": "Cape Canaveral Space Force Station, FL",
+   "description": "ULA’s new target liftoff time after the one-day delay, for Vulcan’s return to flight with 40 Amazon Leo satellites.",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch"
   },
   {
    "date": "2026-11-14",

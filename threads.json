@@ -1,56 +1,12 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "threads": [
-    {
-      "id": "hegseth-impeachment",
-      "title": "The push to impeach Defense Secretary Hegseth",
-      "status": "Developing",
-      "summary": "House Democrats and one Republican, Rep. Thomas Massie, pushed to impeach Defense Secretary Pete Hegseth, and House Republicans blocked the effort on Nov. 10.",
-      "updated": "2026-11-12",
-      "entries": [
-        {
-          "date": "2026-11-05",
-          "edition": "posts/2026-11-05.html",
-          "headline": "Trump backs Defense Secretary Hegseth as questions swirl about his future",
-          "url": "https://www.ctvnews.ca/world/america-votes/article/trump-says-hegseth-doing-a-very-good-job-as-questions-swirl-about-his-future/",
-          "source": "Reuters, via CTV News, Nov 5, 2026"
-        },
-        {
-          "date": "2026-11-09",
-          "edition": "posts/2026-11-09.html",
-          "headline": "Hegseth faces impeachment talk as Jeffries calls him a “hard yes”",
-          "url": "https://www.bloomberg.com/news/articles/2026-11-08/hegseth-impeachment-backed-by-house-democratic-leader-jeffries",
-          "source": "Bloomberg, Nov 8, 2026; The Hill, Nov 8, 2026"
-        },
-        {
-          "date": "2026-11-10",
-          "edition": "posts/2026-11-10.html",
-          "headline": "Rep. Massie pushes to force a House vote to impeach Defense Secretary Hegseth, and Trump hits back",
-          "url": "https://thehill.com/video-clips/6208667-watch-live-thomas-massie-pete-hegseth-impeachment-articles-press-conference/",
-          "source": "The Hill, Nov 9, 2026; Bloomberg, Nov 9, 2026"
-        },
-        {
-          "date": "2026-11-11",
-          "edition": "posts/2026-11-11.html",
-          "headline": "House Republicans block the effort to impeach Defense Secretary Hegseth",
-          "url": "https://www.axios.com/2026/11/10/pete-hegseth-impeachment-house-republicans-massie",
-          "source": "Axios, Nov 10, 2026; The Hill, Nov 10, 2026"
-        },
-        {
-          "date": "2026-11-12",
-          "edition": "posts/2026-11-12.html",
-          "headline": "A Tomb of the Unknown Soldier sentinel reprimands Hegseth’s group for noise on Veterans Day",
-          "url": "https://www.cbsnews.com/news/hegseth-tomb-of-the-unknown-soldier-arlington-cemetery/",
-          "source": "CBS News, Nov 11, 2026"
-        }
-      ]
-    },
     {
       "id": "starship-flight-15",
       "title": "Starship Flight 15",
       "status": "Developing",
       "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
-      "updated": "2026-11-12",
+      "updated": "2026-11-13",
       "entries": [
         {
           "date": "2026-10-21",
@@ -100,6 +56,13 @@
           "headline": "Starship Flight 15 is set for Friday at 2:45 p.m. Pacific, aiming to bring back both stages",
           "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-1st-booster-ship-double-catch-full-recovery-what-time",
           "source": "Space.com, Nov 11, 2026"
+        },
+        {
+          "date": "2026-11-13",
+          "edition": "posts/2026-11-13.html",
+          "headline": "Starship Flight 15 is set for 2:45 p.m. today, pending FAA approval",
+          "url": "https://www.engadget.com/2311878/spacex-first-attempt-to-catch-both-starship-stages-november-13/",
+          "source": "Engadget, Nov 10, 2026; Starbase Events, Nov 12, 2026"
         }
       ]
     },
@@ -108,7 +71,7 @@
       "title": "Nvidia and Jensen Huang",
       "status": "Developing",
       "summary": "Nvidia CEO Jensen Huang admitted an affair with a woman U.S. intelligence suspects of working for China and resigned on Nov. 11; CFO Colette Kress is interim CEO while the board’s investigation continues.",
-      "updated": "2026-11-12",
+      "updated": "2026-11-13",
       "entries": [
         {
           "date": "2026-11-10",
@@ -130,6 +93,192 @@
           "headline": "Jensen Huang resigns as Nvidia’s CEO, and CFO Colette Kress takes over as interim chief",
           "url": "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/",
           "source": "TechCrunch, Nov 12, 2026; Yahoo Finance, Nov 12, 2026"
+        },
+        {
+          "date": "2026-11-13",
+          "edition": "posts/2026-11-13.html",
+          "headline": "Jensen Huang agrees to testify to three House committees, possibly by Thanksgiving",
+          "url": "https://www.engadget.com/2315091/ex-nvidia-ceo-jensen-huang-is-set-to-testify-before-congress-this-month/",
+          "source": "Engadget, Nov 12, 2026; NewsNation (via Yahoo News), Nov 12, 2026"
+        }
+      ]
+    },
+    {
+      "id": "election-san-mateo-county",
+      "title": "Election 2026 in San Mateo County",
+      "status": "Developing",
+      "summary": "Ballots, vote centers, deadlines and results for the county measures and Millbrae council races on the Nov. 3 ballot. Early results show Measure V passing, and counting continues.",
+      "updated": "2026-11-13",
+      "entries": [
+        {
+          "date": "2026-10-05",
+          "edition": "posts/2026-10-05.html",
+          "headline": "San Mateo County opens three vote centers as Nov. 3 ballots reach mailboxes",
+          "url": "https://smcacre.gov/elections/news/three-vote-centers-are-open-november-3-2026-statewide-general-election",
+          "source": "San Mateo County Registration & Elections, Oct 5, 2026"
+        },
+        {
+          "date": "2026-10-09",
+          "edition": "posts/2026-10-09.html",
+          "headline": "San Mateo County voters weigh four charter changes and a college bond",
+          "url": "https://patch.com/california/sanmateo/san-mateo-voter-guide-2026-whats-ballot-voting-more",
+          "source": "Patch, Oct 8, 2026"
+        },
+        {
+          "date": "2026-10-16",
+          "edition": "posts/2026-10-16.html",
+          "headline": "Ballots stolen from a Daly City post office; San Mateo County voters urged to check theirs",
+          "url": "https://padailypost.com/2026/10/16/voter-fraud-is-rare-ballots-stolen-from-post-office/",
+          "source": "Palo Alto Daily Post, Oct 16, 2026"
+        },
+        {
+          "date": "2026-10-19",
+          "edition": "posts/2026-10-19.html",
+          "headline": "Today is the last day to register to vote online for Nov. 3",
+          "url": "https://www.rwcpulse.com/election/2026/10/19/monday-is-last-day-to-register-to-vote-online/",
+          "source": "Redwood City Pulse, Oct 19, 2026"
+        },
+        {
+          "date": "2026-10-19",
+          "edition": "posts/2026-10-19.html",
+          "headline": "What to do if your mail ballot hasn’t arrived",
+          "url": "https://www.kqed.org/news/12105086/wheres-my-ballot-midterm-election-2026-need-replacement-ballot-vote-for-governor",
+          "source": "KQED, Oct 19, 2026"
+        },
+        {
+          "date": "2026-10-23",
+          "edition": "posts/2026-10-23.html",
+          "headline": "Measure J would give San Mateo County supervisors 60 days to fill vacancies",
+          "url": "https://www.almanacnews.com/election/2026/10/22/san-mateo-countys-measure-j-proposes-extending-timeline-for-filling-vacancies-in-elected-offices/",
+          "source": "The Almanac, Oct 22, 2026"
+        },
+        {
+          "date": "2026-10-25",
+          "edition": "posts/2026-10-25.html",
+          "headline": "San Mateo County’s Measure U would take district map-drawing away from supervisors",
+          "url": "https://www.rwcpulse.com/election/2026/10/24/san-mateo-countys-measure-u-would-create-independent-commission-for-redrawing-district-maps/",
+          "source": "Redwood City Pulse, Oct 24, 2026"
+        },
+        {
+          "date": "2026-10-25",
+          "edition": "posts/2026-10-25.html",
+          "headline": "Seven more San Mateo County vote centers open, bringing the total to 10",
+          "url": "https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide",
+          "source": "San Mateo County Elections, Oct 23, 2026"
+        },
+        {
+          "date": "2026-10-27",
+          "edition": "posts/2026-10-27.html",
+          "headline": "A week to Election Day: California mail ballots must be postmarked by Nov. 3",
+          "url": "https://calmatters.org/politics/2026/10/midterm-late-voter-guide/",
+          "source": "CalMatters, Oct 27, 2026"
+        },
+        {
+          "date": "2026-10-29",
+          "edition": "posts/2026-10-29.html",
+          "headline": "Measure V asks San Mateo County voters to extend an $848 million college bond",
+          "url": "https://padailypost.com/2026/10/29/measure-v-college-district-wants-bond-approval-but-little-has-been-done-to-prevent-more-bribery/",
+          "source": "Palo Alto Daily Post, Oct 29, 2026"
+        },
+        {
+          "date": "2026-11-03",
+          "edition": "posts/2026-11-03.html",
+          "headline": "Election Day in Millbrae: where to vote and what’s on the ballot",
+          "url": "https://www.ci.millbrae.ca.us/723/November-3-2026-General-and-Special-Muni",
+          "source": "City of Millbrae; The Almanac, Nov 2, 2026"
+        },
+        {
+          "date": "2026-11-04",
+          "edition": "posts/2026-11-04.html",
+          "headline": "Measure V is passing in San Mateo County, and two Millbrae council races are close",
+          "url": "https://www.kqed.org/elections/results/sanmateo",
+          "source": "KQED, results as of 12:05 a.m., Nov 4, 2026"
+        },
+        {
+          "date": "2026-11-05",
+          "edition": "posts/2026-11-05.html",
+          "headline": "San Mateo County counts on: Measure V leads with 64%, and the Millbrae council races stay tight",
+          "url": "https://www.kqed.org/elections/results/sanmateo",
+          "source": "KQED; San Mateo County Elections Office, Nov 4, 2026"
+        },
+        {
+          "date": "2026-11-06",
+          "edition": "posts/2026-11-06.html",
+          "headline": "Millbrae’s District 3 race flips: Gámez now leads Schneider by seven votes, and Measure V holds at 64%",
+          "url": "https://www.kqed.org/elections/results/sanmateo",
+          "source": "KQED, Nov 5, 2026"
+        },
+        {
+          "date": "2026-11-08",
+          "edition": "posts/2026-11-08.html",
+          "headline": "San Mateo County still has about 100,000 ballots to count, and the next update is due Monday afternoon",
+          "url": "https://smcacre.gov/elections/current-election",
+          "source": "San Mateo County Elections Office, Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-09",
+          "edition": "posts/2026-11-09.html",
+          "headline": "San Mateo County still has about 100,000 ballots to count, and Millbrae’s District 3 race is down to a few votes",
+          "url": "https://smcacre.gov/elections/november-3-2026-statewide-general-election",
+          "source": "San Mateo County Registration & Elections, as of Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-10",
+          "edition": "posts/2026-11-10.html",
+          "headline": "San Mateo County has about 50,000 ballots left to count, and the next update is Thursday",
+          "url": "https://smcacre.gov/elections/november-3-2026-election-results",
+          "source": "San Mateo County Registration & Elections, as of Nov 9, 2026; City of Millbrae, Nov 6, 2026"
+        },
+        {
+          "date": "2026-11-13",
+          "edition": "posts/2026-11-13.html",
+          "headline": "Gámez’s lead in Millbrae’s District 3 race grows to 30 votes with few ballots left",
+          "url": "https://www.livevoterturnout.com/ENR/sanmateocaenr/20/en/Y3Mvf_Index_20.html",
+          "source": "San Mateo County Elections, Nov 12, 2026"
+        }
+      ]
+    },
+    {
+      "id": "hegseth-impeachment",
+      "title": "The push to impeach Defense Secretary Hegseth",
+      "status": "Developing",
+      "summary": "House Democrats and one Republican, Rep. Thomas Massie, pushed to impeach Defense Secretary Pete Hegseth, and House Republicans blocked the effort on Nov. 10.",
+      "updated": "2026-11-12",
+      "entries": [
+        {
+          "date": "2026-11-05",
+          "edition": "posts/2026-11-05.html",
+          "headline": "Trump backs Defense Secretary Hegseth as questions swirl about his future",
+          "url": "https://www.ctvnews.ca/world/america-votes/article/trump-says-hegseth-doing-a-very-good-job-as-questions-swirl-about-his-future/",
+          "source": "Reuters, via CTV News, Nov 5, 2026"
+        },
+        {
+          "date": "2026-11-09",
+          "edition": "posts/2026-11-09.html",
+          "headline": "Hegseth faces impeachment talk as Jeffries calls him a “hard yes”",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-08/hegseth-impeachment-backed-by-house-democratic-leader-jeffries",
+          "source": "Bloomberg, Nov 8, 2026; The Hill, Nov 8, 2026"
+        },
+        {
+          "date": "2026-11-10",
+          "edition": "posts/2026-11-10.html",
+          "headline": "Rep. Massie pushes to force a House vote to impeach Defense Secretary Hegseth, and Trump hits back",
+          "url": "https://thehill.com/video-clips/6208667-watch-live-thomas-massie-pete-hegseth-impeachment-articles-press-conference/",
+          "source": "The Hill, Nov 9, 2026; Bloomberg, Nov 9, 2026"
+        },
+        {
+          "date": "2026-11-11",
+          "edition": "posts/2026-11-11.html",
+          "headline": "House Republicans block the effort to impeach Defense Secretary Hegseth",
+          "url": "https://www.axios.com/2026/11/10/pete-hegseth-impeachment-house-republicans-massie",
+          "source": "Axios, Nov 10, 2026; The Hill, Nov 10, 2026"
+        },
+        {
+          "date": "2026-11-12",
+          "edition": "posts/2026-11-12.html",
+          "headline": "A Tomb of the Unknown Soldier sentinel reprimands Hegseth’s group for noise on Veterans Day",
+          "url": "https://www.cbsnews.com/news/hegseth-tomb-of-the-unknown-soldier-arlington-cemetery/",
+          "source": "CBS News, Nov 11, 2026"
         }
       ]
     },
@@ -265,134 +414,6 @@
           "headline": "Trump uses his Veterans Day speech to defend the Iran war and says it will end soon",
           "url": "https://www.koreatimes.co.kr/world/20261112/trump-defends-iran-war-in-veterans-day-address",
           "source": "AFP (via Korea Times), Nov 11, 2026"
-        }
-      ]
-    },
-    {
-      "id": "election-san-mateo-county",
-      "title": "Election 2026 in San Mateo County",
-      "status": "Developing",
-      "summary": "Ballots, vote centers, deadlines and results for the county measures and Millbrae council races on the Nov. 3 ballot. Early results show Measure V passing, and counting continues.",
-      "updated": "2026-11-10",
-      "entries": [
-        {
-          "date": "2026-10-05",
-          "edition": "posts/2026-10-05.html",
-          "headline": "San Mateo County opens three vote centers as Nov. 3 ballots reach mailboxes",
-          "url": "https://smcacre.gov/elections/news/three-vote-centers-are-open-november-3-2026-statewide-general-election",
-          "source": "San Mateo County Registration & Elections, Oct 5, 2026"
-        },
-        {
-          "date": "2026-10-09",
-          "edition": "posts/2026-10-09.html",
-          "headline": "San Mateo County voters weigh four charter changes and a college bond",
-          "url": "https://patch.com/california/sanmateo/san-mateo-voter-guide-2026-whats-ballot-voting-more",
-          "source": "Patch, Oct 8, 2026"
-        },
-        {
-          "date": "2026-10-16",
-          "edition": "posts/2026-10-16.html",
-          "headline": "Ballots stolen from a Daly City post office; San Mateo County voters urged to check theirs",
-          "url": "https://padailypost.com/2026/10/16/voter-fraud-is-rare-ballots-stolen-from-post-office/",
-          "source": "Palo Alto Daily Post, Oct 16, 2026"
-        },
-        {
-          "date": "2026-10-19",
-          "edition": "posts/2026-10-19.html",
-          "headline": "Today is the last day to register to vote online for Nov. 3",
-          "url": "https://www.rwcpulse.com/election/2026/10/19/monday-is-last-day-to-register-to-vote-online/",
-          "source": "Redwood City Pulse, Oct 19, 2026"
-        },
-        {
-          "date": "2026-10-19",
-          "edition": "posts/2026-10-19.html",
-          "headline": "What to do if your mail ballot hasn’t arrived",
-          "url": "https://www.kqed.org/news/12105086/wheres-my-ballot-midterm-election-2026-need-replacement-ballot-vote-for-governor",
-          "source": "KQED, Oct 19, 2026"
-        },
-        {
-          "date": "2026-10-23",
-          "edition": "posts/2026-10-23.html",
-          "headline": "Measure J would give San Mateo County supervisors 60 days to fill vacancies",
-          "url": "https://www.almanacnews.com/election/2026/10/22/san-mateo-countys-measure-j-proposes-extending-timeline-for-filling-vacancies-in-elected-offices/",
-          "source": "The Almanac, Oct 22, 2026"
-        },
-        {
-          "date": "2026-10-25",
-          "edition": "posts/2026-10-25.html",
-          "headline": "San Mateo County’s Measure U would take district map-drawing away from supervisors",
-          "url": "https://www.rwcpulse.com/election/2026/10/24/san-mateo-countys-measure-u-would-create-independent-commission-for-redrawing-district-maps/",
-          "source": "Redwood City Pulse, Oct 24, 2026"
-        },
-        {
-          "date": "2026-10-25",
-          "edition": "posts/2026-10-25.html",
-          "headline": "Seven more San Mateo County vote centers open, bringing the total to 10",
-          "url": "https://smcacre.gov/elections/news/seven-additional-vote-centers-open-saturday-october-24-november-3-2026-statewide",
-          "source": "San Mateo County Elections, Oct 23, 2026"
-        },
-        {
-          "date": "2026-10-27",
-          "edition": "posts/2026-10-27.html",
-          "headline": "A week to Election Day: California mail ballots must be postmarked by Nov. 3",
-          "url": "https://calmatters.org/politics/2026/10/midterm-late-voter-guide/",
-          "source": "CalMatters, Oct 27, 2026"
-        },
-        {
-          "date": "2026-10-29",
-          "edition": "posts/2026-10-29.html",
-          "headline": "Measure V asks San Mateo County voters to extend an $848 million college bond",
-          "url": "https://padailypost.com/2026/10/29/measure-v-college-district-wants-bond-approval-but-little-has-been-done-to-prevent-more-bribery/",
-          "source": "Palo Alto Daily Post, Oct 29, 2026"
-        },
-        {
-          "date": "2026-11-03",
-          "edition": "posts/2026-11-03.html",
-          "headline": "Election Day in Millbrae: where to vote and what’s on the ballot",
-          "url": "https://www.ci.millbrae.ca.us/723/November-3-2026-General-and-Special-Muni",
-          "source": "City of Millbrae; The Almanac, Nov 2, 2026"
-        },
-        {
-          "date": "2026-11-04",
-          "edition": "posts/2026-11-04.html",
-          "headline": "Measure V is passing in San Mateo County, and two Millbrae council races are close",
-          "url": "https://www.kqed.org/elections/results/sanmateo",
-          "source": "KQED, results as of 12:05 a.m., Nov 4, 2026"
-        },
-        {
-          "date": "2026-11-05",
-          "edition": "posts/2026-11-05.html",
-          "headline": "San Mateo County counts on: Measure V leads with 64%, and the Millbrae council races stay tight",
-          "url": "https://www.kqed.org/elections/results/sanmateo",
-          "source": "KQED; San Mateo County Elections Office, Nov 4, 2026"
-        },
-        {
-          "date": "2026-11-06",
-          "edition": "posts/2026-11-06.html",
-          "headline": "Millbrae’s District 3 race flips: Gámez now leads Schneider by seven votes, and Measure V holds at 64%",
-          "url": "https://www.kqed.org/elections/results/sanmateo",
-          "source": "KQED, Nov 5, 2026"
-        },
-        {
-          "date": "2026-11-08",
-          "edition": "posts/2026-11-08.html",
-          "headline": "San Mateo County still has about 100,000 ballots to count, and the next update is due Monday afternoon",
-          "url": "https://smcacre.gov/elections/current-election",
-          "source": "San Mateo County Elections Office, Nov 6, 2026"
-        },
-        {
-          "date": "2026-11-09",
-          "edition": "posts/2026-11-09.html",
-          "headline": "San Mateo County still has about 100,000 ballots to count, and Millbrae’s District 3 race is down to a few votes",
-          "url": "https://smcacre.gov/elections/november-3-2026-statewide-general-election",
-          "source": "San Mateo County Registration & Elections, as of Nov 6, 2026"
-        },
-        {
-          "date": "2026-11-10",
-          "edition": "posts/2026-11-10.html",
-          "headline": "San Mateo County has about 50,000 ballots left to count, and the next update is Thursday",
-          "url": "https://smcacre.gov/elections/november-3-2026-election-results",
-          "source": "San Mateo County Registration & Elections, as of Nov 9, 2026; City of Millbrae, Nov 6, 2026"
         }
       ]
     },

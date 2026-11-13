@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Friday, November 13, 2026 | Live Full Stack</title>
+<meta name="description" content="Live Full Stack, issue 44: Friday, November 13, 2026.">
+<link rel="preload" href="../fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/old-standard-tt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#A8231B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Live Full Stack">
+<script src="../assets/pwa.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Live Full Stack" href="https://www.livefullstack.com/feed.xml">
+<link rel="canonical" href="https://www.livefullstack.com/posts/2026-11-13.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Live Full Stack">
+<meta property="og:title" content="Friday, November 13, 2026 | Live Full Stack">
+<meta property="og:description" content="A moderate storm brings midday rain and gusty winds to the Peninsula today, with dangerous surf on the coast all weekend, and BART trains won’t run between 24th St. Mission and Daly City Saturday and Sunday. Trump threatened to double tariffs on Mexico over a migrant caravan, and Jensen Huang agreed to testify to Congress. Stephen Curry is out at least two weeks with a torn oblique, and SpaceX targets this afternoon for Starship’s double-catch attempt.">
+<meta property="og:url" content="https://www.livefullstack.com/posts/2026-11-13.html">
+<meta property="og:image" content="https://www.livefullstack.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Full Stack nameplate">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --paper: #E9E6DD; --ink: #222120; --muted: #5E5A52; --rule: #222120;
+    --soft-rule: #B9B3A6; --spot: #A8231B;
+    --band: #A8231B; --on-band: #F6EFE6;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1B1A18; --ink: #E7E2D6; --muted: #A59F92; --rule: #E7E2D6;
+      --soft-rule: #4A463F; --spot: #E2675C;
+      --band: #8E2019; --on-band: #F6EFE6;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-padding-top: 1rem; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 var(--serif);
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .page { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--spot); outline-offset: 4px; }
+
+  /* Masthead (smaller than the front page) */
+  .cover { display: flex; justify-content: space-between; align-items: flex-end;
+           flex-wrap: wrap; gap: .25rem 1.5rem; padding-bottom: .4rem; }
+  .nameplate { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+               font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: .9; margin: 0; }
+  .nameplate a { text-decoration: none; }
+  .home { margin: 0 0 .3rem auto; font-style: italic; font-size: .95rem; }
+  .band { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem;
+          background: var(--band); color: var(--on-band); padding: .4rem 1rem; font-size: .9rem; }
+  .band .tag { font-style: italic; }
+
+  /* Edition heading */
+  .edition-head { padding: 1.75rem 0 1.25rem; border-bottom: 2px solid var(--rule); max-width: 48rem; }
+  .stamp { color: var(--spot); font-style: italic; margin: 0 0 .25rem; }
+  .edition-head h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
+  .summary { margin: 0; text-align: justify; hyphens: auto; }
+  .summary::first-letter { font-size: 3.4em; float: left; line-height: .85;
+                           padding: .08em .1em 0 0; font-weight: 700; }
+
+  /* In this edition: built automatically from the topic headings */
+  .contents { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; padding: .75rem 0;
+              border-bottom: 1px solid var(--soft-rule); font-size: .95rem; }
+  .contents span { font-style: italic; color: var(--muted); }
+  .contents a { font-weight: 700; text-decoration: none; }
+  .contents a:hover { text-decoration: underline; }
+
+  /* Topics and stories */
+  .topic { padding-top: 1.75rem; }
+  .topic > h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase;
+                font-size: 1.9rem; letter-spacing: .01em; line-height: 1; margin: 0 0 .25rem;
+                padding-bottom: .4rem; border-bottom: 4px double var(--rule); }
+  .stories { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .story { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--soft-rule); }
+  @media (min-width: 46rem) {
+    .story { padding: 1rem 1.5rem 1.25rem 0; }
+    .story:nth-child(even) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+    .story:first-child { grid-column: 1 / -1; padding-right: 0; }
+    .story:first-child ~ .story:nth-child(even) { padding: 1rem 1.5rem 1.25rem 0; border-left: 0; }
+    .story:first-child ~ .story:nth-child(odd) { padding: 1rem 0 1.25rem 1.5rem; border-left: 1px solid var(--soft-rule); }
+  }
+  .story h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 .45rem; }
+  .story:first-child h3 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { text-decoration: underline; }
+  .story p { margin: 0 0 .5rem; }
+  .why { font-style: italic; }
+  .why strong { font-style: normal; color: var(--spot); }
+  .source { font-size: .88rem; color: var(--muted); margin: 0; }
+
+  /* Sunday: Coming up */
+  .upcoming { list-style: none; margin: .5rem 0 0; padding: 0; columns: 2 20rem; column-gap: 2.5rem; }
+  .upcoming li { break-inside: avoid; padding: .55rem 0; border-bottom: 1px dotted var(--soft-rule); line-height: 1.35; }
+  .upcoming .when { display: block; font-size: .82rem; font-style: italic; color: var(--spot); }
+  .upcoming a { font-weight: 700; text-decoration: none; }
+  .upcoming a:hover { text-decoration: underline; }
+  .upcoming .kind { font-size: .82rem; font-style: italic; color: var(--muted); }
+
+
+  /* Edition navigation */
+  .edition-nav { margin-top: 2.5rem; border-top: 4px double var(--rule); padding-top: .75rem;
+                 display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; font-size: .95rem; }
+  .edition-nav .next { text-align: right; }
+  .edition-nav .front { text-align: center; font-weight: 700; }
+  .credit { text-align: center; color: var(--muted); font-size: .85rem; font-style: italic; margin-top: 1.5rem; }
+
+  /* Print: black on white, no navigation, link addresses after headlines */
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #333; --rule: #000; --soft-rule: #999;
+            --spot: #000; --band: #fff; --on-band: #000; color-scheme: light; }
+    @page { margin: 1.5cm; }
+    html, body { background: #fff; }
+    body { font-size: 11pt; padding: 0; }
+    .page { max-width: none; padding: 0; }
+    .band { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: .2rem 0; }
+    .home, .contents, .edition-nav, .read, .more, .print-hide { display: none !important; }
+    .story, .edition, .lead, .month li { break-inside: avoid; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .story h3 a[href^="http"]::after { content: attr(href); display: block; margin-top: .15rem;
+                                       font-size: 8pt; font-weight: 400; line-height: 1.3;
+                                       word-break: break-all; color: #333; }
+    a { text-decoration: none; }
+  }
+</style>
+<link rel="stylesheet" href="../assets/edition.css">
+<script src="../assets/reader.js"></script>
+</head>
+<body data-date="2026-11-13">
+<div class="page">
+  <header class="masthead">
+    <div class="cover">
+      <p class="nameplate"><a href="../">Live Full Stack</a></p>
+      <a class="home" href="../">Back to the front page</a>
+    </div>
+    <div class="band">
+      <span>by The Gary Corp.</span>
+      <span class="tag">Gary Garrison’s tailored news</span>
+    </div>
+  </header>
+
+  <main>
+    <header class="edition-head">
+      <p class="stamp">Issue No. 44</p>
+      <h1>Friday, November 13, 2026</h1>
+      <p class="summary">A moderate storm brings midday rain and gusty winds to the Peninsula today, with dangerous surf on the coast all weekend, and BART trains won’t run between 24th St. Mission and Daly City Saturday and Sunday. Trump threatened to double tariffs on Mexico over a migrant caravan, and Jensen Huang agreed to testify to Congress. Stephen Curry is out at least two weeks with a torn oblique, and SpaceX targets this afternoon for Starship’s double-catch attempt.</p>
+    </header>
+
+    <section class="brief" aria-labelledby="brief-h">
+      <h2 id="brief-h">The day in <span>60 seconds</span></h2>
+      <ul>
+        <li>Rain arrives between about 10 a.m. and 3 p.m. with gusts to 35 mph, and a high surf warning brings 25- to 35-foot breakers to the coast from tonight until early Sunday.</li>
+        <li>BART buses replace trains between 24th St. Mission and Daly City all weekend, so riders from Millbrae and SFO should allow up to 30 extra minutes.</li>
+        <li>Trump threatened to double tariffs on Mexico unless it stops a migrant caravan; Mexico’s president says no caravan has reached the U.S. border since early 2025.</li>
+        <li>Stephen Curry has a torn oblique and will miss at least seven games, starting tonight at San Antonio.</li>
+      </ul>
+    </section>
+
+    <aside class="today-box" id="today-box" aria-label="Today in and around Millbrae"><p class="alert-line"><strong>Today:</strong> Rain and gusts to 35 mph peak between about 10 a.m. and 3 p.m., a coastal flood advisory for the Bay shoreline runs until 4 p.m., and a high surf warning for the coast starts at 6 p.m. This weekend, buses replace BART trains between 24th St. Mission and Daly City.</p></aside>
+
+    <nav class="contents" aria-label="Topics in this edition"><span>In this edition:</span></nav>
+
+    <!-- START STORIES: one <section class="topic"> per topic, in the order they should appear.
+         Story format (the kicker and Previously lines are optional):
+         <article class="story">
+           <p class="kicker top">Top story</p>
+           <h3><a href="ARTICLE URL" target="_blank" rel="noopener">Headline</a></h3>
+           <p>Summary.</p>
+           <p class="why"><strong>Why it matters:</strong> Optional line.</p>
+           <p class="previously"><strong>Previously:</strong> <a href="2026-10-24.html">Oct 24</a> · <a href="../tracker.html#thread-id">Follow this story ›</a></p>
+           <p class="source">Source name, Mon D, YYYY</p>
+         </article>
+    -->
+    <section class="topic" id="general-news">
+      <h2>General news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://www.ktvu.com/news/timeline-rainstorms-dangerous-waves-will-hit-bay-area" target="_blank" rel="noopener">The season’s first moderate storm arrives today, the first of three in a week</a></h3>
+          <p>Steady rain reaches the Bay shoreline and the Peninsula between about 10 a.m. and 3 p.m., with gusts of 25 to 35 mph, brief gusts above 45 mph and a slight chance of thunderstorms; most of the Bay Area should get 0.3 to 0.8 inch by Saturday afternoon. A coastal flood advisory for the high tide runs until 4 p.m., and a high surf warning from 6 p.m. tonight to 4 a.m. Sunday calls for 25- to 35-foot breakers, with occasional 40- to 50-foot sets. A second storm is due Sunday into Monday and a possible third around Wednesday; forecasters don’t expect widespread flooding and say this is not an atmospheric river.</p>
+          <p class="why"><strong>Why it matters:</strong> Expect a wet commute midday, possible ponding near the Bay shoreline at high tide, and dangerous conditions on Coastside beaches all weekend.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-12.html">Nov 12</a> · <a href="2026-11-11.html">Nov 11</a></p>
+          <p class="source">KTVU, Nov 12, 2026; KQED, Nov 12, 2026; National Weather Service</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.bart.gov/news/articles/2026/news20261015" target="_blank" rel="noopener">No BART trains between 24th St. Mission and Daly City this weekend; buses fill the gap</a></h3>
+          <p>Free SamTrans express buses and Muni buses replace trains between 24th St. Mission and Daly City all day Saturday and Sunday while crews install a new train control system; Glen Park and Balboa Park get bus service only. Trains keep running every 15 minutes between Daly City, SFO and Millbrae, the Green Line is canceled, and departures across the system shift by up to three minutes. BART says riders going through the gap should plan for up to 30 extra minutes, and two Daly City parking lots are closed; regular service returns Monday at 5 a.m.</p>
+          <p class="why"><strong>Why it matters:</strong> Anyone riding from Millbrae or SFO into San Francisco this weekend will need to switch to a bus at Daly City, so leave extra time for flights and events.</p>
+          <p class="source">BART, Nov 3, 2026; Mission Local, Nov 10, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.livevoterturnout.com/ENR/sanmateocaenr/20/en/Y3Mvf_Index_20.html" target="_blank" rel="noopener">Gámez’s lead in Millbrae’s District 3 race grows to 30 votes with few ballots left</a></h3>
+          <p>In Thursday’s county report, Juan Gámez had 733 votes (51%) to Ann Schneider’s 703 for the short-term District 3 council seat, up from a lead of just a few votes earlier in the count. Albert Yam leads Bob Nguyen in District 4, 55% to 45%, and Sissy Riley is unopposed in District 2. The county says only about 1,700 ballots remain to be processed countywide, with updates due Friday and Monday afternoon, a Nov. 25 deadline for voters to fix challenged ballots, and certification on Dec. 3.</p>
+          <p class="why"><strong>Why it matters:</strong> With so few ballots left, Millbrae’s council lineup for the next term is close to settled.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-10.html">Nov 10</a> · <a href="2026-11-09.html">Nov 9</a> · <a href="2026-11-06.html">Nov 6</a> · <a href="../tracker.html#election-san-mateo-county">Follow this story ›</a></p>
+          <p class="source">San Mateo County Elections, Nov 12, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.nbcbayarea.com/news/local/ice-multiple-arrests-peninsula/4174371/" target="_blank" rel="noopener">ICE arrests five people across San Mateo County in one morning</a></h3>
+          <p>Immigration agents made two arrests in East Palo Alto, two in San Mateo and one in a San Carlos shopping center parking lot on Tuesday, according to the county’s Rapid Response Hotline and Office of Community Affairs. A faith-based advocacy group says at least 16 people have been detained in the county in the past 10 days, including arrests reported Monday in Redwood City, Half Moon Bay and Montara. ICE did not respond to a request for comment.</p>
+          <p class="why"><strong>Why it matters:</strong> Enforcement has stepped up in Peninsula neighborhoods, and the county points residents to its hotline and to smcgov.org for legal and support resources.</p>
+          <p class="source">Bay City News (via NBC Bay Area), Nov 11, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">Weekend planner</p>
+          <h3><a href="https://www.ssfca.gov/Departments/Parks-Recreation/Events/Diwali" target="_blank" rel="noopener">Weekend planner: indoor fairs, Diwali in South San Francisco and a road game for the 49ers</a></h3>
+          <p>It’s a wet weekend, so most picks are indoors, and BART riders should plan around the Daly City bus bridge. Friday, 6:30 p.m.: the Warriors play at San Antonio (Prime Video). Saturday and Sunday, 11 a.m.–5 p.m.: the <a href="https://sf.funcheap.com/sfs-winter-renegade-craft-fair-at-fort-mason-nov-14-15/" target="_blank" rel="noopener">Renegade Craft Fair</a> fills Fort Mason’s Festival Pavilion with about 250 makers (free, $5 suggested). Saturday and Sunday: the ticketed <a href="https://sf.funcheap.com/2026-sf-tea-festival-at-ferry-building-nov-14-15/" target="_blank" rel="noopener">SF Tea Festival</a> pours teas from more than 30 makers at the Ferry Building. Sunday, 10 a.m.–noon: South San Francisco’s free Diwali Festival of Lights, with dance, music and theater, at the Council Chambers, 901 Civic Campus Way. Sunday, 1:25 p.m.: the 49ers visit Dallas (Fox).</p>
+          <p class="source">City of South San Francisco; Funcheap, Oct 1 and Oct 22, 2026; team schedules</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="good-news">
+      <h2>Good news</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker good">Good news</p>
+          <h3><a href="https://www.goodnewsnetwork.org/paralyzed-woman-promised-to-return-and-play-piano-for-rehab-patients-she-kept-her-word/" target="_blank" rel="noopener">An 84-year-old pianist keeps her promise to come back and play for rehab patients</a></h3>
+          <p>An 84-year-old pianist who was twice a patient at a Pennsylvania nursing and rehabilitation home, most recently after Guillain-Barré syndrome left her paralyzed, had promised to come back and play for the people recovering there. After about 10 months away for her own medical care, she has kept her word and is again playing the home’s piano for residents recovering from illness, surgery and injury.</p>
+          <p class="source">Good News Network, Nov 11, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="u-s-politics-government">
+      <h2>U.S. politics &amp; government</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker top">Top story</p>
+          <h3><a href="https://mexiconewsdaily.com/politics/trump-threatens-double-tariffs-mexico-migrant-caravan/" target="_blank" rel="noopener">Trump threatens to double tariffs on Mexico over a migrant caravan, and Sheinbaum says it won’t reach the border</a></h3>
+          <p>In a Thursday morning post, President Trump said tariffs on Mexico would be doubled immediately unless it stops a caravan of more than 1,000 migrants that set out this week from Tapachula, in southern Mexico; the tariffs in play include those on Mexican steel, aluminum and vehicles. Border czar Tom Homan said Mexico should send troops to its borders, and the Homeland Security secretary said the caravan would not be allowed in. Mexican President Claudia Sheinbaum said no caravan has reached the U.S. border since January 2025, that one group has already shrunk from about 600 people to under 100, and that Mexico will not use force.</p>
+          <p class="why"><strong>Why it matters:</strong> Mexico is California’s biggest export market, and higher tariffs on cars and metals would raise costs for Bay Area buyers and businesses.</p>
+          <p class="source">Mexico News Daily, Nov 12, 2026; KJZZ, Nov 12, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.engadget.com/2315091/ex-nvidia-ceo-jensen-huang-is-set-to-testify-before-congress-this-month/" target="_blank" rel="noopener">Jensen Huang agrees to testify to three House committees, possibly by Thanksgiving</a></h3>
+          <p>House Foreign Affairs Chairman Brian Mast said the former Nvidia CEO agreed to a closed-door appearance before his committee and the Intelligence and China committees, after lawmakers threatened a subpoena; Mast expects it to be recorded and transcribed. The committees want to know about Huang’s relationship with a woman U.S. intelligence suspects of spying for China. Rep. Darrell Issa said the deal was made while Huang was still CEO and may need to be reworked, while Democrats including Rep. Ted Lieu are pressing questions about selling advanced chips to China.</p>
+          <p class="why"><strong>Why it matters:</strong> The hearing could shape export rules for Nvidia and other Santa Clara Valley chipmakers that employ thousands of Bay Area workers.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-12.html">Nov 12</a> · <a href="2026-11-11.html">Nov 11</a> · <a href="2026-11-10.html">Nov 10</a> · <a href="../tracker.html#nvidia-huang">Follow this story ›</a></p>
+          <p class="source">Engadget, Nov 12, 2026; NewsNation (via Yahoo News), Nov 12, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="sports">
+      <h2>Sports</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://fieldlevelmedia.com/nba/spurs-go-for-11th-straight-win-face-steph-curry-less-warriors/" target="_blank" rel="noopener">Today in sports: Warriors visit red-hot San Antonio without Curry; 49ers at Dallas Sunday</a></h3>
+          <p>The Warriors (8–4) play at San Antonio tonight at 6:30 p.m. on Prime Video in an NBA Cup group game; the Spurs have won a league-best 10 straight, and Victor Wembanyama scored 32 in Wednesday’s comeback at Chicago. The 49ers (7–1) play at Dallas on Sunday at 1:25 p.m. on Fox, Hawaiʻi hosts North Dakota State on Saturday, and the Earthquakes open the MLS playoffs at home against Houston on Nov. 24.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-12.html">Nov 12</a> · <a href="2026-11-11.html">Nov 11</a></p>
+          <p class="source">Field Level Media, Nov 12, 2026; team schedules</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.espn.com/nba/story/_/id/50462899/warriors-stephen-curry-least-2-weeks-oblique-tear" target="_blank" rel="noopener">Stephen Curry has a torn oblique and will miss at least two weeks</a></h3>
+          <p>An MRI showed an oblique abdominal tear, and Curry will be re-evaluated in two weeks, so he’ll miss at least seven games: San Antonio, New Orleans, Dallas, Memphis, Boston, Sacramento and Portland. He hurt his right side just after hitting a 3-pointer early in Wednesday’s loss at Houston. The Warriors were 13–26 without him last season, and they’re already missing Jimmy Butler and Moses Moody long term and Brandon Williams for at least a week.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-12.html">Nov 12</a></p>
+          <p class="source">ESPN, Nov 12, 2026; Associated Press (via NBA.com), Nov 13, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://sports.yahoo.com/articles/49ers-starting-cornerbacks-miss-second-171327510.html" target="_blank" rel="noopener">49ers’ starting cornerbacks miss a second straight practice before Dallas</a></h3>
+          <p>Deommodore Lenoir (foot) and Renardo Green (back), both hurt in the win over the Raiders, sat out practice again Thursday, though they took part in a walkthrough, and Kyle Shanahan said he’ll check on them over the weekend. If they can’t go, rookie Ephesians Prysock is the only other healthy corner on the active roster, and Nate Hobbs, now practicing fully, could be activated from injured reserve. Mike Evans (Achilles) is increasingly likely to miss a third straight game, while Deebo Samuel was limited.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-12.html">Nov 12</a> · <a href="2026-11-11.html">Nov 11</a> · <a href="2026-11-08.html">Nov 8</a></p>
+          <p class="source">NBC Sports Bay Area (via Yahoo Sports), Nov 12, 2026; 49ers Webzone, Nov 12, 2026</p>
+        </article>
+      </div>
+      <aside class="standings" aria-label="Standings">
+        <h3>Standings through Thursday</h3>
+        <table>
+          <thead><tr><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Where they stand</th></tr></thead>
+          <tbody>
+            <tr><td>49ers</td><td>7–1</td><td>First in the NFC West; at Dallas Sunday</td></tr>
+            <tr><td>Warriors</td><td>8–4</td><td>At San Antonio tonight; Curry out at least two weeks</td></tr>
+            <tr><td>Earthquakes</td><td>14–10–10</td><td>No. 4 seed in the West; host Houston in Game 1 on Nov. 24</td></tr>
+            <tr><td>Hawaiʻi football</td><td>3–6</td><td>Host North Dakota State Saturday</td></tr>
+          </tbody>
+        </table>
+        <p class="source">ESPN, Field Level Media and team sites</p>
+      </aside>
+    </section>
+    <section class="topic" id="culture">
+      <h2>Culture</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker feature">New this weekend</p>
+          <h3><a href="https://boxofficetheory.substack.com/p/box-office-weekend-forecast-ebenezer-johnny-depp-ghost-soldier-godzilla-minus-zero-how-to-rob-a-bank" target="_blank" rel="noopener">New this weekend: Johnny Depp’s “Ebenezer,” a heist comedy, two Netflix and HBO Max films, and a new U2 album</a></h3>
+          <p>In theaters, Paramount’s “Ebenezer: A Christmas Carol,” with Depp as Scrooge and Ian McKellen as Marley, is forecast to open around $20 million or more, while Amazon MGM’s “How to Rob a Bank,” starring Nicholas Hoult and Zoë Kravitz, and Sony’s “Ghost Soldier” aim for single digits. At home, <a href="https://screencrush.com/new-movies-streaming-this-weekend-111126/" target="_blank" rel="noopener">Jessica Chastain plays a former country star searching for her niece in Netflix’s “Heartland,”</a> and Anne Hathaway and Ewan McGregor star in “The End of Oak Street” on HBO Max, both out today. New albums include <a href="https://dknetwork.draftkings.com/2026/11/12/new-music-friday-release-radar-for-november-13-2026-top-albums-song-releases/" target="_blank" rel="noopener">U2’s “Carnaval De Luz,” Offset’s “GMFU,” Snoh Aalegra’s “Legendary Love” and Jake Bugg’s “Alamo.”</a></p>
+          <p class="source">Box Office Theory, Nov 11, 2026; ScreenCrush, Nov 11, 2026; DraftKings Network, Nov 12, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.yahoo.com/entertainment/music/articles/latin-grammy-awards-2026-winners-050832928.html" target="_blank" rel="noopener">Rosalía wins her third Latin Grammy for album of the year with “Lux”</a></h3>
+          <p>Rosalía also took song of the year for “La Perla” at Thursday’s ceremony in Las Vegas, following earlier album-of-the-year wins for “El Mal Querer” and “Motomami.” Silvana Estrada won record of the year for “Dime,” and Aria Vega was named best new artist. Other winners included Karol G for best urban music album and Jorge Drexler, Alejandro Sanz, Laura Pausini and Juanes in their categories.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-12.html">Nov 12</a></p>
+          <p class="source">Deadline (via Yahoo Entertainment), Nov 13, 2026</p>
+        </article>
+        <article class="story">
+          <p class="kicker feature">Worth your time</p>
+          <h3><a href="https://www.yahoo.com/entertainment/music/articles/latin-grammy-awards-2026-winners-050832928.html" target="_blank" rel="noopener">Worth your time: Rosalía’s “Lux,” this year’s Latin Grammy album of the year</a></h3>
+          <p>If a stormy weekend calls for headphones, “Lux” is the record the Latin music world just ranked above all others, and its full “Complete Works” edition also won best alternative album. It streams on all the major services; start with “La Perla,” the night’s song of the year.</p>
+          <p class="source">Deadline (via Yahoo Entertainment), Nov 13, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="science-tech">
+      <h2>Science &amp; tech</h2>
+      <div class="stories">
+        <article class="story">
+          <p class="kicker developing">Developing</p>
+          <h3><a href="https://www.engadget.com/2311878/spacex-first-attempt-to-catch-both-starship-stages-november-13/" target="_blank" rel="noopener">Starship Flight 15 is set for 2:45 p.m. today, pending FAA approval</a></h3>
+          <p>SpaceX is targeting a 75-minute window that opens at 2:45 p.m. Pacific from Starbase, Texas, for the first try at catching both stages: the Super Heavy booster with the tower’s arms a few minutes after launch, and the Ship about a day later, if it can come down in the planned area. The Ship is set to make about 14 orbits over 22 hours and release 26 Starlink V3 satellites. As of Thursday, the flight still needed its regulatory sign-off.</p>
+          <p class="previously"><strong>Previously:</strong> <a href="2026-11-12.html">Nov 12</a> · <a href="2026-11-11.html">Nov 11</a> · <a href="2026-11-09.html">Nov 9</a> · <a href="../tracker.html#starship-flight-15">Follow this story ›</a></p>
+          <p class="source">Engadget, Nov 10, 2026; Starbase Events, Nov 12, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://aviationweek.com/space/launch-vehicles-propulsion/vulcan-cleared-key-nov-13-return-flight-mission" target="_blank" rel="noopener">ULA’s Vulcan returns to flight this morning with Amazon internet satellites</a></h3>
+          <p>The rocket is set to lift off at 9:54 a.m. Pacific from Cape Canaveral on its first launch in nine months, carrying a batch of Amazon Leo broadband satellites, the first of 38 Amazon missions booked on Vulcan. Its last flight in February was marred when one of four solid boosters malfunctioned shortly after liftoff, and ULA says it has redesigned the booster nozzle. Space Force missions on Vulcan are on hold until the fix is proven.</p>
+          <p class="source">Aviation Week, Nov 5, 2026</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener">Google DeepMind releases AlphaGenome 2 to predict how DNA changes affect specific cells</a></h3>
+          <p>The model reads a million letters of DNA along with a chosen cell type and predicts how genetic variants change gene activity, finding nearly twice as many expression-changing variants as the previous best model. On one benchmark it picked out the causal variant 30% of the time, versus 16% for earlier models. It’s available now to non-commercial researchers through the AlphaGenome API, with commercial access in private preview; it’s not for clinical or diagnostic use.</p>
+          <p class="source">Google DeepMind, Nov 11, 2026</p>
+        </article>
+      </div>
+    </section>
+    <section class="topic" id="on-this-day">
+      <h2>On this day</h2>
+      <div class="stories">
+        <article class="story">
+          <h3><a href="https://encyclopediaofalabama.org/article/embrowder-v-gayle-em/" target="_blank" rel="noopener">Today in history: The Supreme Court ends bus segregation in Montgomery</a></h3>
+          <p>1956: The U.S. Supreme Court upheld a federal court ruling that Alabama’s bus segregation laws were unconstitutional, a decisive win for the Montgomery bus boycott, which ended weeks later.</p>
+          <p class="source">Encyclopedia of Alabama</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.astronomy.com/today-in-the-history-of-astronomy/nov-13-1971-mariner-9-orbits-mars/" target="_blank" rel="noopener">On this day in science: Mariner 9 becomes the first spacecraft to orbit another planet</a></h3>
+          <p>1971: JPL’s Mariner 9 slipped into orbit around Mars, waited out a planet-wide dust storm, then mapped about 85% of the surface, revealing giant volcanoes and dry river valleys.</p>
+          <p class="source">Astronomy</p>
+        </article>
+        <article class="story">
+          <h3><a href="https://www.britannica.com/topic/Holland-Tunnel" target="_blank" rel="noopener">Firsts in history: The Holland Tunnel opens under the Hudson</a></h3>
+          <p>1927: The Holland Tunnel between Manhattan and Jersey City opened to traffic as the world’s longest underwater road tunnel, with giant fans that solved the problem of clearing car exhaust from a long tunnel.</p>
+          <p class="source">Britannica</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- END STORIES -->
+  </main>
+
+  <nav class="edition-nav" aria-label="Other editions">
+    <span class="prev"></span>
+    <a class="front" href="../">Front page</a>
+    <span class="next"></span>
+  </nav>
+  <p class="credit">Compiled each morning by Claude for The Gary Corp. · <a href="../feed.xml">RSS feed</a></p>
+</div>
+
+<script>
+(function () {
+  // Build the "In this edition" links from each topic heading.
+  const contents = document.querySelector(".contents");
+  document.querySelectorAll(".topic").forEach((sec, i) => {
+    const h = sec.querySelector("h2");
+    if (!h) return;
+    if (!sec.id) sec.id = "topic-" + (i + 1);
+    const a = document.createElement("a");
+    a.href = "#" + sec.id;
+    a.textContent = h.textContent;
+    contents.append(a);
+  });
+  if (contents.querySelectorAll("a").length < 2) contents.remove();
+
+  // Previous and next edition links, read from posts.json.
+  const me = document.body.dataset.date;
+  const parse = d => new Date(d + "T12:00:00");
+  const fmt = d => parse(d).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  function put(cls, e, label) {
+    const a = document.createElement("a");
+    a.href = "../" + e.file;
+    a.textContent = label + fmt(e.date);
+    document.querySelector(".edition-nav ." + cls).append(a);
+  }
+  fetch("../posts.json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(data => {
+      const all = (Array.isArray(data) ? data : data.editions || [])
+        .filter(e => e && e.date && e.file).sort((a, b) => a.date < b.date ? -1 : 1);
+      const i = all.findIndex(e => e.date === me);
+      if (i > 0) put("prev", all[i - 1], "‹ ");
+      if (i >= 0 && i < all.length - 1) put("next", all[i + 1], "");
+      const next = document.querySelector(".edition-nav .next a");
+      if (next) next.textContent += " ›";
+    })
+    .catch(() => {});
+})();
+</script>
+<script src="../assets/edition.js" defer></script>
+</body>
+</html>

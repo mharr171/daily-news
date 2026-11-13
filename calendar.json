@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "timezone": "America/Los_Angeles",
  "note": "Times are Pacific. Sunrise and sunset times are calculated for Millbrae. Dates for launches, games, and releases can change; check the linked source before you go.",
  "events": [
@@ -1644,7 +1644,7 @@
    "title": "Latin Grammy Awards",
    "category": "Entertainment",
    "location": "MGM Grand Garden Arena, Las Vegas",
-   "description": "The Latin Recording Academy’s annual awards show airs on Univision.",
+   "description": "The Latin Recording Academy’s annual awards show airs on Univision. Rosalía won album of the year for “Lux,” her third win in that category.",
    "url": "https://latination.com/latin-grammys-2026-confirmed-artists-lineup/"
   },
   {
@@ -1722,6 +1722,51 @@
    "url": "https://www.boxofficemojo.com/calendar/2026-11-01/"
   },
   {
+   "date": "2026-11-13",
+   "time": "",
+   "title": "“How to Rob a Bank” in theaters",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Amazon MGM’s heist comedy with Nicholas Hoult and Zoë Kravitz opens nationwide.",
+   "url": "https://boxofficetheory.substack.com/p/box-office-weekend-forecast-ebenezer-johnny-depp-ghost-soldier-godzilla-minus-zero-how-to-rob-a-bank"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "",
+   "title": "“The End of Oak Street” on HBO Max",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Anne Hathaway and Ewan McGregor star in this sci-fi film about a suburb sent back to the age of dinosaurs.",
+   "url": "https://screencrush.com/new-movies-streaming-this-weekend-111126/"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "",
+   "title": "“Heartland” on Netflix",
+   "category": "Entertainment",
+   "location": "",
+   "description": "Jessica Chastain plays a former country star searching for her missing niece.",
+   "url": "https://screencrush.com/new-movies-streaming-this-weekend-111126/"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "9:54 AM",
+   "title": "Vulcan rocket launch (target time)",
+   "category": "Space",
+   "location": "Cape Canaveral Space Force Station, FL",
+   "description": "ULA’s target liftoff time for Vulcan’s return to flight with Amazon Leo satellites.",
+   "url": "https://aviationweek.com/space/launch-vehicles-propulsion/vulcan-cleared-key-nov-13-return-flight-mission"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "4:30 PM",
+   "title": "San Mateo County election results update",
+   "category": "Government",
+   "location": "",
+   "description": "The county posts its next semi-official count by 4:30 p.m.; about 1,700 ballots remained countywide after Thursday’s report.",
+   "url": "https://smcacre.gov/elections/november-3-2026-election-results"
+  },
+  {
    "date": "2026-11-14",
    "time": "All day",
    "title": "World Diabetes Day",
@@ -1757,6 +1802,16 @@
    "location": "The Warfield, San Francisco",
    "description": "Rhye plays The Warfield; check the venue for times and tickets.",
    "url": "https://www.songkick.com/metro-areas/26330-us-sf-bay-area/november-2026"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "All day",
+   "title": "BART bus bridge: 24th St. Mission to Daly City",
+   "category": "Government",
+   "location": "24th St. Mission to Daly City stations",
+   "description": "Free buses replace trains between 24th St. Mission and Daly City both days for train control work; trains still run between Daly City, SFO and Millbrae, and the Green Line is canceled. Allow up to 30 extra minutes.",
+   "url": "https://www.bart.gov/news/articles/2026/news20261015",
+   "end": "2026-11-15"
   },
   {
    "date": "2026-11-15",
@@ -1822,6 +1877,15 @@
    "location": "",
    "description": "Nominees for the 2027 Grammys are revealed; the ceremony is Feb. 7, 2027, on ABC, Disney+ and Hulu.",
    "url": "https://americansongwriter.com/grammy-awards-reveal-2027-nomination-and-ceremony-dates/"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "4:30 PM",
+   "title": "San Mateo County election results update",
+   "category": "Government",
+   "location": "",
+   "description": "Another semi-official count is posted by 4:30 p.m.",
+   "url": "https://smcacre.gov/elections/november-3-2026-election-results"
   },
   {
    "date": "2026-11-18",
@@ -2109,6 +2173,15 @@
    "location": "",
    "description": "David Fincher’s Brad Pitt film gets a two-week IMAX run before streaming on Netflix Dec. 23.",
    "url": "https://www.whats-on-netflix.com/news/david-finchers-cliff-booth-movie-netflix-release-date-theatrical-release/"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "5:00 PM",
+   "title": "Deadline to fix challenged ballots (San Mateo County)",
+   "category": "Government",
+   "location": "",
+   "description": "Voters whose mail ballots were challenged, for example over a signature, have until 5 p.m. to cure them.",
+   "url": "https://smcacre.gov/elections/november-3-2026-election-results"
   },
   {
    "date": "2026-11-26",

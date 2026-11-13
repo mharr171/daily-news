@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-13",
+      "file": "posts/2026-11-13.html",
+      "summary": "A moderate storm brings midday rain and gusty winds to the Peninsula today, with dangerous surf on the coast all weekend, and BART trains won’t run between 24th St. Mission and Daly City Saturday and Sunday. Trump threatened to double tariffs on Mexico over a migrant caravan, and Jensen Huang agreed to testify to Congress. Stephen Curry is out at least two weeks with a torn oblique, and SpaceX targets this afternoon for Starship’s double-catch attempt.",
+      "headlines": [
+        {
+          "title": "The season’s first moderate storm arrives today, the first of three in a week",
+          "topic": "General news"
+        },
+        {
+          "title": "Trump threatens to double tariffs on Mexico over a migrant caravan, and Sheinbaum says it won’t reach the border",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "No BART trains between 24th St. Mission and Daly City this weekend; buses fill the gap",
+          "topic": "General news"
+        },
+        {
+          "title": "Stephen Curry has a torn oblique and will miss at least two weeks",
+          "topic": "Sports"
+        },
+        {
+          "title": "Starship Flight 15 is set for 2:45 p.m. today, pending FAA approval",
+          "topic": "Science & tech"
+        }
+      ],
+      "updates": [
+        "midnight"
+      ],
+      "updated": "2026-11-13T00:18"
+    },
+    {
       "date": "2026-11-12",
       "file": "posts/2026-11-12.html",
       "summary": "Jensen Huang has resigned as Nvidia’s CEO, with CFO Colette Kress stepping in as interim chief, and Democrat Scott Colom won Mississippi’s Senate race, the party’s eighth flipped seat. A high surf warning brings 25- to 30-foot breakers to the Bay Area coast this weekend, and Capitola Beach is closed after nine children got E. coli. Stephen Curry left the Warriors’ loss at Houston with an abdominal injury, and SpaceX targets Friday for Starship’s double catch.",

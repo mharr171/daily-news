@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "threads": [
     {
       "id": "starship-flight-15",
       "title": "Starship Flight 15",
       "status": "Developing",
-      "summary": "SpaceX is preparing its next Starship test flight, when it plans to try catching both stages.",
-      "updated": "2026-11-13",
+      "summary": "Starship Flight 15 launched Nov. 13 and reached orbit, but the Super Heavy booster aborted its tower catch and exploded in the Gulf of Mexico; SpaceX planned to try catching the ship on Nov. 14.",
+      "updated": "2026-11-14",
       "entries": [
         {
           "date": "2026-10-21",
@@ -63,6 +63,64 @@
           "headline": "Starship Flight 15 is set for 2:45 p.m. today, pending FAA approval",
           "url": "https://www.engadget.com/2311878/spacex-first-attempt-to-catch-both-starship-stages-november-13/",
           "source": "Engadget, Nov 10, 2026; Starbase Events, Nov 12, 2026"
+        },
+        {
+          "date": "2026-11-14",
+          "edition": "posts/2026-11-14.html",
+          "headline": "Starship reaches orbit, but its booster is lost; SpaceX tries to catch the ship today",
+          "url": "https://thenextweb.com/news/spacex-starship-flight-15-booster-catch-aborted",
+          "source": "The Next Web, Nov 14, 2026"
+        }
+      ]
+    },
+    {
+      "id": "el-nino-winter",
+      "title": "Getting ready for El Niño",
+      "status": "Developing",
+      "summary": "Forecasters expect a strong, possibly record El Niño this winter, and Bay Area governments are preparing for storms and flooding.",
+      "updated": "2026-11-14",
+      "entries": [
+        {
+          "date": "2026-10-09",
+          "edition": "posts/2026-10-09.html",
+          "headline": "Forecasters now see a record-strength El Niño as likely this winter",
+          "url": "https://watchers.news/2026/10/08/noaa-gives-el-nino-an-83-chance-of-reaching-historic-strength-in-late-2026/",
+          "source": "The Watchers, Oct 8, 2026"
+        },
+        {
+          "date": "2026-10-18",
+          "edition": "posts/2026-10-18.html",
+          "headline": "San José says it’s ready for a strong El Niño winter",
+          "url": "https://www.kqed.org/news/12104538/staring-down-a-historic-el-nino-san-jose-says-its-ready",
+          "source": "KQED, Oct 16, 2026"
+        },
+        {
+          "date": "2026-10-22",
+          "edition": "posts/2026-10-22.html",
+          "headline": "California stages millions of sandbags and criticizes a federal pullback on disasters",
+          "url": "https://www.gov.ca.gov/2026/10/21/governor-newsom-slams-trumps-disaster-retreat-as-california-prepares-for-dangerous-el-nino-storms/",
+          "source": "Office of the Governor, Oct 21, 2026"
+        },
+        {
+          "date": "2026-10-22",
+          "edition": "posts/2026-10-22.html",
+          "headline": "San Mateo County declares a local emergency to get ahead of El Niño storms",
+          "url": "https://www.almanacnews.com/environment/2026/10/21/san-mateo-county-declares-el-nino-state-of-emergency-to-prepare-for-winter-storms/",
+          "source": "The Almanac, Oct 21, 2026"
+        },
+        {
+          "date": "2026-10-24",
+          "edition": "posts/2026-10-24.html",
+          "headline": "San Francisco declares a local emergency to prepare for El Niño storms",
+          "url": "https://sfist.com/2026/10/23/sf-mayor-declares-local-emergency-to-allow-for-increased-el-nino-preparedness/",
+          "source": "SFist, Oct 23, 2026"
+        },
+        {
+          "date": "2026-11-14",
+          "edition": "posts/2026-11-14.html",
+          "headline": "Mavericks could see 50-foot waves today as a high surf warning covers the coast",
+          "url": "https://abc7news.com/live-updates/live-updates-level-2-storm-making-bay-area-rain-winds-dangerous-high-surf-forecast/20037281/entry/20037671/",
+          "source": "ABC7 San Francisco, Nov 13, 2026"
         }
       ]
     },
@@ -623,50 +681,6 @@
           "headline": "Spacewalkers finish the space station’s solar power upgrade with the eighth and final array",
           "url": "https://www.cbsnews.com/news/spacewalkers-install-final-solar-array-space-station-upgrade/",
           "source": "CBS News, Nov 5, 2026"
-        }
-      ]
-    },
-    {
-      "id": "el-nino-winter",
-      "title": "Getting ready for El Niño",
-      "status": "Developing",
-      "summary": "Forecasters expect a strong, possibly record El Niño this winter, and Bay Area governments are preparing for storms and flooding.",
-      "updated": "2026-10-24",
-      "entries": [
-        {
-          "date": "2026-10-09",
-          "edition": "posts/2026-10-09.html",
-          "headline": "Forecasters now see a record-strength El Niño as likely this winter",
-          "url": "https://watchers.news/2026/10/08/noaa-gives-el-nino-an-83-chance-of-reaching-historic-strength-in-late-2026/",
-          "source": "The Watchers, Oct 8, 2026"
-        },
-        {
-          "date": "2026-10-18",
-          "edition": "posts/2026-10-18.html",
-          "headline": "San José says it’s ready for a strong El Niño winter",
-          "url": "https://www.kqed.org/news/12104538/staring-down-a-historic-el-nino-san-jose-says-its-ready",
-          "source": "KQED, Oct 16, 2026"
-        },
-        {
-          "date": "2026-10-22",
-          "edition": "posts/2026-10-22.html",
-          "headline": "California stages millions of sandbags and criticizes a federal pullback on disasters",
-          "url": "https://www.gov.ca.gov/2026/10/21/governor-newsom-slams-trumps-disaster-retreat-as-california-prepares-for-dangerous-el-nino-storms/",
-          "source": "Office of the Governor, Oct 21, 2026"
-        },
-        {
-          "date": "2026-10-22",
-          "edition": "posts/2026-10-22.html",
-          "headline": "San Mateo County declares a local emergency to get ahead of El Niño storms",
-          "url": "https://www.almanacnews.com/environment/2026/10/21/san-mateo-county-declares-el-nino-state-of-emergency-to-prepare-for-winter-storms/",
-          "source": "The Almanac, Oct 21, 2026"
-        },
-        {
-          "date": "2026-10-24",
-          "edition": "posts/2026-10-24.html",
-          "headline": "San Francisco declares a local emergency to prepare for El Niño storms",
-          "url": "https://sfist.com/2026/10/23/sf-mayor-declares-local-emergency-to-allow-for-increased-el-nino-preparedness/",
-          "source": "SFist, Oct 23, 2026"
         }
       ]
     },

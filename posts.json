@@ -1,6 +1,37 @@
 {
   "editions": [
     {
+      "date": "2026-11-14",
+      "file": "posts/2026-11-14.html",
+      "summary": "A nationwide FAA ground stop on Friday left SFO travelers facing a slow weekend recovery, while a high surf warning could send 50-foot waves to Mavericks today. SpaceX’s Starship reached orbit but lost its booster, and tries to catch the ship today; President Trump will meet Xi and Putin together in China on Thursday.",
+      "headlines": [
+        {
+          "title": "SFO digs out after Friday’s nationwide ground stop, with delays likely into the weekend",
+          "topic": "General news"
+        },
+        {
+          "title": "Starship reaches orbit, but its booster is lost; SpaceX tries to catch the ship today",
+          "topic": "Science & tech"
+        },
+        {
+          "title": "Mavericks could see 50-foot waves today as a high surf warning covers the coast",
+          "topic": "General news"
+        },
+        {
+          "title": "Trump will meet Xi and Putin together in China on Thursday, a first for the three leaders",
+          "topic": "U.S. politics & government"
+        },
+        {
+          "title": "Earthquakes and PayPal Park are being sold for $625 million",
+          "topic": "Sports"
+        }
+      ],
+      "updates": [
+        "morning"
+      ],
+      "updated": "2026-11-14T08:15"
+    },
+    {
       "date": "2026-11-13",
       "file": "posts/2026-11-13.html",
       "summary": "A moderate storm brings midday rain and gusty winds to the Peninsula today, with dangerous surf on the coast all weekend, and BART trains won’t run between 24th St. Mission and Daly City Saturday and Sunday. Trump threatened to double tariffs on Mexico over a migrant caravan, and Jensen Huang agreed to testify to Congress. Stephen Curry is out at least two weeks with a torn oblique, a global Microsoft outage has snarled Outlook and Teams for more than 12 hours, and SpaceX targets this afternoon for Starship’s double-catch attempt.",
